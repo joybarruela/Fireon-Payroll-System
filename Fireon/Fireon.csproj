@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D393E8F2-A3AB-46D1-81A2-A9805C1BE49F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fireon</RootNamespace>
+    <AssemblyName>Fireon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\barru\Documents\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Fireon.clsProgram</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icoFireon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F4920CD60C934315551FC745F90190DABEB08946</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Fireon_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="JImageButton">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JMaterialTextbox">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JMaterialTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JMetroTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox2">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JTextBox2.dll</HintPath>
+    </Reference>
+    <Reference Include="JThinButton">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JThinButton.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ucAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAll.Designer.cs">
+      <DependentUpon>ucAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAllowances.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAllowances.Designer.cs">
+      <DependentUpon>ucAllowances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCashAdvance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCashAdvance.Designer.cs">
+      <DependentUpon>ucCashAdvance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDashboard.Designer.cs">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDeductions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDeductions.Designer.cs">
+      <DependentUpon>ucDeductions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDepartment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDepartment.Designer.cs">
+      <DependentUpon>ucDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEmployee.Designer.cs">
+      <DependentUpon>ucEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFireonPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFireonPayroll.Designer.cs">
+      <DependentUpon>frmFireonPayroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHoliday.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHoliday.Designer.cs">
+      <DependentUpon>ucHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLeave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLeave.Designer.cs">
+      <DependentUpon>ucLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOvertime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOvertime.Designer.cs">
+      <DependentUpon>ucOvertime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucSettingAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingAccounts.Designer.cs">
+      <DependentUpon>ucSettingAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettingNotifications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingNotifications.Designer.cs">
+      <DependentUpon>ucSettingNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettingsAddNotifications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingsAddNotifications.Designer.cs">
+      <DependentUpon>ucSettingsAddNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettingsUpdateNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingsUpdateNotification.Designer.cs">
+      <DependentUpon>ucSettingsUpdateNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettingsAddAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingsAddAccount.Designer.cs">
+      <DependentUpon>ucSettingsAddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettingsUpdateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingsUpdateAccount.Designer.cs">
+      <DependentUpon>ucSettingsUpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettings.Designer.cs">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSinglePosting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSinglePosting.Designer.cs">
+      <DependentUpon>ucSinglePosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucViolations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucViolations.Designer.cs">
+      <DependentUpon>ucViolations.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucAll.resx">
+      <DependentUpon>ucAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAllowances.resx">
+      <DependentUpon>ucAllowances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCashAdvance.resx">
+      <DependentUpon>ucCashAdvance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDashboard.resx">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDeductions.resx">
+      <DependentUpon>ucDeductions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDepartment.resx">
+      <DependentUpon>ucDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEmployee.resx">
+      <DependentUpon>ucEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFireonPayroll.resx">
+      <DependentUpon>frmFireonPayroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHoliday.resx">
+      <DependentUpon>ucHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLeave.resx">
+      <DependentUpon>ucLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOvertime.resx">
+      <DependentUpon>ucOvertime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ucSettingAccounts.resx">
+      <DependentUpon>ucSettingAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettingNotifications.resx">
+      <DependentUpon>ucSettingNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettingsAddAccount.resx">
+      <DependentUpon>ucSettingsAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettingsAddNotifications.resx">
+      <DependentUpon>ucSettingsAddNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettingsUpdateAccount.resx">
+      <DependentUpon>ucSettingsUpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettingsUpdateNotification.resx">
+      <DependentUpon>ucSettingsUpdateNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettings.resx">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSinglePosting.resx">
+      <DependentUpon>ucSinglePosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucViolations.resx">
+      <DependentUpon>ucViolations.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Fireon_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_account_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_accounts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_accounts_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_add_db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_add_db_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_add_doing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_add_done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_add_done_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_add_todo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_all_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_allowances_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cash_advance_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_continue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_continue_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_dashboard_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_deductions_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_delete_db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_delete_db_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_department_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_employee_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_hire_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_hire_active_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_holiday_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_leave_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_next_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_notifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_notifications_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_overtime_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_print_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_retirement_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_save_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_settings_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_single_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_update_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_violations_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-add-db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-add-db-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-add-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-all-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-allowances.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-allowances-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cancel-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cash-advance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cash-advance-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-dashboard-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-deductions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-deductions-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-delete-db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-delete-db-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-department-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-employee-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-eye-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-hire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-hire-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-holiday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-holiday-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-leave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-leave-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-overtime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-overtime-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-settings-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-single-posting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-single-posting-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-update-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-violation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-violations-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-fireon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-fireon-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment_method.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment_method_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-finance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-it.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-marketing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-things-to-do.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-upcoming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-login-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-edit-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-delete-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icoFireon.ico" />
+    <None Include="Resources\btn_retirement.png" />
+    <None Include="Resources\btn_logout.png" />
+    <None Include="Resources\pnl_card_settings.png" />
+    <None Include="Resources\btn_menu_hover.png" />
+    <None Include="Resources\btn_menu.png" />
+    <None Include="Resources\btn_add_active.png" />
+    <None Include="Resources\btn_add_active_hover.png" />
+    <None Include="Resources\btn_cancel.png" />
+    <None Include="Resources\btn_add_hover.png" />
+    <None Include="Resources\btn_add.png" />
+    <None Include="Resources\btn_save_draft_hover.png" />
+    <None Include="Resources\btn_save_draft.png" />
+    <None Include="Resources\btn_hire_hover.png" />
+    <None Include="Resources\btn_hire.png" />
+    <None Include="Resources\btn_cancel_hover.png" />
+    <None Include="Resources\btn-update-notif-hover.png" />
+    <None Include="Resources\btn-update-notif.png" />
+    <None Include="Resources\btn-back.png" />
+    <None Include="Resources\btn-back-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
