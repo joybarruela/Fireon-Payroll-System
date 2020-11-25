@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Fireon
 {
-    public partial class frmLogin : MetroFramework.Forms.MetroForm
+    public partial class frmLogin : Form
     {
         public frmLogin()
         {
@@ -28,6 +28,11 @@ namespace Fireon
             frmFireonPayroll main_form = new frmFireonPayroll();
             this.Visible = false;
             main_form.Show();   
+        }
+
+        private void btn_minimize_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

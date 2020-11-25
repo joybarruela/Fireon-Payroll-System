@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings_Add_Account));
             this.pnl_add_account = new System.Windows.Forms.Panel();
+            this.btn_see_new_pw = new System.Windows.Forms.Button();
+            this.btn_see_current_pw = new System.Windows.Forms.Button();
+            this.lbl_confirm_pw = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
             this.btn_add_account = new System.Windows.Forms.Button();
             this.btn_cancel_add_account = new System.Windows.Forms.Button();
             this.txtbx_username = new System.Windows.Forms.TextBox();
-            this.btn_see_new_pw = new JImageButton.JImageButton();
-            this.btn_see_current_pw = new JImageButton.JImageButton();
             this.lbl_add_account = new System.Windows.Forms.Label();
             this.lbl_user_type = new System.Windows.Forms.Label();
             this.lbl_user_name = new System.Windows.Forms.Label();
             this.picb_user_add_account = new System.Windows.Forms.PictureBox();
             this.txtbx_confirm_pw = new System.Windows.Forms.TextBox();
-            this.txtbx_pw = new System.Windows.Forms.TextBox();
+            this.txtbx_password = new System.Windows.Forms.TextBox();
             this.pnl_add_account.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_user_add_account)).BeginInit();
             this.SuspendLayout();
@@ -49,28 +51,96 @@
             // 
             this.pnl_add_account.BackColor = System.Drawing.Color.White;
             this.pnl_add_account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnl_add_account.Controls.Add(this.btn_see_new_pw);
+            this.pnl_add_account.Controls.Add(this.btn_see_current_pw);
+            this.pnl_add_account.Controls.Add(this.lbl_confirm_pw);
+            this.pnl_add_account.Controls.Add(this.lbl_password);
+            this.pnl_add_account.Controls.Add(this.lbl_username);
             this.pnl_add_account.Controls.Add(this.btn_add_account);
             this.pnl_add_account.Controls.Add(this.btn_cancel_add_account);
             this.pnl_add_account.Controls.Add(this.txtbx_username);
-            this.pnl_add_account.Controls.Add(this.btn_see_new_pw);
-            this.pnl_add_account.Controls.Add(this.btn_see_current_pw);
             this.pnl_add_account.Controls.Add(this.lbl_add_account);
             this.pnl_add_account.Controls.Add(this.lbl_user_type);
             this.pnl_add_account.Controls.Add(this.lbl_user_name);
             this.pnl_add_account.Controls.Add(this.picb_user_add_account);
             this.pnl_add_account.Controls.Add(this.txtbx_confirm_pw);
-            this.pnl_add_account.Controls.Add(this.txtbx_pw);
+            this.pnl_add_account.Controls.Add(this.txtbx_password);
             this.pnl_add_account.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_add_account.Location = new System.Drawing.Point(0, 0);
             this.pnl_add_account.Name = "pnl_add_account";
             this.pnl_add_account.Size = new System.Drawing.Size(1048, 523);
             this.pnl_add_account.TabIndex = 0;
             // 
+            // btn_see_new_pw
+            // 
+            this.btn_see_new_pw.BackColor = System.Drawing.Color.White;
+            this.btn_see_new_pw.BackgroundImage = global::Fireon.Properties.Resources.btn_eye;
+            this.btn_see_new_pw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_see_new_pw.FlatAppearance.BorderSize = 0;
+            this.btn_see_new_pw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.btn_see_new_pw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_see_new_pw.Location = new System.Drawing.Point(690, 341);
+            this.btn_see_new_pw.Name = "btn_see_new_pw";
+            this.btn_see_new_pw.Size = new System.Drawing.Size(27, 25);
+            this.btn_see_new_pw.TabIndex = 268;
+            this.btn_see_new_pw.TabStop = false;
+            this.btn_see_new_pw.UseVisualStyleBackColor = false;
+            // 
+            // btn_see_current_pw
+            // 
+            this.btn_see_current_pw.BackColor = System.Drawing.Color.White;
+            this.btn_see_current_pw.BackgroundImage = global::Fireon.Properties.Resources.btn_eye;
+            this.btn_see_current_pw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_see_current_pw.FlatAppearance.BorderSize = 0;
+            this.btn_see_current_pw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.btn_see_current_pw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_see_current_pw.Location = new System.Drawing.Point(690, 288);
+            this.btn_see_current_pw.Name = "btn_see_current_pw";
+            this.btn_see_current_pw.Size = new System.Drawing.Size(27, 25);
+            this.btn_see_current_pw.TabIndex = 269;
+            this.btn_see_current_pw.TabStop = false;
+            this.btn_see_current_pw.UseVisualStyleBackColor = false;
+            // 
+            // lbl_confirm_pw
+            // 
+            this.lbl_confirm_pw.AutoSize = true;
+            this.lbl_confirm_pw.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_confirm_pw.ForeColor = System.Drawing.Color.Black;
+            this.lbl_confirm_pw.Location = new System.Drawing.Point(337, 320);
+            this.lbl_confirm_pw.Name = "lbl_confirm_pw";
+            this.lbl_confirm_pw.Size = new System.Drawing.Size(118, 18);
+            this.lbl_confirm_pw.TabIndex = 260;
+            this.lbl_confirm_pw.Text = "Confirm Password";
+            // 
+            // lbl_password
+            // 
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.ForeColor = System.Drawing.Color.Black;
+            this.lbl_password.Location = new System.Drawing.Point(337, 267);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(66, 18);
+            this.lbl_password.TabIndex = 260;
+            this.lbl_password.Text = "Password";
+            // 
+            // lbl_username
+            // 
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.ForeColor = System.Drawing.Color.Black;
+            this.lbl_username.Location = new System.Drawing.Point(337, 214);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(69, 18);
+            this.lbl_username.TabIndex = 259;
+            this.lbl_username.Text = "Username";
+            // 
             // btn_add_account
             // 
+            this.btn_add_account.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_add_account.BackgroundImage = global::Fireon.Properties.Resources.btn_add_active;
             this.btn_add_account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_add_account.FlatAppearance.BorderSize = 0;
+            this.btn_add_account.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_add_account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add_account.Location = new System.Drawing.Point(570, 449);
             this.btn_add_account.Name = "btn_add_account";
@@ -82,6 +152,7 @@
             // 
             // btn_cancel_add_account
             // 
+            this.btn_cancel_add_account.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_cancel_add_account.BackgroundImage = global::Fireon.Properties.Resources.btn_cancel;
             this.btn_cancel_add_account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_cancel_add_account.FlatAppearance.BorderSize = 0;
@@ -103,43 +174,6 @@
             this.txtbx_username.Name = "txtbx_username";
             this.txtbx_username.Size = new System.Drawing.Size(344, 25);
             this.txtbx_username.TabIndex = 257;
-            this.txtbx_username.Text = "Username";
-            // 
-            // btn_see_new_pw
-            // 
-            this.btn_see_new_pw.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_see_new_pw.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_see_new_pw.BackColor = System.Drawing.Color.Transparent;
-            this.btn_see_new_pw.CausesValidation = false;
-            this.btn_see_new_pw.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_see_new_pw.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_see_new_pw.ErrorImage")));
-            this.btn_see_new_pw.Image = global::Fireon.Properties.Resources.btn_eye;
-            this.btn_see_new_pw.ImageHover = global::Fireon.Properties.Resources.btn_eye_hover;
-            this.btn_see_new_pw.InitialImage = null;
-            this.btn_see_new_pw.Location = new System.Drawing.Point(657, 341);
-            this.btn_see_new_pw.Name = "btn_see_new_pw";
-            this.btn_see_new_pw.Size = new System.Drawing.Size(27, 25);
-            this.btn_see_new_pw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_see_new_pw.TabIndex = 255;
-            this.btn_see_new_pw.Zoom = 0;
-            // 
-            // btn_see_current_pw
-            // 
-            this.btn_see_current_pw.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_see_current_pw.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_see_current_pw.BackColor = System.Drawing.Color.Transparent;
-            this.btn_see_current_pw.CausesValidation = false;
-            this.btn_see_current_pw.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_see_current_pw.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_see_current_pw.ErrorImage")));
-            this.btn_see_current_pw.Image = global::Fireon.Properties.Resources.btn_eye;
-            this.btn_see_current_pw.ImageHover = global::Fireon.Properties.Resources.btn_eye_hover;
-            this.btn_see_current_pw.InitialImage = null;
-            this.btn_see_current_pw.Location = new System.Drawing.Point(657, 288);
-            this.btn_see_current_pw.Name = "btn_see_current_pw";
-            this.btn_see_current_pw.Size = new System.Drawing.Size(27, 25);
-            this.btn_see_current_pw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_see_current_pw.TabIndex = 256;
-            this.btn_see_current_pw.Zoom = 0;
             // 
             // lbl_add_account
             // 
@@ -202,18 +236,16 @@
             this.txtbx_confirm_pw.Name = "txtbx_confirm_pw";
             this.txtbx_confirm_pw.Size = new System.Drawing.Size(344, 25);
             this.txtbx_confirm_pw.TabIndex = 257;
-            this.txtbx_confirm_pw.Text = "Confirm Password";
             // 
-            // txtbx_pw
+            // txtbx_password
             // 
-            this.txtbx_pw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbx_pw.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_pw.Location = new System.Drawing.Point(340, 288);
-            this.txtbx_pw.MaxLength = 15;
-            this.txtbx_pw.Name = "txtbx_pw";
-            this.txtbx_pw.Size = new System.Drawing.Size(344, 25);
-            this.txtbx_pw.TabIndex = 257;
-            this.txtbx_pw.Text = "Password";
+            this.txtbx_password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbx_password.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_password.Location = new System.Drawing.Point(340, 288);
+            this.txtbx_password.MaxLength = 15;
+            this.txtbx_password.Name = "txtbx_password";
+            this.txtbx_password.Size = new System.Drawing.Size(344, 25);
+            this.txtbx_password.TabIndex = 257;
             // 
             // Settings_Add_Account
             // 
@@ -239,13 +271,16 @@
         private System.Windows.Forms.Label lbl_user_name;
         private System.Windows.Forms.PictureBox picb_user_add_account;
         private System.Windows.Forms.Label lbl_add_account;
-        private JImageButton.JImageButton btn_see_new_pw;
-        private JImageButton.JImageButton btn_see_current_pw;
         private System.Windows.Forms.TextBox txtbx_username;
-        private System.Windows.Forms.TextBox txtbx_pw;
+        private System.Windows.Forms.TextBox txtbx_password;
         private System.Windows.Forms.TextBox txtbx_confirm_pw;
         private System.Windows.Forms.Button btn_cancel_add_account;
         private System.Windows.Forms.Button btn_add_account;
+        private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.Label lbl_password;
+        private System.Windows.Forms.Label lbl_confirm_pw;
+        private System.Windows.Forms.Button btn_see_new_pw;
+        private System.Windows.Forms.Button btn_see_current_pw;
 
 
     }

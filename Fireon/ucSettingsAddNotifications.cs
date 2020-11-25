@@ -16,19 +16,14 @@ namespace Fireon
         {
             InitializeComponent();
         }
-
-        private void Settings_Add_Notifications_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_cancel_Click(object sender, EventArgs e)
+        private void btn_cancel_add_notif_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-      
-
-       
+        private void btn_add_notif_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

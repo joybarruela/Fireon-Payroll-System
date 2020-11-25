@@ -16,25 +16,24 @@ namespace Fireon
         {
             InitializeComponent();
         }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            this.Hide();    
-        }
-
-        private void btn_update_notif_1_Click(object sender, EventArgs e)
+        private void btn_update_notification_1_Click(object sender, EventArgs e)
         {
             uc_update_notification.BringToFront();
             uc_update_notification.Visible = true;
-            uc_update_notification.SetBounds(116, 180, 738, 441);
+            uc_update_notification.SetBounds(3, 114, 1048, 544);
         }
 
         private void btn_add_notification_Click(object sender, EventArgs e)
         {
             uc_add_notification.BringToFront();
             uc_add_notification.Visible = true;
-            uc_add_notification.SetBounds(116, 180, 738, 441);
+            uc_add_notification.SetBounds(3, 113, 1048, 544);
+        }
+        private void btn_back_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();    
         }
 
+       
     }
 }

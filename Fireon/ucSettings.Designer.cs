@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSettings));
             this.lbl_settings = new System.Windows.Forms.Label();
-            this.btn_notifications = new JImageButton.JImageButton();
-            this.btn_accounts = new JImageButton.JImageButton();
+            this.btn_accounts = new System.Windows.Forms.Button();
+            this.btn_notifications = new System.Windows.Forms.Button();
             this.uc_setting_notifications = new Fireon.Setting_Notifications();
             this.uc_setting_accounts = new Fireon.Setting_Accounts();
             this.SuspendLayout();
@@ -49,41 +48,36 @@
             this.lbl_settings.TabIndex = 205;
             this.lbl_settings.Text = "Settings";
             // 
-            // btn_notifications
-            // 
-            this.btn_notifications.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_notifications.BackColor = System.Drawing.Color.Transparent;
-            this.btn_notifications.CausesValidation = false;
-            this.btn_notifications.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_notifications.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_notifications.ErrorImage")));
-            this.btn_notifications.Image = global::Fireon.Properties.Resources.btn_notifications;
-            this.btn_notifications.ImageHover = global::Fireon.Properties.Resources.btn_notifications_hover;
-            this.btn_notifications.InitialImage = null;
-            this.btn_notifications.Location = new System.Drawing.Point(523, 231);
-            this.btn_notifications.Name = "btn_notifications";
-            this.btn_notifications.Size = new System.Drawing.Size(346, 167);
-            this.btn_notifications.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_notifications.TabIndex = 221;
-            this.btn_notifications.Zoom = 0;
-            this.btn_notifications.Click += new System.EventHandler(this.btn_notifications_Click);
-            // 
             // btn_accounts
             // 
-            this.btn_accounts.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_accounts.BackColor = System.Drawing.Color.Transparent;
-            this.btn_accounts.CausesValidation = false;
-            this.btn_accounts.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_accounts.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_accounts.ErrorImage")));
-            this.btn_accounts.Image = global::Fireon.Properties.Resources.btn_accounts;
-            this.btn_accounts.ImageHover = global::Fireon.Properties.Resources.btn_accounts_hover;
-            this.btn_accounts.InitialImage = null;
-            this.btn_accounts.Location = new System.Drawing.Point(180, 231);
+            this.btn_accounts.BackgroundImage = global::Fireon.Properties.Resources.btn_accounts;
+            this.btn_accounts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_accounts.FlatAppearance.BorderSize = 0;
+            this.btn_accounts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_accounts.Location = new System.Drawing.Point(181, 231);
             this.btn_accounts.Name = "btn_accounts";
             this.btn_accounts.Size = new System.Drawing.Size(346, 167);
-            this.btn_accounts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_accounts.TabIndex = 222;
-            this.btn_accounts.Zoom = 0;
+            this.btn_accounts.TabIndex = 225;
+            this.btn_accounts.TabStop = false;
+            this.btn_accounts.UseVisualStyleBackColor = true;
             this.btn_accounts.Click += new System.EventHandler(this.btn_accounts_Click);
+            // 
+            // btn_notifications
+            // 
+            this.btn_notifications.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_notifications.BackgroundImage = global::Fireon.Properties.Resources.btn_notifications;
+            this.btn_notifications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_notifications.FlatAppearance.BorderSize = 0;
+            this.btn_notifications.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_notifications.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_notifications.Location = new System.Drawing.Point(518, 231);
+            this.btn_notifications.Name = "btn_notifications";
+            this.btn_notifications.Size = new System.Drawing.Size(346, 167);
+            this.btn_notifications.TabIndex = 225;
+            this.btn_notifications.TabStop = false;
+            this.btn_notifications.UseVisualStyleBackColor = true;
+            this.btn_notifications.Click += new System.EventHandler(this.btn_notifications_Click);
             // 
             // uc_setting_notifications
             // 
@@ -108,10 +102,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.uc_setting_notifications);
-            this.Controls.Add(this.uc_setting_accounts);
             this.Controls.Add(this.btn_notifications);
             this.Controls.Add(this.btn_accounts);
+            this.Controls.Add(this.uc_setting_notifications);
+            this.Controls.Add(this.uc_setting_accounts);
             this.Controls.Add(this.lbl_settings);
             this.Name = "ucSettings";
             this.Size = new System.Drawing.Size(1060, 680);
@@ -123,9 +117,9 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_settings;
-        private JImageButton.JImageButton btn_notifications;
-        private JImageButton.JImageButton btn_accounts;
         private Setting_Accounts uc_setting_accounts;
         private Setting_Notifications uc_setting_notifications;
+        private System.Windows.Forms.Button btn_accounts;
+        private System.Windows.Forms.Button btn_notifications;
     }
 }

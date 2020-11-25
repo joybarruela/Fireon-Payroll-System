@@ -40,28 +40,28 @@
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_time = new System.Windows.Forms.Label();
             this.dtgv_setting_notifications = new System.Windows.Forms.DataGridView();
-            this.btn_back = new JImageButton.JImageButton();
+            this.btn_add_notification = new System.Windows.Forms.Button();
+            this.pnl_del_upd = new System.Windows.Forms.Panel();
+            this.btn_delete_notification_8 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_7 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_6 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_5 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_4 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_3 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_2 = new System.Windows.Forms.Button();
+            this.btn_delete_notification_1 = new System.Windows.Forms.Button();
+            this.btn_update_notification_8 = new System.Windows.Forms.Button();
+            this.btn_update_notification_7 = new System.Windows.Forms.Button();
+            this.btn_update_notification_6 = new System.Windows.Forms.Button();
+            this.btn_update_notification_5 = new System.Windows.Forms.Button();
+            this.btn_update_notification_4 = new System.Windows.Forms.Button();
+            this.btn_update_notification_3 = new System.Windows.Forms.Button();
+            this.btn_update_notification_2 = new System.Windows.Forms.Button();
+            this.btn_update_notification_1 = new System.Windows.Forms.Button();
             this.uc_add_notification = new Fireon.Settings_Add_Notifications();
             this.uc_update_notification = new Fireon.Settings_Update_Notification();
             this.uc_add_notifications = new Fireon.Settings_Add_Notifications();
-            this.btn_add_notification = new System.Windows.Forms.Button();
-            this.pnl_del_upd = new System.Windows.Forms.Panel();
-            this.btn_delete_8 = new System.Windows.Forms.Button();
-            this.btn_delete_7 = new System.Windows.Forms.Button();
-            this.btn_delete_6 = new System.Windows.Forms.Button();
-            this.btn_delete_5 = new System.Windows.Forms.Button();
-            this.btn_delete_4 = new System.Windows.Forms.Button();
-            this.btn_delete_3 = new System.Windows.Forms.Button();
-            this.btn_delete_2 = new System.Windows.Forms.Button();
-            this.btn_delete_1 = new System.Windows.Forms.Button();
-            this.btn_update_8 = new System.Windows.Forms.Button();
-            this.btn_update_7 = new System.Windows.Forms.Button();
-            this.btn_update_6 = new System.Windows.Forms.Button();
-            this.btn_update_5 = new System.Windows.Forms.Button();
-            this.btn_update_4 = new System.Windows.Forms.Button();
-            this.btn_update_3 = new System.Windows.Forms.Button();
-            this.btn_update_2 = new System.Windows.Forms.Button();
-            this.btn_update_1 = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.pnl_setting_notification.SuspendLayout();
             this.flpnl_setting_notifications.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_setting_notifications)).BeginInit();
@@ -185,57 +185,6 @@
             this.dtgv_setting_notifications.Size = new System.Drawing.Size(874, 410);
             this.dtgv_setting_notifications.TabIndex = 146;
             // 
-            // btn_back
-            // 
-            this.btn_back.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_back.CausesValidation = false;
-            this.btn_back.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_back.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_back.ErrorImage")));
-            this.btn_back.Image = global::Fireon.Properties.Resources.btn_back;
-            this.btn_back.ImageHover = global::Fireon.Properties.Resources.btn_back_hover;
-            this.btn_back.InitialImage = null;
-            this.btn_back.Location = new System.Drawing.Point(0, 32);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(76, 41);
-            this.btn_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_back.TabIndex = 256;
-            this.btn_back.Zoom = 0;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
-            // 
-            // uc_add_notification
-            // 
-            this.uc_add_notification.BackColor = System.Drawing.Color.White;
-            this.uc_add_notification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uc_add_notification.BackgroundImage")));
-            this.uc_add_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.uc_add_notification.Location = new System.Drawing.Point(11, 623);
-            this.uc_add_notification.Name = "uc_add_notification";
-            this.uc_add_notification.Size = new System.Drawing.Size(738, 444);
-            this.uc_add_notification.TabIndex = 148;
-            this.uc_add_notification.Visible = false;
-            // 
-            // uc_update_notification
-            // 
-            this.uc_update_notification.BackColor = System.Drawing.Color.White;
-            this.uc_update_notification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uc_update_notification.BackgroundImage")));
-            this.uc_update_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.uc_update_notification.Location = new System.Drawing.Point(39, 583);
-            this.uc_update_notification.Name = "uc_update_notification";
-            this.uc_update_notification.Size = new System.Drawing.Size(738, 441);
-            this.uc_update_notification.TabIndex = 260;
-            this.uc_update_notification.Visible = false;
-            // 
-            // uc_add_notifications
-            // 
-            this.uc_add_notifications.BackColor = System.Drawing.Color.White;
-            this.uc_add_notifications.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uc_add_notifications.BackgroundImage")));
-            this.uc_add_notifications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.uc_add_notifications.Location = new System.Drawing.Point(-36, 283);
-            this.uc_add_notifications.Name = "uc_add_notifications";
-            this.uc_add_notifications.Size = new System.Drawing.Size(738, 444);
-            this.uc_add_notifications.TabIndex = 148;
-            this.uc_add_notifications.Visible = false;
-            // 
             // btn_add_notification
             // 
             this.btn_add_notification.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -250,283 +199,332 @@
             this.btn_add_notification.TabIndex = 265;
             this.btn_add_notification.TabStop = false;
             this.btn_add_notification.UseVisualStyleBackColor = true;
+            this.btn_add_notification.Click += new System.EventHandler(this.btn_add_notification_Click);
             // 
             // pnl_del_upd
             // 
-            this.pnl_del_upd.Controls.Add(this.btn_delete_8);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_7);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_6);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_5);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_4);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_3);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_2);
-            this.pnl_del_upd.Controls.Add(this.btn_delete_1);
-            this.pnl_del_upd.Controls.Add(this.btn_update_8);
-            this.pnl_del_upd.Controls.Add(this.btn_update_7);
-            this.pnl_del_upd.Controls.Add(this.btn_update_6);
-            this.pnl_del_upd.Controls.Add(this.btn_update_5);
-            this.pnl_del_upd.Controls.Add(this.btn_update_4);
-            this.pnl_del_upd.Controls.Add(this.btn_update_3);
-            this.pnl_del_upd.Controls.Add(this.btn_update_2);
-            this.pnl_del_upd.Controls.Add(this.btn_update_1);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_8);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_7);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_6);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_5);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_4);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_3);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_2);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_notification_1);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_8);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_7);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_6);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_5);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_4);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_3);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_2);
+            this.pnl_del_upd.Controls.Add(this.btn_update_notification_1);
             this.pnl_del_upd.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_del_upd.Location = new System.Drawing.Point(914, 73);
             this.pnl_del_upd.Name = "pnl_del_upd";
             this.pnl_del_upd.Size = new System.Drawing.Size(146, 607);
             this.pnl_del_upd.TabIndex = 264;
             // 
-            // btn_delete_8
+            // btn_delete_notification_8
             // 
-            this.btn_delete_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_8.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_8.FlatAppearance.BorderSize = 0;
-            this.btn_delete_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_8.Location = new System.Drawing.Point(14, 479);
-            this.btn_delete_8.Name = "btn_delete_8";
-            this.btn_delete_8.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_8.TabIndex = 222;
-            this.btn_delete_8.TabStop = false;
-            this.btn_delete_8.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_8.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_8.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_8.Location = new System.Drawing.Point(13, 456);
+            this.btn_delete_notification_8.Name = "btn_delete_notification_8";
+            this.btn_delete_notification_8.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_8.TabIndex = 222;
+            this.btn_delete_notification_8.TabStop = false;
+            this.btn_delete_notification_8.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_7
+            // btn_delete_notification_7
             // 
-            this.btn_delete_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_7.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_7.FlatAppearance.BorderSize = 0;
-            this.btn_delete_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_7.Location = new System.Drawing.Point(14, 430);
-            this.btn_delete_7.Name = "btn_delete_7";
-            this.btn_delete_7.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_7.TabIndex = 222;
-            this.btn_delete_7.TabStop = false;
-            this.btn_delete_7.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_7.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_7.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_7.Location = new System.Drawing.Point(13, 407);
+            this.btn_delete_notification_7.Name = "btn_delete_notification_7";
+            this.btn_delete_notification_7.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_7.TabIndex = 222;
+            this.btn_delete_notification_7.TabStop = false;
+            this.btn_delete_notification_7.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_6
+            // btn_delete_notification_6
             // 
-            this.btn_delete_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_6.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_6.FlatAppearance.BorderSize = 0;
-            this.btn_delete_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_6.Location = new System.Drawing.Point(14, 381);
-            this.btn_delete_6.Name = "btn_delete_6";
-            this.btn_delete_6.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_6.TabIndex = 222;
-            this.btn_delete_6.TabStop = false;
-            this.btn_delete_6.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_6.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_6.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_6.Location = new System.Drawing.Point(13, 358);
+            this.btn_delete_notification_6.Name = "btn_delete_notification_6";
+            this.btn_delete_notification_6.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_6.TabIndex = 222;
+            this.btn_delete_notification_6.TabStop = false;
+            this.btn_delete_notification_6.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_5
+            // btn_delete_notification_5
             // 
-            this.btn_delete_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_5.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_5.FlatAppearance.BorderSize = 0;
-            this.btn_delete_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_5.Location = new System.Drawing.Point(14, 332);
-            this.btn_delete_5.Name = "btn_delete_5";
-            this.btn_delete_5.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_5.TabIndex = 222;
-            this.btn_delete_5.TabStop = false;
-            this.btn_delete_5.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_5.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_5.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_5.Location = new System.Drawing.Point(13, 309);
+            this.btn_delete_notification_5.Name = "btn_delete_notification_5";
+            this.btn_delete_notification_5.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_5.TabIndex = 222;
+            this.btn_delete_notification_5.TabStop = false;
+            this.btn_delete_notification_5.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_4
+            // btn_delete_notification_4
             // 
-            this.btn_delete_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_4.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_4.FlatAppearance.BorderSize = 0;
-            this.btn_delete_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_4.Location = new System.Drawing.Point(14, 283);
-            this.btn_delete_4.Name = "btn_delete_4";
-            this.btn_delete_4.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_4.TabIndex = 222;
-            this.btn_delete_4.TabStop = false;
-            this.btn_delete_4.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_4.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_4.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_4.Location = new System.Drawing.Point(13, 260);
+            this.btn_delete_notification_4.Name = "btn_delete_notification_4";
+            this.btn_delete_notification_4.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_4.TabIndex = 222;
+            this.btn_delete_notification_4.TabStop = false;
+            this.btn_delete_notification_4.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_3
+            // btn_delete_notification_3
             // 
-            this.btn_delete_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_3.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_3.FlatAppearance.BorderSize = 0;
-            this.btn_delete_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_3.Location = new System.Drawing.Point(14, 234);
-            this.btn_delete_3.Name = "btn_delete_3";
-            this.btn_delete_3.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_3.TabIndex = 222;
-            this.btn_delete_3.TabStop = false;
-            this.btn_delete_3.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_3.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_3.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_3.Location = new System.Drawing.Point(13, 211);
+            this.btn_delete_notification_3.Name = "btn_delete_notification_3";
+            this.btn_delete_notification_3.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_3.TabIndex = 222;
+            this.btn_delete_notification_3.TabStop = false;
+            this.btn_delete_notification_3.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_2
+            // btn_delete_notification_2
             // 
-            this.btn_delete_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_2.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_2.FlatAppearance.BorderSize = 0;
-            this.btn_delete_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_2.Location = new System.Drawing.Point(14, 185);
-            this.btn_delete_2.Name = "btn_delete_2";
-            this.btn_delete_2.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_2.TabIndex = 222;
-            this.btn_delete_2.TabStop = false;
-            this.btn_delete_2.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_2.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_2.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_2.Location = new System.Drawing.Point(13, 162);
+            this.btn_delete_notification_2.Name = "btn_delete_notification_2";
+            this.btn_delete_notification_2.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_2.TabIndex = 222;
+            this.btn_delete_notification_2.TabStop = false;
+            this.btn_delete_notification_2.UseVisualStyleBackColor = true;
             // 
-            // btn_delete_1
+            // btn_delete_notification_1
             // 
-            this.btn_delete_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_delete_1.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
-            this.btn_delete_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_1.FlatAppearance.BorderSize = 0;
-            this.btn_delete_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_delete_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_1.Location = new System.Drawing.Point(14, 136);
-            this.btn_delete_1.Name = "btn_delete_1";
-            this.btn_delete_1.Size = new System.Drawing.Size(27, 25);
-            this.btn_delete_1.TabIndex = 222;
-            this.btn_delete_1.TabStop = false;
-            this.btn_delete_1.UseVisualStyleBackColor = true;
+            this.btn_delete_notification_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_notification_1.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_notification_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_notification_1.FlatAppearance.BorderSize = 0;
+            this.btn_delete_notification_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_notification_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_notification_1.Location = new System.Drawing.Point(13, 113);
+            this.btn_delete_notification_1.Name = "btn_delete_notification_1";
+            this.btn_delete_notification_1.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_notification_1.TabIndex = 222;
+            this.btn_delete_notification_1.TabStop = false;
+            this.btn_delete_notification_1.UseVisualStyleBackColor = true;
             // 
-            // btn_update_8
+            // btn_update_notification_8
             // 
-            this.btn_update_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_8.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_8.FlatAppearance.BorderSize = 0;
-            this.btn_update_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_8.Location = new System.Drawing.Point(50, 479);
-            this.btn_update_8.Name = "btn_update_8";
-            this.btn_update_8.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_8.TabIndex = 222;
-            this.btn_update_8.TabStop = false;
-            this.btn_update_8.UseVisualStyleBackColor = true;
+            this.btn_update_notification_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_8.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_8.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_8.Location = new System.Drawing.Point(49, 456);
+            this.btn_update_notification_8.Name = "btn_update_notification_8";
+            this.btn_update_notification_8.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_8.TabIndex = 222;
+            this.btn_update_notification_8.TabStop = false;
+            this.btn_update_notification_8.UseVisualStyleBackColor = true;
             // 
-            // btn_update_7
+            // btn_update_notification_7
             // 
-            this.btn_update_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_7.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_7.FlatAppearance.BorderSize = 0;
-            this.btn_update_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_7.Location = new System.Drawing.Point(50, 430);
-            this.btn_update_7.Name = "btn_update_7";
-            this.btn_update_7.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_7.TabIndex = 222;
-            this.btn_update_7.TabStop = false;
-            this.btn_update_7.UseVisualStyleBackColor = true;
+            this.btn_update_notification_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_7.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_7.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_7.Location = new System.Drawing.Point(49, 407);
+            this.btn_update_notification_7.Name = "btn_update_notification_7";
+            this.btn_update_notification_7.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_7.TabIndex = 222;
+            this.btn_update_notification_7.TabStop = false;
+            this.btn_update_notification_7.UseVisualStyleBackColor = true;
             // 
-            // btn_update_6
+            // btn_update_notification_6
             // 
-            this.btn_update_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_6.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_6.FlatAppearance.BorderSize = 0;
-            this.btn_update_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_6.Location = new System.Drawing.Point(50, 381);
-            this.btn_update_6.Name = "btn_update_6";
-            this.btn_update_6.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_6.TabIndex = 222;
-            this.btn_update_6.TabStop = false;
-            this.btn_update_6.UseVisualStyleBackColor = true;
+            this.btn_update_notification_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_6.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_6.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_6.Location = new System.Drawing.Point(49, 358);
+            this.btn_update_notification_6.Name = "btn_update_notification_6";
+            this.btn_update_notification_6.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_6.TabIndex = 222;
+            this.btn_update_notification_6.TabStop = false;
+            this.btn_update_notification_6.UseVisualStyleBackColor = true;
             // 
-            // btn_update_5
+            // btn_update_notification_5
             // 
-            this.btn_update_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_5.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_5.FlatAppearance.BorderSize = 0;
-            this.btn_update_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_5.Location = new System.Drawing.Point(50, 332);
-            this.btn_update_5.Name = "btn_update_5";
-            this.btn_update_5.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_5.TabIndex = 222;
-            this.btn_update_5.TabStop = false;
-            this.btn_update_5.UseVisualStyleBackColor = true;
+            this.btn_update_notification_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_5.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_5.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_5.Location = new System.Drawing.Point(49, 309);
+            this.btn_update_notification_5.Name = "btn_update_notification_5";
+            this.btn_update_notification_5.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_5.TabIndex = 222;
+            this.btn_update_notification_5.TabStop = false;
+            this.btn_update_notification_5.UseVisualStyleBackColor = true;
             // 
-            // btn_update_4
+            // btn_update_notification_4
             // 
-            this.btn_update_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_4.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_4.FlatAppearance.BorderSize = 0;
-            this.btn_update_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_4.Location = new System.Drawing.Point(50, 283);
-            this.btn_update_4.Name = "btn_update_4";
-            this.btn_update_4.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_4.TabIndex = 222;
-            this.btn_update_4.TabStop = false;
-            this.btn_update_4.UseVisualStyleBackColor = true;
+            this.btn_update_notification_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_4.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_4.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_4.Location = new System.Drawing.Point(49, 260);
+            this.btn_update_notification_4.Name = "btn_update_notification_4";
+            this.btn_update_notification_4.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_4.TabIndex = 222;
+            this.btn_update_notification_4.TabStop = false;
+            this.btn_update_notification_4.UseVisualStyleBackColor = true;
             // 
-            // btn_update_3
+            // btn_update_notification_3
             // 
-            this.btn_update_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_3.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_3.FlatAppearance.BorderSize = 0;
-            this.btn_update_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_3.Location = new System.Drawing.Point(50, 234);
-            this.btn_update_3.Name = "btn_update_3";
-            this.btn_update_3.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_3.TabIndex = 222;
-            this.btn_update_3.TabStop = false;
-            this.btn_update_3.UseVisualStyleBackColor = true;
+            this.btn_update_notification_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_3.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_3.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_3.Location = new System.Drawing.Point(49, 211);
+            this.btn_update_notification_3.Name = "btn_update_notification_3";
+            this.btn_update_notification_3.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_3.TabIndex = 222;
+            this.btn_update_notification_3.TabStop = false;
+            this.btn_update_notification_3.UseVisualStyleBackColor = true;
             // 
-            // btn_update_2
+            // btn_update_notification_2
             // 
-            this.btn_update_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_2.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_2.FlatAppearance.BorderSize = 0;
-            this.btn_update_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_2.Location = new System.Drawing.Point(50, 185);
-            this.btn_update_2.Name = "btn_update_2";
-            this.btn_update_2.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_2.TabIndex = 222;
-            this.btn_update_2.TabStop = false;
-            this.btn_update_2.UseVisualStyleBackColor = true;
+            this.btn_update_notification_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_2.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_2.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_2.Location = new System.Drawing.Point(49, 162);
+            this.btn_update_notification_2.Name = "btn_update_notification_2";
+            this.btn_update_notification_2.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_2.TabIndex = 222;
+            this.btn_update_notification_2.TabStop = false;
+            this.btn_update_notification_2.UseVisualStyleBackColor = true;
             // 
-            // btn_update_1
+            // btn_update_notification_1
             // 
-            this.btn_update_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update_1.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
-            this.btn_update_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_update_1.FlatAppearance.BorderSize = 0;
-            this.btn_update_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.btn_update_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update_1.Location = new System.Drawing.Point(50, 136);
-            this.btn_update_1.Name = "btn_update_1";
-            this.btn_update_1.Size = new System.Drawing.Size(27, 25);
-            this.btn_update_1.TabIndex = 222;
-            this.btn_update_1.TabStop = false;
-            this.btn_update_1.UseVisualStyleBackColor = true;
+            this.btn_update_notification_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_notification_1.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_notification_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_notification_1.FlatAppearance.BorderSize = 0;
+            this.btn_update_notification_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_notification_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_notification_1.Location = new System.Drawing.Point(49, 113);
+            this.btn_update_notification_1.Name = "btn_update_notification_1";
+            this.btn_update_notification_1.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_notification_1.TabIndex = 222;
+            this.btn_update_notification_1.TabStop = false;
+            this.btn_update_notification_1.UseVisualStyleBackColor = true;
+            this.btn_update_notification_1.Click += new System.EventHandler(this.btn_update_notification_1_Click);
+            // 
+            // uc_add_notification
+            // 
+            this.uc_add_notification.BackColor = System.Drawing.Color.White;
+            this.uc_add_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uc_add_notification.Location = new System.Drawing.Point(39, 628);
+            this.uc_add_notification.Name = "uc_add_notification";
+            this.uc_add_notification.Size = new System.Drawing.Size(1048, 523);
+            this.uc_add_notification.TabIndex = 266;
+            this.uc_add_notification.Visible = false;
+            // 
+            // uc_update_notification
+            // 
+            this.uc_update_notification.BackColor = System.Drawing.Color.White;
+            this.uc_update_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uc_update_notification.Location = new System.Drawing.Point(39, 583);
+            this.uc_update_notification.Name = "uc_update_notification";
+            this.uc_update_notification.Size = new System.Drawing.Size(1048, 523);
+            this.uc_update_notification.TabIndex = 267;
+            this.uc_update_notification.Visible = false;
+            // 
+            // uc_add_notifications
+            // 
+            this.uc_add_notifications.BackColor = System.Drawing.Color.White;
+            this.uc_add_notifications.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uc_add_notifications.BackgroundImage")));
+            this.uc_add_notifications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.uc_add_notifications.Location = new System.Drawing.Point(-36, 283);
+            this.uc_add_notifications.Name = "uc_add_notifications";
+            this.uc_add_notifications.Size = new System.Drawing.Size(738, 444);
+            this.uc_add_notifications.TabIndex = 148;
+            this.uc_add_notifications.Visible = false;
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::Fireon.Properties.Resources.btn_back;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(1, 32);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(76, 41);
+            this.btn_back.TabIndex = 268;
+            this.btn_back.TabStop = false;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click_1);
             // 
             // Setting_Notifications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.uc_add_notification);
             this.Controls.Add(this.btn_add_notification);
             this.Controls.Add(this.pnl_del_upd);
-            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.pnl_setting_notification);
             this.Controls.Add(this.txtbx_setting_notifications);
             this.Controls.Add(this.lbl_setting_notifications);
-            this.Controls.Add(this.uc_add_notification);
             this.Controls.Add(this.uc_update_notification);
             this.Name = "Setting_Notifications";
             this.Size = new System.Drawing.Size(1060, 680);
@@ -550,27 +548,27 @@
         private System.Windows.Forms.Label lbl_date;
         private System.Windows.Forms.DataGridView dtgv_setting_notifications;
         private System.Windows.Forms.Label lbl_time;
-        private JImageButton.JImageButton btn_back;
         private Settings_Add_Notifications uc_add_notifications;
-        private Settings_Add_Notifications uc_add_notification;
-        private Settings_Update_Notification uc_update_notification;
         private System.Windows.Forms.Button btn_add_notification;
         private System.Windows.Forms.Panel pnl_del_upd;
-        private System.Windows.Forms.Button btn_delete_8;
-        private System.Windows.Forms.Button btn_delete_7;
-        private System.Windows.Forms.Button btn_delete_6;
-        private System.Windows.Forms.Button btn_delete_5;
-        private System.Windows.Forms.Button btn_delete_4;
-        private System.Windows.Forms.Button btn_delete_3;
-        private System.Windows.Forms.Button btn_delete_2;
-        private System.Windows.Forms.Button btn_delete_1;
-        private System.Windows.Forms.Button btn_update_8;
-        private System.Windows.Forms.Button btn_update_7;
-        private System.Windows.Forms.Button btn_update_6;
-        private System.Windows.Forms.Button btn_update_5;
-        private System.Windows.Forms.Button btn_update_4;
-        private System.Windows.Forms.Button btn_update_3;
-        private System.Windows.Forms.Button btn_update_2;
-        private System.Windows.Forms.Button btn_update_1;
+        private System.Windows.Forms.Button btn_delete_notification_8;
+        private System.Windows.Forms.Button btn_delete_notification_7;
+        private System.Windows.Forms.Button btn_delete_notification_6;
+        private System.Windows.Forms.Button btn_delete_notification_5;
+        private System.Windows.Forms.Button btn_delete_notification_4;
+        private System.Windows.Forms.Button btn_delete_notification_3;
+        private System.Windows.Forms.Button btn_delete_notification_2;
+        private System.Windows.Forms.Button btn_delete_notification_1;
+        private System.Windows.Forms.Button btn_update_notification_8;
+        private System.Windows.Forms.Button btn_update_notification_7;
+        private System.Windows.Forms.Button btn_update_notification_6;
+        private System.Windows.Forms.Button btn_update_notification_5;
+        private System.Windows.Forms.Button btn_update_notification_4;
+        private System.Windows.Forms.Button btn_update_notification_3;
+        private System.Windows.Forms.Button btn_update_notification_2;
+        private System.Windows.Forms.Button btn_update_notification_1;
+        private Settings_Add_Notifications uc_add_notification;
+        private Settings_Update_Notification uc_update_notification;
+        private System.Windows.Forms.Button btn_back;
     }
 }

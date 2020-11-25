@@ -72,21 +72,6 @@
     <Reference Include="JImageButton">
       <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JImageButton.dll</HintPath>
     </Reference>
-    <Reference Include="JMaterialTextbox">
-      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JMaterialTextbox.dll</HintPath>
-    </Reference>
-    <Reference Include="JMetroTextBox">
-      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JMetroTextBox.dll</HintPath>
-    </Reference>
-    <Reference Include="JTextBox">
-      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JTextBox.dll</HintPath>
-    </Reference>
-    <Reference Include="JTextBox2">
-      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JTextBox2.dll</HintPath>
-    </Reference>
-    <Reference Include="JThinButton">
-      <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\JControls\JThinButton.dll</HintPath>
-    </Reference>
     <Reference Include="MetroFramework">
       <HintPath>D:\FILES FOR GRAPHIC DESIGN\vb-frameworks\MetroFramework.dll</HintPath>
     </Reference>
@@ -339,12 +324,6 @@
     <None Include="Resources\btn_accounts_hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_add_db.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_add_db_hover.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\btn_add_doing.png" />
   </ItemGroup>
   <ItemGroup>
@@ -498,9 +477,6 @@
     <None Include="Resources\btn-deductions-hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn-delete.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\btn-delete-db.png" />
   </ItemGroup>
   <ItemGroup>
@@ -588,9 +564,6 @@
     <None Include="Resources\card-settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\close-hover.png" />
   </ItemGroup>
   <ItemGroup>
@@ -607,9 +580,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo-fireon-login.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimize.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimize-hover.png" />
@@ -664,7 +634,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icoFireon.ico" />
+    <None Include="Resources\btn_hire.png" />
+    <None Include="Resources\btn_add_db_hover.png" />
+    <None Include="Resources\btn_add_db.png" />
+    <None Include="Resources\btn-delete.png" />
     <None Include="Resources\btn_retirement.png" />
+    <None Include="Resources\btn_minimize_form.png" />
+    <None Include="Resources\btn_minimize.png" />
+    <None Include="Resources\btn_close.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\minimize.png" />
     <None Include="Resources\btn_logout.png" />
     <None Include="Resources\pnl_card_settings.png" />
     <None Include="Resources\btn_menu_hover.png" />
@@ -677,7 +656,6 @@
     <None Include="Resources\btn_save_draft_hover.png" />
     <None Include="Resources\btn_save_draft.png" />
     <None Include="Resources\btn_hire_hover.png" />
-    <None Include="Resources\btn_hire.png" />
     <None Include="Resources\btn_cancel_hover.png" />
     <None Include="Resources\btn-update-notif-hover.png" />
     <None Include="Resources\btn-update-notif.png" />

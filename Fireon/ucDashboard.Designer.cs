@@ -520,7 +520,7 @@
             this.Controls.Add(this.pnl_total_employees);
             this.Controls.Add(this.lbl_dashboard);
             this.Name = "ucDashboard";
-            this.Size = new System.Drawing.Size(1060, 680);
+            this.Size = new System.Drawing.Size(1060, 612);
             this.pnl_new_employees.ResumeLayout(false);
             this.pnl_new_employees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_new_employees_graph)).EndInit();

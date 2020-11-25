@@ -41,7 +41,7 @@
             this.lbl_choose_time_date.AutoSize = true;
             this.lbl_choose_time_date.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_choose_time_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(99)))), ((int)(((byte)(5)))));
-            this.lbl_choose_time_date.Location = new System.Drawing.Point(66, 228);
+            this.lbl_choose_time_date.Location = new System.Drawing.Point(122, 267);
             this.lbl_choose_time_date.Name = "lbl_choose_time_date";
             this.lbl_choose_time_date.Size = new System.Drawing.Size(317, 18);
             this.lbl_choose_time_date.TabIndex = 224;
@@ -66,7 +66,7 @@
             this.dtp_add_notif.CustomFormat = "MMMM dd, yyy hh:mm tt";
             this.dtp_add_notif.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_add_notif.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_add_notif.Location = new System.Drawing.Point(69, 256);
+            this.dtp_add_notif.Location = new System.Drawing.Point(125, 295);
             this.dtp_add_notif.MaxDate = new System.DateTime(2133, 5, 26, 0, 0, 0, 0);
             this.dtp_add_notif.MinDate = new System.DateTime(2020, 11, 20, 0, 0, 0, 0);
             this.dtp_add_notif.Name = "dtp_add_notif";
@@ -76,46 +76,51 @@
             // txtbx_description
             // 
             this.txtbx_description.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_description.Location = new System.Drawing.Point(69, 91);
+            this.txtbx_description.Location = new System.Drawing.Point(125, 108);
             this.txtbx_description.MaxLength = 200;
             this.txtbx_description.Multiline = true;
             this.txtbx_description.Name = "txtbx_description";
-            this.txtbx_description.Size = new System.Drawing.Size(577, 121);
+            this.txtbx_description.Size = new System.Drawing.Size(779, 121);
             this.txtbx_description.TabIndex = 1;
+            this.txtbx_description.TabStop = false;
             this.txtbx_description.Text = "Description";
             // 
             // btn_add_notif
             // 
+            this.btn_add_notif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_add_notif.BackgroundImage = global::Fireon.Properties.Resources.btn_add_active;
             this.btn_add_notif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_add_notif.FlatAppearance.BorderSize = 0;
             this.btn_add_notif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add_notif.Location = new System.Drawing.Point(532, 349);
+            this.btn_add_notif.Location = new System.Drawing.Point(842, 459);
             this.btn_add_notif.Name = "btn_add_notif";
             this.btn_add_notif.Size = new System.Drawing.Size(114, 25);
             this.btn_add_notif.TabIndex = 259;
             this.btn_add_notif.TabStop = false;
             this.btn_add_notif.UseVisualStyleBackColor = true;
+            this.btn_add_notif.Click += new System.EventHandler(this.btn_add_notif_Click);
             // 
             // btn_cancel_add_notif
             // 
+            this.btn_cancel_add_notif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cancel_add_notif.BackgroundImage = global::Fireon.Properties.Resources.btn_cancel;
             this.btn_cancel_add_notif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_cancel_add_notif.FlatAppearance.BorderSize = 0;
             this.btn_cancel_add_notif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancel_add_notif.Location = new System.Drawing.Point(412, 349);
+            this.btn_cancel_add_notif.Location = new System.Drawing.Point(722, 459);
             this.btn_cancel_add_notif.Name = "btn_cancel_add_notif";
             this.btn_cancel_add_notif.Size = new System.Drawing.Size(114, 25);
             this.btn_cancel_add_notif.TabIndex = 260;
             this.btn_cancel_add_notif.TabStop = false;
             this.btn_cancel_add_notif.UseVisualStyleBackColor = true;
+            this.btn_cancel_add_notif.Click += new System.EventHandler(this.btn_cancel_add_notif_Click);
             // 
             // Settings_Add_Notifications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btn_add_notif);
             this.Controls.Add(this.btn_cancel_add_notif);
             this.Controls.Add(this.txtbx_description);
@@ -124,8 +129,7 @@
             this.Controls.Add(this.lbl_choose_time_date);
             this.DoubleBuffered = true;
             this.Name = "Settings_Add_Notifications";
-            this.Size = new System.Drawing.Size(738, 413);
-            this.Load += new System.EventHandler(this.Settings_Add_Notifications_Load);
+            this.Size = new System.Drawing.Size(1048, 523);
             this.ResumeLayout(false);
             this.PerformLayout();
 

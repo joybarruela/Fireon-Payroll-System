@@ -17,11 +17,15 @@ namespace Fireon
             InitializeComponent();
         }
 
-        private void btn_cancel_Click(object sender, EventArgs e)
+        private void btn_cancel_update_notif_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-     
+        private void btn_update_notif_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+ 
     }
 }

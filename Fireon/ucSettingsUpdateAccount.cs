@@ -16,8 +16,12 @@ namespace Fireon
         {
             InitializeComponent();
         }
+        private void btn_cancel_update_account_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
 
-        private void btn_cancel_update_Click(object sender, EventArgs e)
+        private void btn_update_account_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
