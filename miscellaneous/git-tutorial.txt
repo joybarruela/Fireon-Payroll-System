@@ -1,0 +1,54 @@
+The purpose of this text file is to guide the reader (you) in using the Git basic commands.
+
+
+CREATING A LOCAL REPOSITORY
+1. Create new folder where you want to initialize the repository.
+2. Open Git CMD. If not yet, search Git online and download for your platform.
+3. Git CMD type "cd <location of your folder in #1>". 
+4. After that, type in "git init". If it is successful, you should see a folder named ".git" there.
+
+ADDING A FILE TO THE SOURCE CONTROL
+1. First, pick up your file and copy it beside the .git folder
+2. Open Git CMD. Do the cd and type "git add <yourfile.txt>".
+3. To check that it has been added, type in "git status" and that will show that the file is being tracked.
+
+COMMITTING A FILE
+1. If there is something to commit (when you type "git status" and it doesn't show "nothing to commit, working tree clean"). Then do this:
+2. add the items that you are going to commit by typing "git add <yourfile.txt>".
+3. After staging (adding) all files, last step is to type in <git commit -m "your_message_here">. The -m switch means message.
+
+GETTING RECENT COMMITS ON THE REPO
+1. Type in "git log".
+
+PUSHING FILES FROM LOCAL REPO FROM TO GITHUB
+1. Have your GitHub repository ready.
+2. In your Git CMD, make sure you're in a repo cd then type in 
+"git remote add origin https://github.com/username/repo.git". This line exactly means that you are linking the local repo from what's in the link from GitHub
+3. To verify if there made a connection, type in "git remote -v". The -v switch means verify if you have successfully connected to GitHub; it should show a link after typing the code
+3. Finally, to push the files from local repo to the origin, type in "git push -u origin master". The -u switch means that Git will remember the action, the origin is the link you linked a while ago, while the master means the master branch in your local repo.
+4. To check that the files were successfully pushed into GitHub, go to that repo and see if that's there.
+
+
+GETTING THE REPO FROM GITHUB AND MERGE WITH LOCAL REPO (kinda like get new version in server and sync from your local machine.)
+There are 2 ways to do that.
+
+A. FETCH AND MERGE
+1. In Git CMD, make sure it's cd and connected from server via git remote add origin. Fetch the server repo by typing in "git fetch origin master" - it just brought down the file somewhere so you need to merge it by "git fetch origin/master". The file is now synced from server to local repo.
+
+B. PULL
+1. type "git pull origin master" - this does a fetch and pull at the same time.
+
+DIFFERENCE BETWEEN THE 2: Fetch and Merge method is for seeing if there are conflicts between the files while the Pull method is there if you just wanna get the latest version and if you know there are no problems with the files.
+
+
+SWITCHING TO ANOTHER REPOSITORY
+1. Type in "git remote remove origin" and that breaks the connection from local to GitHub
+2. Type in "git remote add origin https://github.com/username/repo2.git"
+
+IN CASE OF UNRELATED HISTORY
+1. Type in "git pull origin master --allow-unrelated-histories"
+
+CLONING THE WHOLE REPOSITORY
+Note: You don't need to create a whole repository (running "git init") in Git CMD because in this method, you were cloning an existing one from the server, the repository location will be added automatically where cd is currently set.
+
+1. git clone https://github.com/username/the_repo_i_wanna_clone.git

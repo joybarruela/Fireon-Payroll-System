@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics; // FOR READING THE PROCESS OBJECT
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -66,7 +67,7 @@ namespace Fireon
         }
 
         private void btn_employee_Click(object sender, EventArgs e)
-        {     
+        {
             hide_user_control();
             uc_employee.Visible = true;
             uc_employee.Dock = DockStyle.Fill;
@@ -125,7 +126,7 @@ namespace Fireon
         }
 
         private void btn_deductions_Click(object sender, EventArgs e)
-        {  
+        {
             hide_user_control();
             uc_deductions.Visible = true;
             uc_deductions.Dock = DockStyle.Fill;
@@ -178,7 +179,7 @@ namespace Fireon
         }
 
         private void btn_settings_Click(object sender, EventArgs e)
-        {       
+        {
             hide_user_control();
             uc_settings.Visible = true;
             uc_settings.Dock = DockStyle.Fill;
@@ -194,11 +195,28 @@ namespace Fireon
             pnl_menu.Visible = !pnl_menu.Visible;
         }
 
+        /// <summary>
+        /// BARRUELA, VIBIESCA
+        /// WHEN THE USER CLICKS LOGOUT
+        /// </summary>
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            frmLogin main_form = new frmLogin();
-            this.Visible = false;
-            main_form.Show();   
+            pnl_menu.Visible = !pnl_menu.Visible; // HIDES THE MENU PANEL.
+            // ASK THE USER FIRST FOR CONFIRMATION
+            if (MessageBox.Show(Properties.Resources.str_logout_confirmation, Properties.Resources.str_program_title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Dispose(); // DISPOSES THIS FORM.
+                clsProgram.programInstance.Show(); // SHOWS THE LOGIN FORM BACK TO LIFE.
+            }
+        }
+
+        /// <summary>
+        /// VIBIESCA
+        /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.
+        /// </summary>
+        private void frmFireonPayroll_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            clsProgram.programInstance.Dispose(); // THIS LINE WILL KILL THE programInstance OBJECT WHICH IS THE frmLogin OBJECT
         }
     }
 }

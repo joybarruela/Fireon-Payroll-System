@@ -78,12 +78,12 @@
             // 
             this.lbl_dashboard.AutoSize = true;
             this.lbl_dashboard.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbl_dashboard.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbl_dashboard.Location = new System.Drawing.Point(0, 0);
             this.lbl_dashboard.Name = "lbl_dashboard";
             this.lbl_dashboard.Padding = new System.Windows.Forms.Padding(30, 30, 0, 20);
-            this.lbl_dashboard.Size = new System.Drawing.Size(223, 93);
+            this.lbl_dashboard.Size = new System.Drawing.Size(214, 87);
             this.lbl_dashboard.TabIndex = 138;
             this.lbl_dashboard.Text = "Dashboard";
             // 
@@ -91,12 +91,12 @@
             // 
             this.lbl_things_to_do_1.AutoSize = true;
             this.lbl_things_to_do_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_things_to_do_1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_things_to_do_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_things_to_do_1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_things_to_do_1.Location = new System.Drawing.Point(39, 387);
             this.lbl_things_to_do_1.Name = "lbl_things_to_do_1";
             this.lbl_things_to_do_1.Padding = new System.Windows.Forms.Padding(20, 20, 140, 20);
-            this.lbl_things_to_do_1.Size = new System.Drawing.Size(307, 60);
+            this.lbl_things_to_do_1.Size = new System.Drawing.Size(309, 58);
             this.lbl_things_to_do_1.TabIndex = 144;
             this.lbl_things_to_do_1.Text = "Calculate Payroll for all.";
             // 
@@ -104,12 +104,12 @@
             // 
             this.lbl_upcoming_1.AutoSize = true;
             this.lbl_upcoming_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_upcoming_1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_upcoming_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_upcoming_1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_upcoming_1.Location = new System.Drawing.Point(375, 387);
             this.lbl_upcoming_1.Name = "lbl_upcoming_1";
             this.lbl_upcoming_1.Padding = new System.Windows.Forms.Padding(20, 20, 105, 20);
-            this.lbl_upcoming_1.Size = new System.Drawing.Size(308, 60);
+            this.lbl_upcoming_1.Size = new System.Drawing.Size(311, 58);
             this.lbl_upcoming_1.TabIndex = 145;
             this.lbl_upcoming_1.Text = "Manage Employee over time.";
             // 
@@ -117,12 +117,12 @@
             // 
             this.lbl_upcoming_total.AutoSize = true;
             this.lbl_upcoming_total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(99)))), ((int)(((byte)(5)))));
-            this.lbl_upcoming_total.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_upcoming_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_upcoming_total.ForeColor = System.Drawing.Color.White;
             this.lbl_upcoming_total.Location = new System.Drawing.Point(650, 319);
             this.lbl_upcoming_total.Name = "lbl_upcoming_total";
             this.lbl_upcoming_total.Padding = new System.Windows.Forms.Padding(6);
-            this.lbl_upcoming_total.Size = new System.Drawing.Size(31, 34);
+            this.lbl_upcoming_total.Size = new System.Drawing.Size(30, 32);
             this.lbl_upcoming_total.TabIndex = 146;
             this.lbl_upcoming_total.Text = "2";
             // 
@@ -130,12 +130,12 @@
             // 
             this.lbl_things_to_do_total.AutoSize = true;
             this.lbl_things_to_do_total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(222)))), ((int)(((byte)(125)))));
-            this.lbl_things_to_do_total.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_things_to_do_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_things_to_do_total.ForeColor = System.Drawing.Color.White;
             this.lbl_things_to_do_total.Location = new System.Drawing.Point(314, 319);
             this.lbl_things_to_do_total.Name = "lbl_things_to_do_total";
             this.lbl_things_to_do_total.Padding = new System.Windows.Forms.Padding(6);
-            this.lbl_things_to_do_total.Size = new System.Drawing.Size(31, 34);
+            this.lbl_things_to_do_total.Size = new System.Drawing.Size(30, 32);
             this.lbl_things_to_do_total.TabIndex = 147;
             this.lbl_things_to_do_total.Text = "1";
             // 
@@ -165,33 +165,33 @@
             // 
             this.lbl_new_employees_amount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_new_employees_amount.AutoSize = true;
-            this.lbl_new_employees_amount.Font = new System.Drawing.Font("Open Sans SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_new_employees_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_new_employees_amount.ForeColor = System.Drawing.Color.White;
             this.lbl_new_employees_amount.Location = new System.Drawing.Point(23, 123);
             this.lbl_new_employees_amount.Name = "lbl_new_employees_amount";
-            this.lbl_new_employees_amount.Size = new System.Drawing.Size(57, 33);
+            this.lbl_new_employees_amount.Size = new System.Drawing.Size(55, 29);
             this.lbl_new_employees_amount.TabIndex = 1;
             this.lbl_new_employees_amount.Text = "500";
             // 
             // lbl_new
             // 
             this.lbl_new.AutoSize = true;
-            this.lbl_new.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_new.ForeColor = System.Drawing.Color.White;
             this.lbl_new.Location = new System.Drawing.Point(26, 18);
             this.lbl_new.Name = "lbl_new";
-            this.lbl_new.Size = new System.Drawing.Size(30, 15);
+            this.lbl_new.Size = new System.Drawing.Size(29, 13);
             this.lbl_new.TabIndex = 2;
             this.lbl_new.Text = "New";
             // 
             // lbl_employees_2
             // 
             this.lbl_employees_2.AutoSize = true;
-            this.lbl_employees_2.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employees_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_employees_2.ForeColor = System.Drawing.Color.White;
             this.lbl_employees_2.Location = new System.Drawing.Point(26, 33);
             this.lbl_employees_2.Name = "lbl_employees_2";
-            this.lbl_employees_2.Size = new System.Drawing.Size(63, 15);
+            this.lbl_employees_2.Size = new System.Drawing.Size(58, 13);
             this.lbl_employees_2.TabIndex = 2;
             this.lbl_employees_2.Text = "Employees";
             // 
@@ -221,33 +221,33 @@
             // 
             this.lbl_overtime_employees_amount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_overtime_employees_amount.AutoSize = true;
-            this.lbl_overtime_employees_amount.Font = new System.Drawing.Font("Open Sans SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_overtime_employees_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_overtime_employees_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbl_overtime_employees_amount.Location = new System.Drawing.Point(16, 123);
             this.lbl_overtime_employees_amount.Name = "lbl_overtime_employees_amount";
-            this.lbl_overtime_employees_amount.Size = new System.Drawing.Size(43, 33);
+            this.lbl_overtime_employees_amount.Size = new System.Drawing.Size(41, 29);
             this.lbl_overtime_employees_amount.TabIndex = 1;
             this.lbl_overtime_employees_amount.Text = "50";
             // 
             // lbl_employees
             // 
             this.lbl_employees.AutoSize = true;
-            this.lbl_employees.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_employees.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_employees.Location = new System.Drawing.Point(19, 33);
             this.lbl_employees.Name = "lbl_employees";
-            this.lbl_employees.Size = new System.Drawing.Size(63, 15);
+            this.lbl_employees.Size = new System.Drawing.Size(58, 13);
             this.lbl_employees.TabIndex = 2;
             this.lbl_employees.Text = "Employees";
             // 
             // lbl_overtime
             // 
             this.lbl_overtime.AutoSize = true;
-            this.lbl_overtime.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_overtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_overtime.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_overtime.Location = new System.Drawing.Point(19, 18);
             this.lbl_overtime.Name = "lbl_overtime";
-            this.lbl_overtime.Size = new System.Drawing.Size(55, 15);
+            this.lbl_overtime.Size = new System.Drawing.Size(49, 13);
             this.lbl_overtime.TabIndex = 2;
             this.lbl_overtime.Text = "Overtime";
             // 
@@ -277,33 +277,33 @@
             // 
             this.lbl_total_employees_amount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_total_employees_amount.AutoSize = true;
-            this.lbl_total_employees_amount.Font = new System.Drawing.Font("Open Sans SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total_employees_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_total_employees_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbl_total_employees_amount.Location = new System.Drawing.Point(12, 123);
             this.lbl_total_employees_amount.Name = "lbl_total_employees_amount";
-            this.lbl_total_employees_amount.Size = new System.Drawing.Size(77, 33);
+            this.lbl_total_employees_amount.Size = new System.Drawing.Size(76, 29);
             this.lbl_total_employees_amount.TabIndex = 1;
             this.lbl_total_employees_amount.Text = "1,000";
             // 
             // lbl_employees_1
             // 
             this.lbl_employees_1.AutoSize = true;
-            this.lbl_employees_1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employees_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_employees_1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_employees_1.Location = new System.Drawing.Point(15, 33);
             this.lbl_employees_1.Name = "lbl_employees_1";
-            this.lbl_employees_1.Size = new System.Drawing.Size(63, 15);
+            this.lbl_employees_1.Size = new System.Drawing.Size(58, 13);
             this.lbl_employees_1.TabIndex = 2;
             this.lbl_employees_1.Text = "Employees";
             // 
             // lbl_total
             // 
             this.lbl_total.AutoSize = true;
-            this.lbl_total.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_total.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_total.Location = new System.Drawing.Point(15, 18);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(36, 15);
+            this.lbl_total.Size = new System.Drawing.Size(34, 13);
             this.lbl_total.TabIndex = 2;
             this.lbl_total.Text = "Total ";
             // 
@@ -311,12 +311,12 @@
             // 
             this.lbl_done_total.AutoSize = true;
             this.lbl_done_total.BackColor = System.Drawing.Color.Gold;
-            this.lbl_done_total.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_done_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_done_total.ForeColor = System.Drawing.Color.White;
             this.lbl_done_total.Location = new System.Drawing.Point(990, 320);
             this.lbl_done_total.Name = "lbl_done_total";
             this.lbl_done_total.Padding = new System.Windows.Forms.Padding(6);
-            this.lbl_done_total.Size = new System.Drawing.Size(31, 34);
+            this.lbl_done_total.Size = new System.Drawing.Size(30, 32);
             this.lbl_done_total.TabIndex = 146;
             this.lbl_done_total.Text = "0";
             // 
@@ -453,12 +453,12 @@
             // 
             this.lbl_done_1.AutoSize = true;
             this.lbl_done_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_done_1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_done_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_done_1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_done_1.Location = new System.Drawing.Point(713, 387);
             this.lbl_done_1.Name = "lbl_done_1";
             this.lbl_done_1.Padding = new System.Windows.Forms.Padding(20, 20, 105, 20);
-            this.lbl_done_1.Size = new System.Drawing.Size(308, 60);
+            this.lbl_done_1.Size = new System.Drawing.Size(311, 58);
             this.lbl_done_1.TabIndex = 145;
             this.lbl_done_1.Text = "Manage Employee over time.";
             // 
@@ -520,7 +520,7 @@
             this.Controls.Add(this.pnl_total_employees);
             this.Controls.Add(this.lbl_dashboard);
             this.Name = "ucDashboard";
-            this.Size = new System.Drawing.Size(1060, 612);
+            this.Size = new System.Drawing.Size(1060, 595);
             this.pnl_new_employees.ResumeLayout(false);
             this.pnl_new_employees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_new_employees_graph)).EndInit();

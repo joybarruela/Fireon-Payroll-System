@@ -38,7 +38,6 @@
             this.lbl_percentage = new System.Windows.Forms.Label();
             this.dtgv_deductions = new System.Windows.Forms.DataGridView();
             this.lbl_deductions = new System.Windows.Forms.Label();
-            this.jImageButton2 = new JImageButton.JImageButton();
             this.cmbx_regular_contractual = new System.Windows.Forms.ComboBox();
             this.txtbx_search = new System.Windows.Forms.TextBox();
             this.cmbx_year = new System.Windows.Forms.ComboBox();
@@ -162,26 +161,6 @@
             this.lbl_deductions.Size = new System.Drawing.Size(230, 83);
             this.lbl_deductions.TabIndex = 172;
             this.lbl_deductions.Text = "Deductions";
-            // 
-            // jImageButton2
-            // 
-            this.jImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.jImageButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.jImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.jImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.jImageButton2.CausesValidation = false;
-            this.jImageButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("jImageButton2.ErrorImage")));
-            this.jImageButton2.Image = null;
-            this.jImageButton2.ImageHover = null;
-            this.jImageButton2.InitialImage = null;
-            this.jImageButton2.Location = new System.Drawing.Point(786, 628);
-            this.jImageButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.jImageButton2.Name = "jImageButton2";
-            this.jImageButton2.Size = new System.Drawing.Size(125, 29);
-            this.jImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.jImageButton2.TabIndex = 180;
-            this.jImageButton2.Zoom = 0;
             // 
             // cmbx_regular_contractual
             // 
@@ -585,7 +564,6 @@
             this.Controls.Add(this.cmbx_month);
             this.Controls.Add(this.cmbx_position);
             this.Controls.Add(this.cmbx_department);
-            this.Controls.Add(this.jImageButton2);
             this.Controls.Add(this.pnl_deductions);
             this.Controls.Add(this.lbl_deductions);
             this.Name = "ucDeductions";
@@ -602,7 +580,6 @@
 
         #endregion
 
-        private JImageButton.JImageButton jImageButton2;
         private System.Windows.Forms.Panel pnl_deductions;
         private System.Windows.Forms.DataGridView dtgv_deductions;
         private System.Windows.Forms.Label lbl_deductions;

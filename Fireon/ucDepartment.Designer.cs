@@ -48,7 +48,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.jImageButton2 = new JImageButton.JImageButton();
+
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.cmbx_regular_contractual = new System.Windows.Forms.ComboBox();
@@ -290,24 +290,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1330, 41);
             this.flowLayoutPanel1.TabIndex = 149;
             // 
-            // jImageButton2
-            // 
-            this.jImageButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.jImageButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.jImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.jImageButton2.CausesValidation = false;
-            this.jImageButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("jImageButton2.ErrorImage")));
-            this.jImageButton2.Image = global::Fireon.Properties.Resources.btn_print;
-            this.jImageButton2.ImageHover = null;
-            this.jImageButton2.InitialImage = null;
-            this.jImageButton2.Location = new System.Drawing.Point(2949, 811);
-            this.jImageButton2.Name = "jImageButton2";
-            this.jImageButton2.Size = new System.Drawing.Size(118, 31);
-            this.jImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.jImageButton2.TabIndex = 153;
-            this.jImageButton2.Zoom = 0;
-            // 
             // comboBox4
             // 
             this.comboBox4.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -460,7 +442,6 @@
             this.Controls.Add(this.cmbx_regular_contractual);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.jImageButton2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lbl_department);
             this.Controls.Add(this.label14);
@@ -479,7 +460,7 @@
 
         #endregion
 
-        private JImageButton.JImageButton jImageButton2;
+
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

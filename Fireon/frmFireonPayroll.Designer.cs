@@ -135,7 +135,7 @@
             // 
             // lbl_user
             // 
-            this.lbl_user.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             this.lbl_user.Location = new System.Drawing.Point(937, 22);
             this.lbl_user.Name = "lbl_user";
@@ -145,7 +145,7 @@
             // 
             // lbl_greeting
             // 
-            this.lbl_greeting.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_greeting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_greeting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             this.lbl_greeting.Location = new System.Drawing.Point(836, 22);
             this.lbl_greeting.Name = "lbl_greeting";
@@ -233,7 +233,7 @@
             // 
             this.lbl_date_today.BackColor = System.Drawing.Color.Transparent;
             this.lbl_date_today.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_date_today.Font = new System.Drawing.Font("Open Sans", 9F);
+            this.lbl_date_today.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lbl_date_today.ForeColor = System.Drawing.Color.Black;
             this.lbl_date_today.Location = new System.Drawing.Point(0, 682);
             this.lbl_date_today.Name = "lbl_date_today";
@@ -246,7 +246,7 @@
             // 
             this.lbl_version.BackColor = System.Drawing.Color.Transparent;
             this.lbl_version.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_version.Font = new System.Drawing.Font("Open Sans", 9F);
+            this.lbl_version.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lbl_version.ForeColor = System.Drawing.Color.Black;
             this.lbl_version.Location = new System.Drawing.Point(0, 702);
             this.lbl_version.Name = "lbl_version";
@@ -354,7 +354,7 @@
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             this.label9.Location = new System.Drawing.Point(0, 467);
             this.label9.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -567,7 +567,7 @@
             // 
             this.lbl_manage_employee.BackColor = System.Drawing.Color.Transparent;
             this.lbl_manage_employee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_manage_employee.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_manage_employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_manage_employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             this.lbl_manage_employee.Location = new System.Drawing.Point(0, 120);
             this.lbl_manage_employee.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -777,9 +777,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1366, 768);
             this.Name = "frmFireonPayroll";
-            this.TopMost = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Fireon Payroll System Dashboard";
             this.TransparencyKey = System.Drawing.Color.DarkRed;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFireonPayroll_FormClosed);
             this.Load += new System.EventHandler(this.Fireon_Load);
             this.pnl_header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picb_user)).EndInit();

@@ -1,0 +1,95 @@
+HOW TO CONNECT MySQL to C# .NET
+
+INSTALLATION PHASE
+1. Go to this link:
+https://dev.mysql.com/downloads/installer/
+
+2. Choose 2.5 MB version if you want to install it online.
+3. Choose the 405.2 MB version if you want to install it fully and offline.
+4. Open the program and install these necessary components for this tutorial:
+	PRODUCT		           Version
+	___________________________________
+	a. MySQL Server            | 8.0.22
+	b. MySQL Workbench         | 8.0.22
+	c. MySQL for Visual Studio | 1.2.3
+	d. Connector/NET           | 8.0.22
+5. Make sure the versions are correct.
+6. Lastly install the 328 mb 4.5.2 .NET Framework on the link below.
+
+CONNECTING MySQL to VISUAL STUDIO PHASE
+1. After all those components are installed, in VS, go to Solution Explorer > Properties > Add Reference > Search for "MySQL.Data."
+	a. If you cannot see a "MySql.Data" on the choices, that means that MySQL Connector is not successfully installed.
+	b. You should now see a "MySql.Data" listed under the "References" section.
+	c. Right-click tha reference and go to Properties > Copy Local and set it to true. 
+	d. Copy Local Property means that the dll will be copied on the system every time the user runs it so that other collaborators would not have to download it anymore.
+	
+2. Open up your MySQL Workbench and create a connection.
+3. In VS, go to Server Explorer then Right Click Data Connections > Add Connection
+	a. The Data source should be MySQL Database. Again, if you don't see it there that means that your MySQL for Visual Studio installation failed. Go to #3 link again.
+	b. Enter the server name as localhost or 127.0.0.1, the username for the connection which is root by default and the password is 1234
+		"server=localhost;user id=root;password=1234;database=fireon"
+		i.	server=localhost
+		ii.	user id=root
+		iii.	password=1234
+		iv.	database=fireon
+	c. Click Test Connection below, it should say connection successful.
+	d. Then click on the Database name combobox, and you should see the database you created in MySQL Workbench a while ago.
+	e. Click ok then done.
+	f. Import the database.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOR OFFLINE INDIVIDUAL INSTALLATION
+
+NOTES
+- If you have a 32-bit PC, you can only download 32-bit apps.
+- If you have a 64-bit PC, you can download either 32 or 64 bit apps.
+- If you will not directly download the components from the website, then these are the links for offline download.
+
+1. MySQL Connector
+	LINK: dev.mysql.com/downloads/connector/net
+	a. This enables you to add the "MySQL.Data" on the References section.
+	b. Choose Microsoft Windows OS
+	c. 3.9 MB size
+
+2. MySQL Workbench
+	LINK: https://dev.mysql.com/downloads/workbench/
+	a. This tool you to manage database connections and database schemas.
+	c. 35 MB size
+
+3. MySQL for Visual Studio
+	LINK: https://downloads.mysql.com/archives/visualstudio/
+	a. On the page, please select version 1.2.3 only (VERY IMPORTANT)
+	b. Choosing newer versions won't allow you to install it on a VS 2013
+	c. This installer enables you to Add Data Connection and choose "MySQL"
+	d. 10 MB size
+
+4. Visual C++ 2019 Redistributable
+	LINK: https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+	a. You will need this to complete the installation of MySQL Workbench
+	b. 13 MB size
+
+5. NO LINK FOR MySQL SERVER 8.0.22, I believe use the 2.5M version online installer above.
+
+6. .NET Framework 4.5.2 Offline Installer / Multi-Targeting Pack
+	LINK: https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net452-developer-pack-offline-installer
+	a. 328 MB size :(	

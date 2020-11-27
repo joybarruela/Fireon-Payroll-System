@@ -346,4 +346,51 @@
   <data name="btn_retirement" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_retirement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_eye_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\btn-eye-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="str_welcome_message" xml:space="preserve">
+    <value>Welcome to Fireon Payroll System.</value>
+    <comment>Message to be shown when the user opens the program.</comment>
+  </data>
+  <data name="str_program_title" xml:space="preserve">
+    <value>Fireon Payroll System</value>
+    <comment>Program title to be used somewhere.</comment>
+  </data>
+  <data name="str_connection_string" xml:space="preserve">
+    <value>server=localhost;user id=root;password=1234;database=fireon</value>
+    <comment>Your local database setup should have the same credentials like this string resource.</comment>
+  </data>
+  <data name="int_login_attempts" xml:space="preserve">
+    <value>3</value>
+    <comment>Number of times the user can login.</comment>
+  </data>
+  <data name="str_login_match" xml:space="preserve">
+    <value>Credentials match.</value>
+    <comment>When user gets the username and password correct.</comment>
+  </data>
+  <data name="str_login_mismatch" xml:space="preserve">
+    <value>Credentials mismatch.</value>
+    <comment>When user gets the username and password wrong.</comment>
+  </data>
+  <data name="str_login_terminate" xml:space="preserve">
+    <value>Too much attempts. Program will now exit.</value>
+    <comment>The message if the user attempts to login above the limit.</comment>
+  </data>
+  <data name="str_loading_message" xml:space="preserve">
+    <value>Loading will take some time, please be patient.</value>
+    <comment>Simple loading message.</comment>
+  </data>
+  <data name="str_process_name_deploy" xml:space="preserve">
+    <value>Fireon</value>
+    <comment>The name of the process that gets loaded and displayed in the Task Manager.</comment>
+  </data>
+  <data name="str_process_name_debug" xml:space="preserve">
+    <value>vshost32</value>
+    <comment>The name of the process that gets loaded and displayed in the Task Manager when debugging.</comment>
+  </data>
+  <data name="str_logout_confirmation" xml:space="preserve">
+    <value>Save any work before logging out. Continue?</value>
+    <comment>Before the user logs out prompt.</comment>
+  </data>
 </root>
