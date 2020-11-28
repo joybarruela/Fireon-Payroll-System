@@ -52,3 +52,9 @@ CLONING THE WHOLE REPOSITORY
 Note: You don't need to create a whole repository (running "git init") in Git CMD because in this method, you were cloning an existing one from the server, the repository location will be added automatically where cd is currently set.
 
 1. git clone https://github.com/username/the_repo_i_wanna_clone.git
+
+PUSING USING GIT CMD ERROR 
+
+1. If you GitHub account uses 2FA, you cannot just use your own password on doing git push origin master
+2. You have to go to GitHub account > Settings > Developer Settings > Request for Access Token
+3. When you have that long string of garble, use that as your password on Git CMD and it will be fine now on.
