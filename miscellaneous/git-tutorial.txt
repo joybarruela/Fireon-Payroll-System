@@ -1,6 +1,25 @@
 The purpose of this text file is to guide the reader (you) in using the Git basic commands.
 
 
+GIT LINGO
+Git - 
+GitHub - 
+Repository - 
+
+Version Control System
+
+Remote Repository
+Local Repository
+
+
+GIT Commands
+Add - 
+Clone - 
+Commit - 
+Push
+Log - 
+Pull - 
+
 CREATING A LOCAL REPOSITORY
 1. Create new folder where you want to initialize the repository.
 2. Open Git CMD. If not yet, search Git online and download for your platform.

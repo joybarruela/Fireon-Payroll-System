@@ -67,7 +67,6 @@ namespace Fireon
             dbClose(); // CLOSE THE CONNECTION.
             return false; // RETURN FALSE IF PROGRAM DID NOT FIND A MATCHING CREDENTIALS.
         }
-
         /// <summary>
         /// VIBIESCA
         /// THIS METHOD TAKES A QUERY, LIKE SELECT * FROM tbl_accounts, AND PUTS IT IN A DataGridView OBJECT.
@@ -85,7 +84,6 @@ namespace Fireon
 
             dbClose(); // CLOSE THE CONNECTION.
         }
-
         /// <summary>
         /// VIBIESCA
         /// THIS METHOD OPENS THE DATABASE CONNECTION
@@ -98,7 +96,6 @@ namespace Fireon
                 dbCon.Open();
             }
         }
-
         /// <summary>
         /// VIBIESCA
         /// THIS METHOD CLOSES THE DATABASE CONNECTION

@@ -93,10 +93,10 @@ namespace Fireon
              * #4 IF THE VALUE IS ALREADY "FALSE", THEN SET BACK Tag PROPERTY TO "TRUE" AND UseSystemPasswordChar PROPERTY OF txtbx_pw TO "TRUE" AGAIN.
              */
             // #2
-            if (String.Compare(btn_see_pw.Tag.ToString(), "TRUE") == 0)
+            if (String.Compare(txtbx_pw.Tag.ToString(), "TRUE") == 0)
             {
                 // #3
-                btn_see_pw.Tag = "FALSE";
+                txtbx_pw.Tag = "FALSE";
                 txtbx_pw.UseSystemPasswordChar = false;
                 // CHANGE EYE LOGO TO ACTIVATED
                 btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
@@ -104,7 +104,7 @@ namespace Fireon
             // #4
             else
             {
-                btn_see_pw.Tag = "TRUE";
+                txtbx_pw.Tag = "TRUE";
                 txtbx_pw.UseSystemPasswordChar = true;
                 // CHANGE EYE LOGO TO DEACTIVATED
                 btn_see_pw.BackgroundImage = Properties.Resources.btn_eye;
@@ -127,7 +127,7 @@ namespace Fireon
         {
             // CHANGES THE IMAGE WHEN MOUSE LEAVES THE EYE
             // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE.
-            if (String.Compare(btn_see_pw.Tag.ToString(),"FALSE") == 0)
+            if (String.Compare(txtbx_pw.Tag.ToString(), "FALSE") == 0)
             {
                 btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
             }
