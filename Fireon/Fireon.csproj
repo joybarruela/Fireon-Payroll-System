@@ -172,6 +172,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucNewEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNewEmployee.Designer.cs">
+      <DependentUpon>ucNewEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucOvertime.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -266,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNewEmployee.resx">
+      <DependentUpon>ucNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucOvertime.resx">
       <DependentUpon>ucOvertime.cs</DependentUpon>
