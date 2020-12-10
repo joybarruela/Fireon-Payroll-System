@@ -21,5 +21,13 @@ namespace Fireon
         {
 
         }
+
+        private void btn_hire_employees_Click(object sender, EventArgs e)
+        {
+            ucNewEmployee newEmployee = new ucNewEmployee();
+
+            newEmployee.Dock = DockStyle.Fill;
+            newEmployee.BringToFront();
+        }
     }
 }
