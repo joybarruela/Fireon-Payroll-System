@@ -36,5 +36,10 @@ namespace Fireon
         {
 
         }
+
+        private void ucDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

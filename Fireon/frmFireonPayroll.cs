@@ -22,48 +22,11 @@ namespace Fireon
         /// </summary>
         public frmFireonPayroll()
         {
+            // CREATE ALL ITEMS INSIDE THIS FORM
             InitializeComponent();
 
-            btn_dashboard.BackgroundImage = Properties.Resources.btn_dashboard_active; // DEFAULT SELECTED
-            uc_dashboard.BringToFront(); // DEFAULT SELECTED
-
-            uc_dashboard.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_all.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_allowances.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_cash_advance.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_deductions.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_department.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_employee.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_holiday.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_leave.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_overtime.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_settings.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_single_posting.Visible = true; // PRE HIDES THE UC ON RUNTIME
-            uc_violations.Visible = true; // PRE HIDES THE UC ON RUNTIME
-
-            uc_dashboard.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_all.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_allowances.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_cash_advance.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_deductions.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_department.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_employee.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_holiday.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_leave.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_overtime.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_settings.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_single_posting.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-            uc_violations.Dock = DockStyle.Fill; // PRE FILLS THE UC ON RUNTIME
-        }
-        /// <summary>
-        /// WHEN THE PROGRAM LOADS.
-        /// THE PURPOSE OF THE PRE FILLS IS FOR THE PROGRAM TO DO IT EARLY BECAUSE THIS FORM IS LOADED
-        /// ON THE LOGIN PHASE ALREADY, SO IT'S BETTER TO SET THE POSITIONS BEFORE IT GETS LOADED.
-        /// IT IS TO KEEP VISUAL LAG.
-        /// </summary>
-        private void Fireon_Load(object sender, EventArgs e)
-        {
-
+            // DISPLAY DASHBOARD FIRST
+            displayUserControl("Dashboard");
         }
         /// <summary>
         /// BARRUELA
@@ -87,39 +50,68 @@ namespace Fireon
             btn_single_posting.BackgroundImage = Properties.Resources.btn_single_posting; // RESET BUTTON BG
         }
         /// <summary>
-        /// BARRUELA
-        /// THIS METHOD IS CALLED WHENEVER THE USER CLICKS ON THE LEFT SIDEBAR.
-        /// PURPOSE OF THIS IS TO HIDE ALL USER CONTROLS.
+        /// VIBIESCA
+        /// CALL THIS TO SHOW ITEMS ON THE DASHBOARD
         /// </summary>
-        public void hide_user_control()
+        public void displayUserControl(string name)
         {
-            //uc_all.Hide(); // HIDE THIS USER CONTROL.
-            //uc_allowances.Hide(); // HIDE THIS USER CONTROL.
-            //uc_cash_advance.Hide(); // HIDE THIS USER CONTROL.
-            //uc_dashboard.Hide(); ; // HIDE THIS USER CONTROL.
-            //uc_deductions.Hide(); // HIDE THIS USER CONTROL.
-            //uc_department.Hide(); // HIDE THIS USER CONTROL.
-            //uc_employee.Hide(); // HIDE THIS USER CONTROL.
-            //uc_holiday.Hide(); // HIDE THIS USER CONTROL.
-            //uc_leave.Hide(); // HIDE THIS USER CONTROL.
-            //uc_overtime.Hide(); // HIDE THIS USER CONTROL.
-            //uc_settings.Hide(); // HIDE THIS USER CONTROL.
-            //uc_single_posting.Hide(); // HIDE THIS USER CONTROL.
-            //uc_violations.Hide(); // HIDE THIS USER CONTROL.
+            switch (name)
+            {
+                case "Dashboard":
+                    if (this.Text != "Fireon Payroll System | Dashboard")
+                    {
+                        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
+                        btn_dashboard.BackgroundImage = Properties.Resources.btn_dashboard_active; // SET BUTTON ACTIVE
+                        ucDashboard ucDashboard = new ucDashboard(); // CREATES A NEW UserControl
+                        ucDashboard.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                        ucDashboard.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                        this.Text = "Fireon Payroll System | Dashboard";
+                        break;                    
+                    }
+                    else { break; };
 
-            uc_all.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_allowances.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_cash_advance.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_dashboard.SendToBack(); ; // SendToBack THIS USER CONTROL.
-            uc_deductions.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_department.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_employee.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_holiday.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_leave.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_overtime.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_settings.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_single_posting.SendToBack(); // SendToBack THIS USER CONTROL.
-            uc_violations.SendToBack(); // SendToBack THIS USER CONTROL.
+                case "Employee":
+                    if (this.Text != "Fireon Payroll System | Employee")
+                    {
+                        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
+                        btn_employee.BackgroundImage = Properties.Resources.btn_employee_active; // SET BUTTON ACTIVE
+                        ucEmployee ucEmployee = new ucEmployee(); // CREATES A NEW UserControl
+                        ucEmployee.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                        ucEmployee.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                        this.Text = "Fireon Payroll System | Employee";
+                        break;                    
+                    }
+                    else { break; };
+
+                case "Leave":
+                    if (this.Text != "Fireon Payroll System | Leave")
+                    {
+                        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
+                        btn_leave.BackgroundImage = Properties.Resources.btn_leave_active; // SET BUTTON ACTIVE
+                        ucLeave ucLeave = new ucLeave(); // CREATES A NEW UserControl
+                        ucLeave.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                        ucLeave.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                        this.Text = "Fireon Payroll System | Leave";
+                        break;
+                    }
+                    else { break; };
+
+
+
+
+
+
+
+
+
+
+
+                default:
+                    break;
+            }
         }
         /// <summary>
         /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE MENU BUTTON ON THE UPPER RIGHT SIDE. (THE THREE DOTS).
@@ -151,6 +143,7 @@ namespace Fireon
         {
             clsProgram.programInstance.Dispose(); // THIS LINE WILL KILL THE programInstance OBJECT WHICH IS THE frmLogin OBJECT.
         }
+        
         #region LEFT SIDEBAR CLICK EVENTS
         /// <summary>
         /// BARRUELA, VIBIESCA
@@ -158,91 +151,70 @@ namespace Fireon
         /// </summary>
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
-            deactivate_button(); // DEACTIVATE BUTTON RESETS ALL THE BG IMAGE OF LEFT SIDEBAR BUTTONS.
-            uc_dashboard.BringToFront(); // BRING TO FRONT.
-            btn_dashboard.BackgroundImage = Properties.Resources.btn_dashboard_active; // ONLY CHANGE THE CURRENT SELECTED BUTTON.
+            displayUserControl("Dashboard");
         }
         private void btn_employee_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_employee.BringToFront();
-            btn_employee.BackgroundImage = Properties.Resources.btn_employee_active;
+            displayUserControl("Employee");
         }
         private void btn_leave_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_leave.BringToFront();
-            btn_leave.BackgroundImage = Properties.Resources.btn_leave_active;
+            displayUserControl("Leave");
         }
         private void btn_overtime_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_overtime.BringToFront();
-            btn_overtime.BackgroundImage = Properties.Resources.btn_overtime_active;
         }
         private void btn_holiday_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_holiday.BringToFront();
-            btn_holiday.BackgroundImage = Properties.Resources.btn_holiday_active;
         }
         private void btn_violations_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_violations.BringToFront();
-            btn_violations.BackgroundImage = Properties.Resources.btn_violations_active;
         }
         private void btn_cash_advance_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_cash_advance.BringToFront();
-            btn_cash_advance.BackgroundImage = Properties.Resources.btn_cash_advance_active;
         }
         private void btn_deductions_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_deductions.BringToFront();
-            btn_deductions.BackgroundImage = Properties.Resources.btn_deductions_active;
         }
         private void btn_allowances_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_allowances.BringToFront();
-            btn_allowances.BackgroundImage = Properties.Resources.btn_allowances_active;
         }
         private void btn_all_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_all.BringToFront();
-            btn_all.BackgroundImage = Properties.Resources.btn_all_active;
         }
         private void btn_department_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_department.BringToFront();
-            btn_department.BackgroundImage = Properties.Resources.btn_department_active;
         }
         private void btn_single_posting_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_single_posting.BringToFront();
-            btn_single_posting.BackgroundImage = Properties.Resources.btn_single_active;
         }
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            deactivate_button();
-            uc_settings.BringToFront();
-            btn_settings.BackgroundImage = Properties.Resources.btn_settings_active;
         }
-        //private void btn_dashboard_Click(object sender, EventArgs e) // BACKUP
-        //{
-        //    hide_user_control(); // HIDES ALL THE USER CONTROL.
-        //    uc_dashboard.Visible = true; // ONLY SHOW THE DASHBOARD USER CONTROL.
-        //    uc_dashboard.Dock = DockStyle.Fill; // TO FIT ON THE WINDOW.
-        //    uc_dashboard.BringToFront(); // BRING TO FRONT.
-        //    deactivate_button(); // DEACTIVATE BUTTON RESETS ALL THE BG IMAGE OF LEFT SIDEBAR BUTTONS.
-        //    btn_dashboard.BackgroundImage = Properties.Resources.btn_dashboard_active; // ONLY CHANGE THE CURRENT SELECTED BUTTON.
-        //}
         #endregion
+
+        /// <summary>
+        /// VIBIESCA
+        /// THIS METHOD GETS CALLED WHENVER THE USER RESIZES THE FORM (FOR RESPONSIVENESS)
+        /// </summary>
+        private void frmFireonPayroll_SizeChanged(object sender, EventArgs e)
+        {
+            int formDefaultHeight = 680;
+            int picbFireonHeight = 50;
+            int pnlSeparatorHeight = 10;
+
+            if (this.Size.Height > formDefaultHeight)
+            {
+                picb_fireon.Height = picbFireonHeight + ((this.Size.Height - formDefaultHeight) / 3);
+                pnl_separator_0.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
+                pnl_separator_1.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
+            }
+            else
+            {
+                picb_fireon.Height = picbFireonHeight - ((this.Size.Height - formDefaultHeight) / 3);
+                pnl_separator_0.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
+                pnl_separator_1.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
+            }
+        }
     }
 }

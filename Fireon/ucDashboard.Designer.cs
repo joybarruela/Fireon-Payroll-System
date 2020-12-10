@@ -30,96 +30,119 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDashboard));
             this.lbl_dashboard = new System.Windows.Forms.Label();
-            this.lbl_things_to_do_1 = new System.Windows.Forms.Label();
-            this.lbl_upcoming_1 = new System.Windows.Forms.Label();
-            this.lbl_upcoming_total = new System.Windows.Forms.Label();
-            this.lbl_things_to_do_total = new System.Windows.Forms.Label();
-            this.pnl_new_employees = new System.Windows.Forms.Panel();
-            this.lbl_new_employees_graph = new System.Windows.Forms.PictureBox();
-            this.lbl_new_employees_amount = new System.Windows.Forms.Label();
-            this.lbl_new = new System.Windows.Forms.Label();
-            this.lbl_employees_2 = new System.Windows.Forms.Label();
-            this.pnl_overtime_employees = new System.Windows.Forms.Panel();
-            this.lbl_overtime_employees_graph = new System.Windows.Forms.PictureBox();
-            this.lbl_overtime_employees_amount = new System.Windows.Forms.Label();
-            this.lbl_employees = new System.Windows.Forms.Label();
-            this.lbl_overtime = new System.Windows.Forms.Label();
-            this.pnl_total_employees = new System.Windows.Forms.Panel();
-            this.lbl_total_employees_graph = new System.Windows.Forms.PictureBox();
-            this.lbl_total_employees_amount = new System.Windows.Forms.Label();
-            this.lbl_employees_1 = new System.Windows.Forms.Label();
-            this.lbl_total = new System.Windows.Forms.Label();
-            this.lbl_done_total = new System.Windows.Forms.Label();
-            this.picb_done = new System.Windows.Forms.PictureBox();
             this.picb_upcoming = new System.Windows.Forms.PictureBox();
             this.picb_things_to_do = new System.Windows.Forms.PictureBox();
             this.btn_upcoming = new System.Windows.Forms.Button();
             this.btn_add_things_to_do = new System.Windows.Forms.Button();
+            this.lbl_upcoming_total = new System.Windows.Forms.Label();
+            this.lbl_things_to_do_total = new System.Windows.Forms.Label();
+            this.pnl_new_employees = new System.Windows.Forms.Panel();
+            this.lbl_new_employees_graph = new System.Windows.Forms.PictureBox();
+            this.pnl_total_employees = new System.Windows.Forms.Panel();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.lbl_total_employees_amount = new System.Windows.Forms.Label();
+            this.lbl_total_employees_graph = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_overtime_employees_graph = new System.Windows.Forms.PictureBox();
+            this.pnl_overtime_employees = new System.Windows.Forms.Panel();
+            this.lbl_done_total = new System.Windows.Forms.Label();
+            this.picb_done = new System.Windows.Forms.PictureBox();
             this.btn_done = new System.Windows.Forms.Button();
-            this.btn_edit_things_to_do_1 = new System.Windows.Forms.Button();
-            this.btn_delete_things_to_do = new System.Windows.Forms.Button();
-            this.btn_edit_upcoming = new System.Windows.Forms.Button();
-            this.btn_delete_upcoming = new System.Windows.Forms.Button();
-            this.lbl_done_1 = new System.Windows.Forms.Label();
-            this.btn_edit_done = new System.Windows.Forms.Button();
-            this.btn_delete_done = new System.Windows.Forms.Button();
-            this.pnl_new_employees.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lbl_new_employees_graph)).BeginInit();
-            this.pnl_overtime_employees.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lbl_overtime_employees_graph)).BeginInit();
-            this.pnl_total_employees.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lbl_total_employees_graph)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_done)).BeginInit();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picb_upcoming)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picb_things_to_do)).BeginInit();
+            this.pnl_new_employees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_new_employees_graph)).BeginInit();
+            this.pnl_total_employees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_total_employees_graph)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_overtime_employees_graph)).BeginInit();
+            this.pnl_overtime_employees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_done)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_dashboard
             // 
             this.lbl_dashboard.AutoSize = true;
-            this.lbl_dashboard.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbl_dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_dashboard.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbl_dashboard.Location = new System.Drawing.Point(0, 0);
+            this.lbl_dashboard.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_dashboard.Name = "lbl_dashboard";
-            this.lbl_dashboard.Padding = new System.Windows.Forms.Padding(30, 30, 0, 20);
-            this.lbl_dashboard.Size = new System.Drawing.Size(214, 87);
+            this.lbl_dashboard.Size = new System.Drawing.Size(186, 38);
             this.lbl_dashboard.TabIndex = 138;
             this.lbl_dashboard.Text = "Dashboard";
             // 
-            // lbl_things_to_do_1
+            // picb_upcoming
             // 
-            this.lbl_things_to_do_1.AutoSize = true;
-            this.lbl_things_to_do_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_things_to_do_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_things_to_do_1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_things_to_do_1.Location = new System.Drawing.Point(39, 387);
-            this.lbl_things_to_do_1.Name = "lbl_things_to_do_1";
-            this.lbl_things_to_do_1.Padding = new System.Windows.Forms.Padding(20, 20, 140, 20);
-            this.lbl_things_to_do_1.Size = new System.Drawing.Size(309, 58);
-            this.lbl_things_to_do_1.TabIndex = 144;
-            this.lbl_things_to_do_1.Text = "Calculate Payroll for all.";
+            this.picb_upcoming.BackgroundImage = global::Fireon.Properties.Resources.picb_upcoming;
+            this.picb_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picb_upcoming.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picb_upcoming.Location = new System.Drawing.Point(30, 0);
+            this.picb_upcoming.Name = "picb_upcoming";
+            this.picb_upcoming.Size = new System.Drawing.Size(146, 32);
+            this.picb_upcoming.TabIndex = 142;
+            this.picb_upcoming.TabStop = false;
             // 
-            // lbl_upcoming_1
+            // picb_things_to_do
             // 
-            this.lbl_upcoming_1.AutoSize = true;
-            this.lbl_upcoming_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_upcoming_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_upcoming_1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_upcoming_1.Location = new System.Drawing.Point(375, 387);
-            this.lbl_upcoming_1.Name = "lbl_upcoming_1";
-            this.lbl_upcoming_1.Padding = new System.Windows.Forms.Padding(20, 20, 105, 20);
-            this.lbl_upcoming_1.Size = new System.Drawing.Size(311, 58);
-            this.lbl_upcoming_1.TabIndex = 145;
-            this.lbl_upcoming_1.Text = "Manage Employee over time.";
+            this.picb_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.picb_view_things_to_do;
+            this.picb_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picb_things_to_do.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picb_things_to_do.Location = new System.Drawing.Point(30, 0);
+            this.picb_things_to_do.Name = "picb_things_to_do";
+            this.picb_things_to_do.Size = new System.Drawing.Size(147, 32);
+            this.picb_things_to_do.TabIndex = 143;
+            this.picb_things_to_do.TabStop = false;
+            // 
+            // btn_upcoming
+            // 
+            this.btn_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btn_add_db;
+            this.btn_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_upcoming.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_upcoming.FlatAppearance.BorderSize = 0;
+            this.btn_upcoming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_upcoming.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_upcoming.Location = new System.Drawing.Point(252, 0);
+            this.btn_upcoming.Name = "btn_upcoming";
+            this.btn_upcoming.Size = new System.Drawing.Size(41, 32);
+            this.btn_upcoming.TabIndex = 223;
+            this.btn_upcoming.TabStop = false;
+            this.btn_upcoming.UseVisualStyleBackColor = true;
+            // 
+            // btn_add_things_to_do
+            // 
+            this.btn_add_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.btn_add_db_hover;
+            this.btn_add_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_add_things_to_do.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_add_things_to_do.FlatAppearance.BorderSize = 0;
+            this.btn_add_things_to_do.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_add_things_to_do.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_things_to_do.Location = new System.Drawing.Point(253, 0);
+            this.btn_add_things_to_do.Name = "btn_add_things_to_do";
+            this.btn_add_things_to_do.Size = new System.Drawing.Size(41, 32);
+            this.btn_add_things_to_do.TabIndex = 223;
+            this.btn_add_things_to_do.TabStop = false;
+            this.btn_add_things_to_do.UseVisualStyleBackColor = true;
             // 
             // lbl_upcoming_total
             // 
             this.lbl_upcoming_total.AutoSize = true;
             this.lbl_upcoming_total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(99)))), ((int)(((byte)(5)))));
+            this.lbl_upcoming_total.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbl_upcoming_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_upcoming_total.ForeColor = System.Drawing.Color.White;
-            this.lbl_upcoming_total.Location = new System.Drawing.Point(650, 319);
+            this.lbl_upcoming_total.Location = new System.Drawing.Point(0, 0);
             this.lbl_upcoming_total.Name = "lbl_upcoming_total";
             this.lbl_upcoming_total.Padding = new System.Windows.Forms.Padding(6);
             this.lbl_upcoming_total.Size = new System.Drawing.Size(30, 32);
@@ -130,9 +153,10 @@
             // 
             this.lbl_things_to_do_total.AutoSize = true;
             this.lbl_things_to_do_total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(222)))), ((int)(((byte)(125)))));
+            this.lbl_things_to_do_total.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbl_things_to_do_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_things_to_do_total.ForeColor = System.Drawing.Color.White;
-            this.lbl_things_to_do_total.Location = new System.Drawing.Point(314, 319);
+            this.lbl_things_to_do_total.Location = new System.Drawing.Point(0, 0);
             this.lbl_things_to_do_total.Name = "lbl_things_to_do_total";
             this.lbl_things_to_do_total.Padding = new System.Windows.Forms.Padding(6);
             this.lbl_things_to_do_total.Size = new System.Drawing.Size(30, 32);
@@ -142,178 +166,146 @@
             // pnl_new_employees
             // 
             this.pnl_new_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(212)))));
+            this.pnl_new_employees.Controls.Add(this.label3);
+            this.pnl_new_employees.Controls.Add(this.label1);
             this.pnl_new_employees.Controls.Add(this.lbl_new_employees_graph);
-            this.pnl_new_employees.Controls.Add(this.lbl_new_employees_amount);
-            this.pnl_new_employees.Controls.Add(this.lbl_new);
-            this.pnl_new_employees.Controls.Add(this.lbl_employees_2);
-            this.pnl_new_employees.Location = new System.Drawing.Point(376, 96);
+            this.pnl_new_employees.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_new_employees.Location = new System.Drawing.Point(303, 3);
             this.pnl_new_employees.Name = "pnl_new_employees";
-            this.pnl_new_employees.Size = new System.Drawing.Size(307, 175);
+            this.pnl_new_employees.Size = new System.Drawing.Size(293, 166);
             this.pnl_new_employees.TabIndex = 139;
             // 
             // lbl_new_employees_graph
             // 
             this.lbl_new_employees_graph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_new_employees_graph.Image = global::Fireon.Properties.Resources.picb_bar_chart_2;
-            this.lbl_new_employees_graph.Location = new System.Drawing.Point(183, 106);
+            this.lbl_new_employees_graph.Location = new System.Drawing.Point(190, 113);
             this.lbl_new_employees_graph.Name = "lbl_new_employees_graph";
             this.lbl_new_employees_graph.Size = new System.Drawing.Size(100, 50);
             this.lbl_new_employees_graph.TabIndex = 2;
             this.lbl_new_employees_graph.TabStop = false;
-            // 
-            // lbl_new_employees_amount
-            // 
-            this.lbl_new_employees_amount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_new_employees_amount.AutoSize = true;
-            this.lbl_new_employees_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_new_employees_amount.ForeColor = System.Drawing.Color.White;
-            this.lbl_new_employees_amount.Location = new System.Drawing.Point(23, 123);
-            this.lbl_new_employees_amount.Name = "lbl_new_employees_amount";
-            this.lbl_new_employees_amount.Size = new System.Drawing.Size(55, 29);
-            this.lbl_new_employees_amount.TabIndex = 1;
-            this.lbl_new_employees_amount.Text = "500";
-            // 
-            // lbl_new
-            // 
-            this.lbl_new.AutoSize = true;
-            this.lbl_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_new.ForeColor = System.Drawing.Color.White;
-            this.lbl_new.Location = new System.Drawing.Point(26, 18);
-            this.lbl_new.Name = "lbl_new";
-            this.lbl_new.Size = new System.Drawing.Size(29, 13);
-            this.lbl_new.TabIndex = 2;
-            this.lbl_new.Text = "New";
-            // 
-            // lbl_employees_2
-            // 
-            this.lbl_employees_2.AutoSize = true;
-            this.lbl_employees_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_employees_2.ForeColor = System.Drawing.Color.White;
-            this.lbl_employees_2.Location = new System.Drawing.Point(26, 33);
-            this.lbl_employees_2.Name = "lbl_employees_2";
-            this.lbl_employees_2.Size = new System.Drawing.Size(58, 13);
-            this.lbl_employees_2.TabIndex = 2;
-            this.lbl_employees_2.Text = "Employees";
-            // 
-            // pnl_overtime_employees
-            // 
-            this.pnl_overtime_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(235)))), ((int)(((byte)(242)))));
-            this.pnl_overtime_employees.Controls.Add(this.lbl_overtime_employees_graph);
-            this.pnl_overtime_employees.Controls.Add(this.lbl_overtime_employees_amount);
-            this.pnl_overtime_employees.Controls.Add(this.lbl_employees);
-            this.pnl_overtime_employees.Controls.Add(this.lbl_overtime);
-            this.pnl_overtime_employees.Location = new System.Drawing.Point(714, 96);
-            this.pnl_overtime_employees.Name = "pnl_overtime_employees";
-            this.pnl_overtime_employees.Size = new System.Drawing.Size(307, 175);
-            this.pnl_overtime_employees.TabIndex = 140;
-            // 
-            // lbl_overtime_employees_graph
-            // 
-            this.lbl_overtime_employees_graph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_overtime_employees_graph.Image = ((System.Drawing.Image)(resources.GetObject("lbl_overtime_employees_graph.Image")));
-            this.lbl_overtime_employees_graph.Location = new System.Drawing.Point(182, 106);
-            this.lbl_overtime_employees_graph.Name = "lbl_overtime_employees_graph";
-            this.lbl_overtime_employees_graph.Size = new System.Drawing.Size(100, 50);
-            this.lbl_overtime_employees_graph.TabIndex = 2;
-            this.lbl_overtime_employees_graph.TabStop = false;
-            // 
-            // lbl_overtime_employees_amount
-            // 
-            this.lbl_overtime_employees_amount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_overtime_employees_amount.AutoSize = true;
-            this.lbl_overtime_employees_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_overtime_employees_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_overtime_employees_amount.Location = new System.Drawing.Point(16, 123);
-            this.lbl_overtime_employees_amount.Name = "lbl_overtime_employees_amount";
-            this.lbl_overtime_employees_amount.Size = new System.Drawing.Size(41, 29);
-            this.lbl_overtime_employees_amount.TabIndex = 1;
-            this.lbl_overtime_employees_amount.Text = "50";
-            // 
-            // lbl_employees
-            // 
-            this.lbl_employees.AutoSize = true;
-            this.lbl_employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_employees.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_employees.Location = new System.Drawing.Point(19, 33);
-            this.lbl_employees.Name = "lbl_employees";
-            this.lbl_employees.Size = new System.Drawing.Size(58, 13);
-            this.lbl_employees.TabIndex = 2;
-            this.lbl_employees.Text = "Employees";
-            // 
-            // lbl_overtime
-            // 
-            this.lbl_overtime.AutoSize = true;
-            this.lbl_overtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_overtime.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_overtime.Location = new System.Drawing.Point(19, 18);
-            this.lbl_overtime.Name = "lbl_overtime";
-            this.lbl_overtime.Size = new System.Drawing.Size(49, 13);
-            this.lbl_overtime.TabIndex = 2;
-            this.lbl_overtime.Text = "Overtime";
             // 
             // pnl_total_employees
             // 
             this.pnl_total_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(235)))), ((int)(((byte)(242)))));
             this.pnl_total_employees.Controls.Add(this.lbl_total_employees_graph);
             this.pnl_total_employees.Controls.Add(this.lbl_total_employees_amount);
-            this.pnl_total_employees.Controls.Add(this.lbl_employees_1);
             this.pnl_total_employees.Controls.Add(this.lbl_total);
-            this.pnl_total_employees.Location = new System.Drawing.Point(38, 96);
+            this.pnl_total_employees.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_total_employees.Location = new System.Drawing.Point(3, 3);
             this.pnl_total_employees.Name = "pnl_total_employees";
-            this.pnl_total_employees.Size = new System.Drawing.Size(307, 175);
+            this.pnl_total_employees.Size = new System.Drawing.Size(294, 166);
             this.pnl_total_employees.TabIndex = 141;
+            // 
+            // lbl_total
+            // 
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_total.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_total.Location = new System.Drawing.Point(0, 0);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.lbl_total.Size = new System.Drawing.Size(143, 29);
+            this.lbl_total.TabIndex = 2;
+            this.lbl_total.Text = "Total Employees";
+            // 
+            // lbl_total_employees_amount
+            // 
+            this.lbl_total_employees_amount.AutoSize = true;
+            this.lbl_total_employees_amount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbl_total_employees_amount.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total_employees_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_total_employees_amount.Location = new System.Drawing.Point(0, 124);
+            this.lbl_total_employees_amount.Name = "lbl_total_employees_amount";
+            this.lbl_total_employees_amount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 10);
+            this.lbl_total_employees_amount.Size = new System.Drawing.Size(93, 42);
+            this.lbl_total_employees_amount.TabIndex = 1;
+            this.lbl_total_employees_amount.Text = "1,000";
             // 
             // lbl_total_employees_graph
             // 
             this.lbl_total_employees_graph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_total_employees_graph.Image = ((System.Drawing.Image)(resources.GetObject("lbl_total_employees_graph.Image")));
-            this.lbl_total_employees_graph.Location = new System.Drawing.Point(183, 106);
+            this.lbl_total_employees_graph.Location = new System.Drawing.Point(191, 113);
             this.lbl_total_employees_graph.Name = "lbl_total_employees_graph";
             this.lbl_total_employees_graph.Size = new System.Drawing.Size(100, 50);
             this.lbl_total_employees_graph.TabIndex = 2;
             this.lbl_total_employees_graph.TabStop = false;
             // 
-            // lbl_total_employees_amount
+            // tableLayoutPanel1
             // 
-            this.lbl_total_employees_amount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_total_employees_amount.AutoSize = true;
-            this.lbl_total_employees_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total_employees_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_total_employees_amount.Location = new System.Drawing.Point(12, 123);
-            this.lbl_total_employees_amount.Name = "lbl_total_employees_amount";
-            this.lbl_total_employees_amount.Size = new System.Drawing.Size(76, 29);
-            this.lbl_total_employees_amount.TabIndex = 1;
-            this.lbl_total_employees_amount.Text = "1,000";
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33555F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_total_employees, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_new_employees, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_overtime_employees, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 38);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.95522F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.04478F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 239);
+            this.tableLayoutPanel1.TabIndex = 224;
             // 
-            // lbl_employees_1
+            // panel1
             // 
-            this.lbl_employees_1.AutoSize = true;
-            this.lbl_employees_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_employees_1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_employees_1.Location = new System.Drawing.Point(15, 33);
-            this.lbl_employees_1.Name = "lbl_employees_1";
-            this.lbl_employees_1.Size = new System.Drawing.Size(58, 13);
-            this.lbl_employees_1.TabIndex = 2;
-            this.lbl_employees_1.Text = "Employees";
+            this.panel1.Controls.Add(this.btn_add_things_to_do);
+            this.panel1.Controls.Add(this.picb_things_to_do);
+            this.panel1.Controls.Add(this.lbl_things_to_do_total);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 203);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(294, 32);
+            this.panel1.TabIndex = 225;
             // 
-            // lbl_total
+            // panel2
             // 
-            this.lbl_total.AutoSize = true;
-            this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_total.Location = new System.Drawing.Point(15, 18);
-            this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(34, 13);
-            this.lbl_total.TabIndex = 2;
-            this.lbl_total.Text = "Total ";
+            this.panel2.Controls.Add(this.picb_upcoming);
+            this.panel2.Controls.Add(this.lbl_upcoming_total);
+            this.panel2.Controls.Add(this.btn_upcoming);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(303, 203);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(293, 32);
+            this.panel2.TabIndex = 225;
+            // 
+            // lbl_overtime_employees_graph
+            // 
+            this.lbl_overtime_employees_graph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_overtime_employees_graph.Image = ((System.Drawing.Image)(resources.GetObject("lbl_overtime_employees_graph.Image")));
+            this.lbl_overtime_employees_graph.Location = new System.Drawing.Point(192, 113);
+            this.lbl_overtime_employees_graph.Name = "lbl_overtime_employees_graph";
+            this.lbl_overtime_employees_graph.Size = new System.Drawing.Size(100, 50);
+            this.lbl_overtime_employees_graph.TabIndex = 2;
+            this.lbl_overtime_employees_graph.TabStop = false;
+            // 
+            // pnl_overtime_employees
+            // 
+            this.pnl_overtime_employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(235)))), ((int)(((byte)(242)))));
+            this.pnl_overtime_employees.Controls.Add(this.label4);
+            this.pnl_overtime_employees.Controls.Add(this.label2);
+            this.pnl_overtime_employees.Controls.Add(this.lbl_overtime_employees_graph);
+            this.pnl_overtime_employees.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_overtime_employees.Location = new System.Drawing.Point(602, 3);
+            this.pnl_overtime_employees.Name = "pnl_overtime_employees";
+            this.pnl_overtime_employees.Size = new System.Drawing.Size(295, 166);
+            this.pnl_overtime_employees.TabIndex = 140;
             // 
             // lbl_done_total
             // 
             this.lbl_done_total.AutoSize = true;
             this.lbl_done_total.BackColor = System.Drawing.Color.Gold;
+            this.lbl_done_total.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbl_done_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_done_total.ForeColor = System.Drawing.Color.White;
-            this.lbl_done_total.Location = new System.Drawing.Point(990, 320);
+            this.lbl_done_total.Location = new System.Drawing.Point(0, 0);
             this.lbl_done_total.Name = "lbl_done_total";
             this.lbl_done_total.Padding = new System.Windows.Forms.Padding(6);
             this.lbl_done_total.Size = new System.Drawing.Size(30, 32);
@@ -324,215 +316,122 @@
             // 
             this.picb_done.BackgroundImage = global::Fireon.Properties.Resources.picb_done;
             this.picb_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picb_done.Location = new System.Drawing.Point(715, 320);
+            this.picb_done.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picb_done.Location = new System.Drawing.Point(30, 0);
             this.picb_done.Name = "picb_done";
-            this.picb_done.Size = new System.Drawing.Size(146, 36);
+            this.picb_done.Size = new System.Drawing.Size(146, 32);
             this.picb_done.TabIndex = 142;
             this.picb_done.TabStop = false;
-            // 
-            // picb_upcoming
-            // 
-            this.picb_upcoming.BackgroundImage = global::Fireon.Properties.Resources.picb_upcoming;
-            this.picb_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picb_upcoming.Location = new System.Drawing.Point(375, 319);
-            this.picb_upcoming.Name = "picb_upcoming";
-            this.picb_upcoming.Size = new System.Drawing.Size(146, 36);
-            this.picb_upcoming.TabIndex = 142;
-            this.picb_upcoming.TabStop = false;
-            // 
-            // picb_things_to_do
-            // 
-            this.picb_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.picb_view_things_to_do;
-            this.picb_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picb_things_to_do.Location = new System.Drawing.Point(38, 319);
-            this.picb_things_to_do.Name = "picb_things_to_do";
-            this.picb_things_to_do.Size = new System.Drawing.Size(147, 36);
-            this.picb_things_to_do.TabIndex = 143;
-            this.picb_things_to_do.TabStop = false;
-            // 
-            // btn_upcoming
-            // 
-            this.btn_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btn_add_db;
-            this.btn_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_upcoming.FlatAppearance.BorderSize = 0;
-            this.btn_upcoming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_upcoming.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_upcoming.Location = new System.Drawing.Point(603, 318);
-            this.btn_upcoming.Name = "btn_upcoming";
-            this.btn_upcoming.Size = new System.Drawing.Size(41, 37);
-            this.btn_upcoming.TabIndex = 223;
-            this.btn_upcoming.TabStop = false;
-            this.btn_upcoming.UseVisualStyleBackColor = true;
-            // 
-            // btn_add_things_to_do
-            // 
-            this.btn_add_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.btn_add_db_hover;
-            this.btn_add_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_add_things_to_do.FlatAppearance.BorderSize = 0;
-            this.btn_add_things_to_do.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_add_things_to_do.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add_things_to_do.Location = new System.Drawing.Point(266, 318);
-            this.btn_add_things_to_do.Name = "btn_add_things_to_do";
-            this.btn_add_things_to_do.Size = new System.Drawing.Size(41, 37);
-            this.btn_add_things_to_do.TabIndex = 223;
-            this.btn_add_things_to_do.TabStop = false;
-            this.btn_add_things_to_do.UseVisualStyleBackColor = true;
             // 
             // btn_done
             // 
             this.btn_done.BackColor = System.Drawing.SystemColors.Window;
             this.btn_done.BackgroundImage = global::Fireon.Properties.Resources.btn_add_done;
             this.btn_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_done.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_done.FlatAppearance.BorderSize = 0;
             this.btn_done.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_done.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_done.Location = new System.Drawing.Point(943, 319);
+            this.btn_done.Location = new System.Drawing.Point(254, 0);
             this.btn_done.Name = "btn_done";
-            this.btn_done.Size = new System.Drawing.Size(41, 37);
+            this.btn_done.Size = new System.Drawing.Size(41, 32);
             this.btn_done.TabIndex = 223;
             this.btn_done.TabStop = false;
             this.btn_done.UseVisualStyleBackColor = false;
             // 
-            // btn_edit_things_to_do_1
+            // panel3
             // 
-            this.btn_edit_things_to_do_1.BackgroundImage = global::Fireon.Properties.Resources.btn_edit;
-            this.btn_edit_things_to_do_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_edit_things_to_do_1.FlatAppearance.BorderSize = 0;
-            this.btn_edit_things_to_do_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_edit_things_to_do_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit_things_to_do_1.Location = new System.Drawing.Point(283, 399);
-            this.btn_edit_things_to_do_1.Name = "btn_edit_things_to_do_1";
-            this.btn_edit_things_to_do_1.Size = new System.Drawing.Size(24, 34);
-            this.btn_edit_things_to_do_1.TabIndex = 223;
-            this.btn_edit_things_to_do_1.TabStop = false;
-            this.btn_edit_things_to_do_1.UseVisualStyleBackColor = true;
+            this.panel3.Controls.Add(this.btn_done);
+            this.panel3.Controls.Add(this.picb_done);
+            this.panel3.Controls.Add(this.lbl_done_total);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(602, 203);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(295, 32);
+            this.panel3.TabIndex = 225;
             // 
-            // btn_delete_things_to_do
+            // label1
             // 
-            this.btn_delete_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.btn_delete;
-            this.btn_delete_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_things_to_do.FlatAppearance.BorderSize = 0;
-            this.btn_delete_things_to_do.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_delete_things_to_do.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_things_to_do.Location = new System.Drawing.Point(313, 399);
-            this.btn_delete_things_to_do.Name = "btn_delete_things_to_do";
-            this.btn_delete_things_to_do.Size = new System.Drawing.Size(24, 34);
-            this.btn_delete_things_to_do.TabIndex = 223;
-            this.btn_delete_things_to_do.TabStop = false;
-            this.btn_delete_things_to_do.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.label1.Size = new System.Drawing.Size(142, 29);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "New Employees";
             // 
-            // btn_edit_upcoming
+            // label2
             // 
-            this.btn_edit_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btn_edit;
-            this.btn_edit_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_edit_upcoming.FlatAppearance.BorderSize = 0;
-            this.btn_edit_upcoming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_edit_upcoming.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit_upcoming.Location = new System.Drawing.Point(615, 399);
-            this.btn_edit_upcoming.Name = "btn_edit_upcoming";
-            this.btn_edit_upcoming.Size = new System.Drawing.Size(24, 34);
-            this.btn_edit_upcoming.TabIndex = 223;
-            this.btn_edit_upcoming.TabStop = false;
-            this.btn_edit_upcoming.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.label2.Size = new System.Drawing.Size(90, 29);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Overtime";
             // 
-            // btn_delete_upcoming
+            // label3
             // 
-            this.btn_delete_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btn_delete;
-            this.btn_delete_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_upcoming.FlatAppearance.BorderSize = 0;
-            this.btn_delete_upcoming.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_delete_upcoming.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_upcoming.Location = new System.Drawing.Point(645, 399);
-            this.btn_delete_upcoming.Name = "btn_delete_upcoming";
-            this.btn_delete_upcoming.Size = new System.Drawing.Size(24, 34);
-            this.btn_delete_upcoming.TabIndex = 223;
-            this.btn_delete_upcoming.TabStop = false;
-            this.btn_delete_upcoming.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(0, 124);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 10);
+            this.label3.Size = new System.Drawing.Size(93, 42);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "1,000";
             // 
-            // lbl_done_1
+            // label4
             // 
-            this.lbl_done_1.AutoSize = true;
-            this.lbl_done_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_done_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_done_1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_done_1.Location = new System.Drawing.Point(713, 387);
-            this.lbl_done_1.Name = "lbl_done_1";
-            this.lbl_done_1.Padding = new System.Windows.Forms.Padding(20, 20, 105, 20);
-            this.lbl_done_1.Size = new System.Drawing.Size(311, 58);
-            this.lbl_done_1.TabIndex = 145;
-            this.lbl_done_1.Text = "Manage Employee over time.";
-            // 
-            // btn_edit_done
-            // 
-            this.btn_edit_done.BackgroundImage = global::Fireon.Properties.Resources.btn_edit;
-            this.btn_edit_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_edit_done.FlatAppearance.BorderSize = 0;
-            this.btn_edit_done.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_edit_done.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit_done.Location = new System.Drawing.Point(953, 399);
-            this.btn_edit_done.Name = "btn_edit_done";
-            this.btn_edit_done.Size = new System.Drawing.Size(24, 34);
-            this.btn_edit_done.TabIndex = 223;
-            this.btn_edit_done.TabStop = false;
-            this.btn_edit_done.UseVisualStyleBackColor = true;
-            // 
-            // btn_delete_done
-            // 
-            this.btn_delete_done.BackgroundImage = global::Fireon.Properties.Resources.btn_delete;
-            this.btn_delete_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_delete_done.FlatAppearance.BorderSize = 0;
-            this.btn_delete_done.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_delete_done.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete_done.Location = new System.Drawing.Point(983, 399);
-            this.btn_delete_done.Name = "btn_delete_done";
-            this.btn_delete_done.Size = new System.Drawing.Size(24, 34);
-            this.btn_delete_done.TabIndex = 223;
-            this.btn_delete_done.TabStop = false;
-            this.btn_delete_done.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(0, 124);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 10);
+            this.label4.Size = new System.Drawing.Size(93, 42);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "1,000";
             // 
             // ucDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(50, 10);
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btn_done);
-            this.Controls.Add(this.btn_delete_done);
-            this.Controls.Add(this.btn_delete_upcoming);
-            this.Controls.Add(this.btn_edit_done);
-            this.Controls.Add(this.btn_edit_upcoming);
-            this.Controls.Add(this.btn_delete_things_to_do);
-            this.Controls.Add(this.btn_edit_things_to_do_1);
-            this.Controls.Add(this.btn_add_things_to_do);
-            this.Controls.Add(this.btn_upcoming);
-            this.Controls.Add(this.picb_done);
-            this.Controls.Add(this.picb_upcoming);
-            this.Controls.Add(this.picb_things_to_do);
-            this.Controls.Add(this.lbl_things_to_do_1);
-            this.Controls.Add(this.lbl_done_total);
-            this.Controls.Add(this.lbl_done_1);
-            this.Controls.Add(this.lbl_upcoming_1);
-            this.Controls.Add(this.lbl_upcoming_total);
-            this.Controls.Add(this.lbl_things_to_do_total);
-            this.Controls.Add(this.pnl_new_employees);
-            this.Controls.Add(this.pnl_overtime_employees);
-            this.Controls.Add(this.pnl_total_employees);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lbl_dashboard);
             this.Name = "ucDashboard";
-            this.Size = new System.Drawing.Size(1060, 595);
+            this.Size = new System.Drawing.Size(900, 500);
+            this.Load += new System.EventHandler(this.ucDashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picb_upcoming)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb_things_to_do)).EndInit();
             this.pnl_new_employees.ResumeLayout(false);
             this.pnl_new_employees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_new_employees_graph)).EndInit();
-            this.pnl_overtime_employees.ResumeLayout(false);
-            this.pnl_overtime_employees.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lbl_overtime_employees_graph)).EndInit();
             this.pnl_total_employees.ResumeLayout(false);
             this.pnl_total_employees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_total_employees_graph)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_overtime_employees_graph)).EndInit();
+            this.pnl_overtime_employees.ResumeLayout(false);
+            this.pnl_overtime_employees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_done)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_upcoming)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_things_to_do)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,36 +442,28 @@
         private System.Windows.Forms.Label lbl_dashboard;
         private System.Windows.Forms.PictureBox picb_upcoming;
         private System.Windows.Forms.PictureBox picb_things_to_do;
-        private System.Windows.Forms.Label lbl_things_to_do_1;
-        private System.Windows.Forms.Label lbl_upcoming_1;
+        private System.Windows.Forms.Button btn_upcoming;
+        private System.Windows.Forms.Button btn_add_things_to_do;
         private System.Windows.Forms.Label lbl_upcoming_total;
         private System.Windows.Forms.Label lbl_things_to_do_total;
         private System.Windows.Forms.Panel pnl_new_employees;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox lbl_new_employees_graph;
-        private System.Windows.Forms.Label lbl_new_employees_amount;
-        private System.Windows.Forms.Label lbl_new;
-        private System.Windows.Forms.Label lbl_employees_2;
-        private System.Windows.Forms.Panel pnl_overtime_employees;
-        private System.Windows.Forms.PictureBox lbl_overtime_employees_graph;
-        private System.Windows.Forms.Label lbl_overtime_employees_amount;
-        private System.Windows.Forms.Label lbl_employees;
-        private System.Windows.Forms.Label lbl_overtime;
         private System.Windows.Forms.Panel pnl_total_employees;
         private System.Windows.Forms.PictureBox lbl_total_employees_graph;
         private System.Windows.Forms.Label lbl_total_employees_amount;
-        private System.Windows.Forms.Label lbl_employees_1;
         private System.Windows.Forms.Label lbl_total;
-        private System.Windows.Forms.Label lbl_done_total;
-        private System.Windows.Forms.PictureBox picb_done;
-        private System.Windows.Forms.Button btn_upcoming;
-        private System.Windows.Forms.Button btn_add_things_to_do;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_done;
-        private System.Windows.Forms.Button btn_edit_things_to_do_1;
-        private System.Windows.Forms.Button btn_delete_things_to_do;
-        private System.Windows.Forms.Button btn_edit_upcoming;
-        private System.Windows.Forms.Button btn_delete_upcoming;
-        private System.Windows.Forms.Label lbl_done_1;
-        private System.Windows.Forms.Button btn_edit_done;
-        private System.Windows.Forms.Button btn_delete_done;
+        private System.Windows.Forms.PictureBox picb_done;
+        private System.Windows.Forms.Label lbl_done_total;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_overtime_employees;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox lbl_overtime_employees_graph;
     }
 }
