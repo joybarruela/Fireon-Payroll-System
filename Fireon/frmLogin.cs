@@ -99,7 +99,7 @@ namespace Fireon
                 txtbx_pw.Tag = "FALSE";
                 txtbx_pw.UseSystemPasswordChar = false;
                 // CHANGE EYE LOGO TO ACTIVATED
-                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
+                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEyeHover;
             }
             // #4
             else
@@ -107,7 +107,7 @@ namespace Fireon
                 txtbx_pw.Tag = "TRUE";
                 txtbx_pw.UseSystemPasswordChar = true;
                 // CHANGE EYE LOGO TO DEACTIVATED
-                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye;
+                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEye;
             }
         }
         /// <summary>
@@ -117,7 +117,7 @@ namespace Fireon
         private void btn_see_pw_MouseHover(object sender, EventArgs e)
         {
                 // CHANGES THE IMAGE WHEN MOUSE ENTERS THE EYE
-                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
+            btn_see_pw.BackgroundImage = Properties.Resources.btnIconEyeHover;
         }
         /// <summary>
         /// VIBIESCA
@@ -129,11 +129,11 @@ namespace Fireon
             // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE.
             if (String.Compare(txtbx_pw.Tag.ToString(), "FALSE") == 0)
             {
-                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
+                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEyeHover;
             }
             else
             {
-                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye;
+                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEye;
             }
         }
         #endregion

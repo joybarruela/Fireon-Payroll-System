@@ -115,7 +115,7 @@
             // btn_notification
             // 
             this.btn_notification.BackColor = System.Drawing.Color.Transparent;
-            this.btn_notification.BackgroundImage = global::Fireon.Properties.Resources.btn_icon_notification;
+            this.btn_notification.BackgroundImage = global::Fireon.Properties.Resources.btnIconNotification;
             this.btn_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_notification.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_notification.Dock = System.Windows.Forms.DockStyle.Right;
@@ -142,7 +142,7 @@
             // picb_user
             // 
             this.picb_user.BackColor = System.Drawing.Color.Transparent;
-            this.picb_user.BackgroundImage = global::Fireon.Properties.Resources.picb_admin_dp;
+            this.picb_user.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
             this.picb_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_user.Dock = System.Windows.Forms.DockStyle.Right;
             this.picb_user.Location = new System.Drawing.Point(574, 10);
@@ -186,7 +186,7 @@
             // btn_menu
             // 
             this.btn_menu.BackColor = System.Drawing.Color.Transparent;
-            this.btn_menu.BackgroundImage = global::Fireon.Properties.Resources.btn_menu;
+            this.btn_menu.BackgroundImage = global::Fireon.Properties.Resources.btnIconMenu;
             this.btn_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_menu.Dock = System.Windows.Forms.DockStyle.Right;
@@ -233,7 +233,7 @@
             // 
             // btn_logout
             // 
-            this.btn_logout.BackgroundImage = global::Fireon.Properties.Resources.btn_logout;
+            this.btn_logout.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogout;
             this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_logout.FlatAppearance.BorderSize = 0;
@@ -315,7 +315,7 @@
             // btn_settings
             // 
             this.btn_settings.BackColor = System.Drawing.Color.Transparent;
-            this.btn_settings.BackgroundImage = global::Fireon.Properties.Resources.btn_settings;
+            this.btn_settings.BackgroundImage = global::Fireon.Properties.Resources.btnSettings;
             this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_settings.Dock = System.Windows.Forms.DockStyle.Top;
@@ -342,7 +342,7 @@
             // btn_single_posting
             // 
             this.btn_single_posting.BackColor = System.Drawing.Color.Transparent;
-            this.btn_single_posting.BackgroundImage = global::Fireon.Properties.Resources.btn_single_posting;
+            this.btn_single_posting.BackgroundImage = global::Fireon.Properties.Resources.btnSinglePosting;
             this.btn_single_posting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_single_posting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_single_posting.Dock = System.Windows.Forms.DockStyle.Top;
@@ -369,7 +369,7 @@
             // btn_department
             // 
             this.btn_department.BackColor = System.Drawing.Color.Transparent;
-            this.btn_department.BackgroundImage = global::Fireon.Properties.Resources.btn_department;
+            this.btn_department.BackgroundImage = global::Fireon.Properties.Resources.btnDepartment;
             this.btn_department.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_department.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_department.Dock = System.Windows.Forms.DockStyle.Top;
@@ -396,7 +396,7 @@
             // btn_all
             // 
             this.btn_all.BackColor = System.Drawing.Color.Transparent;
-            this.btn_all.BackgroundImage = global::Fireon.Properties.Resources.btn_all;
+            this.btn_all.BackgroundImage = global::Fireon.Properties.Resources.btnAll;
             this.btn_all.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_all.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_all.Dock = System.Windows.Forms.DockStyle.Top;
@@ -428,7 +428,7 @@
             // btn_allowances
             // 
             this.btn_allowances.BackColor = System.Drawing.Color.Transparent;
-            this.btn_allowances.BackgroundImage = global::Fireon.Properties.Resources.btn_allowances;
+            this.btn_allowances.BackgroundImage = global::Fireon.Properties.Resources.btnAllowance;
             this.btn_allowances.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_allowances.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_allowances.Dock = System.Windows.Forms.DockStyle.Top;
@@ -455,7 +455,7 @@
             // btn_deductions
             // 
             this.btn_deductions.BackColor = System.Drawing.Color.Transparent;
-            this.btn_deductions.BackgroundImage = global::Fireon.Properties.Resources.btn_deductions;
+            this.btn_deductions.BackgroundImage = global::Fireon.Properties.Resources.btnDeduction;
             this.btn_deductions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_deductions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_deductions.Dock = System.Windows.Forms.DockStyle.Top;
@@ -482,7 +482,7 @@
             // btn_cash_advance
             // 
             this.btn_cash_advance.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cash_advance.BackgroundImage = global::Fireon.Properties.Resources.btn_cash_advance;
+            this.btn_cash_advance.BackgroundImage = global::Fireon.Properties.Resources.btnCashAdvance;
             this.btn_cash_advance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_cash_advance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cash_advance.Dock = System.Windows.Forms.DockStyle.Top;
@@ -509,7 +509,7 @@
             // btn_violations
             // 
             this.btn_violations.BackColor = System.Drawing.Color.Transparent;
-            this.btn_violations.BackgroundImage = global::Fireon.Properties.Resources.btn_violation;
+            this.btn_violations.BackgroundImage = global::Fireon.Properties.Resources.btnViolation;
             this.btn_violations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_violations.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_violations.Dock = System.Windows.Forms.DockStyle.Top;
@@ -536,7 +536,7 @@
             // btn_holiday
             // 
             this.btn_holiday.BackColor = System.Drawing.Color.Transparent;
-            this.btn_holiday.BackgroundImage = global::Fireon.Properties.Resources.btn_holiday;
+            this.btn_holiday.BackgroundImage = global::Fireon.Properties.Resources.btnHoliday;
             this.btn_holiday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_holiday.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_holiday.Dock = System.Windows.Forms.DockStyle.Top;
@@ -563,7 +563,7 @@
             // btn_overtime
             // 
             this.btn_overtime.BackColor = System.Drawing.Color.Transparent;
-            this.btn_overtime.BackgroundImage = global::Fireon.Properties.Resources.btn_overtime;
+            this.btn_overtime.BackgroundImage = global::Fireon.Properties.Resources.btnOvertime;
             this.btn_overtime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_overtime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_overtime.Dock = System.Windows.Forms.DockStyle.Top;
@@ -590,7 +590,7 @@
             // btn_leave
             // 
             this.btn_leave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_leave.BackgroundImage = global::Fireon.Properties.Resources.btn_leave;
+            this.btn_leave.BackgroundImage = global::Fireon.Properties.Resources.btnLeave;
             this.btn_leave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_leave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_leave.Dock = System.Windows.Forms.DockStyle.Top;
@@ -617,7 +617,7 @@
             // btn_employee
             // 
             this.btn_employee.BackColor = System.Drawing.Color.Transparent;
-            this.btn_employee.BackgroundImage = global::Fireon.Properties.Resources.btn_employee;
+            this.btn_employee.BackgroundImage = global::Fireon.Properties.Resources.btnEmployee;
             this.btn_employee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_employee.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_employee.Dock = System.Windows.Forms.DockStyle.Top;
@@ -649,7 +649,7 @@
             // btn_dashboard
             // 
             this.btn_dashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btn_dashboard.BackgroundImage = global::Fireon.Properties.Resources.btn_dashboard;
+            this.btn_dashboard.BackgroundImage = global::Fireon.Properties.Resources.btnDashboard;
             this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
@@ -676,7 +676,7 @@
             // picb_fireon
             // 
             this.picb_fireon.BackColor = System.Drawing.Color.Transparent;
-            this.picb_fireon.BackgroundImage = global::Fireon.Properties.Resources.picb_logo_fireon;
+            this.picb_fireon.BackgroundImage = global::Fireon.Properties.Resources.miscFireonLogo;
             this.picb_fireon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_fireon.Dock = System.Windows.Forms.DockStyle.Top;
             this.picb_fireon.Location = new System.Drawing.Point(25, 10);

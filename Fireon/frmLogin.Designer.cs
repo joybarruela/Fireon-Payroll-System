@@ -105,7 +105,7 @@
             // picb_fireon
             // 
             this.picb_fireon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.picb_fireon.BackgroundImage = global::Fireon.Properties.Resources.picb_logo_fireon_login;
+            this.picb_fireon.BackgroundImage = global::Fireon.Properties.Resources.miscFireonLogin;
             this.picb_fireon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_fireon.Location = new System.Drawing.Point(57, 205);
             this.picb_fireon.Name = "picb_fireon";
@@ -137,7 +137,7 @@
             // 
             // btn_login
             // 
-            this.btn_login.BackgroundImage = global::Fireon.Properties.Resources.btn_login;
+            this.btn_login.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_login.FlatAppearance.BorderSize = 0;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -173,7 +173,7 @@
             // btn_see_pw
             // 
             this.btn_see_pw.BackColor = System.Drawing.Color.Transparent;
-            this.btn_see_pw.BackgroundImage = global::Fireon.Properties.Resources.btn_eye;
+            this.btn_see_pw.BackgroundImage = global::Fireon.Properties.Resources.btnIconEye;
             this.btn_see_pw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_see_pw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_see_pw.FlatAppearance.BorderSize = 0;

@@ -22,7 +22,7 @@ namespace Fireon.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Fireon.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Fireon.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Fireon.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,9 +63,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_accounts {
+        public static System.Drawing.Bitmap btnAll {
             get {
-                object obj = ResourceManager.GetObject("btn_accounts", resourceCulture);
+                object obj = ResourceManager.GetObject("btnAll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add {
+        public static System.Drawing.Bitmap btnAllActive {
             get {
-                object obj = ResourceManager.GetObject("btn_add", resourceCulture);
+                object obj = ResourceManager.GetObject("btnAllActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add_active {
+        public static System.Drawing.Bitmap btnAllHover {
             get {
-                object obj = ResourceManager.GetObject("btn_add_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnAllHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add_db {
+        public static System.Drawing.Bitmap btnAllowance {
             get {
-                object obj = ResourceManager.GetObject("btn_add_db", resourceCulture);
+                object obj = ResourceManager.GetObject("btnAllowance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add_db_hover {
+        public static System.Drawing.Bitmap btnAllowanceActive {
             get {
-                object obj = ResourceManager.GetObject("btn_add_db_hover", resourceCulture);
+                object obj = ResourceManager.GetObject("btnAllowanceActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add_doing {
+        public static System.Drawing.Bitmap btnAllowanceHover {
             get {
-                object obj = ResourceManager.GetObject("btn_add_doing", resourceCulture);
+                object obj = ResourceManager.GetObject("btnAllowanceHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add_done {
+        public static System.Drawing.Bitmap btnCashAdvance {
             get {
-                object obj = ResourceManager.GetObject("btn_add_done", resourceCulture);
+                object obj = ResourceManager.GetObject("btnCashAdvance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_add_todo {
+        public static System.Drawing.Bitmap btnCashAdvanceActive {
             get {
-                object obj = ResourceManager.GetObject("btn_add_todo", resourceCulture);
+                object obj = ResourceManager.GetObject("btnCashAdvanceActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_all {
+        public static System.Drawing.Bitmap btnCashAdvanceHover {
             get {
-                object obj = ResourceManager.GetObject("btn_all", resourceCulture);
+                object obj = ResourceManager.GetObject("btnCashAdvanceHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_all_active {
+        public static System.Drawing.Bitmap btnDashboard {
             get {
-                object obj = ResourceManager.GetObject("btn_all_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDashboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_allowances {
+        public static System.Drawing.Bitmap btnDashboardActive {
             get {
-                object obj = ResourceManager.GetObject("btn_allowances", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDashboardActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_allowances_active {
+        public static System.Drawing.Bitmap btnDashboardHover {
             get {
-                object obj = ResourceManager.GetObject("btn_allowances_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDashboardHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_back {
+        public static System.Drawing.Bitmap btnDeduction {
             get {
-                object obj = ResourceManager.GetObject("btn_back", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDeduction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_cancel {
+        public static System.Drawing.Bitmap btnDeductionActive {
             get {
-                object obj = ResourceManager.GetObject("btn_cancel", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDeductionActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_cancel_hover {
+        public static System.Drawing.Bitmap btnDeductionHover {
             get {
-                object obj = ResourceManager.GetObject("btn_cancel_hover", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDeductionHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_cash_advance {
+        public static System.Drawing.Bitmap btnDepartment {
             get {
-                object obj = ResourceManager.GetObject("btn_cash_advance", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDepartment", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_cash_advance_active {
+        public static System.Drawing.Bitmap btnDepartmentActive {
             get {
-                object obj = ResourceManager.GetObject("btn_cash_advance_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDepartmentActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_continue {
+        public static System.Drawing.Bitmap btnDepartmentHover {
             get {
-                object obj = ResourceManager.GetObject("btn_continue", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDepartmentHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +243,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_dashboard {
+        public static System.Drawing.Bitmap btnEmployee {
             get {
-                object obj = ResourceManager.GetObject("btn_dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("btnEmployee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +253,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_dashboard_active {
+        public static System.Drawing.Bitmap btnEmployeeActive {
             get {
-                object obj = ResourceManager.GetObject("btn_dashboard_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnEmployeeActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_deductions {
+        public static System.Drawing.Bitmap btnEmployeeHover {
             get {
-                object obj = ResourceManager.GetObject("btn_deductions", resourceCulture);
+                object obj = ResourceManager.GetObject("btnEmployeeHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_deductions_active {
+        public static System.Drawing.Bitmap btnHoliday {
             get {
-                object obj = ResourceManager.GetObject("btn_deductions_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnHoliday", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_delete {
+        public static System.Drawing.Bitmap btnHolidayActive {
             get {
-                object obj = ResourceManager.GetObject("btn_delete", resourceCulture);
+                object obj = ResourceManager.GetObject("btnHolidayActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_delete_db {
+        public static System.Drawing.Bitmap btnHolidayHover {
             get {
-                object obj = ResourceManager.GetObject("btn_delete_db", resourceCulture);
+                object obj = ResourceManager.GetObject("btnHolidayHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_delete_db_active {
+        public static System.Drawing.Bitmap btnIconAdd {
             get {
-                object obj = ResourceManager.GetObject("btn_delete_db_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconAdd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_department {
+        public static System.Drawing.Bitmap btnIconAddHover {
             get {
-                object obj = ResourceManager.GetObject("btn_department", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconAddHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +323,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_department_active {
+        public static System.Drawing.Bitmap btnIconBack {
             get {
-                object obj = ResourceManager.GetObject("btn_department_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +333,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_dp {
+        public static System.Drawing.Bitmap btnIconBackHover {
             get {
-                object obj = ResourceManager.GetObject("btn_dp", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconBackHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +343,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_edit {
+        public static System.Drawing.Bitmap btnIconDeleteDP {
             get {
-                object obj = ResourceManager.GetObject("btn_edit", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconDeleteDP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +353,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_employee {
+        public static System.Drawing.Bitmap btnIconDeleteDPHover {
             get {
-                object obj = ResourceManager.GetObject("btn_employee", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconDeleteDPHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +363,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_employee_active {
+        public static System.Drawing.Bitmap btnIconEdit {
             get {
-                object obj = ResourceManager.GetObject("btn_employee_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconEdit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +373,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_eye {
+        public static System.Drawing.Bitmap btnIconEditHover {
             get {
-                object obj = ResourceManager.GetObject("btn_eye", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconEditHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +383,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_eye_hover {
+        public static System.Drawing.Bitmap btnIconEye {
             get {
-                object obj = ResourceManager.GetObject("btn_eye_hover", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconEye", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +393,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_hire {
+        public static System.Drawing.Bitmap btnIconEyeHover {
             get {
-                object obj = ResourceManager.GetObject("btn_hire", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconEyeHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +403,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_hire_active {
+        public static System.Drawing.Bitmap btnIconMenu {
             get {
-                object obj = ResourceManager.GetObject("btn_hire_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconMenu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +413,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_hire_active_hover {
+        public static System.Drawing.Bitmap btnIconMenuHover {
             get {
-                object obj = ResourceManager.GetObject("btn_hire_active_hover", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconMenuHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,9 +423,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_hire_hover {
+        public static System.Drawing.Bitmap btnIconNotification {
             get {
-                object obj = ResourceManager.GetObject("btn_hire_hover", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconNotification", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +433,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_holiday {
+        public static System.Drawing.Bitmap btnIconNotificationHover {
             get {
-                object obj = ResourceManager.GetObject("btn_holiday", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconNotificationHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +443,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_holiday_active {
+        public static System.Drawing.Bitmap btnIconUpdate {
             get {
-                object obj = ResourceManager.GetObject("btn_holiday_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconUpdate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,9 +453,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_icon_notification {
+        public static System.Drawing.Bitmap btnIconUpdateHover {
             get {
-                object obj = ResourceManager.GetObject("btn_icon_notification", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIconUpdateHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,9 +463,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_leave {
+        public static System.Drawing.Bitmap btnLeave {
             get {
-                object obj = ResourceManager.GetObject("btn_leave", resourceCulture);
+                object obj = ResourceManager.GetObject("btnLeave", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +473,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_leave_active {
+        public static System.Drawing.Bitmap btnLeaveActive {
             get {
-                object obj = ResourceManager.GetObject("btn_leave_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnLeaveActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,9 +483,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_login {
+        public static System.Drawing.Bitmap btnLeaveHover {
             get {
-                object obj = ResourceManager.GetObject("btn_login", resourceCulture);
+                object obj = ResourceManager.GetObject("btnLeaveHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,9 +493,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_logout {
+        public static System.Drawing.Bitmap btnOthersLogin {
             get {
-                object obj = ResourceManager.GetObject("btn_logout", resourceCulture);
+                object obj = ResourceManager.GetObject("btnOthersLogin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -503,9 +503,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_menu {
+        public static System.Drawing.Bitmap btnOthersLogout {
             get {
-                object obj = ResourceManager.GetObject("btn_menu", resourceCulture);
+                object obj = ResourceManager.GetObject("btnOthersLogout", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,9 +513,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_next {
+        public static System.Drawing.Bitmap btnOvertime {
             get {
-                object obj = ResourceManager.GetObject("btn_next", resourceCulture);
+                object obj = ResourceManager.GetObject("btnOvertime", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,9 +523,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_notifications {
+        public static System.Drawing.Bitmap btnOvertimeActive {
             get {
-                object obj = ResourceManager.GetObject("btn_notifications", resourceCulture);
+                object obj = ResourceManager.GetObject("btnOvertimeActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,9 +533,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_overtime {
+        public static System.Drawing.Bitmap btnOvertimeHover {
             get {
-                object obj = ResourceManager.GetObject("btn_overtime", resourceCulture);
+                object obj = ResourceManager.GetObject("btnOvertimeHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -543,9 +543,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_overtime_active {
+        public static System.Drawing.Bitmap btnSettings {
             get {
-                object obj = ResourceManager.GetObject("btn_overtime_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSettings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -553,9 +553,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_payment_method {
+        public static System.Drawing.Bitmap btnSettingsActive {
             get {
-                object obj = ResourceManager.GetObject("btn_payment_method", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSettingsActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -563,9 +563,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_payment_method_active {
+        public static System.Drawing.Bitmap btnSettingsHover {
             get {
-                object obj = ResourceManager.GetObject("btn_payment_method_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSettingsHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -573,9 +573,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_print {
+        public static System.Drawing.Bitmap btnSinglePosting {
             get {
-                object obj = ResourceManager.GetObject("btn_print", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSinglePosting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -583,9 +583,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_retirement {
+        public static System.Drawing.Bitmap btnSinglePostingActive {
             get {
-                object obj = ResourceManager.GetObject("btn_retirement", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSinglePostingActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -593,9 +593,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_save {
+        public static System.Drawing.Bitmap btnSinglePostingHover {
             get {
-                object obj = ResourceManager.GetObject("btn_save", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSinglePostingHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -603,9 +603,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_save_draft {
+        public static System.Drawing.Bitmap btnViolation {
             get {
-                object obj = ResourceManager.GetObject("btn_save_draft", resourceCulture);
+                object obj = ResourceManager.GetObject("btnViolation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,9 +613,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_settings {
+        public static System.Drawing.Bitmap btnViolationActive {
             get {
-                object obj = ResourceManager.GetObject("btn_settings", resourceCulture);
+                object obj = ResourceManager.GetObject("btnViolationActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -623,69 +623,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_settings_active {
+        public static System.Drawing.Bitmap btnViolationHover {
             get {
-                object obj = ResourceManager.GetObject("btn_settings_active", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_single_active {
-            get {
-                object obj = ResourceManager.GetObject("btn_single_active", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_single_posting {
-            get {
-                object obj = ResourceManager.GetObject("btn_single_posting", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_update_active {
-            get {
-                object obj = ResourceManager.GetObject("btn_update_active", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_update_notif {
-            get {
-                object obj = ResourceManager.GetObject("btn_update_notif", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_violation {
-            get {
-                object obj = ResourceManager.GetObject("btn_violation", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_violations_active {
-            get {
-                object obj = ResourceManager.GetObject("btn_violations_active", resourceCulture);
+                object obj = ResourceManager.GetObject("btnViolationHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -693,7 +633,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 3.
         /// </summary>
-        internal static string int_login_attempts {
+        public static string int_login_attempts {
             get {
                 return ResourceManager.GetString("int_login_attempts", resourceCulture);
             }
@@ -702,9 +642,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picbAddAccount {
+        public static System.Drawing.Bitmap miscBarChart {
             get {
-                object obj = ResourceManager.GetObject("picb_add_account", resourceCulture);
+                object obj = ResourceManager.GetObject("miscBarChart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -712,9 +652,29 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picb_add_dp {
+        public static System.Drawing.Bitmap miscEmployeeDP {
             get {
-                object obj = ResourceManager.GetObject("picb_add_dp", resourceCulture);
+                object obj = ResourceManager.GetObject("miscEmployeeDP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        public static System.Drawing.Icon miscFireonIcon {
+            get {
+                object obj = ResourceManager.GetObject("miscFireonIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap miscFireonLogin {
+            get {
+                object obj = ResourceManager.GetObject("miscFireonLogin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -722,119 +682,9 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picb_admin_dp {
+        public static System.Drawing.Bitmap miscFireonLogo {
             get {
-                object obj = ResourceManager.GetObject("picb_admin_dp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_bar_chart_1 {
-            get {
-                object obj = ResourceManager.GetObject("picb_bar_chart_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picbBarChart1 {
-            get {
-                object obj = ResourceManager.GetObject("picb_bar_chart_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_done {
-            get {
-                object obj = ResourceManager.GetObject("picb_done", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_employee_dp {
-            get {
-                object obj = ResourceManager.GetObject("picb_employee_dp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_logo_fireon {
-            get {
-                object obj = ResourceManager.GetObject("picb_logo_fireon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_logo_fireon_login {
-            get {
-                object obj = ResourceManager.GetObject("picb_logo_fireon_login", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_settings_admin {
-            get {
-                object obj = ResourceManager.GetObject("picb_settings_admin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_sidebar {
-            get {
-                object obj = ResourceManager.GetObject("picb_sidebar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_upcoming {
-            get {
-                object obj = ResourceManager.GetObject("picb_upcoming", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_update_account {
-            get {
-                object obj = ResourceManager.GetObject("picb_update_account", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap picb_view_things_to_do {
-            get {
-                object obj = ResourceManager.GetObject("picb_view_things_to_do", resourceCulture);
+                object obj = ResourceManager.GetObject("miscFireonLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -842,7 +692,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to server=localhost;user id=root;password=1234;database=fireon.
         /// </summary>
-        internal static string str_connection_string {
+        public static string str_connection_string {
             get {
                 return ResourceManager.GetString("str_connection_string", resourceCulture);
             }
@@ -851,7 +701,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Loading will take some time, please be patient..
         /// </summary>
-        internal static string str_loading_message {
+        public static string str_loading_message {
             get {
                 return ResourceManager.GetString("str_loading_message", resourceCulture);
             }
@@ -860,7 +710,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Credentials match..
         /// </summary>
-        internal static string str_login_match {
+        public static string str_login_match {
             get {
                 return ResourceManager.GetString("str_login_match", resourceCulture);
             }
@@ -869,7 +719,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Credentials mismatch..
         /// </summary>
-        internal static string str_login_mismatch {
+        public static string str_login_mismatch {
             get {
                 return ResourceManager.GetString("str_login_mismatch", resourceCulture);
             }
@@ -878,7 +728,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Too much attempts. Program will now exit..
         /// </summary>
-        internal static string str_login_terminate {
+        public static string str_login_terminate {
             get {
                 return ResourceManager.GetString("str_login_terminate", resourceCulture);
             }
@@ -887,7 +737,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Save any work before logging out. Continue?.
         /// </summary>
-        internal static string str_logout_confirmation {
+        public static string str_logout_confirmation {
             get {
                 return ResourceManager.GetString("str_logout_confirmation", resourceCulture);
             }
@@ -896,7 +746,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to vshost32.
         /// </summary>
-        internal static string str_process_name_debug {
+        public static string str_process_name_debug {
             get {
                 return ResourceManager.GetString("str_process_name_debug", resourceCulture);
             }
@@ -905,7 +755,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Fireon.
         /// </summary>
-        internal static string str_process_name_deploy {
+        public static string str_process_name_deploy {
             get {
                 return ResourceManager.GetString("str_process_name_deploy", resourceCulture);
             }
@@ -914,7 +764,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Fireon Payroll System.
         /// </summary>
-        internal static string str_program_title {
+        public static string str_program_title {
             get {
                 return ResourceManager.GetString("str_program_title", resourceCulture);
             }
@@ -923,7 +773,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Welcome to Fireon Payroll System..
         /// </summary>
-        internal static string str_welcome_message {
+        public static string str_welcome_message {
             get {
                 return ResourceManager.GetString("str_welcome_message", resourceCulture);
             }

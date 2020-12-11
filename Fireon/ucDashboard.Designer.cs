@@ -85,7 +85,7 @@
             // 
             // picb_upcoming
             // 
-            this.picb_upcoming.BackgroundImage = global::Fireon.Properties.Resources.picb_upcoming;
+            this.picb_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.picb_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_upcoming.Dock = System.Windows.Forms.DockStyle.Left;
             this.picb_upcoming.Location = new System.Drawing.Point(30, 0);
@@ -96,7 +96,7 @@
             // 
             // picb_things_to_do
             // 
-            this.picb_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.picb_view_things_to_do;
+            this.picb_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.picb_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_things_to_do.Dock = System.Windows.Forms.DockStyle.Left;
             this.picb_things_to_do.Location = new System.Drawing.Point(30, 0);
@@ -107,7 +107,7 @@
             // 
             // btn_upcoming
             // 
-            this.btn_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btn_add_db;
+            this.btn_upcoming.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.btn_upcoming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_upcoming.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_upcoming.FlatAppearance.BorderSize = 0;
@@ -122,7 +122,7 @@
             // 
             // btn_add_things_to_do
             // 
-            this.btn_add_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.btn_add_db_hover;
+            this.btn_add_things_to_do.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.btn_add_things_to_do.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_add_things_to_do.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_add_things_to_do.FlatAppearance.BorderSize = 0;
@@ -178,7 +178,7 @@
             // lbl_new_employees_graph
             // 
             this.lbl_new_employees_graph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_new_employees_graph.Image = global::Fireon.Properties.Resources.picbBarChart1;
+            this.lbl_new_employees_graph.Image = global::Fireon.Properties.Resources.btnOthersLogin;
             this.lbl_new_employees_graph.Location = new System.Drawing.Point(190, 113);
             this.lbl_new_employees_graph.Name = "lbl_new_employees_graph";
             this.lbl_new_employees_graph.Size = new System.Drawing.Size(100, 50);
@@ -314,7 +314,7 @@
             // 
             // picb_done
             // 
-            this.picb_done.BackgroundImage = global::Fireon.Properties.Resources.picb_done;
+            this.picb_done.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.picb_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_done.Dock = System.Windows.Forms.DockStyle.Left;
             this.picb_done.Location = new System.Drawing.Point(30, 0);
@@ -326,7 +326,7 @@
             // btn_done
             // 
             this.btn_done.BackColor = System.Drawing.SystemColors.Window;
-            this.btn_done.BackgroundImage = global::Fireon.Properties.Resources.btn_add_done;
+            this.btn_done.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
             this.btn_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_done.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_done.FlatAppearance.BorderSize = 0;

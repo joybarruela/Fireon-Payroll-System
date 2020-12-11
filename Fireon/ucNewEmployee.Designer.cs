@@ -74,7 +74,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Fireon.Properties.Resources.picb_add_dp;
+            this.pictureBox1.Image = global::Fireon.Properties.Resources.btnIconAdd;
             this.pictureBox1.Location = new System.Drawing.Point(691, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
