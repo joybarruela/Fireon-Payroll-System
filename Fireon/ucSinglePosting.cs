@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Fireon
 {
-    public partial class Single_Posting : UserControl
+    public partial class ucSinglePosting : UserControl
     {
-        public Single_Posting()
+        public ucSinglePosting()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Fireon
 {
-    partial class Single_Posting
+    partial class ucSinglePosting
     {
         /// <summary> 
         /// Required designer variable.

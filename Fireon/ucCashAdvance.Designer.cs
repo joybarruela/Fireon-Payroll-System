@@ -1,6 +1,6 @@
 ﻿namespace Fireon
 {
-    partial class Cash_Advance
+    partial class ucCashAdvance
     {
         /// <summary> 
         /// Required designer variable.

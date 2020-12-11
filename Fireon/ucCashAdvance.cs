@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Fireon
 {
-    public partial class Cash_Advance : UserControl
+    public partial class ucCashAdvance : UserControl
     {
-        public Cash_Advance()
+        public ucCashAdvance()
         {
             InitializeComponent();
         }

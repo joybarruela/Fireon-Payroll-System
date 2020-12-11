@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFireonPayroll));
             this.pnl_header = new System.Windows.Forms.Panel();
+            this.pnl_separator_12 = new System.Windows.Forms.Panel();
             this.btn_notification = new System.Windows.Forms.Button();
             this.pnl_separator_15 = new System.Windows.Forms.Panel();
             this.picb_user = new System.Windows.Forms.PictureBox();
@@ -37,7 +38,6 @@
             this.lbl_greeting = new System.Windows.Forms.Label();
             this.pnl_separator_13 = new System.Windows.Forms.Panel();
             this.btn_menu = new System.Windows.Forms.Button();
-            this.pnl_separator_12 = new System.Windows.Forms.Panel();
             this.pnl_blockers_top = new System.Windows.Forms.Panel();
             this.pnl_blockers_bottom = new System.Windows.Forms.Panel();
             this.pnl_menu = new System.Windows.Forms.Panel();
@@ -87,6 +87,7 @@
             // pnl_header
             // 
             this.pnl_header.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_header.Controls.Add(this.pnl_separator_12);
             this.pnl_header.Controls.Add(this.btn_notification);
             this.pnl_header.Controls.Add(this.pnl_separator_15);
             this.pnl_header.Controls.Add(this.picb_user);
@@ -94,7 +95,6 @@
             this.pnl_header.Controls.Add(this.lbl_greeting);
             this.pnl_header.Controls.Add(this.pnl_separator_13);
             this.pnl_header.Controls.Add(this.btn_menu);
-            this.pnl_header.Controls.Add(this.pnl_separator_12);
             this.pnl_header.Controls.Add(this.pnl_blockers_top);
             this.pnl_header.Controls.Add(this.pnl_blockers_bottom);
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
@@ -102,6 +102,15 @@
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(933, 60);
             this.pnl_header.TabIndex = 16;
+            // 
+            // pnl_separator_12
+            // 
+            this.pnl_separator_12.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_separator_12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_separator_12.Location = new System.Drawing.Point(516, 10);
+            this.pnl_separator_12.Name = "pnl_separator_12";
+            this.pnl_separator_12.Size = new System.Drawing.Size(15, 40);
+            this.pnl_separator_12.TabIndex = 103;
             // 
             // btn_notification
             // 
@@ -113,7 +122,7 @@
             this.btn_notification.FlatAppearance.BorderSize = 0;
             this.btn_notification.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notification.Location = new System.Drawing.Point(516, 10);
+            this.btn_notification.Location = new System.Drawing.Point(531, 10);
             this.btn_notification.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.btn_notification.Name = "btn_notification";
             this.btn_notification.Size = new System.Drawing.Size(28, 40);
@@ -125,7 +134,7 @@
             // 
             this.pnl_separator_15.BackColor = System.Drawing.Color.Transparent;
             this.pnl_separator_15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_15.Location = new System.Drawing.Point(544, 10);
+            this.pnl_separator_15.Location = new System.Drawing.Point(559, 10);
             this.pnl_separator_15.Name = "pnl_separator_15";
             this.pnl_separator_15.Size = new System.Drawing.Size(15, 40);
             this.pnl_separator_15.TabIndex = 104;
@@ -136,7 +145,7 @@
             this.picb_user.BackgroundImage = global::Fireon.Properties.Resources.picb_admin_dp;
             this.picb_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_user.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picb_user.Location = new System.Drawing.Point(559, 10);
+            this.picb_user.Location = new System.Drawing.Point(574, 10);
             this.picb_user.Name = "picb_user";
             this.picb_user.Size = new System.Drawing.Size(42, 40);
             this.picb_user.TabIndex = 1;
@@ -146,7 +155,7 @@
             // 
             this.pnl_separator_14.BackColor = System.Drawing.Color.Transparent;
             this.pnl_separator_14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_14.Location = new System.Drawing.Point(601, 10);
+            this.pnl_separator_14.Location = new System.Drawing.Point(616, 10);
             this.pnl_separator_14.Name = "pnl_separator_14";
             this.pnl_separator_14.Size = new System.Drawing.Size(15, 40);
             this.pnl_separator_14.TabIndex = 104;
@@ -157,7 +166,7 @@
             this.lbl_greeting.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbl_greeting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_greeting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lbl_greeting.Location = new System.Drawing.Point(616, 10);
+            this.lbl_greeting.Location = new System.Drawing.Point(631, 10);
             this.lbl_greeting.Name = "lbl_greeting";
             this.lbl_greeting.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
             this.lbl_greeting.Size = new System.Drawing.Size(262, 26);
@@ -169,7 +178,7 @@
             // 
             this.pnl_separator_13.BackColor = System.Drawing.Color.Transparent;
             this.pnl_separator_13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_13.Location = new System.Drawing.Point(878, 10);
+            this.pnl_separator_13.Location = new System.Drawing.Point(893, 10);
             this.pnl_separator_13.Name = "pnl_separator_13";
             this.pnl_separator_13.Size = new System.Drawing.Size(15, 40);
             this.pnl_separator_13.TabIndex = 104;
@@ -184,22 +193,13 @@
             this.btn_menu.FlatAppearance.BorderSize = 0;
             this.btn_menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu.Location = new System.Drawing.Point(893, 10);
+            this.btn_menu.Location = new System.Drawing.Point(908, 10);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(25, 40);
             this.btn_menu.TabIndex = 213;
             this.btn_menu.TabStop = false;
             this.btn_menu.UseVisualStyleBackColor = false;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
-            // 
-            // pnl_separator_12
-            // 
-            this.pnl_separator_12.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_12.Location = new System.Drawing.Point(918, 10);
-            this.pnl_separator_12.Name = "pnl_separator_12";
-            this.pnl_separator_12.Size = new System.Drawing.Size(15, 40);
-            this.pnl_separator_12.TabIndex = 103;
             // 
             // pnl_blockers_top
             // 
@@ -737,6 +737,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1184, 641);
             this.Controls.Add(this.pnl_menu);
             this.Controls.Add(this.pnl_selected);
