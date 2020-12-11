@@ -77,6 +77,7 @@
             this.pnl_blockers_left = new System.Windows.Forms.Panel();
             this.pnl_selected = new System.Windows.Forms.Panel();
             this.pnl_blockers_right_main = new System.Windows.Forms.Panel();
+            this.pnl_blockers_bottom_main = new System.Windows.Forms.Panel();
             this.pnl_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb_user)).BeginInit();
             this.pnl_menu.SuspendLayout();
@@ -720,7 +721,7 @@
             this.pnl_selected.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_selected.Location = new System.Drawing.Point(226, 60);
             this.pnl_selected.Name = "pnl_selected";
-            this.pnl_selected.Size = new System.Drawing.Size(933, 581);
+            this.pnl_selected.Size = new System.Drawing.Size(933, 556);
             this.pnl_selected.TabIndex = 32;
             // 
             // pnl_blockers_right_main
@@ -732,6 +733,15 @@
             this.pnl_blockers_right_main.Size = new System.Drawing.Size(25, 641);
             this.pnl_blockers_right_main.TabIndex = 101;
             // 
+            // pnl_blockers_bottom_main
+            // 
+            this.pnl_blockers_bottom_main.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_blockers_bottom_main.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_blockers_bottom_main.Location = new System.Drawing.Point(226, 616);
+            this.pnl_blockers_bottom_main.Name = "pnl_blockers_bottom_main";
+            this.pnl_blockers_bottom_main.Size = new System.Drawing.Size(933, 25);
+            this.pnl_blockers_bottom_main.TabIndex = 102;
+            // 
             // frmFireonPayroll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -742,6 +752,7 @@
             this.Controls.Add(this.pnl_menu);
             this.Controls.Add(this.pnl_selected);
             this.Controls.Add(this.pnl_header);
+            this.Controls.Add(this.pnl_blockers_bottom_main);
             this.Controls.Add(this.pnl_sidebar);
             this.Controls.Add(this.pnl_blockers_right_main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -812,5 +823,6 @@
         private System.Windows.Forms.Panel pnl_blockers_bottom;
         private System.Windows.Forms.Panel pnl_selected;
         private System.Windows.Forms.Panel pnl_blockers_right_main;
+        private System.Windows.Forms.Panel pnl_blockers_bottom_main;
     }
 }

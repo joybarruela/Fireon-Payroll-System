@@ -17,7 +17,7 @@ namespace Fireon
             InitializeComponent();
         }
 
-        private void Employee_Load(object sender, EventArgs e)
+        private void ucEmployee_Load(object sender, EventArgs e)
         {
 
         }
