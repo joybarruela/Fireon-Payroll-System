@@ -702,7 +702,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picb_add_account {
+        internal static System.Drawing.Bitmap picbAddAccount {
             get {
                 object obj = ResourceManager.GetObject("picb_add_account", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -742,7 +742,7 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picb_bar_chart_2 {
+        internal static System.Drawing.Bitmap picbBarChart1 {
             get {
                 object obj = ResourceManager.GetObject("picb_bar_chart_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

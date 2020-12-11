@@ -178,7 +178,7 @@
             // lbl_new_employees_graph
             // 
             this.lbl_new_employees_graph.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_new_employees_graph.Image = global::Fireon.Properties.Resources.picb_bar_chart_2;
+            this.lbl_new_employees_graph.Image = global::Fireon.Properties.Resources.picbBarChart1;
             this.lbl_new_employees_graph.Location = new System.Drawing.Point(190, 113);
             this.lbl_new_employees_graph.Name = "lbl_new_employees_graph";
             this.lbl_new_employees_graph.Size = new System.Drawing.Size(100, 50);

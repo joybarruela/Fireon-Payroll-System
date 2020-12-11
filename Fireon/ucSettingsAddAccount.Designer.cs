@@ -219,7 +219,7 @@
             // 
             this.picb_user_add_account.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picb_user_add_account.BackColor = System.Drawing.Color.White;
-            this.picb_user_add_account.BackgroundImage = global::Fireon.Properties.Resources.picb_add_account;
+            this.picb_user_add_account.BackgroundImage = global::Fireon.Properties.Resources.picbAddAccount;
             this.picb_user_add_account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picb_user_add_account.Location = new System.Drawing.Point(472, 72);
             this.picb_user_add_account.Name = "picb_user_add_account";

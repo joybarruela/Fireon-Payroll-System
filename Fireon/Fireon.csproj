@@ -331,16 +331,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\add_dp.png" />
+    <None Include="Resources\addDP.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\admin-dp.png" />
+    <None Include="Resources\adminDP.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bar-chart-1.png" />
+    <None Include="Resources\barChart1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bar-chart-2.png" />
+    <None Include="Resources\barChart2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_account_disabled.png" />
@@ -463,7 +463,7 @@
     <None Include="Resources\btn-add-db.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn-add-db-hover.png" />
+    <None Include="Resources\btnAddDPHover.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn-add-hover.png" />
@@ -643,7 +643,7 @@
     <None Include="Resources\btn-login-hover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\add_account.png" />
+    <None Include="Resources\addAccount.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\settings_admin.png" />
