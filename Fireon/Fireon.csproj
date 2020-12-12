@@ -136,6 +136,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucLeave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLeave.Designer.cs">
+      <DependentUpon>ucLeave.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucNewEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLeave.resx">
+      <DependentUpon>ucLeave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucNewEmployee.resx">
       <DependentUpon>ucNewEmployee.cs</DependentUpon>
@@ -196,6 +205,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\btnAdd.png" />
+    <None Include="Resources\btnPrint.png" />
     <Content Include="Resources\cute-button-icons\btnIconAdd.png" />
     <Content Include="Resources\cute-button-icons\btnIconAddHover.png" />
     <Content Include="Resources\cute-button-icons\btnIconBack.png" />
@@ -218,7 +229,9 @@
     <Content Include="Resources\miscellaneous\miscFireonLogin.png" />
     <Content Include="Resources\miscellaneous\miscFireonLogo.png" />
     <None Include="Resources\other-buttons\btnOthersLogin.png" />
+    <None Include="Resources\other-buttons\btnAdd.png" />
     <Content Include="Resources\other-buttons\btnOthersLogout.png" />
+    <None Include="Resources\other-buttons\btnPrint.png" />
     <Content Include="Resources\sidebar-buttons\btnAll.png" />
     <Content Include="Resources\sidebar-buttons\btnAllActive.png" />
     <Content Include="Resources\sidebar-buttons\btnAllHover.png" />

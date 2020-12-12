@@ -30,690 +30,690 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFireonPayroll));
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.pnl_separator_12 = new System.Windows.Forms.Panel();
-            this.btn_notification = new System.Windows.Forms.Button();
-            this.pnl_separator_15 = new System.Windows.Forms.Panel();
-            this.picb_user = new System.Windows.Forms.PictureBox();
-            this.pnl_separator_14 = new System.Windows.Forms.Panel();
-            this.lbl_greeting = new System.Windows.Forms.Label();
-            this.pnl_separator_13 = new System.Windows.Forms.Panel();
-            this.btn_menu = new System.Windows.Forms.Button();
-            this.pnl_blockers_top = new System.Windows.Forms.Panel();
-            this.pnl_blockers_bottom = new System.Windows.Forms.Panel();
+            this.pnlSeparator12 = new System.Windows.Forms.Panel();
+            this.btnNotification = new System.Windows.Forms.Button();
+            this.pnlSeparator13 = new System.Windows.Forms.Panel();
+            this.picbUser = new System.Windows.Forms.PictureBox();
+            this.pnlSeparator14 = new System.Windows.Forms.Panel();
+            this.lblGreeting = new System.Windows.Forms.Label();
+            this.pnlSeparator15 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.pnlBlockersTop = new System.Windows.Forms.Panel();
+            this.pnlBlockersBottom = new System.Windows.Forms.Panel();
             this.pnl_menu = new System.Windows.Forms.Panel();
-            this.btn_logout = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.pnl_sidebar = new System.Windows.Forms.Panel();
-            this.lbl_date_today = new System.Windows.Forms.Label();
-            this.lbl_version = new System.Windows.Forms.Label();
-            this.btn_settings = new System.Windows.Forms.Button();
-            this.pnl_separator_11 = new System.Windows.Forms.Panel();
-            this.btn_single_posting = new System.Windows.Forms.Button();
-            this.pnl_separator_10 = new System.Windows.Forms.Panel();
-            this.btn_department = new System.Windows.Forms.Button();
-            this.pnl_separator_9 = new System.Windows.Forms.Panel();
-            this.btn_all = new System.Windows.Forms.Button();
-            this.lbl_payroll = new System.Windows.Forms.Label();
-            this.btn_allowances = new System.Windows.Forms.Button();
-            this.pnl_separator_8 = new System.Windows.Forms.Panel();
-            this.btn_deductions = new System.Windows.Forms.Button();
-            this.pnl_separator_7 = new System.Windows.Forms.Panel();
-            this.btn_cash_advance = new System.Windows.Forms.Button();
-            this.pnl_separator_6 = new System.Windows.Forms.Panel();
-            this.btn_violations = new System.Windows.Forms.Button();
-            this.pnl_separator_5 = new System.Windows.Forms.Panel();
-            this.btn_holiday = new System.Windows.Forms.Button();
-            this.pnl_separator_4 = new System.Windows.Forms.Panel();
-            this.btn_overtime = new System.Windows.Forms.Button();
-            this.pnl_separator_3 = new System.Windows.Forms.Panel();
-            this.btn_leave = new System.Windows.Forms.Button();
-            this.pnl_separator_2 = new System.Windows.Forms.Panel();
-            this.btn_employee = new System.Windows.Forms.Button();
-            this.lbl_manage_employee = new System.Windows.Forms.Label();
-            this.btn_dashboard = new System.Windows.Forms.Button();
-            this.pnl_separator_1 = new System.Windows.Forms.Panel();
-            this.picb_fireon = new System.Windows.Forms.PictureBox();
-            this.pnl_separator_0 = new System.Windows.Forms.Panel();
-            this.pnl_blockers_right = new System.Windows.Forms.Panel();
-            this.pnl_blockers_left = new System.Windows.Forms.Panel();
+            this.lblDateToday = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.pnlSeparator11 = new System.Windows.Forms.Panel();
+            this.btnSinglePosting = new System.Windows.Forms.Button();
+            this.pnlSeparator10 = new System.Windows.Forms.Panel();
+            this.btnDepartment = new System.Windows.Forms.Button();
+            this.pnlSeparator9 = new System.Windows.Forms.Panel();
+            this.btnAll = new System.Windows.Forms.Button();
+            this.lblPayroll = new System.Windows.Forms.Label();
+            this.btnAllowances = new System.Windows.Forms.Button();
+            this.pnlSeparator8 = new System.Windows.Forms.Panel();
+            this.btnDeductions = new System.Windows.Forms.Button();
+            this.pnlSeparator7 = new System.Windows.Forms.Panel();
+            this.btnCashAdvance = new System.Windows.Forms.Button();
+            this.pnlSeparator6 = new System.Windows.Forms.Panel();
+            this.btnViolations = new System.Windows.Forms.Button();
+            this.pnlSeparator5 = new System.Windows.Forms.Panel();
+            this.btnHoliday = new System.Windows.Forms.Button();
+            this.pnlSeparator4 = new System.Windows.Forms.Panel();
+            this.btnOvertime = new System.Windows.Forms.Button();
+            this.pnlSeparator3 = new System.Windows.Forms.Panel();
+            this.btnLeave = new System.Windows.Forms.Button();
+            this.pnlSeparator2 = new System.Windows.Forms.Panel();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.lblManageEmployee = new System.Windows.Forms.Label();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pnlSeparator1 = new System.Windows.Forms.Panel();
+            this.picbFireon = new System.Windows.Forms.PictureBox();
+            this.pnlSeparator0 = new System.Windows.Forms.Panel();
+            this.pnlBlockersRight = new System.Windows.Forms.Panel();
+            this.pnlBlockersLeft = new System.Windows.Forms.Panel();
             this.pnl_selected = new System.Windows.Forms.Panel();
             this.pnl_blockers_right_main = new System.Windows.Forms.Panel();
-            this.pnl_blockers_bottom_main = new System.Windows.Forms.Panel();
+            this.pnlBlockersBottomMain = new System.Windows.Forms.Panel();
             this.pnl_header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_user)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbUser)).BeginInit();
             this.pnl_menu.SuspendLayout();
             this.pnl_sidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_fireon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
             // 
             this.pnl_header.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_header.Controls.Add(this.pnl_separator_12);
-            this.pnl_header.Controls.Add(this.btn_notification);
-            this.pnl_header.Controls.Add(this.pnl_separator_15);
-            this.pnl_header.Controls.Add(this.picb_user);
-            this.pnl_header.Controls.Add(this.pnl_separator_14);
-            this.pnl_header.Controls.Add(this.lbl_greeting);
-            this.pnl_header.Controls.Add(this.pnl_separator_13);
-            this.pnl_header.Controls.Add(this.btn_menu);
-            this.pnl_header.Controls.Add(this.pnl_blockers_top);
-            this.pnl_header.Controls.Add(this.pnl_blockers_bottom);
+            this.pnl_header.Controls.Add(this.pnlSeparator12);
+            this.pnl_header.Controls.Add(this.btnNotification);
+            this.pnl_header.Controls.Add(this.pnlSeparator13);
+            this.pnl_header.Controls.Add(this.picbUser);
+            this.pnl_header.Controls.Add(this.pnlSeparator14);
+            this.pnl_header.Controls.Add(this.lblGreeting);
+            this.pnl_header.Controls.Add(this.pnlSeparator15);
+            this.pnl_header.Controls.Add(this.btnMenu);
+            this.pnl_header.Controls.Add(this.pnlBlockersTop);
+            this.pnl_header.Controls.Add(this.pnlBlockersBottom);
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(226, 0);
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(933, 60);
             this.pnl_header.TabIndex = 16;
             // 
-            // pnl_separator_12
+            // pnlSeparator12
             // 
-            this.pnl_separator_12.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_12.Location = new System.Drawing.Point(516, 10);
-            this.pnl_separator_12.Name = "pnl_separator_12";
-            this.pnl_separator_12.Size = new System.Drawing.Size(15, 40);
-            this.pnl_separator_12.TabIndex = 103;
+            this.pnlSeparator12.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlSeparator12.Location = new System.Drawing.Point(530, 10);
+            this.pnlSeparator12.Name = "pnlSeparator12";
+            this.pnlSeparator12.Size = new System.Drawing.Size(15, 40);
+            this.pnlSeparator12.TabIndex = 103;
             // 
-            // btn_notification
+            // btnNotification
             // 
-            this.btn_notification.BackColor = System.Drawing.Color.Transparent;
-            this.btn_notification.BackgroundImage = global::Fireon.Properties.Resources.btnIconNotification;
-            this.btn_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_notification.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_notification.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_notification.FlatAppearance.BorderSize = 0;
-            this.btn_notification.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notification.Location = new System.Drawing.Point(531, 10);
-            this.btn_notification.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.btn_notification.Name = "btn_notification";
-            this.btn_notification.Size = new System.Drawing.Size(28, 40);
-            this.btn_notification.TabIndex = 213;
-            this.btn_notification.TabStop = false;
-            this.btn_notification.UseVisualStyleBackColor = false;
+            this.btnNotification.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotification.BackgroundImage = global::Fireon.Properties.Resources.btnIconNotification;
+            this.btnNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotification.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnNotification.FlatAppearance.BorderSize = 0;
+            this.btnNotification.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotification.Location = new System.Drawing.Point(545, 10);
+            this.btnNotification.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.btnNotification.Name = "btnNotification";
+            this.btnNotification.Size = new System.Drawing.Size(28, 40);
+            this.btnNotification.TabIndex = 213;
+            this.btnNotification.TabStop = false;
+            this.btnNotification.UseVisualStyleBackColor = false;
             // 
-            // pnl_separator_15
+            // pnlSeparator13
             // 
-            this.pnl_separator_15.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_15.Location = new System.Drawing.Point(559, 10);
-            this.pnl_separator_15.Name = "pnl_separator_15";
-            this.pnl_separator_15.Size = new System.Drawing.Size(15, 40);
-            this.pnl_separator_15.TabIndex = 104;
+            this.pnlSeparator13.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator13.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlSeparator13.Location = new System.Drawing.Point(573, 10);
+            this.pnlSeparator13.Name = "pnlSeparator13";
+            this.pnlSeparator13.Size = new System.Drawing.Size(15, 40);
+            this.pnlSeparator13.TabIndex = 104;
             // 
-            // picb_user
+            // picbUser
             // 
-            this.picb_user.BackColor = System.Drawing.Color.Transparent;
-            this.picb_user.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
-            this.picb_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picb_user.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picb_user.Location = new System.Drawing.Point(574, 10);
-            this.picb_user.Name = "picb_user";
-            this.picb_user.Size = new System.Drawing.Size(42, 40);
-            this.picb_user.TabIndex = 1;
-            this.picb_user.TabStop = false;
+            this.picbUser.BackColor = System.Drawing.Color.Transparent;
+            this.picbUser.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
+            this.picbUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picbUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picbUser.Location = new System.Drawing.Point(588, 10);
+            this.picbUser.Name = "picbUser";
+            this.picbUser.Size = new System.Drawing.Size(42, 40);
+            this.picbUser.TabIndex = 1;
+            this.picbUser.TabStop = false;
             // 
-            // pnl_separator_14
+            // pnlSeparator14
             // 
-            this.pnl_separator_14.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_14.Location = new System.Drawing.Point(616, 10);
-            this.pnl_separator_14.Name = "pnl_separator_14";
-            this.pnl_separator_14.Size = new System.Drawing.Size(15, 40);
-            this.pnl_separator_14.TabIndex = 104;
+            this.pnlSeparator14.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlSeparator14.Location = new System.Drawing.Point(630, 10);
+            this.pnlSeparator14.Name = "pnlSeparator14";
+            this.pnlSeparator14.Size = new System.Drawing.Size(15, 40);
+            this.pnlSeparator14.TabIndex = 104;
             // 
-            // lbl_greeting
+            // lblGreeting
             // 
-            this.lbl_greeting.AutoSize = true;
-            this.lbl_greeting.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lbl_greeting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_greeting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lbl_greeting.Location = new System.Drawing.Point(631, 10);
-            this.lbl_greeting.Name = "lbl_greeting";
-            this.lbl_greeting.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
-            this.lbl_greeting.Size = new System.Drawing.Size(262, 26);
-            this.lbl_greeting.TabIndex = 0;
-            this.lbl_greeting.Text = "Sup bro! good morning, John Dope.";
-            this.lbl_greeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGreeting.AutoSize = true;
+            this.lblGreeting.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblGreeting.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreeting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.lblGreeting.Location = new System.Drawing.Point(645, 10);
+            this.lblGreeting.Name = "lblGreeting";
+            this.lblGreeting.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
+            this.lblGreeting.Size = new System.Drawing.Size(248, 26);
+            this.lblGreeting.TabIndex = 0;
+            this.lblGreeting.Text = "Sup bro! good morning, John Dope.";
+            this.lblGreeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnl_separator_13
+            // pnlSeparator15
             // 
-            this.pnl_separator_13.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_separator_13.Location = new System.Drawing.Point(893, 10);
-            this.pnl_separator_13.Name = "pnl_separator_13";
-            this.pnl_separator_13.Size = new System.Drawing.Size(15, 40);
-            this.pnl_separator_13.TabIndex = 104;
+            this.pnlSeparator15.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlSeparator15.Location = new System.Drawing.Point(893, 10);
+            this.pnlSeparator15.Name = "pnlSeparator15";
+            this.pnlSeparator15.Size = new System.Drawing.Size(15, 40);
+            this.pnlSeparator15.TabIndex = 104;
             // 
-            // btn_menu
+            // btnMenu
             // 
-            this.btn_menu.BackColor = System.Drawing.Color.Transparent;
-            this.btn_menu.BackgroundImage = global::Fireon.Properties.Resources.btnIconMenu;
-            this.btn_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_menu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_menu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_menu.FlatAppearance.BorderSize = 0;
-            this.btn_menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu.Location = new System.Drawing.Point(908, 10);
-            this.btn_menu.Name = "btn_menu";
-            this.btn_menu.Size = new System.Drawing.Size(25, 40);
-            this.btn_menu.TabIndex = 213;
-            this.btn_menu.TabStop = false;
-            this.btn_menu.UseVisualStyleBackColor = false;
-            this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.BackgroundImage = global::Fireon.Properties.Resources.btnIconMenu;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(908, 10);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(25, 40);
+            this.btnMenu.TabIndex = 213;
+            this.btnMenu.TabStop = false;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
-            // pnl_blockers_top
+            // pnlBlockersTop
             // 
-            this.pnl_blockers_top.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_blockers_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_blockers_top.Location = new System.Drawing.Point(0, 0);
-            this.pnl_blockers_top.Name = "pnl_blockers_top";
-            this.pnl_blockers_top.Size = new System.Drawing.Size(933, 10);
-            this.pnl_blockers_top.TabIndex = 214;
+            this.pnlBlockersTop.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBlockersTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBlockersTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlBlockersTop.Name = "pnlBlockersTop";
+            this.pnlBlockersTop.Size = new System.Drawing.Size(933, 10);
+            this.pnlBlockersTop.TabIndex = 214;
             // 
-            // pnl_blockers_bottom
+            // pnlBlockersBottom
             // 
-            this.pnl_blockers_bottom.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_blockers_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_blockers_bottom.Location = new System.Drawing.Point(0, 50);
-            this.pnl_blockers_bottom.Name = "pnl_blockers_bottom";
-            this.pnl_blockers_bottom.Size = new System.Drawing.Size(933, 10);
-            this.pnl_blockers_bottom.TabIndex = 215;
+            this.pnlBlockersBottom.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBlockersBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBlockersBottom.Location = new System.Drawing.Point(0, 50);
+            this.pnlBlockersBottom.Name = "pnlBlockersBottom";
+            this.pnlBlockersBottom.Size = new System.Drawing.Size(933, 10);
+            this.pnlBlockersBottom.TabIndex = 215;
             // 
             // pnl_menu
             // 
             this.pnl_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_menu.BackColor = System.Drawing.Color.Transparent;
             this.pnl_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnl_menu.Controls.Add(this.btn_logout);
+            this.pnl_menu.Controls.Add(this.btnLogout);
             this.pnl_menu.Location = new System.Drawing.Point(945, 63);
             this.pnl_menu.Name = "pnl_menu";
             this.pnl_menu.Size = new System.Drawing.Size(214, 53);
             this.pnl_menu.TabIndex = 31;
             this.pnl_menu.Visible = false;
             // 
-            // btn_logout
+            // btnLogout
             // 
-            this.btn_logout.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogout;
-            this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_logout.FlatAppearance.BorderSize = 0;
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Location = new System.Drawing.Point(9, 10);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(195, 31);
-            this.btn_logout.TabIndex = 0;
-            this.btn_logout.UseVisualStyleBackColor = true;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            this.btnLogout.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogout;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Location = new System.Drawing.Point(9, 10);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(195, 31);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // pnl_sidebar
             // 
             this.pnl_sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnl_sidebar.Controls.Add(this.lbl_date_today);
-            this.pnl_sidebar.Controls.Add(this.lbl_version);
-            this.pnl_sidebar.Controls.Add(this.btn_settings);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_11);
-            this.pnl_sidebar.Controls.Add(this.btn_single_posting);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_10);
-            this.pnl_sidebar.Controls.Add(this.btn_department);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_9);
-            this.pnl_sidebar.Controls.Add(this.btn_all);
-            this.pnl_sidebar.Controls.Add(this.lbl_payroll);
-            this.pnl_sidebar.Controls.Add(this.btn_allowances);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_8);
-            this.pnl_sidebar.Controls.Add(this.btn_deductions);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_7);
-            this.pnl_sidebar.Controls.Add(this.btn_cash_advance);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_6);
-            this.pnl_sidebar.Controls.Add(this.btn_violations);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_5);
-            this.pnl_sidebar.Controls.Add(this.btn_holiday);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_4);
-            this.pnl_sidebar.Controls.Add(this.btn_overtime);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_3);
-            this.pnl_sidebar.Controls.Add(this.btn_leave);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_2);
-            this.pnl_sidebar.Controls.Add(this.btn_employee);
-            this.pnl_sidebar.Controls.Add(this.lbl_manage_employee);
-            this.pnl_sidebar.Controls.Add(this.btn_dashboard);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_1);
-            this.pnl_sidebar.Controls.Add(this.picb_fireon);
-            this.pnl_sidebar.Controls.Add(this.pnl_separator_0);
-            this.pnl_sidebar.Controls.Add(this.pnl_blockers_right);
-            this.pnl_sidebar.Controls.Add(this.pnl_blockers_left);
+            this.pnl_sidebar.Controls.Add(this.lblDateToday);
+            this.pnl_sidebar.Controls.Add(this.lblVersion);
+            this.pnl_sidebar.Controls.Add(this.btnSettings);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator11);
+            this.pnl_sidebar.Controls.Add(this.btnSinglePosting);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator10);
+            this.pnl_sidebar.Controls.Add(this.btnDepartment);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator9);
+            this.pnl_sidebar.Controls.Add(this.btnAll);
+            this.pnl_sidebar.Controls.Add(this.lblPayroll);
+            this.pnl_sidebar.Controls.Add(this.btnAllowances);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator8);
+            this.pnl_sidebar.Controls.Add(this.btnDeductions);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator7);
+            this.pnl_sidebar.Controls.Add(this.btnCashAdvance);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator6);
+            this.pnl_sidebar.Controls.Add(this.btnViolations);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator5);
+            this.pnl_sidebar.Controls.Add(this.btnHoliday);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator4);
+            this.pnl_sidebar.Controls.Add(this.btnOvertime);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator3);
+            this.pnl_sidebar.Controls.Add(this.btnLeave);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator2);
+            this.pnl_sidebar.Controls.Add(this.btnEmployee);
+            this.pnl_sidebar.Controls.Add(this.lblManageEmployee);
+            this.pnl_sidebar.Controls.Add(this.btnDashboard);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator1);
+            this.pnl_sidebar.Controls.Add(this.picbFireon);
+            this.pnl_sidebar.Controls.Add(this.pnlSeparator0);
+            this.pnl_sidebar.Controls.Add(this.pnlBlockersRight);
+            this.pnl_sidebar.Controls.Add(this.pnlBlockersLeft);
             this.pnl_sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_sidebar.Location = new System.Drawing.Point(0, 0);
             this.pnl_sidebar.Name = "pnl_sidebar";
             this.pnl_sidebar.Size = new System.Drawing.Size(226, 641);
             this.pnl_sidebar.TabIndex = 30;
             // 
-            // lbl_date_today
+            // lblDateToday
             // 
-            this.lbl_date_today.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_date_today.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_date_today.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date_today.ForeColor = System.Drawing.Color.Black;
-            this.lbl_date_today.Location = new System.Drawing.Point(25, 594);
-            this.lbl_date_today.Name = "lbl_date_today";
-            this.lbl_date_today.Size = new System.Drawing.Size(176, 20);
-            this.lbl_date_today.TabIndex = 100;
-            this.lbl_date_today.Text = "Today is November 20, 2020";
-            this.lbl_date_today.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDateToday.BackColor = System.Drawing.Color.Transparent;
+            this.lblDateToday.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDateToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateToday.ForeColor = System.Drawing.Color.Black;
+            this.lblDateToday.Location = new System.Drawing.Point(25, 594);
+            this.lblDateToday.Name = "lblDateToday";
+            this.lblDateToday.Size = new System.Drawing.Size(176, 20);
+            this.lblDateToday.TabIndex = 100;
+            this.lblDateToday.Text = "Today is November 20, 2020";
+            this.lblDateToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_version
+            // lblVersion
             // 
-            this.lbl_version.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_version.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbl_version.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lbl_version.ForeColor = System.Drawing.Color.Black;
-            this.lbl_version.Location = new System.Drawing.Point(25, 614);
-            this.lbl_version.Name = "lbl_version";
-            this.lbl_version.Size = new System.Drawing.Size(176, 27);
-            this.lbl_version.TabIndex = 101;
-            this.lbl_version.Text = "Version 1.0";
-            this.lbl_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblVersion.BackColor = System.Drawing.Color.Transparent;
+            this.lblVersion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblVersion.ForeColor = System.Drawing.Color.Black;
+            this.lblVersion.Location = new System.Drawing.Point(25, 614);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(176, 27);
+            this.lblVersion.TabIndex = 101;
+            this.lblVersion.Text = "Version 1.0";
+            this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_settings
+            // btnSettings
             // 
-            this.btn_settings.BackColor = System.Drawing.Color.Transparent;
-            this.btn_settings.BackgroundImage = global::Fireon.Properties.Resources.btnSettings;
-            this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_settings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_settings.FlatAppearance.BorderSize = 0;
-            this.btn_settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_settings.Location = new System.Drawing.Point(25, 563);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Size = new System.Drawing.Size(176, 28);
-            this.btn_settings.TabIndex = 99;
-            this.btn_settings.TabStop = false;
-            this.btn_settings.UseVisualStyleBackColor = false;
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.BackgroundImage = global::Fireon.Properties.Resources.btnSettings;
+            this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Location = new System.Drawing.Point(25, 563);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(176, 28);
+            this.btnSettings.TabIndex = 99;
+            this.btnSettings.TabStop = false;
+            this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
-            // pnl_separator_11
+            // pnlSeparator11
             // 
-            this.pnl_separator_11.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_11.Location = new System.Drawing.Point(25, 553);
-            this.pnl_separator_11.Name = "pnl_separator_11";
-            this.pnl_separator_11.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_11.TabIndex = 98;
+            this.pnlSeparator11.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator11.Location = new System.Drawing.Point(25, 553);
+            this.pnlSeparator11.Name = "pnlSeparator11";
+            this.pnlSeparator11.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator11.TabIndex = 98;
             // 
-            // btn_single_posting
+            // btnSinglePosting
             // 
-            this.btn_single_posting.BackColor = System.Drawing.Color.Transparent;
-            this.btn_single_posting.BackgroundImage = global::Fireon.Properties.Resources.btnSinglePosting;
-            this.btn_single_posting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_single_posting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_single_posting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_single_posting.FlatAppearance.BorderSize = 0;
-            this.btn_single_posting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_single_posting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_single_posting.Location = new System.Drawing.Point(25, 525);
-            this.btn_single_posting.Name = "btn_single_posting";
-            this.btn_single_posting.Size = new System.Drawing.Size(176, 28);
-            this.btn_single_posting.TabIndex = 97;
-            this.btn_single_posting.TabStop = false;
-            this.btn_single_posting.UseVisualStyleBackColor = false;
-            this.btn_single_posting.Click += new System.EventHandler(this.btn_single_posting_Click);
+            this.btnSinglePosting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSinglePosting.BackgroundImage = global::Fireon.Properties.Resources.btnSinglePosting;
+            this.btnSinglePosting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSinglePosting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSinglePosting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSinglePosting.FlatAppearance.BorderSize = 0;
+            this.btnSinglePosting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSinglePosting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSinglePosting.Location = new System.Drawing.Point(25, 525);
+            this.btnSinglePosting.Name = "btnSinglePosting";
+            this.btnSinglePosting.Size = new System.Drawing.Size(176, 28);
+            this.btnSinglePosting.TabIndex = 97;
+            this.btnSinglePosting.TabStop = false;
+            this.btnSinglePosting.UseVisualStyleBackColor = false;
+            this.btnSinglePosting.Click += new System.EventHandler(this.btn_single_posting_Click);
             // 
-            // pnl_separator_10
+            // pnlSeparator10
             // 
-            this.pnl_separator_10.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_10.Location = new System.Drawing.Point(25, 515);
-            this.pnl_separator_10.Name = "pnl_separator_10";
-            this.pnl_separator_10.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_10.TabIndex = 96;
+            this.pnlSeparator10.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator10.Location = new System.Drawing.Point(25, 515);
+            this.pnlSeparator10.Name = "pnlSeparator10";
+            this.pnlSeparator10.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator10.TabIndex = 96;
             // 
-            // btn_department
+            // btnDepartment
             // 
-            this.btn_department.BackColor = System.Drawing.Color.Transparent;
-            this.btn_department.BackgroundImage = global::Fireon.Properties.Resources.btnDepartment;
-            this.btn_department.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_department.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_department.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_department.FlatAppearance.BorderSize = 0;
-            this.btn_department.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_department.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_department.Location = new System.Drawing.Point(25, 487);
-            this.btn_department.Name = "btn_department";
-            this.btn_department.Size = new System.Drawing.Size(176, 28);
-            this.btn_department.TabIndex = 95;
-            this.btn_department.TabStop = false;
-            this.btn_department.UseVisualStyleBackColor = false;
-            this.btn_department.Click += new System.EventHandler(this.btn_department_Click);
+            this.btnDepartment.BackColor = System.Drawing.Color.Transparent;
+            this.btnDepartment.BackgroundImage = global::Fireon.Properties.Resources.btnDepartment;
+            this.btnDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDepartment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDepartment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDepartment.FlatAppearance.BorderSize = 0;
+            this.btnDepartment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepartment.Location = new System.Drawing.Point(25, 487);
+            this.btnDepartment.Name = "btnDepartment";
+            this.btnDepartment.Size = new System.Drawing.Size(176, 28);
+            this.btnDepartment.TabIndex = 95;
+            this.btnDepartment.TabStop = false;
+            this.btnDepartment.UseVisualStyleBackColor = false;
+            this.btnDepartment.Click += new System.EventHandler(this.btn_department_Click);
             // 
-            // pnl_separator_9
+            // pnlSeparator9
             // 
-            this.pnl_separator_9.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_9.Location = new System.Drawing.Point(25, 477);
-            this.pnl_separator_9.Name = "pnl_separator_9";
-            this.pnl_separator_9.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_9.TabIndex = 94;
+            this.pnlSeparator9.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator9.Location = new System.Drawing.Point(25, 477);
+            this.pnlSeparator9.Name = "pnlSeparator9";
+            this.pnlSeparator9.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator9.TabIndex = 94;
             // 
-            // btn_all
+            // btnAll
             // 
-            this.btn_all.BackColor = System.Drawing.Color.Transparent;
-            this.btn_all.BackgroundImage = global::Fireon.Properties.Resources.btnAll;
-            this.btn_all.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_all.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_all.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_all.FlatAppearance.BorderSize = 0;
-            this.btn_all.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_all.Location = new System.Drawing.Point(25, 449);
-            this.btn_all.Name = "btn_all";
-            this.btn_all.Size = new System.Drawing.Size(176, 28);
-            this.btn_all.TabIndex = 50;
-            this.btn_all.TabStop = false;
-            this.btn_all.UseVisualStyleBackColor = false;
-            this.btn_all.Click += new System.EventHandler(this.btn_all_Click);
+            this.btnAll.BackColor = System.Drawing.Color.Transparent;
+            this.btnAll.BackgroundImage = global::Fireon.Properties.Resources.btnAll;
+            this.btnAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAll.FlatAppearance.BorderSize = 0;
+            this.btnAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAll.Location = new System.Drawing.Point(25, 449);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(176, 28);
+            this.btnAll.TabIndex = 50;
+            this.btnAll.TabStop = false;
+            this.btnAll.UseVisualStyleBackColor = false;
+            this.btnAll.Click += new System.EventHandler(this.btn_all_Click);
             // 
-            // lbl_payroll
+            // lblPayroll
             // 
-            this.lbl_payroll.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_payroll.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_payroll.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_payroll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lbl_payroll.Location = new System.Drawing.Point(25, 420);
-            this.lbl_payroll.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.lbl_payroll.Name = "lbl_payroll";
-            this.lbl_payroll.Size = new System.Drawing.Size(176, 29);
-            this.lbl_payroll.TabIndex = 93;
-            this.lbl_payroll.Text = "PAYROLL";
-            this.lbl_payroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPayroll.BackColor = System.Drawing.Color.Transparent;
+            this.lblPayroll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPayroll.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayroll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.lblPayroll.Location = new System.Drawing.Point(25, 420);
+            this.lblPayroll.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.lblPayroll.Name = "lblPayroll";
+            this.lblPayroll.Size = new System.Drawing.Size(176, 29);
+            this.lblPayroll.TabIndex = 93;
+            this.lblPayroll.Text = "PAYROLL";
+            this.lblPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_allowances
+            // btnAllowances
             // 
-            this.btn_allowances.BackColor = System.Drawing.Color.Transparent;
-            this.btn_allowances.BackgroundImage = global::Fireon.Properties.Resources.btnAllowance;
-            this.btn_allowances.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_allowances.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_allowances.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_allowances.FlatAppearance.BorderSize = 0;
-            this.btn_allowances.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_allowances.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_allowances.Location = new System.Drawing.Point(25, 392);
-            this.btn_allowances.Name = "btn_allowances";
-            this.btn_allowances.Size = new System.Drawing.Size(176, 28);
-            this.btn_allowances.TabIndex = 92;
-            this.btn_allowances.TabStop = false;
-            this.btn_allowances.UseVisualStyleBackColor = false;
-            this.btn_allowances.Click += new System.EventHandler(this.btn_allowances_Click);
+            this.btnAllowances.BackColor = System.Drawing.Color.Transparent;
+            this.btnAllowances.BackgroundImage = global::Fireon.Properties.Resources.btnAllowance;
+            this.btnAllowances.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAllowances.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAllowances.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAllowances.FlatAppearance.BorderSize = 0;
+            this.btnAllowances.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAllowances.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllowances.Location = new System.Drawing.Point(25, 392);
+            this.btnAllowances.Name = "btnAllowances";
+            this.btnAllowances.Size = new System.Drawing.Size(176, 28);
+            this.btnAllowances.TabIndex = 92;
+            this.btnAllowances.TabStop = false;
+            this.btnAllowances.UseVisualStyleBackColor = false;
+            this.btnAllowances.Click += new System.EventHandler(this.btn_allowances_Click);
             // 
-            // pnl_separator_8
+            // pnlSeparator8
             // 
-            this.pnl_separator_8.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_8.Location = new System.Drawing.Point(25, 382);
-            this.pnl_separator_8.Name = "pnl_separator_8";
-            this.pnl_separator_8.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_8.TabIndex = 91;
+            this.pnlSeparator8.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator8.Location = new System.Drawing.Point(25, 382);
+            this.pnlSeparator8.Name = "pnlSeparator8";
+            this.pnlSeparator8.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator8.TabIndex = 91;
             // 
-            // btn_deductions
+            // btnDeductions
             // 
-            this.btn_deductions.BackColor = System.Drawing.Color.Transparent;
-            this.btn_deductions.BackgroundImage = global::Fireon.Properties.Resources.btnDeduction;
-            this.btn_deductions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_deductions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_deductions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_deductions.FlatAppearance.BorderSize = 0;
-            this.btn_deductions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_deductions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deductions.Location = new System.Drawing.Point(25, 354);
-            this.btn_deductions.Name = "btn_deductions";
-            this.btn_deductions.Size = new System.Drawing.Size(176, 28);
-            this.btn_deductions.TabIndex = 90;
-            this.btn_deductions.TabStop = false;
-            this.btn_deductions.UseVisualStyleBackColor = false;
-            this.btn_deductions.Click += new System.EventHandler(this.btn_deductions_Click);
+            this.btnDeductions.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeductions.BackgroundImage = global::Fireon.Properties.Resources.btnDeduction;
+            this.btnDeductions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDeductions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeductions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDeductions.FlatAppearance.BorderSize = 0;
+            this.btnDeductions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnDeductions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeductions.Location = new System.Drawing.Point(25, 354);
+            this.btnDeductions.Name = "btnDeductions";
+            this.btnDeductions.Size = new System.Drawing.Size(176, 28);
+            this.btnDeductions.TabIndex = 90;
+            this.btnDeductions.TabStop = false;
+            this.btnDeductions.UseVisualStyleBackColor = false;
+            this.btnDeductions.Click += new System.EventHandler(this.btn_deductions_Click);
             // 
-            // pnl_separator_7
+            // pnlSeparator7
             // 
-            this.pnl_separator_7.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_7.Location = new System.Drawing.Point(25, 344);
-            this.pnl_separator_7.Name = "pnl_separator_7";
-            this.pnl_separator_7.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_7.TabIndex = 89;
+            this.pnlSeparator7.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator7.Location = new System.Drawing.Point(25, 344);
+            this.pnlSeparator7.Name = "pnlSeparator7";
+            this.pnlSeparator7.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator7.TabIndex = 89;
             // 
-            // btn_cash_advance
+            // btnCashAdvance
             // 
-            this.btn_cash_advance.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cash_advance.BackgroundImage = global::Fireon.Properties.Resources.btnCashAdvance;
-            this.btn_cash_advance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_cash_advance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cash_advance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_cash_advance.FlatAppearance.BorderSize = 0;
-            this.btn_cash_advance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_cash_advance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cash_advance.Location = new System.Drawing.Point(25, 316);
-            this.btn_cash_advance.Name = "btn_cash_advance";
-            this.btn_cash_advance.Size = new System.Drawing.Size(176, 28);
-            this.btn_cash_advance.TabIndex = 88;
-            this.btn_cash_advance.TabStop = false;
-            this.btn_cash_advance.UseVisualStyleBackColor = false;
-            this.btn_cash_advance.Click += new System.EventHandler(this.btn_cash_advance_Click);
+            this.btnCashAdvance.BackColor = System.Drawing.Color.Transparent;
+            this.btnCashAdvance.BackgroundImage = global::Fireon.Properties.Resources.btnCashAdvance;
+            this.btnCashAdvance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCashAdvance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCashAdvance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCashAdvance.FlatAppearance.BorderSize = 0;
+            this.btnCashAdvance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnCashAdvance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCashAdvance.Location = new System.Drawing.Point(25, 316);
+            this.btnCashAdvance.Name = "btnCashAdvance";
+            this.btnCashAdvance.Size = new System.Drawing.Size(176, 28);
+            this.btnCashAdvance.TabIndex = 88;
+            this.btnCashAdvance.TabStop = false;
+            this.btnCashAdvance.UseVisualStyleBackColor = false;
+            this.btnCashAdvance.Click += new System.EventHandler(this.btn_cash_advance_Click);
             // 
-            // pnl_separator_6
+            // pnlSeparator6
             // 
-            this.pnl_separator_6.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_6.Location = new System.Drawing.Point(25, 306);
-            this.pnl_separator_6.Name = "pnl_separator_6";
-            this.pnl_separator_6.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_6.TabIndex = 87;
+            this.pnlSeparator6.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator6.Location = new System.Drawing.Point(25, 306);
+            this.pnlSeparator6.Name = "pnlSeparator6";
+            this.pnlSeparator6.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator6.TabIndex = 87;
             // 
-            // btn_violations
+            // btnViolations
             // 
-            this.btn_violations.BackColor = System.Drawing.Color.Transparent;
-            this.btn_violations.BackgroundImage = global::Fireon.Properties.Resources.btnViolation;
-            this.btn_violations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_violations.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_violations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_violations.FlatAppearance.BorderSize = 0;
-            this.btn_violations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_violations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_violations.Location = new System.Drawing.Point(25, 278);
-            this.btn_violations.Name = "btn_violations";
-            this.btn_violations.Size = new System.Drawing.Size(176, 28);
-            this.btn_violations.TabIndex = 86;
-            this.btn_violations.TabStop = false;
-            this.btn_violations.UseVisualStyleBackColor = false;
-            this.btn_violations.Click += new System.EventHandler(this.btn_violations_Click);
+            this.btnViolations.BackColor = System.Drawing.Color.Transparent;
+            this.btnViolations.BackgroundImage = global::Fireon.Properties.Resources.btnViolation;
+            this.btnViolations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnViolations.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViolations.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViolations.FlatAppearance.BorderSize = 0;
+            this.btnViolations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnViolations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViolations.Location = new System.Drawing.Point(25, 278);
+            this.btnViolations.Name = "btnViolations";
+            this.btnViolations.Size = new System.Drawing.Size(176, 28);
+            this.btnViolations.TabIndex = 86;
+            this.btnViolations.TabStop = false;
+            this.btnViolations.UseVisualStyleBackColor = false;
+            this.btnViolations.Click += new System.EventHandler(this.btn_violations_Click);
             // 
-            // pnl_separator_5
+            // pnlSeparator5
             // 
-            this.pnl_separator_5.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_5.Location = new System.Drawing.Point(25, 268);
-            this.pnl_separator_5.Name = "pnl_separator_5";
-            this.pnl_separator_5.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_5.TabIndex = 85;
+            this.pnlSeparator5.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator5.Location = new System.Drawing.Point(25, 268);
+            this.pnlSeparator5.Name = "pnlSeparator5";
+            this.pnlSeparator5.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator5.TabIndex = 85;
             // 
-            // btn_holiday
+            // btnHoliday
             // 
-            this.btn_holiday.BackColor = System.Drawing.Color.Transparent;
-            this.btn_holiday.BackgroundImage = global::Fireon.Properties.Resources.btnHoliday;
-            this.btn_holiday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_holiday.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_holiday.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_holiday.FlatAppearance.BorderSize = 0;
-            this.btn_holiday.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_holiday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_holiday.Location = new System.Drawing.Point(25, 240);
-            this.btn_holiday.Name = "btn_holiday";
-            this.btn_holiday.Size = new System.Drawing.Size(176, 28);
-            this.btn_holiday.TabIndex = 84;
-            this.btn_holiday.TabStop = false;
-            this.btn_holiday.UseVisualStyleBackColor = false;
-            this.btn_holiday.Click += new System.EventHandler(this.btn_holiday_Click);
+            this.btnHoliday.BackColor = System.Drawing.Color.Transparent;
+            this.btnHoliday.BackgroundImage = global::Fireon.Properties.Resources.btnHoliday;
+            this.btnHoliday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHoliday.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHoliday.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHoliday.FlatAppearance.BorderSize = 0;
+            this.btnHoliday.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnHoliday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoliday.Location = new System.Drawing.Point(25, 240);
+            this.btnHoliday.Name = "btnHoliday";
+            this.btnHoliday.Size = new System.Drawing.Size(176, 28);
+            this.btnHoliday.TabIndex = 84;
+            this.btnHoliday.TabStop = false;
+            this.btnHoliday.UseVisualStyleBackColor = false;
+            this.btnHoliday.Click += new System.EventHandler(this.btn_holiday_Click);
             // 
-            // pnl_separator_4
+            // pnlSeparator4
             // 
-            this.pnl_separator_4.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_4.Location = new System.Drawing.Point(25, 230);
-            this.pnl_separator_4.Name = "pnl_separator_4";
-            this.pnl_separator_4.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_4.TabIndex = 83;
+            this.pnlSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator4.Location = new System.Drawing.Point(25, 230);
+            this.pnlSeparator4.Name = "pnlSeparator4";
+            this.pnlSeparator4.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator4.TabIndex = 83;
             // 
-            // btn_overtime
+            // btnOvertime
             // 
-            this.btn_overtime.BackColor = System.Drawing.Color.Transparent;
-            this.btn_overtime.BackgroundImage = global::Fireon.Properties.Resources.btnOvertime;
-            this.btn_overtime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_overtime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_overtime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_overtime.FlatAppearance.BorderSize = 0;
-            this.btn_overtime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_overtime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_overtime.Location = new System.Drawing.Point(25, 202);
-            this.btn_overtime.Name = "btn_overtime";
-            this.btn_overtime.Size = new System.Drawing.Size(176, 28);
-            this.btn_overtime.TabIndex = 82;
-            this.btn_overtime.TabStop = false;
-            this.btn_overtime.UseVisualStyleBackColor = false;
-            this.btn_overtime.Click += new System.EventHandler(this.btn_overtime_Click);
+            this.btnOvertime.BackColor = System.Drawing.Color.Transparent;
+            this.btnOvertime.BackgroundImage = global::Fireon.Properties.Resources.btnOvertime;
+            this.btnOvertime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOvertime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOvertime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOvertime.FlatAppearance.BorderSize = 0;
+            this.btnOvertime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnOvertime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOvertime.Location = new System.Drawing.Point(25, 202);
+            this.btnOvertime.Name = "btnOvertime";
+            this.btnOvertime.Size = new System.Drawing.Size(176, 28);
+            this.btnOvertime.TabIndex = 82;
+            this.btnOvertime.TabStop = false;
+            this.btnOvertime.UseVisualStyleBackColor = false;
+            this.btnOvertime.Click += new System.EventHandler(this.btn_overtime_Click);
             // 
-            // pnl_separator_3
+            // pnlSeparator3
             // 
-            this.pnl_separator_3.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_3.Location = new System.Drawing.Point(25, 192);
-            this.pnl_separator_3.Name = "pnl_separator_3";
-            this.pnl_separator_3.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_3.TabIndex = 81;
+            this.pnlSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator3.Location = new System.Drawing.Point(25, 192);
+            this.pnlSeparator3.Name = "pnlSeparator3";
+            this.pnlSeparator3.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator3.TabIndex = 81;
             // 
-            // btn_leave
+            // btnLeave
             // 
-            this.btn_leave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_leave.BackgroundImage = global::Fireon.Properties.Resources.btnLeave;
-            this.btn_leave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_leave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_leave.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_leave.FlatAppearance.BorderSize = 0;
-            this.btn_leave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_leave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_leave.Location = new System.Drawing.Point(25, 164);
-            this.btn_leave.Name = "btn_leave";
-            this.btn_leave.Size = new System.Drawing.Size(176, 28);
-            this.btn_leave.TabIndex = 80;
-            this.btn_leave.TabStop = false;
-            this.btn_leave.UseVisualStyleBackColor = false;
-            this.btn_leave.Click += new System.EventHandler(this.btn_leave_Click);
+            this.btnLeave.BackColor = System.Drawing.Color.Transparent;
+            this.btnLeave.BackgroundImage = global::Fireon.Properties.Resources.btnLeave;
+            this.btnLeave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLeave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLeave.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLeave.FlatAppearance.BorderSize = 0;
+            this.btnLeave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeave.Location = new System.Drawing.Point(25, 164);
+            this.btnLeave.Name = "btnLeave";
+            this.btnLeave.Size = new System.Drawing.Size(176, 28);
+            this.btnLeave.TabIndex = 80;
+            this.btnLeave.TabStop = false;
+            this.btnLeave.UseVisualStyleBackColor = false;
+            this.btnLeave.Click += new System.EventHandler(this.btn_leave_Click);
             // 
-            // pnl_separator_2
+            // pnlSeparator2
             // 
-            this.pnl_separator_2.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_2.Location = new System.Drawing.Point(25, 154);
-            this.pnl_separator_2.Name = "pnl_separator_2";
-            this.pnl_separator_2.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_2.TabIndex = 79;
+            this.pnlSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator2.Location = new System.Drawing.Point(25, 154);
+            this.pnlSeparator2.Name = "pnlSeparator2";
+            this.pnlSeparator2.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator2.TabIndex = 79;
             // 
-            // btn_employee
+            // btnEmployee
             // 
-            this.btn_employee.BackColor = System.Drawing.Color.Transparent;
-            this.btn_employee.BackgroundImage = global::Fireon.Properties.Resources.btnEmployee;
-            this.btn_employee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_employee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_employee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_employee.FlatAppearance.BorderSize = 0;
-            this.btn_employee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_employee.Location = new System.Drawing.Point(25, 126);
-            this.btn_employee.Name = "btn_employee";
-            this.btn_employee.Size = new System.Drawing.Size(176, 28);
-            this.btn_employee.TabIndex = 78;
-            this.btn_employee.TabStop = false;
-            this.btn_employee.UseVisualStyleBackColor = false;
-            this.btn_employee.Click += new System.EventHandler(this.btn_employee_Click);
+            this.btnEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btnEmployee.BackgroundImage = global::Fireon.Properties.Resources.btnEmployee;
+            this.btnEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmployee.FlatAppearance.BorderSize = 0;
+            this.btnEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployee.Location = new System.Drawing.Point(25, 126);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(176, 28);
+            this.btnEmployee.TabIndex = 78;
+            this.btnEmployee.TabStop = false;
+            this.btnEmployee.UseVisualStyleBackColor = false;
+            this.btnEmployee.Click += new System.EventHandler(this.btn_employee_Click);
             // 
-            // lbl_manage_employee
+            // lblManageEmployee
             // 
-            this.lbl_manage_employee.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_manage_employee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_manage_employee.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_manage_employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lbl_manage_employee.Location = new System.Drawing.Point(25, 98);
-            this.lbl_manage_employee.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.lbl_manage_employee.Name = "lbl_manage_employee";
-            this.lbl_manage_employee.Size = new System.Drawing.Size(176, 28);
-            this.lbl_manage_employee.TabIndex = 51;
-            this.lbl_manage_employee.Text = "MANAGE EMPLOYEES";
-            this.lbl_manage_employee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblManageEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.lblManageEmployee.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblManageEmployee.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.lblManageEmployee.Location = new System.Drawing.Point(25, 98);
+            this.lblManageEmployee.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.lblManageEmployee.Name = "lblManageEmployee";
+            this.lblManageEmployee.Size = new System.Drawing.Size(176, 28);
+            this.lblManageEmployee.TabIndex = 51;
+            this.lblManageEmployee.Text = "MANAGE EMPLOYEES";
+            this.lblManageEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_dashboard
+            // btnDashboard
             // 
-            this.btn_dashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btn_dashboard.BackgroundImage = global::Fireon.Properties.Resources.btnDashboard;
-            this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_dashboard.FlatAppearance.BorderSize = 0;
-            this.btn_dashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.Location = new System.Drawing.Point(25, 70);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Size = new System.Drawing.Size(176, 28);
-            this.btn_dashboard.TabIndex = 50;
-            this.btn_dashboard.TabStop = false;
-            this.btn_dashboard.UseVisualStyleBackColor = false;
-            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.BackgroundImage = global::Fireon.Properties.Resources.btnDashboard;
+            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Location = new System.Drawing.Point(25, 70);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(176, 28);
+            this.btnDashboard.TabIndex = 50;
+            this.btnDashboard.TabStop = false;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
-            // pnl_separator_1
+            // pnlSeparator1
             // 
-            this.pnl_separator_1.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_1.Location = new System.Drawing.Point(25, 60);
-            this.pnl_separator_1.Name = "pnl_separator_1";
-            this.pnl_separator_1.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_1.TabIndex = 5;
+            this.pnlSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator1.Location = new System.Drawing.Point(25, 60);
+            this.pnlSeparator1.Name = "pnlSeparator1";
+            this.pnlSeparator1.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator1.TabIndex = 5;
             // 
-            // picb_fireon
+            // picbFireon
             // 
-            this.picb_fireon.BackColor = System.Drawing.Color.Transparent;
-            this.picb_fireon.BackgroundImage = global::Fireon.Properties.Resources.miscFireonLogo;
-            this.picb_fireon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picb_fireon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picb_fireon.Location = new System.Drawing.Point(25, 10);
-            this.picb_fireon.Name = "picb_fireon";
-            this.picb_fireon.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.picb_fireon.Size = new System.Drawing.Size(176, 50);
-            this.picb_fireon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picb_fireon.TabIndex = 1;
-            this.picb_fireon.TabStop = false;
+            this.picbFireon.BackColor = System.Drawing.Color.Transparent;
+            this.picbFireon.BackgroundImage = global::Fireon.Properties.Resources.miscFireonLogo;
+            this.picbFireon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picbFireon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picbFireon.Location = new System.Drawing.Point(25, 10);
+            this.picbFireon.Name = "picbFireon";
+            this.picbFireon.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.picbFireon.Size = new System.Drawing.Size(176, 50);
+            this.picbFireon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picbFireon.TabIndex = 1;
+            this.picbFireon.TabStop = false;
             // 
-            // pnl_separator_0
+            // pnlSeparator0
             // 
-            this.pnl_separator_0.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_separator_0.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_separator_0.Location = new System.Drawing.Point(25, 0);
-            this.pnl_separator_0.Name = "pnl_separator_0";
-            this.pnl_separator_0.Size = new System.Drawing.Size(176, 10);
-            this.pnl_separator_0.TabIndex = 102;
+            this.pnlSeparator0.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSeparator0.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSeparator0.Location = new System.Drawing.Point(25, 0);
+            this.pnlSeparator0.Name = "pnlSeparator0";
+            this.pnlSeparator0.Size = new System.Drawing.Size(176, 10);
+            this.pnlSeparator0.TabIndex = 102;
             // 
-            // pnl_blockers_right
+            // pnlBlockersRight
             // 
-            this.pnl_blockers_right.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_blockers_right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_blockers_right.Location = new System.Drawing.Point(201, 0);
-            this.pnl_blockers_right.Name = "pnl_blockers_right";
-            this.pnl_blockers_right.Size = new System.Drawing.Size(25, 641);
-            this.pnl_blockers_right.TabIndex = 100;
+            this.pnlBlockersRight.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBlockersRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlBlockersRight.Location = new System.Drawing.Point(201, 0);
+            this.pnlBlockersRight.Name = "pnlBlockersRight";
+            this.pnlBlockersRight.Size = new System.Drawing.Size(25, 641);
+            this.pnlBlockersRight.TabIndex = 100;
             // 
-            // pnl_blockers_left
+            // pnlBlockersLeft
             // 
-            this.pnl_blockers_left.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_blockers_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_blockers_left.Location = new System.Drawing.Point(0, 0);
-            this.pnl_blockers_left.Name = "pnl_blockers_left";
-            this.pnl_blockers_left.Size = new System.Drawing.Size(25, 641);
-            this.pnl_blockers_left.TabIndex = 99;
+            this.pnlBlockersLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBlockersLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlBlockersLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnlBlockersLeft.Name = "pnlBlockersLeft";
+            this.pnlBlockersLeft.Size = new System.Drawing.Size(25, 641);
+            this.pnlBlockersLeft.TabIndex = 99;
             // 
             // pnl_selected
             // 
@@ -733,14 +733,14 @@
             this.pnl_blockers_right_main.Size = new System.Drawing.Size(25, 641);
             this.pnl_blockers_right_main.TabIndex = 101;
             // 
-            // pnl_blockers_bottom_main
+            // pnlBlockersBottomMain
             // 
-            this.pnl_blockers_bottom_main.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_blockers_bottom_main.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_blockers_bottom_main.Location = new System.Drawing.Point(226, 616);
-            this.pnl_blockers_bottom_main.Name = "pnl_blockers_bottom_main";
-            this.pnl_blockers_bottom_main.Size = new System.Drawing.Size(933, 25);
-            this.pnl_blockers_bottom_main.TabIndex = 102;
+            this.pnlBlockersBottomMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBlockersBottomMain.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBlockersBottomMain.Location = new System.Drawing.Point(226, 616);
+            this.pnlBlockersBottomMain.Name = "pnlBlockersBottomMain";
+            this.pnlBlockersBottomMain.Size = new System.Drawing.Size(933, 25);
+            this.pnlBlockersBottomMain.TabIndex = 102;
             // 
             // frmFireonPayroll
             // 
@@ -752,7 +752,7 @@
             this.Controls.Add(this.pnl_menu);
             this.Controls.Add(this.pnl_selected);
             this.Controls.Add(this.pnl_header);
-            this.Controls.Add(this.pnl_blockers_bottom_main);
+            this.Controls.Add(this.pnlBlockersBottomMain);
             this.Controls.Add(this.pnl_sidebar);
             this.Controls.Add(this.pnl_blockers_right_main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -765,10 +765,10 @@
             this.SizeChanged += new System.EventHandler(this.frmFireonPayroll_SizeChanged);
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_user)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbUser)).EndInit();
             this.pnl_menu.ResumeLayout(false);
             this.pnl_sidebar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picb_fireon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -776,53 +776,53 @@
         #endregion
 
         private System.Windows.Forms.Panel pnl_header;
-        private System.Windows.Forms.Label lbl_greeting;
-        private System.Windows.Forms.PictureBox picb_user;
+        private System.Windows.Forms.Label lblGreeting;
+        private System.Windows.Forms.PictureBox picbUser;
         private System.Windows.Forms.Panel pnl_sidebar;
-        private System.Windows.Forms.Panel pnl_separator_1;
-        private System.Windows.Forms.PictureBox picb_fireon;
+        private System.Windows.Forms.Panel pnlSeparator1;
+        private System.Windows.Forms.PictureBox picbFireon;
         private System.Windows.Forms.Panel pnl_menu;
-        private System.Windows.Forms.Button btn_logout;
-        private System.Windows.Forms.Button btn_dashboard;
-        private System.Windows.Forms.Label lbl_manage_employee;
-        private System.Windows.Forms.Button btn_deductions;
-        private System.Windows.Forms.Panel pnl_separator_7;
-        private System.Windows.Forms.Button btn_cash_advance;
-        private System.Windows.Forms.Panel pnl_separator_6;
-        private System.Windows.Forms.Button btn_violations;
-        private System.Windows.Forms.Panel pnl_separator_5;
-        private System.Windows.Forms.Button btn_holiday;
-        private System.Windows.Forms.Panel pnl_separator_4;
-        private System.Windows.Forms.Button btn_overtime;
-        private System.Windows.Forms.Panel pnl_separator_3;
-        private System.Windows.Forms.Button btn_leave;
-        private System.Windows.Forms.Panel pnl_separator_2;
-        private System.Windows.Forms.Button btn_employee;
-        private System.Windows.Forms.Panel pnl_separator_8;
-        private System.Windows.Forms.Button btn_allowances;
-        private System.Windows.Forms.Label lbl_payroll;
-        private System.Windows.Forms.Button btn_all;
-        private System.Windows.Forms.Panel pnl_separator_9;
-        private System.Windows.Forms.Button btn_department;
-        private System.Windows.Forms.Panel pnl_separator_10;
-        private System.Windows.Forms.Button btn_single_posting;
-        private System.Windows.Forms.Panel pnl_separator_11;
-        private System.Windows.Forms.Button btn_settings;
-        private System.Windows.Forms.Label lbl_date_today;
-        private System.Windows.Forms.Label lbl_version;
-        private System.Windows.Forms.Button btn_notification;
-        private System.Windows.Forms.Button btn_menu;
-        private System.Windows.Forms.Panel pnl_separator_0;
-        private System.Windows.Forms.Panel pnl_blockers_right;
-        private System.Windows.Forms.Panel pnl_blockers_left;
-        private System.Windows.Forms.Panel pnl_separator_15;
-        private System.Windows.Forms.Panel pnl_separator_14;
-        private System.Windows.Forms.Panel pnl_separator_13;
-        private System.Windows.Forms.Panel pnl_separator_12;
-        private System.Windows.Forms.Panel pnl_blockers_top;
-        private System.Windows.Forms.Panel pnl_blockers_bottom;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Label lblManageEmployee;
+        private System.Windows.Forms.Button btnDeductions;
+        private System.Windows.Forms.Panel pnlSeparator7;
+        private System.Windows.Forms.Button btnCashAdvance;
+        private System.Windows.Forms.Panel pnlSeparator6;
+        private System.Windows.Forms.Button btnViolations;
+        private System.Windows.Forms.Panel pnlSeparator5;
+        private System.Windows.Forms.Button btnHoliday;
+        private System.Windows.Forms.Panel pnlSeparator4;
+        private System.Windows.Forms.Button btnOvertime;
+        private System.Windows.Forms.Panel pnlSeparator3;
+        private System.Windows.Forms.Button btnLeave;
+        private System.Windows.Forms.Panel pnlSeparator2;
+        private System.Windows.Forms.Button btnEmployee;
+        private System.Windows.Forms.Panel pnlSeparator8;
+        private System.Windows.Forms.Button btnAllowances;
+        private System.Windows.Forms.Label lblPayroll;
+        private System.Windows.Forms.Button btnAll;
+        private System.Windows.Forms.Panel pnlSeparator9;
+        private System.Windows.Forms.Button btnDepartment;
+        private System.Windows.Forms.Panel pnlSeparator10;
+        private System.Windows.Forms.Button btnSinglePosting;
+        private System.Windows.Forms.Panel pnlSeparator11;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Label lblDateToday;
+        private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Button btnNotification;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Panel pnlSeparator0;
+        private System.Windows.Forms.Panel pnlBlockersRight;
+        private System.Windows.Forms.Panel pnlBlockersLeft;
+        private System.Windows.Forms.Panel pnlSeparator13;
+        private System.Windows.Forms.Panel pnlSeparator14;
+        private System.Windows.Forms.Panel pnlSeparator15;
+        private System.Windows.Forms.Panel pnlSeparator12;
+        private System.Windows.Forms.Panel pnlBlockersTop;
+        private System.Windows.Forms.Panel pnlBlockersBottom;
         private System.Windows.Forms.Panel pnl_selected;
         private System.Windows.Forms.Panel pnl_blockers_right_main;
-        private System.Windows.Forms.Panel pnl_blockers_bottom_main;
+        private System.Windows.Forms.Panel pnlBlockersBottomMain;
     }
 }

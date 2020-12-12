@@ -63,6 +63,16 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap btnAdd {
+            get {
+                object obj = ResourceManager.GetObject("btnAdd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap btnAll {
             get {
                 object obj = ResourceManager.GetObject("btnAll", resourceCulture);
@@ -536,6 +546,16 @@ namespace Fireon.Properties {
         public static System.Drawing.Bitmap btnOvertimeHover {
             get {
                 object obj = ResourceManager.GetObject("btnOvertimeHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap btnPrint {
+            get {
+                object obj = ResourceManager.GetObject("btnPrint", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

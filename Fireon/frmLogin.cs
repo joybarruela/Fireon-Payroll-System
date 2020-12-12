@@ -46,7 +46,7 @@ namespace Fireon
              * #2 IF THERE IS MATCHING USERNAME, CLOSE THE LOGIN AND PROCEED TO DASHBOARD
              * #3 IF NOT THEN DECREMENT THE VALUE OF LOGIN ATTEMPTS. AT 
              */
-            if (db.dbLogin(txtbx_username.Text, txtbx_pw.Text) == true) // IF USERNAME AND PASSWORD MATCH
+            if (db.dbLogin(txtbxUsername.Text, txtbxPw.Text) == true) // IF USERNAME AND PASSWORD MATCH
             {
                 MessageBox.Show(Properties.Resources.str_login_match, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show(Properties.Resources.str_loading_message,Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -67,7 +67,7 @@ namespace Fireon
                     main_form.Show();
                 }
             }
-            if (db.dbLogin(txtbx_username.Text, txtbx_pw.Text) == false) // IF USERNAME AND PASSWORD MISMATCH
+            if (db.dbLogin(txtbxUsername.Text, txtbxPw.Text) == false) // IF USERNAME AND PASSWORD MISMATCH
             {
                 MessageBox.Show(Properties.Resources.str_login_mismatch, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loginAttempts--; // DECREASE THE ATTEMPT
@@ -93,21 +93,21 @@ namespace Fireon
              * #4 IF THE VALUE IS ALREADY "FALSE", THEN SET BACK Tag PROPERTY TO "TRUE" AND UseSystemPasswordChar PROPERTY OF txtbx_pw TO "TRUE" AGAIN.
              */
             // #2
-            if (String.Compare(txtbx_pw.Tag.ToString(), "TRUE") == 0)
+            if (String.Compare(txtbxPw.Tag.ToString(), "TRUE") == 0)
             {
                 // #3
-                txtbx_pw.Tag = "FALSE";
-                txtbx_pw.UseSystemPasswordChar = false;
+                txtbxPw.Tag = "FALSE";
+                txtbxPw.UseSystemPasswordChar = false;
                 // CHANGE EYE LOGO TO ACTIVATED
-                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEyeHover;
+                btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;
             }
             // #4
             else
             {
-                txtbx_pw.Tag = "TRUE";
-                txtbx_pw.UseSystemPasswordChar = true;
+                txtbxPw.Tag = "TRUE";
+                txtbxPw.UseSystemPasswordChar = true;
                 // CHANGE EYE LOGO TO DEACTIVATED
-                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEye;
+                btnSeePw.BackgroundImage = Properties.Resources.btnIconEye;
             }
         }
         /// <summary>
@@ -117,7 +117,7 @@ namespace Fireon
         private void btn_see_pw_MouseHover(object sender, EventArgs e)
         {
                 // CHANGES THE IMAGE WHEN MOUSE ENTERS THE EYE
-            btn_see_pw.BackgroundImage = Properties.Resources.btnIconEyeHover;
+            btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;
         }
         /// <summary>
         /// VIBIESCA
@@ -127,13 +127,13 @@ namespace Fireon
         {
             // CHANGES THE IMAGE WHEN MOUSE LEAVES THE EYE
             // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE.
-            if (String.Compare(txtbx_pw.Tag.ToString(), "FALSE") == 0)
+            if (String.Compare(txtbxPw.Tag.ToString(), "FALSE") == 0)
             {
-                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEyeHover;
+                btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;
             }
             else
             {
-                btn_see_pw.BackgroundImage = Properties.Resources.btnIconEye;
+                btnSeePw.BackgroundImage = Properties.Resources.btnIconEye;
             }
         }
         #endregion
@@ -145,9 +145,9 @@ namespace Fireon
         {
             if (this.Visible == true)
             {
-                db.dbRead("SELECT * FROM tbl_account", dgv_accounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
-                txtbx_username.Clear(); // CLEAR USERNAME TEXT
-                txtbx_pw.Clear(); // CLEAR PASSWORD TEXT
+                db.dbRead("SELECT * FROM tbl_account", dgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
+                txtbxUsername.Clear(); // CLEAR USERNAME TEXT
+                txtbxPw.Clear(); // CLEAR PASSWORD TEXT
                 loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE.
             }
         }

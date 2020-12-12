@@ -35,19 +35,19 @@ namespace Fireon
         /// </summary>
         public void deactivate_button()
         {
-            btn_dashboard.BackgroundImage = Properties.Resources.btnDashboard; // RESET BUTTON BG
-            btn_employee.BackgroundImage = Properties.Resources.btnEmployee; // RESET BUTTON BG
-            btn_leave.BackgroundImage = Properties.Resources.btnLeave; // RESET BUTTON BG
-            btn_overtime.BackgroundImage = Properties.Resources.btnOvertime; // RESET BUTTON BG
-            btn_holiday.BackgroundImage = Properties.Resources.btnHoliday; // RESET BUTTON BG
-            btn_violations.BackgroundImage = Properties.Resources.btnViolation; // RESET BUTTON BG
-            btn_settings.BackgroundImage = Properties.Resources.btnSettings; // RESET BUTTON BG
-            btn_cash_advance.BackgroundImage = Properties.Resources.btnCashAdvance; // RESET BUTTON BG
-            btn_allowances.BackgroundImage = Properties.Resources.btnAllowance; // RESET BUTTON BG
-            btn_deductions.BackgroundImage = Properties.Resources.btnDeduction; // RESET BUTTON BG
-            btn_all.BackgroundImage = Properties.Resources.btnAll; // RESET BUTTON BG
-            btn_department.BackgroundImage = Properties.Resources.btnDepartment; // RESET BUTTON BG
-            btn_single_posting.BackgroundImage = Properties.Resources.btnSinglePosting; // RESET BUTTON BG
+            btnDashboard.BackgroundImage = Properties.Resources.btnDashboard; // RESET BUTTON BG
+            btnEmployee.BackgroundImage = Properties.Resources.btnEmployee; // RESET BUTTON BG
+            btnLeave.BackgroundImage = Properties.Resources.btnLeave; // RESET BUTTON BG
+            btnOvertime.BackgroundImage = Properties.Resources.btnOvertime; // RESET BUTTON BG
+            btnHoliday.BackgroundImage = Properties.Resources.btnHoliday; // RESET BUTTON BG
+            btnViolations.BackgroundImage = Properties.Resources.btnViolation; // RESET BUTTON BG
+            btnSettings.BackgroundImage = Properties.Resources.btnSettings; // RESET BUTTON BG
+            btnCashAdvance.BackgroundImage = Properties.Resources.btnCashAdvance; // RESET BUTTON BG
+            btnAllowances.BackgroundImage = Properties.Resources.btnAllowance; // RESET BUTTON BG
+            btnDeductions.BackgroundImage = Properties.Resources.btnDeduction; // RESET BUTTON BG
+            btnAll.BackgroundImage = Properties.Resources.btnAll; // RESET BUTTON BG
+            btnDepartment.BackgroundImage = Properties.Resources.btnDepartment; // RESET BUTTON BG
+            btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePosting; // RESET BUTTON BG
         }
         /// <summary>
         /// VIBIESCA
@@ -64,7 +64,7 @@ namespace Fireon
                     {
                         pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
                         deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                        btn_dashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
+                        btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
                         ucDashboard ucDashboard = new ucDashboard(); // CREATES A NEW UserControl
                         ucDashboard.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
                         ucDashboard.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
@@ -78,7 +78,7 @@ namespace Fireon
                     {
                         pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
                         deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                        btn_employee.BackgroundImage = Properties.Resources.btnEmployeeActive; // SET BUTTON ACTIVE
+                        btnEmployee.BackgroundImage = Properties.Resources.btnEmployeeActive; // SET BUTTON ACTIVE
                         ucEmployee ucEmployee = new ucEmployee(); // CREATES A NEW UserControl
                         ucEmployee.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
                         ucEmployee.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
@@ -244,7 +244,7 @@ namespace Fireon
                 default:
                     pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
                     deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                    btn_dashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
+                    btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
                     ucDashboard ucDashboardDefault = new ucDashboard(); // CREATES A NEW UserControl
                     ucDashboardDefault.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
                     ucDashboardDefault.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
@@ -354,15 +354,15 @@ namespace Fireon
 
             if (this.Size.Height > formDefaultHeight)
             {
-                picb_fireon.Height = picbFireonHeight + ((this.Size.Height - formDefaultHeight) / 3);
-                pnl_separator_0.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
-                pnl_separator_1.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
+                picbFireon.Height = picbFireonHeight + ((this.Size.Height - formDefaultHeight) / 3);
+                pnlSeparator0.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
+                pnlSeparator1.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
             }
             else
             {
-                picb_fireon.Height = picbFireonHeight - ((this.Size.Height - formDefaultHeight) / 3);
-                pnl_separator_0.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
-                pnl_separator_1.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
+                picbFireon.Height = picbFireonHeight - ((this.Size.Height - formDefaultHeight) / 3);
+                pnlSeparator0.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
+                pnlSeparator1.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
             }
         }
     }
