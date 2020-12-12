@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics; // FOR READING THE PROCESS OBJECT
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+// FOR READING THE PROCESS OBJECT
 using System.Windows.Forms;
 
 namespace Fireon
@@ -56,17 +49,17 @@ namespace Fireon
         public void displayUserControl(string name)
         {
             // CLOSES MENU THREE DOTS PANEL
-            pnl_menu.Visible = false;
+            pnlMenu.Visible = false;
             switch (name)
             {
                 case "Dashboard":
                     if (this.Text != "Fireon Payroll System | Dashboard")
                     {
-                        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                        pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
                         deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
                         btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
                         ucDashboard ucDashboard = new ucDashboard(); // CREATES A NEW UserControl
-                        ucDashboard.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                        ucDashboard.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
                         ucDashboard.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
                         this.Text = "Fireon Payroll System | Dashboard";
                         break;                    
@@ -76,30 +69,30 @@ namespace Fireon
                 case "Employee":
                     if (this.Text != "Fireon Payroll System | Employee")
                     {
-                        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                        pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
                         deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
                         btnEmployee.BackgroundImage = Properties.Resources.btnEmployeeActive; // SET BUTTON ACTIVE
                         ucEmployee ucEmployee = new ucEmployee(); // CREATES A NEW UserControl
-                        ucEmployee.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                        ucEmployee.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
                         ucEmployee.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
                         this.Text = "Fireon Payroll System | Employee";
                         break;                    
                     }
                     else { break; };
 
-                //case "Leave":
-                //    if (this.Text != "Fireon Payroll System | Leave")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_leave.BackgroundImage = Properties.Resources.btn_leave_active; // SET BUTTON ACTIVE
-                //        ucLeave ucLeave = new ucLeave(); // CREATES A NEW UserControl
-                //        ucLeave.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucLeave.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Leave";
-                //        break;
-                //    }
-                //    else { break; };
+                case "Leave":
+                    if (this.Text != "Fireon Payroll System | Leave")
+                    {
+                        pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
+                        btnLeave.BackgroundImage = Properties.Resources.btnLeaveActive; // SET BUTTON ACTIVE
+                        ucLeave ucLeave = new ucLeave(); // CREATES A NEW UserControl
+                        ucLeave.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
+                        ucLeave.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                        this.Text = "Fireon Payroll System | Leave";
+                        break;
+                    }
+                    else { break; };
 
                 //case "Overtime":
                 //    if (this.Text != "Fireon Payroll System | Overtime")
@@ -242,11 +235,11 @@ namespace Fireon
                 //    else { break; };
 
                 default:
-                    pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                    pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
                     deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
                     btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
                     ucDashboard ucDashboardDefault = new ucDashboard(); // CREATES A NEW UserControl
-                    ucDashboardDefault.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                    ucDashboardDefault.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
                     ucDashboardDefault.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
                     this.Text = "Fireon Payroll System | Dashboard";
                     break;  
@@ -257,8 +250,8 @@ namespace Fireon
         /// </summary>
         private void btn_menu_Click(object sender, EventArgs e)
         {
-            pnl_menu.BringToFront(); // BRINGS THE MENU PANEL TO FRONT.
-            pnl_menu.Visible = !pnl_menu.Visible; // CHANGES THE STATE OF VISIBILITY OF PANEL MENU.
+            pnlMenu.BringToFront(); // BRINGS THE MENU PANEL TO FRONT.
+            pnlMenu.Visible = !pnlMenu.Visible; // CHANGES THE STATE OF VISIBILITY OF PANEL MENU.
         }
         /// <summary>
         /// BARRUELA, VIBIESCA
@@ -266,9 +259,9 @@ namespace Fireon
         /// </summary>
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            pnl_menu.Visible = !pnl_menu.Visible; // HIDES THE MENU PANEL.
+            pnlMenu.Visible = !pnlMenu.Visible; // HIDES THE MENU PANEL.
             // ASK THE USER FIRST FOR CONFIRMATION
-            if (MessageBox.Show(Properties.Resources.str_logout_confirmation, Properties.Resources.str_program_title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show(Properties.Resources.msg_logout_confirmation, Properties.Resources.str_program_title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 this.Dispose(); // DISPOSES THIS FORM.
                 clsProgram.programInstance.Show(); // SHOWS THE LOGIN FORM BACK TO LIFE.
@@ -298,7 +291,7 @@ namespace Fireon
         }
         private void btn_leave_Click(object sender, EventArgs e)
         {
-            //displayUserControl("Leave");
+            displayUserControl("Leave");
         }
         private void btn_overtime_Click(object sender, EventArgs e)
         {

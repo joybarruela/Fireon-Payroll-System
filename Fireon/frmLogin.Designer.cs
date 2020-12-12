@@ -41,10 +41,10 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnSeePw = new System.Windows.Forms.Button();
-            this.dgvAccounts = new System.Windows.Forms.DataGridView();
+            this.dtgvAccounts = new System.Windows.Forms.DataGridView();
             this.pnlFireon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).BeginInit();
             this.SuspendLayout();
             // 
             // chkbxKeepLoggedIn
@@ -190,15 +190,20 @@
             this.btnSeePw.MouseLeave += new System.EventHandler(this.btn_see_pw_MouseLeave);
             this.btnSeePw.MouseHover += new System.EventHandler(this.btn_see_pw_MouseHover);
             // 
-            // dgvAccounts
+            // dtgvAccounts
             // 
-            this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAccounts.Location = new System.Drawing.Point(341, 474);
-            this.dgvAccounts.Name = "dgvAccounts";
-            this.dgvAccounts.ReadOnly = true;
-            this.dgvAccounts.Size = new System.Drawing.Size(455, 103);
-            this.dgvAccounts.TabIndex = 0;
-            this.dgvAccounts.TabStop = false;
+            this.dtgvAccounts.AllowUserToAddRows = false;
+            this.dtgvAccounts.AllowUserToDeleteRows = false;
+            this.dtgvAccounts.AllowUserToResizeColumns = false;
+            this.dtgvAccounts.AllowUserToResizeRows = false;
+            this.dtgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvAccounts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dtgvAccounts.Location = new System.Drawing.Point(341, 474);
+            this.dtgvAccounts.Name = "dtgvAccounts";
+            this.dtgvAccounts.ReadOnly = true;
+            this.dtgvAccounts.Size = new System.Drawing.Size(455, 103);
+            this.dtgvAccounts.TabIndex = 0;
+            this.dtgvAccounts.TabStop = false;
             // 
             // frmLogin
             // 
@@ -207,7 +212,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(808, 589);
-            this.Controls.Add(this.dgvAccounts);
+            this.Controls.Add(this.dtgvAccounts);
             this.Controls.Add(this.btnSeePw);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtbxPw);
@@ -230,7 +235,7 @@
             this.VisibleChanged += new System.EventHandler(this.frmLogin_VisibleChanged);
             this.pnlFireon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,6 +255,6 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button btnSeePw;
-        public System.Windows.Forms.DataGridView dgvAccounts;
+        public System.Windows.Forms.DataGridView dtgvAccounts;
     }
 }

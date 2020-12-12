@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="str_welcome_message" xml:space="preserve">
+  <data name="msg_welcome_message" xml:space="preserve">
     <value>Welcome to Fireon Payroll System.</value>
     <comment>Message to be shown when the user opens the program.</comment>
   </data>
@@ -125,7 +125,7 @@
     <value>Fireon Payroll System</value>
     <comment>Program title to be used somewhere.</comment>
   </data>
-  <data name="str_connection_string" xml:space="preserve">
+  <data name="db_connection_string" xml:space="preserve">
     <value>server=localhost;user id=root;password=1234;database=fireon</value>
     <comment>Your local database setup should have the same credentials like this string resource.</comment>
   </data>
@@ -133,19 +133,19 @@
     <value>3</value>
     <comment>Number of times the user can login.</comment>
   </data>
-  <data name="str_login_match" xml:space="preserve">
+  <data name="msg_login_match" xml:space="preserve">
     <value>Credentials match.</value>
     <comment>When user gets the username and password correct.</comment>
   </data>
-  <data name="str_login_mismatch" xml:space="preserve">
+  <data name="msg_login_mismatch" xml:space="preserve">
     <value>Credentials mismatch.</value>
     <comment>When user gets the username and password wrong.</comment>
   </data>
-  <data name="str_login_terminate" xml:space="preserve">
+  <data name="msg_login_terminate" xml:space="preserve">
     <value>Too much attempts. Program will now exit.</value>
     <comment>The message if the user attempts to login above the limit.</comment>
   </data>
-  <data name="str_loading_message" xml:space="preserve">
+  <data name="msg_loading_message" xml:space="preserve">
     <value>Loading will take some time, please be patient.</value>
     <comment>Simple loading message.</comment>
   </data>
@@ -157,7 +157,7 @@
     <value>vshost32</value>
     <comment>The name of the process that gets loaded and displayed in the Task Manager when debugging.</comment>
   </data>
-  <data name="str_logout_confirmation" xml:space="preserve">
+  <data name="msg_logout_confirmation" xml:space="preserve">
     <value>Save any work before logging out. Continue?</value>
     <comment>Before the user logs out prompt.</comment>
   </data>
@@ -348,10 +348,21 @@
   <data name="btnOthersLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\other-buttons\btnOthersLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other-buttons\btnAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\other-buttons\btnPrint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\other-buttons\btnadd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\other-buttons\btncancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="int_default_working_hours" xml:space="preserve">
+    <value>216</value>
+    <comment>To be used in add employee.</comment>
+  </data>
+  <data name="msg_exception" xml:space="preserve">
+    <value>Cannot perform the process. \n</value>
+    <comment>Use this to append to every exception to catch.</comment>
   </data>
 </root>

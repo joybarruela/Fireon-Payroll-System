@@ -88,7 +88,7 @@
             this.btnAddLeave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddLeave.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddLeave.FlatAppearance.BorderSize = 0;
-            this.btnAddLeave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAddLeave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnAddLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddLeave.Location = new System.Drawing.Point(773, 428);
             this.btnAddLeave.Name = "btnAddLeave";
@@ -262,6 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tblpLeave);
             this.Controls.Add(this.lblLeave);
             this.Name = "ucLeave";

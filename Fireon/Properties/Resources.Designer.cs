@@ -133,6 +133,16 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap btnCancel {
+            get {
+                object obj = ResourceManager.GetObject("btnCancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap btnCashAdvance {
             get {
                 object obj = ResourceManager.GetObject("btnCashAdvance", resourceCulture);
@@ -651,6 +661,24 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to server=localhost;user id=root;password=1234;database=fireon.
+        /// </summary>
+        public static string db_connection_string {
+            get {
+                return ResourceManager.GetString("db_connection_string", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 216.
+        /// </summary>
+        public static string int_default_working_hours {
+            get {
+                return ResourceManager.GetString("int_default_working_hours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3.
         /// </summary>
         public static string int_login_attempts {
@@ -710,56 +738,65 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to server=localhost;user id=root;password=1234;database=fireon.
+        ///   Looks up a localized string similar to Cannot perform the process. \n.
         /// </summary>
-        public static string str_connection_string {
+        public static string msg_exception {
             get {
-                return ResourceManager.GetString("str_connection_string", resourceCulture);
+                return ResourceManager.GetString("msg_exception", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Loading will take some time, please be patient..
         /// </summary>
-        public static string str_loading_message {
+        public static string msg_loading_message {
             get {
-                return ResourceManager.GetString("str_loading_message", resourceCulture);
+                return ResourceManager.GetString("msg_loading_message", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Credentials match..
         /// </summary>
-        public static string str_login_match {
+        public static string msg_login_match {
             get {
-                return ResourceManager.GetString("str_login_match", resourceCulture);
+                return ResourceManager.GetString("msg_login_match", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Credentials mismatch..
         /// </summary>
-        public static string str_login_mismatch {
+        public static string msg_login_mismatch {
             get {
-                return ResourceManager.GetString("str_login_mismatch", resourceCulture);
+                return ResourceManager.GetString("msg_login_mismatch", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Too much attempts. Program will now exit..
         /// </summary>
-        public static string str_login_terminate {
+        public static string msg_login_terminate {
             get {
-                return ResourceManager.GetString("str_login_terminate", resourceCulture);
+                return ResourceManager.GetString("msg_login_terminate", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Save any work before logging out. Continue?.
         /// </summary>
-        public static string str_logout_confirmation {
+        public static string msg_logout_confirmation {
             get {
-                return ResourceManager.GetString("str_logout_confirmation", resourceCulture);
+                return ResourceManager.GetString("msg_logout_confirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to Fireon Payroll System..
+        /// </summary>
+        public static string msg_welcome_message {
+            get {
+                return ResourceManager.GetString("msg_welcome_message", resourceCulture);
             }
         }
         
@@ -787,15 +824,6 @@ namespace Fireon.Properties {
         public static string str_program_title {
             get {
                 return ResourceManager.GetString("str_program_title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Welcome to Fireon Payroll System..
-        /// </summary>
-        public static string str_welcome_message {
-            get {
-                return ResourceManager.GetString("str_welcome_message", resourceCulture);
             }
         }
     }

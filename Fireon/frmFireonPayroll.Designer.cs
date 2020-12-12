@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFireonPayroll));
-            this.pnl_header = new System.Windows.Forms.Panel();
+            this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlSeparator12 = new System.Windows.Forms.Panel();
             this.btnNotification = new System.Windows.Forms.Button();
             this.pnlSeparator13 = new System.Windows.Forms.Panel();
@@ -40,9 +40,9 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.pnlBlockersTop = new System.Windows.Forms.Panel();
             this.pnlBlockersBottom = new System.Windows.Forms.Panel();
-            this.pnl_menu = new System.Windows.Forms.Panel();
+            this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.pnl_sidebar = new System.Windows.Forms.Panel();
+            this.pnlSidebar = new System.Windows.Forms.Panel();
             this.lblDateToday = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -75,34 +75,34 @@
             this.pnlSeparator0 = new System.Windows.Forms.Panel();
             this.pnlBlockersRight = new System.Windows.Forms.Panel();
             this.pnlBlockersLeft = new System.Windows.Forms.Panel();
-            this.pnl_selected = new System.Windows.Forms.Panel();
-            this.pnl_blockers_right_main = new System.Windows.Forms.Panel();
+            this.pnlSelected = new System.Windows.Forms.Panel();
+            this.pnlBlockersRightMain = new System.Windows.Forms.Panel();
             this.pnlBlockersBottomMain = new System.Windows.Forms.Panel();
-            this.pnl_header.SuspendLayout();
+            this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUser)).BeginInit();
-            this.pnl_menu.SuspendLayout();
-            this.pnl_sidebar.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
+            this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnl_header
+            // pnlHeader
             // 
-            this.pnl_header.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_header.Controls.Add(this.pnlSeparator12);
-            this.pnl_header.Controls.Add(this.btnNotification);
-            this.pnl_header.Controls.Add(this.pnlSeparator13);
-            this.pnl_header.Controls.Add(this.picbUser);
-            this.pnl_header.Controls.Add(this.pnlSeparator14);
-            this.pnl_header.Controls.Add(this.lblGreeting);
-            this.pnl_header.Controls.Add(this.pnlSeparator15);
-            this.pnl_header.Controls.Add(this.btnMenu);
-            this.pnl_header.Controls.Add(this.pnlBlockersTop);
-            this.pnl_header.Controls.Add(this.pnlBlockersBottom);
-            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_header.Location = new System.Drawing.Point(226, 0);
-            this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(933, 60);
-            this.pnl_header.TabIndex = 16;
+            this.pnlHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlHeader.Controls.Add(this.pnlSeparator12);
+            this.pnlHeader.Controls.Add(this.btnNotification);
+            this.pnlHeader.Controls.Add(this.pnlSeparator13);
+            this.pnlHeader.Controls.Add(this.picbUser);
+            this.pnlHeader.Controls.Add(this.pnlSeparator14);
+            this.pnlHeader.Controls.Add(this.lblGreeting);
+            this.pnlHeader.Controls.Add(this.pnlSeparator15);
+            this.pnlHeader.Controls.Add(this.btnMenu);
+            this.pnlHeader.Controls.Add(this.pnlBlockersTop);
+            this.pnlHeader.Controls.Add(this.pnlBlockersBottom);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(226, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(933, 60);
+            this.pnlHeader.TabIndex = 16;
             // 
             // pnlSeparator12
             // 
@@ -220,17 +220,17 @@
             this.pnlBlockersBottom.Size = new System.Drawing.Size(933, 10);
             this.pnlBlockersBottom.TabIndex = 215;
             // 
-            // pnl_menu
+            // pnlMenu
             // 
-            this.pnl_menu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_menu.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnl_menu.Controls.Add(this.btnLogout);
-            this.pnl_menu.Location = new System.Drawing.Point(945, 63);
-            this.pnl_menu.Name = "pnl_menu";
-            this.pnl_menu.Size = new System.Drawing.Size(214, 53);
-            this.pnl_menu.TabIndex = 31;
-            this.pnl_menu.Visible = false;
+            this.pnlMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pnlMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlMenu.Controls.Add(this.btnLogout);
+            this.pnlMenu.Location = new System.Drawing.Point(945, 63);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(214, 53);
+            this.pnlMenu.TabIndex = 31;
+            this.pnlMenu.Visible = false;
             // 
             // btnLogout
             // 
@@ -246,46 +246,46 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
-            // pnl_sidebar
+            // pnlSidebar
             // 
-            this.pnl_sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnl_sidebar.Controls.Add(this.lblDateToday);
-            this.pnl_sidebar.Controls.Add(this.lblVersion);
-            this.pnl_sidebar.Controls.Add(this.btnSettings);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator11);
-            this.pnl_sidebar.Controls.Add(this.btnSinglePosting);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator10);
-            this.pnl_sidebar.Controls.Add(this.btnDepartment);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator9);
-            this.pnl_sidebar.Controls.Add(this.btnAll);
-            this.pnl_sidebar.Controls.Add(this.lblPayroll);
-            this.pnl_sidebar.Controls.Add(this.btnAllowances);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator8);
-            this.pnl_sidebar.Controls.Add(this.btnDeductions);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator7);
-            this.pnl_sidebar.Controls.Add(this.btnCashAdvance);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator6);
-            this.pnl_sidebar.Controls.Add(this.btnViolations);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator5);
-            this.pnl_sidebar.Controls.Add(this.btnHoliday);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator4);
-            this.pnl_sidebar.Controls.Add(this.btnOvertime);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator3);
-            this.pnl_sidebar.Controls.Add(this.btnLeave);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator2);
-            this.pnl_sidebar.Controls.Add(this.btnEmployee);
-            this.pnl_sidebar.Controls.Add(this.lblManageEmployee);
-            this.pnl_sidebar.Controls.Add(this.btnDashboard);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator1);
-            this.pnl_sidebar.Controls.Add(this.picbFireon);
-            this.pnl_sidebar.Controls.Add(this.pnlSeparator0);
-            this.pnl_sidebar.Controls.Add(this.pnlBlockersRight);
-            this.pnl_sidebar.Controls.Add(this.pnlBlockersLeft);
-            this.pnl_sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_sidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnl_sidebar.Name = "pnl_sidebar";
-            this.pnl_sidebar.Size = new System.Drawing.Size(226, 641);
-            this.pnl_sidebar.TabIndex = 30;
+            this.pnlSidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlSidebar.Controls.Add(this.lblDateToday);
+            this.pnlSidebar.Controls.Add(this.lblVersion);
+            this.pnlSidebar.Controls.Add(this.btnSettings);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator11);
+            this.pnlSidebar.Controls.Add(this.btnSinglePosting);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator10);
+            this.pnlSidebar.Controls.Add(this.btnDepartment);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator9);
+            this.pnlSidebar.Controls.Add(this.btnAll);
+            this.pnlSidebar.Controls.Add(this.lblPayroll);
+            this.pnlSidebar.Controls.Add(this.btnAllowances);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator8);
+            this.pnlSidebar.Controls.Add(this.btnDeductions);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator7);
+            this.pnlSidebar.Controls.Add(this.btnCashAdvance);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator6);
+            this.pnlSidebar.Controls.Add(this.btnViolations);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator5);
+            this.pnlSidebar.Controls.Add(this.btnHoliday);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator4);
+            this.pnlSidebar.Controls.Add(this.btnOvertime);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator3);
+            this.pnlSidebar.Controls.Add(this.btnLeave);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator2);
+            this.pnlSidebar.Controls.Add(this.btnEmployee);
+            this.pnlSidebar.Controls.Add(this.lblManageEmployee);
+            this.pnlSidebar.Controls.Add(this.btnDashboard);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator1);
+            this.pnlSidebar.Controls.Add(this.picbFireon);
+            this.pnlSidebar.Controls.Add(this.pnlSeparator0);
+            this.pnlSidebar.Controls.Add(this.pnlBlockersRight);
+            this.pnlSidebar.Controls.Add(this.pnlBlockersLeft);
+            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(226, 641);
+            this.pnlSidebar.TabIndex = 30;
             // 
             // lblDateToday
             // 
@@ -715,23 +715,23 @@
             this.pnlBlockersLeft.Size = new System.Drawing.Size(25, 641);
             this.pnlBlockersLeft.TabIndex = 99;
             // 
-            // pnl_selected
+            // pnlSelected
             // 
-            this.pnl_selected.BackColor = System.Drawing.Color.White;
-            this.pnl_selected.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_selected.Location = new System.Drawing.Point(226, 60);
-            this.pnl_selected.Name = "pnl_selected";
-            this.pnl_selected.Size = new System.Drawing.Size(933, 556);
-            this.pnl_selected.TabIndex = 32;
+            this.pnlSelected.BackColor = System.Drawing.Color.White;
+            this.pnlSelected.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSelected.Location = new System.Drawing.Point(226, 60);
+            this.pnlSelected.Name = "pnlSelected";
+            this.pnlSelected.Size = new System.Drawing.Size(933, 556);
+            this.pnlSelected.TabIndex = 32;
             // 
-            // pnl_blockers_right_main
+            // pnlBlockersRightMain
             // 
-            this.pnl_blockers_right_main.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_blockers_right_main.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_blockers_right_main.Location = new System.Drawing.Point(1159, 0);
-            this.pnl_blockers_right_main.Name = "pnl_blockers_right_main";
-            this.pnl_blockers_right_main.Size = new System.Drawing.Size(25, 641);
-            this.pnl_blockers_right_main.TabIndex = 101;
+            this.pnlBlockersRightMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBlockersRightMain.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlBlockersRightMain.Location = new System.Drawing.Point(1159, 0);
+            this.pnlBlockersRightMain.Name = "pnlBlockersRightMain";
+            this.pnlBlockersRightMain.Size = new System.Drawing.Size(25, 641);
+            this.pnlBlockersRightMain.TabIndex = 101;
             // 
             // pnlBlockersBottomMain
             // 
@@ -749,12 +749,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1184, 641);
-            this.Controls.Add(this.pnl_menu);
-            this.Controls.Add(this.pnl_selected);
-            this.Controls.Add(this.pnl_header);
+            this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.pnlSelected);
+            this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlBlockersBottomMain);
-            this.Controls.Add(this.pnl_sidebar);
-            this.Controls.Add(this.pnl_blockers_right_main);
+            this.Controls.Add(this.pnlSidebar);
+            this.Controls.Add(this.pnlBlockersRightMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1200, 680);
             this.Name = "frmFireonPayroll";
@@ -763,11 +763,11 @@
             this.TransparencyKey = System.Drawing.Color.DarkRed;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFireonPayroll_FormClosed);
             this.SizeChanged += new System.EventHandler(this.frmFireonPayroll_SizeChanged);
-            this.pnl_header.ResumeLayout(false);
-            this.pnl_header.PerformLayout();
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUser)).EndInit();
-            this.pnl_menu.ResumeLayout(false);
-            this.pnl_sidebar.ResumeLayout(false);
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlSidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).EndInit();
             this.ResumeLayout(false);
 
@@ -775,13 +775,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_header;
+        private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblGreeting;
         private System.Windows.Forms.PictureBox picbUser;
-        private System.Windows.Forms.Panel pnl_sidebar;
+        private System.Windows.Forms.Panel pnlSidebar;
         private System.Windows.Forms.Panel pnlSeparator1;
         private System.Windows.Forms.PictureBox picbFireon;
-        private System.Windows.Forms.Panel pnl_menu;
+        private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label lblManageEmployee;
@@ -821,8 +821,8 @@
         private System.Windows.Forms.Panel pnlSeparator12;
         private System.Windows.Forms.Panel pnlBlockersTop;
         private System.Windows.Forms.Panel pnlBlockersBottom;
-        private System.Windows.Forms.Panel pnl_selected;
-        private System.Windows.Forms.Panel pnl_blockers_right_main;
+        private System.Windows.Forms.Panel pnlSelected;
+        private System.Windows.Forms.Panel pnlBlockersRightMain;
         private System.Windows.Forms.Panel pnlBlockersBottomMain;
     }
 }

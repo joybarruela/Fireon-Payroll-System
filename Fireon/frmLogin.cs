@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
 
 namespace Fireon
 {
@@ -48,8 +48,8 @@ namespace Fireon
              */
             if (db.dbLogin(txtbxUsername.Text, txtbxPw.Text) == true) // IF USERNAME AND PASSWORD MATCH
             {
-                MessageBox.Show(Properties.Resources.str_login_match, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(Properties.Resources.str_loading_message,Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msg_login_match, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msg_loading_message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide(); // HIDES THIS LOGIN FORM.
 
@@ -69,12 +69,12 @@ namespace Fireon
             }
             if (db.dbLogin(txtbxUsername.Text, txtbxPw.Text) == false) // IF USERNAME AND PASSWORD MISMATCH
             {
-                MessageBox.Show(Properties.Resources.str_login_mismatch, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msg_login_mismatch, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loginAttempts--; // DECREASE THE ATTEMPT
             }
             if (loginAttempts == 0) // IF NO MORE ATTEMPTS
             {
-                MessageBox.Show(Properties.Resources.str_login_terminate, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.msg_login_terminate, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close(); // EXIT THE LOGIN WINDOW.
             }
         }
@@ -145,7 +145,7 @@ namespace Fireon
         {
             if (this.Visible == true)
             {
-                db.dbRead("SELECT * FROM tbl_account", dgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
+                db.dbRead("SELECT * FROM tbl_account", dtgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
                 txtbxUsername.Clear(); // CLEAR USERNAME TEXT
                 txtbxPw.Clear(); // CLEAR PASSWORD TEXT
                 loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE.
