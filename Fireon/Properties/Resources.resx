@@ -365,4 +365,12 @@
     <value>Cannot perform the process. \n</value>
     <comment>Use this to append to every exception to catch.</comment>
   </data>
+  <data name="msg_new_employee_prompt" xml:space="preserve">
+    <value>ABORT to go back, RETRY to clear fields, IGNORE to cancel.</value>
+    <comment>Used in the New Employee Cancel feature.</comment>
+  </data>
+  <data name="msg_new_employee_retry" xml:space="preserve">
+    <value>Fields reset.</value>
+    <comment>Used in the New Employee Cancel feature.</comment>
+  </data>
 </root>

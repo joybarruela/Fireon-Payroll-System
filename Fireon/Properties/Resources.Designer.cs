@@ -792,6 +792,24 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ABORT to go back, RETRY to clear fields, IGNORE to cancel..
+        /// </summary>
+        public static string msg_new_employee_prompt {
+            get {
+                return ResourceManager.GetString("msg_new_employee_prompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fields reset..
+        /// </summary>
+        public static string msg_new_employee_retry {
+            get {
+                return ResourceManager.GetString("msg_new_employee_retry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome to Fireon Payroll System..
         /// </summary>
         public static string msg_welcome_message {

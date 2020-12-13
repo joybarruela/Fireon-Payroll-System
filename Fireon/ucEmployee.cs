@@ -33,10 +33,133 @@ namespace Fireon
         /// VIBIESCA
         /// EVERY TIME THAT THE NEW BUTTON IS CLICKED
         /// </summary>
-        private void btnHireEmployees_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            displayUserControl("New Employee");
+            /* ALGO
+             * TWO THINGS CAN HAPPEN WHEN ADD BUTTON IS CLICKED
+             * IF ucNewEmployee IS VISIBLE, TRY TO ADD THEM TO DATABASE
+             * IF ucEmployee IS VISIBLE, TRY TO SHOW ucNewEmployee
+             */
+            UserControl reference = null;
+            bool ucNewEmployeeFound = false; // RESULT BASED ON THE LOOP BELOW
+            foreach (Object obj in pnlEmployee.Controls) // START LOOPING TO ALL CHILD OF pnlEmployee
+            {
+                UserControl item = (UserControl)obj; // CAST THEM
+                if (item.Name == "ucNewEmployee")
+                {
+                    ucNewEmployeeFound = true; // SET TO TRUE IF THERE IS 1
+                    reference = item; // PASSES THE REFERENCE
+                    break; // BREAK OUT OF THE LOOP
+                }
+            }
+            if (ucNewEmployeeFound == true) // EVALUATE RESULT
+            {
+                addNewEmployee(reference); // IS THERE IS ALREADY A NEW EMPLOYEE FORM THEN CALL THIS FUNCTION TO TRY TO ADD THE DATA INTO THE DATABASE.
+            }
+            else
+            {
+                displayUserControl("New Employee"); // SHOW A NEW FORM
+            }
         }
+        /// <summary>
+        /// WHEN THE USER CLICKS CANCEL ON THE NEW EMPLOYEE FORM
+        /// </summary>
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+           /*
+            * ALGO
+            * EITHER PROMPT THE USER TO CLEAR AND RESET TEXT FIELDS 
+            * OR displayUserControl("List Employee");
+            */
+            var prompt = MessageBox.Show(null, Properties.Resources.msg_new_employee_prompt, Properties.Resources.str_program_title, MessageBoxButtons.AbortRetryIgnore);
+            if (prompt == DialogResult.Abort)
+            {
+                displayUserControl("List Employee");
+            }
+            else if (prompt == DialogResult.Retry)
+            {
+                displayUserControl("New Employee");
+                MessageBox.Show(null, Properties.Resources.msg_new_employee_retry, Properties.Resources.str_program_title, MessageBoxButtons.OK);
+            }
+            else if (prompt == DialogResult.Ignore)
+            {
+            }
+
+        }
+        /// <summary>
+        /// VIBIESCA
+        /// TRIES TO ADD DATA FROM ucNewEmployee TO THE DATABASE
+        /// </summary>
+        private void addNewEmployee(UserControl reference)
+        {
+            /* ALGO
+             * ACCESS THE ucNewEmployee FIRST
+             * VALIDATE THE INPUT
+             * INSERT THEM TO DATABASE
+             */
+            try 
+            {
+                var ucNewEmployee = (ucNewEmployee)reference; // CAST THE PARAMETER TO A ucNewEmployee SO THAT THE SYSTEM COULD READ IT'S CONTENTS
+                // VALIDATE THE INPUT
+                // midddle initial is optional
+                // (ucNewEmployee.picbDP.ImageLocation != null)
+                // should not check for picture because user may leave it blank
+                // birthdate no validation; it just depends on the user's stupidity
+                string sex; // holds what the user has selected
+
+                if (ucNewEmployee.mcBirthdate.SelectionStart == DateTime.Today){
+                    MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if ((ucNewEmployee.rdbtnMale.Checked == false) && (ucNewEmployee.rdbtnFemale.Checked == false)){
+                    MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                // if user selects regular, it's okay if the contract duration is blank
+                // if user is contractual, contract duration should have input
+                // this checks if the contractual (index of 0) is selected but no contract duration is present
+                if ((ucNewEmployee.cmbxStatus.SelectedIndex == 0) && (ucNewEmployee.txtbxContractDuration.Text == String.Empty))
+                {
+                    MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                    
+                if((ucNewEmployee.txtbxFirstName.Text != "") &&
+                    (ucNewEmployee.txtbxLastName.Text != "") &&
+                    (ucNewEmployee.txtbxContact.Text.Length == 11) &&
+                    (ucNewEmployee.txtbxEmail.Text != "") &&
+                    (ucNewEmployee.txtbxAddress.Text != "") &&
+                    (ucNewEmployee.cmbxMaritalStatus.SelectedIndex > -1) &&
+                    (ucNewEmployee.txtbxNationality.Text != "") &&
+                    (ucNewEmployee.cmbxDepartment.SelectedIndex > -1) &&
+                    (ucNewEmployee.cmbxPosition.SelectedIndex > -1) &&
+                    (ucNewEmployee.cmbxStatus.SelectedIndex > -1) &&
+                    (ucNewEmployee.txtbxWorkingHours.Text != "") &&
+                    (ucNewEmployee.txtbxHourlyRate.Text != "") &&
+                    (ucNewEmployee.cmbxPaymentMode.SelectedIndex > -1))
+                {
+                    MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // INSERT THEM TO DATABASE
+                    db.insertEmployee(
+                        ucNewEmployee.txtbxFirstName.Text,
+                        ucNewEmployee.txtbxMiddleInitial.Text,
+                        ucNewEmployee.txtbxLastName.Text,
+                        )
+                }
+                else
+                {
+                    MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(null, Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /// <summary>
+        /// VIBIESCA
+        /// DISPLAY USER CONTROL
+        /// </summary>
         public void displayUserControl(string name)
         {
             switch (name)

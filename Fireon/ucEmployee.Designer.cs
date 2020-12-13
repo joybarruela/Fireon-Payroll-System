@@ -267,6 +267,7 @@
             this.btnCancel.TabIndex = 2;
             this.btnCancel.TabStop = false;
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // pnlSeparator1
             // 
@@ -290,7 +291,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.TabStop = false;
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnHireEmployees_Click);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pnlEmployee
             // 

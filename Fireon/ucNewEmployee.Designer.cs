@@ -45,7 +45,7 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtbxAddress = new System.Windows.Forms.TextBox();
             this.lblMaritalStatus = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbxMaritalStatus = new System.Windows.Forms.ComboBox();
             this.lblNationality = new System.Windows.Forms.Label();
             this.txtbxNationality = new System.Windows.Forms.TextBox();
             this.lblDepartment = new System.Windows.Forms.Label();
@@ -219,6 +219,7 @@
             // 
             this.txtbxAddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtbxAddress.Location = new System.Drawing.Point(90, 207);
+            this.txtbxAddress.MaxLength = 200;
             this.txtbxAddress.Multiline = true;
             this.txtbxAddress.Name = "txtbxAddress";
             this.txtbxAddress.Size = new System.Drawing.Size(227, 44);
@@ -234,20 +235,20 @@
             this.lblMaritalStatus.TabIndex = 17;
             this.lblMaritalStatus.Text = "marital status";
             // 
-            // comboBox1
+            // cmbxMaritalStatus
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbxMaritalStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbxMaritalStatus.FormattingEnabled = true;
+            this.cmbxMaritalStatus.Items.AddRange(new object[] {
             "Married",
             "Widowed",
             "Separated",
             "Divorced",
             "Single"});
-            this.comboBox1.Location = new System.Drawing.Point(429, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 21);
-            this.comboBox1.TabIndex = 18;
+            this.cmbxMaritalStatus.Location = new System.Drawing.Point(429, 17);
+            this.cmbxMaritalStatus.Name = "cmbxMaritalStatus";
+            this.cmbxMaritalStatus.Size = new System.Drawing.Size(181, 21);
+            this.cmbxMaritalStatus.TabIndex = 18;
             // 
             // lblNationality
             // 
@@ -262,6 +263,7 @@
             // 
             this.txtbxNationality.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtbxNationality.Location = new System.Drawing.Point(429, 50);
+            this.txtbxNationality.MaxLength = 45;
             this.txtbxNationality.Name = "txtbxNationality";
             this.txtbxNationality.Size = new System.Drawing.Size(181, 20);
             this.txtbxNationality.TabIndex = 20;
@@ -488,7 +490,7 @@
             this.Controls.Add(this.lblDepartment);
             this.Controls.Add(this.txtbxNationality);
             this.Controls.Add(this.lblNationality);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbxMaritalStatus);
             this.Controls.Add(this.lblMaritalStatus);
             this.Controls.Add(this.txtbxAddress);
             this.Controls.Add(this.lblAddress);
@@ -518,43 +520,43 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picbDP;
-        private System.Windows.Forms.Button btnUploadDP;
-        private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.Label lblMiddleInitial;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.TextBox txtbxFirstName;
-        private System.Windows.Forms.TextBox txtbxMiddleInitial;
-        private System.Windows.Forms.TextBox txtbxLastName;
-        private System.Windows.Forms.Label lblSex;
-        private System.Windows.Forms.Label lblContact;
-        private System.Windows.Forms.TextBox txtbxContact;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtbxEmail;
-        private System.Windows.Forms.Label lblBirthdate;
-        private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.TextBox txtbxAddress;
-        private System.Windows.Forms.Label lblMaritalStatus;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label lblNationality;
-        private System.Windows.Forms.TextBox txtbxNationality;
-        private System.Windows.Forms.Label lblDepartment;
-        private System.Windows.Forms.ComboBox cmbxDepartment;
-        private System.Windows.Forms.Label lblPosition;
-        private System.Windows.Forms.ComboBox cmbxPosition;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.ComboBox cmbxStatus;
-        private System.Windows.Forms.Label lblWorkingHours;
-        private System.Windows.Forms.TextBox txtbxWorkingHours;
-        private System.Windows.Forms.Label lblHourlyRate;
-        private System.Windows.Forms.TextBox txtbxHourlyRate;
-        private System.Windows.Forms.Label lblContractDuration;
-        private System.Windows.Forms.TextBox txtbxContractDuration;
-        private System.Windows.Forms.Label lblPaymentMode;
-        private System.Windows.Forms.ComboBox cmbxPaymentMode;
-        private System.Windows.Forms.MonthCalendar mcBirthdate;
-        private System.Windows.Forms.RadioButton rdbtnMale;
-        private System.Windows.Forms.RadioButton rdbtnFemale;
-        private System.Windows.Forms.OpenFileDialog ofdUploadDP;
+        public System.Windows.Forms.PictureBox picbDP;
+        public System.Windows.Forms.Button btnUploadDP;
+        public System.Windows.Forms.Label lblFirstName;
+        public System.Windows.Forms.Label lblMiddleInitial;
+        public System.Windows.Forms.Label lblLastName;
+        public System.Windows.Forms.TextBox txtbxFirstName;
+        public System.Windows.Forms.TextBox txtbxMiddleInitial;
+        public System.Windows.Forms.TextBox txtbxLastName;
+        public System.Windows.Forms.Label lblSex;
+        public System.Windows.Forms.Label lblContact;
+        public System.Windows.Forms.TextBox txtbxContact;
+        public System.Windows.Forms.Label lblEmail;
+        public System.Windows.Forms.TextBox txtbxEmail;
+        public System.Windows.Forms.Label lblBirthdate;
+        public System.Windows.Forms.Label lblAddress;
+        public System.Windows.Forms.TextBox txtbxAddress;
+        public System.Windows.Forms.Label lblMaritalStatus;
+        public System.Windows.Forms.ComboBox cmbxMaritalStatus;
+        public System.Windows.Forms.Label lblNationality;
+        public System.Windows.Forms.TextBox txtbxNationality;
+        public System.Windows.Forms.Label lblDepartment;
+        public System.Windows.Forms.ComboBox cmbxDepartment;
+        public System.Windows.Forms.Label lblPosition;
+        public System.Windows.Forms.ComboBox cmbxPosition;
+        public System.Windows.Forms.Label lblStatus;
+        public System.Windows.Forms.ComboBox cmbxStatus;
+        public System.Windows.Forms.Label lblWorkingHours;
+        public System.Windows.Forms.TextBox txtbxWorkingHours;
+        public System.Windows.Forms.Label lblHourlyRate;
+        public System.Windows.Forms.TextBox txtbxHourlyRate;
+        public System.Windows.Forms.Label lblContractDuration;
+        public System.Windows.Forms.TextBox txtbxContractDuration;
+        public System.Windows.Forms.Label lblPaymentMode;
+        public System.Windows.Forms.ComboBox cmbxPaymentMode;
+        public System.Windows.Forms.MonthCalendar mcBirthdate;
+        public System.Windows.Forms.RadioButton rdbtnMale;
+        public System.Windows.Forms.RadioButton rdbtnFemale;
+        public System.Windows.Forms.OpenFileDialog ofdUploadDP;
     }
 }

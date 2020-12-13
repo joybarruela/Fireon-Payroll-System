@@ -135,5 +135,124 @@ namespace Fireon
             }
 
         }
+        /// <summary>
+        /// VIBIESCA
+        /// INSERT EMPLOYEE DATA INTO THE DATABASE BRRRRRRRRRRRRRRR
+        /// </summary>
+        /// <param name="firstName">String</param>
+        /// <param name="middleInitial">String</param>
+        /// <param name="lastName">String</param>
+        /// <param name="sex">String</param>
+        /// <param name="contactNumber">int</param>
+        /// <param name="emailAddress">String</param>
+        /// <param name="homeAddress">String</param>
+        /// <param name="birthDate">DateTime</param>
+        /// <param name="maritalStatus">String</param>
+        /// <param name="nationality">String</param>
+        /// <param name="department">String</param>
+        /// <param name="position">String</param>
+        /// <param name="status">String</param>
+        /// <param name="workingHours">int</param>
+        /// <param name="hourlyRate">int</param>
+        /// <param name="contractDuration">int</param>
+        /// <param name="paymentMode">String</param>
+        /// <param name="imageLocation">String</param>
+        /// <param name="dateEmployed">DateTime</param>
+        public void insertEmployee (
+            String firstName,
+            String middleInitial,
+            String lastName,
+            String sex,
+            int contactNumber,
+            String emailAddress,
+            String homeAddress,
+            DateTime birthDate,
+            String maritalStatus,
+            String nationality,
+            String department,
+            String position,
+            String status,
+            int workingHours,
+            int hourlyRate,
+            int contractDuration,
+            String paymentMode,
+            String imageLocation,
+            DateTime dateEmployed)
+        {
+            try
+            {
+                dbOpen(); // OPEN THE CONNECTION.
+
+                MySqlCommand dbCmd = new MySqlCommand(
+                @"INSERT INTO tbl_employee(
+                employeeFirstName,
+                employeeMiddleInitial,
+                employeeLastName,
+                employeeSex,
+                employeeContactNumber,
+                employeeEmailAddress,
+                employeeHomeAddress,
+                employeeBirthDate,
+                employeeMaritalStatus,
+                employeeNationality,
+                employeeDepartment,
+                employeePosition,
+                employeeStatus,
+                employeeWorkingHours,
+                employeeHourlyRate,
+                employeeContractDuration,
+                employeePaymentMode,
+                employeeImageLocation,
+                employeeDateEmployed) 
+                VALUES(
+                @employeeFirstName,
+                @employeeMiddleInitial,
+                @employeeLastName,
+                @employeeSex,
+                @employeeContactNumber,
+                @employeeEmailAddress,
+                @employeeHomeAddress,
+                @employeeBirthDate,
+                @employeeMaritalStatus,
+                @employeeNationality,
+                @employeeDepartment,
+                @employeePosition,
+                @employeeStatus,
+                @employeeWorkingHours,
+                @employeeHourlyRate,
+                @employeeContractDuration,
+                @employeePaymentMode,
+                @employeeImageLocation,
+                @employeeDateEmployed)", dbCon); // PASSING QUERY AND CONNECTION HERE.
+
+                dbCmd.Parameters.AddWithValue("@employeeFirstName", firstName);
+                dbCmd.Parameters.AddWithValue("@employeeMiddleInitial", middleInitial);
+                dbCmd.Parameters.AddWithValue("@employeeLastName", lastName);
+                dbCmd.Parameters.AddWithValue("@employeeSex", sex);
+                dbCmd.Parameters.AddWithValue("@employeeContactNumber", contactNumber);
+                dbCmd.Parameters.AddWithValue("@employeeEmailAddress", emailAddress);
+                dbCmd.Parameters.AddWithValue("@employeeHomeAddress", homeAddress);
+                dbCmd.Parameters.AddWithValue("@employeeBirthDate", birthDate);
+                dbCmd.Parameters.AddWithValue("@employeeMaritalStatus", maritalStatus);
+                dbCmd.Parameters.AddWithValue("@employeeNationality", nationality);
+                dbCmd.Parameters.AddWithValue("@employeeDepartment", department);
+                dbCmd.Parameters.AddWithValue("@employeePosition", position);
+                dbCmd.Parameters.AddWithValue("@employeeStatus", status);
+                dbCmd.Parameters.AddWithValue("@employeeWorkingHours", workingHours);
+                dbCmd.Parameters.AddWithValue("@employeeHourlyRate", hourlyRate);
+                dbCmd.Parameters.AddWithValue("@employeeContractDuration", contractDuration);
+                dbCmd.Parameters.AddWithValue("@employeePaymentMode", paymentMode);
+                dbCmd.Parameters.AddWithValue("@employeeImageLocation", imageLocation);
+                dbCmd.Parameters.AddWithValue("@employeeDateEmployed", dateEmployed);
+
+                dbClose(); // CLOSE THE CONNECTION.
+
+                MessageBox.Show(null, "Employee successfully added.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(null, Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
