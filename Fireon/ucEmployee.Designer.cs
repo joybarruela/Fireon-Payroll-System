@@ -53,16 +53,17 @@
             // cmbxRegularContractual
             // 
             this.cmbxRegularContractual.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbxRegularContractual.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxRegularContractual.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxRegularContractual.FormattingEnabled = true;
             this.cmbxRegularContractual.Items.AddRange(new object[] {
-            "Regular",
-            "Contractual"});
+            "Contractual",
+            "Regular"});
             this.cmbxRegularContractual.Location = new System.Drawing.Point(4, 41);
             this.cmbxRegularContractual.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxRegularContractual.Name = "cmbxRegularContractual";
             this.cmbxRegularContractual.Size = new System.Drawing.Size(200, 28);
-            this.cmbxRegularContractual.TabIndex = 3;
+            this.cmbxRegularContractual.TabIndex = 1;
             this.cmbxRegularContractual.TabStop = false;
             // 
             // txtbxSearch
@@ -72,7 +73,7 @@
             this.txtbxSearch.Location = new System.Drawing.Point(4, 10);
             this.txtbxSearch.Name = "txtbxSearch";
             this.txtbxSearch.Size = new System.Drawing.Size(199, 26);
-            this.txtbxSearch.TabIndex = 2;
+            this.txtbxSearch.TabIndex = 0;
             this.txtbxSearch.TabStop = false;
             this.txtbxSearch.Text = "Search";
             this.txtbxSearch.Enter += new System.EventHandler(this.txtbxSearch_Enter);
@@ -82,6 +83,7 @@
             // 
             this.cmbxYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxYear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxYear.FormattingEnabled = true;
             this.cmbxYear.Items.AddRange(new object[] {
@@ -95,13 +97,14 @@
             this.cmbxYear.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxYear.Name = "cmbxYear";
             this.cmbxYear.Size = new System.Drawing.Size(152, 28);
-            this.cmbxYear.TabIndex = 7;
+            this.cmbxYear.TabIndex = 5;
             this.cmbxYear.TabStop = false;
             // 
             // cmbxMonth
             // 
             this.cmbxMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxMonth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbxMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxMonth.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxMonth.FormattingEnabled = true;
             this.cmbxMonth.Items.AddRange(new object[] {
@@ -121,47 +124,50 @@
             this.cmbxMonth.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxMonth.Name = "cmbxMonth";
             this.cmbxMonth.Size = new System.Drawing.Size(152, 28);
-            this.cmbxMonth.TabIndex = 6;
+            this.cmbxMonth.TabIndex = 4;
             this.cmbxMonth.TabStop = false;
             // 
             // cmbxPosition
             // 
             this.cmbxPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxPosition.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxPosition.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxPosition.FormattingEnabled = true;
             this.cmbxPosition.Location = new System.Drawing.Point(496, 41);
             this.cmbxPosition.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxPosition.Name = "cmbxPosition";
             this.cmbxPosition.Size = new System.Drawing.Size(219, 28);
-            this.cmbxPosition.TabIndex = 5;
+            this.cmbxPosition.TabIndex = 3;
             this.cmbxPosition.TabStop = false;
             // 
             // cmbxDepartment
             // 
             this.cmbxDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxDepartment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxDepartment.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxDepartment.FormattingEnabled = true;
             this.cmbxDepartment.Items.AddRange(new object[] {
-            "IT Department",
-            "Marketing Department",
-            "Finance Department",
-            "Operations Department",
-            "Sales Department",
-            "Human Resource Department",
-            "Customer Service Department",
-            "Research and Development Department",
-            "Administrative Department",
-            "Purchasing Department",
-            "Legal Department",
-            "Production Department"});
+            "Administrative",
+            "Customer Service",
+            "Finance",
+            "Human Resource",
+            "Information Technology",
+            "Legal",
+            "Marketing",
+            "Operations",
+            "Production",
+            "Purchasing",
+            "Research and Development",
+            "Sales"});
             this.cmbxDepartment.Location = new System.Drawing.Point(496, 10);
             this.cmbxDepartment.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxDepartment.Name = "cmbxDepartment";
             this.cmbxDepartment.Size = new System.Drawing.Size(219, 28);
-            this.cmbxDepartment.TabIndex = 4;
+            this.cmbxDepartment.TabIndex = 2;
             this.cmbxDepartment.TabStop = false;
+            this.cmbxDepartment.SelectedIndexChanged += new System.EventHandler(this.cmbxDepartment_SelectedIndexChanged);
             // 
             // lblEmployee
             // 
@@ -173,7 +179,7 @@
             this.lblEmployee.Margin = new System.Windows.Forms.Padding(0);
             this.lblEmployee.Name = "lblEmployee";
             this.lblEmployee.Size = new System.Drawing.Size(172, 38);
-            this.lblEmployee.TabIndex = 272;
+            this.lblEmployee.TabIndex = 0;
             this.lblEmployee.Text = "Employee";
             // 
             // pnlFilters
@@ -188,7 +194,7 @@
             this.pnlFilters.Location = new System.Drawing.Point(3, 3);
             this.pnlFilters.Name = "pnlFilters";
             this.pnlFilters.Size = new System.Drawing.Size(894, 79);
-            this.pnlFilters.TabIndex = 273;
+            this.pnlFilters.TabIndex = 0;
             // 
             // tblpEmployee
             // 
@@ -206,7 +212,7 @@
             this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblpEmployee.Size = new System.Drawing.Size(900, 462);
-            this.tblpEmployee.TabIndex = 274;
+            this.tblpEmployee.TabIndex = 1;
             // 
             // pnlBelow
             // 
@@ -219,7 +225,7 @@
             this.pnlBelow.Location = new System.Drawing.Point(3, 409);
             this.pnlBelow.Name = "pnlBelow";
             this.pnlBelow.Size = new System.Drawing.Size(894, 30);
-            this.pnlBelow.TabIndex = 274;
+            this.pnlBelow.TabIndex = 2;
             // 
             // lblTotalEmployees
             // 
@@ -231,7 +237,7 @@
             this.lblTotalEmployees.Name = "lblTotalEmployees";
             this.lblTotalEmployees.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.lblTotalEmployees.Size = new System.Drawing.Size(156, 20);
-            this.lblTotalEmployees.TabIndex = 171;
+            this.lblTotalEmployees.TabIndex = 1;
             this.lblTotalEmployees.Text = "Total number of employees";
             this.lblTotalEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -244,7 +250,7 @@
             this.lblTotalEmployeesAmount.Location = new System.Drawing.Point(0, 0);
             this.lblTotalEmployeesAmount.Name = "lblTotalEmployeesAmount";
             this.lblTotalEmployeesAmount.Size = new System.Drawing.Size(174, 29);
-            this.lblTotalEmployeesAmount.TabIndex = 172;
+            this.lblTotalEmployeesAmount.TabIndex = 0;
             this.lblTotalEmployeesAmount.Text = "9,000,000,000";
             // 
             // btnCancel
@@ -258,7 +264,7 @@
             this.btnCancel.Location = new System.Drawing.Point(631, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(124, 30);
-            this.btnCancel.TabIndex = 273;
+            this.btnCancel.TabIndex = 2;
             this.btnCancel.TabStop = false;
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -268,7 +274,7 @@
             this.pnlSeparator1.Location = new System.Drawing.Point(755, 0);
             this.pnlSeparator1.Name = "pnlSeparator1";
             this.pnlSeparator1.Size = new System.Drawing.Size(15, 30);
-            this.pnlSeparator1.TabIndex = 272;
+            this.pnlSeparator1.TabIndex = 3;
             // 
             // btnAdd
             // 
@@ -281,7 +287,7 @@
             this.btnAdd.Location = new System.Drawing.Point(770, 0);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(124, 30);
-            this.btnAdd.TabIndex = 271;
+            this.btnAdd.TabIndex = 4;
             this.btnAdd.TabStop = false;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnHireEmployees_Click);
@@ -292,7 +298,7 @@
             this.pnlEmployee.Location = new System.Drawing.Point(3, 88);
             this.pnlEmployee.Name = "pnlEmployee";
             this.pnlEmployee.Size = new System.Drawing.Size(894, 315);
-            this.pnlEmployee.TabIndex = 8;
+            this.pnlEmployee.TabIndex = 1;
             // 
             // ucEmployee
             // 

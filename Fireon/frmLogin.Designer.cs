@@ -56,7 +56,7 @@
             this.chkbxKeepLoggedIn.Location = new System.Drawing.Point(433, 309);
             this.chkbxKeepLoggedIn.Name = "chkbxKeepLoggedIn";
             this.chkbxKeepLoggedIn.Size = new System.Drawing.Size(152, 21);
-            this.chkbxKeepLoggedIn.TabIndex = 4;
+            this.chkbxKeepLoggedIn.TabIndex = 8;
             this.chkbxKeepLoggedIn.Text = "Keep me logged-in.";
             this.chkbxKeepLoggedIn.UseVisualStyleBackColor = true;
             // 
@@ -68,7 +68,7 @@
             this.lblFireon.Location = new System.Drawing.Point(502, 54);
             this.lblFireon.Name = "lblFireon";
             this.lblFireon.Size = new System.Drawing.Size(146, 44);
-            this.lblFireon.TabIndex = 9;
+            this.lblFireon.TabIndex = 1;
             this.lblFireon.Text = "FIREON";
             // 
             // lblWelcome
@@ -79,7 +79,7 @@
             this.lblWelcome.Location = new System.Drawing.Point(449, 105);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(252, 16);
-            this.lblWelcome.TabIndex = 10;
+            this.lblWelcome.TabIndex = 2;
             this.lblWelcome.Text = "Welcome back! Please login to your account.";
             // 
             // lblTerms
@@ -90,7 +90,7 @@
             this.lblTerms.Location = new System.Drawing.Point(498, 439);
             this.lblTerms.Name = "lblTerms";
             this.lblTerms.Size = new System.Drawing.Size(156, 16);
-            this.lblTerms.TabIndex = 11;
+            this.lblTerms.TabIndex = 10;
             this.lblTerms.Text = "Terms of Use.  Privacy Policy";
             // 
             // pnlFireon
@@ -100,7 +100,7 @@
             this.pnlFireon.Location = new System.Drawing.Point(-5, -2);
             this.pnlFireon.Name = "pnlFireon";
             this.pnlFireon.Size = new System.Drawing.Size(340, 596);
-            this.pnlFireon.TabIndex = 7;
+            this.pnlFireon.TabIndex = 0;
             // 
             // picbFireon
             // 
@@ -121,7 +121,7 @@
             this.txtbxUsername.MaxLength = 32;
             this.txtbxUsername.Name = "txtbxUsername";
             this.txtbxUsername.Size = new System.Drawing.Size(285, 22);
-            this.txtbxUsername.TabIndex = 1;
+            this.txtbxUsername.TabIndex = 4;
             // 
             // txtbxPw
             // 
@@ -131,7 +131,7 @@
             this.txtbxPw.MaxLength = 32;
             this.txtbxPw.Name = "txtbxPw";
             this.txtbxPw.Size = new System.Drawing.Size(285, 22);
-            this.txtbxPw.TabIndex = 2;
+            this.txtbxPw.TabIndex = 6;
             this.txtbxPw.Tag = "TRUE";
             this.txtbxPw.UseSystemPasswordChar = true;
             // 
@@ -144,7 +144,7 @@
             this.btnLogin.Location = new System.Drawing.Point(433, 389);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(285, 40);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 9;
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btn_login_Click);
             // 
@@ -156,7 +156,7 @@
             this.lblUsername.Location = new System.Drawing.Point(430, 190);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(71, 17);
-            this.lblUsername.TabIndex = 10;
+            this.lblUsername.TabIndex = 3;
             this.lblUsername.Text = "Username";
             // 
             // lblPassword
@@ -167,7 +167,7 @@
             this.lblPassword.Location = new System.Drawing.Point(430, 246);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(69, 17);
-            this.lblPassword.TabIndex = 10;
+            this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Password";
             // 
             // btnSeePw
@@ -183,7 +183,7 @@
             this.btnSeePw.Location = new System.Drawing.Point(724, 261);
             this.btnSeePw.Name = "btnSeePw";
             this.btnSeePw.Size = new System.Drawing.Size(35, 35);
-            this.btnSeePw.TabIndex = 3;
+            this.btnSeePw.TabIndex = 7;
             this.btnSeePw.Tag = "";
             this.btnSeePw.UseVisualStyleBackColor = true;
             this.btnSeePw.Click += new System.EventHandler(this.btn_see_pw_Click);
@@ -202,7 +202,7 @@
             this.dtgvAccounts.Name = "dtgvAccounts";
             this.dtgvAccounts.ReadOnly = true;
             this.dtgvAccounts.Size = new System.Drawing.Size(455, 103);
-            this.dtgvAccounts.TabIndex = 0;
+            this.dtgvAccounts.TabIndex = 11;
             this.dtgvAccounts.TabStop = false;
             // 
             // frmLogin

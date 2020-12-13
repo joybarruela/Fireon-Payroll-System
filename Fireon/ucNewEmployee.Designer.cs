@@ -252,7 +252,7 @@
             // lblNationality
             // 
             this.lblNationality.AutoSize = true;
-            this.lblNationality.Location = new System.Drawing.Point(369, 57);
+            this.lblNationality.Location = new System.Drawing.Point(369, 53);
             this.lblNationality.Name = "lblNationality";
             this.lblNationality.Size = new System.Drawing.Size(54, 13);
             this.lblNationality.TabIndex = 19;

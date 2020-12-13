@@ -102,7 +102,7 @@
             this.pnlHeader.Location = new System.Drawing.Point(226, 0);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(933, 60);
-            this.pnlHeader.TabIndex = 16;
+            this.pnlHeader.TabIndex = 3;
             // 
             // pnlSeparator12
             // 
@@ -111,7 +111,7 @@
             this.pnlSeparator12.Location = new System.Drawing.Point(530, 10);
             this.pnlSeparator12.Name = "pnlSeparator12";
             this.pnlSeparator12.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator12.TabIndex = 103;
+            this.pnlSeparator12.TabIndex = 1;
             // 
             // btnNotification
             // 
@@ -127,7 +127,7 @@
             this.btnNotification.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.btnNotification.Name = "btnNotification";
             this.btnNotification.Size = new System.Drawing.Size(28, 40);
-            this.btnNotification.TabIndex = 213;
+            this.btnNotification.TabIndex = 2;
             this.btnNotification.TabStop = false;
             this.btnNotification.UseVisualStyleBackColor = false;
             // 
@@ -138,7 +138,7 @@
             this.pnlSeparator13.Location = new System.Drawing.Point(573, 10);
             this.pnlSeparator13.Name = "pnlSeparator13";
             this.pnlSeparator13.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator13.TabIndex = 104;
+            this.pnlSeparator13.TabIndex = 3;
             // 
             // picbUser
             // 
@@ -159,7 +159,7 @@
             this.pnlSeparator14.Location = new System.Drawing.Point(630, 10);
             this.pnlSeparator14.Name = "pnlSeparator14";
             this.pnlSeparator14.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator14.TabIndex = 104;
+            this.pnlSeparator14.TabIndex = 4;
             // 
             // lblGreeting
             // 
@@ -171,7 +171,7 @@
             this.lblGreeting.Name = "lblGreeting";
             this.lblGreeting.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
             this.lblGreeting.Size = new System.Drawing.Size(248, 26);
-            this.lblGreeting.TabIndex = 0;
+            this.lblGreeting.TabIndex = 5;
             this.lblGreeting.Text = "Sup bro! good morning, John Dope.";
             this.lblGreeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -182,7 +182,7 @@
             this.pnlSeparator15.Location = new System.Drawing.Point(893, 10);
             this.pnlSeparator15.Name = "pnlSeparator15";
             this.pnlSeparator15.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator15.TabIndex = 104;
+            this.pnlSeparator15.TabIndex = 6;
             // 
             // btnMenu
             // 
@@ -197,7 +197,7 @@
             this.btnMenu.Location = new System.Drawing.Point(908, 10);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(25, 40);
-            this.btnMenu.TabIndex = 213;
+            this.btnMenu.TabIndex = 7;
             this.btnMenu.TabStop = false;
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btn_menu_Click);
@@ -209,7 +209,7 @@
             this.pnlBlockersTop.Location = new System.Drawing.Point(0, 0);
             this.pnlBlockersTop.Name = "pnlBlockersTop";
             this.pnlBlockersTop.Size = new System.Drawing.Size(933, 10);
-            this.pnlBlockersTop.TabIndex = 214;
+            this.pnlBlockersTop.TabIndex = 0;
             // 
             // pnlBlockersBottom
             // 
@@ -229,7 +229,7 @@
             this.pnlMenu.Location = new System.Drawing.Point(945, 63);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(214, 53);
-            this.pnlMenu.TabIndex = 31;
+            this.pnlMenu.TabIndex = 0;
             this.pnlMenu.Visible = false;
             // 
             // btnLogout
@@ -285,7 +285,7 @@
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(226, 641);
-            this.pnlSidebar.TabIndex = 30;
+            this.pnlSidebar.TabIndex = 0;
             // 
             // lblDateToday
             // 
@@ -296,7 +296,7 @@
             this.lblDateToday.Location = new System.Drawing.Point(25, 594);
             this.lblDateToday.Name = "lblDateToday";
             this.lblDateToday.Size = new System.Drawing.Size(176, 20);
-            this.lblDateToday.TabIndex = 100;
+            this.lblDateToday.TabIndex = 27;
             this.lblDateToday.Text = "Today is November 20, 2020";
             this.lblDateToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -309,7 +309,7 @@
             this.lblVersion.Location = new System.Drawing.Point(25, 614);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(176, 27);
-            this.lblVersion.TabIndex = 101;
+            this.lblVersion.TabIndex = 28;
             this.lblVersion.Text = "Version 1.0";
             this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -326,7 +326,7 @@
             this.btnSettings.Location = new System.Drawing.Point(25, 563);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(176, 28);
-            this.btnSettings.TabIndex = 99;
+            this.btnSettings.TabIndex = 26;
             this.btnSettings.TabStop = false;
             this.btnSettings.UseVisualStyleBackColor = false;
             this.btnSettings.Click += new System.EventHandler(this.btn_settings_Click);
@@ -338,7 +338,7 @@
             this.pnlSeparator11.Location = new System.Drawing.Point(25, 553);
             this.pnlSeparator11.Name = "pnlSeparator11";
             this.pnlSeparator11.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator11.TabIndex = 98;
+            this.pnlSeparator11.TabIndex = 25;
             // 
             // btnSinglePosting
             // 
@@ -353,7 +353,7 @@
             this.btnSinglePosting.Location = new System.Drawing.Point(25, 525);
             this.btnSinglePosting.Name = "btnSinglePosting";
             this.btnSinglePosting.Size = new System.Drawing.Size(176, 28);
-            this.btnSinglePosting.TabIndex = 97;
+            this.btnSinglePosting.TabIndex = 24;
             this.btnSinglePosting.TabStop = false;
             this.btnSinglePosting.UseVisualStyleBackColor = false;
             this.btnSinglePosting.Click += new System.EventHandler(this.btn_single_posting_Click);
@@ -365,7 +365,7 @@
             this.pnlSeparator10.Location = new System.Drawing.Point(25, 515);
             this.pnlSeparator10.Name = "pnlSeparator10";
             this.pnlSeparator10.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator10.TabIndex = 96;
+            this.pnlSeparator10.TabIndex = 23;
             // 
             // btnDepartment
             // 
@@ -380,7 +380,7 @@
             this.btnDepartment.Location = new System.Drawing.Point(25, 487);
             this.btnDepartment.Name = "btnDepartment";
             this.btnDepartment.Size = new System.Drawing.Size(176, 28);
-            this.btnDepartment.TabIndex = 95;
+            this.btnDepartment.TabIndex = 22;
             this.btnDepartment.TabStop = false;
             this.btnDepartment.UseVisualStyleBackColor = false;
             this.btnDepartment.Click += new System.EventHandler(this.btn_department_Click);
@@ -392,7 +392,7 @@
             this.pnlSeparator9.Location = new System.Drawing.Point(25, 477);
             this.pnlSeparator9.Name = "pnlSeparator9";
             this.pnlSeparator9.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator9.TabIndex = 94;
+            this.pnlSeparator9.TabIndex = 21;
             // 
             // btnAll
             // 
@@ -407,7 +407,7 @@
             this.btnAll.Location = new System.Drawing.Point(25, 449);
             this.btnAll.Name = "btnAll";
             this.btnAll.Size = new System.Drawing.Size(176, 28);
-            this.btnAll.TabIndex = 50;
+            this.btnAll.TabIndex = 20;
             this.btnAll.TabStop = false;
             this.btnAll.UseVisualStyleBackColor = false;
             this.btnAll.Click += new System.EventHandler(this.btn_all_Click);
@@ -422,7 +422,7 @@
             this.lblPayroll.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.lblPayroll.Name = "lblPayroll";
             this.lblPayroll.Size = new System.Drawing.Size(176, 29);
-            this.lblPayroll.TabIndex = 93;
+            this.lblPayroll.TabIndex = 19;
             this.lblPayroll.Text = "PAYROLL";
             this.lblPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -439,7 +439,7 @@
             this.btnAllowances.Location = new System.Drawing.Point(25, 392);
             this.btnAllowances.Name = "btnAllowances";
             this.btnAllowances.Size = new System.Drawing.Size(176, 28);
-            this.btnAllowances.TabIndex = 92;
+            this.btnAllowances.TabIndex = 18;
             this.btnAllowances.TabStop = false;
             this.btnAllowances.UseVisualStyleBackColor = false;
             this.btnAllowances.Click += new System.EventHandler(this.btn_allowances_Click);
@@ -451,7 +451,7 @@
             this.pnlSeparator8.Location = new System.Drawing.Point(25, 382);
             this.pnlSeparator8.Name = "pnlSeparator8";
             this.pnlSeparator8.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator8.TabIndex = 91;
+            this.pnlSeparator8.TabIndex = 17;
             // 
             // btnDeductions
             // 
@@ -466,7 +466,7 @@
             this.btnDeductions.Location = new System.Drawing.Point(25, 354);
             this.btnDeductions.Name = "btnDeductions";
             this.btnDeductions.Size = new System.Drawing.Size(176, 28);
-            this.btnDeductions.TabIndex = 90;
+            this.btnDeductions.TabIndex = 16;
             this.btnDeductions.TabStop = false;
             this.btnDeductions.UseVisualStyleBackColor = false;
             this.btnDeductions.Click += new System.EventHandler(this.btn_deductions_Click);
@@ -478,7 +478,7 @@
             this.pnlSeparator7.Location = new System.Drawing.Point(25, 344);
             this.pnlSeparator7.Name = "pnlSeparator7";
             this.pnlSeparator7.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator7.TabIndex = 89;
+            this.pnlSeparator7.TabIndex = 15;
             // 
             // btnCashAdvance
             // 
@@ -493,7 +493,7 @@
             this.btnCashAdvance.Location = new System.Drawing.Point(25, 316);
             this.btnCashAdvance.Name = "btnCashAdvance";
             this.btnCashAdvance.Size = new System.Drawing.Size(176, 28);
-            this.btnCashAdvance.TabIndex = 88;
+            this.btnCashAdvance.TabIndex = 14;
             this.btnCashAdvance.TabStop = false;
             this.btnCashAdvance.UseVisualStyleBackColor = false;
             this.btnCashAdvance.Click += new System.EventHandler(this.btn_cash_advance_Click);
@@ -505,7 +505,7 @@
             this.pnlSeparator6.Location = new System.Drawing.Point(25, 306);
             this.pnlSeparator6.Name = "pnlSeparator6";
             this.pnlSeparator6.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator6.TabIndex = 87;
+            this.pnlSeparator6.TabIndex = 13;
             // 
             // btnViolations
             // 
@@ -520,7 +520,7 @@
             this.btnViolations.Location = new System.Drawing.Point(25, 278);
             this.btnViolations.Name = "btnViolations";
             this.btnViolations.Size = new System.Drawing.Size(176, 28);
-            this.btnViolations.TabIndex = 86;
+            this.btnViolations.TabIndex = 12;
             this.btnViolations.TabStop = false;
             this.btnViolations.UseVisualStyleBackColor = false;
             this.btnViolations.Click += new System.EventHandler(this.btn_violations_Click);
@@ -532,7 +532,7 @@
             this.pnlSeparator5.Location = new System.Drawing.Point(25, 268);
             this.pnlSeparator5.Name = "pnlSeparator5";
             this.pnlSeparator5.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator5.TabIndex = 85;
+            this.pnlSeparator5.TabIndex = 11;
             // 
             // btnHoliday
             // 
@@ -547,7 +547,7 @@
             this.btnHoliday.Location = new System.Drawing.Point(25, 240);
             this.btnHoliday.Name = "btnHoliday";
             this.btnHoliday.Size = new System.Drawing.Size(176, 28);
-            this.btnHoliday.TabIndex = 84;
+            this.btnHoliday.TabIndex = 10;
             this.btnHoliday.TabStop = false;
             this.btnHoliday.UseVisualStyleBackColor = false;
             this.btnHoliday.Click += new System.EventHandler(this.btn_holiday_Click);
@@ -559,7 +559,7 @@
             this.pnlSeparator4.Location = new System.Drawing.Point(25, 230);
             this.pnlSeparator4.Name = "pnlSeparator4";
             this.pnlSeparator4.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator4.TabIndex = 83;
+            this.pnlSeparator4.TabIndex = 9;
             // 
             // btnOvertime
             // 
@@ -574,7 +574,7 @@
             this.btnOvertime.Location = new System.Drawing.Point(25, 202);
             this.btnOvertime.Name = "btnOvertime";
             this.btnOvertime.Size = new System.Drawing.Size(176, 28);
-            this.btnOvertime.TabIndex = 82;
+            this.btnOvertime.TabIndex = 8;
             this.btnOvertime.TabStop = false;
             this.btnOvertime.UseVisualStyleBackColor = false;
             this.btnOvertime.Click += new System.EventHandler(this.btn_overtime_Click);
@@ -586,7 +586,7 @@
             this.pnlSeparator3.Location = new System.Drawing.Point(25, 192);
             this.pnlSeparator3.Name = "pnlSeparator3";
             this.pnlSeparator3.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator3.TabIndex = 81;
+            this.pnlSeparator3.TabIndex = 7;
             // 
             // btnLeave
             // 
@@ -601,7 +601,7 @@
             this.btnLeave.Location = new System.Drawing.Point(25, 164);
             this.btnLeave.Name = "btnLeave";
             this.btnLeave.Size = new System.Drawing.Size(176, 28);
-            this.btnLeave.TabIndex = 80;
+            this.btnLeave.TabIndex = 6;
             this.btnLeave.TabStop = false;
             this.btnLeave.UseVisualStyleBackColor = false;
             this.btnLeave.Click += new System.EventHandler(this.btn_leave_Click);
@@ -613,7 +613,7 @@
             this.pnlSeparator2.Location = new System.Drawing.Point(25, 154);
             this.pnlSeparator2.Name = "pnlSeparator2";
             this.pnlSeparator2.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator2.TabIndex = 79;
+            this.pnlSeparator2.TabIndex = 5;
             // 
             // btnEmployee
             // 
@@ -628,7 +628,7 @@
             this.btnEmployee.Location = new System.Drawing.Point(25, 126);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(176, 28);
-            this.btnEmployee.TabIndex = 78;
+            this.btnEmployee.TabIndex = 4;
             this.btnEmployee.TabStop = false;
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btn_employee_Click);
@@ -643,7 +643,7 @@
             this.lblManageEmployee.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.lblManageEmployee.Name = "lblManageEmployee";
             this.lblManageEmployee.Size = new System.Drawing.Size(176, 28);
-            this.lblManageEmployee.TabIndex = 51;
+            this.lblManageEmployee.TabIndex = 3;
             this.lblManageEmployee.Text = "MANAGE EMPLOYEES";
             this.lblManageEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -660,7 +660,7 @@
             this.btnDashboard.Location = new System.Drawing.Point(25, 70);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(176, 28);
-            this.btnDashboard.TabIndex = 50;
+            this.btnDashboard.TabIndex = 2;
             this.btnDashboard.TabStop = false;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
@@ -672,7 +672,7 @@
             this.pnlSeparator1.Location = new System.Drawing.Point(25, 60);
             this.pnlSeparator1.Name = "pnlSeparator1";
             this.pnlSeparator1.Size = new System.Drawing.Size(176, 10);
-            this.pnlSeparator1.TabIndex = 5;
+            this.pnlSeparator1.TabIndex = 1;
             // 
             // picbFireon
             // 
@@ -713,7 +713,7 @@
             this.pnlBlockersLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlBlockersLeft.Name = "pnlBlockersLeft";
             this.pnlBlockersLeft.Size = new System.Drawing.Size(25, 641);
-            this.pnlBlockersLeft.TabIndex = 99;
+            this.pnlBlockersLeft.TabIndex = 0;
             // 
             // pnlSelected
             // 
@@ -722,7 +722,7 @@
             this.pnlSelected.Location = new System.Drawing.Point(226, 60);
             this.pnlSelected.Name = "pnlSelected";
             this.pnlSelected.Size = new System.Drawing.Size(933, 556);
-            this.pnlSelected.TabIndex = 32;
+            this.pnlSelected.TabIndex = 5;
             // 
             // pnlBlockersRightMain
             // 
@@ -731,7 +731,7 @@
             this.pnlBlockersRightMain.Location = new System.Drawing.Point(1159, 0);
             this.pnlBlockersRightMain.Name = "pnlBlockersRightMain";
             this.pnlBlockersRightMain.Size = new System.Drawing.Size(25, 641);
-            this.pnlBlockersRightMain.TabIndex = 101;
+            this.pnlBlockersRightMain.TabIndex = 4;
             // 
             // pnlBlockersBottomMain
             // 
@@ -740,7 +740,7 @@
             this.pnlBlockersBottomMain.Location = new System.Drawing.Point(226, 616);
             this.pnlBlockersBottomMain.Name = "pnlBlockersBottomMain";
             this.pnlBlockersBottomMain.Size = new System.Drawing.Size(933, 25);
-            this.pnlBlockersBottomMain.TabIndex = 102;
+            this.pnlBlockersBottomMain.TabIndex = 1;
             // 
             // frmFireonPayroll
             // 
