@@ -105,7 +105,6 @@ namespace Fireon
                 // (ucNewEmployee.picbDP.ImageLocation != null)
                 // should not check for picture because user may leave it blank
                 // birthdate no validation; it just depends on the user's stupidity
-                string sex; // holds what the user has selected
 
                 if (ucNewEmployee.mcBirthdate.SelectionStart == DateTime.Today){
                     MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -139,12 +138,29 @@ namespace Fireon
                     (ucNewEmployee.cmbxPaymentMode.SelectedIndex > -1))
                 {
                     MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     // INSERT THEM TO DATABASE
                     db.insertEmployee(
                         ucNewEmployee.txtbxFirstName.Text,
                         ucNewEmployee.txtbxMiddleInitial.Text,
                         ucNewEmployee.txtbxLastName.Text,
-                        )
+                        ucNewEmployee.rdbtnMale.Checked == true ? "Male" : "Female",
+                        int.Parse(ucNewEmployee.txtbxContact.Text),
+                        ucNewEmployee.txtbxEmail.Text,
+                        ucNewEmployee.txtbxAddress.Text,
+                        ucNewEmployee.mcBirthdate.SelectionStart,
+                        ucNewEmployee.cmbxMaritalStatus.GetItemText(ucNewEmployee.cmbxMaritalStatus.SelectedItem),
+                        ucNewEmployee.txtbxNationality.Text,
+                        ucNewEmployee.cmbxDepartment.GetItemText(ucNewEmployee.cmbxDepartment.SelectedItem),
+                        ucNewEmployee.cmbxPosition.GetItemText(ucNewEmployee.cmbxPosition.SelectedItem),
+                        ucNewEmployee.cmbxStatus.GetItemText(ucNewEmployee.cmbxStatus.SelectedItem),
+                        int.Parse(ucNewEmployee.txtbxWorkingHours.Text),
+                        int.Parse(ucNewEmployee.txtbxHourlyRate.Text),
+                        int.Parse(ucNewEmployee.txtbxContractDuration.Text),
+                        ucNewEmployee.cmbxPaymentMode.GetItemText(ucNewEmployee.cmbxPaymentMode.SelectedItem),
+                        ucNewEmployee.picbDP.ImageLocation,
+                        DateTime.Today
+                        );
                 }
                 else
                 {
