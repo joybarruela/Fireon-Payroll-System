@@ -362,7 +362,7 @@
     <comment>To be used in add employee.</comment>
   </data>
   <data name="msg_exception" xml:space="preserve">
-    <value>Cannot perform the process. \n</value>
+    <value>Cannot perform the process. \n </value>
     <comment>Use this to append to every exception to catch.</comment>
   </data>
   <data name="msg_new_employee_prompt" xml:space="preserve">

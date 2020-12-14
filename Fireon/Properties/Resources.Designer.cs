@@ -738,7 +738,7 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cannot perform the process. \n.
+        ///   Looks up a localized string similar to Cannot perform the process. \n .
         /// </summary>
         public static string msg_exception {
             get {

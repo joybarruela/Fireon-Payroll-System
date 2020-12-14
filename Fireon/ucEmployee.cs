@@ -122,30 +122,30 @@ namespace Fireon
                     MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                    
-                if((ucNewEmployee.txtbxFirstName.Text != "") &&
-                    (ucNewEmployee.txtbxLastName.Text != "") &&
+
+                if ((ucNewEmployee.txtbxFirstName.Text != String.Empty) &&
+                    (ucNewEmployee.txtbxLastName.Text != String.Empty) &&
                     (ucNewEmployee.txtbxContact.Text.Length == 11) &&
-                    (ucNewEmployee.txtbxEmail.Text != "") &&
-                    (ucNewEmployee.txtbxAddress.Text != "") &&
+                    (ucNewEmployee.txtbxEmail.Text != String.Empty) &&
+                    (ucNewEmployee.txtbxAddress.Text != String.Empty) &&
                     (ucNewEmployee.cmbxMaritalStatus.SelectedIndex > -1) &&
-                    (ucNewEmployee.txtbxNationality.Text != "") &&
+                    (ucNewEmployee.txtbxNationality.Text != String.Empty) &&
                     (ucNewEmployee.cmbxDepartment.SelectedIndex > -1) &&
                     (ucNewEmployee.cmbxPosition.SelectedIndex > -1) &&
                     (ucNewEmployee.cmbxStatus.SelectedIndex > -1) &&
-                    (ucNewEmployee.txtbxWorkingHours.Text != "") &&
-                    (ucNewEmployee.txtbxHourlyRate.Text != "") &&
+                    (ucNewEmployee.txtbxWorkingHours.Text != String.Empty) &&
+                    (ucNewEmployee.txtbxHourlyRate.Text != String.Empty) &&
                     (ucNewEmployee.cmbxPaymentMode.SelectedIndex > -1))
                 {
                     MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // INSERT THEM TO DATABASE
-                    db.insertEmployee(
+                    db.dbInsertEmployee(
                         ucNewEmployee.txtbxFirstName.Text,
                         ucNewEmployee.txtbxMiddleInitial.Text,
                         ucNewEmployee.txtbxLastName.Text,
                         ucNewEmployee.rdbtnMale.Checked == true ? "Male" : "Female",
-                        int.Parse(ucNewEmployee.txtbxContact.Text),
+                        Int64.Parse(ucNewEmployee.txtbxContact.Text),
                         ucNewEmployee.txtbxEmail.Text,
                         ucNewEmployee.txtbxAddress.Text,
                         ucNewEmployee.mcBirthdate.SelectionStart,
@@ -154,13 +154,14 @@ namespace Fireon
                         ucNewEmployee.cmbxDepartment.GetItemText(ucNewEmployee.cmbxDepartment.SelectedItem),
                         ucNewEmployee.cmbxPosition.GetItemText(ucNewEmployee.cmbxPosition.SelectedItem),
                         ucNewEmployee.cmbxStatus.GetItemText(ucNewEmployee.cmbxStatus.SelectedItem),
-                        int.Parse(ucNewEmployee.txtbxWorkingHours.Text),
-                        int.Parse(ucNewEmployee.txtbxHourlyRate.Text),
-                        int.Parse(ucNewEmployee.txtbxContractDuration.Text),
+                        Int64.Parse(ucNewEmployee.txtbxWorkingHours.Text),
+                        Int64.Parse(ucNewEmployee.txtbxHourlyRate.Text),
+                        Int64.Parse(ucNewEmployee.txtbxContractDuration.Text),
                         ucNewEmployee.cmbxPaymentMode.GetItemText(ucNewEmployee.cmbxPaymentMode.SelectedItem),
                         ucNewEmployee.picbDP.ImageLocation,
                         DateTime.Today
                         );
+
                 }
                 else
                 {

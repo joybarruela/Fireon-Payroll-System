@@ -38,7 +38,7 @@ namespace Fireon
         private void ofdUploadDP_FileOk(object sender, CancelEventArgs e)
         {
             // I HAVE MADE A TEMPLATE FUNCTION THAT COPIES ONE FILE TO ANOTHER IN clsDatabaseFunctions
-            db.copyFile(ofdUploadDP.FileName, ofdUploadDP.FileName, @"C:\Users\Public\Public Desktop\TestFolder");
+            db.dbCopyFile(ofdUploadDP.FileName, ofdUploadDP.FileName, @"C:\Users\Public\Public Desktop\TestFolder");
             try
             {
                 picbDP.Load(ofdUploadDP.FileName); // LOAD THE IMAGE FROM THE LOCATION WHERE THE PICTURE IS SELECTED.
@@ -223,15 +223,15 @@ namespace Fireon
             switch (cmbxStatus.SelectedIndex)
             {
                 case 0:
-                    txtbxWorkingHours.Text = null; // CLEAN THE FIELD FIRST
+                    txtbxWorkingHours.Text = string.Empty; // CLEAN THE FIELD FIRST
                     txtbxWorkingHours.Enabled = true; // ENABLE IT FOR INPUT
-                    txtbxContractDuration.Text = null; // CLEAN THE FIELD FIRST
+                    txtbxContractDuration.Text = string.Empty; // CLEAN THE FIELD FIRST
                     txtbxContractDuration.Enabled = true; // AS WELL THE CONTRACT DURATION
                     break;
                 case 1:
                     txtbxWorkingHours.Text = Properties.Resources.int_default_working_hours;
                     txtbxWorkingHours.Enabled = false;
-                    txtbxContractDuration.Text = null;
+                    txtbxContractDuration.Text = string.Empty;
                     txtbxContractDuration.Enabled = false;
                     break;
                 default:
@@ -297,6 +297,7 @@ namespace Fireon
             sf.secondRegex(e);
         }
         #endregion
+
         #region SIMPLE FILE COPY EXAMPLE
         //public class SimpleFileCopy
         //{

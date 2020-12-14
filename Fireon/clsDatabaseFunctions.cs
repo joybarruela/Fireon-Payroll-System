@@ -115,7 +115,7 @@ namespace Fireon
         /// <param name="fileName">PASS THE FILENAME HERE</param>
         /// <param name="sourcePath">PASS THE SOURCE LOCATION OF THAT FILE</param>
         /// <param name="targetPath">PASS THIS THE LOCATION WHERE U WANNA PUT IT</param>
-        public void copyFile(string fileName, string sourcePath, string targetPath)
+        public void dbCopyFile(string fileName, string sourcePath, string targetPath)
         {
             try
             {
@@ -158,12 +158,12 @@ namespace Fireon
         /// <param name="paymentMode">String</param>
         /// <param name="imageLocation">String</param>
         /// <param name="dateEmployed">DateTime</param>
-        public void insertEmployee (
+        public void dbInsertEmployee (
             String firstName,
             String middleInitial,
             String lastName,
             String sex,
-            int contactNumber,
+            Int64 contactNumber,
             String emailAddress,
             String homeAddress,
             DateTime birthDate,
@@ -172,9 +172,9 @@ namespace Fireon
             String department,
             String position,
             String status,
-            int workingHours,
-            int hourlyRate,
-            int contractDuration,
+            Int64 workingHours,
+            Int64 hourlyRate,
+            Int64 contractDuration,
             String paymentMode,
             String imageLocation,
             DateTime dateEmployed)
@@ -244,6 +244,8 @@ namespace Fireon
                 dbCmd.Parameters.AddWithValue("@employeePaymentMode", paymentMode);
                 dbCmd.Parameters.AddWithValue("@employeeImageLocation", imageLocation);
                 dbCmd.Parameters.AddWithValue("@employeeDateEmployed", dateEmployed);
+
+                dbCmd.ExecuteNonQuery(); // EXECUTE HAHAHAHAHAHA
 
                 dbClose(); // CLOSE THE CONNECTION.
 
