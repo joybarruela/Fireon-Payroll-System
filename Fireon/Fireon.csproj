@@ -291,6 +291,7 @@
     <Content Include="Resources\miscellaneous\miscFireonLogo.png" />
     <None Include="Resources\other-buttons\btnOthersLogin.png" />
     <None Include="Resources\other-buttons\btnAdd.png" />
+    <None Include="Resources\miscellaneous\miscIconUploadImage.png" />
     <Content Include="Resources\other-buttons\btnCancel.png" />
     <Content Include="Resources\other-buttons\btnOthersLogout.png" />
     <None Include="Resources\other-buttons\btnPrint.png" />

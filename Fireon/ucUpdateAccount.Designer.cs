@@ -302,7 +302,7 @@
             // picbUserAddAccount
             // 
             this.picbUserAddAccount.BackColor = System.Drawing.Color.White;
-            this.picbUserAddAccount.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
+            this.picbUserAddAccount.BackgroundImage = global::Fireon.Properties.Resources.miscIconUploadImage;
             this.picbUserAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picbUserAddAccount.Location = new System.Drawing.Point(136, 31);
             this.picbUserAddAccount.Name = "picbUserAddAccount";
