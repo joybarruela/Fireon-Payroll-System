@@ -125,6 +125,12 @@
     <Compile Include="ucAddAccount.Designer.cs">
       <DependentUpon>ucAddAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucAddNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNotification.Designer.cs">
+      <DependentUpon>ucAddNotification.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -175,8 +181,23 @@
     <Compile Include="ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucUpdateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUpdateAccount.Designer.cs">
+      <DependentUpon>ucUpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUpdateNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUpdateNotification.Designer.cs">
+      <DependentUpon>ucUpdateNotification.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ucAddAccount.resx">
       <DependentUpon>ucAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNotification.resx">
+      <DependentUpon>ucAddNotification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
@@ -206,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUpdateAccount.resx">
+      <DependentUpon>ucUpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUpdateNotification.resx">
+      <DependentUpon>ucUpdateNotification.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Fireon_TemporaryKey.pfx" />
@@ -268,6 +295,8 @@
     <Content Include="Resources\other-buttons\btnOthersLogout.png" />
     <None Include="Resources\other-buttons\btnPrint.png" />
     <None Include="Resources\other-buttons\btnUpdate.png" />
+    <None Include="Resources\other-buttons\btnUpdateActive.png" />
+    <None Include="Resources\other-buttons\btnUploadImage.png" />
     <Content Include="Resources\sidebar-buttons\btnAll.png" />
     <Content Include="Resources\sidebar-buttons\btnAllActive.png" />
     <Content Include="Resources\sidebar-buttons\btnAllHover.png" />

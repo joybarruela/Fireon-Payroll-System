@@ -29,82 +29,82 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucAddAccount));
-            this.pnlBelow = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.pnlSeparator1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblpnlAddAccount = new System.Windows.Forms.TableLayoutPanel();
+            this.flpnlButtons = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlBlocker = new System.Windows.Forms.Panel();
+            this.btnAddAccount = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbxUserType = new System.Windows.Forms.ComboBox();
-            this.lblNewUserName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pnlAddAccount = new System.Windows.Forms.Panel();
+            this.btnUpload = new System.Windows.Forms.Button();
             this.picbUserAddAccount = new System.Windows.Forms.PictureBox();
-            this.lbl_username = new System.Windows.Forms.Label();
-            this.txtbx_username = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbl_password = new System.Windows.Forms.Label();
-            this.txtbx_password = new System.Windows.Forms.TextBox();
-            this.lbl_confirm_pw = new System.Windows.Forms.Label();
-            this.txtbx_confirm_pw = new System.Windows.Forms.TextBox();
-            this.btn_see_current_pw = new System.Windows.Forms.Button();
-            this.btn_see_new_pw = new System.Windows.Forms.Button();
-            this.pnlBelow.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.btnSeeConfirmPw = new System.Windows.Forms.Button();
+            this.btnSeePw = new System.Windows.Forms.Button();
+            this.txtbxConfirmPw = new System.Windows.Forms.TextBox();
+            this.lblConfirmPw = new System.Windows.Forms.Label();
+            this.txtbxPw = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtbxName = new System.Windows.Forms.TextBox();
+            this.txtbxUserName = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.lblUserType = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.cmbxUserType = new System.Windows.Forms.ComboBox();
+            this.tblpnlAddAccount.SuspendLayout();
+            this.flpnlButtons.SuspendLayout();
+            this.pnlAddAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUserAddAccount)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlBelow
+            // tblpnlAddAccount
             // 
-            this.pnlBelow.Controls.Add(this.btnCancel);
-            this.pnlBelow.Controls.Add(this.pnlSeparator1);
-            this.pnlBelow.Controls.Add(this.btnAdd);
-            this.pnlBelow.Controls.Add(this.panel1);
-            this.pnlBelow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBelow.Location = new System.Drawing.Point(3, 383);
-            this.pnlBelow.Name = "pnlBelow";
-            this.pnlBelow.Size = new System.Drawing.Size(880, 30);
-            this.pnlBelow.TabIndex = 286;
+            this.tblpnlAddAccount.ColumnCount = 1;
+            this.tblpnlAddAccount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblpnlAddAccount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblpnlAddAccount.Controls.Add(this.flpnlButtons, 0, 1);
+            this.tblpnlAddAccount.Controls.Add(this.pnlAddAccount, 0, 0);
+            this.tblpnlAddAccount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblpnlAddAccount.Location = new System.Drawing.Point(0, 0);
+            this.tblpnlAddAccount.Name = "tblpnlAddAccount";
+            this.tblpnlAddAccount.RowCount = 3;
+            this.tblpnlAddAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.78313F));
+            this.tblpnlAddAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.879519F));
+            this.tblpnlAddAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.337349F));
+            this.tblpnlAddAccount.Size = new System.Drawing.Size(886, 416);
+            this.tblpnlAddAccount.TabIndex = 315;
             // 
-            // btnAdd
+            // flpnlButtons
             // 
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(488, 0);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(124, 30);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.flpnlButtons.Controls.Add(this.pnlBlocker);
+            this.flpnlButtons.Controls.Add(this.btnAddAccount);
+            this.flpnlButtons.Controls.Add(this.btnCancel);
+            this.flpnlButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flpnlButtons.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpnlButtons.Location = new System.Drawing.Point(3, 360);
+            this.flpnlButtons.Name = "flpnlButtons";
+            this.flpnlButtons.Size = new System.Drawing.Size(880, 34);
+            this.flpnlButtons.TabIndex = 315;
             // 
-            // pnlSeparator1
+            // pnlBlocker
             // 
-            this.pnlSeparator1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator1.Location = new System.Drawing.Point(473, 0);
-            this.pnlSeparator1.Name = "pnlSeparator1";
-            this.pnlSeparator1.Size = new System.Drawing.Size(15, 30);
-            this.pnlSeparator1.TabIndex = 8;
+            this.pnlBlocker.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlBlocker.Location = new System.Drawing.Point(614, 3);
+            this.pnlBlocker.Name = "pnlBlocker";
+            this.pnlBlocker.Size = new System.Drawing.Size(263, 30);
+            this.pnlBlocker.TabIndex = 321;
             // 
-            // tableLayoutPanel1
+            // btnAddAccount
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pnlBelow, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.44042F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.559578F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(886, 416);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.btnAddAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.BackgroundImage")));
+            this.btnAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddAccount.FlatAppearance.BorderSize = 0;
+            this.btnAddAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAccount.Location = new System.Drawing.Point(484, 3);
+            this.btnAddAccount.Name = "btnAddAccount";
+            this.btnAddAccount.Size = new System.Drawing.Size(124, 30);
+            this.btnAddAccount.TabIndex = 319;
+            this.btnAddAccount.TabStop = false;
+            this.btnAddAccount.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
@@ -114,211 +114,209 @@
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(349, 0);
+            this.btnCancel.Location = new System.Drawing.Point(354, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(124, 30);
-            this.btnCancel.TabIndex = 7;
+            this.btnCancel.TabIndex = 320;
             this.btnCancel.TabStop = false;
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnlAddAccount
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(612, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(268, 30);
-            this.panel1.TabIndex = 5;
+            this.pnlAddAccount.Controls.Add(this.btnUpload);
+            this.pnlAddAccount.Controls.Add(this.picbUserAddAccount);
+            this.pnlAddAccount.Controls.Add(this.btnSeeConfirmPw);
+            this.pnlAddAccount.Controls.Add(this.btnSeePw);
+            this.pnlAddAccount.Controls.Add(this.txtbxConfirmPw);
+            this.pnlAddAccount.Controls.Add(this.lblConfirmPw);
+            this.pnlAddAccount.Controls.Add(this.txtbxPw);
+            this.pnlAddAccount.Controls.Add(this.lblPassword);
+            this.pnlAddAccount.Controls.Add(this.txtbxName);
+            this.pnlAddAccount.Controls.Add(this.txtbxUserName);
+            this.pnlAddAccount.Controls.Add(this.lblUserName);
+            this.pnlAddAccount.Controls.Add(this.lblUserType);
+            this.pnlAddAccount.Controls.Add(this.lblName);
+            this.pnlAddAccount.Controls.Add(this.cmbxUserType);
+            this.pnlAddAccount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAddAccount.Location = new System.Drawing.Point(3, 3);
+            this.pnlAddAccount.Name = "pnlAddAccount";
+            this.pnlAddAccount.Size = new System.Drawing.Size(880, 350);
+            this.pnlAddAccount.TabIndex = 0;
             // 
-            // panel2
+            // btnUpload
             // 
-            this.panel2.Controls.Add(this.btn_see_new_pw);
-            this.panel2.Controls.Add(this.btn_see_current_pw);
-            this.panel2.Controls.Add(this.txtbx_confirm_pw);
-            this.panel2.Controls.Add(this.lbl_confirm_pw);
-            this.panel2.Controls.Add(this.txtbx_password);
-            this.panel2.Controls.Add(this.lbl_password);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.txtbx_username);
-            this.panel2.Controls.Add(this.lbl_username);
-            this.panel2.Controls.Add(this.picbUserAddAccount);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.lblNewUserName);
-            this.panel2.Controls.Add(this.cmbxUserType);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 374);
-            this.panel2.TabIndex = 287;
+            this.btnUpload.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpload.BackgroundImage")));
+            this.btnUpload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUpload.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload.Location = new System.Drawing.Point(136, 167);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(112, 23);
+            this.btnUpload.TabIndex = 341;
+            this.btnUpload.UseVisualStyleBackColor = true;
+            // 
+            // picbUserAddAccount
+            // 
+            this.picbUserAddAccount.BackColor = System.Drawing.Color.White;
+            this.picbUserAddAccount.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
+            this.picbUserAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picbUserAddAccount.Location = new System.Drawing.Point(136, 60);
+            this.picbUserAddAccount.Name = "picbUserAddAccount";
+            this.picbUserAddAccount.Size = new System.Drawing.Size(112, 101);
+            this.picbUserAddAccount.TabIndex = 340;
+            this.picbUserAddAccount.TabStop = false;
+            // 
+            // btnSeeConfirmPw
+            // 
+            this.btnSeeConfirmPw.BackColor = System.Drawing.Color.White;
+            this.btnSeeConfirmPw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeeConfirmPw.BackgroundImage")));
+            this.btnSeeConfirmPw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSeeConfirmPw.FlatAppearance.BorderSize = 0;
+            this.btnSeeConfirmPw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.btnSeeConfirmPw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeeConfirmPw.Location = new System.Drawing.Point(628, 299);
+            this.btnSeeConfirmPw.Name = "btnSeeConfirmPw";
+            this.btnSeeConfirmPw.Size = new System.Drawing.Size(27, 25);
+            this.btnSeeConfirmPw.TabIndex = 338;
+            this.btnSeeConfirmPw.TabStop = false;
+            this.btnSeeConfirmPw.UseVisualStyleBackColor = false;
+            // 
+            // btnSeePw
+            // 
+            this.btnSeePw.BackColor = System.Drawing.Color.White;
+            this.btnSeePw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeePw.BackgroundImage")));
+            this.btnSeePw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSeePw.FlatAppearance.BorderSize = 0;
+            this.btnSeePw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.btnSeePw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeePw.Location = new System.Drawing.Point(628, 245);
+            this.btnSeePw.Name = "btnSeePw";
+            this.btnSeePw.Size = new System.Drawing.Size(27, 25);
+            this.btnSeePw.TabIndex = 339;
+            this.btnSeePw.TabStop = false;
+            this.btnSeePw.UseVisualStyleBackColor = false;
+            // 
+            // txtbxConfirmPw
+            // 
+            this.txtbxConfirmPw.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxConfirmPw.Location = new System.Drawing.Point(293, 299);
+            this.txtbxConfirmPw.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.txtbxConfirmPw.MaxLength = 15;
+            this.txtbxConfirmPw.Name = "txtbxConfirmPw";
+            this.txtbxConfirmPw.Size = new System.Drawing.Size(329, 25);
+            this.txtbxConfirmPw.TabIndex = 337;
+            // 
+            // lblConfirmPw
+            // 
+            this.lblConfirmPw.AutoSize = true;
+            this.lblConfirmPw.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmPw.ForeColor = System.Drawing.Color.Black;
+            this.lblConfirmPw.Location = new System.Drawing.Point(290, 276);
+            this.lblConfirmPw.Name = "lblConfirmPw";
+            this.lblConfirmPw.Size = new System.Drawing.Size(112, 17);
+            this.lblConfirmPw.TabIndex = 336;
+            this.lblConfirmPw.Text = "Confirm Password";
+            // 
+            // txtbxPw
+            // 
+            this.txtbxPw.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxPw.Location = new System.Drawing.Point(293, 245);
+            this.txtbxPw.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.txtbxPw.MaxLength = 15;
+            this.txtbxPw.Name = "txtbxPw";
+            this.txtbxPw.Size = new System.Drawing.Size(329, 25);
+            this.txtbxPw.TabIndex = 335;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.Black;
+            this.lblPassword.Location = new System.Drawing.Point(290, 222);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(63, 17);
+            this.lblPassword.TabIndex = 334;
+            this.lblPassword.Text = "Password";
+            // 
+            // txtbxName
+            // 
+            this.txtbxName.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxName.Location = new System.Drawing.Point(293, 83);
+            this.txtbxName.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.txtbxName.MaxLength = 15;
+            this.txtbxName.Name = "txtbxName";
+            this.txtbxName.Size = new System.Drawing.Size(329, 25);
+            this.txtbxName.TabIndex = 332;
+            // 
+            // txtbxUserName
+            // 
+            this.txtbxUserName.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxUserName.Location = new System.Drawing.Point(293, 191);
+            this.txtbxUserName.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.txtbxUserName.MaxLength = 15;
+            this.txtbxUserName.Name = "txtbxUserName";
+            this.txtbxUserName.Size = new System.Drawing.Size(329, 25);
+            this.txtbxUserName.TabIndex = 333;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.Black;
+            this.lblUserName.Location = new System.Drawing.Point(290, 168);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(67, 17);
+            this.lblUserName.TabIndex = 329;
+            this.lblUserName.Text = "Username";
+            // 
+            // lblUserType
+            // 
+            this.lblUserType.AutoSize = true;
+            this.lblUserType.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserType.ForeColor = System.Drawing.Color.Black;
+            this.lblUserType.Location = new System.Drawing.Point(290, 114);
+            this.lblUserType.Name = "lblUserType";
+            this.lblUserType.Size = new System.Drawing.Size(63, 17);
+            this.lblUserType.TabIndex = 330;
+            this.lblUserType.Text = "User Type";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.Black;
+            this.lblName.Location = new System.Drawing.Point(290, 60);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(44, 17);
+            this.lblName.TabIndex = 331;
+            this.lblName.Text = "Name";
             // 
             // cmbxUserType
             // 
-            this.cmbxUserType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbxUserType.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxUserType.FormattingEnabled = true;
             this.cmbxUserType.Items.AddRange(new object[] {
             "Admin",
             "Manager"});
-            this.cmbxUserType.Location = new System.Drawing.Point(285, 152);
+            this.cmbxUserType.Location = new System.Drawing.Point(294, 136);
             this.cmbxUserType.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.cmbxUserType.Name = "cmbxUserType";
             this.cmbxUserType.Size = new System.Drawing.Size(327, 25);
-            this.cmbxUserType.TabIndex = 285;
+            this.cmbxUserType.TabIndex = 327;
             this.cmbxUserType.TabStop = false;
-            // 
-            // lblNewUserName
-            // 
-            this.lblNewUserName.AutoSize = true;
-            this.lblNewUserName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewUserName.ForeColor = System.Drawing.Color.Black;
-            this.lblNewUserName.Location = new System.Drawing.Point(281, 76);
-            this.lblNewUserName.Name = "lblNewUserName";
-            this.lblNewUserName.Size = new System.Drawing.Size(44, 17);
-            this.lblNewUserName.TabIndex = 289;
-            this.lblNewUserName.Text = "Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(281, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 17);
-            this.label1.TabIndex = 288;
-            this.label1.Text = "User Type";
-            // 
-            // picbUserAddAccount
-            // 
-            this.picbUserAddAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picbUserAddAccount.BackColor = System.Drawing.Color.White;
-            this.picbUserAddAccount.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
-            this.picbUserAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picbUserAddAccount.Location = new System.Drawing.Point(408, 3);
-            this.picbUserAddAccount.Name = "picbUserAddAccount";
-            this.picbUserAddAccount.Size = new System.Drawing.Size(80, 80);
-            this.picbUserAddAccount.TabIndex = 286;
-            this.picbUserAddAccount.TabStop = false;
-            // 
-            // lbl_username
-            // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_username.ForeColor = System.Drawing.Color.Black;
-            this.lbl_username.Location = new System.Drawing.Point(281, 184);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(67, 17);
-            this.lbl_username.TabIndex = 287;
-            this.lbl_username.Text = "Username";
-            // 
-            // txtbx_username
-            // 
-            this.txtbx_username.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbx_username.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_username.Location = new System.Drawing.Point(284, 207);
-            this.txtbx_username.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.txtbx_username.MaxLength = 15;
-            this.txtbx_username.Name = "txtbx_username";
-            this.txtbx_username.Size = new System.Drawing.Size(329, 25);
-            this.txtbx_username.TabIndex = 291;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(284, 99);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.textBox1.MaxLength = 15;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(329, 25);
-            this.textBox1.TabIndex = 290;
-            // 
-            // lbl_password
-            // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_password.ForeColor = System.Drawing.Color.Black;
-            this.lbl_password.Location = new System.Drawing.Point(281, 238);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(63, 17);
-            this.lbl_password.TabIndex = 292;
-            this.lbl_password.Text = "Password";
-            // 
-            // txtbx_password
-            // 
-            this.txtbx_password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbx_password.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_password.Location = new System.Drawing.Point(284, 261);
-            this.txtbx_password.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.txtbx_password.MaxLength = 15;
-            this.txtbx_password.Name = "txtbx_password";
-            this.txtbx_password.Size = new System.Drawing.Size(329, 25);
-            this.txtbx_password.TabIndex = 293;
-            // 
-            // lbl_confirm_pw
-            // 
-            this.lbl_confirm_pw.AutoSize = true;
-            this.lbl_confirm_pw.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_confirm_pw.ForeColor = System.Drawing.Color.Black;
-            this.lbl_confirm_pw.Location = new System.Drawing.Point(281, 292);
-            this.lbl_confirm_pw.Name = "lbl_confirm_pw";
-            this.lbl_confirm_pw.Size = new System.Drawing.Size(112, 17);
-            this.lbl_confirm_pw.TabIndex = 294;
-            this.lbl_confirm_pw.Text = "Confirm Password";
-            // 
-            // txtbx_confirm_pw
-            // 
-            this.txtbx_confirm_pw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbx_confirm_pw.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_confirm_pw.Location = new System.Drawing.Point(284, 315);
-            this.txtbx_confirm_pw.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.txtbx_confirm_pw.MaxLength = 15;
-            this.txtbx_confirm_pw.Name = "txtbx_confirm_pw";
-            this.txtbx_confirm_pw.Size = new System.Drawing.Size(329, 25);
-            this.txtbx_confirm_pw.TabIndex = 295;
-            // 
-            // btn_see_current_pw
-            // 
-            this.btn_see_current_pw.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_see_current_pw.BackColor = System.Drawing.Color.White;
-            this.btn_see_current_pw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_see_current_pw.BackgroundImage")));
-            this.btn_see_current_pw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_see_current_pw.FlatAppearance.BorderSize = 0;
-            this.btn_see_current_pw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
-            this.btn_see_current_pw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_see_current_pw.Location = new System.Drawing.Point(619, 261);
-            this.btn_see_current_pw.Name = "btn_see_current_pw";
-            this.btn_see_current_pw.Size = new System.Drawing.Size(27, 25);
-            this.btn_see_current_pw.TabIndex = 297;
-            this.btn_see_current_pw.TabStop = false;
-            this.btn_see_current_pw.UseVisualStyleBackColor = false;
-            // 
-            // btn_see_new_pw
-            // 
-            this.btn_see_new_pw.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_see_new_pw.BackColor = System.Drawing.Color.White;
-            this.btn_see_new_pw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_see_new_pw.BackgroundImage")));
-            this.btn_see_new_pw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_see_new_pw.FlatAppearance.BorderSize = 0;
-            this.btn_see_new_pw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
-            this.btn_see_new_pw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_see_new_pw.Location = new System.Drawing.Point(619, 315);
-            this.btn_see_new_pw.Name = "btn_see_new_pw";
-            this.btn_see_new_pw.Size = new System.Drawing.Size(27, 25);
-            this.btn_see_new_pw.TabIndex = 296;
-            this.btn_see_new_pw.TabStop = false;
-            this.btn_see_new_pw.UseVisualStyleBackColor = false;
             // 
             // ucAddAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tblpnlAddAccount);
             this.Name = "ucAddAccount";
             this.Size = new System.Drawing.Size(886, 416);
-            this.pnlBelow.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.tblpnlAddAccount.ResumeLayout(false);
+            this.flpnlButtons.ResumeLayout(false);
+            this.pnlAddAccount.ResumeLayout(false);
+            this.pnlAddAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbUserAddAccount)).EndInit();
             this.ResumeLayout(false);
 
@@ -326,26 +324,29 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlBelow;
-        private System.Windows.Forms.Panel pnlSeparator1;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tblpnlAddAccount;
+        private System.Windows.Forms.FlowLayoutPanel flpnlButtons;
+        private System.Windows.Forms.Button btnAddAccount;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_see_new_pw;
-        private System.Windows.Forms.Button btn_see_current_pw;
-        private System.Windows.Forms.TextBox txtbx_confirm_pw;
-        private System.Windows.Forms.Label lbl_confirm_pw;
-        private System.Windows.Forms.TextBox txtbx_password;
-        private System.Windows.Forms.Label lbl_password;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtbx_username;
-        private System.Windows.Forms.Label lbl_username;
-        private System.Windows.Forms.PictureBox picbUserAddAccount;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblNewUserName;
+        private System.Windows.Forms.Panel pnlAddAccount;
+        private System.Windows.Forms.Button btnSeeConfirmPw;
+        private System.Windows.Forms.Button btnSeePw;
+        private System.Windows.Forms.TextBox txtbxConfirmPw;
+        private System.Windows.Forms.Label lblConfirmPw;
+        private System.Windows.Forms.TextBox txtbxPw;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtbxName;
+        private System.Windows.Forms.TextBox txtbxUserName;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblUserType;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.ComboBox cmbxUserType;
+        private System.Windows.Forms.Panel pnlBlocker;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.PictureBox picbUserAddAccount;
+
+
+
 
 
 
