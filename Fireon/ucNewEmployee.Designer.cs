@@ -115,7 +115,6 @@
             this.txtbxFirstName.Name = "txtbxFirstName";
             this.txtbxFirstName.Size = new System.Drawing.Size(227, 22);
             this.txtbxFirstName.TabIndex = 1;
-            this.txtbxFirstName.TextChanged += new System.EventHandler(this.txtbxFirstName_Leave);
             this.txtbxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxFirstName_KeyPress);
             this.txtbxFirstName.Leave += new System.EventHandler(this.txtbxFirstName_Leave);
             // 
@@ -129,7 +128,6 @@
             this.txtbxMiddleInitial.Name = "txtbxMiddleInitial";
             this.txtbxMiddleInitial.Size = new System.Drawing.Size(81, 22);
             this.txtbxMiddleInitial.TabIndex = 3;
-            this.txtbxMiddleInitial.TextChanged += new System.EventHandler(this.txtbxMiddleInitial_Leave);
             this.txtbxMiddleInitial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxMiddleName_KeyPress);
             this.txtbxMiddleInitial.Leave += new System.EventHandler(this.txtbxMiddleInitial_Leave);
             // 
@@ -143,7 +141,6 @@
             this.txtbxLastName.Name = "txtbxLastName";
             this.txtbxLastName.Size = new System.Drawing.Size(227, 22);
             this.txtbxLastName.TabIndex = 5;
-            this.txtbxLastName.TextChanged += new System.EventHandler(this.txtbxLastName_Leave);
             this.txtbxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxLastName_KeyPress);
             this.txtbxLastName.Leave += new System.EventHandler(this.txtbxLastName_Leave);
             // 
@@ -214,7 +211,6 @@
             this.txtbxNationality.Name = "txtbxNationality";
             this.txtbxNationality.Size = new System.Drawing.Size(210, 22);
             this.txtbxNationality.TabIndex = 20;
-            this.txtbxNationality.TextChanged += new System.EventHandler(this.txtbxNationality_Leave);
             this.txtbxNationality.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxNationality_KeyPress);
             this.txtbxNationality.Leave += new System.EventHandler(this.txtbxNationality_Leave);
             // 
@@ -338,58 +334,13 @@
             // 
             this.txtbxHourlyRate.BackColor = System.Drawing.Color.White;
             this.txtbxHourlyRate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtbxHourlyRate.MaxLength = 6;
             this.txtbxHourlyRate.Location = new System.Drawing.Point(17, 264);
             this.txtbxHourlyRate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxHourlyRate.MaxLength = 6;
             this.txtbxHourlyRate.Name = "txtbxHourlyRate";
             this.txtbxHourlyRate.Size = new System.Drawing.Size(210, 22);
             this.txtbxHourlyRate.TabIndex = 30;
             this.txtbxHourlyRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxHourlyRate_KeyPress);
-            // 
-            // lblContractDuration
-            // 
-            this.lblContractDuration.AutoSize = true;
-            this.lblContractDuration.Location = new System.Drawing.Point(338, 372);
-            this.lblContractDuration.Name = "lblContractDuration";
-            this.lblContractDuration.Size = new System.Drawing.Size(87, 13);
-            this.lblContractDuration.TabIndex = 31;
-            this.lblContractDuration.Text = "contract duration";
-            // 
-            // txtbxContractDuration
-            // 
-            this.txtbxContractDuration.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtbxContractDuration.Location = new System.Drawing.Point(429, 369);
-            this.txtbxContractDuration.MaxLength = 3;
-            this.txtbxContractDuration.Name = "txtbxContractDuration";
-            this.txtbxContractDuration.Size = new System.Drawing.Size(181, 20);
-            this.txtbxContractDuration.TabIndex = 32;
-            this.txtbxContractDuration.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxContractDuration_KeyPress);
-            // 
-            // lblPaymentMode
-            // 
-            this.lblPaymentMode.AutoSize = true;
-            this.lblPaymentMode.Location = new System.Drawing.Point(347, 407);
-            this.lblPaymentMode.Name = "lblPaymentMode";
-            this.lblPaymentMode.Size = new System.Drawing.Size(76, 13);
-            this.lblPaymentMode.TabIndex = 33;
-            this.lblPaymentMode.Text = "payment mode";
-            // 
-            // cmbxPaymentMode
-            // 
-            this.cmbxPaymentMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbxPaymentMode.FormattingEnabled = true;
-            this.cmbxPaymentMode.Items.AddRange(new object[] {
-            "Bank Draft",
-            "Bill of Exchange",
-            "Cash Payment",
-            "Cheque",
-            "Money/Postal Order",
-            "Promissory Note",
-            "Telegraphic/Mail Transfer"});
-            this.cmbxPaymentMode.Location = new System.Drawing.Point(429, 404);
-            this.cmbxPaymentMode.Name = "cmbxPaymentMode";
-            this.cmbxPaymentMode.Size = new System.Drawing.Size(181, 21);
-            this.cmbxPaymentMode.TabIndex = 34;
             // 
             // mcBirthdate
             // 
@@ -490,6 +441,7 @@
             this.txtbxContact.Name = "txtbxContact";
             this.txtbxContact.Size = new System.Drawing.Size(239, 22);
             this.txtbxContact.TabIndex = 38;
+            this.txtbxContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxContact_KeyPress);
             // 
             // lblEmail
             // 
@@ -511,7 +463,7 @@
             this.txtbxEmail.Name = "txtbxEmail";
             this.txtbxEmail.Size = new System.Drawing.Size(239, 22);
             this.txtbxEmail.TabIndex = 40;
-            this.txtbxEmail.TextChanged += new System.EventHandler(this.txtbxEmail_Leave);
+            this.txtbxEmail.Leave += new System.EventHandler(this.txtbxEmail_Leave);
             // 
             // lblAddress
             // 
@@ -534,7 +486,7 @@
             this.txtbxAddress.Name = "txtbxAddress";
             this.txtbxAddress.Size = new System.Drawing.Size(239, 84);
             this.txtbxAddress.TabIndex = 42;
-            this.txtbxAddress.TextChanged += new System.EventHandler(this.txtbxAddress_Leave);
+            this.txtbxAddress.Leave += new System.EventHandler(this.txtbxAddress_Leave);
             // 
             // label2
             // 
@@ -553,6 +505,13 @@
             this.cmbxPaymentMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxPaymentMode.FormattingEnabled = true;
             this.cmbxPaymentMode.Items.AddRange(new object[] {
+            "Bank Draft",
+            "Bill of Exchange",
+            "Cash Payment",
+            "Cheque",
+            "Money/Postal Order",
+            "Promissory Note",
+            "Telegraphic/Mail Transfer",
             "Bank Draft",
             "Bill of Exchange",
             "Cash Payment",
@@ -582,9 +541,11 @@
             this.txtbxContractDuration.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtbxContractDuration.Location = new System.Drawing.Point(17, 311);
             this.txtbxContractDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtbxContractDuration.MaxLength = 3;
             this.txtbxContractDuration.Name = "txtbxContractDuration";
             this.txtbxContractDuration.Size = new System.Drawing.Size(210, 22);
             this.txtbxContractDuration.TabIndex = 44;
+            this.txtbxContractDuration.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxContractDuration_KeyPress);
             // 
             // lblContractDuration
             // 
