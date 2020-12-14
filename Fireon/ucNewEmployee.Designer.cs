@@ -319,12 +319,6 @@
             this.cmbxPosition.BackColor = System.Drawing.Color.White;
             this.cmbxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxPosition.FormattingEnabled = true;
-            this.cmbxPosition.Items.AddRange(new object[] {
-            "Position 1",
-            "Position 2",
-            "Position 3",
-            "Position 4",
-            "Position 5"});
             this.cmbxPosition.Location = new System.Drawing.Point(429, 241);
             this.cmbxPosition.Name = "cmbxPosition";
             this.cmbxPosition.Size = new System.Drawing.Size(181, 21);
@@ -384,6 +378,7 @@
             // 
             this.txtbxHourlyRate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtbxHourlyRate.Location = new System.Drawing.Point(429, 337);
+            this.txtbxHourlyRate.MaxLength = 6;
             this.txtbxHourlyRate.Name = "txtbxHourlyRate";
             this.txtbxHourlyRate.Size = new System.Drawing.Size(181, 20);
             this.txtbxHourlyRate.TabIndex = 30;
@@ -402,6 +397,7 @@
             // 
             this.txtbxContractDuration.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtbxContractDuration.Location = new System.Drawing.Point(429, 369);
+            this.txtbxContractDuration.MaxLength = 3;
             this.txtbxContractDuration.Name = "txtbxContractDuration";
             this.txtbxContractDuration.Size = new System.Drawing.Size(181, 20);
             this.txtbxContractDuration.TabIndex = 32;
