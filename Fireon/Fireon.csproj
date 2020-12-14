@@ -119,6 +119,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ucAddAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddAccount.Designer.cs">
+      <DependentUpon>ucAddAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,6 +169,15 @@
     <Compile Include="ucDataGridView.Designer.cs">
       <DependentUpon>ucDataGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettings.Designer.cs">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucAddAccount.resx">
+      <DependentUpon>ucAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucDataGridView.resx">
       <DependentUpon>ucDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettings.resx">
+      <DependentUpon>ucSettings.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Fireon_TemporaryKey.pfx" />
@@ -249,6 +267,7 @@
     <Content Include="Resources\other-buttons\btnCancel.png" />
     <Content Include="Resources\other-buttons\btnOthersLogout.png" />
     <None Include="Resources\other-buttons\btnPrint.png" />
+    <None Include="Resources\other-buttons\btnUpdate.png" />
     <Content Include="Resources\sidebar-buttons\btnAll.png" />
     <Content Include="Resources\sidebar-buttons\btnAllActive.png" />
     <Content Include="Resources\sidebar-buttons\btnAllHover.png" />
