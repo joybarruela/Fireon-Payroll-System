@@ -297,7 +297,6 @@ namespace Fireon
             sf.secondRegex(e);
         }
         #endregion
-
         #region SIMPLE FILE COPY EXAMPLE
         //public class SimpleFileCopy
         //{

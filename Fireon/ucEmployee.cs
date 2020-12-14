@@ -84,7 +84,6 @@ namespace Fireon
             else if (prompt == DialogResult.Ignore)
             {
             }
-
         }
         /// <summary>
         /// VIBIESCA
@@ -97,7 +96,7 @@ namespace Fireon
              * VALIDATE THE INPUT
              * INSERT THEM TO DATABASE
              */
-            try 
+            try
             {
                 var ucNewEmployee = (ucNewEmployee)reference; // CAST THE PARAMETER TO A ucNewEmployee SO THAT THE SYSTEM COULD READ IT'S CONTENTS
                 // VALIDATE THE INPUT
@@ -117,11 +116,39 @@ namespace Fireon
                 // if user selects regular, it's okay if the contract duration is blank
                 // if user is contractual, contract duration should have input
                 // this checks if the contractual (index of 0) is selected but no contract duration is present
-                if ((ucNewEmployee.cmbxStatus.SelectedIndex == 0) && (ucNewEmployee.txtbxContractDuration.Text == String.Empty))
-                {
+                if ((ucNewEmployee.cmbxStatus.SelectedIndex == 0) && (ucNewEmployee.txtbxContractDuration.Text == String.Empty)){
                     MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+
+                //ucNewEmployee.txtbxWorkingHours.Text.ToString()
+                // handle the tryparse on these motherfucking stuff because contract duration is prone to being null or empty
+                Int64 theFuckingContractDurationValue;
+                Int64 theFuckingWorkingHoursValue;
+                Int64 theFuckingHourlyRateValue;
+                Int64 theFuckingContactValue;
+
+                bool tryParseTheFuckingContractDurationResult = Int64.TryParse(ucNewEmployee.txtbxContractDuration.Text.ToString(), out theFuckingContractDurationValue);
+                bool tryParseTheFuckingWorkingHoursResult = Int64.TryParse(ucNewEmployee.txtbxWorkingHours.Text.ToString(), out theFuckingWorkingHoursValue);
+                bool tryParseTheFuckingHourlyRateResult = Int64.TryParse(ucNewEmployee.txtbxHourlyRate.Text.ToString(), out theFuckingHourlyRateValue);
+                bool tryParseTheFuckingContactResult = Int64.TryParse(ucNewEmployee.txtbxContact.Text.ToString(), out theFuckingContactValue);
+
+                if (tryParseTheFuckingContractDurationResult)
+                {/*parse just got real*/}
+                else
+                { theFuckingContractDurationValue = 0; /*if there is no value*/}
+                if (tryParseTheFuckingWorkingHoursResult)
+                {/*parse just got real*/}
+                else
+                { theFuckingWorkingHoursValue = 0; /*if there is no value*/}
+                if (tryParseTheFuckingHourlyRateResult)
+                {/*parse just got real*/}
+                else
+                { theFuckingHourlyRateValue = 0; /*if there is no value*/}
+                if (tryParseTheFuckingContactResult)
+                {/*parse just got real*/}
+                else
+                { theFuckingContactValue = 0; /*if there is no value*/}
 
                 if ((ucNewEmployee.txtbxFirstName.Text != String.Empty) &&
                     (ucNewEmployee.txtbxLastName.Text != String.Empty) &&
@@ -137,7 +164,6 @@ namespace Fireon
                     (ucNewEmployee.txtbxHourlyRate.Text != String.Empty) &&
                     (ucNewEmployee.cmbxPaymentMode.SelectedIndex > -1))
                 {
-                    MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // INSERT THEM TO DATABASE
                     db.dbInsertEmployee(
@@ -145,7 +171,7 @@ namespace Fireon
                         ucNewEmployee.txtbxMiddleInitial.Text,
                         ucNewEmployee.txtbxLastName.Text,
                         ucNewEmployee.rdbtnMale.Checked == true ? "Male" : "Female",
-                        Int64.Parse(ucNewEmployee.txtbxContact.Text),
+                        theFuckingContactValue,
                         ucNewEmployee.txtbxEmail.Text,
                         ucNewEmployee.txtbxAddress.Text,
                         ucNewEmployee.mcBirthdate.SelectionStart,
@@ -154,14 +180,14 @@ namespace Fireon
                         ucNewEmployee.cmbxDepartment.GetItemText(ucNewEmployee.cmbxDepartment.SelectedItem),
                         ucNewEmployee.cmbxPosition.GetItemText(ucNewEmployee.cmbxPosition.SelectedItem),
                         ucNewEmployee.cmbxStatus.GetItemText(ucNewEmployee.cmbxStatus.SelectedItem),
-                        Int64.Parse(ucNewEmployee.txtbxWorkingHours.Text),
-                        Int64.Parse(ucNewEmployee.txtbxHourlyRate.Text),
-                        Int64.Parse(ucNewEmployee.txtbxContractDuration.Text),
+                        theFuckingWorkingHoursValue,
+                        theFuckingHourlyRateValue,
+                        theFuckingContractDurationValue,
                         ucNewEmployee.cmbxPaymentMode.GetItemText(ucNewEmployee.cmbxPaymentMode.SelectedItem),
                         ucNewEmployee.picbDP.ImageLocation,
                         DateTime.Today
                         );
-
+                    MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
