@@ -16,16 +16,5 @@ namespace Fireon
         {
             InitializeComponent();
         }
-
-        private void txtbxNewAccountName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }

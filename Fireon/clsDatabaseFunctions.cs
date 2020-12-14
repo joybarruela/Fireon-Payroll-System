@@ -10,20 +10,19 @@ using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
 namespace Fireon
 {
     /// <summary>
-    /// VIBIESCA
     /// THE MAIN FUNCTION OF THIS CLASS FILE IS TO HANDLE ALL THE DATABASE OPERATIONS.
-    /// IN CASE THAT YOU WANT TO COMMUNICATE WITH THE DATABASE, JUST CREATE AN INSTANCE OF THIS CLASS.
+    /// IN CASE THAT YOU WANT TO COMMUNICATE WITH THE DATABASE, JUST CREATE AN INSTANCE OF THIS CLASS SOMEWHERE IN YOUR STUFF.
     /// </summary>
     class clsDatabaseFunctions
     {
         // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL.
         static string dbConnectionString = Properties.Resources.db_connection_string;
         // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT.
+        // STATIC BECAUSE THIS IS THE ONLY INSTANCE
         static MySqlConnection dbCon= new MySqlConnection(dbConnectionString);
 
 
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD VALIDATES THE USERNAME AND PASSWORD ENTERED ON LOGIN. WILL RETURN TRUE IF LOGIN CREDENTIALS MATCH.
         /// </summary>
         /// <param name="username">USUALLY txtbx_username.GetText();</param>
@@ -68,7 +67,6 @@ namespace Fireon
             return false; // RETURN FALSE IF PROGRAM DID NOT FIND A MATCHING CREDENTIALS.
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD TAKES A QUERY, LIKE SELECT * FROM tbl_accounts, AND PUTS IT IN A DataGridView OBJECT.
         /// </summary>
         /// <param name="query">PASS THE QUERY FROM WHICH FUNCTION IT WAS CALLED</param>
@@ -85,7 +83,6 @@ namespace Fireon
             dbClose(); // CLOSE THE CONNECTION.
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD OPENS THE DATABASE CONNECTION
         /// </summary>
         private void dbOpen()
@@ -97,7 +94,6 @@ namespace Fireon
             }
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD CLOSES THE DATABASE CONNECTION
         /// </summary>
         private void dbClose()
@@ -109,7 +105,6 @@ namespace Fireon
             }
         }
         /// <summary>
-        /// VIBIESCA
         /// TEMPLATE FUNCTION FOR YOU TO USE. IT COPIPES 1 FILE FROM 1 PLACE TO ANOTHER.
         /// </summary>
         /// <param name="fileName">PASS THE FILENAME HERE</param>
@@ -133,10 +128,24 @@ namespace Fireon
             {
                 MessageBox.Show(Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         /// <summary>
-        /// VIBIESCA
         /// INSERT EMPLOYEE DATA INTO THE DATABASE BRRRRRRRRRRRRRRR
         /// </summary>
         /// <param name="firstName">String</param>
@@ -183,6 +192,7 @@ namespace Fireon
             {
                 dbOpen(); // OPEN THE CONNECTION.
 
+                // CREATE NEW COMMAND INSTANCE HERE
                 MySqlCommand dbCmd = new MySqlCommand(
                 @"INSERT INTO tbl_employee(
                 employeeFirstName,
@@ -225,6 +235,7 @@ namespace Fireon
                 @employeeImageLocation,
                 @employeeDateEmployed)", dbCon); // PASSING QUERY AND CONNECTION HERE.
 
+                // THIS IS THE PART WHERE I ADD VALUES BASED ON PASSED VALUES WHEN YOU CALL THIS FUNCTION
                 dbCmd.Parameters.AddWithValue("@employeeFirstName", firstName);
                 dbCmd.Parameters.AddWithValue("@employeeMiddleInitial", middleInitial);
                 dbCmd.Parameters.AddWithValue("@employeeLastName", lastName);

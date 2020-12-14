@@ -16,27 +16,6 @@ namespace Fireon
         {
             InitializeComponent();
         }
-
-        private void jImageButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jImageButton4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jImageButton5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jImageButton6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ucDashboard_Load(object sender, EventArgs e)
         {
 

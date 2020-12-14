@@ -54,18 +54,17 @@ DROP TABLE IF EXISTS `tbl_employee`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tbl_employee` (
-  `employeeID` varchar(45) NOT NULL,
+  `employeeID` int NOT NULL AUTO_INCREMENT,
   `employeeFirstName` varchar(120) DEFAULT NULL,
   `employeeMiddleInitial` varchar(3) DEFAULT NULL,
   `employeeLastName` varchar(120) DEFAULT NULL,
   `employeeSex` varchar(6) DEFAULT NULL,
-  `employeeContactNumber` int DEFAULT NULL,
+  `employeeContactNumber` bigint DEFAULT NULL,
   `employeeEmailAddress` varchar(120) DEFAULT NULL,
   `employeeHomeAddress` varchar(200) DEFAULT NULL,
   `employeeBirthdate` date DEFAULT NULL,
   `employeeMaritalStatus` varchar(9) DEFAULT NULL,
   `employeeNationality` varchar(45) DEFAULT NULL,
-  `tbl_employeecol` varchar(45) DEFAULT NULL,
   `employeeDepartment` varchar(45) DEFAULT NULL,
   `employeePosition` varchar(45) DEFAULT NULL,
   `employeeStatus` varchar(45) DEFAULT NULL,
@@ -76,7 +75,7 @@ CREATE TABLE `tbl_employee` (
   `employeeImageLocation` varchar(255) DEFAULT NULL,
   `employeeDateEmployed` date DEFAULT NULL,
   PRIMARY KEY (`employeeID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-13 19:56:16
+-- Dump completed on 2020-12-15  2:18:04

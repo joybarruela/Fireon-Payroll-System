@@ -13,6 +13,7 @@ namespace Fireon
     public partial class ucEmployee : UserControl
     {
         clsDatabaseFunctions db = new clsDatabaseFunctions(); // CREATE AN INSTANCE OF clsDatabaseFunctions.
+        #region TRIGGERS AND EVENTS
         /// <summary>
         /// VIBIESCA
         /// Default stuff
@@ -29,62 +30,8 @@ namespace Fireon
         {
             displayUserControl("List Employee");
         }
-        /// <summary>
-        /// VIBIESCA
-        /// EVERY TIME THAT THE NEW BUTTON IS CLICKED
-        /// </summary>
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            /* ALGO
-             * TWO THINGS CAN HAPPEN WHEN ADD BUTTON IS CLICKED
-             * IF ucNewEmployee IS VISIBLE, TRY TO ADD THEM TO DATABASE
-             * IF ucEmployee IS VISIBLE, TRY TO SHOW ucNewEmployee
-             */
-            UserControl reference = null;
-            bool ucNewEmployeeFound = false; // RESULT BASED ON THE LOOP BELOW
-            foreach (Object obj in pnlEmployee.Controls) // START LOOPING TO ALL CHILD OF pnlEmployee
-            {
-                UserControl item = (UserControl)obj; // CAST THEM
-                if (item.Name == "ucNewEmployee")
-                {
-                    ucNewEmployeeFound = true; // SET TO TRUE IF THERE IS 1
-                    reference = item; // PASSES THE REFERENCE
-                    break; // BREAK OUT OF THE LOOP
-                }
-            }
-            if (ucNewEmployeeFound == true) // EVALUATE RESULT
-            {
-                addNewEmployee(reference); // IS THERE IS ALREADY A NEW EMPLOYEE FORM THEN CALL THIS FUNCTION TO TRY TO ADD THE DATA INTO THE DATABASE.
-            }
-            else
-            {
-                displayUserControl("New Employee"); // SHOW A NEW FORM
-            }
-        }
-        /// <summary>
-        /// WHEN THE USER CLICKS CANCEL ON THE NEW EMPLOYEE FORM
-        /// </summary>
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-           /*
-            * ALGO
-            * EITHER PROMPT THE USER TO CLEAR AND RESET TEXT FIELDS 
-            * OR displayUserControl("List Employee");
-            */
-            var prompt = MessageBox.Show(null, Properties.Resources.msg_new_employee_prompt, Properties.Resources.str_program_title, MessageBoxButtons.AbortRetryIgnore);
-            if (prompt == DialogResult.Abort)
-            {
-                displayUserControl("List Employee");
-            }
-            else if (prompt == DialogResult.Retry)
-            {
-                displayUserControl("New Employee");
-                MessageBox.Show(null, Properties.Resources.msg_new_employee_retry, Properties.Resources.str_program_title, MessageBoxButtons.OK);
-            }
-            else if (prompt == DialogResult.Ignore)
-            {
-            }
-        }
+        #endregion
+        #region CUSTOM FUNCTIONS
         /// <summary>
         /// VIBIESCA
         /// TRIES TO ADD DATA FROM ucNewEmployee TO THE DATABASE
@@ -235,8 +182,66 @@ namespace Fireon
                     break;
             }
         }
-
-        #region COOL SEARCH BOX LOOGIC
+        #endregion
+        #region ADD AND CANCEL LOGIC
+        /// <summary>
+        /// VIBIESCA
+        /// EVERY TIME THAT THE NEW BUTTON IS CLICKED
+        /// </summary>
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            /* ALGO
+             * TWO THINGS CAN HAPPEN WHEN ADD BUTTON IS CLICKED
+             * IF ucNewEmployee IS VISIBLE, TRY TO ADD THEM TO DATABASE
+             * IF ucEmployee IS VISIBLE, TRY TO SHOW ucNewEmployee
+             */
+            UserControl reference = null;
+            bool ucNewEmployeeFound = false; // RESULT BASED ON THE LOOP BELOW
+            foreach (Object obj in pnlEmployee.Controls) // START LOOPING TO ALL CHILD OF pnlEmployee
+            {
+                UserControl item = (UserControl)obj; // CAST THEM
+                if (item.Name == "ucNewEmployee")
+                {
+                    ucNewEmployeeFound = true; // SET TO TRUE IF THERE IS 1
+                    reference = item; // PASSES THE REFERENCE
+                    break; // BREAK OUT OF THE LOOP
+                }
+            }
+            if (ucNewEmployeeFound == true) // EVALUATE RESULT
+            {
+                addNewEmployee(reference); // IS THERE IS ALREADY A NEW EMPLOYEE FORM THEN CALL THIS FUNCTION TO TRY TO ADD THE DATA INTO THE DATABASE.
+            }
+            else
+            {
+                displayUserControl("New Employee"); // SHOW A NEW FORM
+            }
+        }
+        /// <summary>
+        /// WHEN THE USER CLICKS CANCEL ON THE NEW EMPLOYEE FORM
+        /// </summary>
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            /*
+             * ALGO
+             * EITHER PROMPT THE USER TO CLEAR AND RESET TEXT FIELDS 
+             * OR displayUserControl("List Employee");
+             */
+            var prompt = MessageBox.Show(null, Properties.Resources.msg_new_employee_prompt, Properties.Resources.str_program_title, MessageBoxButtons.AbortRetryIgnore);
+            if (prompt == DialogResult.Abort)
+            {
+                displayUserControl("List Employee");
+            }
+            else if (prompt == DialogResult.Retry)
+            {
+                displayUserControl("New Employee");
+                MessageBox.Show(null, Properties.Resources.msg_new_employee_retry, Properties.Resources.str_program_title, MessageBoxButtons.OK);
+            }
+            else if (prompt == DialogResult.Ignore)
+            {
+            }
+        }
+        #endregion
+        #region SEARCH BOX LOGIC
         private void txtbxSearch_Enter(object sender, EventArgs e)
         {
             if (String.Compare(txtbxSearch.Text, "Search") == 0)
@@ -245,7 +250,6 @@ namespace Fireon
                 txtbxSearch.ForeColor = Color.Black;
             }
         }
-
         private void txtbxSearch_Leave(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(txtbxSearch.Text) == true)
@@ -255,9 +259,8 @@ namespace Fireon
             }
         }
         #endregion
-        #region COMBOBOX LOGIC
+        #region COMBOBOXES LOGIC
         /// <summary>
-        /// VIBIESCA
         /// POSITION LIST BOX ITEMS WILL CHANGE DEPENDING ON THE SELECTED DEPARTMENT
         /// </summary>
         private void cmbxDepartment_SelectedIndexChanged(object sender, EventArgs e)

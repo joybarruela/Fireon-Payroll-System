@@ -55,14 +55,14 @@
             this.rdbtnFemale = new System.Windows.Forms.RadioButton();
             this.ofdUploadDP = new System.Windows.Forms.OpenFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblPersonalInformation = new System.Windows.Forms.Label();
             this.lblContact = new System.Windows.Forms.Label();
             this.txtbxContact = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtbxAddress = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblJobInformation = new System.Windows.Forms.Label();
             this.cmbxPaymentMode = new System.Windows.Forms.ComboBox();
             this.lblPaymentMode = new System.Windows.Forms.Label();
             this.txtbxContractDuration = new System.Windows.Forms.TextBox();
@@ -265,9 +265,11 @@
             // cmbxPosition
             // 
             this.cmbxPosition.BackColor = System.Drawing.Color.White;
+            this.cmbxPosition.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbxPosition.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbxPosition.FormattingEnabled = true;
-            this.cmbxPosition.Location = new System.Drawing.Point(429, 241);
+            this.cmbxPosition.Location = new System.Drawing.Point(15, 117);
             this.cmbxPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbxPosition.Name = "cmbxPosition";
             this.cmbxPosition.Size = new System.Drawing.Size(210, 25);
@@ -291,7 +293,7 @@
             this.cmbxStatus.Items.AddRange(new object[] {
             "Contractual",
             "Regular"});
-            this.cmbxStatus.Location = new System.Drawing.Point(17, 167);
+            this.cmbxStatus.Location = new System.Drawing.Point(15, 167);
             this.cmbxStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbxStatus.Name = "cmbxStatus";
             this.cmbxStatus.Size = new System.Drawing.Size(210, 25);
@@ -312,7 +314,7 @@
             // 
             this.txtbxWorkingHours.BackColor = System.Drawing.Color.White;
             this.txtbxWorkingHours.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtbxWorkingHours.Location = new System.Drawing.Point(16, 217);
+            this.txtbxWorkingHours.Location = new System.Drawing.Point(15, 217);
             this.txtbxWorkingHours.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxWorkingHours.MaxLength = 3;
             this.txtbxWorkingHours.Name = "txtbxWorkingHours";
@@ -334,7 +336,7 @@
             // 
             this.txtbxHourlyRate.BackColor = System.Drawing.Color.White;
             this.txtbxHourlyRate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtbxHourlyRate.Location = new System.Drawing.Point(17, 264);
+            this.txtbxHourlyRate.Location = new System.Drawing.Point(15, 264);
             this.txtbxHourlyRate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxHourlyRate.MaxLength = 6;
             this.txtbxHourlyRate.Name = "txtbxHourlyRate";
@@ -382,7 +384,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblPersonalInformation);
             this.panel1.Controls.Add(this.lblContact);
             this.panel1.Controls.Add(this.lblFirstName);
             this.panel1.Controls.Add(this.txtbxContact);
@@ -410,16 +412,16 @@
             this.panel1.Size = new System.Drawing.Size(514, 431);
             this.panel1.TabIndex = 36;
             // 
-            // label1
+            // lblPersonalInformation
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(3, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Personal Information";
+            this.lblPersonalInformation.AutoSize = true;
+            this.lblPersonalInformation.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonalInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblPersonalInformation.Location = new System.Drawing.Point(3, 10);
+            this.lblPersonalInformation.Name = "lblPersonalInformation";
+            this.lblPersonalInformation.Size = new System.Drawing.Size(197, 23);
+            this.lblPersonalInformation.TabIndex = 0;
+            this.lblPersonalInformation.Text = "Personal Information";
             // 
             // lblContact
             // 
@@ -488,16 +490,16 @@
             this.txtbxAddress.TabIndex = 42;
             this.txtbxAddress.Leave += new System.EventHandler(this.txtbxAddress_Leave);
             // 
-            // label2
+            // lblJobInformation
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(13, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Job Information";
+            this.lblJobInformation.AutoSize = true;
+            this.lblJobInformation.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblJobInformation.Location = new System.Drawing.Point(13, 10);
+            this.lblJobInformation.Name = "lblJobInformation";
+            this.lblJobInformation.Size = new System.Drawing.Size(153, 23);
+            this.lblJobInformation.TabIndex = 0;
+            this.lblJobInformation.Text = "Job Information";
             // 
             // cmbxPaymentMode
             // 
@@ -539,7 +541,7 @@
             // 
             this.txtbxContractDuration.BackColor = System.Drawing.Color.White;
             this.txtbxContractDuration.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtbxContractDuration.Location = new System.Drawing.Point(17, 311);
+            this.txtbxContractDuration.Location = new System.Drawing.Point(15, 311);
             this.txtbxContractDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbxContractDuration.MaxLength = 3;
             this.txtbxContractDuration.Name = "txtbxContractDuration";
@@ -559,7 +561,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblJobInformation);
             this.panel2.Controls.Add(this.cmbxPaymentMode);
             this.panel2.Controls.Add(this.txtbxHourlyRate);
             this.panel2.Controls.Add(this.lblPaymentMode);
@@ -661,8 +663,8 @@
         public System.Windows.Forms.RadioButton rdbtnFemale;
         public System.Windows.Forms.OpenFileDialog ofdUploadDP;
         private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblPersonalInformation;
+        public System.Windows.Forms.Label lblJobInformation;
         public System.Windows.Forms.ComboBox cmbxPaymentMode;
         public System.Windows.Forms.Label lblPaymentMode;
         public System.Windows.Forms.TextBox txtbxContractDuration;

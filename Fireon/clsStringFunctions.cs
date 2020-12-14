@@ -8,6 +8,10 @@ using System.Windows.Forms;
 
 namespace Fireon
 {
+    /// <summary>
+    /// THIS CLASS IS FOR ALL THE STRING OPERATIONS THAT YOU WANT TO PERFORM ON THE PROGRAM
+    /// CALL IT WHEREVER, THANK YOU.
+    /// </summary>
     class clsStringFunctions
     {
 
@@ -15,22 +19,21 @@ namespace Fireon
         /// REMOVES DOUBLE SPACES
         /// REMOVE SPACES IN FRONT AND BACK
         /// </summary>
-        /// <param name="textBox"></param>
         public void cleanText(TextBox textBox){
             textBox.Text = textBox.Text.Trim(); // REMOVE SPACES IN FRONT AND BACK
-            string sentence = textBox.Text;
-            RegexOptions options = RegexOptions.None;
-            Regex regex = new Regex("[ ]{2,}", options);
-            textBox.Text = regex.Replace(sentence, " ");
+            string sentence = textBox.Text; // VARIABLE INITIALIZE CONTAINING RAW STRING
+            RegexOptions options = RegexOptions.None; // SETTING OPTIONS HERE
+            Regex regex = new Regex("[ ]{2,}", options); // CREATING THE REGEX RULE
+            textBox.Text = regex.Replace(sentence, " "); // APPLYING IT ON THE VARIABLE
         }
         /// <summary>
-        /// NO NUMBER
-        /// NO SPECIAL CHARS
         /// ALLOWS SPACE
         /// ALLOWS BACKSPACE
+        /// ALLOWS LETTERS
         /// </summary>
         public void firstRegex(KeyPressEventArgs e)
         {
+            // IF INPUT IS A SPACE OR A LETTER OR A BACKSPACE THEN ALLOW, ELSE DON'T.
             if ((char.IsWhiteSpace(e.KeyChar)) || (char.IsLetter(e.KeyChar)) || e.KeyChar == '\b')
             {
                 e.Handled = false;
@@ -42,11 +45,11 @@ namespace Fireon
         }
         /// <summary>
         /// ALLOWS NUMBER
-        /// NO SPECIAL CHARS
         /// ALLOWS BACKSPACE
         /// </summary>
         public void secondRegex(KeyPressEventArgs e)
         {
+            // IF INPUT IS A NUMBER OR A BACKSPACE THEN ALLOW, ELSE DON'T.
             if ((char.IsNumber(e.KeyChar)) || e.KeyChar == '\b')
             {
                 e.Handled = false;

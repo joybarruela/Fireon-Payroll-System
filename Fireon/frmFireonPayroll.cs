@@ -10,19 +10,8 @@ namespace Fireon
     /// </summary>
     public partial class frmFireonPayroll : Form
     {
+        #region CUSTOM BUILT FUNCTIONS
         /// <summary>
-        /// CLASS CONSTRUCTOR.
-        /// </summary>
-        public frmFireonPayroll()
-        {
-            // CREATE ALL ITEMS INSIDE THIS FORM
-            InitializeComponent();
-
-            // DISPLAY DASHBOARD FIRST
-            displayUserControl("Dashboard");
-        }
-        /// <summary>
-        /// BARRUELA
         /// THIS METHOD GETS CALLED WHENEVER THE USER CLICKS A BUTTON ON THE SIDEBAR.
         /// WHAT THIS DOES IS IT RESETS ALL THE BACKGROUND IMAGE OF THE BUTTONS TO ITS' UNCLICKED STATE.
         /// </summary>
@@ -43,7 +32,6 @@ namespace Fireon
             btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePosting; // RESET BUTTON BG
         }
         /// <summary>
-        /// VIBIESCA
         /// CALL THIS TO SHOW ITEMS ON THE DASHBOARD
         /// </summary>
         public void displayUserControl(string name)
@@ -245,6 +233,50 @@ namespace Fireon
                     break;  
             }
         }
+        #endregion
+        #region TRIGGERS AND EVENTS
+        /// <summary>
+        /// CLASS CONSTRUCTOR.
+        /// </summary>
+        public frmFireonPayroll()
+        {
+            // CREATE ALL ITEMS INSIDE THIS FORM
+            InitializeComponent();
+
+            // DISPLAY DASHBOARD FIRST
+            displayUserControl("Dashboard");
+        }
+        /// <summary>
+        /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.
+        /// </summary>
+        private void frmFireonPayroll_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            clsProgram.programInstance.Dispose(); // THIS LINE WILL KILL THE programInstance OBJECT WHICH IS THE frmLogin OBJECT.
+        }
+        /// <summary>
+        /// THIS METHOD GETS CALLED WHENEVER THE USER RESIZES THE FORM (FOR RESPONSIVENESS)
+        /// </summary>
+        private void frmFireonPayroll_SizeChanged(object sender, EventArgs e)
+        {
+            int formDefaultHeight = 680;
+            int picbFireonHeight = 50;
+            int pnlSeparatorHeight = 10;
+
+            if (this.Size.Height > formDefaultHeight)
+            {
+                picbFireon.Height = picbFireonHeight + ((this.Size.Height - formDefaultHeight) / 3);
+                pnlSeparator0.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
+                pnlSeparator1.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
+            }
+            else
+            {
+                picbFireon.Height = picbFireonHeight - ((this.Size.Height - formDefaultHeight) / 3);
+                pnlSeparator0.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
+                pnlSeparator1.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
+            }
+        }
+        #endregion
+        #region MENU ITEMS CLICK EVENTS
         /// <summary>
         /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE MENU BUTTON ON THE UPPER RIGHT SIDE. (THE THREE DOTS).
         /// </summary>
@@ -254,7 +286,6 @@ namespace Fireon
             pnlMenu.Visible = !pnlMenu.Visible; // CHANGES THE STATE OF VISIBILITY OF PANEL MENU.
         }
         /// <summary>
-        /// BARRUELA, VIBIESCA
         /// WHEN THE USER CLICKS LOGOUT
         /// </summary>
         private void btn_logout_Click(object sender, EventArgs e)
@@ -267,18 +298,9 @@ namespace Fireon
                 clsProgram.programInstance.Show(); // SHOWS THE LOGIN FORM BACK TO LIFE.
             }
         }
-        /// <summary>
-        /// VIBIESCA
-        /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.
-        /// </summary>
-        private void frmFireonPayroll_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            clsProgram.programInstance.Dispose(); // THIS LINE WILL KILL THE programInstance OBJECT WHICH IS THE frmLogin OBJECT.
-        }
-        
+        #endregion
         #region LEFT SIDEBAR CLICK EVENTS
         /// <summary>
-        /// BARRUELA, VIBIESCA
         /// WHEN THE LEFT SIDE BAR BUTTONS ARE CLICKED. SAME GOES WITH ALL OTHER 12 BUTTONS BELOW.
         /// </summary>
         private void btn_dashboard_Click(object sender, EventArgs e)
@@ -334,29 +356,5 @@ namespace Fireon
             //displayUserControl("Setting");
         }
         #endregion
-
-        /// <summary>
-        /// VIBIESCA
-        /// THIS METHOD GETS CALLED WHENVER THE USER RESIZES THE FORM (FOR RESPONSIVENESS)
-        /// </summary>
-        private void frmFireonPayroll_SizeChanged(object sender, EventArgs e)
-        {
-            int formDefaultHeight = 680;
-            int picbFireonHeight = 50;
-            int pnlSeparatorHeight = 10;
-
-            if (this.Size.Height > formDefaultHeight)
-            {
-                picbFireon.Height = picbFireonHeight + ((this.Size.Height - formDefaultHeight) / 3);
-                pnlSeparator0.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
-                pnlSeparator1.Height = pnlSeparatorHeight + ((this.Size.Height - formDefaultHeight) / 5);
-            }
-            else
-            {
-                picbFireon.Height = picbFireonHeight - ((this.Size.Height - formDefaultHeight) / 3);
-                pnlSeparator0.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
-                pnlSeparator1.Height = pnlSeparatorHeight - ((this.Size.Height - formDefaultHeight) / 5);
-            }
-        }
     }
 }

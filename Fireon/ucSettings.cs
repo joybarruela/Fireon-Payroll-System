@@ -15,13 +15,6 @@ namespace Fireon
         public ucSettings()
         {
             InitializeComponent();
-        }
-
-        private void ucAddAccount1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-      
+        }      
     }
 }
