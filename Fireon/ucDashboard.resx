@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_overtime_employees_graph.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblTotalEmployeesGraph.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMIAAABECAYAAADTCOr0AAAABGdBTUEAALGPC/xhBQAAAxVJREFUeF7t
         m0GOU0EMBTkKRwmBQ7CYSNwEjsbNhnlSwkgjt17brYzzO/WkWoHb8bdrB1+eKd/Pl9cs52+Xv9dyQvZI
@@ -137,7 +137,7 @@
         +g8m7LtFbL1JMgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="lbl_total_employees_graph.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblOvertimeEmployeesGraph.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMIAAABECAYAAADTCOr0AAAABGdBTUEAALGPC/xhBQAAAxVJREFUeF7t
         m0GOU0EMBTkKRwmBQ7CYSNwEjsbNhnlSwkgjt17brYzzO/WkWoHb8bdrB1+eKd/Pl9cs52+Xv9dyQvZI

@@ -10,20 +10,19 @@ using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
 namespace Fireon
 {
     /// <summary>
-    /// VIBIESCA
     /// THE MAIN FUNCTION OF THIS CLASS FILE IS TO HANDLE ALL THE DATABASE OPERATIONS.
-    /// IN CASE THAT YOU WANT TO COMMUNICATE WITH THE DATABASE, JUST CREATE AN INSTANCE OF THIS CLASS.
+    /// IN CASE THAT YOU WANT TO COMMUNICATE WITH THE DATABASE, JUST CREATE AN INSTANCE OF THIS CLASS SOMEWHERE IN YOUR STUFF.
     /// </summary>
     class clsDatabaseFunctions
     {
         // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL.
-        static string dbConnectionString = Properties.Resources.str_connection_string;
+        static string dbConnectionString = Properties.Resources.db_connection_string;
         // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT.
+        // STATIC BECAUSE THIS IS THE ONLY INSTANCE
         static MySqlConnection dbCon= new MySqlConnection(dbConnectionString);
 
 
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD VALIDATES THE USERNAME AND PASSWORD ENTERED ON LOGIN. WILL RETURN TRUE IF LOGIN CREDENTIALS MATCH.
         /// </summary>
         /// <param name="username">USUALLY txtbx_username.GetText();</param>
@@ -68,7 +67,6 @@ namespace Fireon
             return false; // RETURN FALSE IF PROGRAM DID NOT FIND A MATCHING CREDENTIALS.
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD TAKES A QUERY, LIKE SELECT * FROM tbl_accounts, AND PUTS IT IN A DataGridView OBJECT.
         /// </summary>
         /// <param name="query">PASS THE QUERY FROM WHICH FUNCTION IT WAS CALLED</param>
@@ -85,7 +83,6 @@ namespace Fireon
             dbClose(); // CLOSE THE CONNECTION.
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD OPENS THE DATABASE CONNECTION
         /// </summary>
         private void dbOpen()
@@ -97,7 +94,6 @@ namespace Fireon
             }
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD CLOSES THE DATABASE CONNECTION
         /// </summary>
         private void dbClose()
@@ -106,6 +102,169 @@ namespace Fireon
             if (dbCon.State == System.Data.ConnectionState.Open)
             {
                 dbCon.Close();
+            }
+        }
+        /// <summary>
+        /// TEMPLATE FUNCTION FOR YOU TO USE. IT COPIPES 1 FILE FROM 1 PLACE TO ANOTHER.
+        /// </summary>
+        /// <param name="fileName">PASS THE FILENAME HERE</param>
+        /// <param name="sourcePath">PASS THE SOURCE LOCATION OF THAT FILE</param>
+        /// <param name="targetPath">PASS THIS THE LOCATION WHERE U WANNA PUT IT</param>
+        public void dbCopyFile(string fileName, string sourcePath, string targetPath)
+        {
+            try
+            {
+                string fileName1 = System.IO.Path.GetFileName(fileName); // GETS THE NAME OF SELECTED FILE
+                string sourcePath1 = System.IO.Path.GetDirectoryName(fileName); // GETS THE DIRECTORY OF SELECTED FILE
+                //targetPath = @"C:\Users\Public\Public Desktop\TestFolder";
+
+                string sourceFile = System.IO.Path.Combine(sourcePath1, fileName1); // COMBINE
+                string destFile = System.IO.Path.Combine(targetPath, fileName1); // COMBINE
+
+                System.IO.Directory.CreateDirectory(targetPath); // CREATES A DIRECTORY ON THE TARGET PATH, IF THERE IS ALREADY THEN ABORT FILE CREATION
+                System.IO.File.Copy(sourceFile, destFile, true); // TRIES TO COPY THE FILE
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /// <summary>
+        /// INSERT EMPLOYEE DATA INTO THE DATABASE BRRRRRRRRRRRRRRR
+        /// </summary>
+        /// <param name="firstName">String</param>
+        /// <param name="middleInitial">String</param>
+        /// <param name="lastName">String</param>
+        /// <param name="sex">String</param>
+        /// <param name="contactNumber">int</param>
+        /// <param name="emailAddress">String</param>
+        /// <param name="homeAddress">String</param>
+        /// <param name="birthDate">DateTime</param>
+        /// <param name="maritalStatus">String</param>
+        /// <param name="nationality">String</param>
+        /// <param name="department">String</param>
+        /// <param name="position">String</param>
+        /// <param name="status">String</param>
+        /// <param name="workingHours">int</param>
+        /// <param name="hourlyRate">int</param>
+        /// <param name="contractDuration">int</param>
+        /// <param name="paymentMode">String</param>
+        /// <param name="imageLocation">String</param>
+        /// <param name="dateEmployed">DateTime</param>
+        public void dbInsertEmployee (
+            String firstName,
+            String middleInitial,
+            String lastName,
+            String sex,
+            Int64 contactNumber,
+            String emailAddress,
+            String homeAddress,
+            DateTime birthDate,
+            String maritalStatus,
+            String nationality,
+            String department,
+            String position,
+            String status,
+            Int64 workingHours,
+            Int64 hourlyRate,
+            Int64 contractDuration,
+            String paymentMode,
+            String imageLocation,
+            DateTime dateEmployed)
+        {
+            try
+            {
+                dbOpen(); // OPEN THE CONNECTION.
+
+                // CREATE NEW COMMAND INSTANCE HERE
+                MySqlCommand dbCmd = new MySqlCommand(
+                @"INSERT INTO tbl_employee(
+                employeeFirstName,
+                employeeMiddleInitial,
+                employeeLastName,
+                employeeSex,
+                employeeContactNumber,
+                employeeEmailAddress,
+                employeeHomeAddress,
+                employeeBirthDate,
+                employeeMaritalStatus,
+                employeeNationality,
+                employeeDepartment,
+                employeePosition,
+                employeeStatus,
+                employeeWorkingHours,
+                employeeHourlyRate,
+                employeeContractDuration,
+                employeePaymentMode,
+                employeeImageLocation,
+                employeeDateEmployed) 
+                VALUES(
+                @employeeFirstName,
+                @employeeMiddleInitial,
+                @employeeLastName,
+                @employeeSex,
+                @employeeContactNumber,
+                @employeeEmailAddress,
+                @employeeHomeAddress,
+                @employeeBirthDate,
+                @employeeMaritalStatus,
+                @employeeNationality,
+                @employeeDepartment,
+                @employeePosition,
+                @employeeStatus,
+                @employeeWorkingHours,
+                @employeeHourlyRate,
+                @employeeContractDuration,
+                @employeePaymentMode,
+                @employeeImageLocation,
+                @employeeDateEmployed)", dbCon); // PASSING QUERY AND CONNECTION HERE.
+
+                // THIS IS THE PART WHERE I ADD VALUES BASED ON PASSED VALUES WHEN YOU CALL THIS FUNCTION
+                dbCmd.Parameters.AddWithValue("@employeeFirstName", firstName);
+                dbCmd.Parameters.AddWithValue("@employeeMiddleInitial", middleInitial);
+                dbCmd.Parameters.AddWithValue("@employeeLastName", lastName);
+                dbCmd.Parameters.AddWithValue("@employeeSex", sex);
+                dbCmd.Parameters.AddWithValue("@employeeContactNumber", contactNumber);
+                dbCmd.Parameters.AddWithValue("@employeeEmailAddress", emailAddress);
+                dbCmd.Parameters.AddWithValue("@employeeHomeAddress", homeAddress);
+                dbCmd.Parameters.AddWithValue("@employeeBirthDate", birthDate);
+                dbCmd.Parameters.AddWithValue("@employeeMaritalStatus", maritalStatus);
+                dbCmd.Parameters.AddWithValue("@employeeNationality", nationality);
+                dbCmd.Parameters.AddWithValue("@employeeDepartment", department);
+                dbCmd.Parameters.AddWithValue("@employeePosition", position);
+                dbCmd.Parameters.AddWithValue("@employeeStatus", status);
+                dbCmd.Parameters.AddWithValue("@employeeWorkingHours", workingHours);
+                dbCmd.Parameters.AddWithValue("@employeeHourlyRate", hourlyRate);
+                dbCmd.Parameters.AddWithValue("@employeeContractDuration", contractDuration);
+                dbCmd.Parameters.AddWithValue("@employeePaymentMode", paymentMode);
+                dbCmd.Parameters.AddWithValue("@employeeImageLocation", imageLocation);
+                dbCmd.Parameters.AddWithValue("@employeeDateEmployed", dateEmployed);
+
+                dbCmd.ExecuteNonQuery(); // EXECUTE HAHAHAHAHAHA
+
+                dbClose(); // CLOSE THE CONNECTION.
+
+                MessageBox.Show(null, "Employee successfully added.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(null, Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
