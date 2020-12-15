@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
 
 namespace Fireon
 {
@@ -17,6 +17,7 @@ namespace Fireon
         int loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // DECREMENTS BY 1 EVERY TIME THE USER FAILS TO LOG IN THE SYSTEM.
         frmFireonPayroll main_form = new frmFireonPayroll(); // CREATE INSTANCE OF THE MAIN FORM 
 
+
         /// <summary>
         /// THIS METHOD IS CALLED EVERY TIME new frmLogin(); IS CALLED EVERYWHERE THE PROGRAM. THIS IS CALLED A CONSTRUCTOR.
         /// </summary>
@@ -24,6 +25,7 @@ namespace Fireon
         {
             InitializeComponent(); // LOADS ALL COMPONENTS OF THE frmLogin. THIS IS A SYSTEM PREREQUISITE.
         }
+
         /// <summary>
         /// THIS METHOD GETS CALLED EVERY TIME THE frmLogin FORM OBJECT GETS LOADED IN THE MEMORY.
         /// THIS LOGIN FORM WILL ONLY LOAD ONCE, WHEN THE USER LOGS IN SUCCESSFULLY, THIS FORM IS ONLY HIDDEN, NOT DISPOSED.
@@ -32,6 +34,7 @@ namespace Fireon
         {
             main_form.Hide(); // HIDE FIRST THE MAIN FORM.
         }
+
         /// <summary>
         /// BARRUELA, VIBIESCA
         /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE LOGIN BUTTON FROM THE LOGIN FORM.
@@ -43,10 +46,10 @@ namespace Fireon
              * #2 IF THERE IS MATCHING USERNAME, CLOSE THE LOGIN AND PROCEED TO DASHBOARD
              * #3 IF NOT THEN DECREMENT THE VALUE OF LOGIN ATTEMPTS. AT 
              */
-            if (db.dbLogin(txtbxUsername.Text, txtbxPw.Text) == true) // IF USERNAME AND PASSWORD MATCH
+            if (db.dbLogin(txtbx_username.Text, txtbx_pw.Text) == true) // IF USERNAME AND PASSWORD MATCH
             {
-                MessageBox.Show(Properties.Resources.msg_login_match, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(Properties.Resources.msg_loading_message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.str_login_match, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.str_loading_message,Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide(); // HIDES THIS LOGIN FORM.
 
@@ -64,32 +67,18 @@ namespace Fireon
                     main_form.Show();
                 }
             }
-            if (db.dbLogin(txtbxUsername.Text, txtbxPw.Text) == false) // IF USERNAME AND PASSWORD MISMATCH
+            if (db.dbLogin(txtbx_username.Text, txtbx_pw.Text) == false) // IF USERNAME AND PASSWORD MISMATCH
             {
-                MessageBox.Show(Properties.Resources.msg_login_mismatch, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.str_login_mismatch, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loginAttempts--; // DECREASE THE ATTEMPT
             }
             if (loginAttempts == 0) // IF NO MORE ATTEMPTS
             {
-                MessageBox.Show(Properties.Resources.msg_login_terminate, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Properties.Resources.str_login_terminate, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close(); // EXIT THE LOGIN WINDOW.
             }
         }
-        /// <summary>
-        /// VIBIESCA
-        /// THIS METHOD GETS CALLED EVERY TIME THE VISIBILITY STATE OF THIS FORM CHANGES
-        /// </summary>
-        private void frmLogin_VisibleChanged(object sender, EventArgs e)
-        {
-            if (this.Visible == true)
-            {
-                db.dbRead("SELECT * FROM tbl_account", dtgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
-                txtbxUsername.Clear(); // CLEAR USERNAME TEXT
-                txtbxPw.Clear(); // CLEAR PASSWORD TEXT
-                loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE.
-            }
-        }
-        
+
         #region EYE PASSWORD VISIBILITY TOGGLER
         /// <summary>
         /// THIS METHOD IS CALLED WHEN THE USER CLICKS ON THE EYE LOGO OF THE LOGIN PASSWORD FORM
@@ -104,21 +93,21 @@ namespace Fireon
              * #4 IF THE VALUE IS ALREADY "FALSE", THEN SET BACK Tag PROPERTY TO "TRUE" AND UseSystemPasswordChar PROPERTY OF txtbx_pw TO "TRUE" AGAIN.
              */
             // #2
-            if (String.Compare(txtbxPw.Tag.ToString(), "TRUE") == 0)
+            if (String.Compare(txtbx_pw.Tag.ToString(), "TRUE") == 0)
             {
                 // #3
-                txtbxPw.Tag = "FALSE";
-                txtbxPw.UseSystemPasswordChar = false;
+                txtbx_pw.Tag = "FALSE";
+                txtbx_pw.UseSystemPasswordChar = false;
                 // CHANGE EYE LOGO TO ACTIVATED
-                btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;
+                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
             }
             // #4
             else
             {
-                txtbxPw.Tag = "TRUE";
-                txtbxPw.UseSystemPasswordChar = true;
+                txtbx_pw.Tag = "TRUE";
+                txtbx_pw.UseSystemPasswordChar = true;
                 // CHANGE EYE LOGO TO DEACTIVATED
-                btnSeePw.BackgroundImage = Properties.Resources.btnIconEye;
+                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye;
             }
         }
         /// <summary>
@@ -127,8 +116,8 @@ namespace Fireon
         /// </summary>
         private void btn_see_pw_MouseHover(object sender, EventArgs e)
         {
-            // CHANGES THE IMAGE WHEN MOUSE ENTERS THE EYE
-            btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;
+                // CHANGES THE IMAGE WHEN MOUSE ENTERS THE EYE
+                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
         }
         /// <summary>
         /// VIBIESCA
@@ -138,15 +127,63 @@ namespace Fireon
         {
             // CHANGES THE IMAGE WHEN MOUSE LEAVES THE EYE
             // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE.
-            if (String.Compare(txtbxPw.Tag.ToString(), "FALSE") == 0)
+            if (String.Compare(txtbx_pw.Tag.ToString(), "FALSE") == 0)
             {
-                btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;
+                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye_hover;
             }
             else
             {
-                btnSeePw.BackgroundImage = Properties.Resources.btnIconEye;
+                btn_see_pw.BackgroundImage = Properties.Resources.btn_eye;
             }
         }
+        #endregion
+        /// <summary>
+        /// VIBIESCA
+        /// THIS METHOD GETS CALLED EVERY TIME THE VISIBILITY STATE OF THIS FORM CHANGES
+        /// </summary>
+        private void frmLogin_VisibleChanged(object sender, EventArgs e)
+        {
+            if (this.Visible == true)
+            {
+                db.dbRead("SELECT * FROM tbl_account", dgv_accounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
+                txtbx_username.Clear(); // CLEAR USERNAME TEXT
+                txtbx_pw.Clear(); // CLEAR PASSWORD TEXT
+                loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE.
+            }
+        }
+        #region Validation on Username and Password creation
+        ///// <summary>
+        ///// VILLANUEVA
+        ///// THIS METHOD GETS CALLED EVERY TIME THE USER PRESSES A KEY (KEYPRESS EVENT) IN THE TXTBX_USERNAME OBJECT.
+        ///// </summary>
+        ///// <param name="e">THE E VARIABLE REFERS TO THE ACTUAL KEY PRESSED. EXAMPLE, WHEN THE USER PRESSES LETTER "S", THEN THE E WILL HOLD THE VALUE OF "S".</param>
+        //private void txtbx_username_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    // THIS CODE ALLOWS UPPERCASE & LOWERCASE LETTERS ONLY
+        //    // IF THE KEY PRESSED IS NOT A LETTER AND NOT A CONTROL CHARACTER, THEN "e.Handled = true;"
+        //    // CONTROL CHARACTERS ARE: SPACES, BACKSPACES, ENTER KEY, AND OTHER STUFF TO CONTROL TEXT.
+        //    if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+        //    {
+        //        // "e.Handled = true" MEANS THAT SYSTEM WILL HANDLE THE INPUT AND NOT SHOW IT IN THE TEXTBOX.
+        //        e.Handled = true;
+        //    }
+        //}
+        ///// <summary>
+        ///// VILLANUEVA
+        ///// THIS METHOD GETS CALLED EVERY TIME THE USER PRESSES A KEY (KEYPRESS EVENT) IN THE TXTBX_PW OBJECT.
+        ///// </summary>
+        ///// <param name="e">THE E VARIABLE REFERS TO THE ACTUAL KEY PRESSED. EXAMPLE, WHEN THE USER PRESSES LETTER "S", THEN THE E WILL HOLD THE VALUE OF "S".</param>
+        //private void txtbx_pw_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    // THIS CODE ALLOWS CHARS AND INTEGERS ONLY, NO SPACES, AND NO SPECIAL CHARS
+        //    // IF THE KEY PRESSED IS NOT A LETTER AND NOT A CONTROL CHARACTER, THEN "e.Handled = true;"
+        //    // CONTROL CHARACTERS ARE: SPACES, BACKSPACES, ENTER KEY, AND OTHER STUFF TO CONTROL TEXT.
+        //    if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+        //    {
+        //        // "e.Handled = true" MEANS THAT SYSTEM WILL HANDLE THE INPUT AND NOT SHOW IT IN THE TEXTBOX.
+        //        e.Handled = true;
+        //    }
+        //}
         #endregion
     }
 }

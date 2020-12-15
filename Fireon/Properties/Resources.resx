@@ -117,7 +117,239 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="msg_welcome_message" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_dashboard_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_dashboard_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_leave_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_leave_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_settings_admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings_admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_holiday_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_holiday_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_continue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_continue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_violation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-violation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add_todo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add_todo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_add_dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_leave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-leave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-employee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_settings_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_settings_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_admin_dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin-dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_notifications" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_notifications.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_overtime_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_overtime_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_deductions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-deductions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_employee_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_employee_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_single_posting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-single-posting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_employee_dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employee-dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_logo_fireon_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-fireon-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_hire_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_hire_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_view_things_to_do" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-things-to-do.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_add_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_bar_chart_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar-chart-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_bar_chart_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar-chart-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_department_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_department_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_department" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-department.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_violations_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_violations_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_payment_method_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payment_method_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add_done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add_done.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_overtime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-overtime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_payment_method" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payment_method.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cash_advance_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cash_advance_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_holiday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-holiday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_allowances" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-allowances.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add_doing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add_doing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_hire_active_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_hire_active_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_delete_db_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_delete_db.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_update_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_allowances_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_allowances_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_all_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_all_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_delete_db" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-delete-db.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_deductions_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_deductions_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_logo_fireon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-fireon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_update_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update_account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_accounts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_accounts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_single_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_single_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_icon_notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\done.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_upcoming" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-upcoming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cash_advance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-cash-advance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_update_notif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-update-notif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_cancel_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cancel_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_hire_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_hire_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_save_draft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_save_draft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picb_sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add_db" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add_db.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_add_db_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_add_db_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_hire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_hire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_retirement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_retirement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_eye_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\btn-eye-hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="str_welcome_message" xml:space="preserve">
     <value>Welcome to Fireon Payroll System.</value>
     <comment>Message to be shown when the user opens the program.</comment>
   </data>
@@ -125,7 +357,7 @@
     <value>Fireon Payroll System</value>
     <comment>Program title to be used somewhere.</comment>
   </data>
-  <data name="db_connection_string" xml:space="preserve">
+  <data name="str_connection_string" xml:space="preserve">
     <value>server=localhost;user id=root;password=1234;database=fireon</value>
     <comment>Your local database setup should have the same credentials like this string resource.</comment>
   </data>
@@ -133,19 +365,19 @@
     <value>3</value>
     <comment>Number of times the user can login.</comment>
   </data>
-  <data name="msg_login_match" xml:space="preserve">
+  <data name="str_login_match" xml:space="preserve">
     <value>Credentials match.</value>
     <comment>When user gets the username and password correct.</comment>
   </data>
-  <data name="msg_login_mismatch" xml:space="preserve">
+  <data name="str_login_mismatch" xml:space="preserve">
     <value>Credentials mismatch.</value>
     <comment>When user gets the username and password wrong.</comment>
   </data>
-  <data name="msg_login_terminate" xml:space="preserve">
+  <data name="str_login_terminate" xml:space="preserve">
     <value>Too much attempts. Program will now exit.</value>
     <comment>The message if the user attempts to login above the limit.</comment>
   </data>
-  <data name="msg_loading_message" xml:space="preserve">
+  <data name="str_loading_message" xml:space="preserve">
     <value>Loading will take some time, please be patient.</value>
     <comment>Simple loading message.</comment>
   </data>
@@ -157,232 +389,8 @@
     <value>vshost32</value>
     <comment>The name of the process that gets loaded and displayed in the Task Manager when debugging.</comment>
   </data>
-  <data name="msg_logout_confirmation" xml:space="preserve">
+  <data name="str_logout_confirmation" xml:space="preserve">
     <value>Save any work before logging out. Continue?</value>
     <comment>Before the user logs out prompt.</comment>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAllActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAllHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAllowance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallowance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAllowanceActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallowanceactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAllowanceHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallowancehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCashAdvance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btncashadvance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCashAdvanceActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btncashadvanceactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCashAdvanceHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btncashadvancehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDashboardActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndashboardactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDashboardHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndashboardhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDeduction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndeduction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDeductionActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndeductionactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDeductionHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndeductionhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDepartment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndepartment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDepartmentActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndepartmentactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDepartmentHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndepartmenthover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnEmployee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnemployee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnEmployeeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnemployeeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnEmployeeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnemployeehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnHoliday" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnholiday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnHolidayActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnholidayactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnHolidayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnholidayhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnLeave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnleave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnLeaveActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnleaveactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnLeaveHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnleavehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnOvertime" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnovertime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnOvertimeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnovertimeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnOvertimeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnovertimehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnSettingsActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsettingsactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnSettingsHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsettingshover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnSinglePosting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsingleposting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnSinglePostingActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsinglepostingactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnSinglePostingHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsinglepostinghover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnViolation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnviolation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnViolationActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnviolationactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnViolationHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnviolationhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="miscBarChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\miscellaneous\miscbarchart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="miscEmployeeDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\miscellaneous\miscemployeedp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="miscFireonIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\miscellaneous\miscfireonicon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="miscFireonLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\miscellaneous\miscfireonlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="miscFireonLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\miscellaneous\miscfireonlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconadd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconAddHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconaddhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconBackHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconbackhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconDeleteDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btnicondeletedp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconDeleteDPHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btnicondeletedphover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconedit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconEditHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconedithover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconEye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconeye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconEyeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconeyehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconmenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconMenuHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconmenuhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconNotification" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconnotification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconNotificationHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconnotificationhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnIconUpdateHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\cute-button-icons\btniconupdatehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnOthersLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\other-buttons\btnotherslogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnOthersLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other-buttons\btnOthersLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other-buttons\btnPrint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\other-buttons\btnadd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\other-buttons\btncancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="int_default_working_hours" xml:space="preserve">
-    <value>216</value>
-    <comment>To be used in add employee.</comment>
-  </data>
-  <data name="msg_exception" xml:space="preserve">
-    <value>Cannot perform the process. \n </value>
-    <comment>Use this to append to every exception to catch.</comment>
-  </data>
-  <data name="msg_new_employee_prompt" xml:space="preserve">
-    <value>ABORT to go back, RETRY to clear fields, IGNORE to cancel.</value>
-    <comment>Used in the New Employee Cancel feature.</comment>
-  </data>
-  <data name="msg_new_employee_retry" xml:space="preserve">
-    <value>Fields reset.</value>
-    <comment>Used in the New Employee Cancel feature.</comment>
-  </data>
-  <data name="btnUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other-buttons\btnUpdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnUpdateActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other-buttons\btnUpdateActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnUploadImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other-buttons\btnUploadImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="miscIconUploadImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\miscellaneous\miscIconUploadImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

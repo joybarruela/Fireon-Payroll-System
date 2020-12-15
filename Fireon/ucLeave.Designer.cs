@@ -28,154 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucLeave));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblLeave = new System.Windows.Forms.Label();
-            this.tblpLeave = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAddLeave = new System.Windows.Forms.Button();
-            this.pnlFilters = new System.Windows.Forms.Panel();
-            this.cmbxYear = new System.Windows.Forms.ComboBox();
-            this.cmbxDepartment = new System.Windows.Forms.ComboBox();
-            this.cmbxPosition = new System.Windows.Forms.ComboBox();
-            this.cmbxMonth = new System.Windows.Forms.ComboBox();
-            this.txtbxSearch = new System.Windows.Forms.TextBox();
-            this.cmbxRegularContractual = new System.Windows.Forms.ComboBox();
-            this.dtgvLeave = new System.Windows.Forms.DataGridView();
-            this.tblpLeave.SuspendLayout();
-            this.pnlFilters.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvLeave)).BeginInit();
+            this.flpnl_leave = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbl_employee_id = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_department = new System.Windows.Forms.Label();
+            this.lbl_position = new System.Windows.Forms.Label();
+            this.lbl_status = new System.Windows.Forms.Label();
+            this.lbl_rate_per_hour = new System.Windows.Forms.Label();
+            this.pnl_leave = new System.Windows.Forms.Panel();
+            this.dtgv_leave = new System.Windows.Forms.DataGridView();
+            this.lbl_leave = new System.Windows.Forms.Label();
+            this.cmbx_regular_contractual = new System.Windows.Forms.ComboBox();
+            this.txtbx_search = new System.Windows.Forms.TextBox();
+            this.cmbx_year = new System.Windows.Forms.ComboBox();
+            this.cmbx_month = new System.Windows.Forms.ComboBox();
+            this.cmbx_position = new System.Windows.Forms.ComboBox();
+            this.cmbx_department = new System.Windows.Forms.ComboBox();
+            this.btn_add_leave = new System.Windows.Forms.Button();
+            this.pnl_del_upd = new System.Windows.Forms.Panel();
+            this.btn_delete_8 = new System.Windows.Forms.Button();
+            this.btn_delete_7 = new System.Windows.Forms.Button();
+            this.btn_delete_6 = new System.Windows.Forms.Button();
+            this.btn_delete_5 = new System.Windows.Forms.Button();
+            this.btn_delete_4 = new System.Windows.Forms.Button();
+            this.btn_delete_3 = new System.Windows.Forms.Button();
+            this.btn_delete_2 = new System.Windows.Forms.Button();
+            this.btn_delete_1 = new System.Windows.Forms.Button();
+            this.btn_update_8 = new System.Windows.Forms.Button();
+            this.btn_update_7 = new System.Windows.Forms.Button();
+            this.btn_update_6 = new System.Windows.Forms.Button();
+            this.btn_update_5 = new System.Windows.Forms.Button();
+            this.btn_update_4 = new System.Windows.Forms.Button();
+            this.btn_update_3 = new System.Windows.Forms.Button();
+            this.btn_update_2 = new System.Windows.Forms.Button();
+            this.btn_update_1 = new System.Windows.Forms.Button();
+            this.flpnl_leave.SuspendLayout();
+            this.pnl_leave.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_leave)).BeginInit();
+            this.pnl_del_upd.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblLeave
+            // flpnl_leave
             // 
-            this.lblLeave.AutoSize = true;
-            this.lblLeave.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblLeave.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLeave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblLeave.Location = new System.Drawing.Point(0, 0);
-            this.lblLeave.Margin = new System.Windows.Forms.Padding(0);
-            this.lblLeave.Name = "lblLeave";
-            this.lblLeave.Size = new System.Drawing.Size(110, 38);
-            this.lblLeave.TabIndex = 273;
-            this.lblLeave.Text = "Leave";
+            this.flpnl_leave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.flpnl_leave.Controls.Add(this.lbl_employee_id);
+            this.flpnl_leave.Controls.Add(this.lbl_name);
+            this.flpnl_leave.Controls.Add(this.lbl_department);
+            this.flpnl_leave.Controls.Add(this.lbl_position);
+            this.flpnl_leave.Controls.Add(this.lbl_status);
+            this.flpnl_leave.Controls.Add(this.lbl_rate_per_hour);
+            this.flpnl_leave.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpnl_leave.Location = new System.Drawing.Point(0, 0);
+            this.flpnl_leave.Name = "flpnl_leave";
+            this.flpnl_leave.Padding = new System.Windows.Forms.Padding(10);
+            this.flpnl_leave.Size = new System.Drawing.Size(874, 37);
+            this.flpnl_leave.TabIndex = 147;
             // 
-            // tblpLeave
+            // lbl_employee_id
             // 
-            this.tblpLeave.ColumnCount = 1;
-            this.tblpLeave.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblpLeave.Controls.Add(this.btnAddLeave, 0, 2);
-            this.tblpLeave.Controls.Add(this.pnlFilters, 0, 0);
-            this.tblpLeave.Controls.Add(this.dtgvLeave, 0, 1);
-            this.tblpLeave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblpLeave.Location = new System.Drawing.Point(0, 38);
-            this.tblpLeave.Name = "tblpLeave";
-            this.tblpLeave.RowCount = 3;
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.20206F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.79794F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.Size = new System.Drawing.Size(900, 462);
-            this.tblpLeave.TabIndex = 274;
+            this.lbl_employee_id.AutoSize = true;
+            this.lbl_employee_id.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employee_id.ForeColor = System.Drawing.Color.White;
+            this.lbl_employee_id.Location = new System.Drawing.Point(13, 10);
+            this.lbl_employee_id.Name = "lbl_employee_id";
+            this.lbl_employee_id.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.lbl_employee_id.Size = new System.Drawing.Size(98, 18);
+            this.lbl_employee_id.TabIndex = 9;
+            this.lbl_employee_id.Text = "Employee ID";
             // 
-            // btnAddLeave
+            // lbl_name
             // 
-            this.btnAddLeave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddLeave.BackgroundImage")));
-            this.btnAddLeave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddLeave.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAddLeave.FlatAppearance.BorderSize = 0;
-            this.btnAddLeave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnAddLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddLeave.Location = new System.Drawing.Point(773, 428);
-            this.btnAddLeave.Name = "btnAddLeave";
-            this.btnAddLeave.Size = new System.Drawing.Size(124, 31);
-            this.btnAddLeave.TabIndex = 276;
-            this.btnAddLeave.TabStop = false;
-            this.btnAddLeave.UseVisualStyleBackColor = true;
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.Color.White;
+            this.lbl_name.Location = new System.Drawing.Point(117, 10);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.lbl_name.Size = new System.Drawing.Size(148, 18);
+            this.lbl_name.TabIndex = 9;
+            this.lbl_name.Text = "Name";
             // 
-            // pnlFilters
+            // lbl_department
             // 
-            this.pnlFilters.Controls.Add(this.cmbxYear);
-            this.pnlFilters.Controls.Add(this.cmbxDepartment);
-            this.pnlFilters.Controls.Add(this.cmbxPosition);
-            this.pnlFilters.Controls.Add(this.cmbxMonth);
-            this.pnlFilters.Controls.Add(this.txtbxSearch);
-            this.pnlFilters.Controls.Add(this.cmbxRegularContractual);
-            this.pnlFilters.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFilters.Location = new System.Drawing.Point(3, 3);
-            this.pnlFilters.Name = "pnlFilters";
-            this.pnlFilters.Size = new System.Drawing.Size(894, 84);
-            this.pnlFilters.TabIndex = 274;
+            this.lbl_department.AutoSize = true;
+            this.lbl_department.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_department.ForeColor = System.Drawing.Color.White;
+            this.lbl_department.Location = new System.Drawing.Point(271, 10);
+            this.lbl_department.Name = "lbl_department";
+            this.lbl_department.Padding = new System.Windows.Forms.Padding(0, 0, 80, 0);
+            this.lbl_department.Size = new System.Drawing.Size(170, 18);
+            this.lbl_department.TabIndex = 9;
+            this.lbl_department.Text = "Department";
             // 
-            // cmbxYear
+            // lbl_position
             // 
-            this.cmbxYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxYear.FormattingEnabled = true;
-            this.cmbxYear.Items.AddRange(new object[] {
+            this.lbl_position.AutoSize = true;
+            this.lbl_position.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_position.ForeColor = System.Drawing.Color.White;
+            this.lbl_position.Location = new System.Drawing.Point(447, 10);
+            this.lbl_position.Name = "lbl_position";
+            this.lbl_position.Padding = new System.Windows.Forms.Padding(0, 0, 80, 0);
+            this.lbl_position.Size = new System.Drawing.Size(141, 18);
+            this.lbl_position.TabIndex = 9;
+            this.lbl_position.Text = "Position";
+            // 
+            // lbl_status
+            // 
+            this.lbl_status.AutoSize = true;
+            this.lbl_status.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_status.ForeColor = System.Drawing.Color.White;
+            this.lbl_status.Location = new System.Drawing.Point(594, 10);
+            this.lbl_status.Name = "lbl_status";
+            this.lbl_status.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.lbl_status.Size = new System.Drawing.Size(100, 18);
+            this.lbl_status.TabIndex = 9;
+            this.lbl_status.Text = "Status";
+            // 
+            // lbl_rate_per_hour
+            // 
+            this.lbl_rate_per_hour.AutoSize = true;
+            this.lbl_rate_per_hour.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_rate_per_hour.ForeColor = System.Drawing.Color.White;
+            this.lbl_rate_per_hour.Location = new System.Drawing.Point(700, 10);
+            this.lbl_rate_per_hour.Name = "lbl_rate_per_hour";
+            this.lbl_rate_per_hour.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.lbl_rate_per_hour.Size = new System.Drawing.Size(119, 18);
+            this.lbl_rate_per_hour.TabIndex = 9;
+            this.lbl_rate_per_hour.Text = "Rate per hour";
+            // 
+            // pnl_leave
+            // 
+            this.pnl_leave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl_leave.Controls.Add(this.flpnl_leave);
+            this.pnl_leave.Controls.Add(this.dtgv_leave);
+            this.pnl_leave.Location = new System.Drawing.Point(39, 157);
+            this.pnl_leave.Name = "pnl_leave";
+            this.pnl_leave.Size = new System.Drawing.Size(874, 444);
+            this.pnl_leave.TabIndex = 204;
+            // 
+            // dtgv_leave
+            // 
+            this.dtgv_leave.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_leave.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgv_leave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_leave.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgv_leave.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgv_leave.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.dtgv_leave.Location = new System.Drawing.Point(0, 34);
+            this.dtgv_leave.Name = "dtgv_leave";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_leave.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgv_leave.Size = new System.Drawing.Size(874, 410);
+            this.dtgv_leave.TabIndex = 146;
+            // 
+            // lbl_leave
+            // 
+            this.lbl_leave.AutoSize = true;
+            this.lbl_leave.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_leave.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_leave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_leave.Location = new System.Drawing.Point(0, 0);
+            this.lbl_leave.Name = "lbl_leave";
+            this.lbl_leave.Padding = new System.Windows.Forms.Padding(30, 30, 0, 10);
+            this.lbl_leave.Size = new System.Drawing.Size(142, 83);
+            this.lbl_leave.TabIndex = 197;
+            this.lbl_leave.Text = "Leave";
+            // 
+            // cmbx_regular_contractual
+            // 
+            this.cmbx_regular_contractual.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_regular_contractual.FormattingEnabled = true;
+            this.cmbx_regular_contractual.Items.AddRange(new object[] {
+            "Regular",
+            "Contractual"});
+            this.cmbx_regular_contractual.Location = new System.Drawing.Point(38, 116);
+            this.cmbx_regular_contractual.Margin = new System.Windows.Forms.Padding(10);
+            this.cmbx_regular_contractual.Name = "cmbx_regular_contractual";
+            this.cmbx_regular_contractual.Size = new System.Drawing.Size(200, 28);
+            this.cmbx_regular_contractual.TabIndex = 228;
+            this.cmbx_regular_contractual.TabStop = false;
+            this.cmbx_regular_contractual.Text = "Regular/Contractual";
+            // 
+            // txtbx_search
+            // 
+            this.txtbx_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_search.Location = new System.Drawing.Point(39, 86);
+            this.txtbx_search.Name = "txtbx_search";
+            this.txtbx_search.Size = new System.Drawing.Size(199, 26);
+            this.txtbx_search.TabIndex = 227;
+            this.txtbx_search.TabStop = false;
+            this.txtbx_search.Text = "Search";
+            // 
+            // cmbx_year
+            // 
+            this.cmbx_year.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbx_year.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_year.FormattingEnabled = true;
+            this.cmbx_year.Items.AddRange(new object[] {
             "2020",
             "2021",
             "2022",
             "2023",
             "2024",
             "2025"});
-            this.cmbxYear.Location = new System.Drawing.Point(735, 41);
-            this.cmbxYear.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxYear.Name = "cmbxYear";
-            this.cmbxYear.Size = new System.Drawing.Size(152, 28);
-            this.cmbxYear.TabIndex = 7;
-            this.cmbxYear.TabStop = false;
-            this.cmbxYear.Text = "Year";
+            this.cmbx_year.Location = new System.Drawing.Point(761, 116);
+            this.cmbx_year.Margin = new System.Windows.Forms.Padding(10);
+            this.cmbx_year.Name = "cmbx_year";
+            this.cmbx_year.Size = new System.Drawing.Size(152, 28);
+            this.cmbx_year.TabIndex = 226;
+            this.cmbx_year.TabStop = false;
+            this.cmbx_year.Text = "Year";
             // 
-            // cmbxDepartment
+            // cmbx_month
             // 
-            this.cmbxDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxDepartment.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxDepartment.FormattingEnabled = true;
-            this.cmbxDepartment.Items.AddRange(new object[] {
-            "IT Department",
-            "Marketing Department",
-            "Finance Department",
-            "Operations Department",
-            "Sales Department",
-            "Human Resource Department",
-            "Customer Service Department",
-            "Research and Development Department",
-            "Administrative Department",
-            "Purchasing Department",
-            "Legal Department",
-            "Production Department"});
-            this.cmbxDepartment.Location = new System.Drawing.Point(496, 10);
-            this.cmbxDepartment.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxDepartment.Name = "cmbxDepartment";
-            this.cmbxDepartment.Size = new System.Drawing.Size(219, 28);
-            this.cmbxDepartment.TabIndex = 4;
-            this.cmbxDepartment.TabStop = false;
-            this.cmbxDepartment.Text = "Department";
-            // 
-            // cmbxPosition
-            // 
-            this.cmbxPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxPosition.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxPosition.FormattingEnabled = true;
-            this.cmbxPosition.Location = new System.Drawing.Point(496, 41);
-            this.cmbxPosition.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxPosition.Name = "cmbxPosition";
-            this.cmbxPosition.Size = new System.Drawing.Size(219, 28);
-            this.cmbxPosition.TabIndex = 5;
-            this.cmbxPosition.TabStop = false;
-            this.cmbxPosition.Text = "Position";
-            // 
-            // cmbxMonth
-            // 
-            this.cmbxMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxMonth.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxMonth.FormattingEnabled = true;
-            this.cmbxMonth.Items.AddRange(new object[] {
+            this.cmbx_month.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbx_month.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_month.FormattingEnabled = true;
+            this.cmbx_month.Items.AddRange(new object[] {
             "January ",
             "February",
             "March",
@@ -188,89 +280,354 @@
             "October ",
             "November",
             "December"});
-            this.cmbxMonth.Location = new System.Drawing.Point(735, 10);
-            this.cmbxMonth.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxMonth.Name = "cmbxMonth";
-            this.cmbxMonth.Size = new System.Drawing.Size(152, 28);
-            this.cmbxMonth.TabIndex = 6;
-            this.cmbxMonth.TabStop = false;
-            this.cmbxMonth.Text = "Month";
+            this.cmbx_month.Location = new System.Drawing.Point(761, 84);
+            this.cmbx_month.Margin = new System.Windows.Forms.Padding(10);
+            this.cmbx_month.Name = "cmbx_month";
+            this.cmbx_month.Size = new System.Drawing.Size(152, 28);
+            this.cmbx_month.TabIndex = 225;
+            this.cmbx_month.TabStop = false;
+            this.cmbx_month.Text = "Month";
             // 
-            // txtbxSearch
+            // cmbx_position
             // 
-            this.txtbxSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxSearch.Location = new System.Drawing.Point(4, 10);
-            this.txtbxSearch.Name = "txtbxSearch";
-            this.txtbxSearch.Size = new System.Drawing.Size(199, 26);
-            this.txtbxSearch.TabIndex = 2;
-            this.txtbxSearch.TabStop = false;
-            this.txtbxSearch.Text = "Search";
+            this.cmbx_position.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbx_position.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_position.FormattingEnabled = true;
+            this.cmbx_position.Location = new System.Drawing.Point(532, 116);
+            this.cmbx_position.Margin = new System.Windows.Forms.Padding(10);
+            this.cmbx_position.Name = "cmbx_position";
+            this.cmbx_position.Size = new System.Drawing.Size(219, 28);
+            this.cmbx_position.TabIndex = 224;
+            this.cmbx_position.TabStop = false;
+            this.cmbx_position.Text = "Position";
             // 
-            // cmbxRegularContractual
+            // cmbx_department
             // 
-            this.cmbxRegularContractual.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxRegularContractual.FormattingEnabled = true;
-            this.cmbxRegularContractual.Items.AddRange(new object[] {
-            "Regular",
-            "Contractual"});
-            this.cmbxRegularContractual.Location = new System.Drawing.Point(4, 41);
-            this.cmbxRegularContractual.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxRegularContractual.Name = "cmbxRegularContractual";
-            this.cmbxRegularContractual.Size = new System.Drawing.Size(200, 28);
-            this.cmbxRegularContractual.TabIndex = 3;
-            this.cmbxRegularContractual.TabStop = false;
-            this.cmbxRegularContractual.Text = "Regular/Contractual";
+            this.cmbx_department.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbx_department.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbx_department.FormattingEnabled = true;
+            this.cmbx_department.Items.AddRange(new object[] {
+            "IT Department",
+            "Marketing Department",
+            "Finance Department",
+            "Operations Department",
+            "Sales Department",
+            "Human Resource Department",
+            "Customer Service Department",
+            "Research and Development Department",
+            "Administrative Department",
+            "Purchasing Department",
+            "Legal Department",
+            "Production Department"});
+            this.cmbx_department.Location = new System.Drawing.Point(532, 84);
+            this.cmbx_department.Margin = new System.Windows.Forms.Padding(10);
+            this.cmbx_department.Name = "cmbx_department";
+            this.cmbx_department.Size = new System.Drawing.Size(219, 28);
+            this.cmbx_department.TabIndex = 223;
+            this.cmbx_department.TabStop = false;
+            this.cmbx_department.Text = "Department";
             // 
-            // dtgvLeave
+            // btn_add_leave
             // 
-            this.dtgvLeave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvLeave.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvLeave.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvLeave.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvLeave.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dtgvLeave.Location = new System.Drawing.Point(3, 93);
-            this.dtgvLeave.Name = "dtgvLeave";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvLeave.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvLeave.Size = new System.Drawing.Size(894, 329);
-            this.dtgvLeave.TabIndex = 275;
+            this.btn_add_leave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add_leave.BackgroundImage = global::Fireon.Properties.Resources.btn_add;
+            this.btn_add_leave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_add_leave.FlatAppearance.BorderSize = 0;
+            this.btn_add_leave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_add_leave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_leave.Location = new System.Drawing.Point(789, 628);
+            this.btn_add_leave.Name = "btn_add_leave";
+            this.btn_add_leave.Size = new System.Drawing.Size(124, 29);
+            this.btn_add_leave.TabIndex = 253;
+            this.btn_add_leave.TabStop = false;
+            this.btn_add_leave.UseVisualStyleBackColor = true;
+            // 
+            // pnl_del_upd
+            // 
+            this.pnl_del_upd.Controls.Add(this.btn_delete_8);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_7);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_6);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_5);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_4);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_3);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_2);
+            this.pnl_del_upd.Controls.Add(this.btn_delete_1);
+            this.pnl_del_upd.Controls.Add(this.btn_update_8);
+            this.pnl_del_upd.Controls.Add(this.btn_update_7);
+            this.pnl_del_upd.Controls.Add(this.btn_update_6);
+            this.pnl_del_upd.Controls.Add(this.btn_update_5);
+            this.pnl_del_upd.Controls.Add(this.btn_update_4);
+            this.pnl_del_upd.Controls.Add(this.btn_update_3);
+            this.pnl_del_upd.Controls.Add(this.btn_update_2);
+            this.pnl_del_upd.Controls.Add(this.btn_update_1);
+            this.pnl_del_upd.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_del_upd.Location = new System.Drawing.Point(914, 83);
+            this.pnl_del_upd.Name = "pnl_del_upd";
+            this.pnl_del_upd.Size = new System.Drawing.Size(146, 597);
+            this.pnl_del_upd.TabIndex = 252;
+            // 
+            // btn_delete_8
+            // 
+            this.btn_delete_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_8.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_8.FlatAppearance.BorderSize = 0;
+            this.btn_delete_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_8.Location = new System.Drawing.Point(14, 469);
+            this.btn_delete_8.Name = "btn_delete_8";
+            this.btn_delete_8.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_8.TabIndex = 222;
+            this.btn_delete_8.TabStop = false;
+            this.btn_delete_8.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_7
+            // 
+            this.btn_delete_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_7.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_7.FlatAppearance.BorderSize = 0;
+            this.btn_delete_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_7.Location = new System.Drawing.Point(14, 420);
+            this.btn_delete_7.Name = "btn_delete_7";
+            this.btn_delete_7.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_7.TabIndex = 222;
+            this.btn_delete_7.TabStop = false;
+            this.btn_delete_7.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_6
+            // 
+            this.btn_delete_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_6.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_6.FlatAppearance.BorderSize = 0;
+            this.btn_delete_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_6.Location = new System.Drawing.Point(14, 371);
+            this.btn_delete_6.Name = "btn_delete_6";
+            this.btn_delete_6.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_6.TabIndex = 222;
+            this.btn_delete_6.TabStop = false;
+            this.btn_delete_6.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_5
+            // 
+            this.btn_delete_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_5.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_5.FlatAppearance.BorderSize = 0;
+            this.btn_delete_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_5.Location = new System.Drawing.Point(14, 322);
+            this.btn_delete_5.Name = "btn_delete_5";
+            this.btn_delete_5.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_5.TabIndex = 222;
+            this.btn_delete_5.TabStop = false;
+            this.btn_delete_5.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_4
+            // 
+            this.btn_delete_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_4.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_4.FlatAppearance.BorderSize = 0;
+            this.btn_delete_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_4.Location = new System.Drawing.Point(14, 273);
+            this.btn_delete_4.Name = "btn_delete_4";
+            this.btn_delete_4.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_4.TabIndex = 222;
+            this.btn_delete_4.TabStop = false;
+            this.btn_delete_4.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_3
+            // 
+            this.btn_delete_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_3.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_3.FlatAppearance.BorderSize = 0;
+            this.btn_delete_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_3.Location = new System.Drawing.Point(14, 224);
+            this.btn_delete_3.Name = "btn_delete_3";
+            this.btn_delete_3.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_3.TabIndex = 222;
+            this.btn_delete_3.TabStop = false;
+            this.btn_delete_3.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_2
+            // 
+            this.btn_delete_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_2.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_2.FlatAppearance.BorderSize = 0;
+            this.btn_delete_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_2.Location = new System.Drawing.Point(14, 175);
+            this.btn_delete_2.Name = "btn_delete_2";
+            this.btn_delete_2.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_2.TabIndex = 222;
+            this.btn_delete_2.TabStop = false;
+            this.btn_delete_2.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete_1
+            // 
+            this.btn_delete_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_delete_1.BackgroundImage = global::Fireon.Properties.Resources.btn_delete_db_active;
+            this.btn_delete_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_delete_1.FlatAppearance.BorderSize = 0;
+            this.btn_delete_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_delete_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete_1.Location = new System.Drawing.Point(14, 126);
+            this.btn_delete_1.Name = "btn_delete_1";
+            this.btn_delete_1.Size = new System.Drawing.Size(27, 25);
+            this.btn_delete_1.TabIndex = 222;
+            this.btn_delete_1.TabStop = false;
+            this.btn_delete_1.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_8
+            // 
+            this.btn_update_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_8.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_8.FlatAppearance.BorderSize = 0;
+            this.btn_update_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_8.Location = new System.Drawing.Point(50, 469);
+            this.btn_update_8.Name = "btn_update_8";
+            this.btn_update_8.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_8.TabIndex = 222;
+            this.btn_update_8.TabStop = false;
+            this.btn_update_8.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_7
+            // 
+            this.btn_update_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_7.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_7.FlatAppearance.BorderSize = 0;
+            this.btn_update_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_7.Location = new System.Drawing.Point(50, 420);
+            this.btn_update_7.Name = "btn_update_7";
+            this.btn_update_7.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_7.TabIndex = 222;
+            this.btn_update_7.TabStop = false;
+            this.btn_update_7.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_6
+            // 
+            this.btn_update_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_6.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_6.FlatAppearance.BorderSize = 0;
+            this.btn_update_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_6.Location = new System.Drawing.Point(50, 371);
+            this.btn_update_6.Name = "btn_update_6";
+            this.btn_update_6.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_6.TabIndex = 222;
+            this.btn_update_6.TabStop = false;
+            this.btn_update_6.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_5
+            // 
+            this.btn_update_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_5.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_5.FlatAppearance.BorderSize = 0;
+            this.btn_update_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_5.Location = new System.Drawing.Point(50, 322);
+            this.btn_update_5.Name = "btn_update_5";
+            this.btn_update_5.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_5.TabIndex = 222;
+            this.btn_update_5.TabStop = false;
+            this.btn_update_5.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_4
+            // 
+            this.btn_update_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_4.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_4.FlatAppearance.BorderSize = 0;
+            this.btn_update_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_4.Location = new System.Drawing.Point(50, 273);
+            this.btn_update_4.Name = "btn_update_4";
+            this.btn_update_4.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_4.TabIndex = 222;
+            this.btn_update_4.TabStop = false;
+            this.btn_update_4.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_3
+            // 
+            this.btn_update_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_3.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_3.FlatAppearance.BorderSize = 0;
+            this.btn_update_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_3.Location = new System.Drawing.Point(50, 224);
+            this.btn_update_3.Name = "btn_update_3";
+            this.btn_update_3.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_3.TabIndex = 222;
+            this.btn_update_3.TabStop = false;
+            this.btn_update_3.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_2
+            // 
+            this.btn_update_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_2.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_2.FlatAppearance.BorderSize = 0;
+            this.btn_update_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_2.Location = new System.Drawing.Point(50, 175);
+            this.btn_update_2.Name = "btn_update_2";
+            this.btn_update_2.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_2.TabIndex = 222;
+            this.btn_update_2.TabStop = false;
+            this.btn_update_2.UseVisualStyleBackColor = true;
+            // 
+            // btn_update_1
+            // 
+            this.btn_update_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_update_1.BackgroundImage = global::Fireon.Properties.Resources.btn_update_active;
+            this.btn_update_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_update_1.FlatAppearance.BorderSize = 0;
+            this.btn_update_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.btn_update_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update_1.Location = new System.Drawing.Point(50, 126);
+            this.btn_update_1.Name = "btn_update_1";
+            this.btn_update_1.Size = new System.Drawing.Size(27, 25);
+            this.btn_update_1.TabIndex = 222;
+            this.btn_update_1.TabStop = false;
+            this.btn_update_1.UseVisualStyleBackColor = true;
             // 
             // ucLeave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.tblpLeave);
-            this.Controls.Add(this.lblLeave);
+            this.Controls.Add(this.btn_add_leave);
+            this.Controls.Add(this.pnl_del_upd);
+            this.Controls.Add(this.cmbx_regular_contractual);
+            this.Controls.Add(this.txtbx_search);
+            this.Controls.Add(this.cmbx_year);
+            this.Controls.Add(this.cmbx_month);
+            this.Controls.Add(this.cmbx_position);
+            this.Controls.Add(this.cmbx_department);
+            this.Controls.Add(this.pnl_leave);
+            this.Controls.Add(this.lbl_leave);
             this.Name = "ucLeave";
-            this.Size = new System.Drawing.Size(900, 500);
-            this.tblpLeave.ResumeLayout(false);
-            this.pnlFilters.ResumeLayout(false);
-            this.pnlFilters.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvLeave)).EndInit();
+            this.Size = new System.Drawing.Size(1060, 680);
+            this.flpnl_leave.ResumeLayout(false);
+            this.flpnl_leave.PerformLayout();
+            this.pnl_leave.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_leave)).EndInit();
+            this.pnl_del_upd.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,17 +635,40 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblLeave;
-        private System.Windows.Forms.TableLayoutPanel tblpLeave;
-        private System.Windows.Forms.Panel pnlFilters;
-        private System.Windows.Forms.ComboBox cmbxYear;
-        private System.Windows.Forms.ComboBox cmbxDepartment;
-        private System.Windows.Forms.ComboBox cmbxPosition;
-        private System.Windows.Forms.ComboBox cmbxMonth;
-        private System.Windows.Forms.TextBox txtbxSearch;
-        private System.Windows.Forms.ComboBox cmbxRegularContractual;
-        private System.Windows.Forms.DataGridView dtgvLeave;
-        private System.Windows.Forms.Button btnAddLeave;
+        private System.Windows.Forms.FlowLayoutPanel flpnl_leave;
+        private System.Windows.Forms.Label lbl_employee_id;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Label lbl_department;
+        private System.Windows.Forms.Label lbl_position;
+        private System.Windows.Forms.Label lbl_status;
+        private System.Windows.Forms.Label lbl_rate_per_hour;
+        private System.Windows.Forms.Panel pnl_leave;
+        private System.Windows.Forms.DataGridView dtgv_leave;
+        private System.Windows.Forms.Label lbl_leave;
+        private System.Windows.Forms.ComboBox cmbx_regular_contractual;
+        private System.Windows.Forms.TextBox txtbx_search;
+        private System.Windows.Forms.ComboBox cmbx_year;
+        private System.Windows.Forms.ComboBox cmbx_month;
+        private System.Windows.Forms.ComboBox cmbx_position;
+        private System.Windows.Forms.ComboBox cmbx_department;
+        private System.Windows.Forms.Button btn_add_leave;
+        private System.Windows.Forms.Panel pnl_del_upd;
+        private System.Windows.Forms.Button btn_delete_8;
+        private System.Windows.Forms.Button btn_delete_7;
+        private System.Windows.Forms.Button btn_delete_6;
+        private System.Windows.Forms.Button btn_delete_5;
+        private System.Windows.Forms.Button btn_delete_4;
+        private System.Windows.Forms.Button btn_delete_3;
+        private System.Windows.Forms.Button btn_delete_2;
+        private System.Windows.Forms.Button btn_delete_1;
+        private System.Windows.Forms.Button btn_update_8;
+        private System.Windows.Forms.Button btn_update_7;
+        private System.Windows.Forms.Button btn_update_6;
+        private System.Windows.Forms.Button btn_update_5;
+        private System.Windows.Forms.Button btn_update_4;
+        private System.Windows.Forms.Button btn_update_3;
+        private System.Windows.Forms.Button btn_update_2;
+        private System.Windows.Forms.Button btn_update_1;
 
     }
 }
