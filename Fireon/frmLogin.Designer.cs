@@ -29,196 +29,201 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.chkbx_keep_logged_in = new System.Windows.Forms.CheckBox();
-            this.lbl_fireon = new System.Windows.Forms.Label();
-            this.lbl_welcome = new System.Windows.Forms.Label();
-            this.lbl_terms = new System.Windows.Forms.Label();
-            this.pnl_fireon = new System.Windows.Forms.Panel();
-            this.picb_fireon = new System.Windows.Forms.PictureBox();
-            this.txtbx_username = new System.Windows.Forms.TextBox();
-            this.txtbx_pw = new System.Windows.Forms.TextBox();
-            this.btn_login = new System.Windows.Forms.Button();
-            this.lbl_username = new System.Windows.Forms.Label();
-            this.lbl_password = new System.Windows.Forms.Label();
-            this.btn_see_pw = new System.Windows.Forms.Button();
-            this.dgv_accounts = new System.Windows.Forms.DataGridView();
-            this.pnl_fireon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picb_fireon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_accounts)).BeginInit();
+            this.chkbxKeepLoggedIn = new System.Windows.Forms.CheckBox();
+            this.lblFireon = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblTerms = new System.Windows.Forms.Label();
+            this.pnlFireon = new System.Windows.Forms.Panel();
+            this.picbFireon = new System.Windows.Forms.PictureBox();
+            this.txtbxUsername = new System.Windows.Forms.TextBox();
+            this.txtbxPw = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.btnSeePw = new System.Windows.Forms.Button();
+            this.dtgvAccounts = new System.Windows.Forms.DataGridView();
+            this.pnlFireon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).BeginInit();
             this.SuspendLayout();
             // 
-            // chkbx_keep_logged_in
+            // chkbxKeepLoggedIn
             // 
-            this.chkbx_keep_logged_in.AutoSize = true;
-            this.chkbx_keep_logged_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkbx_keep_logged_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbx_keep_logged_in.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.chkbx_keep_logged_in.Location = new System.Drawing.Point(433, 309);
-            this.chkbx_keep_logged_in.Name = "chkbx_keep_logged_in";
-            this.chkbx_keep_logged_in.Size = new System.Drawing.Size(141, 20);
-            this.chkbx_keep_logged_in.TabIndex = 4;
-            this.chkbx_keep_logged_in.Text = "Keep me logged-in.";
-            this.chkbx_keep_logged_in.UseVisualStyleBackColor = true;
+            this.chkbxKeepLoggedIn.AutoSize = true;
+            this.chkbxKeepLoggedIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkbxKeepLoggedIn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbxKeepLoggedIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkbxKeepLoggedIn.Location = new System.Drawing.Point(433, 309);
+            this.chkbxKeepLoggedIn.Name = "chkbxKeepLoggedIn";
+            this.chkbxKeepLoggedIn.Size = new System.Drawing.Size(152, 21);
+            this.chkbxKeepLoggedIn.TabIndex = 8;
+            this.chkbxKeepLoggedIn.Text = "Keep me logged-in.";
+            this.chkbxKeepLoggedIn.UseVisualStyleBackColor = true;
             // 
-            // lbl_fireon
+            // lblFireon
             // 
-            this.lbl_fireon.AutoSize = true;
-            this.lbl_fireon.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fireon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_fireon.Location = new System.Drawing.Point(497, 54);
-            this.lbl_fireon.Name = "lbl_fireon";
-            this.lbl_fireon.Size = new System.Drawing.Size(164, 42);
-            this.lbl_fireon.TabIndex = 9;
-            this.lbl_fireon.Text = "FIREON";
+            this.lblFireon.AutoSize = true;
+            this.lblFireon.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFireon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblFireon.Location = new System.Drawing.Point(502, 54);
+            this.lblFireon.Name = "lblFireon";
+            this.lblFireon.Size = new System.Drawing.Size(146, 44);
+            this.lblFireon.TabIndex = 1;
+            this.lblFireon.Text = "FIREON";
             // 
-            // lbl_welcome
+            // lblWelcome
             // 
-            this.lbl_welcome.AutoSize = true;
-            this.lbl_welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_welcome.Location = new System.Drawing.Point(457, 105);
-            this.lbl_welcome.Name = "lbl_welcome";
-            this.lbl_welcome.Size = new System.Drawing.Size(222, 13);
-            this.lbl_welcome.TabIndex = 10;
-            this.lbl_welcome.Text = "Welcome back! Please login to your account.";
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblWelcome.Location = new System.Drawing.Point(449, 105);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(252, 16);
+            this.lblWelcome.TabIndex = 2;
+            this.lblWelcome.Text = "Welcome back! Please login to your account.";
             // 
-            // lbl_terms
+            // lblTerms
             // 
-            this.lbl_terms.AutoSize = true;
-            this.lbl_terms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_terms.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lbl_terms.Location = new System.Drawing.Point(498, 439);
-            this.lbl_terms.Name = "lbl_terms";
-            this.lbl_terms.Size = new System.Drawing.Size(145, 13);
-            this.lbl_terms.TabIndex = 11;
-            this.lbl_terms.Text = "Terms of Use.  Privacy Policy";
+            this.lblTerms.AutoSize = true;
+            this.lblTerms.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTerms.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblTerms.Location = new System.Drawing.Point(498, 439);
+            this.lblTerms.Name = "lblTerms";
+            this.lblTerms.Size = new System.Drawing.Size(156, 16);
+            this.lblTerms.TabIndex = 10;
+            this.lblTerms.Text = "Terms of Use.  Privacy Policy";
             // 
-            // pnl_fireon
+            // pnlFireon
             // 
-            this.pnl_fireon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.pnl_fireon.Controls.Add(this.picb_fireon);
-            this.pnl_fireon.Location = new System.Drawing.Point(-5, -2);
-            this.pnl_fireon.Name = "pnl_fireon";
-            this.pnl_fireon.Size = new System.Drawing.Size(340, 596);
-            this.pnl_fireon.TabIndex = 7;
+            this.pnlFireon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.pnlFireon.Controls.Add(this.picbFireon);
+            this.pnlFireon.Location = new System.Drawing.Point(-5, -2);
+            this.pnlFireon.Name = "pnlFireon";
+            this.pnlFireon.Size = new System.Drawing.Size(340, 596);
+            this.pnlFireon.TabIndex = 0;
             // 
-            // picb_fireon
+            // picbFireon
             // 
-            this.picb_fireon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.picb_fireon.BackgroundImage = global::Fireon.Properties.Resources.picb_logo_fireon_login;
-            this.picb_fireon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picb_fireon.Location = new System.Drawing.Point(57, 205);
-            this.picb_fireon.Name = "picb_fireon";
-            this.picb_fireon.Size = new System.Drawing.Size(219, 182);
-            this.picb_fireon.TabIndex = 0;
-            this.picb_fireon.TabStop = false;
+            this.picbFireon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.picbFireon.BackgroundImage = global::Fireon.Properties.Resources.miscFireonLogin;
+            this.picbFireon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picbFireon.Location = new System.Drawing.Point(57, 205);
+            this.picbFireon.Name = "picbFireon";
+            this.picbFireon.Size = new System.Drawing.Size(219, 182);
+            this.picbFireon.TabIndex = 0;
+            this.picbFireon.TabStop = false;
             // 
-            // txtbx_username
+            // txtbxUsername
             // 
-            this.txtbx_username.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbx_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_username.Location = new System.Drawing.Point(433, 213);
-            this.txtbx_username.MaxLength = 32;
-            this.txtbx_username.Name = "txtbx_username";
-            this.txtbx_username.Size = new System.Drawing.Size(285, 22);
-            this.txtbx_username.TabIndex = 1;
+            this.txtbxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxUsername.Location = new System.Drawing.Point(433, 213);
+            this.txtbxUsername.MaxLength = 32;
+            this.txtbxUsername.Name = "txtbxUsername";
+            this.txtbxUsername.Size = new System.Drawing.Size(285, 22);
+            this.txtbxUsername.TabIndex = 4;
             // 
-            // txtbx_pw
+            // txtbxPw
             // 
-            this.txtbx_pw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbx_pw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_pw.Location = new System.Drawing.Point(433, 267);
-            this.txtbx_pw.MaxLength = 32;
-            this.txtbx_pw.Name = "txtbx_pw";
-            this.txtbx_pw.Size = new System.Drawing.Size(285, 22);
-            this.txtbx_pw.TabIndex = 2;
-            this.txtbx_pw.Tag = "TRUE";
-            this.txtbx_pw.UseSystemPasswordChar = true;
+            this.txtbxPw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbxPw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxPw.Location = new System.Drawing.Point(433, 267);
+            this.txtbxPw.MaxLength = 32;
+            this.txtbxPw.Name = "txtbxPw";
+            this.txtbxPw.Size = new System.Drawing.Size(285, 22);
+            this.txtbxPw.TabIndex = 6;
+            this.txtbxPw.Tag = "TRUE";
+            this.txtbxPw.UseSystemPasswordChar = true;
             // 
-            // btn_login
+            // btnLogin
             // 
-            this.btn_login.BackgroundImage = global::Fireon.Properties.Resources.btn_login;
-            this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_login.FlatAppearance.BorderSize = 0;
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Location = new System.Drawing.Point(433, 389);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(285, 40);
-            this.btn_login.TabIndex = 5;
-            this.btn_login.UseVisualStyleBackColor = true;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            this.btnLogin.BackgroundImage = global::Fireon.Properties.Resources.btnOthersLogin;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(433, 389);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(285, 40);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // lbl_username
+            // lblUsername
             // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_username.ForeColor = System.Drawing.Color.Black;
-            this.lbl_username.Location = new System.Drawing.Point(430, 190);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(71, 16);
-            this.lbl_username.TabIndex = 10;
-            this.lbl_username.Text = "Username";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblUsername.Location = new System.Drawing.Point(430, 190);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(71, 17);
+            this.lblUsername.TabIndex = 3;
+            this.lblUsername.Text = "Username";
             // 
-            // lbl_password
+            // lblPassword
             // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_password.ForeColor = System.Drawing.Color.Black;
-            this.lbl_password.Location = new System.Drawing.Point(430, 246);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(68, 16);
-            this.lbl_password.TabIndex = 10;
-            this.lbl_password.Text = "Password";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.Black;
+            this.lblPassword.Location = new System.Drawing.Point(430, 246);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(69, 17);
+            this.lblPassword.TabIndex = 5;
+            this.lblPassword.Text = "Password";
             // 
-            // btn_see_pw
+            // btnSeePw
             // 
-            this.btn_see_pw.BackColor = System.Drawing.Color.Transparent;
-            this.btn_see_pw.BackgroundImage = global::Fireon.Properties.Resources.btn_eye;
-            this.btn_see_pw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_see_pw.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_see_pw.FlatAppearance.BorderSize = 0;
-            this.btn_see_pw.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_see_pw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_see_pw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_see_pw.Location = new System.Drawing.Point(724, 261);
-            this.btn_see_pw.Name = "btn_see_pw";
-            this.btn_see_pw.Size = new System.Drawing.Size(35, 35);
-            this.btn_see_pw.TabIndex = 3;
-            this.btn_see_pw.Tag = "";
-            this.btn_see_pw.UseVisualStyleBackColor = true;
-            this.btn_see_pw.Click += new System.EventHandler(this.btn_see_pw_Click);
-            this.btn_see_pw.MouseLeave += new System.EventHandler(this.btn_see_pw_MouseLeave);
-            this.btn_see_pw.MouseHover += new System.EventHandler(this.btn_see_pw_MouseHover);
+            this.btnSeePw.BackColor = System.Drawing.Color.Transparent;
+            this.btnSeePw.BackgroundImage = global::Fireon.Properties.Resources.btnIconEye;
+            this.btnSeePw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSeePw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSeePw.FlatAppearance.BorderSize = 0;
+            this.btnSeePw.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSeePw.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSeePw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeePw.Location = new System.Drawing.Point(724, 261);
+            this.btnSeePw.Name = "btnSeePw";
+            this.btnSeePw.Size = new System.Drawing.Size(35, 35);
+            this.btnSeePw.TabIndex = 7;
+            this.btnSeePw.Tag = "";
+            this.btnSeePw.UseVisualStyleBackColor = true;
+            this.btnSeePw.Click += new System.EventHandler(this.btn_see_pw_Click);
+            this.btnSeePw.MouseLeave += new System.EventHandler(this.btn_see_pw_MouseLeave);
+            this.btnSeePw.MouseHover += new System.EventHandler(this.btn_see_pw_MouseHover);
             // 
-            // dgv_accounts
+            // dtgvAccounts
             // 
-            this.dgv_accounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_accounts.Location = new System.Drawing.Point(341, 474);
-            this.dgv_accounts.Name = "dgv_accounts";
-            this.dgv_accounts.ReadOnly = true;
-            this.dgv_accounts.Size = new System.Drawing.Size(455, 103);
-            this.dgv_accounts.TabIndex = 0;
-            this.dgv_accounts.TabStop = false;
+            this.dtgvAccounts.AllowUserToAddRows = false;
+            this.dtgvAccounts.AllowUserToDeleteRows = false;
+            this.dtgvAccounts.AllowUserToResizeColumns = false;
+            this.dtgvAccounts.AllowUserToResizeRows = false;
+            this.dtgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvAccounts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dtgvAccounts.Location = new System.Drawing.Point(341, 474);
+            this.dtgvAccounts.Name = "dtgvAccounts";
+            this.dtgvAccounts.ReadOnly = true;
+            this.dtgvAccounts.Size = new System.Drawing.Size(455, 103);
+            this.dtgvAccounts.TabIndex = 11;
+            this.dtgvAccounts.TabStop = false;
             // 
             // frmLogin
             // 
-            this.AcceptButton = this.btn_login;
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(808, 589);
-            this.Controls.Add(this.dgv_accounts);
-            this.Controls.Add(this.btn_see_pw);
-            this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.txtbx_pw);
-            this.Controls.Add(this.txtbx_username);
-            this.Controls.Add(this.chkbx_keep_logged_in);
-            this.Controls.Add(this.lbl_fireon);
-            this.Controls.Add(this.lbl_password);
-            this.Controls.Add(this.lbl_username);
-            this.Controls.Add(this.lbl_welcome);
-            this.Controls.Add(this.lbl_terms);
-            this.Controls.Add(this.pnl_fireon);
+            this.Controls.Add(this.dtgvAccounts);
+            this.Controls.Add(this.btnSeePw);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtbxPw);
+            this.Controls.Add(this.txtbxUsername);
+            this.Controls.Add(this.chkbxKeepLoggedIn);
+            this.Controls.Add(this.lblFireon);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblWelcome);
+            this.Controls.Add(this.lblTerms);
+            this.Controls.Add(this.pnlFireon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Alpha;
@@ -228,9 +233,9 @@
             this.Text = "Fireon Payroll System";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.VisibleChanged += new System.EventHandler(this.frmLogin_VisibleChanged);
-            this.pnl_fireon.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picb_fireon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_accounts)).EndInit();
+            this.pnlFireon.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,18 +243,18 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picb_fireon;
-        private System.Windows.Forms.CheckBox chkbx_keep_logged_in;
-        private System.Windows.Forms.Label lbl_fireon;
-        private System.Windows.Forms.Label lbl_welcome;
-        private System.Windows.Forms.Label lbl_terms;
-        private System.Windows.Forms.Panel pnl_fireon;
-        private System.Windows.Forms.TextBox txtbx_username;
-        private System.Windows.Forms.TextBox txtbx_pw;
-        private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Label lbl_username;
-        private System.Windows.Forms.Label lbl_password;
-        private System.Windows.Forms.Button btn_see_pw;
-        public System.Windows.Forms.DataGridView dgv_accounts;
+        private System.Windows.Forms.PictureBox picbFireon;
+        private System.Windows.Forms.CheckBox chkbxKeepLoggedIn;
+        private System.Windows.Forms.Label lblFireon;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Label lblTerms;
+        private System.Windows.Forms.Panel pnlFireon;
+        private System.Windows.Forms.TextBox txtbxUsername;
+        private System.Windows.Forms.TextBox txtbxPw;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Button btnSeePw;
+        public System.Windows.Forms.DataGridView dtgvAccounts;
     }
 }

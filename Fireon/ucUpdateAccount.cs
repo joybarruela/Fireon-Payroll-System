@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Fireon
 {
-    public partial class ucSettings : UserControl
+    public partial class ucUpdateAccount : UserControl
     {
-        public ucSettings()
+        public ucUpdateAccount()
         {
             InitializeComponent();
-        }      
+        }
     }
 }

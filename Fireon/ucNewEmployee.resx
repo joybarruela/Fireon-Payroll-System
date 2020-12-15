@@ -117,23 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAddLeave.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMgAAAAtCAYAAADr0SSvAAAABGdBTUEAALGPC/xhBQAAAtlJREFUeF7t
-        2rGKFEEQxvF+CF9JTE648xV8gQsNxcwHEM3FWAwFI1EORBAjjWQDE03cRBCTdr5rCtq+nqrp206O/Rf8
-        2HN6tk3qm+me2aTKZ+kk30vvls9fy2cGjlbJgLJwUsJxmk6vnAQgKxtp+ePiygAAuVBA9s1BAMVeAekN
-        AFgQEMBBQAAHAQEcBARwEBDAQUAABwEBHATkOt6+yJf1e98fb31+U85fq5+7nL+8z/n5g/73azPnQoiA
-        XIea0Gqkqf/+Kd81ClhbOv7oTn8emTkXQgRk1JP7pfnUoKpvn/rn1ayp1bC9cYVMV32bU82+1tgz50KI
-        gIxS86k+vCpNKFEDRk1t1NzW2Psf/XNmzoUQARllSxndSXT3UGlP0jvXbG1qUWNb9eadORdCBGTE62el
-        2eyKbP+OmnWkqcWC17vyz5wLIQIy4vvX0mz11diWMbqj1OfWRpvagqdql28z50KIgGyl5rKqG832JPqs
-        z6+NNnX9f718/P/YzLkQIiBbaVOuap9a2Tpfe5P6eG20qcXq0ICIFQEZRkC2ss25liwjY0JAbiwCskV0
-        l7C7i/YovXECcmMRkC3sSdCW6m2ER5vaXkaqDg2INxdCBCSihrcnVVtKd5N2jtGmtt96qdqxmXMhREAi
-        1mBRQ9p5M95d6DxVb8k2cy6ECEjEGqx+99FT32m0Z6nHRpq6fm/RWxLNnAshAuKpf5jY21u0bK/SPgre
-        2tRqYgvZoRv+LXMhREA89hKwbfg1akqVGrM+HjW1rvT1gwAt09YCOXMuhAiIx95vjCxP7Dv1ksyaWsFR
-        Y5teKZReQ8+cCyECssbW72vvPtb0rvB2rFfW6Hr65f2ey8ycCyECAjgICOAgIICDgAAOAgI4CAjgICCA
-        g4AADgICOAgI4FBAdu1BAJd2KZ+lp50BAEs2Ur6bbi1/fOyeABwrZWLJRrJaDtxeBs4XD4Ejdq4slFSk
-        9A+54DLeQzLzCgAAAABJRU5ErkJggg==
-</value>
-  </data>
+  <metadata name="ofdUploadDP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>30, 13</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>76</value>
+  </metadata>
 </root>
