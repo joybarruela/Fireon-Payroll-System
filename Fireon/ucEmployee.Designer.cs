@@ -45,6 +45,8 @@
             this.pnlSeparator1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pnlEmployee = new System.Windows.Forms.Panel();
+            this.pnlSeparator2 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.pnlFilters.SuspendLayout();
             this.tblpEmployee.SuspendLayout();
             this.pnlBelow.SuspendLayout();
@@ -57,6 +59,7 @@
             this.cmbxRegularContractual.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxRegularContractual.FormattingEnabled = true;
             this.cmbxRegularContractual.Items.AddRange(new object[] {
+            "ALL",
             "Contractual",
             "Regular"});
             this.cmbxRegularContractual.Location = new System.Drawing.Point(4, 41);
@@ -87,12 +90,7 @@
             this.cmbxYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxYear.FormattingEnabled = true;
             this.cmbxYear.Items.AddRange(new object[] {
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025"});
+            "ALL"});
             this.cmbxYear.Location = new System.Drawing.Point(735, 41);
             this.cmbxYear.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxYear.Name = "cmbxYear";
@@ -108,6 +106,7 @@
             this.cmbxMonth.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxMonth.FormattingEnabled = true;
             this.cmbxMonth.Items.AddRange(new object[] {
+            "ALL",
             "January ",
             "February",
             "March",
@@ -149,6 +148,7 @@
             this.cmbxDepartment.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxDepartment.FormattingEnabled = true;
             this.cmbxDepartment.Items.AddRange(new object[] {
+            "ALL",
             "Administrative",
             "Customer Service",
             "Finance",
@@ -218,6 +218,8 @@
             // 
             this.pnlBelow.Controls.Add(this.lblTotalEmployees);
             this.pnlBelow.Controls.Add(this.lblTotalEmployeesAmount);
+            this.pnlBelow.Controls.Add(this.btnSearch);
+            this.pnlBelow.Controls.Add(this.pnlSeparator2);
             this.pnlBelow.Controls.Add(this.btnCancel);
             this.pnlBelow.Controls.Add(this.pnlSeparator1);
             this.pnlBelow.Controls.Add(this.btnAdd);
@@ -301,6 +303,31 @@
             this.pnlEmployee.Size = new System.Drawing.Size(894, 315);
             this.pnlEmployee.TabIndex = 1;
             // 
+            // pnlSeparator2
+            // 
+            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlSeparator2.Location = new System.Drawing.Point(616, 0);
+            this.pnlSeparator2.Name = "pnlSeparator2";
+            this.pnlSeparator2.Size = new System.Drawing.Size(15, 30);
+            this.pnlSeparator2.TabIndex = 5;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackgroundImage = global::Fireon.Properties.Resources.btnCancel;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Location = new System.Drawing.Point(492, 0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(124, 30);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // ucEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,5 +367,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel pnlSeparator1;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Panel pnlSeparator2;
     }
 }

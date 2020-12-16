@@ -513,13 +513,6 @@
             "Cheque",
             "Money/Postal Order",
             "Promissory Note",
-            "Telegraphic/Mail Transfer",
-            "Bank Draft",
-            "Bill of Exchange",
-            "Cash Payment",
-            "Cheque",
-            "Money/Postal Order",
-            "Promissory Note",
             "Telegraphic/Mail Transfer"});
             this.cmbxPaymentMode.Location = new System.Drawing.Point(15, 358);
             this.cmbxPaymentMode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

@@ -29,7 +29,19 @@ namespace Fireon
         private void ucEmployee_Load(object sender, EventArgs e)
         {
             displayUserControl("List Employee");
+
+            // MAKE A CODE TO DISPLAY ALL YEARS
+            this.cmbxYear.Items.Clear(); // CLEAR ALL ITEMS FIRST
+            // ADD THE "ALL" OPTION HERE
+            cmbxYear.Items.Add((Object)"ALL");
+            // LOOP THRU 2020 (INCEPTION DATE) TO CURRENT YEAR AND ADD EACH ITEM ON THE LIST
+            for (int i = 2020; i <= DateTime.Today.Year; i++)
+            {
+                cmbxYear.Items.Add((Object)i.ToString());
+            }
         }
+
+
         #endregion
         #region CUSTOM FUNCTIONS
         /// <summary>
@@ -111,7 +123,8 @@ namespace Fireon
                     (ucNewEmployee.txtbxHourlyRate.Text != String.Empty) &&
                     (ucNewEmployee.cmbxPaymentMode.SelectedIndex > -1))
                 {
-
+                    // TELL THEM THAT THE VALIDATION HAS SUCCEEDED
+                    MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // INSERT THEM TO DATABASE
                     db.dbInsertEmployee(
                         ucNewEmployee.txtbxFirstName.Text,
@@ -134,7 +147,7 @@ namespace Fireon
                         ucNewEmployee.picbDP.ImageLocation,
                         DateTime.Today
                         );
-                    MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    displayUserControl("New Employee");
                 }
                 else
                 {
@@ -150,7 +163,7 @@ namespace Fireon
         /// VIBIESCA
         /// DISPLAY USER CONTROL
         /// </summary>
-        public void displayUserControl(string name)
+        public void displayUserControl(string name, string query = "SELECT * FROM tbl_employee")
         {
             switch (name)
             {
@@ -160,6 +173,7 @@ namespace Fireon
                     ucNewEmployee.Parent = pnlEmployee; // SET PARENT OF NEW DASHBOARD
                     ucNewEmployee.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
                     pnlFilters.Hide();
+                    btnSearch.Hide();
                     btnCancel.Show();
                     break;
                 case "List Employee":
@@ -167,8 +181,20 @@ namespace Fireon
                     ucDataGridView ucDataGridView = new ucDataGridView(); // CREATES A NEW UserControl
                     ucDataGridView.Parent = pnlEmployee; // SET PARENT OF NEW DASHBOARD
                     ucDataGridView.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                    db.dbRead("SELECT * FROM tbl_employee", ucDataGridView.theDataGridView); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
+                    // CHECK HERE FIRST IF QUERY IS EMPTY OR NOT
+                    if (string.Compare(query,"SELECT * FROM tbl_employee") == 0)
+                    {
+                        // JUST DISPLAY ALL EMPLOYEE
+                        db.dbRead("SELECT * FROM tbl_employee", ucDataGridView.theDataGridView); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
+                    }
+                    else
+                    {
+                        // ACQUIRE THE CUSTOM QUERY
+                        db.dbRead(query, ucDataGridView.theDataGridView);
+                    }
                     pnlFilters.Show();
+                    btnSearch.Show();
+                    pnlSeparator2.Hide();
                     btnCancel.Hide();
                     break;
                 default:
@@ -178,12 +204,14 @@ namespace Fireon
                     ucDataGridViewDefault.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
                     db.dbRead("SELECT * FROM tbl_employee", ucDataGridViewDefault.theDataGridView); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
                     pnlFilters.Show();
+                    btnSearch.Show();
+                    pnlSeparator1.Show();
                     btnCancel.Hide();
                     break;
             }
         }
         #endregion
-        #region ADD AND CANCEL LOGIC
+        #region ADD, CANCEL, and SEARCH LOGIC
         /// <summary>
         /// VIBIESCA
         /// EVERY TIME THAT THE NEW BUTTON IS CLICKED
@@ -209,7 +237,7 @@ namespace Fireon
             }
             if (ucNewEmployeeFound == true) // EVALUATE RESULT
             {
-                addNewEmployee(reference); // IS THERE IS ALREADY A NEW EMPLOYEE FORM THEN CALL THIS FUNCTION TO TRY TO ADD THE DATA INTO THE DATABASE.
+                addNewEmployee(reference); // THERE IS ALREADY A NEW EMPLOYEE FORM THEN CALL THIS FUNCTION TO TRY TO ADD THE DATA INTO THE DATABASE.
             }
             else
             {
@@ -240,6 +268,65 @@ namespace Fireon
             {
             }
         }
+        /// <summary>
+        /// WHEN THE USER CLICKS SEARCH
+        /// Change selected item will trigger this
+        /// 1. Declare a query string that changes dynamically according to the filter setting
+        /// 2. Run a database read basing on that string.
+        /// </summary>
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            // THIS STRING WILL HOLD DATA BASED ON CURRENTLY SELECTED FILTERS
+            string theRawQuery = "SELECT * FROM tbl_employee";
+            /* CONDITIONALS
+             * WHERE THE SEARCHBOX IS EMPTY, AS WELL AS ALL COMBOBOXES
+             * 
+             */
+
+            //IF THERE'S NO SELECTED ITEM ON THE COMBOBOX, AND AN EMPTY SEARCHBOX ADD THE WHERE CLAUSE
+            if (
+                ((cmbxRegularContractual.SelectedIndex <= 0) &&
+                (cmbxDepartment.SelectedIndex <= 0) &&
+                (cmbxPosition.SelectedIndex <= 0) &&
+                (cmbxMonth.SelectedIndex <= 0) &&
+                (cmbxYear.SelectedIndex <= 0)) &&
+
+                ((txtbxSearch.Text == "Search") ||
+                (txtbxSearch.Text == String.Empty))
+                )
+            {
+                    return; // EXIT IMMEDIATELY
+            }
+            else
+            {
+                // ADD THE WHERE CLAUSE BECAUSE THE SYSTEM DETECTED AN INPUT FROM 1 OF THE CMBXes /SEARCHBAR
+                theRawQuery += " WHERE ";
+            }
+
+            //0 ALL
+            //1 Contractual
+            //2 Regular
+            switch (cmbxRegularContractual.SelectedIndex) // BASICALLY THE CHOICES OF POSITION COMBOBOX JUST CHANGE BASED ON WHAT'S SELECTED ON THE DEPARTMENT
+            {
+                case 0:
+                    // do nothing
+                    break;
+                case 1:
+                    theRawQuery += "employeeStatus = 'Contractual', ";
+                    break;
+                case 2:
+                    theRawQuery += "employeeStatus = 'Regular', ";
+                    break;
+                default:
+                    break;
+            }
+
+
+            // CODE HERE TO TRIM THE EXCESS ", " ON THE END OF QUERY STRING
+            // DECLARE NEW STRING HERE
+            String theFinalQuery = theRawQuery.Remove(theRawQuery.Length - 2, 2);
+            MessageBox.Show(null, theFinalQuery, null, MessageBoxButtons.OK); // TEST HERE
+        }
         #endregion
         #region SEARCH BOX LOGIC
         private void txtbxSearch_Enter(object sender, EventArgs e)
@@ -266,24 +353,27 @@ namespace Fireon
         private void cmbxDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
             // INDEX LIST ON THIS COMBOBOX GUIDE
-            //0  Administrative
-            //1  Customer Service
-            //2  Finance
-            //3  Human Resource
-            //4  Information Technology
-            //5  Legal
-            //6  Marketing
-            //7  Operations
-            //8  Production
-            //9  Purchasing
-            //10 Research and Development
-            //11 Sales
+            //0  ALL
+            //1  Administrative
+            //2  Customer Service
+            //3  Finance
+            //4  Human Resource
+            //5  Information Technology
+            //6  Legal
+            //7  Marketing
+            //8  Operations
+            //9  Production
+            //10 Purchasing
+            //11 Research and Development
+            //12 Sales
+
 
             cmbxPosition.Items.Clear(); // FIRSTLY REMOVES ALL ITEMS ON THE LIST BEFORE ADDING 1 BASED ON SELECTED
             switch (cmbxDepartment.SelectedIndex) // BASICALLY THE CHOICES OF POSITION COMBOBOX JUST CHANGE BASED ON WHAT'S SELECTED ON THE DEPARTMENT
             {
-                case 0:
+                case 1:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Administrator",
                     "Administrative Coordinator",
                     "Administrative Director",
@@ -294,8 +384,9 @@ namespace Fireon
                     "Administrative Assistant Director",
                     });
                     break;
-                case 1:
+                case 2:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Customer Experience Specialist",
                     "Customer Support Associate",
                     "Customer Service Agent",
@@ -306,8 +397,9 @@ namespace Fireon
                     "Customer Care Operator",
                     });
                     break;
-                case 2:
+                case 3:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Payroll Clerk",
                     "Financial Analyst",
                     "Payroll Assistant",
@@ -319,8 +411,9 @@ namespace Fireon
                     "Auditor",
                     });
                     break;
-                case 3:
+                case 4:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Human Resource Generalist",
                     "Human Resource Assistant",
                     "Human Resource Associate",
@@ -333,8 +426,9 @@ namespace Fireon
                     "Human Resource Director",
                     });
                     break;
-                case 4:
+                case 5:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "IT Technician",
                     "Network Administrator",
                     "System Analyst",
@@ -346,8 +440,9 @@ namespace Fireon
                     "Web Developer"
                     });
                     break;
-                case 5:
+                case 6:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Arbitrator",
                     "Attorney",
                     "Case Manager",
@@ -357,8 +452,9 @@ namespace Fireon
                     "Legal Services Director",
                     });
                     break;
-                case 6:
+                case 7:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Marketing Director",
                     "Marketing Manager",
                     "Communication Manager",
@@ -366,8 +462,9 @@ namespace Fireon
                     "Marketing Consultant",
                     });
                     break;
-                case 7:
+                case 8:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Operations Manager",
                     "Operations Supervisor",
                     "Operations Assistant",
@@ -376,8 +473,9 @@ namespace Fireon
                     "Logistics Manager",
                     });
                     break;
-                case 8:
+                case 9:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Robotics Technician",
                     "Mechatronic Engineer",
                     "Assembler",
@@ -387,8 +485,9 @@ namespace Fireon
                     "Product Designer",
                     });
                     break;
-                case 9:
+                case 10:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Purchasing Manager ",
                     "Materials Manager",
                     "Purchasing Director",
@@ -399,16 +498,18 @@ namespace Fireon
                     "Production Planner",
                     });
                     break;
-                case 10:
+                case 11:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Research Assistant ",
                     "R&D Manager",
                     "R&D Supervisor",
                     "R&D Specialist",
                     });
                     break;
-                case 11:
+                case 12:
                     this.cmbxPosition.Items.AddRange(new object[] {
+                    "ALL",
                     "Sales Collection Agent",
                     "Sales Account Manager",
                     "Sales Account Executive",

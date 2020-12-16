@@ -130,21 +130,6 @@ namespace Fireon
             }
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         /// <summary>
         /// INSERT EMPLOYEE DATA INTO THE DATABASE BRRRRRRRRRRRRRRR
         /// </summary>
