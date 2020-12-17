@@ -300,6 +300,7 @@
     <None Include="Resources\other-buttons\btnUpdateActive.png" />
     <None Include="Resources\other-buttons\btnUploadImage.png" />
     <Content Include="Resources\other-buttons\btnSearch.png" />
+    <Content Include="Resources\other-buttons\btnUploadDocument.png" />
     <Content Include="Resources\sidebar-buttons\btnAll.png" />
     <Content Include="Resources\sidebar-buttons\btnAllActive.png" />
     <Content Include="Resources\sidebar-buttons\btnAllHover.png" />
