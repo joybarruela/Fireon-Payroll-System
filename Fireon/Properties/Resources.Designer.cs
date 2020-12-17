@@ -573,6 +573,16 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap btnSearch {
+            get {
+                object obj = ResourceManager.GetObject("btnSearch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap btnSettings {
             get {
                 object obj = ResourceManager.GetObject("btnSettings", resourceCulture);

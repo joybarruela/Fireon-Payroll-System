@@ -39,14 +39,12 @@
             this.pnlFilters = new System.Windows.Forms.Panel();
             this.tblpEmployee = new System.Windows.Forms.TableLayoutPanel();
             this.pnlBelow = new System.Windows.Forms.Panel();
-            this.lblTotalEmployees = new System.Windows.Forms.Label();
-            this.lblTotalEmployeesAmount = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.pnlSeparator2 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.pnlSeparator1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pnlEmployee = new System.Windows.Forms.Panel();
-            this.pnlSeparator2 = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.pnlFilters.SuspendLayout();
             this.tblpEmployee.SuspendLayout();
             this.pnlBelow.SuspendLayout();
@@ -216,8 +214,6 @@
             // 
             // pnlBelow
             // 
-            this.pnlBelow.Controls.Add(this.lblTotalEmployees);
-            this.pnlBelow.Controls.Add(this.lblTotalEmployeesAmount);
             this.pnlBelow.Controls.Add(this.btnSearch);
             this.pnlBelow.Controls.Add(this.pnlSeparator2);
             this.pnlBelow.Controls.Add(this.btnCancel);
@@ -229,31 +225,29 @@
             this.pnlBelow.Size = new System.Drawing.Size(894, 30);
             this.pnlBelow.TabIndex = 2;
             // 
-            // lblTotalEmployees
+            // btnSearch
             // 
-            this.lblTotalEmployees.AutoSize = true;
-            this.lblTotalEmployees.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTotalEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTotalEmployees.Location = new System.Drawing.Point(174, 0);
-            this.lblTotalEmployees.Name = "lblTotalEmployees";
-            this.lblTotalEmployees.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.lblTotalEmployees.Size = new System.Drawing.Size(156, 20);
-            this.lblTotalEmployees.TabIndex = 1;
-            this.lblTotalEmployees.Text = "Total number of employees";
-            this.lblTotalEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.BackgroundImage = global::Fireon.Properties.Resources.btnSearch;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Location = new System.Drawing.Point(492, 0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(124, 30);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // lblTotalEmployeesAmount
+            // pnlSeparator2
             // 
-            this.lblTotalEmployeesAmount.AutoSize = true;
-            this.lblTotalEmployeesAmount.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTotalEmployeesAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalEmployeesAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lblTotalEmployeesAmount.Location = new System.Drawing.Point(0, 0);
-            this.lblTotalEmployeesAmount.Name = "lblTotalEmployeesAmount";
-            this.lblTotalEmployeesAmount.Size = new System.Drawing.Size(174, 29);
-            this.lblTotalEmployeesAmount.TabIndex = 0;
-            this.lblTotalEmployeesAmount.Text = "9,000,000,000";
+            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlSeparator2.Location = new System.Drawing.Point(616, 0);
+            this.pnlSeparator2.Name = "pnlSeparator2";
+            this.pnlSeparator2.Size = new System.Drawing.Size(15, 30);
+            this.pnlSeparator2.TabIndex = 5;
             // 
             // btnCancel
             // 
@@ -303,31 +297,6 @@
             this.pnlEmployee.Size = new System.Drawing.Size(894, 315);
             this.pnlEmployee.TabIndex = 1;
             // 
-            // pnlSeparator2
-            // 
-            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator2.Location = new System.Drawing.Point(616, 0);
-            this.pnlSeparator2.Name = "pnlSeparator2";
-            this.pnlSeparator2.Size = new System.Drawing.Size(15, 30);
-            this.pnlSeparator2.TabIndex = 5;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackgroundImage = global::Fireon.Properties.Resources.btnCancel;
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(492, 0);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(124, 30);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Text = "SEARCH";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // ucEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,7 +312,6 @@
             this.pnlFilters.PerformLayout();
             this.tblpEmployee.ResumeLayout(false);
             this.pnlBelow.ResumeLayout(false);
-            this.pnlBelow.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,8 +330,6 @@
         private System.Windows.Forms.TableLayoutPanel tblpEmployee;
         private System.Windows.Forms.Panel pnlEmployee;
         private System.Windows.Forms.Panel pnlBelow;
-        private System.Windows.Forms.Label lblTotalEmployees;
-        private System.Windows.Forms.Label lblTotalEmployeesAmount;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel pnlSeparator1;
         private System.Windows.Forms.Button btnAdd;

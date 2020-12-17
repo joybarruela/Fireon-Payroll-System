@@ -239,7 +239,7 @@
             "Information Technology",
             "Legal",
             "Marketing",
-            "Operations",
+            "Operation",
             "Production",
             "Purchasing",
             "Research and Development",

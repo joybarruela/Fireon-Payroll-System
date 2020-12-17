@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsDatabaseFunctions.cs" />
+    <Compile Include="clsDepartmentAndPositions.cs" />
     <Compile Include="clsStringFunctions.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -298,6 +299,7 @@
     <None Include="Resources\other-buttons\btnUpdate.png" />
     <None Include="Resources\other-buttons\btnUpdateActive.png" />
     <None Include="Resources\other-buttons\btnUploadImage.png" />
+    <Content Include="Resources\other-buttons\btnSearch.png" />
     <Content Include="Resources\sidebar-buttons\btnAll.png" />
     <Content Include="Resources\sidebar-buttons\btnAllActive.png" />
     <Content Include="Resources\sidebar-buttons\btnAllHover.png" />
