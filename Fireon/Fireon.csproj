@@ -52,7 +52,7 @@
     <StartupObject>Fireon.clsProgram</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>miscFireonIcon.ico</ApplicationIcon>
+    <ApplicationIcon>Miscellaneous\miscFireonIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -71,7 +71,7 @@
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationManifest>Miscellaneous\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -112,37 +112,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsDatabaseFunctions.cs" />
-    <Compile Include="clsDepartmentAndPositions.cs" />
-    <Compile Include="clsFireonFunctions.cs" />
-    <Compile Include="clsStringFunctions.cs" />
+    <Compile Include="Classes\clsDatabaseFunctions.cs" />
+    <Compile Include="Classes\clsDepartmentAndPositions.cs" />
+    <Compile Include="Classes\clsFireonFunctions.cs" />
+    <Compile Include="Classes\clsStringFunctions.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ucAddAccount.cs">
+    <Compile Include="UserControls\ucAddAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucAddAccount.Designer.cs">
+    <Compile Include="UserControls\ucAddAccount.Designer.cs">
       <DependentUpon>ucAddAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucAddNotification.cs">
+    <Compile Include="UserControls\ucAddNotification.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucAddNotification.Designer.cs">
+    <Compile Include="UserControls\ucAddNotification.Designer.cs">
       <DependentUpon>ucAddNotification.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucDashboard.cs">
+    <Compile Include="UserControls\ucDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucDashboard.Designer.cs">
+    <Compile Include="UserControls\ucDashboard.Designer.cs">
       <DependentUpon>ucDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucEmployee.cs">
+    <Compile Include="UserControls\ucEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucEmployee.Designer.cs">
+    <Compile Include="UserControls\ucEmployee.Designer.cs">
       <DependentUpon>ucEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFireonPayroll.cs">
@@ -157,54 +157,54 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucLeave.cs">
+    <Compile Include="UserControls\ucLeave.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucLeave.Designer.cs">
+    <Compile Include="UserControls\ucLeave.Designer.cs">
       <DependentUpon>ucLeave.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucNewEmployee.cs">
+    <Compile Include="UserControls\ucNewEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucNewEmployee.Designer.cs">
+    <Compile Include="UserControls\ucNewEmployee.Designer.cs">
       <DependentUpon>ucNewEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="clsProgram.cs" />
+    <Compile Include="Classes\clsProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ucDataGridView.cs">
+    <Compile Include="UserControls\ucDataGridView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucDataGridView.Designer.cs">
+    <Compile Include="UserControls\ucDataGridView.Designer.cs">
       <DependentUpon>ucDataGridView.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucSettings.cs">
+    <Compile Include="UserControls\ucSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucSettings.Designer.cs">
+    <Compile Include="UserControls\ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucUpdateAccount.cs">
+    <Compile Include="UserControls\ucUpdateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucUpdateAccount.Designer.cs">
+    <Compile Include="UserControls\ucUpdateAccount.Designer.cs">
       <DependentUpon>ucUpdateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucUpdateNotification.cs">
+    <Compile Include="UserControls\ucUpdateNotification.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucUpdateNotification.Designer.cs">
+    <Compile Include="UserControls\ucUpdateNotification.Designer.cs">
       <DependentUpon>ucUpdateNotification.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ucAddAccount.resx">
+    <EmbeddedResource Include="UserControls\ucAddAccount.resx">
       <DependentUpon>ucAddAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucAddNotification.resx">
+    <EmbeddedResource Include="UserControls\ucAddNotification.resx">
       <DependentUpon>ucAddNotification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucDashboard.resx">
+    <EmbeddedResource Include="UserControls\ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucEmployee.resx">
+    <EmbeddedResource Include="UserControls\ucEmployee.resx">
       <DependentUpon>ucEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFireonPayroll.resx">
@@ -213,10 +213,10 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucLeave.resx">
+    <EmbeddedResource Include="UserControls\ucLeave.resx">
       <DependentUpon>ucLeave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucNewEmployee.resx">
+    <EmbeddedResource Include="UserControls\ucNewEmployee.resx">
       <DependentUpon>ucNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -224,20 +224,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucDataGridView.resx">
+    <EmbeddedResource Include="UserControls\ucDataGridView.resx">
       <DependentUpon>ucDataGridView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucSettings.resx">
+    <EmbeddedResource Include="UserControls\ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucUpdateAccount.resx">
+    <EmbeddedResource Include="UserControls\ucUpdateAccount.resx">
       <DependentUpon>ucUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucUpdateNotification.resx">
+    <EmbeddedResource Include="UserControls\ucUpdateNotification.resx">
       <DependentUpon>ucUpdateNotification.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.manifest" />
-    <None Include="Fireon_TemporaryKey.pfx" />
+    <None Include="Miscellaneous\app.manifest" />
+    <None Include="Miscellaneous\Fireon_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -249,7 +249,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Miscellaneous\App.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -269,7 +269,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="miscFireonIcon.ico" />
+    <Content Include="Miscellaneous\miscFireonIcon.ico" />
     <Content Include="Resources\cute-button-icons\btnIconAdd.png" />
     <Content Include="Resources\cute-button-icons\btnIconAddHover.png" />
     <Content Include="Resources\cute-button-icons\btnIconBack.png" />
@@ -342,6 +342,7 @@
     <Content Include="Resources\sidebar-buttons\btnViolationActive.png" />
     <Content Include="Resources\sidebar-buttons\btnViolationHover.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
