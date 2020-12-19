@@ -10,11 +10,9 @@ namespace Fireon
 {
     /// <summary>
     /// THIS CLASS IS FOR ALL THE STRING OPERATIONS THAT YOU WANT TO PERFORM ON THE PROGRAM
-    /// CALL IT WHEREVER, THANK YOU.
     /// </summary>
     class clsStringFunctions
     {
-
         /// <summary>
         /// REMOVES DOUBLE SPACES
         /// REMOVE SPACES IN FRONT AND BACK
@@ -59,6 +57,5 @@ namespace Fireon
                 e.Handled = true;
             }
         }
-
     }
 }

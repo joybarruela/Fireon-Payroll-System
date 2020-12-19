@@ -14,9 +14,11 @@ namespace Fireon
 {
     public partial class ucNewEmployee : UserControl
     {
-        clsStringFunctions sf = new clsStringFunctions(); // CREATE AN INSTANCE OF clsStringFunctions.
-        clsDatabaseFunctions db = new clsDatabaseFunctions(); // CREATE AN INSTANCE OF clsDatabaseFunctions.
-        clsDepartmentAndPositions dp = new clsDepartmentAndPositions(); // CREATE AN INSTANCE OF clsDepartmentAndPositions.
+        clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseFunctions db = new clsDatabaseFunctions();
+        clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
+        clsFireonFunctions ff = new clsFireonFunctions();
+
         #region TRIGGERS AND EVENTS
         /// <summary>
         /// WHEN CALLED
@@ -81,35 +83,33 @@ namespace Fireon
         /// <param name="mode">"add" for adding, "remove" for removing algorithm</param>
         private void addOrRemoveToFileListBox(string mode)
         {
+            int max = int.Parse(Properties.Resources.int_max_document_count);
             switch (mode)
             {
                 case "add":
-                    if (lsbxFileList.Items.Count == 5)
+                    if (lsbxFileList.Items.Count == max)
                     {
-                        MessageBox.Show(null, "Exceeding file count capacity.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(null, Properties.Resources.msg_max_capacity, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         break; // IMMEDIATELY BREAK WHEN lsbx REACHES TO 5 MAX ITEMS
                     }
                     // IF NOT THEN DO THIS
                     string fileName = System.IO.Path.GetFileName(ofdUploadFile.FileName); // GETS THE NAME OF SELECTED FILE
                     string sourcePath = System.IO.Path.GetDirectoryName(ofdUploadFile.FileName); // GETS THE DIRECTORY OF SELECTED FILE
-
                     string sourceFile = System.IO.Path.Combine(sourcePath, fileName); // COMBINE
-
                     lsbxFileList.Items.Add(sourceFile.ToString()); // FOR REFERENCE WHEN THE ADD BUTTON IS CLICKED
                     break;
                 case "remove":
-                    // check first if selection is greater than or equal to 0
+                    // CHECK FIRST IF SELECTION IS GREATER THAN OR EQUAL TO 0
                     if (lsbxFileList.SelectedIndex >= 0)
                     {
                         var prompt = MessageBox.Show(null, "Confirm remove " + lsbxFileList.SelectedItem.ToString() + " ?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
                         if (prompt == DialogResult.Yes)
                         {
-                            // remove that item
-                            lsbxFileList.Items.RemoveAt(lsbxFileList.SelectedIndex);
+                            lsbxFileList.Items.RemoveAt(lsbxFileList.SelectedIndex); // REMOVE THAT ITEM
                         }
                         else if (prompt == DialogResult.No)
                         {
-                            // do nothing
+                            // DO NOTHING
                         }
                     }
                     break;
@@ -122,60 +122,7 @@ namespace Fireon
         /// </summary>
         private void cmbxDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //0  Administrative
-            //1  Customer Service
-            //2  Finance
-            //3  Human Resource
-            //4  Information Technology
-            //5  Legal
-            //6  Marketing
-            //7  Operation
-            //8  Production
-            //9  Purchasing
-            //10 Research and Development
-            //11 Sales
-            cmbxPosition.Items.Clear(); // FIRSTLY REMOVES ALL ITEMS ON THE LIST BEFORE ADDING 1 BASED ON SELECTED
-            switch (cmbxDepartment.SelectedIndex) // BASICALLY THE CHOICES OF POSITION COMBOBOX JUST CHANGE BASED ON WHAT'S SELECTED ON THE DEPARTMENT
-            {
-                case 0:
-                    this.cmbxPosition.Items.AddRange(dp.posAdministrative);
-                    break;
-                case 1:
-                    this.cmbxPosition.Items.AddRange(dp.posCustomerService);
-                    break;
-                case 2:
-                    this.cmbxPosition.Items.AddRange(dp.posFinance);
-                    break;
-                case 3:
-                    this.cmbxPosition.Items.AddRange(dp.posHumanResource);
-                    break;
-                case 4:
-                    this.cmbxPosition.Items.AddRange(dp.posInformationTechnology);
-                    break;
-                case 5:
-                    this.cmbxPosition.Items.AddRange(dp.posLegal);
-                    break;
-                case 6:
-                    this.cmbxPosition.Items.AddRange(dp.posMarketing);
-                    break;
-                case 7:
-                    this.cmbxPosition.Items.AddRange(dp.posOperation);
-                    break;
-                case 8:
-                    this.cmbxPosition.Items.AddRange(dp.posProduction);
-                    break;
-                case 9:
-                    this.cmbxPosition.Items.AddRange(dp.posPurchasing);
-                    break;
-                case 10:
-                    this.cmbxPosition.Items.AddRange(dp.posResearchAndDevelopment);
-                    break;
-                case 11:
-                    this.cmbxPosition.Items.AddRange(dp.posSales);
-                    break;
-                default:
-                    break;
-            }
+            ff.departmentChange(cmbxDepartment, cmbxPosition);
         }
         /// <summary>
         /// SETS LOGIC FOR CONTRACTUAL AND REGULAR EMPLOYEES
@@ -255,71 +202,14 @@ namespace Fireon
             sf.secondRegex(e);
         }
         #endregion
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         #region UPLOADING AN EMPLOYEE PICTURE LOGIC
         /// <summary>
-        /// FUNCTION THAT EVALUATES between "Upload Image" and "Upload Doc"
+        /// FUNCTION THAT EVALUATES BETWEEN "Upload Image" and "Upload Doc"
         /// </summary>
         private void uploadFile(object sender)
         {
             // CHANGE FILTER HERE BASED ON WHICH BUTTON IS CLICKED
-            // BETWEEN "btnUploadImage" and "btnUploadFile"
+            // BETWEEN "btnUploadImage" AND "btnUploadFile"
             Button senderName = (Button)sender; // CAST THE SENDER
             switch (senderName.Name)
             {
@@ -366,11 +256,7 @@ namespace Fireon
                     break;
                 default:
                     break;
-
             }
-            // I HAVE MADE A TEMPLATE FUNCTION THAT COPIES ONE FILE TO ANOTHER IN clsDatabaseFunctions
-            //db.dbCopyFile(ofdUploadFile.FileName, ofdUploadFile.FileName, @"C:\Users\Public\Public Desktop\TestFolder");
-            
             // IMPORTANT TO CLEAR FILENAME ON THE DIALOG
             ofdUploadFile.FileName = String.Empty;
         }

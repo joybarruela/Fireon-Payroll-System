@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="clsDatabaseFunctions.cs" />
     <Compile Include="clsDepartmentAndPositions.cs" />
+    <Compile Include="clsFireonFunctions.cs" />
     <Compile Include="clsStringFunctions.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

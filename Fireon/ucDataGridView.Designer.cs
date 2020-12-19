@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.theDataGridView = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.theDataGridView)).BeginInit();
+            this.dgvTheDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTheDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // theDataGridView
+            // dgvTheDataGridView
             // 
-            this.theDataGridView.AllowUserToAddRows = false;
-            this.theDataGridView.AllowUserToDeleteRows = false;
-            this.theDataGridView.AllowUserToResizeColumns = false;
-            this.theDataGridView.AllowUserToResizeRows = false;
-            this.theDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.theDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.theDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.theDataGridView.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.theDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.theDataGridView.Name = "theDataGridView";
-            this.theDataGridView.ReadOnly = true;
-            this.theDataGridView.Size = new System.Drawing.Size(526, 312);
-            this.theDataGridView.TabIndex = 276;
-            this.theDataGridView.TabStop = false;
+            this.dgvTheDataGridView.AllowUserToAddRows = false;
+            this.dgvTheDataGridView.AllowUserToDeleteRows = false;
+            this.dgvTheDataGridView.AllowUserToResizeColumns = false;
+            this.dgvTheDataGridView.AllowUserToResizeRows = false;
+            this.dgvTheDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvTheDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTheDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvTheDataGridView.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.dgvTheDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dgvTheDataGridView.Name = "dgvTheDataGridView";
+            this.dgvTheDataGridView.ReadOnly = true;
+            this.dgvTheDataGridView.Size = new System.Drawing.Size(526, 312);
+            this.dgvTheDataGridView.TabIndex = 276;
+            this.dgvTheDataGridView.TabStop = false;
             // 
             // ucDataGridView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.theDataGridView);
+            this.Controls.Add(this.dgvTheDataGridView);
             this.Name = "ucDataGridView";
             this.Size = new System.Drawing.Size(526, 312);
-            ((System.ComponentModel.ISupportInitialize)(this.theDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTheDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public System.Windows.Forms.DataGridView theDataGridView;
+        public System.Windows.Forms.DataGridView dgvTheDataGridView;
     }
 }

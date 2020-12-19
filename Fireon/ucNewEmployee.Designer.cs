@@ -355,6 +355,7 @@
             this.mcBirthdate.Location = new System.Drawing.Point(8, 253);
             this.mcBirthdate.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.mcBirthdate.MaxSelectionCount = 1;
+            this.mcBirthdate.MinDate = new System.DateTime(1800, 1, 1, 0, 0, 0, 0);
             this.mcBirthdate.Name = "mcBirthdate";
             this.mcBirthdate.TabIndex = 12;
             this.mcBirthdate.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.mcBirthdate_DateSelected);
@@ -506,7 +507,7 @@
             this.lblSelectedBirthdate.Name = "lblSelectedBirthdate";
             this.lblSelectedBirthdate.Size = new System.Drawing.Size(78, 17);
             this.lblSelectedBirthdate.TabIndex = 11;
-            this.lblSelectedBirthdate.Text = "yyyy-mm-dd";
+            this.lblSelectedBirthdate.Text = "mm-dd-yyyy";
             this.lblSelectedBirthdate.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblJobInformation

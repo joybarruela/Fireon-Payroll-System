@@ -127,7 +127,7 @@
   </data>
   <data name="db_connection_string" xml:space="preserve">
     <value>server=localhost;user id=root;password=1234;database=fireon</value>
-    <comment>Your local database setup should have the same credentials like this string resource.</comment>
+    <comment>Replicate this setting to be able to run it.</comment>
   </data>
   <data name="int_login_attempts" xml:space="preserve">
     <value>3</value>
@@ -146,7 +146,7 @@
     <comment>The message if the user attempts to login above the limit.</comment>
   </data>
   <data name="msg_loading_message" xml:space="preserve">
-    <value>Loading will take some time, please be patient.</value>
+    <value>Loading will take some time, thank you for waiting.</value>
     <comment>Simple loading message.</comment>
   </data>
   <data name="str_process_name_deploy" xml:space="preserve">
@@ -362,11 +362,11 @@
     <comment>To be used in add employee.</comment>
   </data>
   <data name="msg_exception" xml:space="preserve">
-    <value>Cannot perform the process. \n </value>
+    <value>Cannot perform the requested process.</value>
     <comment>Use this to append to every exception to catch.</comment>
   </data>
   <data name="msg_new_employee_prompt" xml:space="preserve">
-    <value>ABORT to go back, RETRY to clear fields, IGNORE to cancel.</value>
+    <value>Press ABORT to go back, RETRY to reset fields, IGNORE to cancel.</value>
     <comment>Used in the New Employee Cancel feature.</comment>
   </data>
   <data name="msg_new_employee_retry" xml:space="preserve">
@@ -390,5 +390,32 @@
   </data>
   <data name="btnUploadDocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\other-buttons\btnuploaddocument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="int_inception_date" xml:space="preserve">
+    <value>2020</value>
+    <comment>The date when the Company started.</comment>
+  </data>
+  <data name="query_search_init" xml:space="preserve">
+    <value>SELECT * FROM tbl_employee</value>
+    <comment>The first part of the query.</comment>
+  </data>
+  <data name="ghost_text_search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="msg_employee_added" xml:space="preserve">
+    <value>Employee successfully added.</value>
+    <comment>Congratulatory message.</comment>
+  </data>
+  <data name="query_account" xml:space="preserve">
+    <value>SELECT * FROM tbl_account</value>
+    <comment>For the account list.</comment>
+  </data>
+  <data name="int_max_document_count" xml:space="preserve">
+    <value>5</value>
+    <comment>The limit where the user can upload documents.</comment>
+  </data>
+  <data name="msg_max_capacity" xml:space="preserve">
+    <value>Exceeding file count capacity.</value>
+    <comment>When reached the document count limit.</comment>
   </data>
 </root>

@@ -10,233 +10,10 @@ namespace Fireon
     /// </summary>
     public partial class frmFireonPayroll : Form
     {
-        #region CUSTOM BUILT FUNCTIONS
-        /// <summary>
-        /// THIS METHOD GETS CALLED WHENEVER THE USER CLICKS A BUTTON ON THE SIDEBAR.
-        /// WHAT THIS DOES IS IT RESETS ALL THE BACKGROUND IMAGE OF THE BUTTONS TO ITS' UNCLICKED STATE.
-        /// </summary>
-        public void deactivate_button()
-        {
-            btnDashboard.BackgroundImage = Properties.Resources.btnDashboard; // RESET BUTTON BG
-            btnEmployee.BackgroundImage = Properties.Resources.btnEmployee; // RESET BUTTON BG
-            btnLeave.BackgroundImage = Properties.Resources.btnLeave; // RESET BUTTON BG
-            btnOvertime.BackgroundImage = Properties.Resources.btnOvertime; // RESET BUTTON BG
-            btnHoliday.BackgroundImage = Properties.Resources.btnHoliday; // RESET BUTTON BG
-            btnViolations.BackgroundImage = Properties.Resources.btnViolation; // RESET BUTTON BG
-            btnSettings.BackgroundImage = Properties.Resources.btnSettings; // RESET BUTTON BG
-            btnCashAdvance.BackgroundImage = Properties.Resources.btnCashAdvance; // RESET BUTTON BG
-            btnAllowances.BackgroundImage = Properties.Resources.btnAllowance; // RESET BUTTON BG
-            btnDeductions.BackgroundImage = Properties.Resources.btnDeduction; // RESET BUTTON BG
-            btnAll.BackgroundImage = Properties.Resources.btnAll; // RESET BUTTON BG
-            btnDepartment.BackgroundImage = Properties.Resources.btnDepartment; // RESET BUTTON BG
-            btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePosting; // RESET BUTTON BG
-        }
-        /// <summary>
-        /// CALL THIS TO SHOW ITEMS ON THE DASHBOARD
-        /// </summary>
-        public void displayUserControl(string name)
-        {
-            // CLOSES MENU THREE DOTS PANEL
-            pnlMenu.Visible = false;
-            switch (name)
-            {
-                case "Dashboard":
-                    if (this.Text != "Fireon Payroll System | Dashboard")
-                    {
-                        pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                        btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
-                        ucDashboard ucDashboard = new ucDashboard(); // CREATES A NEW UserControl
-                        ucDashboard.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
-                        ucDashboard.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                        this.Text = "Fireon Payroll System | Dashboard";
-                        break;                    
-                    }
-                    else { break; };
-
-                case "Employee":
-                    if (this.Text != "Fireon Payroll System | Employee")
-                    {
-                        pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                        btnEmployee.BackgroundImage = Properties.Resources.btnEmployeeActive; // SET BUTTON ACTIVE
-                        ucEmployee ucEmployee = new ucEmployee(); // CREATES A NEW UserControl
-                        ucEmployee.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
-                        ucEmployee.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                        this.Text = "Fireon Payroll System | Employee";
-                        break;                    
-                    }
-                    else { break; };
-
-                case "Leave":
-                    if (this.Text != "Fireon Payroll System | Leave")
-                    {
-                        pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                        btnLeave.BackgroundImage = Properties.Resources.btnLeaveActive; // SET BUTTON ACTIVE
-                        ucLeave ucLeave = new ucLeave(); // CREATES A NEW UserControl
-                        ucLeave.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
-                        ucLeave.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                        this.Text = "Fireon Payroll System | Leave";
-                        break;
-                    }
-                    else { break; };
-
-                //case "Overtime":
-                //    if (this.Text != "Fireon Payroll System | Overtime")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_overtime.BackgroundImage = Properties.Resources.btn_overtime_active; // SET BUTTON ACTIVE
-                //        ucOvertime ucOvertime = new ucOvertime(); // CREATES A NEW UserControl
-                //        ucOvertime.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucOvertime.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Overtime";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Holiday":
-                //    if (this.Text != "Fireon Payroll System | Holiday")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_holiday.BackgroundImage = Properties.Resources.btn_holiday_active; // SET BUTTON ACTIVE
-                //        ucHoliday ucHoliday = new ucHoliday(); // CREATES A NEW UserControl
-                //        ucHoliday.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucHoliday.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Holiday";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Violation":
-                //    if (this.Text != "Fireon Payroll System | Violation")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_violations.BackgroundImage = Properties.Resources.btn_violations_active; // SET BUTTON ACTIVE
-                //        ucViolations ucViolations = new ucViolations(); // CREATES A NEW UserControl
-                //        ucViolations.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucViolations.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Violation";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Cash Advance":
-                //    if (this.Text != "Fireon Payroll System | Cash Advance")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_cash_advance.BackgroundImage = Properties.Resources.btn_cash_advance_active; // SET BUTTON ACTIVE
-                //        ucCashAdvance ucCashAdvance = new ucCashAdvance(); // CREATES A NEW UserControl
-                //        ucCashAdvance.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucCashAdvance.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Cash Advance";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Deduction":
-                //    if (this.Text != "Fireon Payroll System | Deduction")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_deductions.BackgroundImage = Properties.Resources.btn_deductions_active; // SET BUTTON ACTIVE
-                //        ucDeductions ucDeductions = new ucDeductions(); // CREATES A NEW UserControl
-                //        ucDeductions.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucDeductions.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Deduction";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Allowance":
-                //    if (this.Text != "Fireon Payroll System | Allowance")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_allowances.BackgroundImage = Properties.Resources.btn_allowances_active; // SET BUTTON ACTIVE
-                //        ucAllowances ucAllowances = new ucAllowances(); // CREATES A NEW UserControl
-                //        ucAllowances.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucAllowances.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Allowance";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "All":
-                //    if (this.Text != "Fireon Payroll System | All")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_all.BackgroundImage = Properties.Resources.btn_all_active; // SET BUTTON ACTIVE
-                //        ucAll ucAll = new ucAll(); // CREATES A NEW UserControl
-                //        ucAll.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucAll.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | All";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Department":
-                //    if (this.Text != "Fireon Payroll System | Department")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_department.BackgroundImage = Properties.Resources.btn_department_active; // SET BUTTON ACTIVE
-                //        ucDepartment ucDepartment = new ucDepartment(); // CREATES A NEW UserControl
-                //        ucDepartment.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucDepartment.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Department";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Single Posting":
-                //    if (this.Text != "Fireon Payroll System | Single Posting")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_single_posting.BackgroundImage = Properties.Resources.btn_single_active; // SET BUTTON ACTIVE
-                //        ucSinglePosting ucSinglePosting = new ucSinglePosting(); // CREATES A NEW UserControl
-                //        ucSinglePosting.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucSinglePosting.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Single Posting";
-                //        break;
-                //    }
-                //    else { break; };
-
-                //case "Setting":
-                //    if (this.Text != "Fireon Payroll System | Setting")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_settings.BackgroundImage = Properties.Resources.btn_settings_active; // SET BUTTON ACTIVE
-                //        ucSettings ucSettings = new ucSettings(); // CREATES A NEW UserControl
-                //        ucSettings.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucSettings.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Setting";
-                //        break;
-                //    }
-                //    else { break; };
-
-                default:
-                    pnlSelected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                    deactivate_button(); // RESETS ALL BUTTON TO EMPTY STATE
-                    btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
-                    ucDashboard ucDashboardDefault = new ucDashboard(); // CREATES A NEW UserControl
-                    ucDashboardDefault.Parent = pnlSelected; // SET PARENT OF NEW DASHBOARD
-                    ucDashboardDefault.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                    this.Text = "Fireon Payroll System | Dashboard";
-                    break;  
-            }
-        }
-        #endregion
+        clsFireonFunctions ff = new clsFireonFunctions();
         #region TRIGGERS AND EVENTS
         /// <summary>
-        /// CLASS CONSTRUCTOR.
+        /// CLASS CONSTRUCTOR
         /// </summary>
         public frmFireonPayroll()
         {
@@ -280,22 +57,22 @@ namespace Fireon
         /// <summary>
         /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE MENU BUTTON ON THE UPPER RIGHT SIDE. (THE THREE DOTS).
         /// </summary>
-        private void btn_menu_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
-            pnlMenu.BringToFront(); // BRINGS THE MENU PANEL TO FRONT.
-            pnlMenu.Visible = !pnlMenu.Visible; // CHANGES THE STATE OF VISIBILITY OF PANEL MENU.
+            pnlMenu.BringToFront(); // BRINGS THE MENU PANEL TO FRONT
+            pnlMenu.Visible = !pnlMenu.Visible; // CHANGES THE STATE OF VISIBILITY OF PANEL MENU
         }
         /// <summary>
         /// WHEN THE USER CLICKS LOGOUT
         /// </summary>
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            pnlMenu.Visible = !pnlMenu.Visible; // HIDES THE MENU PANEL.
+            pnlMenu.Visible = !pnlMenu.Visible; // HIDES THE MENU PANEL
             // ASK THE USER FIRST FOR CONFIRMATION
             if (MessageBox.Show(Properties.Resources.msg_logout_confirmation, Properties.Resources.str_program_title, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
-                this.Dispose(); // DISPOSES THIS FORM.
-                clsProgram.programInstance.Show(); // SHOWS THE LOGIN FORM BACK TO LIFE.
+                this.Dispose(); // DISPOSES THIS FORM
+                clsProgram.programInstance.Show(); // SHOWS THE LOGIN FORM BACK TO LIFE
             }
         }
         #endregion
@@ -303,57 +80,321 @@ namespace Fireon
         /// <summary>
         /// WHEN THE LEFT SIDE BAR BUTTONS ARE CLICKED. SAME GOES WITH ALL OTHER 12 BUTTONS BELOW.
         /// </summary>
-        private void btn_dashboard_Click(object sender, EventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
             displayUserControl("Dashboard");
         }
-        private void btn_employee_Click(object sender, EventArgs e)
+        private void btnEmployee_Click(object sender, EventArgs e)
         {
             displayUserControl("Employee");
         }
-        private void btn_leave_Click(object sender, EventArgs e)
+        private void btnLeave_Click(object sender, EventArgs e)
         {
             displayUserControl("Leave");
         }
-        private void btn_overtime_Click(object sender, EventArgs e)
+        private void btnOvertime_Click(object sender, EventArgs e)
         {
             //displayUserControl("Overtime");
         }
-        private void btn_holiday_Click(object sender, EventArgs e)
+        private void btnHoliday_Click(object sender, EventArgs e)
         {
             //displayUserControl("Holiday");
         }
-        private void btn_violations_Click(object sender, EventArgs e)
+        private void btnViolation_Click(object sender, EventArgs e)
         {
             //displayUserControl("Violation");
         }
-        private void btn_cash_advance_Click(object sender, EventArgs e)
+        private void btnCashAdvance_Click(object sender, EventArgs e)
         {
             //displayUserControl("Cash Advance");
         }
-        private void btn_deductions_Click(object sender, EventArgs e)
+        private void btnDeduction_Click(object sender, EventArgs e)
         {
             //displayUserControl("Deduction");
         }
-        private void btn_allowances_Click(object sender, EventArgs e)
+        private void btnAllowance_Click(object sender, EventArgs e)
         {
             //displayUserControl("Allowance");
         }
-        private void btn_all_Click(object sender, EventArgs e)
+        private void btnAll_Click(object sender, EventArgs e)
         {
             //displayUserControl("All");
         }
-        private void btn_department_Click(object sender, EventArgs e)
+        private void btnDepartment_Click(object sender, EventArgs e)
         {
             //displayUserControl("Department");
         }
-        private void btn_single_posting_Click(object sender, EventArgs e)
+        private void btnSinglePosting_Click(object sender, EventArgs e)
         {
             //displayUserControl("Single Posting");
         }
-        private void btn_settings_Click(object sender, EventArgs e)
+        private void btnSettings_Click(object sender, EventArgs e)
         {
             //displayUserControl("Setting");
+        }
+        #endregion
+
+        #region CUSTOM BUILT FUNCTIONS
+        /// <summary>
+        /// THIS METHOD GETS CALLED WHENEVER THE USER CLICKS A BUTTON ON THE SIDEBAR
+        /// WHAT THIS DOES IS IT RESETS ALL THE BACKGROUND IMAGE OF THE BUTTONS TO ITS' UNCLICKED STATE
+        /// </summary>
+        public void setActive(String mode)
+        {
+            btnDashboard.BackgroundImage = Properties.Resources.btnDashboard; // RESET BUTTON BG
+            btnEmployee.BackgroundImage = Properties.Resources.btnEmployee; // RESET BUTTON BG
+            btnLeave.BackgroundImage = Properties.Resources.btnLeave; // RESET BUTTON BG
+            btnOvertime.BackgroundImage = Properties.Resources.btnOvertime; // RESET BUTTON BG
+            btnHoliday.BackgroundImage = Properties.Resources.btnHoliday; // RESET BUTTON BG
+            btnViolation.BackgroundImage = Properties.Resources.btnViolation; // RESET BUTTON BG
+            btnSettings.BackgroundImage = Properties.Resources.btnSettings; // RESET BUTTON BG
+            btnCashAdvance.BackgroundImage = Properties.Resources.btnCashAdvance; // RESET BUTTON BG
+            btnAllowance.BackgroundImage = Properties.Resources.btnAllowance; // RESET BUTTON BG
+            btnDeduction.BackgroundImage = Properties.Resources.btnDeduction; // RESET BUTTON BG
+            btnAll.BackgroundImage = Properties.Resources.btnAll; // RESET BUTTON BG
+            btnDepartment.BackgroundImage = Properties.Resources.btnDepartment; // RESET BUTTON BG
+            btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePosting; // RESET BUTTON BG
+
+            switch (mode)
+            {
+                case "Fireon Payroll System | Dashboard":
+                    btnDashboard.BackgroundImage = Properties.Resources.btnDashboardActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Dashboard";
+                    break;
+                case "Fireon Payroll System | Employee":
+                    btnEmployee.BackgroundImage = Properties.Resources.btnEmployeeActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Employee";
+                    break;
+                case "Fireon Payroll System | Leave":
+                    btnLeave.BackgroundImage = Properties.Resources.btnLeaveActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Leave";
+                    break;
+                case "Fireon Payroll System | Overtime":
+                    btnOvertime.BackgroundImage = Properties.Resources.btnOvertimeActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Overtime";
+                    break;
+                case "Fireon Payroll System | Holiday":
+                    btnHoliday.BackgroundImage = Properties.Resources.btnHolidayActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Holiday";
+                    break;
+                case "Fireon Payroll System | Violation":
+                    btnViolation.BackgroundImage = Properties.Resources.btnViolationActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Violation";
+                    break;
+                case "Fireon Payroll System | Cash Advance":
+                    btnCashAdvance.BackgroundImage = Properties.Resources.btnCashAdvanceActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Cash Advance";
+                    break;
+                case "Fireon Payroll System | Deduction":
+                    btnDeduction.BackgroundImage = Properties.Resources.btnDeductionActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Deduction";
+                    break;
+                case "Fireon Payroll System | Allowance":
+                    btnAllowance.BackgroundImage = Properties.Resources.btnAllowanceActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Allowance";
+                    break;
+                case "Fireon Payroll System | All":
+                    btnAll.BackgroundImage = Properties.Resources.btnAllActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | All";
+                    break;
+                case "Fireon Payroll System | Department":
+                    btnDepartment.BackgroundImage = Properties.Resources.btnDepartmentActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Department";
+                    break;
+                case "Fireon Payroll System | Single Posting":
+                    btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePostingActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Single Posting";
+                    break;
+                case "Fireon Payroll System | Settings":
+                    btnSettings.BackgroundImage = Properties.Resources.btnSettingsActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Settings";
+                    break;
+            }
+
+
+
+        }
+        /// <summary>
+        /// CALL THIS TO SHOW ITEMS ON THE DASHBOARD
+        /// </summary>
+        public void displayUserControl(string mode)
+        {
+            // CLOSES MENU THREE DOTS PANEL
+            pnlMenu.Visible = false;
+            switch (mode)
+            {
+                case "Dashboard":
+                    if (this.Text != "Fireon Payroll System | Dashboard")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucDashboard());
+                        setActive("Fireon Payroll System | Dashboard");
+                        break;
+                    }
+                    else { break; };
+
+                case "Employee":
+                    if (this.Text != "Fireon Payroll System | Employee")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucEmployee());
+                        setActive("Fireon Payroll System | Employee");
+                        break;
+                    }
+                    else { break; };
+
+                case "Leave":
+                    if (this.Text != "Fireon Payroll System | Leave")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucLeave());
+                        setActive("Fireon Payroll System | Leave");
+                        break;
+                    }
+                    else { break; };
+
+                //case "Overtime":
+                //    if (this.Text != "Fireon Payroll System | Overtime")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_overtime.BackgroundImage = Properties.Resources.btn_overtime_active; // SET BUTTON ACTIVE
+                //        ucOvertime ucOvertime = new ucOvertime(); // CREATES A NEW UserControl
+                //        ucOvertime.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucOvertime.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Overtime";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Holiday":
+                //    if (this.Text != "Fireon Payroll System | Holiday")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_holiday.BackgroundImage = Properties.Resources.btn_holiday_active; // SET BUTTON ACTIVE
+                //        ucHoliday ucHoliday = new ucHoliday(); // CREATES A NEW UserControl
+                //        ucHoliday.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucHoliday.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Holiday";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Violation":
+                //    if (this.Text != "Fireon Payroll System | Violation")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_violations.BackgroundImage = Properties.Resources.btn_violations_active; // SET BUTTON ACTIVE
+                //        ucViolations ucViolations = new ucViolations(); // CREATES A NEW UserControl
+                //        ucViolations.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucViolations.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Violation";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Cash Advance":
+                //    if (this.Text != "Fireon Payroll System | Cash Advance")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_cash_advance.BackgroundImage = Properties.Resources.btn_cash_advance_active; // SET BUTTON ACTIVE
+                //        ucCashAdvance ucCashAdvance = new ucCashAdvance(); // CREATES A NEW UserControl
+                //        ucCashAdvance.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucCashAdvance.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Cash Advance";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Deduction":
+                //    if (this.Text != "Fireon Payroll System | Deduction")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_deductions.BackgroundImage = Properties.Resources.btn_deductions_active; // SET BUTTON ACTIVE
+                //        ucDeductions ucDeductions = new ucDeductions(); // CREATES A NEW UserControl
+                //        ucDeductions.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucDeductions.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Deduction";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Allowance":
+                //    if (this.Text != "Fireon Payroll System | Allowance")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_allowances.BackgroundImage = Properties.Resources.btn_allowances_active; // SET BUTTON ACTIVE
+                //        ucAllowances ucAllowances = new ucAllowances(); // CREATES A NEW UserControl
+                //        ucAllowances.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucAllowances.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Allowance";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "All":
+                //    if (this.Text != "Fireon Payroll System | All")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_all.BackgroundImage = Properties.Resources.btn_all_active; // SET BUTTON ACTIVE
+                //        ucAll ucAll = new ucAll(); // CREATES A NEW UserControl
+                //        ucAll.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucAll.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | All";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Department":
+                //    if (this.Text != "Fireon Payroll System | Department")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_department.BackgroundImage = Properties.Resources.btn_department_active; // SET BUTTON ACTIVE
+                //        ucDepartment ucDepartment = new ucDepartment(); // CREATES A NEW UserControl
+                //        ucDepartment.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucDepartment.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Department";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Single Posting":
+                //    if (this.Text != "Fireon Payroll System | Single Posting")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_single_posting.BackgroundImage = Properties.Resources.btn_single_active; // SET BUTTON ACTIVE
+                //        ucSinglePosting ucSinglePosting = new ucSinglePosting(); // CREATES A NEW UserControl
+                //        ucSinglePosting.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucSinglePosting.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Single Posting";
+                //        break;
+                //    }
+                //    else { break; };
+
+                //case "Setting":
+                //    if (this.Text != "Fireon Payroll System | Setting")
+                //    {
+                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
+                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
+                //        btn_settings.BackgroundImage = Properties.Resources.btn_settings_active; // SET BUTTON ACTIVE
+                //        ucSettings ucSettings = new ucSettings(); // CREATES A NEW UserControl
+                //        ucSettings.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
+                //        ucSettings.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
+                //        this.Text = "Fireon Payroll System | Setting";
+                //        break;
+                //    }
+                //    else { break; };
+
+                default:
+                    ff.displayUserControl(pnlSelected, new ucDashboard());
+                    setActive("Fireon Payroll System | Dashboard");
+                    break;
+            }
         }
         #endregion
     }

@@ -13,33 +13,32 @@ namespace Fireon
 {
     public partial class frmLogin : Form
     {
-        clsDatabaseFunctions db = new clsDatabaseFunctions(); // CREATE AN INSTANCE OF clsDatabaseFunctions.
-        int loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // DECREMENTS BY 1 EVERY TIME THE USER FAILS TO LOG IN THE SYSTEM.
-        frmFireonPayroll main_form = new frmFireonPayroll(); // CREATE INSTANCE OF THE MAIN FORM 
+        clsDatabaseFunctions db = new clsDatabaseFunctions();
+        int loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // DECREMENTS BY 1 EVERY TIME THE USER FAILS TO LOG IN THE SYSTEM
+        frmFireonPayroll main_form = new frmFireonPayroll(); // CREATE INSTANCE OF THE MAIN FORM
 
         /// <summary>
-        /// THIS METHOD IS CALLED EVERY TIME new frmLogin(); IS CALLED EVERYWHERE THE PROGRAM. THIS IS CALLED A CONSTRUCTOR.
+        /// THIS METHOD IS CALLED EVERY TIME new frmLogin(); IS CALLED EVERYWHERE THE PROGRAM. THIS IS CALLED A CONSTRUCTOR
         /// </summary>
         public frmLogin()
         {
-            InitializeComponent(); // LOADS ALL COMPONENTS OF THE frmLogin. THIS IS A SYSTEM PREREQUISITE.
+            InitializeComponent(); // LOADS ALL COMPONENTS OF THE frmLogin. THIS IS A SYSTEM PREREQUISITE
         }
         /// <summary>
-        /// THIS METHOD GETS CALLED EVERY TIME THE frmLogin FORM OBJECT GETS LOADED IN THE MEMORY.
-        /// THIS LOGIN FORM WILL ONLY LOAD ONCE, WHEN THE USER LOGS IN SUCCESSFULLY, THIS FORM IS ONLY HIDDEN, NOT DISPOSED.
+        /// THIS METHOD GETS CALLED EVERY TIME THE frmLogin FORM OBJECT GETS LOADED IN THE MEMORY
+        /// THIS LOGIN FORM WILL ONLY LOAD ONCE, WHEN THE USER LOGS IN SUCCESSFULLY, THIS FORM IS ONLY HIDDEN, NOT DISPOSED
         /// </summary>
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            main_form.Hide(); // HIDE FIRST THE MAIN FORM.
+            main_form.Hide(); // HIDE FIRST THE MAIN FORM
         }
         /// <summary>
-        /// BARRUELA, VIBIESCA
-        /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE LOGIN BUTTON FROM THE LOGIN FORM.
+        /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE LOGIN BUTTON FROM THE LOGIN FORM
         /// </summary>
         private void btn_login_Click(object sender, EventArgs e)
         {
             /* ALGORITHM
-             * #1 IF THE USER CLICKS LOGIN, THIS METHOD WILL CALL THE dbLogin METHOD THAT WILL CHECK ON THE DATABASE IF USERNAME AND PASSWORDS MATCH.
+             * #1 IF THE USER CLICKS LOGIN, THIS METHOD WILL CALL THE dbLogin METHOD THAT WILL CHECK ON THE DATABASE IF USERNAME AND PASSWORDS MATCH
              * #2 IF THERE IS MATCHING USERNAME, CLOSE THE LOGIN AND PROCEED TO DASHBOARD
              * #3 IF NOT THEN DECREMENT THE VALUE OF LOGIN ATTEMPTS. AT 
              */
@@ -48,19 +47,19 @@ namespace Fireon
                 MessageBox.Show(Properties.Resources.msg_login_match, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show(Properties.Resources.msg_loading_message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                this.Hide(); // HIDES THIS LOGIN FORM.
+                this.Hide(); // HIDES THIS LOGIN FORM
 
                 // TRY: SHOWING THE MAIN FORM
                 // BUT IN CASE NO MAIN FORM OBJECT EXISTS (WHICH HAPPEN WHEN YOU LOG OUT BECAUSE THAT KILLS THE INSTANCE OF LOGIN)
-                // DO WHAT IS IN THE CATCH SECTION WHICH IS REINSTANTIATING THE FORM OBJECT.
+                // DO WHAT IS IN THE CATCH SECTION WHICH IS REINSTANTIATING THE FORM OBJECT
                 try
                 {
-                    main_form.Show(); // SHOWS THE MAIN FORM OF THE PROGRAM.
+                    main_form.Show(); // SHOWS THE MAIN FORM OF THE PROGRAM
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());
-                    frmFireonPayroll main_form = new frmFireonPayroll(); // CREATE INSTANCE OF THE MAIN FORM 
+                    frmFireonPayroll main_form = new frmFireonPayroll(); // CREATE INSTANCE OF THE MAIN FORM
                     main_form.Show();
                 }
             }
@@ -72,21 +71,20 @@ namespace Fireon
             if (loginAttempts == 0) // IF NO MORE ATTEMPTS
             {
                 MessageBox.Show(Properties.Resources.msg_login_terminate, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); // EXIT THE LOGIN WINDOW.
+                this.Close(); // EXIT THE LOGIN WINDOW
             }
         }
         /// <summary>
-        /// VIBIESCA
         /// THIS METHOD GETS CALLED EVERY TIME THE VISIBILITY STATE OF THIS FORM CHANGES
         /// </summary>
         private void frmLogin_VisibleChanged(object sender, EventArgs e)
         {
             if (this.Visible == true)
             {
-                db.dbRead("SELECT * FROM tbl_account", dtgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT.
+                db.dbRead(Properties.Resources.query_account, dtgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT
                 txtbxUsername.Clear(); // CLEAR USERNAME TEXT
                 txtbxPw.Clear(); // CLEAR PASSWORD TEXT
-                loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE.
+                loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE
             }
         }
         
@@ -137,7 +135,7 @@ namespace Fireon
         private void btn_see_pw_MouseLeave(object sender, EventArgs e)
         {
             // CHANGES THE IMAGE WHEN MOUSE LEAVES THE EYE
-            // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE.
+            // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE
             if (String.Compare(txtbxPw.Tag.ToString(), "FALSE") == 0)
             {
                 btnSeePw.BackgroundImage = Properties.Resources.btnIconEyeHover;

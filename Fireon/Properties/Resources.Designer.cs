@@ -720,6 +720,15 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string ghost_text_search {
+            get {
+                return ResourceManager.GetString("ghost_text_search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 216.
         /// </summary>
         public static string int_default_working_hours {
@@ -729,11 +738,29 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 2020.
+        /// </summary>
+        public static string int_inception_date {
+            get {
+                return ResourceManager.GetString("int_inception_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3.
         /// </summary>
         public static string int_login_attempts {
             get {
                 return ResourceManager.GetString("int_login_attempts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5.
+        /// </summary>
+        public static string int_max_document_count {
+            get {
+                return ResourceManager.GetString("int_max_document_count", resourceCulture);
             }
         }
         
@@ -798,7 +825,16 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cannot perform the process. \n .
+        ///   Looks up a localized string similar to Employee successfully added..
+        /// </summary>
+        public static string msg_employee_added {
+            get {
+                return ResourceManager.GetString("msg_employee_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot perform the requested process..
         /// </summary>
         public static string msg_exception {
             get {
@@ -807,7 +843,7 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading will take some time, please be patient..
+        ///   Looks up a localized string similar to Loading will take some time, thank you for waiting..
         /// </summary>
         public static string msg_loading_message {
             get {
@@ -852,7 +888,16 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ABORT to go back, RETRY to clear fields, IGNORE to cancel..
+        ///   Looks up a localized string similar to Exceeding file count capacity..
+        /// </summary>
+        public static string msg_max_capacity {
+            get {
+                return ResourceManager.GetString("msg_max_capacity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Press ABORT to go back, RETRY to reset fields, IGNORE to cancel..
         /// </summary>
         public static string msg_new_employee_prompt {
             get {
@@ -875,6 +920,24 @@ namespace Fireon.Properties {
         public static string msg_welcome_message {
             get {
                 return ResourceManager.GetString("msg_welcome_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT * FROM tbl_account.
+        /// </summary>
+        public static string query_account {
+            get {
+                return ResourceManager.GetString("query_account", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT * FROM tbl_employee.
+        /// </summary>
+        public static string query_search_init {
+            get {
+                return ResourceManager.GetString("query_search_init", resourceCulture);
             }
         }
         

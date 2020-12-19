@@ -11,20 +11,54 @@ namespace Fireon
     /// </summary>
     class clsDepartmentAndPositions
     {
-        //0  ALL
-        //1  Administrative
-        //2  Customer Service
-        //3  Finance
-        //4  Human Resource
-        //5  Information Technology
-        //6  Legal
-        //7  Marketing
-        //8  Operation
-        //9  Production
-        //10 Purchasing
-        //11 Research and Development
-        //12 Sales
-
+        static int inceptionDate = int.Parse(Properties.Resources.int_inception_date);
+        // ALL YEARS
+        public String[] countYears()
+        {
+            List<String> yearsList = new List<String>(); // CREATES A LIST SO THAT ITEMS COULD BE ADDED UNLIKE THE ARRAY, BUT WE'LL CONVERT TO THAT LATER.
+            for (int i = inceptionDate; i <= DateTime.Today.Year; i++) // LOOP THRU INCEPTION DATE (IN THIS CASE 2020) TO CURRENT YEAR AND ADD EACH ITEM ON THE LIST.
+            {
+                yearsList.Add(i.ToString());
+            }
+            String[] yearsArray = yearsList.ToArray(); // CONVERT THE LIST TO ARRAY TO BE USED BY THE YEAR LISTBOX
+            return yearsArray;
+        }
+        // ALL EMPLOYEE STATUS
+        public object[] employeeStatus = {
+        "Contractual",
+        "Regular"
+        };
+        // ALL DEPARTMENTS
+        public object[] departments = {
+        "Administrative",
+        "Customer Service",
+        "Finance",
+        "Human Resource",
+        "Information Technology",
+        "Legal",
+        "Marketing",
+        "Operation",
+        "Production",
+        "Purchasing",
+        "Research and Development",
+        "Sales"
+        };
+        // ALL MONTHS
+        public object[] months = {
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+        };
+        // ALL AVAILABLE POSITIONS
         public object[] posAdministrative = {
         "Administrative Manager",
         "Administrative Assistant Director",

@@ -53,13 +53,13 @@
             this.pnlSeparator9 = new System.Windows.Forms.Panel();
             this.btnAll = new System.Windows.Forms.Button();
             this.lblPayroll = new System.Windows.Forms.Label();
-            this.btnAllowances = new System.Windows.Forms.Button();
+            this.btnAllowance = new System.Windows.Forms.Button();
             this.pnlSeparator8 = new System.Windows.Forms.Panel();
-            this.btnDeductions = new System.Windows.Forms.Button();
+            this.btnDeduction = new System.Windows.Forms.Button();
             this.pnlSeparator7 = new System.Windows.Forms.Panel();
             this.btnCashAdvance = new System.Windows.Forms.Button();
             this.pnlSeparator6 = new System.Windows.Forms.Panel();
-            this.btnViolations = new System.Windows.Forms.Button();
+            this.btnViolation = new System.Windows.Forms.Button();
             this.pnlSeparator5 = new System.Windows.Forms.Panel();
             this.btnHoliday = new System.Windows.Forms.Button();
             this.pnlSeparator4 = new System.Windows.Forms.Panel();
@@ -200,7 +200,7 @@
             this.btnMenu.TabIndex = 7;
             this.btnMenu.TabStop = false;
             this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btn_menu_Click);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // pnlBlockersTop
             // 
@@ -259,13 +259,13 @@
             this.pnlSidebar.Controls.Add(this.pnlSeparator9);
             this.pnlSidebar.Controls.Add(this.btnAll);
             this.pnlSidebar.Controls.Add(this.lblPayroll);
-            this.pnlSidebar.Controls.Add(this.btnAllowances);
+            this.pnlSidebar.Controls.Add(this.btnAllowance);
             this.pnlSidebar.Controls.Add(this.pnlSeparator8);
-            this.pnlSidebar.Controls.Add(this.btnDeductions);
+            this.pnlSidebar.Controls.Add(this.btnDeduction);
             this.pnlSidebar.Controls.Add(this.pnlSeparator7);
             this.pnlSidebar.Controls.Add(this.btnCashAdvance);
             this.pnlSidebar.Controls.Add(this.pnlSeparator6);
-            this.pnlSidebar.Controls.Add(this.btnViolations);
+            this.pnlSidebar.Controls.Add(this.btnViolation);
             this.pnlSidebar.Controls.Add(this.pnlSeparator5);
             this.pnlSidebar.Controls.Add(this.btnHoliday);
             this.pnlSidebar.Controls.Add(this.pnlSeparator4);
@@ -329,7 +329,7 @@
             this.btnSettings.TabIndex = 26;
             this.btnSettings.TabStop = false;
             this.btnSettings.UseVisualStyleBackColor = false;
-            this.btnSettings.Click += new System.EventHandler(this.btn_settings_Click);
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // pnlSeparator11
             // 
@@ -356,7 +356,7 @@
             this.btnSinglePosting.TabIndex = 24;
             this.btnSinglePosting.TabStop = false;
             this.btnSinglePosting.UseVisualStyleBackColor = false;
-            this.btnSinglePosting.Click += new System.EventHandler(this.btn_single_posting_Click);
+            this.btnSinglePosting.Click += new System.EventHandler(this.btnSinglePosting_Click);
             // 
             // pnlSeparator10
             // 
@@ -383,7 +383,7 @@
             this.btnDepartment.TabIndex = 22;
             this.btnDepartment.TabStop = false;
             this.btnDepartment.UseVisualStyleBackColor = false;
-            this.btnDepartment.Click += new System.EventHandler(this.btn_department_Click);
+            this.btnDepartment.Click += new System.EventHandler(this.btnDepartment_Click);
             // 
             // pnlSeparator9
             // 
@@ -410,7 +410,7 @@
             this.btnAll.TabIndex = 20;
             this.btnAll.TabStop = false;
             this.btnAll.UseVisualStyleBackColor = false;
-            this.btnAll.Click += new System.EventHandler(this.btn_all_Click);
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // lblPayroll
             // 
@@ -426,23 +426,23 @@
             this.lblPayroll.Text = "PAYROLL";
             this.lblPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAllowances
+            // btnAllowance
             // 
-            this.btnAllowances.BackColor = System.Drawing.Color.Transparent;
-            this.btnAllowances.BackgroundImage = global::Fireon.Properties.Resources.btnAllowance;
-            this.btnAllowances.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAllowances.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAllowances.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAllowances.FlatAppearance.BorderSize = 0;
-            this.btnAllowances.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnAllowances.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllowances.Location = new System.Drawing.Point(25, 392);
-            this.btnAllowances.Name = "btnAllowances";
-            this.btnAllowances.Size = new System.Drawing.Size(176, 28);
-            this.btnAllowances.TabIndex = 18;
-            this.btnAllowances.TabStop = false;
-            this.btnAllowances.UseVisualStyleBackColor = false;
-            this.btnAllowances.Click += new System.EventHandler(this.btn_allowances_Click);
+            this.btnAllowance.BackColor = System.Drawing.Color.Transparent;
+            this.btnAllowance.BackgroundImage = global::Fireon.Properties.Resources.btnAllowance;
+            this.btnAllowance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAllowance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAllowance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAllowance.FlatAppearance.BorderSize = 0;
+            this.btnAllowance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAllowance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllowance.Location = new System.Drawing.Point(25, 392);
+            this.btnAllowance.Name = "btnAllowance";
+            this.btnAllowance.Size = new System.Drawing.Size(176, 28);
+            this.btnAllowance.TabIndex = 18;
+            this.btnAllowance.TabStop = false;
+            this.btnAllowance.UseVisualStyleBackColor = false;
+            this.btnAllowance.Click += new System.EventHandler(this.btnAllowance_Click);
             // 
             // pnlSeparator8
             // 
@@ -453,23 +453,23 @@
             this.pnlSeparator8.Size = new System.Drawing.Size(176, 10);
             this.pnlSeparator8.TabIndex = 17;
             // 
-            // btnDeductions
+            // btnDeduction
             // 
-            this.btnDeductions.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeductions.BackgroundImage = global::Fireon.Properties.Resources.btnDeduction;
-            this.btnDeductions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDeductions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeductions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDeductions.FlatAppearance.BorderSize = 0;
-            this.btnDeductions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnDeductions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeductions.Location = new System.Drawing.Point(25, 354);
-            this.btnDeductions.Name = "btnDeductions";
-            this.btnDeductions.Size = new System.Drawing.Size(176, 28);
-            this.btnDeductions.TabIndex = 16;
-            this.btnDeductions.TabStop = false;
-            this.btnDeductions.UseVisualStyleBackColor = false;
-            this.btnDeductions.Click += new System.EventHandler(this.btn_deductions_Click);
+            this.btnDeduction.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeduction.BackgroundImage = global::Fireon.Properties.Resources.btnDeduction;
+            this.btnDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDeduction.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeduction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDeduction.FlatAppearance.BorderSize = 0;
+            this.btnDeduction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnDeduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeduction.Location = new System.Drawing.Point(25, 354);
+            this.btnDeduction.Name = "btnDeduction";
+            this.btnDeduction.Size = new System.Drawing.Size(176, 28);
+            this.btnDeduction.TabIndex = 16;
+            this.btnDeduction.TabStop = false;
+            this.btnDeduction.UseVisualStyleBackColor = false;
+            this.btnDeduction.Click += new System.EventHandler(this.btnDeduction_Click);
             // 
             // pnlSeparator7
             // 
@@ -496,7 +496,7 @@
             this.btnCashAdvance.TabIndex = 14;
             this.btnCashAdvance.TabStop = false;
             this.btnCashAdvance.UseVisualStyleBackColor = false;
-            this.btnCashAdvance.Click += new System.EventHandler(this.btn_cash_advance_Click);
+            this.btnCashAdvance.Click += new System.EventHandler(this.btnCashAdvance_Click);
             // 
             // pnlSeparator6
             // 
@@ -507,23 +507,23 @@
             this.pnlSeparator6.Size = new System.Drawing.Size(176, 10);
             this.pnlSeparator6.TabIndex = 13;
             // 
-            // btnViolations
+            // btnViolation
             // 
-            this.btnViolations.BackColor = System.Drawing.Color.Transparent;
-            this.btnViolations.BackgroundImage = global::Fireon.Properties.Resources.btnViolation;
-            this.btnViolations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnViolations.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnViolations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnViolations.FlatAppearance.BorderSize = 0;
-            this.btnViolations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnViolations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViolations.Location = new System.Drawing.Point(25, 278);
-            this.btnViolations.Name = "btnViolations";
-            this.btnViolations.Size = new System.Drawing.Size(176, 28);
-            this.btnViolations.TabIndex = 12;
-            this.btnViolations.TabStop = false;
-            this.btnViolations.UseVisualStyleBackColor = false;
-            this.btnViolations.Click += new System.EventHandler(this.btn_violations_Click);
+            this.btnViolation.BackColor = System.Drawing.Color.Transparent;
+            this.btnViolation.BackgroundImage = global::Fireon.Properties.Resources.btnViolation;
+            this.btnViolation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnViolation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViolation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViolation.FlatAppearance.BorderSize = 0;
+            this.btnViolation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnViolation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViolation.Location = new System.Drawing.Point(25, 278);
+            this.btnViolation.Name = "btnViolation";
+            this.btnViolation.Size = new System.Drawing.Size(176, 28);
+            this.btnViolation.TabIndex = 12;
+            this.btnViolation.TabStop = false;
+            this.btnViolation.UseVisualStyleBackColor = false;
+            this.btnViolation.Click += new System.EventHandler(this.btnViolation_Click);
             // 
             // pnlSeparator5
             // 
@@ -550,7 +550,7 @@
             this.btnHoliday.TabIndex = 10;
             this.btnHoliday.TabStop = false;
             this.btnHoliday.UseVisualStyleBackColor = false;
-            this.btnHoliday.Click += new System.EventHandler(this.btn_holiday_Click);
+            this.btnHoliday.Click += new System.EventHandler(this.btnHoliday_Click);
             // 
             // pnlSeparator4
             // 
@@ -577,7 +577,7 @@
             this.btnOvertime.TabIndex = 8;
             this.btnOvertime.TabStop = false;
             this.btnOvertime.UseVisualStyleBackColor = false;
-            this.btnOvertime.Click += new System.EventHandler(this.btn_overtime_Click);
+            this.btnOvertime.Click += new System.EventHandler(this.btnOvertime_Click);
             // 
             // pnlSeparator3
             // 
@@ -604,7 +604,7 @@
             this.btnLeave.TabIndex = 6;
             this.btnLeave.TabStop = false;
             this.btnLeave.UseVisualStyleBackColor = false;
-            this.btnLeave.Click += new System.EventHandler(this.btn_leave_Click);
+            this.btnLeave.Click += new System.EventHandler(this.btnLeave_Click);
             // 
             // pnlSeparator2
             // 
@@ -631,7 +631,7 @@
             this.btnEmployee.TabIndex = 4;
             this.btnEmployee.TabStop = false;
             this.btnEmployee.UseVisualStyleBackColor = false;
-            this.btnEmployee.Click += new System.EventHandler(this.btn_employee_Click);
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // lblManageEmployee
             // 
@@ -663,7 +663,7 @@
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.TabStop = false;
             this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // pnlSeparator1
             // 
@@ -785,11 +785,11 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label lblManageEmployee;
-        private System.Windows.Forms.Button btnDeductions;
+        private System.Windows.Forms.Button btnDeduction;
         private System.Windows.Forms.Panel pnlSeparator7;
         private System.Windows.Forms.Button btnCashAdvance;
         private System.Windows.Forms.Panel pnlSeparator6;
-        private System.Windows.Forms.Button btnViolations;
+        private System.Windows.Forms.Button btnViolation;
         private System.Windows.Forms.Panel pnlSeparator5;
         private System.Windows.Forms.Button btnHoliday;
         private System.Windows.Forms.Panel pnlSeparator4;
@@ -799,7 +799,7 @@
         private System.Windows.Forms.Panel pnlSeparator2;
         private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Panel pnlSeparator8;
-        private System.Windows.Forms.Button btnAllowances;
+        private System.Windows.Forms.Button btnAllowance;
         private System.Windows.Forms.Label lblPayroll;
         private System.Windows.Forms.Button btnAll;
         private System.Windows.Forms.Panel pnlSeparator9;

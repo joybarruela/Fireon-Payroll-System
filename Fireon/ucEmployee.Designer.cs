@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucEmployee));
-            this.cmbxRegularContractual = new System.Windows.Forms.ComboBox();
             this.txtbxSearch = new System.Windows.Forms.TextBox();
+            this.cmbxEmployeeStatus = new System.Windows.Forms.ComboBox();
             this.cmbxYear = new System.Windows.Forms.ComboBox();
             this.cmbxMonth = new System.Windows.Forms.ComboBox();
             this.cmbxPosition = new System.Windows.Forms.ComboBox();
@@ -50,23 +50,6 @@
             this.pnlBelow.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmbxRegularContractual
-            // 
-            this.cmbxRegularContractual.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbxRegularContractual.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbxRegularContractual.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxRegularContractual.FormattingEnabled = true;
-            this.cmbxRegularContractual.Items.AddRange(new object[] {
-            "ALL",
-            "Contractual",
-            "Regular"});
-            this.cmbxRegularContractual.Location = new System.Drawing.Point(4, 41);
-            this.cmbxRegularContractual.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxRegularContractual.Name = "cmbxRegularContractual";
-            this.cmbxRegularContractual.Size = new System.Drawing.Size(200, 28);
-            this.cmbxRegularContractual.TabIndex = 1;
-            this.cmbxRegularContractual.TabStop = false;
-            // 
             // txtbxSearch
             // 
             this.txtbxSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,6 +63,19 @@
             this.txtbxSearch.Enter += new System.EventHandler(this.txtbxSearch_Enter);
             this.txtbxSearch.Leave += new System.EventHandler(this.txtbxSearch_Leave);
             // 
+            // cmbxEmployeeStatus
+            // 
+            this.cmbxEmployeeStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbxEmployeeStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbxEmployeeStatus.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbxEmployeeStatus.FormattingEnabled = true;
+            this.cmbxEmployeeStatus.Location = new System.Drawing.Point(4, 41);
+            this.cmbxEmployeeStatus.Margin = new System.Windows.Forms.Padding(10);
+            this.cmbxEmployeeStatus.Name = "cmbxEmployeeStatus";
+            this.cmbxEmployeeStatus.Size = new System.Drawing.Size(200, 28);
+            this.cmbxEmployeeStatus.TabIndex = 1;
+            this.cmbxEmployeeStatus.TabStop = false;
+            // 
             // cmbxYear
             // 
             this.cmbxYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -87,8 +83,6 @@
             this.cmbxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxYear.FormattingEnabled = true;
-            this.cmbxYear.Items.AddRange(new object[] {
-            "ALL"});
             this.cmbxYear.Location = new System.Drawing.Point(735, 41);
             this.cmbxYear.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxYear.Name = "cmbxYear";
@@ -103,20 +97,6 @@
             this.cmbxMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxMonth.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxMonth.FormattingEnabled = true;
-            this.cmbxMonth.Items.AddRange(new object[] {
-            "ALL",
-            "January ",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July ",
-            "August",
-            "September",
-            "October ",
-            "November",
-            "December"});
             this.cmbxMonth.Location = new System.Drawing.Point(735, 10);
             this.cmbxMonth.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxMonth.Name = "cmbxMonth";
@@ -145,20 +125,6 @@
             this.cmbxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxDepartment.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbxDepartment.FormattingEnabled = true;
-            this.cmbxDepartment.Items.AddRange(new object[] {
-            "ALL",
-            "Administrative",
-            "Customer Service",
-            "Finance",
-            "Human Resource",
-            "Information Technology",
-            "Legal",
-            "Marketing",
-            "Operations",
-            "Production",
-            "Purchasing",
-            "Research and Development",
-            "Sales"});
             this.cmbxDepartment.Location = new System.Drawing.Point(496, 10);
             this.cmbxDepartment.Margin = new System.Windows.Forms.Padding(10);
             this.cmbxDepartment.Name = "cmbxDepartment";
@@ -186,7 +152,7 @@
             this.pnlFilters.Controls.Add(this.cmbxMonth);
             this.pnlFilters.Controls.Add(this.cmbxPosition);
             this.pnlFilters.Controls.Add(this.cmbxDepartment);
-            this.pnlFilters.Controls.Add(this.cmbxRegularContractual);
+            this.pnlFilters.Controls.Add(this.cmbxEmployeeStatus);
             this.pnlFilters.Controls.Add(this.txtbxSearch);
             this.pnlFilters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFilters.Location = new System.Drawing.Point(3, 3);
@@ -319,8 +285,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cmbxRegularContractual;
-        private System.Windows.Forms.TextBox txtbxSearch;
+        private System.Windows.Forms.ComboBox cmbxEmployeeStatus;
         private System.Windows.Forms.ComboBox cmbxYear;
         private System.Windows.Forms.ComboBox cmbxMonth;
         private System.Windows.Forms.ComboBox cmbxPosition;
@@ -335,5 +300,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel pnlSeparator2;
+        public System.Windows.Forms.TextBox txtbxSearch;
     }
 }
