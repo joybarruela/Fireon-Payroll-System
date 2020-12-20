@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="Classes\clsDatabaseFunctions.cs" />
     <Compile Include="Classes\clsDepartmentAndPositions.cs" />
+    <Compile Include="Classes\clsFileOperations.cs" />
     <Compile Include="Classes\clsFireonFunctions.cs" />
     <Compile Include="Classes\clsStringFunctions.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

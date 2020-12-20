@@ -70,6 +70,7 @@ namespace Fireon
                     ff.prepComboBoxesEmployee(this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear);
                     ff.resetFilterComboBoxes(this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear);
                     ff.ghostText("Search", this.txtbxSearch, true);
+                    db.dbSearch(pnlEmployee, ff.employeeSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
                     break;
                 default:
                     pnlFilters.Show();
@@ -78,7 +79,6 @@ namespace Fireon
                     btnCancel.Hide();
                     break;
             }
-            db.dbSearch(pnlEmployee, ff.employeeSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
         }
         /// <summary>
         /// TRIES TO ADD DATA FROM ucNewEmployee TO THE DATABASE
