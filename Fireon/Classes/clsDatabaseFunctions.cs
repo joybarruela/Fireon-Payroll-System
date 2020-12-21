@@ -231,5 +231,36 @@ namespace Fireon
                 MessageBox.Show(null, Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        /// <summary>
+        /// GETS THE EMPLOYEE ID OF THE LATEST INSERTED EMPLOYEE
+        /// </summary>
+        public Tuple <DateTime, String, int> returnLatestEmployeeEntry()
+        {
+            //GUIDE
+            //SELECT employeeID -- fetches employeeID only
+            //FROM tbl_employees -- from this table
+            //ORDER BY employeeID DESC -- make it descending order
+            //LIMIT 1 -- get only the first entry (the highest employeeID value, and probably the latest of them all)
+            String query = "SELECT employeeDateEmployed, employeeLastName, employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1";
+            int latestEmployeeID = 0;
+            DateTime latestEmployeeDateEmployed = DateTime.Today;
+            String latestEmployeeLastName = "LASTNAME";
+
+            dbOpen();
+
+            DataTable dbDataTable = new DataTable(); // DataTable IS LIKE A LOGICAL TABLE CONTAINER OF DATA THAT WILL FILL IN LATER
+            MySqlCommand dbCmd = new MySqlCommand(query, dbCon); // PASSING QUERY AND CONNECTION HERE
+            MySqlDataAdapter dbDataAdapter = new MySqlDataAdapter(dbCmd);
+            dbDataAdapter.Fill(dbDataTable); // LET'S FILL OUR DataTable INSTANCE WITH THE QUERY WE REQUESTED
+
+            dbClose();
+
+            latestEmployeeDateEmployed = dbDataTable.Rows[0].Field<DateTime>(0); // SAME AS WELL ON DATE
+            latestEmployeeLastName = dbDataTable.Rows[0].Field<String>(1); // SAME AS WELL ON LAST NAME
+            latestEmployeeID = dbDataTable.Rows[0].Field<int>(2); // IN THIS DATA TABLE BY THEORY CONTAINS THE HIGHEST EID WHICH IN THEORY IS LOCATED ONLY AT (0,0) SO WE ARE STORING THEM ON A INT VARIBLE TO BE RETURNED LATER
+
+            return Tuple.Create(latestEmployeeDateEmployed, latestEmployeeLastName, latestEmployeeID);
+        }
     }
 }

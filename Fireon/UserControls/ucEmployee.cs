@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Fireon.Classes;
 
 namespace Fireon
 {
@@ -15,6 +16,7 @@ namespace Fireon
         clsDatabaseFunctions db = new clsDatabaseFunctions();
         clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
         clsFireonFunctions ff = new clsFireonFunctions();
+        clsFileOperations fo = new clsFileOperations();
         public ucEmployee()
         {
             InitializeComponent();
@@ -93,6 +95,14 @@ namespace Fireon
             try
             {
                 var ucNewEmployee = (ucNewEmployee)reference; // CAST THE PARAMETER TO A ucNewEmployee SO THAT THE SYSTEM COULD READ IT'S CONTENTS
+
+                // LOOP TO FILL IN LISTBOX ITEMS ON THERE
+                ListBox.ObjectCollection fileListLocations = ucNewEmployee.lsbxFileList.Items; // INITS THE LOCATION LIST
+                // ADD THE IMAGE LOCATION ON THE LISTBOX
+                if (String.IsNullOrEmpty(ucNewEmployee.picbDP.ImageLocation) == false)
+                {
+                    fileListLocations.Add(ucNewEmployee.picbDP.ImageLocation);
+                }
 
                 // SURELY NO ON IS BORN ON THE SAME THEY THEY'LL APPLY RIGHT?
                 if (ucNewEmployee.mcBirthdate.SelectionStart == DateTime.Today)
@@ -180,7 +190,8 @@ namespace Fireon
                         ucNewEmployee.picbDP.ImageLocation,
                         DateTime.Today
                         );
-                    displayUserControl("New Employee");
+                    fo.createEmployeeDirectory(fileListLocations); // CREATE THE EMPLOYEE DIRECTORY FOR THAT
+                    displayUserControl("New Employee"); // BACK TO NEW EMPLOYEE
                 }
                 else
                 {

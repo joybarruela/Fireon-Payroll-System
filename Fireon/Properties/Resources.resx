@@ -418,4 +418,12 @@
     <value>Exceeding file count capacity.</value>
     <comment>When reached the document count limit.</comment>
   </data>
+  <data name="str_directory_name" xml:space="preserve">
+    <value>FireonData</value>
+    <comment>Basically the folder name for employee data.</comment>
+  </data>
+  <data name="msg_default_file_location" xml:space="preserve">
+    <value>Default file location saved successfully.</value>
+    <comment>When choosing a default file location</comment>
+  </data>
 </root>

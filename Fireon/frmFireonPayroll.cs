@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fireon.Classes;
+using System;
 // FOR READING THE PROCESS OBJECT
 using System.Windows.Forms;
 
@@ -11,17 +12,16 @@ namespace Fireon
     public partial class frmFireonPayroll : Form
     {
         clsFireonFunctions ff = new clsFireonFunctions();
+        clsFileOperations fo = new clsFileOperations();
         #region TRIGGERS AND EVENTS
         /// <summary>
         /// CLASS CONSTRUCTOR
         /// </summary>
         public frmFireonPayroll()
         {
-            // CREATE ALL ITEMS INSIDE THIS FORM
-            InitializeComponent();
-
-            // DISPLAY DASHBOARD FIRST
-            displayUserControl("Dashboard");
+            InitializeComponent(); // CREATE ALL ITEMS INSIDE THIS FORM
+            displayUserControl("Dashboard"); // DISPLAY DASHBOARD FIRST
+            lblDefaultFileLocation.Text = Properties.Settings.Default.defaultFileLocation.ToString(); // REFRESHES THE FILE LOCATION FIRST
         }
         /// <summary>
         /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.
@@ -133,7 +133,6 @@ namespace Fireon
             //displayUserControl("Setting");
         }
         #endregion
-
         #region CUSTOM BUILT FUNCTIONS
         /// <summary>
         /// THIS METHOD GETS CALLED WHENEVER THE USER CLICKS A BUTTON ON THE SIDEBAR
@@ -397,5 +396,14 @@ namespace Fireon
             }
         }
         #endregion
+
+        private void btnDefaultFileLocation_Click(object sender, EventArgs e)
+        {
+            // THERE IS ALSO THE LOAD LINE ON THE LOAD() EVENT HERE
+            if (fbdDefaultFileLocation.ShowDialog() == DialogResult.OK) // OPENS FOLDER CHOOSER DIALOG
+            {
+                fo.saveDefaultFileLocation(fbdDefaultFileLocation.SelectedPath, this.lblDefaultFileLocation); // PASSES THE FILENAME TO BE PROCESSED THERE
+            }
+        }
     }
 }

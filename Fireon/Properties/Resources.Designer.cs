@@ -825,6 +825,15 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default file location saved successfully..
+        /// </summary>
+        public static string msg_default_file_location {
+            get {
+                return ResourceManager.GetString("msg_default_file_location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Employee successfully added..
         /// </summary>
         public static string msg_employee_added {
@@ -938,6 +947,15 @@ namespace Fireon.Properties {
         public static string query_search_init {
             get {
                 return ResourceManager.GetString("query_search_init", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FireonData.
+        /// </summary>
+        public static string str_directory_name {
+            get {
+                return ResourceManager.GetString("str_directory_name", resourceCulture);
             }
         }
         

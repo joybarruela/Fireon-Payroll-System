@@ -237,6 +237,7 @@
     <EmbeddedResource Include="UserControls\ucUpdateNotification.resx">
       <DependentUpon>ucUpdateNotification.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Miscellaneous\app.manifest" />
     <None Include="Miscellaneous\Fireon_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">

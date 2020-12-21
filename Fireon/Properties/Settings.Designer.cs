@@ -22,5 +22,17 @@ namespace Fireon.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string defaultFileLocation {
+            get {
+                return ((string)(this["defaultFileLocation"]));
+            }
+            set {
+                this["defaultFileLocation"] = value;
+            }
+        }
     }
 }
