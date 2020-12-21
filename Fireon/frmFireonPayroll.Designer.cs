@@ -793,7 +793,6 @@
             this.MinimumSize = new System.Drawing.Size(1200, 680);
             this.Name = "frmFireonPayroll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fireon Payroll System";
             this.TransparencyKey = System.Drawing.Color.DarkRed;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFireonPayroll_FormClosed);
             this.SizeChanged += new System.EventHandler(this.frmFireonPayroll_SizeChanged);
