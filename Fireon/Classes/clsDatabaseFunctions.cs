@@ -15,6 +15,7 @@ namespace Fireon
     /// </summary>
     class clsDatabaseFunctions
     {
+        clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
         // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL
         static string dbConnectionString = Properties.Resources.db_connection_string;
         // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT. STATIC BECAUSE THIS IS THE ONLY INSTANCE
@@ -261,6 +262,61 @@ namespace Fireon
             latestEmployeeID = dbDataTable.Rows[0].Field<int>(2); // IN THIS DATA TABLE BY THEORY CONTAINS THE HIGHEST EID WHICH IN THEORY IS LOCATED ONLY AT (0,0) SO WE ARE STORING THEM ON A INT VARIBLE TO BE RETURNED LATER
 
             return Tuple.Create(latestEmployeeDateEmployed, latestEmployeeLastName, latestEmployeeID);
+        }
+
+        public void addAccountInfo(string username, string pasword)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_account(accountUsername, accountPassword) VALUES(@username, @password)", dbCon);
+            dbCmd.Parameters.AddWithValue("@username", username);
+            dbCmd.Parameters.AddWithValue("@password", pasword);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+        }
+        public void getAccountCredentials(String username, String password, DataGridView dtgvAccounts, bool checkedKeepMeLoggedIn)
+        {
+            // SETS THE keepLoggedIn, lastLoggedInUsername, lastLoggedInPassword, isSuperUser ON THE Setting.settings VALUES.
+            /* ALGO
+             * #1 Check if the passed username is a "Super User". If yes then set the correct value for the isSuperUser.
+             * #2 Add the lastLoggedInUsername, add the lastLoggedInPassword
+             * #3 Check the keepMeLoggedIn value 
+             */
+            dbOpen();
+
+            // #1
+            foreach (DataGridViewRow rowItem in dtgvAccounts.Rows) // LOOPS IN THE DTGV ACCOUNT DTGV
+            {
+                string accountUsernameValue = rowItem.Cells[1].Value.ToString(); // USERNAME IN THE DATAGRIDVIEW
+                string accountTypeValue = rowItem.Cells[3].Value.ToString(); // ACCOUNT TYPE IN THE DATAGRIDVIEW
+
+                string superUser = dp.accountTypes[1].ToString();
+
+                if ((String.Compare(accountUsernameValue, username) == 0) && (String.Compare(superUser, accountTypeValue) == 0)) // IF SAME USERNAME WHO LOGGED ON AND SAME "Super User" VALUE ON THE DATAGRIDVIEW
+                {
+                    // #2 CHANGE PROPER SETTINGS HERE
+                    Properties.Settings.Default.isSuperUser = true; // CHECK THE SUPERUSER
+                    Properties.Settings.Default.lastLoggedInUsername = username;
+                    Properties.Settings.Default.lastLoggedInPassword = password;
+                    Console.WriteLine("The logged person was an admin.");
+                    break; // IF THEY ARE THE SAME THEN EXIT IMMEDIATELY
+                } else
+                {
+                    // #2
+                    Properties.Settings.Default.isSuperUser = false;
+                    Properties.Settings.Default.lastLoggedInUsername = username;
+                    Properties.Settings.Default.lastLoggedInPassword = password;
+                }
+            }
+            // #3
+            if (checkedKeepMeLoggedIn == true)
+            {
+                Properties.Settings.Default.keepLoggedIn = true;
+            }
+            else
+            {
+                Properties.Settings.Default.keepLoggedIn = false; 
+            }
+            dbClose();
         }
     }
 }

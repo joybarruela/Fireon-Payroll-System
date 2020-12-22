@@ -34,5 +34,65 @@ namespace Fireon.Properties {
                 this["defaultFileLocation"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool firstTimeInstall {
+            get {
+                return ((bool)(this["firstTimeInstall"]));
+            }
+            set {
+                this["firstTimeInstall"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool keepLoggedIn {
+            get {
+                return ((bool)(this["keepLoggedIn"]));
+            }
+            set {
+                this["keepLoggedIn"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string lastLoggedInUsername {
+            get {
+                return ((string)(this["lastLoggedInUsername"]));
+            }
+            set {
+                this["lastLoggedInUsername"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string lastLoggedInPassword {
+            get {
+                return ((string)(this["lastLoggedInPassword"]));
+            }
+            set {
+                this["lastLoggedInPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isSuperUser {
+            get {
+                return ((bool)(this["isSuperUser"]));
+            }
+            set {
+                this["isSuperUser"] = value;
+            }
+        }
     }
 }

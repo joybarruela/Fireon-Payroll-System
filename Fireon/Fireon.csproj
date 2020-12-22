@@ -184,18 +184,6 @@
     <Compile Include="UserControls\ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucUpdateAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ucUpdateAccount.Designer.cs">
-      <DependentUpon>ucUpdateAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\ucUpdateNotification.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ucUpdateNotification.Designer.cs">
-      <DependentUpon>ucUpdateNotification.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UserControls\ucAddAccount.resx">
       <DependentUpon>ucAddAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,12 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucUpdateAccount.resx">
-      <DependentUpon>ucUpdateAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucUpdateNotification.resx">
-      <DependentUpon>ucUpdateNotification.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Miscellaneous\app.manifest" />

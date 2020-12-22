@@ -28,37 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSettings));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblSettings = new System.Windows.Forms.Label();
-            this.tctrlAddAccount = new System.Windows.Forms.TabControl();
-            this.tabAccount = new System.Windows.Forms.TabPage();
-            this.tblpAccount = new System.Windows.Forms.TableLayoutPanel();
             this.dtgvAccounts = new System.Windows.Forms.DataGridView();
-            this.flpnlButtonsAccount = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAddAccount = new System.Windows.Forms.Button();
-            this.btnUpdateAccount = new System.Windows.Forms.Button();
-            this.tabNotification = new System.Windows.Forms.TabPage();
-            this.tblpNotification = new System.Windows.Forms.TableLayoutPanel();
-            this.txtbxSearchNotification = new System.Windows.Forms.TextBox();
-            this.dtgvNotifications = new System.Windows.Forms.DataGridView();
-            this.flpnlButtonsNotification = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAddNotification = new System.Windows.Forms.Button();
-            this.btnUpdateNotification = new System.Windows.Forms.Button();
-            this.tctrlAddAccount.SuspendLayout();
-            this.tabAccount.SuspendLayout();
-            this.tblpAccount.SuspendLayout();
+            this.txtbxUsername = new System.Windows.Forms.TextBox();
+            this.txtbxPassword = new System.Windows.Forms.TextBox();
+            this.txtbxConfirmPassword = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblConfirmPassword = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.chkbxKeepMeLoggedIn = new System.Windows.Forms.CheckBox();
+            this.txtbxYourPassword = new System.Windows.Forms.TextBox();
+            this.lblYourPassword = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).BeginInit();
-            this.flpnlButtonsAccount.SuspendLayout();
-            this.tabNotification.SuspendLayout();
-            this.tblpNotification.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNotifications)).BeginInit();
-            this.flpnlButtonsNotification.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSettings
@@ -75,256 +58,127 @@
             this.lblSettings.TabIndex = 140;
             this.lblSettings.Text = "Settings";
             // 
-            // tctrlAddAccount
-            // 
-            this.tctrlAddAccount.Controls.Add(this.tabAccount);
-            this.tctrlAddAccount.Controls.Add(this.tabNotification);
-            this.tctrlAddAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tctrlAddAccount.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tctrlAddAccount.Location = new System.Drawing.Point(0, 48);
-            this.tctrlAddAccount.Name = "tctrlAddAccount";
-            this.tctrlAddAccount.SelectedIndex = 0;
-            this.tctrlAddAccount.Size = new System.Drawing.Size(900, 452);
-            this.tctrlAddAccount.TabIndex = 141;
-            // 
-            // tabAccount
-            // 
-            this.tabAccount.Controls.Add(this.tblpAccount);
-            this.tabAccount.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabAccount.Location = new System.Drawing.Point(4, 26);
-            this.tabAccount.Name = "tabAccount";
-            this.tabAccount.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccount.Size = new System.Drawing.Size(892, 422);
-            this.tabAccount.TabIndex = 0;
-            this.tabAccount.Text = "Account";
-            this.tabAccount.UseVisualStyleBackColor = true;
-            // 
-            // tblpAccount
-            // 
-            this.tblpAccount.ColumnCount = 1;
-            this.tblpAccount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblpAccount.Controls.Add(this.dtgvAccounts, 0, 1);
-            this.tblpAccount.Controls.Add(this.flpnlButtonsAccount, 0, 2);
-            this.tblpAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblpAccount.Location = new System.Drawing.Point(3, 3);
-            this.tblpAccount.Name = "tblpAccount";
-            this.tblpAccount.RowCount = 4;
-            this.tblpAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.962103F));
-            this.tblpAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.23351F));
-            this.tblpAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.898478F));
-            this.tblpAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tblpAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpAccount.Size = new System.Drawing.Size(886, 416);
-            this.tblpAccount.TabIndex = 2;
-            // 
             // dtgvAccounts
             // 
-            this.dtgvAccounts.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvAccounts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvAccounts.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dtgvAccounts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvAccounts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dtgvAccounts.Location = new System.Drawing.Point(3, 34);
+            this.dtgvAccounts.Location = new System.Drawing.Point(3, 238);
             this.dtgvAccounts.Name = "dtgvAccounts";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvAccounts.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dtgvAccounts.Size = new System.Drawing.Size(880, 318);
-            this.dtgvAccounts.TabIndex = 230;
+            this.dtgvAccounts.Size = new System.Drawing.Size(458, 121);
+            this.dtgvAccounts.TabIndex = 141;
             // 
-            // flpnlButtonsAccount
+            // txtbxUsername
             // 
-            this.flpnlButtonsAccount.Controls.Add(this.btnAddAccount);
-            this.flpnlButtonsAccount.Controls.Add(this.btnUpdateAccount);
-            this.flpnlButtonsAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpnlButtonsAccount.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpnlButtonsAccount.Location = new System.Drawing.Point(3, 358);
-            this.flpnlButtonsAccount.Name = "flpnlButtonsAccount";
-            this.flpnlButtonsAccount.Size = new System.Drawing.Size(880, 33);
-            this.flpnlButtonsAccount.TabIndex = 231;
+            this.txtbxUsername.Location = new System.Drawing.Point(187, 113);
+            this.txtbxUsername.Name = "txtbxUsername";
+            this.txtbxUsername.Size = new System.Drawing.Size(274, 20);
+            this.txtbxUsername.TabIndex = 142;
             // 
-            // btnAddAccount
+            // txtbxPassword
             // 
-            this.btnAddAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.BackgroundImage")));
-            this.btnAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddAccount.FlatAppearance.BorderSize = 0;
-            this.btnAddAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAccount.Location = new System.Drawing.Point(753, 3);
-            this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(124, 28);
-            this.btnAddAccount.TabIndex = 6;
-            this.btnAddAccount.TabStop = false;
-            this.btnAddAccount.UseVisualStyleBackColor = true;
+            this.txtbxPassword.Location = new System.Drawing.Point(187, 139);
+            this.txtbxPassword.Name = "txtbxPassword";
+            this.txtbxPassword.Size = new System.Drawing.Size(274, 20);
+            this.txtbxPassword.TabIndex = 142;
             // 
-            // btnUpdateAccount
+            // txtbxConfirmPassword
             // 
-            this.btnUpdateAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateAccount.BackgroundImage")));
-            this.btnUpdateAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdateAccount.FlatAppearance.BorderSize = 0;
-            this.btnUpdateAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnUpdateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateAccount.Location = new System.Drawing.Point(623, 3);
-            this.btnUpdateAccount.Name = "btnUpdateAccount";
-            this.btnUpdateAccount.Size = new System.Drawing.Size(124, 28);
-            this.btnUpdateAccount.TabIndex = 7;
-            this.btnUpdateAccount.TabStop = false;
-            this.btnUpdateAccount.UseVisualStyleBackColor = true;
+            this.txtbxConfirmPassword.Location = new System.Drawing.Point(187, 165);
+            this.txtbxConfirmPassword.Name = "txtbxConfirmPassword";
+            this.txtbxConfirmPassword.Size = new System.Drawing.Size(274, 20);
+            this.txtbxConfirmPassword.TabIndex = 142;
             // 
-            // tabNotification
+            // lblUsername
             // 
-            this.tabNotification.Controls.Add(this.tblpNotification);
-            this.tabNotification.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabNotification.Location = new System.Drawing.Point(4, 26);
-            this.tabNotification.Name = "tabNotification";
-            this.tabNotification.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNotification.Size = new System.Drawing.Size(892, 422);
-            this.tabNotification.TabIndex = 1;
-            this.tabNotification.Text = "Notification";
-            this.tabNotification.UseVisualStyleBackColor = true;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(128, 120);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(53, 13);
+            this.lblUsername.TabIndex = 143;
+            this.lblUsername.Text = "username";
             // 
-            // tblpNotification
+            // lblPassword
             // 
-            this.tblpNotification.ColumnCount = 1;
-            this.tblpNotification.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblpNotification.Controls.Add(this.txtbxSearchNotification, 0, 0);
-            this.tblpNotification.Controls.Add(this.dtgvNotifications, 0, 1);
-            this.tblpNotification.Controls.Add(this.flpnlButtonsNotification, 0, 2);
-            this.tblpNotification.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblpNotification.Location = new System.Drawing.Point(3, 3);
-            this.tblpNotification.Name = "tblpNotification";
-            this.tblpNotification.RowCount = 4;
-            this.tblpNotification.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.962103F));
-            this.tblpNotification.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.23351F));
-            this.tblpNotification.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.898478F));
-            this.tblpNotification.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tblpNotification.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpNotification.Size = new System.Drawing.Size(886, 416);
-            this.tblpNotification.TabIndex = 3;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(129, 146);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(52, 13);
+            this.lblPassword.TabIndex = 143;
+            this.lblPassword.Text = "password";
             // 
-            // txtbxSearchNotification
+            // lblConfirmPassword
             // 
-            this.txtbxSearchNotification.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxSearchNotification.Location = new System.Drawing.Point(3, 3);
-            this.txtbxSearchNotification.Name = "txtbxSearchNotification";
-            this.txtbxSearchNotification.Size = new System.Drawing.Size(199, 27);
-            this.txtbxSearchNotification.TabIndex = 229;
-            this.txtbxSearchNotification.TabStop = false;
-            this.txtbxSearchNotification.Text = "Search";
+            this.lblConfirmPassword.AutoSize = true;
+            this.lblConfirmPassword.Location = new System.Drawing.Point(92, 168);
+            this.lblConfirmPassword.Name = "lblConfirmPassword";
+            this.lblConfirmPassword.Size = new System.Drawing.Size(89, 13);
+            this.lblConfirmPassword.TabIndex = 143;
+            this.lblConfirmPassword.Text = "confirm password";
             // 
-            // dtgvNotifications
+            // button1
             // 
-            this.dtgvNotifications.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvNotifications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dtgvNotifications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvNotifications.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dtgvNotifications.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvNotifications.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dtgvNotifications.Location = new System.Drawing.Point(3, 34);
-            this.dtgvNotifications.Name = "dtgvNotifications";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvNotifications.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dtgvNotifications.Size = new System.Drawing.Size(880, 318);
-            this.dtgvNotifications.TabIndex = 230;
+            this.button1.Location = new System.Drawing.Point(386, 386);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 144;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // flpnlButtonsNotification
+            // button2
             // 
-            this.flpnlButtonsNotification.Controls.Add(this.btnAddNotification);
-            this.flpnlButtonsNotification.Controls.Add(this.btnUpdateNotification);
-            this.flpnlButtonsNotification.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpnlButtonsNotification.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpnlButtonsNotification.Location = new System.Drawing.Point(3, 358);
-            this.flpnlButtonsNotification.Name = "flpnlButtonsNotification";
-            this.flpnlButtonsNotification.Size = new System.Drawing.Size(880, 33);
-            this.flpnlButtonsNotification.TabIndex = 231;
+            this.button2.Location = new System.Drawing.Point(305, 386);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 144;
+            this.button2.Text = "DELETE";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnAddNotification
+            // chkbxKeepMeLoggedIn
             // 
-            this.btnAddNotification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddNotification.BackgroundImage")));
-            this.btnAddNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddNotification.FlatAppearance.BorderSize = 0;
-            this.btnAddNotification.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnAddNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNotification.Location = new System.Drawing.Point(753, 3);
-            this.btnAddNotification.Name = "btnAddNotification";
-            this.btnAddNotification.Size = new System.Drawing.Size(124, 28);
-            this.btnAddNotification.TabIndex = 6;
-            this.btnAddNotification.TabStop = false;
-            this.btnAddNotification.UseVisualStyleBackColor = true;
+            this.chkbxKeepMeLoggedIn.AutoSize = true;
+            this.chkbxKeepMeLoggedIn.Location = new System.Drawing.Point(7, 51);
+            this.chkbxKeepMeLoggedIn.Name = "chkbxKeepMeLoggedIn";
+            this.chkbxKeepMeLoggedIn.Size = new System.Drawing.Size(117, 17);
+            this.chkbxKeepMeLoggedIn.TabIndex = 145;
+            this.chkbxKeepMeLoggedIn.Text = "Keep me logged in.";
+            this.chkbxKeepMeLoggedIn.UseVisualStyleBackColor = true;
             // 
-            // btnUpdateNotification
+            // txtbxYourPassword
             // 
-            this.btnUpdateNotification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateNotification.BackgroundImage")));
-            this.btnUpdateNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdateNotification.FlatAppearance.BorderSize = 0;
-            this.btnUpdateNotification.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnUpdateNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateNotification.Location = new System.Drawing.Point(623, 3);
-            this.btnUpdateNotification.Name = "btnUpdateNotification";
-            this.btnUpdateNotification.Size = new System.Drawing.Size(124, 28);
-            this.btnUpdateNotification.TabIndex = 7;
-            this.btnUpdateNotification.TabStop = false;
-            this.btnUpdateNotification.UseVisualStyleBackColor = true;
+            this.txtbxYourPassword.Location = new System.Drawing.Point(187, 191);
+            this.txtbxYourPassword.Name = "txtbxYourPassword";
+            this.txtbxYourPassword.Size = new System.Drawing.Size(274, 20);
+            this.txtbxYourPassword.TabIndex = 142;
+            // 
+            // lblYourPassword
+            // 
+            this.lblYourPassword.AutoSize = true;
+            this.lblYourPassword.Location = new System.Drawing.Point(106, 194);
+            this.lblYourPassword.Name = "lblYourPassword";
+            this.lblYourPassword.Size = new System.Drawing.Size(75, 13);
+            this.lblYourPassword.TabIndex = 143;
+            this.lblYourPassword.Text = "your password";
             // 
             // ucSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.tctrlAddAccount);
+            this.Controls.Add(this.chkbxKeepMeLoggedIn);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblConfirmPassword);
+            this.Controls.Add(this.lblYourPassword);
+            this.Controls.Add(this.txtbxUsername);
+            this.Controls.Add(this.txtbxPassword);
+            this.Controls.Add(this.txtbxConfirmPassword);
+            this.Controls.Add(this.txtbxYourPassword);
+            this.Controls.Add(this.dtgvAccounts);
             this.Controls.Add(this.lblSettings);
             this.Name = "ucSettings";
             this.Size = new System.Drawing.Size(900, 500);
-            this.tctrlAddAccount.ResumeLayout(false);
-            this.tabAccount.ResumeLayout(false);
-            this.tblpAccount.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).EndInit();
-            this.flpnlButtonsAccount.ResumeLayout(false);
-            this.tabNotification.ResumeLayout(false);
-            this.tblpNotification.ResumeLayout(false);
-            this.tblpNotification.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNotifications)).EndInit();
-            this.flpnlButtonsNotification.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,20 +187,18 @@
         #endregion
 
         private System.Windows.Forms.Label lblSettings;
-        private System.Windows.Forms.TabControl tctrlAddAccount;
-        private System.Windows.Forms.TabPage tabAccount;
-        private System.Windows.Forms.TabPage tabNotification;
-        private System.Windows.Forms.TableLayoutPanel tblpAccount;
         private System.Windows.Forms.DataGridView dtgvAccounts;
-        private System.Windows.Forms.FlowLayoutPanel flpnlButtonsAccount;
-        private System.Windows.Forms.Button btnAddAccount;
-        private System.Windows.Forms.Button btnUpdateAccount;
-        private System.Windows.Forms.TableLayoutPanel tblpNotification;
-        private System.Windows.Forms.TextBox txtbxSearchNotification;
-        private System.Windows.Forms.DataGridView dtgvNotifications;
-        private System.Windows.Forms.FlowLayoutPanel flpnlButtonsNotification;
-        private System.Windows.Forms.Button btnAddNotification;
-        private System.Windows.Forms.Button btnUpdateNotification;
+        private System.Windows.Forms.TextBox txtbxUsername;
+        private System.Windows.Forms.TextBox txtbxPassword;
+        private System.Windows.Forms.TextBox txtbxConfirmPassword;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblConfirmPassword;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox chkbxKeepMeLoggedIn;
+        private System.Windows.Forms.TextBox txtbxYourPassword;
+        private System.Windows.Forms.Label lblYourPassword;
 
 
     }

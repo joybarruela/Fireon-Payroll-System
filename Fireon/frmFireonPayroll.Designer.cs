@@ -795,6 +795,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.DarkRed;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFireonPayroll_FormClosed);
+            this.Load += new System.EventHandler(this.frmFireonPayroll_Load);
             this.SizeChanged += new System.EventHandler(this.frmFireonPayroll_SizeChanged);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();

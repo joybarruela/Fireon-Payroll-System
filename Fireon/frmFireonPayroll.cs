@@ -130,7 +130,7 @@ namespace Fireon
         }
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            //displayUserControl("Setting");
+            displayUserControl("Settings");
         }
         #endregion
         #region CUSTOM BUILT FUNCTIONS
@@ -375,19 +375,14 @@ namespace Fireon
                 //    }
                 //    else { break; };
 
-                //case "Setting":
-                //    if (this.Text != "Fireon Payroll System | Setting")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_settings.BackgroundImage = Properties.Resources.btn_settings_active; // SET BUTTON ACTIVE
-                //        ucSettings ucSettings = new ucSettings(); // CREATES A NEW UserControl
-                //        ucSettings.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucSettings.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Setting";
-                //        break;
-                //    }
-                //    else { break; };
+                case "Settings":
+                    if (this.Text != "Fireon Payroll System | Settings")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucSettings());
+                        setActive("Fireon Payroll System | Settings");
+                        break;
+                    }
+                    else { break; };
 
                 default:
                     ff.displayUserControl(pnlSelected, new ucDashboard());
@@ -397,6 +392,16 @@ namespace Fireon
         }
         #endregion
 
+
+
+
+
+
+
+
+
+
+
         private void btnDefaultFileLocation_Click(object sender, EventArgs e)
         {
             // THERE IS ALSO THE LOAD LINE ON THE LOAD() EVENT HERE
@@ -404,6 +409,13 @@ namespace Fireon
             {
                 fo.saveDefaultFileLocation(fbdDefaultFileLocation.SelectedPath, this.lblDefaultFileLocation); // PASSES THE FILENAME TO BE PROCESSED THERE
             }
+        }
+
+        private void frmFireonPayroll_Load(object sender, EventArgs e)
+        {
+            //if (Properties.Settings.Default.keepLoggedIn == true)
+            //{
+            //}
         }
     }
 }

@@ -28,6 +28,10 @@ namespace Fireon
         "Contractual",
         "Regular"
         };
+        public object[] accountTypes = {
+        "Normal User",
+        "Super User"
+        };
         // ALL DEPARTMENTS
         public object[] departments = {
         "Administrative",

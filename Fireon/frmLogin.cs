@@ -30,7 +30,20 @@ namespace Fireon
         /// </summary>
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            main_form.Hide(); // HIDE FIRST THE MAIN FORM
+            this.Shown += new System.EventHandler(this.frmLogin_Shown);
+        }
+        void frmLogin_Shown(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.keepLoggedIn == true)
+            {
+                
+                this.Hide();
+                main_form.Show(); // HIDE FIRST THE MAIN FORM
+            }
+            else
+            {
+                main_form.Hide(); // HIDE FIRST THE MAIN FORM
+            }
         }
         /// <summary>
         /// THIS METHOD GETS CALLED WHEN THE USER CLICKS THE LOGIN BUTTON FROM THE LOGIN FORM
@@ -54,6 +67,7 @@ namespace Fireon
                 // DO WHAT IS IN THE CATCH SECTION WHICH IS REINSTANTIATING THE FORM OBJECT
                 try
                 {
+                    db.getAccountCredentials(txtbxUsername.Text, txtbxPw.Text, this.dtgvAccounts, chkbxKeepLoggedIn.Checked); // CHECK IF THE USER WHO LOGGED IN IS AN ADMIN
                     main_form.Show(); // SHOWS THE MAIN FORM OF THE PROGRAM
                 }
                 catch (Exception ex)

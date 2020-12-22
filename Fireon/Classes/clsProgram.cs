@@ -17,9 +17,9 @@ namespace Fireon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            programInstance = new frmLogin(); // THE FIRST 2 LINES ARE NECESSARY BEFORE I COULD DECLARE NEW OBJECT
             // DISPLAY A WELCOMING MESSAGE FIRST TO THE USER
             MessageBox.Show(Properties.Resources.msg_welcome_message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            programInstance = new frmLogin(); // THE FIRST 2 LINES ARE NECESSARY BEFORE I COULD DECLARE NEW OBJECT
             Application.Run(programInstance); // START THE PROGRAM
         }
     }
