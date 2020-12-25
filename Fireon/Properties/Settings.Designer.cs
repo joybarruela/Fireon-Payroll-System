@@ -94,5 +94,16 @@ namespace Fireon.Properties {
                 this["isSuperUser"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime dateToday {
+            get {
+                return ((global::System.DateTime)(this["dateToday"]));
+            }
+            set {
+                this["dateToday"] = value;
+            }
+        }
     }
 }

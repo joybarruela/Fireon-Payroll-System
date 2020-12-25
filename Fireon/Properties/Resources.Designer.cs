@@ -969,6 +969,15 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Overtime successfully added..
+        /// </summary>
+        public static string msg_overtime_added {
+            get {
+                return ResourceManager.GetString("msg_overtime_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome to Fireon Payroll System..
         /// </summary>
         public static string msg_welcome_message {

@@ -364,8 +364,6 @@ namespace Fireon
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
         }
-
-
         public void addLeave(string employeeID, int deductionValue, string mode)
         {
             // UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - 10 WHERE idtbl_employee_details = 70;
@@ -391,7 +389,37 @@ namespace Fireon
             dbCmd.Parameters.AddWithValue("@deductionValue", deductionValue);
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
-            Console.WriteLine(employeeID + deductionValue.ToString() + mode);
+            Console.WriteLine(employeeID + " " + deductionValue.ToString() + " " + mode);
+        }
+        public void addOvertime(string employeeID, int overtimeValue)
+        {
+            // UPDATE fireon.tbl_employee_details SET overtimeAdditionalHours = overtimeAdditionalHours - 10 WHERE idtbl_employee_details = 70;
+            string overtimeQuery = @"UPDATE fireon.tbl_employee_details SET overtimeAdditionalHours = overtimeAdditionalHours + @overtimeValue WHERE idtbl_employee_details = @employeeID";
+
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(overtimeQuery, dbCon);
+            dbCmd.Parameters.AddWithValue("@employeeID", int.Parse(employeeID));
+            dbCmd.Parameters.AddWithValue("@overtimeValue", overtimeValue);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+            Console.WriteLine(employeeID + " " + overtimeValue.ToString());
+
+        }
+
+        public void AddHoliday(string employeeID, int percentage)
+        {
+            string holidayQuery = @"
+            UPDATE fireon.tbl_employee_details 
+            SET holidayHolidayPay = holidayHolidayPay + ((SELECT employeeHourlyRate FROM tbl_employee ORDER BY employeeID DESC LIMIT 1) * @percentage) 
+            WHERE idtbl_employee_details = @employeeID; ";
+
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(holidayQuery, dbCon);
+            dbCmd.Parameters.AddWithValue("@employeeID", int.Parse(employeeID));
+            dbCmd.Parameters.AddWithValue("@percentage", percentage *.01);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+            Console.WriteLine(employeeID + " " + percentage.ToString());
         }
     }
 }

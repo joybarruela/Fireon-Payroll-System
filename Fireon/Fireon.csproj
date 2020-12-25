@@ -122,18 +122,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucAddAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ucAddAccount.Designer.cs">
-      <DependentUpon>ucAddAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\ucAddNotification.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ucAddNotification.Designer.cs">
-      <DependentUpon>ucAddNotification.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ucDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +146,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucHoliday.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucHoliday.Designer.cs">
+      <DependentUpon>ucHoliday.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucLeave.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,18 +172,18 @@
     <Compile Include="UserControls\ucDataGridView.Designer.cs">
       <DependentUpon>ucDataGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucOvertime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucOvertime.Designer.cs">
+      <DependentUpon>ucOvertime.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\ucAddAccount.resx">
-      <DependentUpon>ucAddAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucAddNotification.resx">
-      <DependentUpon>ucAddNotification.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucHoliday.resx">
+      <DependentUpon>ucHoliday.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucLeave.resx">
       <DependentUpon>ucLeave.cs</DependentUpon>
@@ -215,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucDataGridView.resx">
       <DependentUpon>ucDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucOvertime.resx">
+      <DependentUpon>ucOvertime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>

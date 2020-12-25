@@ -449,4 +449,8 @@
     <value>Leave successfully added.</value>
     <comment>When the leave is successfully added.</comment>
   </data>
+  <data name="msg_overtime_added" xml:space="preserve">
+    <value>Overtime successfully added.</value>
+    <comment>When the overtime is successfully added.</comment>
+  </data>
 </root>

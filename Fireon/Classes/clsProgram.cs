@@ -15,6 +15,14 @@ namespace Fireon
         [STAThread]
         static void Main()
         {
+            // SET THE CURRENT DATE HERE FOR THE HOLIDAY CHECKING
+            Properties.Settings.Default.dateToday = DateTime.Today;
+            // ENABLE CODE TO MANUAL SET DATE
+            //Properties.Settings.Default.dateToday = new DateTime(2020, 12, 24);
+            // WRITE TODAY DA
+            Console.WriteLine("Today is " + Properties.Settings.Default.dateToday.ToShortDateString().ToString());
+            
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // DISPLAY A WELCOMING MESSAGE FIRST TO THE USER

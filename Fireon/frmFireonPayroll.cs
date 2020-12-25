@@ -1,4 +1,5 @@
 ﻿using Fireon.Classes;
+using Fireon.UserControls;
 using System;
 // FOR READING THE PROCESS OBJECT
 using System.Windows.Forms;
@@ -95,11 +96,11 @@ namespace Fireon
         }
         private void btnOvertime_Click(object sender, EventArgs e)
         {
-            //displayUserControl("Overtime");
+            displayUserControl("Overtime");
         }
         private void btnHoliday_Click(object sender, EventArgs e)
         {
-            //displayUserControl("Holiday");
+            displayUserControl("Holiday");
         }
         private void btnViolation_Click(object sender, EventArgs e)
         {
@@ -250,33 +251,23 @@ namespace Fireon
                     }
                     else { break; };
 
-                //case "Overtime":
-                //    if (this.Text != "Fireon Payroll System | Overtime")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_overtime.BackgroundImage = Properties.Resources.btn_overtime_active; // SET BUTTON ACTIVE
-                //        ucOvertime ucOvertime = new ucOvertime(); // CREATES A NEW UserControl
-                //        ucOvertime.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucOvertime.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Overtime";
-                //        break;
-                //    }
-                //    else { break; };
+                case "Overtime":
+                    if (this.Text != "Fireon Payroll System | Overtime")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucOvertime());
+                        setActive("Fireon Payroll System | Overtime");
+                        break;
+                    }
+                    else { break; };
 
-                //case "Holiday":
-                //    if (this.Text != "Fireon Payroll System | Holiday")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_holiday.BackgroundImage = Properties.Resources.btn_holiday_active; // SET BUTTON ACTIVE
-                //        ucHoliday ucHoliday = new ucHoliday(); // CREATES A NEW UserControl
-                //        ucHoliday.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucHoliday.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Holiday";
-                //        break;
-                //    }
-                //    else { break; };
+                case "Holiday":
+                    if (this.Text != "Fireon Payroll System | Holiday")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucHoliday());
+                        setActive("Fireon Payroll System | Holiday");
+                        break;
+                    }
+                    else { break; };
 
                 //case "Violation":
                 //    if (this.Text != "Fireon Payroll System | Violation")
