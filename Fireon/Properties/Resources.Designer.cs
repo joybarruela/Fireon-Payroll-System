@@ -729,6 +729,15 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 5000.
+        /// </summary>
+        public static string int_cash_advance {
+            get {
+                return ResourceManager.GetString("int_cash_advance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 216.
         /// </summary>
         public static string int_default_working_hours {
@@ -756,11 +765,38 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 180.
+        /// </summary>
+        public static string int_maternity_leave {
+            get {
+                return ResourceManager.GetString("int_maternity_leave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 5.
         /// </summary>
         public static string int_max_document_count {
             get {
                 return ResourceManager.GetString("int_max_document_count", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 30.
+        /// </summary>
+        public static string int_sick_leave {
+            get {
+                return ResourceManager.GetString("int_sick_leave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 60.
+        /// </summary>
+        public static string int_vacation_leave {
+            get {
+                return ResourceManager.GetString("int_vacation_leave", resourceCulture);
             }
         }
         
@@ -848,6 +884,15 @@ namespace Fireon.Properties {
         public static string msg_exception {
             get {
                 return ResourceManager.GetString("msg_exception", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leave successfully added..
+        /// </summary>
+        public static string msg_leave_added {
+            get {
+                return ResourceManager.GetString("msg_leave_added", resourceCulture);
             }
         }
         
@@ -947,6 +992,24 @@ namespace Fireon.Properties {
         public static string query_search_init {
             get {
                 return ResourceManager.GetString("query_search_init", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT * FROM tbl_employee_details.
+        /// </summary>
+        public static string query_string_employee_details {
+            get {
+                return ResourceManager.GetString("query_string_employee_details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Good day, .
+        /// </summary>
+        public static string str_current_account_greetings {
+            get {
+                return ResourceManager.GetString("str_current_account_greetings", resourceCulture);
             }
         }
         

@@ -232,7 +232,41 @@ namespace Fireon
                 MessageBox.Show(null, Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        public void dbInsertEmployeeDetails()
+        {
+            //INSERT INTO tbl_employee_details(leaveSickLeave, leaveVacationLeave, leaveMaternityLeave, cashAdvanceAmount, idtbl_employee_details) 
+            //VALUES( 30,60,180,5000, (SELECT employeeID FROM fireon.tbl_employee WHERE employeeID = (SELECT employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1)));
+            try
+            {
+                dbOpen(); // OPEN THE CONNECTION
+                // CREATE NEW COMMAND INSTANCE HERE
+                MySqlCommand dbCmd = new MySqlCommand(
+                @"INSERT INTO tbl_employee_details(
+                leaveSickLeave,
+                leaveVacationLeave,
+                leaveMaternityLeave,
+                cashAdvanceAmount,
+                idtbl_employee_details) 
+                VALUES(
+                @SickLeave,
+                @VacationLeave,
+                @MaternityLeave,
+                @AdvanceAmount,
+                (SELECT employeeID FROM fireon.tbl_employee WHERE employeeID = (SELECT employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1)));", dbCon); // PASSING QUERY AND CONNECTION HERE
+                // THIS IS THE PART WHERE I ADD VALUES BASED ON PASSED VALUES WHEN YOU CALL THIS FUNCTION
+                dbCmd.Parameters.AddWithValue("@SickLeave", int.Parse(Properties.Resources.int_sick_leave));
+                dbCmd.Parameters.AddWithValue("@VacationLeave", int.Parse(Properties.Resources.int_vacation_leave));
+                dbCmd.Parameters.AddWithValue("@MaternityLeave", int.Parse(Properties.Resources.int_maternity_leave));
+                dbCmd.Parameters.AddWithValue("@AdvanceAmount", int.Parse(Properties.Resources.int_cash_advance));
+                dbCmd.ExecuteNonQuery(); // EXECUTE
+                dbClose(); // CLOSE THE CONNECTION
+                Console.WriteLine("Employee details added successfully");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(null, Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         /// <summary>
         /// GETS THE EMPLOYEE ID OF THE LATEST INSERTED EMPLOYEE
         /// </summary>
@@ -243,6 +277,8 @@ namespace Fireon
             //FROM tbl_employees -- from this table
             //ORDER BY employeeID DESC -- make it descending order
             //LIMIT 1 -- get only the first entry (the highest employeeID value, and probably the latest of them all)
+
+
             String query = "SELECT employeeDateEmployed, employeeLastName, employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1";
             int latestEmployeeID = 0;
             DateTime latestEmployeeDateEmployed = DateTime.Today;
@@ -264,12 +300,13 @@ namespace Fireon
             return Tuple.Create(latestEmployeeDateEmployed, latestEmployeeLastName, latestEmployeeID);
         }
 
-        public void addAccountInfo(string username, string pasword)
+        public void addAccountInfo(string username, string password)
         {
             dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_account(accountUsername, accountPassword) VALUES(@username, @password)", dbCon);
+            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_account(accountUsername, accountPassword, accountType) VALUES(@username, @password, @type)", dbCon);
             dbCmd.Parameters.AddWithValue("@username", username);
-            dbCmd.Parameters.AddWithValue("@password", pasword);
+            dbCmd.Parameters.AddWithValue("@password", password);
+            dbCmd.Parameters.AddWithValue("@type", dp.accountTypes[0].ToString());
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
         }
@@ -317,6 +354,44 @@ namespace Fireon
                 Properties.Settings.Default.keepLoggedIn = false; 
             }
             dbClose();
+        }
+
+        public void deleteAccountInfo(int accountID)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(@"DELETE FROM tbl_account WHERE accountID = @ID", dbCon);
+            dbCmd.Parameters.AddWithValue("@ID", accountID);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+        }
+
+
+        public void addLeave(string employeeID, int deductionValue, string mode)
+        {
+            // UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - 10 WHERE idtbl_employee_details = 70;
+            string leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+
+            switch (mode){
+                case "sick":
+                    leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+                    break;
+                case "vacation":
+                    leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveVacationLeave = leaveVacationLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+                    break;
+                case "maternity":
+                    leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveMaternityLeave = leaveMaternityLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+                    break;
+                default:
+                    break;
+            }
+
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(leaveTypeQuery, dbCon);
+            dbCmd.Parameters.AddWithValue("@employeeID", int.Parse(employeeID));
+            dbCmd.Parameters.AddWithValue("@deductionValue", deductionValue);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+            Console.WriteLine(employeeID + deductionValue.ToString() + mode);
         }
     }
 }

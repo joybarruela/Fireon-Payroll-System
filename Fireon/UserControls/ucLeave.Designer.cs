@@ -36,12 +36,11 @@
             this.tblpLeave = new System.Windows.Forms.TableLayoutPanel();
             this.btnAddLeave = new System.Windows.Forms.Button();
             this.pnlFilters = new System.Windows.Forms.Panel();
-            this.cmbxYear = new System.Windows.Forms.ComboBox();
-            this.cmbxDepartment = new System.Windows.Forms.ComboBox();
-            this.cmbxPosition = new System.Windows.Forms.ComboBox();
-            this.cmbxMonth = new System.Windows.Forms.ComboBox();
-            this.txtbxSearch = new System.Windows.Forms.TextBox();
-            this.cmbxRegularContractual = new System.Windows.Forms.ComboBox();
+            this.rdbtnMaternity = new System.Windows.Forms.RadioButton();
+            this.rdbtnVacation = new System.Windows.Forms.RadioButton();
+            this.rdbtnSick = new System.Windows.Forms.RadioButton();
+            this.lblNumberOfDays = new System.Windows.Forms.Label();
+            this.txtbxNumberOfDays = new System.Windows.Forms.TextBox();
             this.dtgvLeave = new System.Windows.Forms.DataGridView();
             this.tblpLeave.SuspendLayout();
             this.pnlFilters.SuspendLayout();
@@ -96,137 +95,80 @@
             this.btnAddLeave.TabIndex = 276;
             this.btnAddLeave.TabStop = false;
             this.btnAddLeave.UseVisualStyleBackColor = true;
+            this.btnAddLeave.Click += new System.EventHandler(this.btnAddLeave_Click);
             // 
             // pnlFilters
             // 
-            this.pnlFilters.Controls.Add(this.cmbxYear);
-            this.pnlFilters.Controls.Add(this.cmbxDepartment);
-            this.pnlFilters.Controls.Add(this.cmbxPosition);
-            this.pnlFilters.Controls.Add(this.cmbxMonth);
-            this.pnlFilters.Controls.Add(this.txtbxSearch);
-            this.pnlFilters.Controls.Add(this.cmbxRegularContractual);
+            this.pnlFilters.Controls.Add(this.rdbtnMaternity);
+            this.pnlFilters.Controls.Add(this.rdbtnVacation);
+            this.pnlFilters.Controls.Add(this.rdbtnSick);
+            this.pnlFilters.Controls.Add(this.lblNumberOfDays);
+            this.pnlFilters.Controls.Add(this.txtbxNumberOfDays);
             this.pnlFilters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFilters.Location = new System.Drawing.Point(3, 3);
             this.pnlFilters.Name = "pnlFilters";
             this.pnlFilters.Size = new System.Drawing.Size(894, 84);
             this.pnlFilters.TabIndex = 274;
             // 
-            // cmbxYear
+            // rdbtnMaternity
             // 
-            this.cmbxYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxYear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxYear.FormattingEnabled = true;
-            this.cmbxYear.Items.AddRange(new object[] {
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025"});
-            this.cmbxYear.Location = new System.Drawing.Point(735, 41);
-            this.cmbxYear.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxYear.Name = "cmbxYear";
-            this.cmbxYear.Size = new System.Drawing.Size(152, 28);
-            this.cmbxYear.TabIndex = 7;
-            this.cmbxYear.TabStop = false;
-            this.cmbxYear.Text = "Year";
+            this.rdbtnMaternity.AutoSize = true;
+            this.rdbtnMaternity.Location = new System.Drawing.Point(138, 41);
+            this.rdbtnMaternity.Name = "rdbtnMaternity";
+            this.rdbtnMaternity.Size = new System.Drawing.Size(68, 17);
+            this.rdbtnMaternity.TabIndex = 2;
+            this.rdbtnMaternity.TabStop = true;
+            this.rdbtnMaternity.Text = "Maternity";
+            this.rdbtnMaternity.UseVisualStyleBackColor = true;
             // 
-            // cmbxDepartment
+            // rdbtnVacation
             // 
-            this.cmbxDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxDepartment.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxDepartment.FormattingEnabled = true;
-            this.cmbxDepartment.Items.AddRange(new object[] {
-            "IT Department",
-            "Marketing Department",
-            "Finance Department",
-            "Operations Department",
-            "Sales Department",
-            "Human Resource Department",
-            "Customer Service Department",
-            "Research and Development Department",
-            "Administrative Department",
-            "Purchasing Department",
-            "Legal Department",
-            "Production Department"});
-            this.cmbxDepartment.Location = new System.Drawing.Point(496, 10);
-            this.cmbxDepartment.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxDepartment.Name = "cmbxDepartment";
-            this.cmbxDepartment.Size = new System.Drawing.Size(219, 28);
-            this.cmbxDepartment.TabIndex = 4;
-            this.cmbxDepartment.TabStop = false;
-            this.cmbxDepartment.Text = "Department";
+            this.rdbtnVacation.AutoSize = true;
+            this.rdbtnVacation.Location = new System.Drawing.Point(65, 41);
+            this.rdbtnVacation.Name = "rdbtnVacation";
+            this.rdbtnVacation.Size = new System.Drawing.Size(67, 17);
+            this.rdbtnVacation.TabIndex = 2;
+            this.rdbtnVacation.TabStop = true;
+            this.rdbtnVacation.Text = "Vacation";
+            this.rdbtnVacation.UseVisualStyleBackColor = true;
             // 
-            // cmbxPosition
+            // rdbtnSick
             // 
-            this.cmbxPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxPosition.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxPosition.FormattingEnabled = true;
-            this.cmbxPosition.Location = new System.Drawing.Point(496, 41);
-            this.cmbxPosition.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxPosition.Name = "cmbxPosition";
-            this.cmbxPosition.Size = new System.Drawing.Size(219, 28);
-            this.cmbxPosition.TabIndex = 5;
-            this.cmbxPosition.TabStop = false;
-            this.cmbxPosition.Text = "Position";
+            this.rdbtnSick.AutoSize = true;
+            this.rdbtnSick.Location = new System.Drawing.Point(13, 41);
+            this.rdbtnSick.Name = "rdbtnSick";
+            this.rdbtnSick.Size = new System.Drawing.Size(46, 17);
+            this.rdbtnSick.TabIndex = 2;
+            this.rdbtnSick.TabStop = true;
+            this.rdbtnSick.Text = "Sick";
+            this.rdbtnSick.UseVisualStyleBackColor = true;
             // 
-            // cmbxMonth
+            // lblNumberOfDays
             // 
-            this.cmbxMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbxMonth.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxMonth.FormattingEnabled = true;
-            this.cmbxMonth.Items.AddRange(new object[] {
-            "January ",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July ",
-            "August",
-            "September",
-            "October ",
-            "November",
-            "December"});
-            this.cmbxMonth.Location = new System.Drawing.Point(735, 10);
-            this.cmbxMonth.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxMonth.Name = "cmbxMonth";
-            this.cmbxMonth.Size = new System.Drawing.Size(152, 28);
-            this.cmbxMonth.TabIndex = 6;
-            this.cmbxMonth.TabStop = false;
-            this.cmbxMonth.Text = "Month";
+            this.lblNumberOfDays.AutoSize = true;
+            this.lblNumberOfDays.Location = new System.Drawing.Point(13, 67);
+            this.lblNumberOfDays.Name = "lblNumberOfDays";
+            this.lblNumberOfDays.Size = new System.Drawing.Size(83, 13);
+            this.lblNumberOfDays.TabIndex = 1;
+            this.lblNumberOfDays.Text = "Number of Days";
             // 
-            // txtbxSearch
+            // txtbxNumberOfDays
             // 
-            this.txtbxSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxSearch.Location = new System.Drawing.Point(4, 10);
-            this.txtbxSearch.Name = "txtbxSearch";
-            this.txtbxSearch.Size = new System.Drawing.Size(199, 26);
-            this.txtbxSearch.TabIndex = 2;
-            this.txtbxSearch.TabStop = false;
-            this.txtbxSearch.Text = "Search";
-            // 
-            // cmbxRegularContractual
-            // 
-            this.cmbxRegularContractual.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxRegularContractual.FormattingEnabled = true;
-            this.cmbxRegularContractual.Items.AddRange(new object[] {
-            "Regular",
-            "Contractual"});
-            this.cmbxRegularContractual.Location = new System.Drawing.Point(4, 41);
-            this.cmbxRegularContractual.Margin = new System.Windows.Forms.Padding(10);
-            this.cmbxRegularContractual.Name = "cmbxRegularContractual";
-            this.cmbxRegularContractual.Size = new System.Drawing.Size(200, 28);
-            this.cmbxRegularContractual.TabIndex = 3;
-            this.cmbxRegularContractual.TabStop = false;
-            this.cmbxRegularContractual.Text = "Regular/Contractual";
+            this.txtbxNumberOfDays.Location = new System.Drawing.Point(102, 64);
+            this.txtbxNumberOfDays.MaxLength = 3;
+            this.txtbxNumberOfDays.Name = "txtbxNumberOfDays";
+            this.txtbxNumberOfDays.Size = new System.Drawing.Size(51, 20);
+            this.txtbxNumberOfDays.TabIndex = 0;
+            this.txtbxNumberOfDays.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxNumberOfDays_KeyPress);
             // 
             // dtgvLeave
             // 
-            this.dtgvLeave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvLeave.AllowUserToAddRows = false;
+            this.dtgvLeave.AllowUserToDeleteRows = false;
+            this.dtgvLeave.AllowUserToResizeColumns = false;
+            this.dtgvLeave.AllowUserToResizeRows = false;
             this.dtgvLeave.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvLeave.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -235,7 +177,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvLeave.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,9 +186,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvLeave.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvLeave.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dtgvLeave.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvLeave.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.dtgvLeave.Location = new System.Drawing.Point(3, 93);
+            this.dtgvLeave.MultiSelect = false;
             this.dtgvLeave.Name = "dtgvLeave";
+            this.dtgvLeave.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,7 +201,10 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvLeave.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvLeave.Size = new System.Drawing.Size(894, 329);
+            this.dtgvLeave.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dtgvLeave.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvLeave.ShowEditingIcon = false;
+            this.dtgvLeave.Size = new System.Drawing.Size(458, 329);
             this.dtgvLeave.TabIndex = 275;
             // 
             // ucLeave
@@ -281,14 +230,13 @@
         private System.Windows.Forms.Label lblLeave;
         private System.Windows.Forms.TableLayoutPanel tblpLeave;
         private System.Windows.Forms.Panel pnlFilters;
-        private System.Windows.Forms.ComboBox cmbxYear;
-        private System.Windows.Forms.ComboBox cmbxDepartment;
-        private System.Windows.Forms.ComboBox cmbxPosition;
-        private System.Windows.Forms.ComboBox cmbxMonth;
-        private System.Windows.Forms.TextBox txtbxSearch;
-        private System.Windows.Forms.ComboBox cmbxRegularContractual;
         private System.Windows.Forms.DataGridView dtgvLeave;
         private System.Windows.Forms.Button btnAddLeave;
+        private System.Windows.Forms.RadioButton rdbtnMaternity;
+        private System.Windows.Forms.RadioButton rdbtnVacation;
+        private System.Windows.Forms.RadioButton rdbtnSick;
+        private System.Windows.Forms.TextBox txtbxNumberOfDays;
+        private System.Windows.Forms.Label lblNumberOfDays;
 
     }
 }

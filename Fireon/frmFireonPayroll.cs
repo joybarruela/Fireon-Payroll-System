@@ -21,7 +21,8 @@ namespace Fireon
         {
             InitializeComponent(); // CREATE ALL ITEMS INSIDE THIS FORM
             displayUserControl("Dashboard"); // DISPLAY DASHBOARD FIRST
-            lblDefaultFileLocation.Text = Properties.Settings.Default.defaultFileLocation.ToString(); // REFRESHES THE FILE LOCATION FIRST
+            lblGreeting.Text = Properties.Resources.str_current_account_greetings;
+            lblGreeting.Text = String.Concat(Properties.Resources.str_current_account_greetings, Properties.Settings.Default.lastLoggedInUsername);
         }
         /// <summary>
         /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.
@@ -391,31 +392,5 @@ namespace Fireon
             }
         }
         #endregion
-
-
-
-
-
-
-
-
-
-
-
-        private void btnDefaultFileLocation_Click(object sender, EventArgs e)
-        {
-            // THERE IS ALSO THE LOAD LINE ON THE LOAD() EVENT HERE
-            if (fbdDefaultFileLocation.ShowDialog() == DialogResult.OK) // OPENS FOLDER CHOOSER DIALOG
-            {
-                fo.saveDefaultFileLocation(fbdDefaultFileLocation.SelectedPath, this.lblDefaultFileLocation); // PASSES THE FILENAME TO BE PROCESSED THERE
-            }
-        }
-
-        private void frmFireonPayroll_Load(object sender, EventArgs e)
-        {
-            //if (Properties.Settings.Default.keepLoggedIn == true)
-            //{
-            //}
-        }
     }
 }

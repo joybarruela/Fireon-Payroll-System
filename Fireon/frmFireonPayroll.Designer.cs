@@ -30,13 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFireonPayroll));
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.lblDefaultFileLocation = new System.Windows.Forms.Label();
-            this.btnDefaultFileLocation = new System.Windows.Forms.Button();
-            this.pnlSeparator12 = new System.Windows.Forms.Panel();
-            this.btnNotification = new System.Windows.Forms.Button();
-            this.pnlSeparator13 = new System.Windows.Forms.Panel();
-            this.picbUser = new System.Windows.Forms.PictureBox();
-            this.pnlSeparator14 = new System.Windows.Forms.Panel();
             this.lblGreeting = new System.Windows.Forms.Label();
             this.pnlSeparator15 = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
@@ -80,9 +73,7 @@
             this.pnlSelected = new System.Windows.Forms.Panel();
             this.pnlBlockersRightMain = new System.Windows.Forms.Panel();
             this.pnlBlockersBottomMain = new System.Windows.Forms.Panel();
-            this.fbdDefaultFileLocation = new System.Windows.Forms.FolderBrowserDialog();
             this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbUser)).BeginInit();
             this.pnlMenu.SuspendLayout();
             this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).BeginInit();
@@ -91,13 +82,6 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.Transparent;
-            this.pnlHeader.Controls.Add(this.lblDefaultFileLocation);
-            this.pnlHeader.Controls.Add(this.btnDefaultFileLocation);
-            this.pnlHeader.Controls.Add(this.pnlSeparator12);
-            this.pnlHeader.Controls.Add(this.btnNotification);
-            this.pnlHeader.Controls.Add(this.pnlSeparator13);
-            this.pnlHeader.Controls.Add(this.picbUser);
-            this.pnlHeader.Controls.Add(this.pnlSeparator14);
             this.pnlHeader.Controls.Add(this.lblGreeting);
             this.pnlHeader.Controls.Add(this.pnlSeparator15);
             this.pnlHeader.Controls.Add(this.btnMenu);
@@ -108,88 +92,6 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(933, 60);
             this.pnlHeader.TabIndex = 3;
-            // 
-            // lblDefaultFileLocation
-            // 
-            this.lblDefaultFileLocation.AutoSize = true;
-            this.lblDefaultFileLocation.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblDefaultFileLocation.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDefaultFileLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lblDefaultFileLocation.Location = new System.Drawing.Point(360, 10);
-            this.lblDefaultFileLocation.Name = "lblDefaultFileLocation";
-            this.lblDefaultFileLocation.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
-            this.lblDefaultFileLocation.Size = new System.Drawing.Size(95, 26);
-            this.lblDefaultFileLocation.TabIndex = 217;
-            this.lblDefaultFileLocation.Text = "file location";
-            this.lblDefaultFileLocation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnDefaultFileLocation
-            // 
-            this.btnDefaultFileLocation.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDefaultFileLocation.Location = new System.Drawing.Point(455, 10);
-            this.btnDefaultFileLocation.Name = "btnDefaultFileLocation";
-            this.btnDefaultFileLocation.Size = new System.Drawing.Size(75, 40);
-            this.btnDefaultFileLocation.TabIndex = 216;
-            this.btnDefaultFileLocation.Text = "DefaultFileLocation";
-            this.btnDefaultFileLocation.UseVisualStyleBackColor = true;
-            this.btnDefaultFileLocation.Click += new System.EventHandler(this.btnDefaultFileLocation_Click);
-            // 
-            // pnlSeparator12
-            // 
-            this.pnlSeparator12.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSeparator12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator12.Location = new System.Drawing.Point(530, 10);
-            this.pnlSeparator12.Name = "pnlSeparator12";
-            this.pnlSeparator12.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator12.TabIndex = 1;
-            // 
-            // btnNotification
-            // 
-            this.btnNotification.BackColor = System.Drawing.Color.Transparent;
-            this.btnNotification.BackgroundImage = global::Fireon.Properties.Resources.btnIconNotification;
-            this.btnNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNotification.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnNotification.FlatAppearance.BorderSize = 0;
-            this.btnNotification.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotification.Location = new System.Drawing.Point(545, 10);
-            this.btnNotification.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.btnNotification.Name = "btnNotification";
-            this.btnNotification.Size = new System.Drawing.Size(28, 40);
-            this.btnNotification.TabIndex = 2;
-            this.btnNotification.TabStop = false;
-            this.btnNotification.UseVisualStyleBackColor = false;
-            // 
-            // pnlSeparator13
-            // 
-            this.pnlSeparator13.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSeparator13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator13.Location = new System.Drawing.Point(573, 10);
-            this.pnlSeparator13.Name = "pnlSeparator13";
-            this.pnlSeparator13.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator13.TabIndex = 3;
-            // 
-            // picbUser
-            // 
-            this.picbUser.BackColor = System.Drawing.Color.Transparent;
-            this.picbUser.BackgroundImage = global::Fireon.Properties.Resources.miscEmployeeDP;
-            this.picbUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picbUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picbUser.Location = new System.Drawing.Point(588, 10);
-            this.picbUser.Name = "picbUser";
-            this.picbUser.Size = new System.Drawing.Size(42, 40);
-            this.picbUser.TabIndex = 1;
-            this.picbUser.TabStop = false;
-            // 
-            // pnlSeparator14
-            // 
-            this.pnlSeparator14.BackColor = System.Drawing.Color.Transparent;
-            this.pnlSeparator14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator14.Location = new System.Drawing.Point(630, 10);
-            this.pnlSeparator14.Name = "pnlSeparator14";
-            this.pnlSeparator14.Size = new System.Drawing.Size(15, 40);
-            this.pnlSeparator14.TabIndex = 4;
             // 
             // lblGreeting
             // 
@@ -772,10 +674,6 @@
             this.pnlBlockersBottomMain.Size = new System.Drawing.Size(933, 25);
             this.pnlBlockersBottomMain.TabIndex = 1;
             // 
-            // fbdDefaultFileLocation
-            // 
-            this.fbdDefaultFileLocation.Description = "Choose Default File Directory.";
-            // 
             // frmFireonPayroll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -795,11 +693,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.DarkRed;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFireonPayroll_FormClosed);
-            this.Load += new System.EventHandler(this.frmFireonPayroll_Load);
             this.SizeChanged += new System.EventHandler(this.frmFireonPayroll_SizeChanged);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbUser)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlSidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbFireon)).EndInit();
@@ -811,7 +707,6 @@
 
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblGreeting;
-        private System.Windows.Forms.PictureBox picbUser;
         private System.Windows.Forms.Panel pnlSidebar;
         private System.Windows.Forms.Panel pnlSeparator1;
         private System.Windows.Forms.PictureBox picbFireon;
@@ -844,22 +739,15 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Label lblDateToday;
         private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.Button btnNotification;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel pnlSeparator0;
         private System.Windows.Forms.Panel pnlBlockersRight;
         private System.Windows.Forms.Panel pnlBlockersLeft;
-        private System.Windows.Forms.Panel pnlSeparator13;
-        private System.Windows.Forms.Panel pnlSeparator14;
         private System.Windows.Forms.Panel pnlSeparator15;
-        private System.Windows.Forms.Panel pnlSeparator12;
         private System.Windows.Forms.Panel pnlBlockersTop;
         private System.Windows.Forms.Panel pnlBlockersBottom;
         private System.Windows.Forms.Panel pnlSelected;
         private System.Windows.Forms.Panel pnlBlockersRightMain;
         private System.Windows.Forms.Panel pnlBlockersBottomMain;
-        private System.Windows.Forms.Button btnDefaultFileLocation;
-        private System.Windows.Forms.Label lblDefaultFileLocation;
-        private System.Windows.Forms.FolderBrowserDialog fbdDefaultFileLocation;
     }
 }

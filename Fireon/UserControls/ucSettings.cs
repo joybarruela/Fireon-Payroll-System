@@ -23,6 +23,12 @@ namespace Fireon
             InitializeComponent();
             db.dbRead("SELECT accountID, accountUsername, accountType FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
             verifyLevelOfAccess();
+
+            if (Properties.Settings.Default.keepLoggedIn == true)
+            {
+                chkbxKeepMeLoggedIn.Checked = true;
+            }
+            lblDefaultFileLocation.Text = Properties.Settings.Default.defaultFileLocation.ToString(); // REFRESHES THE FILE LOCATION FIRST
         }
 
         private void verifyLevelOfAccess()
@@ -40,271 +46,158 @@ namespace Fireon
 
         private void superUserMode()
         {
+            lblUsername.Visible = true;
+            lblPassword.Visible = true;
+            lblConfirmPassword.Visible = true;
+            lblYourPassword.Visible = true;
 
+            txtbxUsername.Visible = true;
+            txtbxPassword.Visible = true;
+            txtbxConfirmPassword.Visible = true;
+            txtbxYourPassword.Visible = true;
+
+            dtgvAccounts.Enabled = true;
+            dtgvAccounts.Visible = true;
+
+            btnDelete.Visible = true;
+            btnAdd.Visible = true;
+
+            btnDefaultFileLocation.Visible = true;
+            lblDefaultFileLocation.Visible = true;
         }
 
         private void normalUserMode()
         {
+            lblUsername.Visible = false;
+            lblPassword.Visible = false;
+            lblConfirmPassword.Visible = false;
+            lblYourPassword.Visible = false;
 
+            txtbxUsername.Visible = false;
+            txtbxPassword.Visible = false;
+            txtbxConfirmPassword.Visible = false;
+            txtbxYourPassword.Visible = false;
+
+            dtgvAccounts.Enabled = false;
+            dtgvAccounts.Visible = false;
+
+            btnDelete.Visible = false;
+            btnAdd.Visible = false;
+
+            btnDefaultFileLocation.Visible = false;
+            lblDefaultFileLocation.Visible = false;
         }
 
 
+        #region ADD ACCOUNT
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            //1. Validate input first
+            //    a. i. User type should have a selected value ii. unique 
+            //    b. i. Apply validations on the username, ii. should not be empty
+            //    c. i. Current password should be the same with the logged in password
+            //    d. i. New password should be differnt from the old one
+            //    e. i. New Password should be the same with the new password one
 
 
+            if (String.IsNullOrEmpty(txtbxUsername.Text) == false &&
+                String.IsNullOrEmpty(txtbxPassword.Text) == false &&
+                verifyUsernameIfUnique(txtbxUsername.Text) == true &&
+                String.Compare(txtbxConfirmPassword.Text, txtbxPassword.Text) == 0 &&
+                String.Compare(Properties.Settings.Default.lastLoggedInPassword.ToString(), txtbxYourPassword.Text) == 0)
+            {
+                //ADD TO DATABASE
+                Console.WriteLine("Validation success");
+                db.addAccountInfo(txtbxUsername.Text, txtbxPassword.Text);
+                db.dbRead("SELECT accountID, accountUsername, accountType FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
+                MessageBox.Show(null, "Account successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtbxYourPassword.Clear();
+                txtbxUsername.Clear();
+                txtbxConfirmPassword.Clear();
+                txtbxPassword.Clear();
+            }
+            else
+            {
+                MessageBox.Show(null, "Validation fail", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        #endregion
+
+        public bool verifyUsernameIfUnique(String username)
+        {
+            foreach (DataGridViewRow item in dtgvAccounts.Rows) // LOOPS ON EACH ITEM OF DTGV ACCOUNTS EACH ROW IS VERIFIED
+            {
+                string testedName = item.Cells[1].Value.ToString();
+
+                if (String.Compare(username, testedName) == 0) // COMPARES WITH THE CURRENT LIST OF EMPLOYEE USERNAME
+                {
+                    return false; // IF THEY ARE THE SAME THEN EXIT IMMEDIATELY AND SAY FALSE
+                }
+
+            }
+            return true; // IF NOT BEEN RETURNED, THEN TELL TRUE
+        }
 
 
+        #region VALIDATIONS ON FIELDS
+        private void txtbxUpdateUserName_Leave(object sender, EventArgs e)
+        {
+            sf.cleanText((TextBox)sender);
+        }
+        private void txtbxUpdateUserName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            sf.firstRegex(e);
+        }
+        #endregion
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            String accountType= dtgvAccounts.SelectedRows[0].Cells[2].Value.ToString();
+
+            if (String.Compare(accountType, dp.accountTypes[1].ToString()) == 0)
+            {
+                MessageBox.Show(null, @"You can't delete your own account", Properties.Resources.str_program_title, MessageBoxButtons.OK); 
+                return;
+            }
+
+            String username = dtgvAccounts.SelectedRows[0].Cells[1].Value.ToString();
+            int accountID = int.Parse(dtgvAccounts.SelectedRows[0].Cells[0].Value.ToString());
+
+            var result = MessageBox.Show(null, @"Are you sure you want to delete username: '" + username + "' with account ID of: '" + accountID.ToString() + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                // delete
+                db.deleteAccountInfo(accountID);
+                db.dbRead("SELECT accountID, accountUsername, accountType FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
+                MessageBox.Show(null, "Account successfully deleted.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                // dont
+            }
+        }
+
+        private void chkbxKeepMeLoggedIn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxKeepMeLoggedIn.Checked == true)
+            {
+                Properties.Settings.Default.keepLoggedIn = true;
+            }
+            else
+            {
+                Properties.Settings.Default.keepLoggedIn = false;
+            }
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-        //private void stuffInit()
-        //{
-        //    this.dtgvAccounts.Visible = false;
-        //    lblCurrentPw.Visible = false;
-        //    txtbxCurrentPw.Visible = false;
-        //    btnSeeCurrentPw.Visible = false;
-
-        //    lblNewPw.Visible = false;
-        //    txtbxNewPw.Visible = false;
-        //    btnSeeNewPw.Visible = false;
-
-        //    lblConfirmNewPw.Visible = false;
-        //    txtbxConfirmNewPw.Visible = false;
-        //    btnSeeCurrentPw.Visible = false;
-
-        //    btnUpdateAccount.Visible = true;
-        //    btnAddAccount.Visible = true;
-        //}
-
-        //public bool verifyUsernameIfUnique(String username)
-        //{
-        //    var x = 0;
-        //    foreach (DataGridViewRow item in dtgvAccounts.Rows) // LOOPS ON EACH ITEM OF DTGV ACCOUNTS EACH ROW IS VERIFIED
-        //    {
-        //        string testedName = item.Cells[1].Value.ToString();
-        //        if (String.Compare(username, testedName) == 0) // COMPARES WITH THE CURRENT LIST OF EMPLOYEE USERNAME
-        //        {
-        //            return false; // IF THEY ARE THE SAME THEN EXIT IMMEDIATELY AND SAY FALSE
-        //        }
-        //        x++;
-        //    }
-        //    return true; // IF NOT BEEN RETURNED, THEN TELL TRUE
-        //}
-        //public void updateMode()
-        //{
-        //    this.dtgvAccounts.Visible = true;
-        //    lblCurrentPw.Visible = true;
-        //    txtbxCurrentPw.Visible = true;
-        //    btnSeeCurrentPw.Visible = true;
-
-        //    lblNewPw.Visible = true;
-        //    txtbxNewPw.Visible = true;
-        //    btnSeeNewPw.Visible = true;
-
-        //    lblConfirmNewPw.Visible = true;
-        //    txtbxConfirmNewPw.Visible = true;
-        //    btnSeeCurrentPw.Visible = true;
-
-        //    btnUpdateAccount.Visible = true;
-        //    btnAddAccount.Visible = false;
-        //    MessageBox.Show(null, "Update an account.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //}
-        //public void addMode()
-        //{
-        //    this.dtgvAccounts.Visible = false;
-        //    lblCurrentPw.Visible = false;
-        //    txtbxCurrentPw.Visible = false;
-        //    btnSeeCurrentPw.Visible = false;
-
-        //    lblNewPw.Visible = true;
-        //    txtbxNewPw.Visible = true;
-        //    btnSeeNewPw.Visible = true;
-
-        //    lblConfirmNewPw.Visible = true;
-        //    txtbxConfirmNewPw.Visible = true;
-        //    btnSeeCurrentPw.Visible = true;
-
-        //    btnUpdateAccount.Visible = false;
-        //    btnAddAccount.Visible = true;
-        //    MessageBox.Show(null, "Add new account.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //}
-
-
-
-
-
-
-        //#region VALIDATIONS ON FIELDS
-        //private void txtbxUpdateUserName_Leave(object sender, EventArgs e)
-        //{
-        //    sf.cleanText((TextBox)sender);
-        //}
-        //private void txtbxUpdateUserName_KeyPress(object sender, KeyPressEventArgs e)
-        //{
-        //    sf.firstRegex(e);
-        //}
-        //#endregion
-        //#region PASSWORD LOGIC ON THOSE THREE EYES
-        //private void btnSeeCurrentPw_MouseHover(object sender, EventArgs e)
-        //{
-        //    Button theSender = (Button)sender; // CAST THE SENDER 
-        //    theSender.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //}
-        //private void btnSeeCurrentPw_MouseLeave(object sender, EventArgs e)
-        //{
-        //    Button theSender = (Button)sender; // CAST THE SENDER 
-        //    // CHANGES THE IMAGE WHEN MOUSE LEAVES THE EYE
-        //    // IF THE MOUSE LEAVES THE EYE ON AN ACTIVATED STATE, KEEP THE ACTIVATED STATE, ELSE DEACTIVATE THE EYE
-        //    if (String.Compare(txtbxCurrentPw.Tag.ToString(), "FALSE") == 0)
-        //    {
-        //        btnSeeCurrentPw.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //    }
-        //    else
-        //    {
-        //        btnSeeCurrentPw.BackgroundImage = Properties.Resources.btnIconEye;
-        //    }
-
-        //    if (String.Compare(txtbxNewPw.Tag.ToString(), "FALSE") == 0)
-        //    {
-        //        btnSeeNewPw.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //    }
-        //    else
-        //    {
-        //        btnSeeNewPw.BackgroundImage = Properties.Resources.btnIconEye;
-        //    }
-
-        //    if (String.Compare(txtbxConfirmNewPw.Tag.ToString(), "FALSE") == 0)
-        //    {
-        //        btnSeeConfirmNewPw.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //    }
-        //    else
-        //    {
-        //        btnSeeConfirmNewPw.BackgroundImage = Properties.Resources.btnIconEye;
-        //    }
-        //}
-        //private void btnSeeCurrentPw_Click(object sender, EventArgs e)
-        //{
-        //    /* ALGORITHM
-        //     * "TRUE" MEANS USER CAN'T SEE PASSWORD, "FALSE" MEANS USER CAN SEE PASSWORD
-        //     * #1 DEFAULT TAG PROPERTY OF txtbx_pw IS SET TO "TRUE" AND UseSystemPasswordChar = true.
-        //     * #2 CHECK WHETHER THE Tag PROPERTY OF txtbx_pw IS "TRUE".
-        //     * #3 IF THE VALUE IS "TRUE" THEN SET THE UseSystemPasswordChar PROPERTY OF txtbx_pw TO "FALSE" and the Tag PROPERTY to "FALSE" AS WELL SO THAT USER CAN SEE PASSWORD.
-        //     * #4 IF THE VALUE IS ALREADY "FALSE", THEN SET BACK Tag PROPERTY TO "TRUE" AND UseSystemPasswordChar PROPERTY OF txtbx_pw TO "TRUE" AGAIN.
-        //     */
-        //    // #2
-        //    if (String.Compare(txtbxCurrentPw.Tag.ToString(), "TRUE") == 0)
-        //    {
-        //        // #3
-        //        txtbxCurrentPw.Tag = "FALSE";
-        //        txtbxCurrentPw.UseSystemPasswordChar = false;
-        //        // CHANGE EYE LOGO TO ACTIVATED
-        //        btnSeeCurrentPw.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //    }
-        //    // #4
-        //    else
-        //    {
-        //        txtbxCurrentPw.Tag = "TRUE";
-        //        txtbxCurrentPw.UseSystemPasswordChar = true;
-        //        // CHANGE EYE LOGO TO DEACTIVATED
-        //        btnSeeCurrentPw.BackgroundImage = Properties.Resources.btnIconEye;
-        //    }
-
-
-        //    /* ALGORITHM
-        //     * "TRUE" MEANS USER CAN'T SEE PASSWORD, "FALSE" MEANS USER CAN SEE PASSWORD
-        //     * #1 DEFAULT TAG PROPERTY OF txtbx_pw IS SET TO "TRUE" AND UseSystemPasswordChar = true.
-        //     * #2 CHECK WHETHER THE Tag PROPERTY OF txtbx_pw IS "TRUE".
-        //     * #3 IF THE VALUE IS "TRUE" THEN SET THE UseSystemPasswordChar PROPERTY OF txtbx_pw TO "FALSE" and the Tag PROPERTY to "FALSE" AS WELL SO THAT USER CAN SEE PASSWORD.
-        //     * #4 IF THE VALUE IS ALREADY "FALSE", THEN SET BACK Tag PROPERTY TO "TRUE" AND UseSystemPasswordChar PROPERTY OF txtbx_pw TO "TRUE" AGAIN.
-        //     */
-        //    // #2
-        //    if (String.Compare(txtbxNewPw.Tag.ToString(), "TRUE") == 0)
-        //    {
-        //        // #3
-        //        txtbxNewPw.Tag = "FALSE";
-        //        txtbxNewPw.UseSystemPasswordChar = false;
-        //        // CHANGE EYE LOGO TO ACTIVATED
-        //        btnSeeNewPw.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //    }
-        //    // #4
-        //    else
-        //    {
-        //        txtbxNewPw.Tag = "TRUE";
-        //        txtbxNewPw.UseSystemPasswordChar = true;
-        //        // CHANGE EYE LOGO TO DEACTIVATED
-        //        btnSeeNewPw.BackgroundImage = Properties.Resources.btnIconEye;
-        //    }
-
-        //    /* ALGORITHM
-        //     * "TRUE" MEANS USER CAN'T SEE PASSWORD, "FALSE" MEANS USER CAN SEE PASSWORD
-        //     * #1 DEFAULT TAG PROPERTY OF txtbx_pw IS SET TO "TRUE" AND UseSystemPasswordChar = true.
-        //     * #2 CHECK WHETHER THE Tag PROPERTY OF txtbx_pw IS "TRUE".
-        //     * #3 IF THE VALUE IS "TRUE" THEN SET THE UseSystemPasswordChar PROPERTY OF txtbx_pw TO "FALSE" and the Tag PROPERTY to "FALSE" AS WELL SO THAT USER CAN SEE PASSWORD.
-        //     * #4 IF THE VALUE IS ALREADY "FALSE", THEN SET BACK Tag PROPERTY TO "TRUE" AND UseSystemPasswordChar PROPERTY OF txtbx_pw TO "TRUE" AGAIN.
-        //     */
-        //    // #2
-        //    if (String.Compare(txtbxConfirmNewPw.Tag.ToString(), "TRUE") == 0)
-        //    {
-        //        // #3
-        //        txtbxConfirmNewPw.Tag = "FALSE";
-        //        txtbxConfirmNewPw.UseSystemPasswordChar = false;
-        //        // CHANGE EYE LOGO TO ACTIVATED
-        //        btnSeeConfirmNewPw.BackgroundImage = Properties.Resources.btnIconEyeHover;
-        //    }
-        //    // #4
-        //    else
-        //    {
-        //        txtbxConfirmNewPw.Tag = "TRUE";
-        //        txtbxConfirmNewPw.UseSystemPasswordChar = true;
-        //        // CHANGE EYE LOGO TO DEACTIVATED
-        //        btnSeeConfirmNewPw.BackgroundImage = Properties.Resources.btnIconEye;
-        //    }
-        //}
-        //#endregion
-        //#region ADD ACCOUNT
-        //private void btnAddAccount_Click(object sender, EventArgs e)
-        //{
-        ////1. Validate input first
-        ////    a. i. User type should have a selected value ii. unique 
-        ////    b. i. Apply validations on the username, ii. should not be empty
-        ////    c. i. Current password should be the same with the logged in password
-        ////    d. i. New password should be differnt from the old one
-        ////    e. i. New Password should be the same with the new password one
-
-
-        //if (String.IsNullOrEmpty(txtbxUpdateUserName.Text) == false &&
-        //    String.IsNullOrEmpty(txtbxNewPw.Text) == false &&
-        //    verifyUsernameIfUnique(txtbxUpdateUserName.Text) == true &&
-        //    String.Compare(txtbxNewPw.Text, txtbxConfirmNewPw.Text) == 0)
-        //{
-        //    //ADD TO DATABASE
-        //    Console.WriteLine("Validation success");
-        //    db.addAccountInfo(txtbxUpdateUserName.Text, txtbxNewPw.Text);
-        //    db.dbRead("SELECT accountID, accountUsername FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
-        //    MessageBox.Show(null, "Account successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //}
-        //else
-        //{
-        //    MessageBox.Show(null, "Validation fail", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //}
-
-        //}
-        //#endregion
-
-
-        //// CODE TO ACTIVATE THE CURRENT PASSWORD AND REENTER PASSWORD FOR UPDATE HERE
-        //// CODE TO ACTIVATE THE CURRENT PASSWORD AND REENTER PASSWORD FOR UPDATE HERE
-        //// CODE TO ACTIVATE THE CURRENT PASSWORD AND REENTER PASSWORD FOR UPDATE HERE
-        //// CODE TO ACTIVATE THE CURRENT PASSWORD AND REENTER PASSWORD FOR UPDATE HERE
-        ////VERIFY IS SAME LOGGED ON ACCOUNT IF YES THEN PROMPT FOR EDIT
+        private void btnDefaultFileLocation_Click(object sender, EventArgs e)
+        {
+            // THERE IS ALSO THE LOAD LINE ON THE LOAD() EVENT HERE
+            if (fbdDefaultFileLocation.ShowDialog() == DialogResult.OK) // OPENS FOLDER CHOOSER DIALOG
+            {
+                fo.saveDefaultFileLocation(fbdDefaultFileLocation.SelectedPath, this.lblDefaultFileLocation); // PASSES THE FILENAME TO BE PROCESSED THERE
+            }
+        }
     }
 }

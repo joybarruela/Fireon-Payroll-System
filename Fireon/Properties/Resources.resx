@@ -426,4 +426,27 @@
     <value>Default file location saved successfully.</value>
     <comment>When choosing a default file location</comment>
   </data>
+  <data name="str_current_account_greetings" xml:space="preserve">
+    <value>Good day, </value>
+    <comment>To be appended by the currently logged in account name to be recoved in Setting</comment>
+  </data>
+  <data name="int_cash_advance" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="int_maternity_leave" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="int_sick_leave" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="int_vacation_leave" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="query_string_employee_details" xml:space="preserve">
+    <value>SELECT * FROM tbl_employee_details</value>
+  </data>
+  <data name="msg_leave_added" xml:space="preserve">
+    <value>Leave successfully added.</value>
+    <comment>When the leave is successfully added.</comment>
+  </data>
 </root>

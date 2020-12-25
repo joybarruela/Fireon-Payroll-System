@@ -190,6 +190,7 @@ namespace Fireon
                         ucNewEmployee.picbDP.ImageLocation,
                         DateTime.Today
                         );
+                    db.dbInsertEmployeeDetails();
                     fo.createEmployeeDirectory(fileListLocations); // CREATE THE EMPLOYEE DIRECTORY FOR THAT
                     displayUserControl("New Employee"); // BACK TO NEW EMPLOYEE
                 }
