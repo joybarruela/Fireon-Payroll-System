@@ -122,11 +122,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucAllowance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAllowance.Designer.cs">
+      <DependentUpon>ucAllowance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCashAdvance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCashAdvance.Designer.cs">
+      <DependentUpon>ucCashAdvance.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ucDashboard.Designer.cs">
       <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDeduction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDeduction.Designer.cs">
+      <DependentUpon>ucDeduction.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucEmployee.cs">
       <SubType>UserControl</SubType>
@@ -184,8 +202,23 @@
     <Compile Include="UserControls\ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucViolation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucViolation.Designer.cs">
+      <DependentUpon>ucViolation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ucAllowance.resx">
+      <DependentUpon>ucAllowance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCashAdvance.resx">
+      <DependentUpon>ucCashAdvance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucDashboard.resx">
       <DependentUpon>ucDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDeduction.resx">
+      <DependentUpon>ucDeduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucEmployee.resx">
       <DependentUpon>ucEmployee.cs</DependentUpon>
@@ -218,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucViolation.resx">
+      <DependentUpon>ucViolation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Miscellaneous\app.manifest" />

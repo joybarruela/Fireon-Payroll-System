@@ -23,7 +23,7 @@ namespace Fireon
         /// <summary>
         /// THIS METHOD VALIDATES THE USERNAME AND PASSWORD ENTERED ON LOGIN. WILL RETURN TRUE IF LOGIN CREDENTIALS MATCH
         /// </summary>
-        /// <param name="username">THE USERNAME TO BE EVALUATED</param>
+        /// <param name="allowanceName">THE USERNAME TO BE EVALUATED</param>
         /// <param name="password">THE PASSWORD TO BE EVALUATED</param>
         public bool dbLogin(string username, string password)
         {
@@ -45,7 +45,7 @@ namespace Fireon
             {
                 // THIS IS COMPARING 2 STRINGS BETWEEN
                 // "dbDataSet.Tables[0].Rows[row].ItemArray[1].ToString()" << WHICH IS THE USERNAME ON THE DATASET
-                // "username" << WHICH IS THE PASSED STRING IN THIS METHOD
+                // "allowanceName" << WHICH IS THE PASSED STRING IN THIS METHOD
                 // THE "String.Compare" RETURNS 0 IF BOTH STRINGS ARE THE SAME, HENCE "== 0"
                 // ItemArray[1] IS THE accountUsername FIELD ON THE DATABASE. ItemArray[2] IS THE accountPassword
                 if (String.Compare(dbDataSet.Tables[0].Rows[row].ItemArray[1].ToString(), username) == 0)
@@ -303,8 +303,8 @@ namespace Fireon
         public void addAccountInfo(string username, string password)
         {
             dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_account(accountUsername, accountPassword, accountType) VALUES(@username, @password, @type)", dbCon);
-            dbCmd.Parameters.AddWithValue("@username", username);
+            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_account(accountUsername, accountPassword, accountType) VALUES(@allowanceName, @password, @type)", dbCon);
+            dbCmd.Parameters.AddWithValue("@allowanceName", username);
             dbCmd.Parameters.AddWithValue("@password", password);
             dbCmd.Parameters.AddWithValue("@type", dp.accountTypes[0].ToString());
             dbCmd.ExecuteNonQuery(); // EXECUTE
@@ -314,7 +314,7 @@ namespace Fireon
         {
             // SETS THE keepLoggedIn, lastLoggedInUsername, lastLoggedInPassword, isSuperUser ON THE Setting.settings VALUES.
             /* ALGO
-             * #1 Check if the passed username is a "Super User". If yes then set the correct value for the isSuperUser.
+             * #1 Check if the passed allowanceName is a "Super User". If yes then set the correct value for the isSuperUser.
              * #2 Add the lastLoggedInUsername, add the lastLoggedInPassword
              * #3 Check the keepMeLoggedIn value 
              */
@@ -405,8 +405,7 @@ namespace Fireon
             Console.WriteLine(employeeID + " " + overtimeValue.ToString());
 
         }
-
-        public void AddHoliday(string employeeID, int percentage)
+        public void addHoliday(string employeeID, int percentage)
         {
             string holidayQuery = @"
             UPDATE fireon.tbl_employee_details 
@@ -420,6 +419,68 @@ namespace Fireon
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
             Console.WriteLine(employeeID + " " + percentage.ToString());
+        }
+        public void addViolation(string employeeID, int violationValue)
+        {
+            string violationQuery = @"UPDATE fireon.tbl_employee_details SET violationViolationAmount = violationViolationAmount + @violationValue WHERE idtbl_employee_details = @employeeID";
+
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(violationQuery, dbCon);
+            dbCmd.Parameters.AddWithValue("@employeeID", int.Parse(employeeID));
+            dbCmd.Parameters.AddWithValue("@violationValue", violationValue);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+            Console.WriteLine(employeeID + " " + violationValue.ToString());
+        }
+        public void addCashAdvance(string employeeID, int cashAdvanceValue)
+        {
+            // UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - 10 WHERE idtbl_employee_details = 70;
+            string cashAdvanceQuery = @"UPDATE fireon.tbl_employee_details SET cashAdvanceAmount = cashAdvanceAmount - @cashAdvanceValue WHERE idtbl_employee_details = @employeeID";
+
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(cashAdvanceQuery, dbCon);
+            dbCmd.Parameters.AddWithValue("@employeeID", int.Parse(employeeID));
+            dbCmd.Parameters.AddWithValue("@cashAdvanceValue", cashAdvanceValue);
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+            Console.WriteLine(employeeID + " " + cashAdvanceValue.ToString());
+        }
+        public void addAllowance(string allowanceName, string allowanceAmount)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_allowance(allowanceName, allowanceAmount) VALUES(@allowanceName, @allowanceAmount)", dbCon);
+            dbCmd.Parameters.AddWithValue("@allowanceName", allowanceName);
+            dbCmd.Parameters.AddWithValue("@allowanceAmount", int.Parse(allowanceAmount));
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+        }
+
+        public void deleteAllowance(string allowanceID)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(@"DELETE FROM tbl_allowance WHERE allowanceID = @ID", dbCon);
+            dbCmd.Parameters.AddWithValue("@ID", int.Parse(allowanceID));
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+        }
+
+        public void addDeduction(string deductionName, string dedutionAmount)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_deduction(deductionName, deductionAmount) VALUES(@deductionName, @deductionAmount)", dbCon);
+            dbCmd.Parameters.AddWithValue("@deductionName", deductionName);
+            dbCmd.Parameters.AddWithValue("@deductionAmount", double.Parse(dedutionAmount));
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+        }
+
+        public void deleteDeduction(string deductionID)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(@"DELETE FROM tbl_deduction WHERE deductionID = @ID", dbCon);
+            dbCmd.Parameters.AddWithValue("@ID", int.Parse(deductionID));
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
         }
     }
 }

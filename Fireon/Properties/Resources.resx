@@ -453,4 +453,24 @@
     <value>Overtime successfully added.</value>
     <comment>When the overtime is successfully added.</comment>
   </data>
+  <data name="msg_cash_advance_added" xml:space="preserve">
+    <value>Cash advance approved.</value>
+    <comment>When the cash advance is successfully added.</comment>
+  </data>
+  <data name="msg_violation_added" xml:space="preserve">
+    <value>Violation successfully added.</value>
+    <comment>When the violation is successfully added.</comment>
+  </data>
+  <data name="msg_allowance_added" xml:space="preserve">
+    <value>Allowance successfully added.</value>
+  </data>
+  <data name="msg_deduction_added" xml:space="preserve">
+    <value>Deduction successfully added.</value>
+  </data>
+  <data name="query_string_allowance" xml:space="preserve">
+    <value>SELECT * FROM tbl_allowance</value>
+  </data>
+  <data name="query_string_deduction" xml:space="preserve">
+    <value>SELECT * FROM tbl_deduction</value>
+  </data>
 </root>

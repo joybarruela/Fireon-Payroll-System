@@ -57,5 +57,18 @@ namespace Fireon
                 e.Handled = true;
             }
         }
+
+        public void thirdRegex(KeyPressEventArgs e)
+        {
+            // IF INPUT IS A NUMBER OR A BACKSPACE OR A PERIOD THEN ALLOW, ELSE DON'T.
+            if ((char.IsNumber(e.KeyChar)) || e.KeyChar == '\b' || e.KeyChar == '.')
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

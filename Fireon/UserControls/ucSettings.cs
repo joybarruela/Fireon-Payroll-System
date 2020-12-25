@@ -94,7 +94,7 @@ namespace Fireon
         {
             //1. Validate input first
             //    a. i. User type should have a selected value ii. unique 
-            //    b. i. Apply validations on the username, ii. should not be empty
+            //    b. i. Apply validations on the allowanceName, ii. should not be empty
             //    c. i. Current password should be the same with the logged in password
             //    d. i. New password should be differnt from the old one
             //    e. i. New Password should be the same with the new password one
@@ -164,7 +164,7 @@ namespace Fireon
             String username = dtgvAccounts.SelectedRows[0].Cells[1].Value.ToString();
             int accountID = int.Parse(dtgvAccounts.SelectedRows[0].Cells[0].Value.ToString());
 
-            var result = MessageBox.Show(null, @"Are you sure you want to delete username: '" + username + "' with account ID of: '" + accountID.ToString() + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
+            var result = MessageBox.Show(null, @"Are you sure you want to delete allowanceName: '" + username + "' with account ID of: '" + accountID.ToString() + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 // delete

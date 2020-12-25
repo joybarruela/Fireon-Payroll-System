@@ -861,6 +861,33 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Allowance successfully added..
+        /// </summary>
+        public static string msg_allowance_added {
+            get {
+                return ResourceManager.GetString("msg_allowance_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cash advance approved..
+        /// </summary>
+        public static string msg_cash_advance_added {
+            get {
+                return ResourceManager.GetString("msg_cash_advance_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deduction successfully added..
+        /// </summary>
+        public static string msg_deduction_added {
+            get {
+                return ResourceManager.GetString("msg_deduction_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Default file location saved successfully..
         /// </summary>
         public static string msg_default_file_location {
@@ -978,6 +1005,15 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Violation successfully added..
+        /// </summary>
+        public static string msg_violation_added {
+            get {
+                return ResourceManager.GetString("msg_violation_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome to Fireon Payroll System..
         /// </summary>
         public static string msg_welcome_message {
@@ -1001,6 +1037,24 @@ namespace Fireon.Properties {
         public static string query_search_init {
             get {
                 return ResourceManager.GetString("query_search_init", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT * FROM tbl_allowance.
+        /// </summary>
+        public static string query_string_allowance {
+            get {
+                return ResourceManager.GetString("query_string_allowance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT * FROM tbl_deduction.
+        /// </summary>
+        public static string query_string_deduction {
+            get {
+                return ResourceManager.GetString("query_string_deduction", resourceCulture);
             }
         }
         

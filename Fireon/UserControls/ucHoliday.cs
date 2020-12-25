@@ -43,7 +43,7 @@ namespace Fireon.UserControls
                 // #4
                 Console.WriteLine("Regular holiday");
                 DataGridViewRow selectedRow = dtgvHoliday.SelectedRows[0]; // gets the first selected row
-                db.AddHoliday(selectedRow.Cells[0].Value.ToString(), 100);
+                db.addHoliday(selectedRow.Cells[0].Value.ToString(), 100);
                 db.dbRead(Properties.Resources.query_string_employee_details, dtgvHoliday);
                 MessageBox.Show(null, "Holiday pay successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
@@ -54,7 +54,7 @@ namespace Fireon.UserControls
                 // #4
                 Console.WriteLine("Special holiday");
                 DataGridViewRow selectedRow = dtgvHoliday.SelectedRows[0]; // gets the first selected row
-                db.AddHoliday(selectedRow.Cells[0].Value.ToString(), 30);
+                db.addHoliday(selectedRow.Cells[0].Value.ToString(), 30);
                 db.dbRead(Properties.Resources.query_string_employee_details, dtgvHoliday);
                 MessageBox.Show(null, "Holiday pay successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
