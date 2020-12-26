@@ -36,53 +36,66 @@
             this.dtgvAllowance = new System.Windows.Forms.DataGridView();
             this.lblAllowance = new System.Windows.Forms.Label();
             this.btnDeleteAllowance = new System.Windows.Forms.Button();
+            this.tblpAllowance = new System.Windows.Forms.TableLayoutPanel();
+            this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlAllowance = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAllowance)).BeginInit();
+            this.tblpAllowance.SuspendLayout();
+            this.flpBelow.SuspendLayout();
+            this.pnlAllowance.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddAllowance
             // 
-            this.btnAddAllowance.Location = new System.Drawing.Point(396, 272);
+            this.btnAddAllowance.BackgroundImage = global::Fireon.Properties.Resources.btnAdd;
+            this.btnAddAllowance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddAllowance.FlatAppearance.BorderSize = 0;
+            this.btnAddAllowance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAllowance.Location = new System.Drawing.Point(764, 3);
             this.btnAddAllowance.Name = "btnAddAllowance";
-            this.btnAddAllowance.Size = new System.Drawing.Size(75, 23);
+            this.btnAddAllowance.Size = new System.Drawing.Size(127, 30);
             this.btnAddAllowance.TabIndex = 157;
-            this.btnAddAllowance.Text = "ADD";
             this.btnAddAllowance.UseVisualStyleBackColor = true;
             this.btnAddAllowance.Click += new System.EventHandler(this.btnAddAllowance_Click);
             // 
             // lblAllowanceName
             // 
             this.lblAllowanceName.AutoSize = true;
-            this.lblAllowanceName.Location = new System.Drawing.Point(14, 69);
+            this.lblAllowanceName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAllowanceName.Location = new System.Drawing.Point(3, 6);
             this.lblAllowanceName.Name = "lblAllowanceName";
-            this.lblAllowanceName.Size = new System.Drawing.Size(87, 13);
+            this.lblAllowanceName.Size = new System.Drawing.Size(137, 20);
             this.lblAllowanceName.TabIndex = 152;
             this.lblAllowanceName.Text = "Allowance Name";
             // 
             // lblAllowanceAmount
             // 
             this.lblAllowanceAmount.AutoSize = true;
-            this.lblAllowanceAmount.Location = new System.Drawing.Point(15, 95);
+            this.lblAllowanceAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAllowanceAmount.Location = new System.Drawing.Point(74, 36);
             this.lblAllowanceAmount.Name = "lblAllowanceAmount";
-            this.lblAllowanceAmount.Size = new System.Drawing.Size(43, 13);
+            this.lblAllowanceAmount.Size = new System.Drawing.Size(66, 20);
             this.lblAllowanceAmount.TabIndex = 153;
             this.lblAllowanceAmount.Text = "Amount";
             // 
             // txtbxAllowanceName
             // 
-            this.txtbxAllowanceName.Location = new System.Drawing.Point(107, 62);
+            this.txtbxAllowanceName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxAllowanceName.Location = new System.Drawing.Point(146, 3);
             this.txtbxAllowanceName.MaxLength = 40;
             this.txtbxAllowanceName.Name = "txtbxAllowanceName";
-            this.txtbxAllowanceName.Size = new System.Drawing.Size(274, 20);
+            this.txtbxAllowanceName.Size = new System.Drawing.Size(274, 26);
             this.txtbxAllowanceName.TabIndex = 148;
             this.txtbxAllowanceName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxAllowanceName_KeyPress);
             this.txtbxAllowanceName.Leave += new System.EventHandler(this.txtbxAllowanceName_Leave);
             // 
             // txtbxAllowanceAmount
             // 
-            this.txtbxAllowanceAmount.Location = new System.Drawing.Point(107, 88);
+            this.txtbxAllowanceAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxAllowanceAmount.Location = new System.Drawing.Point(146, 33);
             this.txtbxAllowanceAmount.MaxLength = 4;
             this.txtbxAllowanceAmount.Name = "txtbxAllowanceAmount";
-            this.txtbxAllowanceAmount.Size = new System.Drawing.Size(76, 20);
+            this.txtbxAllowanceAmount.Size = new System.Drawing.Size(102, 26);
             this.txtbxAllowanceAmount.TabIndex = 149;
             this.txtbxAllowanceAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxAllowanceAmount_KeyPress);
             // 
@@ -92,18 +105,20 @@
             this.dtgvAllowance.AllowUserToDeleteRows = false;
             this.dtgvAllowance.AllowUserToResizeColumns = false;
             this.dtgvAllowance.AllowUserToResizeRows = false;
+            this.dtgvAllowance.BackgroundColor = System.Drawing.Color.White;
             this.dtgvAllowance.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dtgvAllowance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvAllowance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvAllowance.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dtgvAllowance.Location = new System.Drawing.Point(13, 124);
+            this.dtgvAllowance.Location = new System.Drawing.Point(3, 77);
             this.dtgvAllowance.MultiSelect = false;
             this.dtgvAllowance.Name = "dtgvAllowance";
             this.dtgvAllowance.ReadOnly = true;
             this.dtgvAllowance.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvAllowance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvAllowance.ShowEditingIcon = false;
-            this.dtgvAllowance.Size = new System.Drawing.Size(458, 121);
+            this.dtgvAllowance.Size = new System.Drawing.Size(894, 293);
             this.dtgvAllowance.TabIndex = 147;
             // 
             // lblAllowance
@@ -122,29 +137,72 @@
             // 
             // btnDeleteAllowance
             // 
-            this.btnDeleteAllowance.Location = new System.Drawing.Point(315, 272);
+            this.btnDeleteAllowance.BackgroundImage = global::Fireon.Properties.Resources.btnDelete;
+            this.btnDeleteAllowance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDeleteAllowance.FlatAppearance.BorderSize = 0;
+            this.btnDeleteAllowance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteAllowance.Location = new System.Drawing.Point(631, 3);
             this.btnDeleteAllowance.Name = "btnDeleteAllowance";
-            this.btnDeleteAllowance.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteAllowance.Size = new System.Drawing.Size(127, 30);
             this.btnDeleteAllowance.TabIndex = 156;
-            this.btnDeleteAllowance.Text = "DELETE";
             this.btnDeleteAllowance.UseVisualStyleBackColor = true;
             this.btnDeleteAllowance.Click += new System.EventHandler(this.btnDeleteAllowance_Click);
+            // 
+            // tblpAllowance
+            // 
+            this.tblpAllowance.ColumnCount = 1;
+            this.tblpAllowance.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblpAllowance.Controls.Add(this.dtgvAllowance, 0, 2);
+            this.tblpAllowance.Controls.Add(this.flpBelow, 0, 3);
+            this.tblpAllowance.Controls.Add(this.pnlAllowance, 0, 1);
+            this.tblpAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblpAllowance.Location = new System.Drawing.Point(0, 48);
+            this.tblpAllowance.Name = "tblpAllowance";
+            this.tblpAllowance.RowCount = 4;
+            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.886792F));
+            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.18357F));
+            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.22222F));
+            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.456264F));
+            this.tblpAllowance.Size = new System.Drawing.Size(900, 414);
+            this.tblpAllowance.TabIndex = 285;
+            // 
+            // flpBelow
+            // 
+            this.flpBelow.Controls.Add(this.btnAddAllowance);
+            this.flpBelow.Controls.Add(this.btnDeleteAllowance);
+            this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpBelow.Location = new System.Drawing.Point(3, 376);
+            this.flpBelow.Name = "flpBelow";
+            this.flpBelow.Size = new System.Drawing.Size(894, 35);
+            this.flpBelow.TabIndex = 282;
+            // 
+            // pnlAllowance
+            // 
+            this.pnlAllowance.Controls.Add(this.txtbxAllowanceName);
+            this.pnlAllowance.Controls.Add(this.txtbxAllowanceAmount);
+            this.pnlAllowance.Controls.Add(this.lblAllowanceAmount);
+            this.pnlAllowance.Controls.Add(this.lblAllowanceName);
+            this.pnlAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAllowance.Location = new System.Drawing.Point(3, 10);
+            this.pnlAllowance.Name = "pnlAllowance";
+            this.pnlAllowance.Size = new System.Drawing.Size(894, 61);
+            this.pnlAllowance.TabIndex = 281;
             // 
             // ucAllowance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnDeleteAllowance);
-            this.Controls.Add(this.btnAddAllowance);
-            this.Controls.Add(this.lblAllowanceName);
-            this.Controls.Add(this.lblAllowanceAmount);
-            this.Controls.Add(this.txtbxAllowanceName);
-            this.Controls.Add(this.txtbxAllowanceAmount);
-            this.Controls.Add(this.dtgvAllowance);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tblpAllowance);
             this.Controls.Add(this.lblAllowance);
             this.Name = "ucAllowance";
             this.Size = new System.Drawing.Size(900, 462);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAllowance)).EndInit();
+            this.tblpAllowance.ResumeLayout(false);
+            this.flpBelow.ResumeLayout(false);
+            this.pnlAllowance.ResumeLayout(false);
+            this.pnlAllowance.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +218,8 @@
         private System.Windows.Forms.DataGridView dtgvAllowance;
         private System.Windows.Forms.Label lblAllowance;
         private System.Windows.Forms.Button btnDeleteAllowance;
+        private System.Windows.Forms.TableLayoutPanel tblpAllowance;
+        private System.Windows.Forms.FlowLayoutPanel flpBelow;
+        private System.Windows.Forms.Panel pnlAllowance;
     }
 }
