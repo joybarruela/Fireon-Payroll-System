@@ -95,7 +95,7 @@ namespace Fireon
         {
             //1. Validate input first
             //    a. i. User type should have a selected value ii. unique 
-            //    b. i. Apply validations on the allowanceName, ii. should not be empty
+            //    b. i. Apply validations on the username, ii. should not be empty
             //    c. i. Current password should be the same with the logged in password
             //    d. i. New password should be differnt from the old one
             //    e. i. New Password should be the same with the new password one

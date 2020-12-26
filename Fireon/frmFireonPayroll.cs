@@ -22,6 +22,12 @@ namespace Fireon
         {
             InitializeComponent(); // CREATE ALL ITEMS INSIDE THIS FORM
             displayUserControl("Dashboard"); // DISPLAY DASHBOARD FIRST
+        }
+        /// <summary>
+        /// WHEN THE FORM LOADS
+        /// </summary>
+        private void frmFireonPayroll_Load(object sender, EventArgs e)
+        {
             lblGreeting.Text = Properties.Resources.str_dashboard_greetings;
             lblGreeting.Text = String.Concat(Properties.Resources.str_dashboard_greetings, Properties.Settings.Default.lastLoggedInUsername);
         }

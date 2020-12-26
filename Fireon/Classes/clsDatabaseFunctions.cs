@@ -251,6 +251,11 @@ namespace Fireon
              */
             dbOpen();
 
+            // #2
+            Properties.Settings.Default.isSuperUser = false;
+            Properties.Settings.Default.lastLoggedInUsername = username;
+            Properties.Settings.Default.lastLoggedInPassword = password;
+
             // #1
             foreach (DataGridViewRow rowItem in dtgvAccounts.Rows) // LOOPS IN THE DTGV ACCOUNT DTGV
             {
@@ -263,17 +268,11 @@ namespace Fireon
                 {
                     // #2 CHANGE PROPER SETTINGS HERE
                     Properties.Settings.Default.isSuperUser = true; // CHECK THE SUPERUSER
-                    Properties.Settings.Default.lastLoggedInUsername = username;
-                    Properties.Settings.Default.lastLoggedInPassword = password;
                     Console.WriteLine("The logged person was an admin.");
                     break; // IF THEY ARE THE SAME THEN EXIT IMMEDIATELY
                 }
                 else
                 {
-                    // #2
-                    Properties.Settings.Default.isSuperUser = false;
-                    Properties.Settings.Default.lastLoggedInUsername = username;
-                    Properties.Settings.Default.lastLoggedInPassword = password;
                 }
             }
             // #3

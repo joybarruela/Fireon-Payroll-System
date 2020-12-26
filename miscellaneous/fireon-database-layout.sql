@@ -44,6 +44,54 @@ INSERT INTO `tbl_account` VALUES (1,'Super User','123123123','Super User'),(15,'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tbl_allowance`
+--
+
+DROP TABLE IF EXISTS `tbl_allowance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_allowance` (
+  `allowanceID` int NOT NULL AUTO_INCREMENT,
+  `allowanceName` varchar(45) DEFAULT NULL,
+  `allowanceAmount` int DEFAULT '0',
+  PRIMARY KEY (`allowanceID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_allowance`
+--
+
+LOCK TABLES `tbl_allowance` WRITE;
+/*!40000 ALTER TABLE `tbl_allowance` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_allowance` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_deduction`
+--
+
+DROP TABLE IF EXISTS `tbl_deduction`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_deduction` (
+  `deductionID` int NOT NULL AUTO_INCREMENT,
+  `deductionName` varchar(45) DEFAULT NULL,
+  `deductionAmount` float DEFAULT NULL,
+  PRIMARY KEY (`deductionID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_deduction`
+--
+
+LOCK TABLES `tbl_deduction` WRITE;
+/*!40000 ALTER TABLE `tbl_deduction` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_deduction` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tbl_document_locations`
 --
 
@@ -95,7 +143,7 @@ CREATE TABLE `tbl_employee` (
   `employeeImageLocation` varchar(255) DEFAULT NULL,
   `employeeDateEmployed` date DEFAULT NULL,
   PRIMARY KEY (`employeeID`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -104,6 +152,7 @@ CREATE TABLE `tbl_employee` (
 
 LOCK TABLES `tbl_employee` WRITE;
 /*!40000 ALTER TABLE `tbl_employee` DISABLE KEYS */;
+INSERT INTO `tbl_employee` VALUES (71,'QWE','QWE','MINGMING','Male',22222222222,'QWE','QWE','2020-06-12','Widowed','QWE','Administrative','Administrative Assistant Director','Contractual',231,123,123,'Bill of Exchange',NULL,'2020-12-25'),(72,'SERGE IVON','E','VIBIESCA','Male',9326154110,'21VIBIESCA@GMAIL.COM','ASDASDASD','2000-08-21','Married','ASD','Administrative','Administrative Manager','Contractual',123,123,123,'Cheque',NULL,'2020-12-25'),(73,'MARIE JOY','B','BARRUELA','Female',9195207555,'MJOYBARRUELA@GMAIL.COM','BAGONG SILANG','2000-08-30','Divorced','FILIPINO','Customer Service','Customer Experience Specialist','Regular',216,200,0,'Cheque',NULL,'2020-12-26');
 /*!40000 ALTER TABLE `tbl_employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,15 +169,15 @@ CREATE TABLE `tbl_employee_details` (
   `leaveSickLeave` int DEFAULT '30',
   `leaveVacationLeave` int DEFAULT '60',
   `leaveMaternityLeave` int DEFAULT '180',
-  `overtimeAdditionalHours` int DEFAULT NULL,
-  `holidayHolidayPay` int DEFAULT NULL,
-  `violationViolationDescription` varchar(45) DEFAULT NULL,
-  `violationViolationAmount` int DEFAULT NULL,
-  `cashAdvanceAmount` int DEFAULT NULL,
+  `overtimeAdditionalHours` int DEFAULT '0',
+  `holidayHolidayPay` int DEFAULT '0',
+  `violationViolationAmount` int DEFAULT '0',
+  `cashAdvanceAmount` int DEFAULT '0',
+  `payrollTotalPay` int DEFAULT '0',
   PRIMARY KEY (`employeeDetailsID`),
   KEY `fkEmployeeID_idx` (`idtbl_employee_details`),
   CONSTRAINT `fkEmployeeID` FOREIGN KEY (`idtbl_employee_details`) REFERENCES `tbl_employee` (`employeeID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -137,6 +186,7 @@ CREATE TABLE `tbl_employee_details` (
 
 LOCK TABLES `tbl_employee_details` WRITE;
 /*!40000 ALTER TABLE `tbl_employee_details` DISABLE KEYS */;
+INSERT INTO `tbl_employee_details` VALUES (71,7,30,60,180,336,160,1998,0,0),(72,8,30,60,180,0,492,666,5000,0),(73,9,30,60,180,0,0,0,5000,0);
 /*!40000 ALTER TABLE `tbl_employee_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -157,4 +207,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-25  3:37:14
+-- Dump completed on 2020-12-26 19:30:33
