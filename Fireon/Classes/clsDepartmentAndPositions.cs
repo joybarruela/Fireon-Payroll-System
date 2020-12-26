@@ -15,8 +15,8 @@ namespace Fireon
         // ALL YEARS
         public String[] countYears()
         {
-            List<String> yearsList = new List<String>(); // CREATES A LIST SO THAT ITEMS COULD BE ADDED UNLIKE THE ARRAY, BUT WE'LL CONVERT TO THAT LATER.
-            for (int i = inceptionDate; i <= DateTime.Today.Year; i++) // LOOP THRU INCEPTION DATE (IN THIS CASE 2020) TO CURRENT YEAR AND ADD EACH ITEM ON THE LIST.
+            List<String> yearsList = new List<String>(); // CREATES A LIST SO THAT ITEMS COULD BE ADDED UNLIKE THE ARRAY, BUT WE'LL CONVERT TO THAT LATER
+            for (int i = inceptionDate; i <= DateTime.Today.Year; i++) // LOOP THRU INCEPTION DATE (IN THIS CASE 2020) TO CURRENT YEAR AND ADD EACH ITEM ON THE LIST
             {
                 yearsList.Add(i.ToString());
             }
@@ -28,6 +28,7 @@ namespace Fireon
         "Contractual",
         "Regular"
         };
+        // ALL ACCOUNT TYPES
         public object[] accountTypes = {
         "Normal User",
         "Super User"

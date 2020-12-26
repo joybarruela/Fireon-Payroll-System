@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fireon.Classes;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Fireon
     {
         clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
         clsDatabaseFunctions db = new clsDatabaseFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
         /// <summary>
         /// RESETS ALL THE COMBOBOXES ON THE EMPLOYEE PART
         /// </summary>
@@ -166,7 +168,7 @@ namespace Fireon
             // cmbx[2] = cmbxPosition
             // cmbx[3] = cmbxMonth
             // cmbx[4] = cmbxYear
-            string theRawQuery = Properties.Resources.query_search_init; // THIS STRING WILL HOLD DATA BASED ON CURRENTLY SELECTED FILTERS
+            string theRawQuery = dq.queryEmployee[0]; // THIS STRING WILL HOLD DATA BASED ON CURRENTLY SELECTED FILTERS
             //IF THERE'S NO SELECTED ITEM ON THE COMBOBOX, AND AN EMPTY SEARCHBOX ADD THE WHERE CLAUSE
             if ((
                 ((cmbx[0].SelectedIndex == cmbx[0].Items.Count - 1) || (cmbx[0].SelectedIndex < 0)) &&

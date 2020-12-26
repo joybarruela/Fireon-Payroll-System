@@ -127,7 +127,7 @@
   </data>
   <data name="db_connection_string" xml:space="preserve">
     <value>server=localhost;user id=root;password=1234;database=fireon</value>
-    <comment>Replicate this setting to be able to run it.</comment>
+    <comment>Replicate this setting in your machine to be able to run the database from there.</comment>
   </data>
   <data name="int_login_attempts" xml:space="preserve">
     <value>3</value>
@@ -395,26 +395,18 @@
     <value>2020</value>
     <comment>The date when the Company started.</comment>
   </data>
-  <data name="query_search_init" xml:space="preserve">
-    <value>SELECT * FROM tbl_employee</value>
-    <comment>The first part of the query.</comment>
-  </data>
   <data name="ghost_text_search" xml:space="preserve">
     <value>Search</value>
   </data>
-  <data name="msg_employee_added" xml:space="preserve">
+  <data name="msg_new_employee_added" xml:space="preserve">
     <value>Employee successfully added.</value>
     <comment>Congratulatory message.</comment>
-  </data>
-  <data name="query_account" xml:space="preserve">
-    <value>SELECT * FROM tbl_account</value>
-    <comment>For the account list.</comment>
   </data>
   <data name="int_max_document_count" xml:space="preserve">
     <value>5</value>
     <comment>The limit where the user can upload documents.</comment>
   </data>
-  <data name="msg_max_capacity" xml:space="preserve">
+  <data name="msg_new_employee_max_capacity" xml:space="preserve">
     <value>Exceeding file count capacity.</value>
     <comment>When reached the document count limit.</comment>
   </data>
@@ -422,16 +414,13 @@
     <value>FireonData</value>
     <comment>Basically the folder name for employee data.</comment>
   </data>
-  <data name="msg_default_file_location" xml:space="preserve">
+  <data name="msg_setting_default_file_location" xml:space="preserve">
     <value>Default file location saved successfully.</value>
     <comment>When choosing a default file location</comment>
   </data>
-  <data name="str_current_account_greetings" xml:space="preserve">
+  <data name="str_dashboard_greetings" xml:space="preserve">
     <value>Good day, </value>
     <comment>To be appended by the currently logged in account name to be recoved in Setting</comment>
-  </data>
-  <data name="int_cash_advance" xml:space="preserve">
-    <value>5000</value>
   </data>
   <data name="int_maternity_leave" xml:space="preserve">
     <value>180</value>
@@ -441,9 +430,6 @@
   </data>
   <data name="int_vacation_leave" xml:space="preserve">
     <value>60</value>
-  </data>
-  <data name="query_string_employee_details" xml:space="preserve">
-    <value>SELECT * FROM tbl_employee_details</value>
   </data>
   <data name="msg_leave_added" xml:space="preserve">
     <value>Leave successfully added.</value>
@@ -467,10 +453,70 @@
   <data name="msg_deduction_added" xml:space="preserve">
     <value>Deduction successfully added.</value>
   </data>
-  <data name="query_string_allowance" xml:space="preserve">
-    <value>SELECT * FROM tbl_allowance</value>
+  <data name="int_cash_advance" xml:space="preserve">
+    <value>5000</value>
   </data>
-  <data name="query_string_deduction" xml:space="preserve">
-    <value>SELECT * FROM tbl_deduction</value>
+  <data name="msg_account_added" xml:space="preserve">
+    <value>Account successfully added.</value>
+  </data>
+  <data name="msg_account_cant_delete" xml:space="preserve">
+    <value>You can't delete your own account</value>
+  </data>
+  <data name="msg_account_confirm_delete1" xml:space="preserve">
+    <value>Are you sure you want to delete username: '</value>
+  </data>
+  <data name="msg_account_confirm_delete2" xml:space="preserve">
+    <value>' with account ID of: '</value>
+  </data>
+  <data name="msg_account_deleted" xml:space="preserve">
+    <value>Account successfully deleted.</value>
+  </data>
+  <data name="msg_allowance_confirm_delete" xml:space="preserve">
+    <value>Are you sure you want to delete allowance: '</value>
+  </data>
+  <data name="msg_allowance_not_unique" xml:space="preserve">
+    <value>Name already exists on the database. Please select another name.</value>
+  </data>
+  <data name="msg_allowance_successfully_deleted" xml:space="preserve">
+    <value>Allowance successfully deleted.</value>
+  </data>
+  <data name="msg_deduction_confirm_delete" xml:space="preserve">
+    <value>Are you sure you want to delete deduction: '</value>
+  </data>
+  <data name="msg_deduction_not_unique" xml:space="preserve">
+    <value>Name already exists on the database. Please select another name.</value>
+  </data>
+  <data name="msg_employee_validation_birthdate" xml:space="preserve">
+    <value>Check your birthdate input.</value>
+  </data>
+  <data name="msg_employee_validation_contract_duration" xml:space="preserve">
+    <value>Please input contract duration.</value>
+  </data>
+  <data name="msg_employee_validation_sex" xml:space="preserve">
+    <value>Please select a sex.</value>
+  </data>
+  <data name="msg_holiday_added" xml:space="preserve">
+    <value>Holiday pay successfully added.</value>
+  </data>
+  <data name="msg_holiday_not_holiday" xml:space="preserve">
+    <value>Today is not a holiday.</value>
+  </data>
+  <data name="msg_leave_maternity_added" xml:space="preserve">
+    <value>Maternity leave done</value>
+  </data>
+  <data name="msg_leave_sick_added" xml:space="preserve">
+    <value>Sick leave done</value>
+  </data>
+  <data name="msg_leave_vacation_added" xml:space="preserve">
+    <value>Vacation leave done</value>
+  </data>
+  <data name="msg_new_employee_delete_listbox" xml:space="preserve">
+    <value>Confirm remove file </value>
+  </data>
+  <data name="msg_validation_fail" xml:space="preserve">
+    <value>Validation incorrect, please recheck the fields.</value>
+  </data>
+  <data name="msg_validation_success" xml:space="preserve">
+    <value>Validation succeded.</value>
   </data>
 </root>

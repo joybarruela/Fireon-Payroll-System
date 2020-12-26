@@ -18,11 +18,12 @@ namespace Fireon
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
 
         public ucLeave()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_employee_details, dtgvLeave);
+            db.dbRead(dq.queryEmployeeDetails[0], dtgvLeave);
         }
 
 
@@ -61,9 +62,9 @@ namespace Fireon
                         // 1. EID
                         // 2. THE DEDUCTORY VALUE
                         db.addLeave(selectedRow.Cells[0].Value.ToString(), deductionValue, "sick");
-                        db.dbRead(Properties.Resources.query_string_employee_details, dtgvLeave);
+                        db.dbRead(dq.queryEmployeeDetails[0], dtgvLeave);
                         MessageBox.Show(null, Properties.Resources.msg_leave_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
-                        Console.WriteLine("Sick leave done");
+                        Console.WriteLine(Properties.Resources.msg_leave_sick_added);
                         return;
                     }
 
@@ -75,9 +76,9 @@ namespace Fireon
                         // 1. EID
                         // 2. THE DEDUCTORY VALUE
                         db.addLeave(selectedRow.Cells[0].Value.ToString(), deductionValue, "vacation");
-                        db.dbRead(Properties.Resources.query_string_employee_details, dtgvLeave);
+                        db.dbRead(dq.queryEmployeeDetails[0], dtgvLeave);
                         MessageBox.Show(null, Properties.Resources.msg_leave_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
-                        Console.WriteLine("Vacation leave done");
+                        Console.WriteLine(Properties.Resources.msg_leave_vacation_added);
                         return;
                     }
 
@@ -89,9 +90,9 @@ namespace Fireon
                         // 1. EID
                         // 2. THE DEDUCTORY VALUE
                         db.addLeave(selectedRow.Cells[0].Value.ToString(), deductionValue, "maternity");
-                        db.dbRead(Properties.Resources.query_string_employee_details, dtgvLeave);
+                        db.dbRead(dq.queryEmployeeDetails[0], dtgvLeave);
                         MessageBox.Show(null, Properties.Resources.msg_leave_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
-                        Console.WriteLine("Maternity leave done");
+                        Console.WriteLine(Properties.Resources.msg_leave_maternity_added);
                         return;
                     }
                 }

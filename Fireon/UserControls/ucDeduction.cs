@@ -18,11 +18,12 @@ namespace Fireon.UserControls
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
 
         public ucDeduction()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_deduction, dtgvDeduction);
+            db.dbRead(dq.queryDeduction[0], dtgvDeduction);
         }
         private void txtbxDeductionAmount_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -61,7 +62,7 @@ namespace Fireon.UserControls
             // #1
             if (verifyDeductionIfUnique(txtbxDeductionName.Text) == false)
             {
-                MessageBox.Show(null, "Name already exists on the database. Please select another name", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                MessageBox.Show(null, Properties.Resources.msg_deduction_not_unique, Properties.Resources.str_program_title, MessageBoxButtons.OK);
                 return;
             }
 
@@ -69,13 +70,13 @@ namespace Fireon.UserControls
             {
                 // #2
                 db.addDeduction(txtbxDeductionName.Text, txtbxDeductionAmount.Text);
-                db.dbRead(Properties.Resources.query_string_deduction, dtgvDeduction);
+                db.dbRead(dq.queryDeduction[0], dtgvDeduction);
                 MessageBox.Show(null, Properties.Resources.msg_deduction_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
-                Console.WriteLine("Deduction added");
+                Console.WriteLine(Properties.Resources.msg_deduction_added);
             }
             else
             {
-                MessageBox.Show(null, "Validation incorrect, please fill out the required fields", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                MessageBox.Show(null, Properties.Resources.msg_validation_fail, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
         }
 
@@ -91,22 +92,18 @@ namespace Fireon.UserControls
             String deductionName = dtgvDeduction.SelectedRows[0].Cells[1].Value.ToString();
             String deductionID = dtgvDeduction.SelectedRows[0].Cells[0].Value.ToString();
 
-            var result = MessageBox.Show(null, @"Are you sure you want to delete deduction: '" + deductionName + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
+            var result = MessageBox.Show(null, Properties.Resources.msg_deduction_confirm_delete + deductionName + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 // delete
                 db.deleteDeduction(deductionID);
-                db.dbRead(Properties.Resources.query_string_deduction, dtgvDeduction);
-                MessageBox.Show(null, "Deduction successfully deleted.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.dbRead(dq.queryDeduction[0], dtgvDeduction);
+                MessageBox.Show(null, Properties.Resources.msg_deduction_added, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 // dont
             }
         }
-
-
-
-
     }
 }

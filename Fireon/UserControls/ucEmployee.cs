@@ -107,19 +107,19 @@ namespace Fireon
                 // SURELY NO ON IS BORN ON THE SAME THEY THEY'LL APPLY RIGHT?
                 if (ucNewEmployee.mcBirthdate.SelectionStart == DateTime.Today)
                 {
-                    MessageBox.Show(null, "Check your birthdate input.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(null, Properties.Resources.msg_employee_validation_birthdate, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 // IF NO SEX IS SELECTED
                 if ((ucNewEmployee.rdbtnMale.Checked == false) && (ucNewEmployee.rdbtnFemale.Checked == false))
                 {
-                    MessageBox.Show(null, "Please select a sex.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(null, Properties.Resources.msg_employee_validation_sex, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 // IF USER SELECTS REGULAR, IT'S OKAY IF THE CONTRACT DURATION IS BLANK, IF USER IS CONTRACTUAL, CONTRACT DURATION SHOULD HAVE INPUT, THIS CHECKS IF THE CONTRACTUAL (INDEX OF 0) IS SELECTED BUT NO CONTRACT DURATION IS PRESENT
                 if ((ucNewEmployee.cmbxStatus.SelectedIndex == 0) && (ucNewEmployee.txtbxContractDuration.Text == String.Empty))
                 {
-                    MessageBox.Show(null, "Please input contract duration.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(null, Properties.Resources.msg_employee_validation_contract_duration, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -167,7 +167,7 @@ namespace Fireon
                     (ucNewEmployee.cmbxPaymentMode.SelectedIndex > -1))
                 {
                     // TELL THEM THAT THE VALIDATION HAS SUCCEEDED
-                    MessageBox.Show(null, "Validation succeded.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(null, Properties.Resources.msg_validation_success, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // INSERT THEM TO DATABASE
                     db.dbInsertEmployee(
                         ucNewEmployee.txtbxFirstName.Text,
@@ -196,7 +196,7 @@ namespace Fireon
                 }
                 else
                 {
-                    MessageBox.Show(null, "Validation fail.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(null, Properties.Resources.msg_validation_fail, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception e)

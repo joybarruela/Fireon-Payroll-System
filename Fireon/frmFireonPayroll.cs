@@ -22,8 +22,8 @@ namespace Fireon
         {
             InitializeComponent(); // CREATE ALL ITEMS INSIDE THIS FORM
             displayUserControl("Dashboard"); // DISPLAY DASHBOARD FIRST
-            lblGreeting.Text = Properties.Resources.str_current_account_greetings;
-            lblGreeting.Text = String.Concat(Properties.Resources.str_current_account_greetings, Properties.Settings.Default.lastLoggedInUsername);
+            lblGreeting.Text = Properties.Resources.str_dashboard_greetings;
+            lblGreeting.Text = String.Concat(Properties.Resources.str_dashboard_greetings, Properties.Settings.Default.lastLoggedInUsername);
         }
         /// <summary>
         /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.

@@ -18,11 +18,12 @@ namespace Fireon.UserControls
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
 
         public ucViolation()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_employee_details, dtgvViolation);
+            db.dbRead(dq.queryEmployeeDetails[0], dtgvViolation);
         }
 
         private void txtbxAddViolationCost_KeyPress(object sender, KeyPressEventArgs e)
@@ -54,7 +55,7 @@ namespace Fireon.UserControls
                 int violationValue = int.Parse(txtbxAddViolationCost.Text);
 
                 db.addViolation(selectedRow.Cells[0].Value.ToString(), violationValue);
-                db.dbRead(Properties.Resources.query_string_employee_details, dtgvViolation);
+                db.dbRead(dq.queryEmployeeDetails[0], dtgvViolation);
                 MessageBox.Show(null, Properties.Resources.msg_violation_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
         }

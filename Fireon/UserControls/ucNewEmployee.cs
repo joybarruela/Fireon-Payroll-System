@@ -89,7 +89,7 @@ namespace Fireon
                 case "add":
                     if (lsbxFileList.Items.Count == max)
                     {
-                        MessageBox.Show(null, Properties.Resources.msg_max_capacity, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(null, Properties.Resources.msg_new_employee_max_capacity, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         break; // IMMEDIATELY BREAK WHEN lsbx REACHES TO 5 MAX ITEMS
                     }
                     // IF NOT THEN DO THIS
@@ -102,7 +102,7 @@ namespace Fireon
                     // CHECK FIRST IF SELECTION IS GREATER THAN OR EQUAL TO 0
                     if (lsbxFileList.SelectedIndex >= 0)
                     {
-                        var prompt = MessageBox.Show(null, "Confirm remove " + lsbxFileList.SelectedItem.ToString() + " ?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
+                        var prompt = MessageBox.Show(null, Properties.Resources.msg_new_employee_delete_listbox + lsbxFileList.SelectedItem.ToString() + " ?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
                         if (prompt == DialogResult.Yes)
                         {
                             lsbxFileList.Items.RemoveAt(lsbxFileList.SelectedIndex); // REMOVE THAT ITEM

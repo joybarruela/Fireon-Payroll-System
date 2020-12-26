@@ -18,10 +18,11 @@ namespace Fireon.UserControls
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
         public ucHoliday()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_employee_details, dtgvHoliday);
+            db.dbRead(dq.queryEmployeeDetails[0], dtgvHoliday);
         }
 
         private void btnAddHoliday_Click(object sender, EventArgs e)
@@ -44,8 +45,8 @@ namespace Fireon.UserControls
                 Console.WriteLine("Regular holiday");
                 DataGridViewRow selectedRow = dtgvHoliday.SelectedRows[0]; // gets the first selected row
                 db.addHoliday(selectedRow.Cells[0].Value.ToString(), 100);
-                db.dbRead(Properties.Resources.query_string_employee_details, dtgvHoliday);
-                MessageBox.Show(null, "Holiday pay successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                db.dbRead(dq.queryEmployeeDetails[0], dtgvHoliday);
+                MessageBox.Show(null, Properties.Resources.msg_holiday_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
             else if ((checkIfTodayIsHoliday().Item1 == true) && (string.Compare(checkIfTodayIsHoliday().Item2, "special") == 0) && (dtgvHoliday.SelectedRows.Count != 0))
             {
@@ -55,13 +56,13 @@ namespace Fireon.UserControls
                 Console.WriteLine("Special holiday");
                 DataGridViewRow selectedRow = dtgvHoliday.SelectedRows[0]; // gets the first selected row
                 db.addHoliday(selectedRow.Cells[0].Value.ToString(), 30);
-                db.dbRead(Properties.Resources.query_string_employee_details, dtgvHoliday);
-                MessageBox.Show(null, "Holiday pay successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                db.dbRead(dq.queryEmployeeDetails[0], dtgvHoliday);
+                MessageBox.Show(null, Properties.Resources.msg_holiday_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
             else
             {
                 // #3
-                MessageBox.Show(null, "Today is not a holiday", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                MessageBox.Show(null, Properties.Resources.msg_holiday_not_holiday, Properties.Resources.str_program_title, MessageBoxButtons.OK);
                 return;
             }
         }

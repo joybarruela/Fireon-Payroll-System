@@ -18,10 +18,11 @@ namespace Fireon.UserControls
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
         public ucCashAdvance()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_employee_details, dtgvCashAdvance);
+            db.dbRead(dq.queryEmployeeDetails[0], dtgvCashAdvance);
         }
         private void txtbxCashAdvance_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -53,9 +54,9 @@ namespace Fireon.UserControls
                     // 1. EID
                     // 2. THE DEDUCTORY VALUE
                     db.addCashAdvance(selectedRow.Cells[0].Value.ToString(), cashAdvanceValue);
-                    db.dbRead(Properties.Resources.query_string_employee_details, dtgvCashAdvance);
+                    db.dbRead(dq.queryEmployeeDetails[0], dtgvCashAdvance);
                     MessageBox.Show(null, Properties.Resources.msg_cash_advance_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
-                    Console.WriteLine("Cash Advance approved");
+                    Console.WriteLine(Properties.Resources.msg_cash_advance_added);
                     return;
                 }
             }

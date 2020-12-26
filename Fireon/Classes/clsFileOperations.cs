@@ -37,7 +37,10 @@ namespace Fireon.Classes
                 MessageBox.Show(Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        /// <summary>
+        /// CREATES AN EMPLOYEE FOLDER DIRECTORY AND TRIES TO COPY INPUTTED FILE LOCATIONS ON THE LISTBOX
+        /// </summary>
+        /// <param name="fileListLocations"></param>
         public void createEmployeeDirectory(ListBox.ObjectCollection fileListLocations)
         {
             try
@@ -89,11 +92,8 @@ namespace Fireon.Classes
                 MessageBox.Show(Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
         /// <summary>
-        /// GETS THE FOLDER DIRECTORY LOCATION AND SAVES IT IN THE Settings.settings FOR PERSISTENCE 
+        /// GETS THE FOLDER DIRECTORY LOCATION AND SAVES IT IN THE Settings.settings FOR PERSISTENCE
         /// </summary>
         /// <param name="location">THE LOCATION OF THE SELECTED FOLDER DIRECTORY</param>
         /// <param name="display">THE LABEL TO REFLECT THE LOCATION WITH</param>
@@ -101,7 +101,7 @@ namespace Fireon.Classes
         {
             Properties.Settings.Default.defaultFileLocation = location; // CHANGE THE LOCATION PROPERTY
             Properties.Settings.Default.Save(); // SAVE IT
-            MessageBox.Show(null, Properties.Resources.msg_default_file_location, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information); // MESSAGE
+            MessageBox.Show(null, Properties.Resources.msg_setting_default_file_location, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information); // MESSAGE
             display.Text = Properties.Settings.Default.defaultFileLocation.ToString(); // RETURN THE STRING SO THAT IT WOULD REFLECT TO USER
         }
     }

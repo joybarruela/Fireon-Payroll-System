@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
+﻿using Fireon.Classes;
+using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE.
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace Fireon
     public partial class frmLogin : Form
     {
         clsDatabaseFunctions db = new clsDatabaseFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
         int loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // DECREMENTS BY 1 EVERY TIME THE USER FAILS TO LOG IN THE SYSTEM
         frmFireonPayroll main_form = new frmFireonPayroll(); // CREATE INSTANCE OF THE MAIN FORM
 
@@ -95,7 +97,7 @@ namespace Fireon
         {
             if (this.Visible == true)
             {
-                db.dbRead(Properties.Resources.query_account, dtgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT
+                db.dbRead(dq.queryAccount[0], dtgvAccounts); // USE THE CLASS WE INITIATED ABOVE AND USED THE dbRead FUNCTION OF IT
                 txtbxUsername.Clear(); // CLEAR USERNAME TEXT
                 txtbxPw.Clear(); // CLEAR PASSWORD TEXT
                 loginAttempts = int.Parse(Properties.Resources.int_login_attempts); // REFRESH THE VALUE

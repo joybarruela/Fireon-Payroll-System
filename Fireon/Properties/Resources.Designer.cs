@@ -861,11 +861,83 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Account successfully added..
+        /// </summary>
+        public static string msg_account_added {
+            get {
+                return ResourceManager.GetString("msg_account_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can&apos;t delete your own account.
+        /// </summary>
+        public static string msg_account_cant_delete {
+            get {
+                return ResourceManager.GetString("msg_account_cant_delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete username: &apos;.
+        /// </summary>
+        public static string msg_account_confirm_delete1 {
+            get {
+                return ResourceManager.GetString("msg_account_confirm_delete1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos; with account ID of: &apos;.
+        /// </summary>
+        public static string msg_account_confirm_delete2 {
+            get {
+                return ResourceManager.GetString("msg_account_confirm_delete2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account successfully deleted..
+        /// </summary>
+        public static string msg_account_deleted {
+            get {
+                return ResourceManager.GetString("msg_account_deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Allowance successfully added..
         /// </summary>
         public static string msg_allowance_added {
             get {
                 return ResourceManager.GetString("msg_allowance_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete allowance: &apos;.
+        /// </summary>
+        public static string msg_allowance_confirm_delete {
+            get {
+                return ResourceManager.GetString("msg_allowance_confirm_delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name already exists on the database. Please select another name..
+        /// </summary>
+        public static string msg_allowance_not_unique {
+            get {
+                return ResourceManager.GetString("msg_allowance_not_unique", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allowance successfully deleted..
+        /// </summary>
+        public static string msg_allowance_successfully_deleted {
+            get {
+                return ResourceManager.GetString("msg_allowance_successfully_deleted", resourceCulture);
             }
         }
         
@@ -888,20 +960,47 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Default file location saved successfully..
+        ///   Looks up a localized string similar to Are you sure you want to delete deduction: &apos;.
         /// </summary>
-        public static string msg_default_file_location {
+        public static string msg_deduction_confirm_delete {
             get {
-                return ResourceManager.GetString("msg_default_file_location", resourceCulture);
+                return ResourceManager.GetString("msg_deduction_confirm_delete", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employee successfully added..
+        ///   Looks up a localized string similar to Name already exists on the database. Please select another name..
         /// </summary>
-        public static string msg_employee_added {
+        public static string msg_deduction_not_unique {
             get {
-                return ResourceManager.GetString("msg_employee_added", resourceCulture);
+                return ResourceManager.GetString("msg_deduction_not_unique", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check your birthdate input..
+        /// </summary>
+        public static string msg_employee_validation_birthdate {
+            get {
+                return ResourceManager.GetString("msg_employee_validation_birthdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please input contract duration..
+        /// </summary>
+        public static string msg_employee_validation_contract_duration {
+            get {
+                return ResourceManager.GetString("msg_employee_validation_contract_duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select a sex..
+        /// </summary>
+        public static string msg_employee_validation_sex {
+            get {
+                return ResourceManager.GetString("msg_employee_validation_sex", resourceCulture);
             }
         }
         
@@ -915,11 +1014,56 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Holiday pay successfully added..
+        /// </summary>
+        public static string msg_holiday_added {
+            get {
+                return ResourceManager.GetString("msg_holiday_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today is not a holiday..
+        /// </summary>
+        public static string msg_holiday_not_holiday {
+            get {
+                return ResourceManager.GetString("msg_holiday_not_holiday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Leave successfully added..
         /// </summary>
         public static string msg_leave_added {
             get {
                 return ResourceManager.GetString("msg_leave_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maternity leave done.
+        /// </summary>
+        public static string msg_leave_maternity_added {
+            get {
+                return ResourceManager.GetString("msg_leave_maternity_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sick leave done.
+        /// </summary>
+        public static string msg_leave_sick_added {
+            get {
+                return ResourceManager.GetString("msg_leave_sick_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vacation leave done.
+        /// </summary>
+        public static string msg_leave_vacation_added {
+            get {
+                return ResourceManager.GetString("msg_leave_vacation_added", resourceCulture);
             }
         }
         
@@ -969,11 +1113,29 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Employee successfully added..
+        /// </summary>
+        public static string msg_new_employee_added {
+            get {
+                return ResourceManager.GetString("msg_new_employee_added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm remove file .
+        /// </summary>
+        public static string msg_new_employee_delete_listbox {
+            get {
+                return ResourceManager.GetString("msg_new_employee_delete_listbox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Exceeding file count capacity..
         /// </summary>
-        public static string msg_max_capacity {
+        public static string msg_new_employee_max_capacity {
             get {
-                return ResourceManager.GetString("msg_max_capacity", resourceCulture);
+                return ResourceManager.GetString("msg_new_employee_max_capacity", resourceCulture);
             }
         }
         
@@ -1005,6 +1167,33 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default file location saved successfully..
+        /// </summary>
+        public static string msg_setting_default_file_location {
+            get {
+                return ResourceManager.GetString("msg_setting_default_file_location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation incorrect, please recheck the fields..
+        /// </summary>
+        public static string msg_validation_fail {
+            get {
+                return ResourceManager.GetString("msg_validation_fail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation succeded..
+        /// </summary>
+        public static string msg_validation_success {
+            get {
+                return ResourceManager.GetString("msg_validation_success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Violation successfully added..
         /// </summary>
         public static string msg_violation_added {
@@ -1023,56 +1212,11 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SELECT * FROM tbl_account.
-        /// </summary>
-        public static string query_account {
-            get {
-                return ResourceManager.GetString("query_account", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SELECT * FROM tbl_employee.
-        /// </summary>
-        public static string query_search_init {
-            get {
-                return ResourceManager.GetString("query_search_init", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SELECT * FROM tbl_allowance.
-        /// </summary>
-        public static string query_string_allowance {
-            get {
-                return ResourceManager.GetString("query_string_allowance", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SELECT * FROM tbl_deduction.
-        /// </summary>
-        public static string query_string_deduction {
-            get {
-                return ResourceManager.GetString("query_string_deduction", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SELECT * FROM tbl_employee_details.
-        /// </summary>
-        public static string query_string_employee_details {
-            get {
-                return ResourceManager.GetString("query_string_employee_details", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Good day, .
         /// </summary>
-        public static string str_current_account_greetings {
+        public static string str_dashboard_greetings {
             get {
-                return ResourceManager.GetString("str_current_account_greetings", resourceCulture);
+                return ResourceManager.GetString("str_dashboard_greetings", resourceCulture);
             }
         }
         

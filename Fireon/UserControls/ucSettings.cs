@@ -18,10 +18,11 @@ namespace Fireon
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
         public ucSettings()
         {
             InitializeComponent();
-            db.dbRead("SELECT accountID, accountUsername, accountType FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
+            db.dbRead(dq.queryAccount[1], this.dtgvAccounts); // LOAD THE DTGV
             verifyLevelOfAccess();
 
             if (Properties.Settings.Default.keepLoggedIn == true)
@@ -109,8 +110,8 @@ namespace Fireon
                 //ADD TO DATABASE
                 Console.WriteLine("Validation success");
                 db.addAccountInfo(txtbxUsername.Text, txtbxPassword.Text);
-                db.dbRead("SELECT accountID, accountUsername, accountType FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
-                MessageBox.Show(null, "Account successfully added", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.dbRead(dq.queryAccount[1], this.dtgvAccounts); // LOAD THE DTGV
+                MessageBox.Show(null, Properties.Resources.msg_account_added, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtbxYourPassword.Clear();
                 txtbxUsername.Clear();
@@ -119,7 +120,7 @@ namespace Fireon
             }
             else
             {
-                MessageBox.Show(null, "Validation fail", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(null, Properties.Resources.msg_validation_fail, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
@@ -157,20 +158,20 @@ namespace Fireon
 
             if (String.Compare(accountType, dp.accountTypes[1].ToString()) == 0)
             {
-                MessageBox.Show(null, @"You can't delete your own account", Properties.Resources.str_program_title, MessageBoxButtons.OK); 
+                MessageBox.Show(null, Properties.Resources.msg_account_cant_delete, Properties.Resources.str_program_title, MessageBoxButtons.OK); 
                 return;
             }
 
             String username = dtgvAccounts.SelectedRows[0].Cells[1].Value.ToString();
             int accountID = int.Parse(dtgvAccounts.SelectedRows[0].Cells[0].Value.ToString());
 
-            var result = MessageBox.Show(null, @"Are you sure you want to delete allowanceName: '" + username + "' with account ID of: '" + accountID.ToString() + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
+            var result = MessageBox.Show(null, Properties.Resources.msg_account_confirm_delete1 + username + Properties.Resources.msg_account_confirm_delete2 + accountID.ToString() + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 // delete
                 db.deleteAccountInfo(accountID);
-                db.dbRead("SELECT accountID, accountUsername, accountType FROM tbl_account", this.dtgvAccounts); // LOAD THE DTGV
-                MessageBox.Show(null, "Account successfully deleted.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.dbRead(dq.queryAccount[1], this.dtgvAccounts); // LOAD THE DTGV
+                MessageBox.Show(null, Properties.Resources.msg_account_deleted, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

@@ -18,11 +18,12 @@ namespace Fireon.UserControls
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
 
         public ucAllowance()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_allowance, dtgvAllowance);
+            db.dbRead(dq.queryAllowance[0], dtgvAllowance);
         }
         private void txtbxAllowanceAmount_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -66,20 +67,20 @@ namespace Fireon.UserControls
             // #1
             if (verifyAllowanceIfUnique(txtbxAllowanceName.Text) == false)
             {
-                MessageBox.Show(null, "Name already exists on the database. Please select another name", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                MessageBox.Show(null, Properties.Resources.msg_allowance_not_unique, Properties.Resources.str_program_title, MessageBoxButtons.OK);
                 return;
             }
 
             if ((String.IsNullOrEmpty(txtbxAllowanceName.Text) == false) && (String.IsNullOrEmpty(txtbxAllowanceAmount.Text) == false)){
                 // #2
                 db.addAllowance(txtbxAllowanceName.Text, txtbxAllowanceAmount.Text);
-                db.dbRead(Properties.Resources.query_string_allowance, dtgvAllowance);
+                db.dbRead(dq.queryAllowance[0], dtgvAllowance);
                 MessageBox.Show(null, Properties.Resources.msg_allowance_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
                 Console.WriteLine("Allowance added");
             }
             else
             {
-                MessageBox.Show(null, "Validation incorrect, please fill out the required fields", Properties.Resources.str_program_title, MessageBoxButtons.OK);
+                MessageBox.Show(null, Properties.Resources.msg_validation_fail, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
 
         }
@@ -95,13 +96,13 @@ namespace Fireon.UserControls
             String allowanceName = dtgvAllowance.SelectedRows[0].Cells[1].Value.ToString();
             String allowanceID= dtgvAllowance.SelectedRows[0].Cells[0].Value.ToString();
 
-            var result = MessageBox.Show(null, @"Are you sure you want to delete allowance: '" + allowanceName + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
+            var result = MessageBox.Show(null, Properties.Resources.msg_allowance_confirm_delete + allowanceName + "'?", Properties.Resources.str_program_title, MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 // delete
                 db.deleteAllowance(allowanceID);
-                db.dbRead(Properties.Resources.query_string_allowance, dtgvAllowance);
-                MessageBox.Show(null, "Allowance successfully deleted.", Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                db.dbRead(dq.queryAllowance[0], dtgvAllowance);
+                MessageBox.Show(null, Properties.Resources.msg_allowance_successfully_deleted, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE
+using MySql.Data.MySqlClient;
+using Fireon.Classes; // FOR MySQL CONNECTION. THIS IS A PREREQUISITE
 
 namespace Fireon
 {
@@ -16,14 +17,14 @@ namespace Fireon
     class clsDatabaseFunctions
     {
         clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
-        // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL
-        static string dbConnectionString = Properties.Resources.db_connection_string;
-        // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT. STATIC BECAUSE THIS IS THE ONLY INSTANCE
-        static MySqlConnection dbCon= new MySqlConnection(dbConnectionString);
+        clsDatabaseQueries dq = new clsDatabaseQueries();
+        static string dbConnectionString = Properties.Resources.db_connection_string; // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL
+        static MySqlConnection dbCon = new MySqlConnection(dbConnectionString); // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT. STATIC BECAUSE THIS IS THE ONLY INSTANCE
+        #region LOGIN
         /// <summary>
-        /// THIS METHOD VALIDATES THE USERNAME AND PASSWORD ENTERED ON LOGIN. WILL RETURN TRUE IF LOGIN CREDENTIALS MATCH
+        /// VALIDATES THE USERNAME AND PASSWORD ENTERED ON LOGIN. WILL RETURN TRUE IF LOGIN CREDENTIALS MATCH
         /// </summary>
-        /// <param name="allowanceName">THE USERNAME TO BE EVALUATED</param>
+        /// <param name="username">THE USERNAME TO BE EVALUATED</param>
         /// <param name="password">THE PASSWORD TO BE EVALUATED</param>
         public bool dbLogin(string username, string password)
         {
@@ -35,7 +36,7 @@ namespace Fireon
             dbOpen(); // OPEN THE CONNECTION
 
             DataSet dbDataSet = new DataSet(); // DataTable IS LIKE A LOGICAL TABLE CONTAINER OF DATA THAT WILL FILL IN LATER
-            MySqlCommand dbCmd = new MySqlCommand(Properties.Resources.query_account, dbCon); // PASSING QUERY AND CONNECTION HERE
+            MySqlCommand dbCmd = new MySqlCommand(dq.queryAccount[0], dbCon); // PASSING QUERY AND CONNECTION HERE
             MySqlDataAdapter dbDataAdapter = new MySqlDataAdapter(dbCmd);
             dbDataAdapter.Fill(dbDataSet); // LET'S FILL OUR DataTable INSTANCE WITH THE QUERY WE REQUESTED
 
@@ -63,16 +64,19 @@ namespace Fireon
             // IF THERE HAPPENED TO BE NO MATCHING USERNAME AND PASSWORD ABOVE, THEN SHOW THIS
             dbClose(); // CLOSE THE CONNECTION.
             return false; // RETURN FALSE IF PROGRAM DID NOT FIND A MATCHING CREDENTIALS
-        }
+        } 
+        #endregion
+        #region DATABASE
         /// <summary>
         /// THIS METHOD TAKES A QUERY, LIKE SELECT * FROM tbl_accounts, AND PUTS IT IN A DataGridView OBJECT
         /// </summary>
         /// <param name="query">PASS THE QUERY FROM WHICH FUNCTION IT WAS CALLED</param>
         /// <param name="dgv">THE DataGridView THAT WE CHOOSE TO PUT OUR DATA</param>
-        public void dbRead(string query, DataGridView dgv){
+        public void dbRead(string query, DataGridView dgv)
+        {
             dbOpen(); // OPEN THE CONNECTION
 
-            DataTable dbDataTable= new DataTable(); // DataTable IS LIKE A LOGICAL TABLE CONTAINER OF DATA THAT WILL FILL IN LATER
+            DataTable dbDataTable = new DataTable(); // DataTable IS LIKE A LOGICAL TABLE CONTAINER OF DATA THAT WILL FILL IN LATER
             MySqlCommand dbCmd = new MySqlCommand(query, dbCon); // PASSING QUERY AND CONNECTION HERE
             MySqlDataAdapter dbDataAdapter = new MySqlDataAdapter(dbCmd);
             dbDataAdapter.Fill(dbDataTable); // LET'S FILL OUR DataTable INSTANCE WITH THE QUERY WE REQUESTED
@@ -101,7 +105,9 @@ namespace Fireon
             {
                 dbCon.Close();
             }
-        }
+        } 
+        #endregion
+        #region EMPLOYEE
         /// <summary>
         /// IS USED FOR FILTERING DATA
         /// </summary>
@@ -137,73 +143,13 @@ namespace Fireon
         /// <param name="paymentMode">String</param>
         /// <param name="imageLocation">String</param>
         /// <param name="dateEmployed">DateTime</param>
-        public void dbInsertEmployee (
-            String firstName,
-            String middleInitial,
-            String lastName,
-            String sex,
-            Int64 contactNumber,
-            String emailAddress,
-            String homeAddress,
-            DateTime birthDate,
-            String maritalStatus,
-            String nationality,
-            String department,
-            String position,
-            String status,
-            Int64 workingHours,
-            Int64 hourlyRate,
-            Int64 contractDuration,
-            String paymentMode,
-            String imageLocation,
-            DateTime dateEmployed)
+        public void dbInsertEmployee(String firstName, String middleInitial, String lastName, String sex, Int64 contactNumber, String emailAddress, String homeAddress, DateTime birthDate, String maritalStatus, String nationality, String department, String position, String status, Int64 workingHours, Int64 hourlyRate, Int64 contractDuration, String paymentMode, String imageLocation, DateTime dateEmployed)
         {
             try
             {
                 dbOpen(); // OPEN THE CONNECTION
-                // CREATE NEW COMMAND INSTANCE HERE
-                MySqlCommand dbCmd = new MySqlCommand(
-                @"INSERT INTO tbl_employee(
-                employeeFirstName,
-                employeeMiddleInitial,
-                employeeLastName,
-                employeeSex,
-                employeeContactNumber,
-                employeeEmailAddress,
-                employeeHomeAddress,
-                employeeBirthDate,
-                employeeMaritalStatus,
-                employeeNationality,
-                employeeDepartment,
-                employeePosition,
-                employeeStatus,
-                employeeWorkingHours,
-                employeeHourlyRate,
-                employeeContractDuration,
-                employeePaymentMode,
-                employeeImageLocation,
-                employeeDateEmployed) 
-                VALUES(
-                @employeeFirstName,
-                @employeeMiddleInitial,
-                @employeeLastName,
-                @employeeSex,
-                @employeeContactNumber,
-                @employeeEmailAddress,
-                @employeeHomeAddress,
-                @employeeBirthDate,
-                @employeeMaritalStatus,
-                @employeeNationality,
-                @employeeDepartment,
-                @employeePosition,
-                @employeeStatus,
-                @employeeWorkingHours,
-                @employeeHourlyRate,
-                @employeeContractDuration,
-                @employeePaymentMode,
-                @employeeImageLocation,
-                @employeeDateEmployed)", dbCon); // PASSING QUERY AND CONNECTION HERE
-                // THIS IS THE PART WHERE I ADD VALUES BASED ON PASSED VALUES WHEN YOU CALL THIS FUNCTION
+                MySqlCommand dbCmd = new MySqlCommand(dq.queryEmployee[1], dbCon); // CREATE NEW COMMAND INSTANCE HERE AND PASSING QUERY AND CONNECTION HERE
+                // ADD VALUES BASED ON PASSED VALUES WHEN YOU CALL THIS FUNCTION
                 dbCmd.Parameters.AddWithValue("@employeeFirstName", firstName);
                 dbCmd.Parameters.AddWithValue("@employeeMiddleInitial", middleInitial);
                 dbCmd.Parameters.AddWithValue("@employeeLastName", lastName);
@@ -225,7 +171,7 @@ namespace Fireon
                 dbCmd.Parameters.AddWithValue("@employeeDateEmployed", dateEmployed);
                 dbCmd.ExecuteNonQuery(); // EXECUTE
                 dbClose(); // CLOSE THE CONNECTION
-                MessageBox.Show(null, Properties.Resources.msg_employee_added, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(null, Properties.Resources.msg_new_employee_added, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception e)
             {
@@ -234,25 +180,10 @@ namespace Fireon
         }
         public void dbInsertEmployeeDetails()
         {
-            //INSERT INTO tbl_employee_details(leaveSickLeave, leaveVacationLeave, leaveMaternityLeave, cashAdvanceAmount, idtbl_employee_details) 
-            //VALUES( 30,60,180,5000, (SELECT employeeID FROM fireon.tbl_employee WHERE employeeID = (SELECT employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1)));
             try
             {
                 dbOpen(); // OPEN THE CONNECTION
-                // CREATE NEW COMMAND INSTANCE HERE
-                MySqlCommand dbCmd = new MySqlCommand(
-                @"INSERT INTO tbl_employee_details(
-                leaveSickLeave,
-                leaveVacationLeave,
-                leaveMaternityLeave,
-                cashAdvanceAmount,
-                idtbl_employee_details) 
-                VALUES(
-                @SickLeave,
-                @VacationLeave,
-                @MaternityLeave,
-                @AdvanceAmount,
-                (SELECT employeeID FROM fireon.tbl_employee WHERE employeeID = (SELECT employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1)));", dbCon); // PASSING QUERY AND CONNECTION HERE
+                MySqlCommand dbCmd = new MySqlCommand(dq.queryEmployeeDetails[1], dbCon); // CREATE NEW COMMAND INSTANCE HERE AND PASSING QUERY AND CONNECTION HERE
                 // THIS IS THE PART WHERE I ADD VALUES BASED ON PASSED VALUES WHEN YOU CALL THIS FUNCTION
                 dbCmd.Parameters.AddWithValue("@SickLeave", int.Parse(Properties.Resources.int_sick_leave));
                 dbCmd.Parameters.AddWithValue("@VacationLeave", int.Parse(Properties.Resources.int_vacation_leave));
@@ -270,16 +201,15 @@ namespace Fireon
         /// <summary>
         /// GETS THE EMPLOYEE ID OF THE LATEST INSERTED EMPLOYEE
         /// </summary>
-        public Tuple <DateTime, String, int> returnLatestEmployeeEntry()
+        public Tuple<DateTime, String, int> returnLatestEmployeeEntry()
         {
-            //GUIDE
-            //SELECT employeeID -- fetches employeeID only
-            //FROM tbl_employees -- from this table
-            //ORDER BY employeeID DESC -- make it descending order
-            //LIMIT 1 -- get only the first entry (the highest employeeID value, and probably the latest of them all)
-
-
-            String query = "SELECT employeeDateEmployed, employeeLastName, employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1";
+            /* GUIDE
+             * SELECT employeeID -- fetches employeeID only
+             * FROM tbl_employees -- from this table
+             * ORDER BY employeeID DESC -- make it descending order
+             * LIMIT 1 -- get only the first entry (the highest employeeID value, and probably the latest of them all)
+             */
+            String query = dq.query[0];
             int latestEmployeeID = 0;
             DateTime latestEmployeeDateEmployed = DateTime.Today;
             String latestEmployeeLastName = "LASTNAME";
@@ -298,12 +228,13 @@ namespace Fireon
             latestEmployeeID = dbDataTable.Rows[0].Field<int>(2); // IN THIS DATA TABLE BY THEORY CONTAINS THE HIGHEST EID WHICH IN THEORY IS LOCATED ONLY AT (0,0) SO WE ARE STORING THEM ON A INT VARIBLE TO BE RETURNED LATER
 
             return Tuple.Create(latestEmployeeDateEmployed, latestEmployeeLastName, latestEmployeeID);
-        }
-
+        } 
+        #endregion
+        #region ACCOUNT SETTINGS
         public void addAccountInfo(string username, string password)
         {
             dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_account(accountUsername, accountPassword, accountType) VALUES(@allowanceName, @password, @type)", dbCon);
+            MySqlCommand dbCmd = new MySqlCommand(dq.querySettings[0], dbCon);
             dbCmd.Parameters.AddWithValue("@allowanceName", username);
             dbCmd.Parameters.AddWithValue("@password", password);
             dbCmd.Parameters.AddWithValue("@type", dp.accountTypes[0].ToString());
@@ -336,7 +267,8 @@ namespace Fireon
                     Properties.Settings.Default.lastLoggedInPassword = password;
                     Console.WriteLine("The logged person was an admin.");
                     break; // IF THEY ARE THE SAME THEN EXIT IMMEDIATELY
-                } else
+                }
+                else
                 {
                     // #2
                     Properties.Settings.Default.isSuperUser = false;
@@ -351,33 +283,35 @@ namespace Fireon
             }
             else
             {
-                Properties.Settings.Default.keepLoggedIn = false; 
+                Properties.Settings.Default.keepLoggedIn = false;
             }
             dbClose();
         }
-
         public void deleteAccountInfo(int accountID)
         {
             dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"DELETE FROM tbl_account WHERE accountID = @ID", dbCon);
+            MySqlCommand dbCmd = new MySqlCommand(dq.querySettings[1], dbCon);
             dbCmd.Parameters.AddWithValue("@ID", accountID);
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
-        }
+        } 
+        #endregion
+        #region LEAVE
         public void addLeave(string employeeID, int deductionValue, string mode)
         {
             // UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - 10 WHERE idtbl_employee_details = 70;
-            string leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+            string leaveTypeQuery = dq.queryLeave[0];
 
-            switch (mode){
+            switch (mode)
+            {
                 case "sick":
-                    leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+                    leaveTypeQuery = dq.queryLeave[0];
                     break;
                 case "vacation":
-                    leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveVacationLeave = leaveVacationLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+                    leaveTypeQuery = dq.queryLeave[1];
                     break;
                 case "maternity":
-                    leaveTypeQuery = @"UPDATE fireon.tbl_employee_details SET leaveMaternityLeave = leaveMaternityLeave - @deductionValue WHERE idtbl_employee_details = @employeeID";
+                    leaveTypeQuery = dq.queryLeave[2];
                     break;
                 default:
                     break;
@@ -390,11 +324,13 @@ namespace Fireon
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
             Console.WriteLine(employeeID + " " + deductionValue.ToString() + " " + mode);
-        }
+        } 
+        #endregion
+        #region OVERTIME
         public void addOvertime(string employeeID, int overtimeValue)
         {
             // UPDATE fireon.tbl_employee_details SET overtimeAdditionalHours = overtimeAdditionalHours - 10 WHERE idtbl_employee_details = 70;
-            string overtimeQuery = @"UPDATE fireon.tbl_employee_details SET overtimeAdditionalHours = overtimeAdditionalHours + @overtimeValue WHERE idtbl_employee_details = @employeeID";
+            string overtimeQuery = dq.queryOvertime[0];
 
             dbOpen();
             MySqlCommand dbCmd = new MySqlCommand(overtimeQuery, dbCon);
@@ -404,25 +340,26 @@ namespace Fireon
             dbClose();
             Console.WriteLine(employeeID + " " + overtimeValue.ToString());
 
-        }
+        } 
+        #endregion
+        #region HOLIDAY
         public void addHoliday(string employeeID, int percentage)
         {
-            string holidayQuery = @"
-            UPDATE fireon.tbl_employee_details 
-            SET holidayHolidayPay = holidayHolidayPay + ((SELECT employeeHourlyRate FROM tbl_employee ORDER BY employeeID DESC LIMIT 1) * @percentage) 
-            WHERE idtbl_employee_details = @employeeID; ";
+            string holidayQuery = dq.queryHoliday[0];
 
             dbOpen();
             MySqlCommand dbCmd = new MySqlCommand(holidayQuery, dbCon);
             dbCmd.Parameters.AddWithValue("@employeeID", int.Parse(employeeID));
-            dbCmd.Parameters.AddWithValue("@percentage", percentage *.01);
+            dbCmd.Parameters.AddWithValue("@percentage", percentage * .01);
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
             Console.WriteLine(employeeID + " " + percentage.ToString());
         }
+        #endregion
+        #region VIOLATION
         public void addViolation(string employeeID, int violationValue)
         {
-            string violationQuery = @"UPDATE fireon.tbl_employee_details SET violationViolationAmount = violationViolationAmount + @violationValue WHERE idtbl_employee_details = @employeeID";
+            string violationQuery = dq.queryViolation[0];
 
             dbOpen();
             MySqlCommand dbCmd = new MySqlCommand(violationQuery, dbCon);
@@ -431,11 +368,13 @@ namespace Fireon
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
             Console.WriteLine(employeeID + " " + violationValue.ToString());
-        }
+        } 
+        #endregion
+        #region CASH ADVANCE
         public void addCashAdvance(string employeeID, int cashAdvanceValue)
         {
             // UPDATE fireon.tbl_employee_details SET leaveSickLeave = leaveSickLeave - 10 WHERE idtbl_employee_details = 70;
-            string cashAdvanceQuery = @"UPDATE fireon.tbl_employee_details SET cashAdvanceAmount = cashAdvanceAmount - @cashAdvanceValue WHERE idtbl_employee_details = @employeeID";
+            string cashAdvanceQuery = dq.queryCashAdvance[0];
 
             dbOpen();
             MySqlCommand dbCmd = new MySqlCommand(cashAdvanceQuery, dbCon);
@@ -444,43 +383,45 @@ namespace Fireon
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
             Console.WriteLine(employeeID + " " + cashAdvanceValue.ToString());
-        }
-        public void addAllowance(string allowanceName, string allowanceAmount)
-        {
-            dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_allowance(allowanceName, allowanceAmount) VALUES(@allowanceName, @allowanceAmount)", dbCon);
-            dbCmd.Parameters.AddWithValue("@allowanceName", allowanceName);
-            dbCmd.Parameters.AddWithValue("@allowanceAmount", int.Parse(allowanceAmount));
-            dbCmd.ExecuteNonQuery(); // EXECUTE
-            dbClose();
-        }
-
-        public void deleteAllowance(string allowanceID)
-        {
-            dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"DELETE FROM tbl_allowance WHERE allowanceID = @ID", dbCon);
-            dbCmd.Parameters.AddWithValue("@ID", int.Parse(allowanceID));
-            dbCmd.ExecuteNonQuery(); // EXECUTE
-            dbClose();
-        }
-
+        } 
+        #endregion
+        #region DEDUCTION
         public void addDeduction(string deductionName, string dedutionAmount)
         {
             dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"INSERT INTO tbl_deduction(deductionName, deductionAmount) VALUES(@deductionName, @deductionAmount)", dbCon);
+            MySqlCommand dbCmd = new MySqlCommand(dq.queryDeduction[1], dbCon);
             dbCmd.Parameters.AddWithValue("@deductionName", deductionName);
             dbCmd.Parameters.AddWithValue("@deductionAmount", double.Parse(dedutionAmount));
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
         }
-
         public void deleteDeduction(string deductionID)
         {
             dbOpen();
-            MySqlCommand dbCmd = new MySqlCommand(@"DELETE FROM tbl_deduction WHERE deductionID = @ID", dbCon);
+            MySqlCommand dbCmd = new MySqlCommand(dq.queryDeduction[2], dbCon);
             dbCmd.Parameters.AddWithValue("@ID", int.Parse(deductionID));
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
+        } 
+        #endregion
+        #region ALLOWANCE
+        public void addAllowance(string allowanceName, string allowanceAmount)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(dq.queryAllowance[1], dbCon);
+            dbCmd.Parameters.AddWithValue("@allowanceName", allowanceName);
+            dbCmd.Parameters.AddWithValue("@allowanceAmount", int.Parse(allowanceAmount));
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
         }
+        public void deleteAllowance(string allowanceID)
+        {
+            dbOpen();
+            MySqlCommand dbCmd = new MySqlCommand(dq.queryAllowance[2], dbCon);
+            dbCmd.Parameters.AddWithValue("@ID", int.Parse(allowanceID));
+            dbCmd.ExecuteNonQuery(); // EXECUTE
+            dbClose();
+        } 
+        #endregion
     }
 }

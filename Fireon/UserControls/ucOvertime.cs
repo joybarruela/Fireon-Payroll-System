@@ -18,11 +18,12 @@ namespace Fireon.UserControls
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
 
         public ucOvertime()
         {
             InitializeComponent();
-            db.dbRead(Properties.Resources.query_string_employee_details, dtgvOvertime);
+            db.dbRead(dq.queryEmployeeDetails[0], dtgvOvertime);
         }
 
         /// <summary>
@@ -60,7 +61,7 @@ namespace Fireon.UserControls
                 int overtimeValue = int.Parse(txtbxAddWorkingHours.Text);
 
                 db.addOvertime(selectedRow.Cells[0].Value.ToString(), overtimeValue);
-                db.dbRead(Properties.Resources.query_string_employee_details, dtgvOvertime);
+                db.dbRead(dq.queryEmployeeDetails[0], dtgvOvertime);
                 MessageBox.Show(null, Properties.Resources.msg_overtime_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
         }
