@@ -212,7 +212,7 @@ namespace Fireon
 
             String theFinalQuery = theRawQuery.Remove(theRawQuery.Length -5, 5); // CODE HERE TO TRIM THE EXCESS " AND " ON THE END OF QUERY STRING AND DECLARE NEW STRING HERE
             theFinalQuery = String.Concat(theFinalQuery, ";"); // APPEND A SEMICOLON
-            MessageBox.Show(null, theFinalQuery, null, MessageBoxButtons.OK); // TEST VIEW THE FINAL QUERY
+            MessageBox.Show(null, theFinalQuery, Properties.Resources.str_program_title, MessageBoxButtons.OK); // TEST VIEW THE FINAL QUERY
             try // TRY TO RUN THE READ
             {
                 return theFinalQuery; // SUCCESS

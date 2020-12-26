@@ -17,6 +17,8 @@ namespace Fireon
         clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
         clsFireonFunctions ff = new clsFireonFunctions();
         clsFileOperations fo = new clsFileOperations();
+        clsStringFunctions sf = new clsStringFunctions();
+        clsDatabaseQueries dq = new clsDatabaseQueries();
         public ucEmployee()
         {
             InitializeComponent();

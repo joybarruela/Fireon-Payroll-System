@@ -1,8 +1,7 @@
 ﻿using Fireon.Classes;
 using Fireon.UserControls;
 using System;
-// FOR READING THE PROCESS OBJECT
-using System.Windows.Forms;
+using System.Windows.Forms; // FOR READING THE PROCESS OBJECT
 
 namespace Fireon
 {
@@ -128,9 +127,9 @@ namespace Fireon
         {
             //displayUserControl("All");
         }
-        private void btnDepartment_Click(object sender, EventArgs e)
+        private void btnPrint_Click(object sender, EventArgs e)
         {
-            //displayUserControl("Department");
+            displayUserControl("Print");
         }
         private void btnSinglePosting_Click(object sender, EventArgs e)
         {
@@ -158,8 +157,7 @@ namespace Fireon
             btnCashAdvance.BackgroundImage = Properties.Resources.btnCashAdvance; // RESET BUTTON BG
             btnAllowance.BackgroundImage = Properties.Resources.btnAllowance; // RESET BUTTON BG
             btnDeduction.BackgroundImage = Properties.Resources.btnDeduction; // RESET BUTTON BG
-            btnAll.BackgroundImage = Properties.Resources.btnAll; // RESET BUTTON BG
-            btnDepartment.BackgroundImage = Properties.Resources.btnDepartment; // RESET BUTTON BG
+            btnPrint.BackgroundImage = Properties.Resources.btnPrint; // RESET BUTTON BG
             btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePosting; // RESET BUTTON BG
 
             switch (mode)
@@ -200,13 +198,9 @@ namespace Fireon
                     btnAllowance.BackgroundImage = Properties.Resources.btnAllowanceActive; // SET BUTTON ACTIVE
                     this.Text = "Fireon Payroll System | Allowance";
                     break;
-                case "Fireon Payroll System | All":
-                    btnAll.BackgroundImage = Properties.Resources.btnAllActive; // SET BUTTON ACTIVE
-                    this.Text = "Fireon Payroll System | All";
-                    break;
-                case "Fireon Payroll System | Department":
-                    btnDepartment.BackgroundImage = Properties.Resources.btnDepartmentActive; // SET BUTTON ACTIVE
-                    this.Text = "Fireon Payroll System | Department";
+                case "Fireon Payroll System | Print":
+                    btnPrint.BackgroundImage = Properties.Resources.btnPrintActive; // SET BUTTON ACTIVE
+                    this.Text = "Fireon Payroll System | Print";
                     break;
                 case "Fireon Payroll System | Single Posting":
                     btnSinglePosting.BackgroundImage = Properties.Resources.btnSinglePostingActive; // SET BUTTON ACTIVE
@@ -217,9 +211,6 @@ namespace Fireon
                     this.Text = "Fireon Payroll System | Settings";
                     break;
             }
-
-
-
         }
         /// <summary>
         /// CALL THIS TO SHOW ITEMS ON THE DASHBOARD
@@ -325,19 +316,14 @@ namespace Fireon
                 //    }
                 //    else { break; };
 
-                //case "Department":
-                //    if (this.Text != "Fireon Payroll System | Department")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_department.BackgroundImage = Properties.Resources.btn_department_active; // SET BUTTON ACTIVE
-                //        ucDepartment ucDepartment = new ucDepartment(); // CREATES A NEW UserControl
-                //        ucDepartment.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucDepartment.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Department";
-                //        break;
-                //    }
-                //    else { break; };
+                case "Print":
+                    if (this.Text != "Fireon Payroll System | Print")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucPrint());
+                        setActive("Fireon Payroll System | Print");
+                        break;
+                    }
+                    else { break; };
 
                 //case "Single Posting":
                 //    if (this.Text != "Fireon Payroll System | Single Posting")

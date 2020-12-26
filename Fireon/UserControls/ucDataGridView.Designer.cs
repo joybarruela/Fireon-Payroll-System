@@ -45,6 +45,8 @@
             this.dgvTheDataGridView.Location = new System.Drawing.Point(0, 0);
             this.dgvTheDataGridView.Name = "dgvTheDataGridView";
             this.dgvTheDataGridView.ReadOnly = true;
+            this.dgvTheDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTheDataGridView.ShowEditingIcon = false;
             this.dgvTheDataGridView.Size = new System.Drawing.Size(526, 312);
             this.dgvTheDataGridView.TabIndex = 276;
             this.dgvTheDataGridView.TabStop = false;

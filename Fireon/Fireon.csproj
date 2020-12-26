@@ -147,6 +147,12 @@
     <Compile Include="UserControls\ucDeduction.Designer.cs">
       <DependentUpon>ucDeduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPrint.Designer.cs">
+      <DependentUpon>ucPrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucDeduction.resx">
       <DependentUpon>ucDeduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPrint.resx">
+      <DependentUpon>ucPrint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucEmployee.resx">
       <DependentUpon>ucEmployee.cs</DependentUpon>
