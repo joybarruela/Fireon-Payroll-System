@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucLeave));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblLeave = new System.Windows.Forms.Label();
             this.tblpLeave = new System.Windows.Forms.TableLayoutPanel();
             this.btnAddLeave = new System.Windows.Forms.Button();
@@ -71,13 +71,9 @@
             this.tblpLeave.Location = new System.Drawing.Point(0, 38);
             this.tblpLeave.Name = "tblpLeave";
             this.tblpLeave.RowCount = 3;
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.20206F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.79794F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.82251F));
+            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.16883F));
+            this.tblpLeave.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.792208F));
             this.tblpLeave.Size = new System.Drawing.Size(900, 462);
             this.tblpLeave.TabIndex = 274;
             // 
@@ -107,15 +103,16 @@
             this.pnlFilters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFilters.Location = new System.Drawing.Point(3, 3);
             this.pnlFilters.Name = "pnlFilters";
-            this.pnlFilters.Size = new System.Drawing.Size(894, 84);
+            this.pnlFilters.Size = new System.Drawing.Size(894, 44);
             this.pnlFilters.TabIndex = 274;
             // 
             // rdbtnMaternity
             // 
             this.rdbtnMaternity.AutoSize = true;
-            this.rdbtnMaternity.Location = new System.Drawing.Point(138, 41);
+            this.rdbtnMaternity.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnMaternity.Location = new System.Drawing.Point(201, 15);
             this.rdbtnMaternity.Name = "rdbtnMaternity";
-            this.rdbtnMaternity.Size = new System.Drawing.Size(68, 17);
+            this.rdbtnMaternity.Size = new System.Drawing.Size(97, 24);
             this.rdbtnMaternity.TabIndex = 2;
             this.rdbtnMaternity.TabStop = true;
             this.rdbtnMaternity.Text = "Maternity";
@@ -124,9 +121,10 @@
             // rdbtnVacation
             // 
             this.rdbtnVacation.AutoSize = true;
-            this.rdbtnVacation.Location = new System.Drawing.Point(65, 41);
+            this.rdbtnVacation.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnVacation.Location = new System.Drawing.Point(83, 15);
             this.rdbtnVacation.Name = "rdbtnVacation";
-            this.rdbtnVacation.Size = new System.Drawing.Size(67, 17);
+            this.rdbtnVacation.Size = new System.Drawing.Size(95, 24);
             this.rdbtnVacation.TabIndex = 2;
             this.rdbtnVacation.TabStop = true;
             this.rdbtnVacation.Text = "Vacation";
@@ -135,9 +133,10 @@
             // rdbtnSick
             // 
             this.rdbtnSick.AutoSize = true;
-            this.rdbtnSick.Location = new System.Drawing.Point(13, 41);
+            this.rdbtnSick.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnSick.Location = new System.Drawing.Point(5, 15);
             this.rdbtnSick.Name = "rdbtnSick";
-            this.rdbtnSick.Size = new System.Drawing.Size(46, 17);
+            this.rdbtnSick.Size = new System.Drawing.Size(55, 24);
             this.rdbtnSick.TabIndex = 2;
             this.rdbtnSick.TabStop = true;
             this.rdbtnSick.Text = "Sick";
@@ -146,18 +145,20 @@
             // lblNumberOfDays
             // 
             this.lblNumberOfDays.AutoSize = true;
-            this.lblNumberOfDays.Location = new System.Drawing.Point(13, 67);
+            this.lblNumberOfDays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumberOfDays.Location = new System.Drawing.Point(382, 17);
             this.lblNumberOfDays.Name = "lblNumberOfDays";
-            this.lblNumberOfDays.Size = new System.Drawing.Size(83, 13);
+            this.lblNumberOfDays.Size = new System.Drawing.Size(125, 20);
             this.lblNumberOfDays.TabIndex = 1;
             this.lblNumberOfDays.Text = "Number of Days";
             // 
             // txtbxNumberOfDays
             // 
-            this.txtbxNumberOfDays.Location = new System.Drawing.Point(102, 64);
+            this.txtbxNumberOfDays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxNumberOfDays.Location = new System.Drawing.Point(513, 14);
             this.txtbxNumberOfDays.MaxLength = 3;
             this.txtbxNumberOfDays.Name = "txtbxNumberOfDays";
-            this.txtbxNumberOfDays.Size = new System.Drawing.Size(51, 20);
+            this.txtbxNumberOfDays.Size = new System.Drawing.Size(121, 26);
             this.txtbxNumberOfDays.TabIndex = 0;
             this.txtbxNumberOfDays.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxNumberOfDays_KeyPress);
             // 
@@ -169,42 +170,42 @@
             this.dtgvLeave.AllowUserToResizeRows = false;
             this.dtgvLeave.BackgroundColor = System.Drawing.Color.White;
             this.dtgvLeave.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvLeave.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvLeave.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgvLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvLeave.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvLeave.Dock = System.Windows.Forms.DockStyle.Left;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvLeave.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dtgvLeave.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvLeave.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvLeave.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dtgvLeave.Location = new System.Drawing.Point(3, 93);
+            this.dtgvLeave.Location = new System.Drawing.Point(3, 53);
             this.dtgvLeave.MultiSelect = false;
             this.dtgvLeave.Name = "dtgvLeave";
             this.dtgvLeave.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvLeave.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvLeave.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvLeave.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvLeave.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvLeave.ShowEditingIcon = false;
-            this.dtgvLeave.Size = new System.Drawing.Size(458, 329);
+            this.dtgvLeave.Size = new System.Drawing.Size(894, 369);
             this.dtgvLeave.TabIndex = 275;
             // 
             // ucLeave

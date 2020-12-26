@@ -519,4 +519,10 @@
   <data name="msg_validation_success" xml:space="preserve">
     <value>Validation succeded.</value>
   </data>
+  <data name="btnDefaultFileLocation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\other-buttons\btnDefaultFileLocation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\other-buttons\btnDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -200,5 +200,10 @@ namespace Fireon
                 fo.saveDefaultFileLocation(fbdDefaultFileLocation.SelectedPath, this.lblDefaultFileLocation); // PASSES THE FILENAME TO BE PROCESSED THERE
             }
         }
+
+        private void lblDefaultFileLocation_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
