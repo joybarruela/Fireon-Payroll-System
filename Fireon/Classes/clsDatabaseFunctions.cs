@@ -18,8 +18,20 @@ namespace Fireon
     {
         clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
         clsDatabaseQueries dq = new clsDatabaseQueries();
+        clsPayroll pr = new clsPayroll();
+
         static string dbConnectionString = Properties.Resources.db_connection_string; // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL
         static MySqlConnection dbCon = new MySqlConnection(dbConnectionString); // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT. STATIC BECAUSE THIS IS THE ONLY INSTANCE
+        public string getDbConnectionString // GETTER OVER HERE, FOR THE clsPayroll THAT'S THE ONLY INSTANCE OF SEPARATE DATABAS USAGE
+        {
+            get { return dbConnectionString; }
+        }
+        public MySqlConnection getDbCon // GETTER OVER HERE, FOR THE clsPayroll THAT'S THE ONLY INSTANCE OF SEPARATE DATABAS USAGE
+        {
+            get { return dbCon; }
+        }
+
+        
         #region LOGIN
         /// <summary>
         /// VALIDATES THE USERNAME AND PASSWORD ENTERED ON LOGIN. WILL RETURN TRUE IF LOGIN CREDENTIALS MATCH
@@ -83,11 +95,12 @@ namespace Fireon
             dgv.DataSource = dbDataTable; // WE WILL CHANGE THE DGV DATA SOURCE WHERE WE CALLED THAT FUNCTION
 
             dbClose(); // CLOSE THE CONNECTION
+            Console.WriteLine("Query: " + query);
         }
         /// <summary>
         /// THIS METHOD OPENS THE DATABASE CONNECTION
         /// </summary>
-        private void dbOpen()
+        public void dbOpen()
         {
             // THIS IF CONDITIONAL MEANS THAT IF THE DATABASE CONNECTION IS CLOSED, THEN OPEN IT USING THE Open(); METHOD
             if (dbCon.State == System.Data.ConnectionState.Closed)
@@ -98,7 +111,7 @@ namespace Fireon
         /// <summary>
         /// THIS METHOD CLOSES THE DATABASE CONNECTION
         /// </summary>
-        private void dbClose()
+        public void dbClose()
         {
             // THIS IF CONDITIONAL MEANS THAT IF THE DATABASE CONNECTION IS OPEN, THEN CLOSE IT USING THE Close(); METHOD
             if (dbCon.State == System.Data.ConnectionState.Open)
@@ -120,6 +133,7 @@ namespace Fireon
             ucDataGridView.Parent = pnl; // SET PARENT OF NEW DASHBOARD
             ucDataGridView.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
             dbRead(query, ucDataGridView.dgvTheDataGridView); // theDataGridView IS A STATIC MEMBER OF THE ucDataGridView CLASS
+            pr.computePayroll(); // COMPUTES THE PAYROLL HERE
         }
         /// <summary>
         /// INSERTS EMPLOYEE DATA INTO THE DATABASE
@@ -385,12 +399,12 @@ namespace Fireon
         } 
         #endregion
         #region DEDUCTION
-        public void addDeduction(string deductionName, string dedutionAmount)
+        public void addDeduction(string deductionName, string deductionPercentage)
         {
             dbOpen();
             MySqlCommand dbCmd = new MySqlCommand(dq.queryDeduction[1], dbCon);
             dbCmd.Parameters.AddWithValue("@deductionName", deductionName);
-            dbCmd.Parameters.AddWithValue("@deductionAmount", double.Parse(dedutionAmount));
+            dbCmd.Parameters.AddWithValue("@deductionPercentage", double.Parse(deductionPercentage));
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
         }
@@ -420,6 +434,58 @@ namespace Fireon
             dbCmd.Parameters.AddWithValue("@ID", int.Parse(allowanceID));
             dbCmd.ExecuteNonQuery(); // EXECUTE
             dbClose();
+        } 
+        #endregion
+        #region PRINT
+        public String getEmployeeDetailsBasedOnCurrentFilters(String theFinalQuery)
+        {
+            /* ALGO
+             * 1. PUT THE theFinalQuery IN A DataTable BUT MODIFY THE QUERY SO THAT ONLY THE employeeID WOULD BE STORED
+             * 2. CREATE A NEW QUERY THAT WILL SELECT FROM THE tbl_employee_details BASED ON THAT DataTable CONTENTS REGARDING employeeID
+             * 3. BY THAT WAY, THE PROGRAM WILL SHOW THE tbl_employee_details RECORDS BASED ON EMPLOYEE FILTERS (employeeStatus, employeeDepartment, employeePosition, month, and year)
+             * TARGET OUTPUT SAMPLE: SELECT * FROM tbl_employee_details WHERE idtbl_employee_details IN(77,78,79,80);
+             */
+            String employeeDetailsBasedOnFiltersQuery = dq.queryEmployeeDetails[2];
+
+            // #1
+
+            dbOpen();
+
+            DataTable dbDataTable = new DataTable(); // DataTable IS LIKE A LOGICAL TABLE CONTAINER OF DATA THAT WILL FILL IN LATER
+            MySqlCommand dbCmd = new MySqlCommand(theFinalQuery, dbCon); // PASSING QUERY AND CONNECTION HERE
+            MySqlDataAdapter dbDataAdapter = new MySqlDataAdapter(dbCmd);
+            dbDataAdapter.Fill(dbDataTable); // LET'S FILL OUR DataTable INSTANCE WITH THE QUERY WE REQUESTED
+
+            dbClose();
+
+            // EVALUATE HERE IF dbDataTable HAS ENTRIES, IF YES THEN PROCEED ELSE RETURN THE RAW STIRNG;
+            if (dbDataTable.Rows.Count == 0)
+            {
+                return employeeDetailsBasedOnFiltersQuery; // IMMEDIATELY EXIT THIS FUNCTION AND RETURN RAW QUERY
+            }
+            else
+            {
+                Console.WriteLine("dbDataTableRow count is {0}", dbDataTable.Rows.Count.ToString());
+                employeeDetailsBasedOnFiltersQuery = String.Concat(employeeDetailsBasedOnFiltersQuery, " WHERE idtbl_employee_details IN(");
+
+                // #2 LOOP THRU EACH employeeID ENTRY AND INSERT THEM ON THE QUERY.
+
+                int count = 0;
+                foreach (DataRow x in dbDataTable.Rows)
+                {
+                    // APPENDS employeeID ON THIS QUERY
+                    string employeeID = String.Concat(dbDataTable.Rows[count].Field<int>(0).ToString(), ", ");
+                    Console.WriteLine(employeeID);
+                    employeeDetailsBasedOnFiltersQuery = string.Concat(employeeDetailsBasedOnFiltersQuery, employeeID);
+                    count++;
+                }
+                // TRIM THE EXCESS ", "
+                employeeDetailsBasedOnFiltersQuery = employeeDetailsBasedOnFiltersQuery.Remove(employeeDetailsBasedOnFiltersQuery.Length - 2, 2);
+                // APPEND THE ");"
+                employeeDetailsBasedOnFiltersQuery = String.Concat(employeeDetailsBasedOnFiltersQuery, ");");
+                Console.WriteLine(employeeDetailsBasedOnFiltersQuery);
+                return employeeDetailsBasedOnFiltersQuery;
+            }
         } 
         #endregion
     }

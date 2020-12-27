@@ -224,6 +224,91 @@ namespace Fireon
             return theRawQuery;
         }
         /// <summary>
+        /// CHECKS ON THE 5 COMBOBOXES AND SEARCH TEXTBOX AND CREATES QUERY FOR THAT
+        /// FOR EMPLOYEE DETAILS VERSION
+        /// </summary>
+        /// <param name="txtbxSearch">THE ONLY TEXTBOX ON THE SEARCHBAR</param>
+        /// <param name="cmbx">LIST OF COMBOBOXES TO BE PROCESSED</param>
+        /// <returns>RETURNS BASIC SELECT ALL QUERY OF VALIDATION FAILS, RETURNS THE PROCESSED QUERY WHEN ALL VALIDATION PASSES</returns>
+        public String employeeDetailsSearch(TextBox txtbxSearch, params ComboBox[] cmbx)
+        {
+            // PARAMS ORDER GUIDE
+            // cmbx[0] = cmbxRegularContractual
+            // cmbx[1] = cmbxDepartment
+            // cmbx[2] = cmbxPosition
+            // cmbx[3] = cmbxMonth
+            // cmbx[4] = cmbxYear
+            string theRawQuery = dq.queryEmployee[2]; // ONLY SELECT THE employeeID FOR LATER QUERY
+            //IF THERE'S NO SELECTED ITEM ON THE COMBOBOX, AND AN EMPTY SEARCHBOX ADD THE WHERE CLAUSE
+            if ((
+                ((cmbx[0].SelectedIndex == cmbx[0].Items.Count - 1) || (cmbx[0].SelectedIndex < 0)) &&
+                (cmbx[1].SelectedIndex == cmbx[1].Items.Count - 1) || (cmbx[1].SelectedIndex < 0)) &&
+                ((cmbx[2].SelectedIndex == cmbx[2].Items.Count - 1) || (cmbx[2].SelectedIndex < 0)) &&
+                ((cmbx[3].SelectedIndex == cmbx[3].Items.Count - 1) || (cmbx[3].SelectedIndex < 0)) &&
+                ((cmbx[4].SelectedIndex == cmbx[4].Items.Count - 1) || (cmbx[4].SelectedIndex < 0)) &&
+                ((txtbxSearch.Text == Properties.Resources.ghost_text_search) || (txtbxSearch.Text == String.Empty)))
+            {
+                //displayUserControl("List Employee"); // SHOW ALL DATA
+                return dq.queryEmployeeDetails[2]; // EXIT IMMEDIATELY
+            }
+            else
+            {
+                theRawQuery += " WHERE "; // ADD THE WHERE CLAUSE BECAUSE THE SYSTEM DETECTED AN INPUT FROM 1 OF THE COMBOBOXES OR SEARCHBAR
+            }
+            // CODE FOR SEARCH BOX TEXT. IF SEARCHBOX IS NOT EMPTY OR NOT EQUAL TO SEARCH THEN DO CODE
+            if ((txtbxSearch.Text == String.Empty) || (String.Compare(txtbxSearch.Text, Properties.Resources.ghost_text_search) == 0))
+            {
+            }
+            else
+            {
+                theRawQuery += "employeeFirstName LIKE '" + txtbxSearch.Text + "%' AND ";
+            }
+            // cmbxFilters[0] = cmbxRegularContractual
+            if ((cmbx[0].SelectedIndex != -1) && (String.Compare(cmbx[0].SelectedItem.ToString(), "ALL") != 0))
+            {
+                theRawQuery += "employeeStatus = '" + cmbx[0].Text + "' AND ";
+            }
+            // cmbxFilters[1] = cmbxDepartment
+            if ((cmbx[1].SelectedIndex != -1) && (String.Compare(cmbx[1].SelectedItem.ToString(), "ALL") != 0))
+            {
+                theRawQuery += "employeeDepartment = '" + cmbx[1].Text + "' AND ";
+            }
+            // cmbxFilters[2] = cmbxPosition
+            if ((cmbx[2].SelectedIndex != -1) && (String.Compare(cmbx[2].SelectedItem.ToString(), "ALL") != 0))
+            {
+                theRawQuery += "employeePosition = '" + cmbx[2].Text + "' AND ";
+            }
+            // cmbxFilters[3] = cmbxMonth
+            if ((cmbx[3].SelectedIndex != -1) && (String.Compare(cmbx[3].SelectedItem.ToString(), "ALL") != 0))
+            {
+                theRawQuery += "MONTH(employeeDateEmployed) = " + (cmbx[3].SelectedIndex + 1).ToString() + " AND ";
+            }
+            // cmbxFilters[4] = cmbxYear
+            if ((cmbx[4].SelectedIndex != -1) && (String.Compare(cmbx[4].SelectedItem.ToString(), "ALL") != 0))
+            {
+                theRawQuery += "YEAR(employeeDateEmployed) = " + cmbx[4].Text + " AND ";
+            }
+
+            String theFinalQuery = theRawQuery.Remove(theRawQuery.Length - 5, 5); // CODE HERE TO TRIM THE EXCESS " AND " ON THE END OF QUERY STRING AND DECLARE NEW STRING HERE
+            theFinalQuery = String.Concat(theFinalQuery, ";"); // APPEND A SEMICOLON
+            MessageBox.Show(null, theFinalQuery, Properties.Resources.str_program_title, MessageBoxButtons.OK); // TEST VIEW THE FINAL QUERY
+
+            try // TRY TO RUN THE READ
+            {
+                String employeeDetailsQuery = db.getEmployeeDetailsBasedOnCurrentFilters(theFinalQuery); // CALLS FUNCTION TO PROCESS THE QUERY SO tbl_employee_details WITH CURRENT FILTERS OF THIS COULD BE PROCESSED
+                Console.WriteLine("Employee Details Query: " + employeeDetailsQuery);
+                return employeeDetailsQuery; // SUCCESS
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(null, ex.Message.ToString(), null, MessageBoxButtons.OK); // TEST HERE
+            }
+            Console.WriteLine("Raw Query: " + theRawQuery);
+            return theRawQuery;
+        }
+
+
+        /// <summary>
         /// TAKES A PANEL AND A USERCONTROL OBJECT AND PLACES THAT UC ON THE PANEL
         /// </summary>
         /// <param name="pnl">THE CONTAINER PANEL</param>

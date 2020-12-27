@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPrint));
             this.pnlPrint = new System.Windows.Forms.Panel();
             this.cmbxYear = new System.Windows.Forms.ComboBox();
             this.cmbxMonth = new System.Windows.Forms.ComboBox();
@@ -221,7 +220,7 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrint.BackgroundImage")));
+            this.btnPrint.BackgroundImage = global::Fireon.Properties.Resources.btnPrintStuff;
             this.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPrint.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPrint.FlatAppearance.BorderSize = 0;
@@ -232,7 +231,6 @@
             this.btnPrint.Size = new System.Drawing.Size(124, 30);
             this.btnPrint.TabIndex = 4;
             this.btnPrint.TabStop = false;
-            this.btnPrint.Text = "PRINT";
             this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // ucPrint

@@ -15,7 +15,7 @@ namespace Fireon.Classes
         public string[] queryEmployee = { 
         @"SELECT * FROM tbl_employee",
         @"INSERT INTO tbl_employee(employeeFirstName, employeeMiddleInitial, employeeLastName, employeeSex, employeeContactNumber, employeeEmailAddress, employeeHomeAddress, employeeBirthDate, employeeMaritalStatus, employeeNationality, employeeDepartment, employeePosition, employeeStatus, employeeWorkingHours, employeeHourlyRate, employeeContractDuration, employeePaymentMode, employeeImageLocation, employeeDateEmployed) VALUES(@employeeFirstName, @employeeMiddleInitial, @employeeLastName, @employeeSex, @employeeContactNumber, @employeeEmailAddress, @employeeHomeAddress, @employeeBirthDate, @employeeMaritalStatus, @employeeNationality, @employeeDepartment, @employeePosition, @employeeStatus, @employeeWorkingHours, @employeeHourlyRate, @employeeContractDuration, @employeePaymentMode, @employeeImageLocation, @employeeDateEmployed)",
-        @"",
+        @"SELECT employeeID FROM tbl_employee",
         @"",
         };
         // LEAVE
@@ -58,7 +58,7 @@ namespace Fireon.Classes
         // DEDUCTION
         public string[] queryDeduction = { 
         @"SELECT * FROM tbl_deduction",
-        @"INSERT INTO tbl_deduction(deductionName, deductionAmount) VALUES(@deductionName, @deductionAmount)",
+        @"INSERT INTO tbl_deduction(deductionName, deductionPercentage) VALUES(@deductionName, @deductionPercentage)",
         @"DELETE FROM tbl_deduction WHERE deductionID = @ID",
         @"",
         };
@@ -73,7 +73,7 @@ namespace Fireon.Classes
         public string[] queryEmployeeDetails = { 
         @"SELECT * FROM tbl_employee_details",
         @"INSERT INTO tbl_employee_details(leaveSickLeave, leaveVacationLeave, leaveMaternityLeave, cashAdvanceAmount, idtbl_employee_details) VALUES(@SickLeave, @VacationLeave, @MaternityLeave, @AdvanceAmount, (SELECT employeeID FROM fireon.tbl_employee WHERE employeeID = (SELECT employeeID FROM tbl_employee ORDER BY employeeID DESC LIMIT 1)));",
-        @"",
+        @"SELECT * FROM tbl_employee_details",
         @"",
         @"",
         };

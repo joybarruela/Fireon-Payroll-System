@@ -31,9 +31,9 @@
             this.btnDeleteDeduction = new System.Windows.Forms.Button();
             this.btnAddDeduction = new System.Windows.Forms.Button();
             this.lblDeductionName = new System.Windows.Forms.Label();
-            this.lblDeductionAmount = new System.Windows.Forms.Label();
+            this.lbldeductionPercentage = new System.Windows.Forms.Label();
             this.txtbxDeductionName = new System.Windows.Forms.TextBox();
-            this.txtbxDeductionAmount = new System.Windows.Forms.TextBox();
+            this.txtbxdeductionPercentage = new System.Windows.Forms.TextBox();
             this.dtgvDeduction = new System.Windows.Forms.DataGridView();
             this.lblDeduction = new System.Windows.Forms.Label();
             this.tblpDeduction = new System.Windows.Forms.TableLayoutPanel();
@@ -81,15 +81,15 @@
             this.lblDeductionName.TabIndex = 162;
             this.lblDeductionName.Text = "Deduction Name";
             // 
-            // lblDeductionAmount
+            // lbldeductionPercentage
             // 
-            this.lblDeductionAmount.AutoSize = true;
-            this.lblDeductionAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeductionAmount.Location = new System.Drawing.Point(71, 34);
-            this.lblDeductionAmount.Name = "lblDeductionAmount";
-            this.lblDeductionAmount.Size = new System.Drawing.Size(66, 20);
-            this.lblDeductionAmount.TabIndex = 163;
-            this.lblDeductionAmount.Text = "Amount";
+            this.lbldeductionPercentage.AutoSize = true;
+            this.lbldeductionPercentage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldeductionPercentage.Location = new System.Drawing.Point(71, 34);
+            this.lbldeductionPercentage.Name = "lbldeductionPercentage";
+            this.lbldeductionPercentage.Size = new System.Drawing.Size(66, 20);
+            this.lbldeductionPercentage.TabIndex = 163;
+            this.lbldeductionPercentage.Text = "Amount";
             // 
             // txtbxDeductionName
             // 
@@ -102,15 +102,15 @@
             this.txtbxDeductionName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxDeductionName_KeyPress);
             this.txtbxDeductionName.Leave += new System.EventHandler(this.txtbxDeductionName_Leave);
             // 
-            // txtbxDeductionAmount
+            // txtbxdeductionPercentage
             // 
-            this.txtbxDeductionAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxDeductionAmount.Location = new System.Drawing.Point(142, 31);
-            this.txtbxDeductionAmount.MaxLength = 4;
-            this.txtbxDeductionAmount.Name = "txtbxDeductionAmount";
-            this.txtbxDeductionAmount.Size = new System.Drawing.Size(130, 26);
-            this.txtbxDeductionAmount.TabIndex = 161;
-            this.txtbxDeductionAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxDeductionAmount_KeyPress);
+            this.txtbxdeductionPercentage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxdeductionPercentage.Location = new System.Drawing.Point(142, 31);
+            this.txtbxdeductionPercentage.MaxLength = 4;
+            this.txtbxdeductionPercentage.Name = "txtbxdeductionPercentage";
+            this.txtbxdeductionPercentage.Size = new System.Drawing.Size(130, 26);
+            this.txtbxdeductionPercentage.TabIndex = 161;
+            this.txtbxdeductionPercentage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxdeductionPercentage_KeyPress);
             // 
             // dtgvDeduction
             // 
@@ -179,9 +179,9 @@
             // 
             // pnlDeduction
             // 
-            this.pnlDeduction.Controls.Add(this.txtbxDeductionAmount);
+            this.pnlDeduction.Controls.Add(this.txtbxdeductionPercentage);
             this.pnlDeduction.Controls.Add(this.txtbxDeductionName);
-            this.pnlDeduction.Controls.Add(this.lblDeductionAmount);
+            this.pnlDeduction.Controls.Add(this.lbldeductionPercentage);
             this.pnlDeduction.Controls.Add(this.lblDeductionName);
             this.pnlDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDeduction.Location = new System.Drawing.Point(3, 10);
@@ -213,9 +213,9 @@
         private System.Windows.Forms.Button btnDeleteDeduction;
         private System.Windows.Forms.Button btnAddDeduction;
         private System.Windows.Forms.Label lblDeductionName;
-        private System.Windows.Forms.Label lblDeductionAmount;
+        private System.Windows.Forms.Label lbldeductionPercentage;
         private System.Windows.Forms.TextBox txtbxDeductionName;
-        private System.Windows.Forms.TextBox txtbxDeductionAmount;
+        private System.Windows.Forms.TextBox txtbxdeductionPercentage;
         private System.Windows.Forms.DataGridView dtgvDeduction;
         private System.Windows.Forms.Label lblDeduction;
         private System.Windows.Forms.TableLayoutPanel tblpDeduction;

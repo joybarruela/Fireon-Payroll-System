@@ -25,7 +25,7 @@ namespace Fireon.UserControls
             InitializeComponent();
             db.dbRead(dq.queryDeduction[0], dtgvDeduction);
         }
-        private void txtbxDeductionAmount_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtbxdeductionPercentage_KeyPress(object sender, KeyPressEventArgs e)
         {
             sf.thirdRegex(e);
         }
@@ -66,10 +66,10 @@ namespace Fireon.UserControls
                 return;
             }
 
-            if ((String.IsNullOrEmpty(txtbxDeductionName.Text) == false) && (String.IsNullOrEmpty(txtbxDeductionAmount.Text) == false))
+            if ((String.IsNullOrEmpty(txtbxDeductionName.Text) == false) && (String.IsNullOrEmpty(txtbxdeductionPercentage.Text) == false))
             {
                 // #2
-                db.addDeduction(txtbxDeductionName.Text, txtbxDeductionAmount.Text);
+                db.addDeduction(txtbxDeductionName.Text, txtbxdeductionPercentage.Text);
                 db.dbRead(dq.queryDeduction[0], dtgvDeduction);
                 MessageBox.Show(null, Properties.Resources.msg_deduction_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
                 Console.WriteLine(Properties.Resources.msg_deduction_added);

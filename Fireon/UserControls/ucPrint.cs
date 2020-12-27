@@ -19,6 +19,7 @@ namespace Fireon.UserControls
         clsFileOperations fo = new clsFileOperations();
         clsStringFunctions sf = new clsStringFunctions();
         clsDatabaseQueries dq = new clsDatabaseQueries();
+        clsPayroll pr = new clsPayroll();
         public ucPrint()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace Fireon.UserControls
         }
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            db.dbSearch(pnlPrint, ff.employeeSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
+            db.dbSearch(pnlPrint, ff.employeeDetailsSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
         }
         private void txtbxSearch_Enter(object sender, EventArgs e)
         {
@@ -71,7 +72,7 @@ namespace Fireon.UserControls
                     ff.prepComboBoxesEmployee(this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear);
                     ff.resetFilterComboBoxes(this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear);
                     ff.ghostText("Search", this.txtbxSearch, true);
-                    db.dbSearch(pnlPrint, ff.employeeSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
+                    db.dbSearch(pnlPrint, ff.employeeDetailsSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
                     break;
                 default:
                     pnlFilters.Show();
@@ -81,11 +82,5 @@ namespace Fireon.UserControls
             }
         }
         #endregion
-
-
-
-
-
-
     }
 }
