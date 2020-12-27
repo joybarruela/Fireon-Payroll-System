@@ -106,20 +106,20 @@
             // lblCashAdvanceAmount
             // 
             this.lblCashAdvanceAmount.AutoSize = true;
-            this.lblCashAdvanceAmount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCashAdvanceAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCashAdvanceAmount.Location = new System.Drawing.Point(3, 3);
             this.lblCashAdvanceAmount.Name = "lblCashAdvanceAmount";
-            this.lblCashAdvanceAmount.Size = new System.Drawing.Size(138, 21);
+            this.lblCashAdvanceAmount.Size = new System.Drawing.Size(126, 20);
             this.lblCashAdvanceAmount.TabIndex = 277;
             this.lblCashAdvanceAmount.Text = "Amount of Cash";
             // 
             // txtbxCashAdvance
             // 
-            this.txtbxCashAdvance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbxCashAdvance.Location = new System.Drawing.Point(144, 0);
+            this.txtbxCashAdvance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxCashAdvance.Location = new System.Drawing.Point(135, 0);
             this.txtbxCashAdvance.MaxLength = 4;
             this.txtbxCashAdvance.Name = "txtbxCashAdvance";
-            this.txtbxCashAdvance.Size = new System.Drawing.Size(130, 27);
+            this.txtbxCashAdvance.Size = new System.Drawing.Size(130, 26);
             this.txtbxCashAdvance.TabIndex = 276;
             this.txtbxCashAdvance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxCashAdvance_KeyPress);
             // 

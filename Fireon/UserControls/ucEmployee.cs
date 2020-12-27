@@ -62,7 +62,6 @@ namespace Fireon
                     ff.displayUserControl(pnlEmployee, new ucDataGridView());
                     pnlFilters.Show();
                     btnSearch.Show();
-                    pnlSeparator2.Hide();
                     btnCancel.Hide();
                     // cmbx[0] = cmbxemployeestatus
                     // cmbx[1] = cmbxdepartment
@@ -77,7 +76,6 @@ namespace Fireon
                 default:
                     pnlFilters.Show();
                     btnSearch.Show();
-                    pnlSeparator1.Show();
                     btnCancel.Hide();
                     break;
             }
