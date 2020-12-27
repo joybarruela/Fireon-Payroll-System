@@ -36,63 +36,79 @@
             this.txtbxDeductionAmount = new System.Windows.Forms.TextBox();
             this.dtgvDeduction = new System.Windows.Forms.DataGridView();
             this.lblDeduction = new System.Windows.Forms.Label();
+            this.tblpDeduction = new System.Windows.Forms.TableLayoutPanel();
+            this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlDeduction = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDeduction)).BeginInit();
+            this.tblpDeduction.SuspendLayout();
+            this.flpBelow.SuspendLayout();
+            this.pnlDeduction.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDeleteDeduction
             // 
-            this.btnDeleteDeduction.Location = new System.Drawing.Point(314, 281);
+            this.btnDeleteDeduction.BackgroundImage = global::Fireon.Properties.Resources.btnDelete;
+            this.btnDeleteDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDeleteDeduction.FlatAppearance.BorderSize = 0;
+            this.btnDeleteDeduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteDeduction.Location = new System.Drawing.Point(631, 3);
             this.btnDeleteDeduction.Name = "btnDeleteDeduction";
-            this.btnDeleteDeduction.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteDeduction.Size = new System.Drawing.Size(127, 30);
             this.btnDeleteDeduction.TabIndex = 164;
-            this.btnDeleteDeduction.Text = "DELETE";
             this.btnDeleteDeduction.UseVisualStyleBackColor = true;
             this.btnDeleteDeduction.Click += new System.EventHandler(this.btnDeleteDeduction_Click);
             // 
             // btnAddDeduction
             // 
-            this.btnAddDeduction.Location = new System.Drawing.Point(395, 281);
+            this.btnAddDeduction.BackgroundImage = global::Fireon.Properties.Resources.btnAdd;
+            this.btnAddDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddDeduction.FlatAppearance.BorderSize = 0;
+            this.btnAddDeduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddDeduction.Location = new System.Drawing.Point(764, 3);
             this.btnAddDeduction.Name = "btnAddDeduction";
-            this.btnAddDeduction.Size = new System.Drawing.Size(75, 23);
+            this.btnAddDeduction.Size = new System.Drawing.Size(127, 30);
             this.btnAddDeduction.TabIndex = 165;
-            this.btnAddDeduction.Text = "ADD";
             this.btnAddDeduction.UseVisualStyleBackColor = true;
             this.btnAddDeduction.Click += new System.EventHandler(this.btnAddDeduction_Click);
             // 
             // lblDeductionName
             // 
             this.lblDeductionName.AutoSize = true;
-            this.lblDeductionName.Location = new System.Drawing.Point(13, 78);
+            this.lblDeductionName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeductionName.Location = new System.Drawing.Point(2, 5);
             this.lblDeductionName.Name = "lblDeductionName";
-            this.lblDeductionName.Size = new System.Drawing.Size(87, 13);
+            this.lblDeductionName.Size = new System.Drawing.Size(134, 20);
             this.lblDeductionName.TabIndex = 162;
             this.lblDeductionName.Text = "Deduction Name";
             // 
             // lblDeductionAmount
             // 
             this.lblDeductionAmount.AutoSize = true;
-            this.lblDeductionAmount.Location = new System.Drawing.Point(14, 104);
+            this.lblDeductionAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeductionAmount.Location = new System.Drawing.Point(71, 34);
             this.lblDeductionAmount.Name = "lblDeductionAmount";
-            this.lblDeductionAmount.Size = new System.Drawing.Size(43, 13);
+            this.lblDeductionAmount.Size = new System.Drawing.Size(66, 20);
             this.lblDeductionAmount.TabIndex = 163;
             this.lblDeductionAmount.Text = "Amount";
             // 
             // txtbxDeductionName
             // 
-            this.txtbxDeductionName.Location = new System.Drawing.Point(106, 71);
+            this.txtbxDeductionName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxDeductionName.Location = new System.Drawing.Point(142, 2);
             this.txtbxDeductionName.MaxLength = 40;
             this.txtbxDeductionName.Name = "txtbxDeductionName";
-            this.txtbxDeductionName.Size = new System.Drawing.Size(274, 20);
+            this.txtbxDeductionName.Size = new System.Drawing.Size(274, 26);
             this.txtbxDeductionName.TabIndex = 160;
             this.txtbxDeductionName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxDeductionName_KeyPress);
             this.txtbxDeductionName.Leave += new System.EventHandler(this.txtbxDeductionName_Leave);
             // 
             // txtbxDeductionAmount
             // 
-            this.txtbxDeductionAmount.Location = new System.Drawing.Point(106, 97);
+            this.txtbxDeductionAmount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxDeductionAmount.Location = new System.Drawing.Point(142, 31);
             this.txtbxDeductionAmount.MaxLength = 4;
             this.txtbxDeductionAmount.Name = "txtbxDeductionAmount";
-            this.txtbxDeductionAmount.Size = new System.Drawing.Size(76, 20);
+            this.txtbxDeductionAmount.Size = new System.Drawing.Size(130, 26);
             this.txtbxDeductionAmount.TabIndex = 161;
             this.txtbxDeductionAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbxDeductionAmount_KeyPress);
             // 
@@ -102,18 +118,20 @@
             this.dtgvDeduction.AllowUserToDeleteRows = false;
             this.dtgvDeduction.AllowUserToResizeColumns = false;
             this.dtgvDeduction.AllowUserToResizeRows = false;
+            this.dtgvDeduction.BackgroundColor = System.Drawing.Color.White;
             this.dtgvDeduction.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dtgvDeduction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvDeduction.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvDeduction.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dtgvDeduction.Location = new System.Drawing.Point(12, 133);
+            this.dtgvDeduction.Location = new System.Drawing.Point(3, 75);
             this.dtgvDeduction.MultiSelect = false;
             this.dtgvDeduction.Name = "dtgvDeduction";
             this.dtgvDeduction.ReadOnly = true;
             this.dtgvDeduction.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvDeduction.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvDeduction.ShowEditingIcon = false;
-            this.dtgvDeduction.Size = new System.Drawing.Size(458, 121);
+            this.dtgvDeduction.Size = new System.Drawing.Size(894, 295);
             this.dtgvDeduction.TabIndex = 159;
             // 
             // lblDeduction
@@ -130,21 +148,61 @@
             this.lblDeduction.TabIndex = 158;
             this.lblDeduction.Text = "Deduction";
             // 
+            // tblpDeduction
+            // 
+            this.tblpDeduction.ColumnCount = 1;
+            this.tblpDeduction.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblpDeduction.Controls.Add(this.flpBelow, 0, 2);
+            this.tblpDeduction.Controls.Add(this.pnlDeduction, 0, 1);
+            this.tblpDeduction.Controls.Add(this.dtgvDeduction, 0, 2);
+            this.tblpDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblpDeduction.Location = new System.Drawing.Point(0, 48);
+            this.tblpDeduction.Name = "tblpDeduction";
+            this.tblpDeduction.RowCount = 4;
+            this.tblpDeduction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.886792F));
+            this.tblpDeduction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.83924F));
+            this.tblpDeduction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.04964F));
+            this.tblpDeduction.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.456264F));
+            this.tblpDeduction.Size = new System.Drawing.Size(900, 414);
+            this.tblpDeduction.TabIndex = 284;
+            // 
+            // flpBelow
+            // 
+            this.flpBelow.Controls.Add(this.btnAddDeduction);
+            this.flpBelow.Controls.Add(this.btnDeleteDeduction);
+            this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpBelow.Location = new System.Drawing.Point(3, 376);
+            this.flpBelow.Name = "flpBelow";
+            this.flpBelow.Size = new System.Drawing.Size(894, 35);
+            this.flpBelow.TabIndex = 282;
+            // 
+            // pnlDeduction
+            // 
+            this.pnlDeduction.Controls.Add(this.txtbxDeductionAmount);
+            this.pnlDeduction.Controls.Add(this.txtbxDeductionName);
+            this.pnlDeduction.Controls.Add(this.lblDeductionAmount);
+            this.pnlDeduction.Controls.Add(this.lblDeductionName);
+            this.pnlDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDeduction.Location = new System.Drawing.Point(3, 10);
+            this.pnlDeduction.Name = "pnlDeduction";
+            this.pnlDeduction.Size = new System.Drawing.Size(894, 59);
+            this.pnlDeduction.TabIndex = 281;
+            // 
             // ucDeduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnDeleteDeduction);
-            this.Controls.Add(this.btnAddDeduction);
-            this.Controls.Add(this.lblDeductionName);
-            this.Controls.Add(this.lblDeductionAmount);
-            this.Controls.Add(this.txtbxDeductionName);
-            this.Controls.Add(this.txtbxDeductionAmount);
-            this.Controls.Add(this.dtgvDeduction);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tblpDeduction);
             this.Controls.Add(this.lblDeduction);
             this.Name = "ucDeduction";
             this.Size = new System.Drawing.Size(900, 462);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDeduction)).EndInit();
+            this.tblpDeduction.ResumeLayout(false);
+            this.flpBelow.ResumeLayout(false);
+            this.pnlDeduction.ResumeLayout(false);
+            this.pnlDeduction.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +218,8 @@
         private System.Windows.Forms.TextBox txtbxDeductionAmount;
         private System.Windows.Forms.DataGridView dtgvDeduction;
         private System.Windows.Forms.Label lblDeduction;
+        private System.Windows.Forms.TableLayoutPanel tblpDeduction;
+        private System.Windows.Forms.Panel pnlDeduction;
+        private System.Windows.Forms.FlowLayoutPanel flpBelow;
     }
 }

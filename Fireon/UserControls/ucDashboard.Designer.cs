@@ -55,9 +55,9 @@
             this.lblEmployeesOvertime = new System.Windows.Forms.Label();
             this.lblOvertime = new System.Windows.Forms.Label();
             this.lblOvertimeEmployeesGraph = new System.Windows.Forms.PictureBox();
+            this.flpEmployeeSummary = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTotalEmployees = new System.Windows.Forms.Label();
             this.lblTotalEmployeesAmount = new System.Windows.Forms.Label();
-            this.pnlEmployeeSummary = new System.Windows.Forms.Panel();
             this.pnlNewEmployees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblNewEmployeesGraph)).BeginInit();
             this.pnlTotalEmployees.SuspendLayout();
@@ -68,7 +68,7 @@
             this.pnlThingsToDo.SuspendLayout();
             this.pnlOvertimeEmployees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblOvertimeEmployeesGraph)).BeginInit();
-            this.pnlEmployeeSummary.SuspendLayout();
+            this.flpEmployeeSummary.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDashboard
@@ -250,7 +250,7 @@
             this.tblpDashboard.Controls.Add(this.pnlNewEmployees, 1, 0);
             this.tblpDashboard.Controls.Add(this.pnlThingsToDo, 0, 1);
             this.tblpDashboard.Controls.Add(this.pnlOvertimeEmployees, 2, 0);
-            this.tblpDashboard.Controls.Add(this.pnlEmployeeSummary, 0, 2);
+            this.tblpDashboard.Controls.Add(this.flpEmployeeSummary, 0, 2);
             this.tblpDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpDashboard.Location = new System.Drawing.Point(0, 38);
             this.tblpDashboard.Name = "tblpDashboard";
@@ -412,13 +412,22 @@
             this.lblOvertimeEmployeesGraph.TabIndex = 2;
             this.lblOvertimeEmployeesGraph.TabStop = false;
             // 
+            // flpEmployeeSummary
+            // 
+            this.tblpDashboard.SetColumnSpan(this.flpEmployeeSummary, 2);
+            this.flpEmployeeSummary.Controls.Add(this.lblTotalEmployees);
+            this.flpEmployeeSummary.Controls.Add(this.lblTotalEmployeesAmount);
+            this.flpEmployeeSummary.Location = new System.Drawing.Point(3, 423);
+            this.flpEmployeeSummary.Name = "flpEmployeeSummary";
+            this.flpEmployeeSummary.Size = new System.Drawing.Size(590, 36);
+            this.flpEmployeeSummary.TabIndex = 226;
+            // 
             // lblTotalEmployees
             // 
             this.lblTotalEmployees.AutoSize = true;
-            this.lblTotalEmployees.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTotalEmployees.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTotalEmployees.Location = new System.Drawing.Point(174, 0);
+            this.lblTotalEmployees.Location = new System.Drawing.Point(3, 0);
             this.lblTotalEmployees.Name = "lblTotalEmployees";
             this.lblTotalEmployees.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.lblTotalEmployees.Size = new System.Drawing.Size(221, 24);
@@ -429,26 +438,14 @@
             // lblTotalEmployeesAmount
             // 
             this.lblTotalEmployeesAmount.AutoSize = true;
-            this.lblTotalEmployeesAmount.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTotalEmployeesAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalEmployeesAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lblTotalEmployeesAmount.Location = new System.Drawing.Point(0, 0);
+            this.lblTotalEmployeesAmount.Location = new System.Drawing.Point(227, 0);
             this.lblTotalEmployeesAmount.Margin = new System.Windows.Forms.Padding(0);
             this.lblTotalEmployeesAmount.Name = "lblTotalEmployeesAmount";
             this.lblTotalEmployeesAmount.Size = new System.Drawing.Size(174, 29);
             this.lblTotalEmployeesAmount.TabIndex = 225;
             this.lblTotalEmployeesAmount.Text = "9,000,000,000";
-            // 
-            // pnlEmployeeSummary
-            // 
-            this.tblpDashboard.SetColumnSpan(this.pnlEmployeeSummary, 2);
-            this.pnlEmployeeSummary.Controls.Add(this.lblTotalEmployees);
-            this.pnlEmployeeSummary.Controls.Add(this.lblTotalEmployeesAmount);
-            this.pnlEmployeeSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlEmployeeSummary.Location = new System.Drawing.Point(3, 423);
-            this.pnlEmployeeSummary.Name = "pnlEmployeeSummary";
-            this.pnlEmployeeSummary.Size = new System.Drawing.Size(593, 36);
-            this.pnlEmployeeSummary.TabIndex = 227;
             // 
             // ucDashboard
             // 
@@ -477,8 +474,8 @@
             this.pnlOvertimeEmployees.ResumeLayout(false);
             this.pnlOvertimeEmployees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblOvertimeEmployeesGraph)).EndInit();
-            this.pnlEmployeeSummary.ResumeLayout(false);
-            this.pnlEmployeeSummary.PerformLayout();
+            this.flpEmployeeSummary.ResumeLayout(false);
+            this.flpEmployeeSummary.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,6 +511,6 @@
         private System.Windows.Forms.Label lblThingsToDo;
         private System.Windows.Forms.Label lblTotalEmployees;
         private System.Windows.Forms.Label lblTotalEmployeesAmount;
-        private System.Windows.Forms.Panel pnlEmployeeSummary;
+        private System.Windows.Forms.FlowLayoutPanel flpEmployeeSummary;
     }
 }

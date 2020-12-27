@@ -38,16 +38,14 @@
             this.lblEmployee = new System.Windows.Forms.Label();
             this.pnlFilters = new System.Windows.Forms.Panel();
             this.tblpEmployee = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlBelow = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.pnlSeparator2 = new System.Windows.Forms.Panel();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.pnlSeparator1 = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.pnlEmployee = new System.Windows.Forms.Panel();
+            this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.pnlFilters.SuspendLayout();
             this.tblpEmployee.SuspendLayout();
-            this.pnlBelow.SuspendLayout();
+            this.flpBelow.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtbxSearch
@@ -165,103 +163,83 @@
             this.tblpEmployee.ColumnCount = 1;
             this.tblpEmployee.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblpEmployee.Controls.Add(this.pnlFilters, 0, 0);
-            this.tblpEmployee.Controls.Add(this.pnlBelow, 0, 2);
             this.tblpEmployee.Controls.Add(this.pnlEmployee, 0, 1);
+            this.tblpEmployee.Controls.Add(this.flpBelow, 0, 2);
             this.tblpEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpEmployee.Location = new System.Drawing.Point(0, 38);
             this.tblpEmployee.Name = "tblpEmployee";
-            this.tblpEmployee.RowCount = 4;
+            this.tblpEmployee.RowCount = 3;
             this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tblpEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblpEmployee.Size = new System.Drawing.Size(900, 462);
             this.tblpEmployee.TabIndex = 1;
-            // 
-            // pnlBelow
-            // 
-            this.pnlBelow.Controls.Add(this.btnSearch);
-            this.pnlBelow.Controls.Add(this.pnlSeparator2);
-            this.pnlBelow.Controls.Add(this.btnCancel);
-            this.pnlBelow.Controls.Add(this.pnlSeparator1);
-            this.pnlBelow.Controls.Add(this.btnAdd);
-            this.pnlBelow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBelow.Location = new System.Drawing.Point(3, 409);
-            this.pnlBelow.Name = "pnlBelow";
-            this.pnlBelow.Size = new System.Drawing.Size(894, 30);
-            this.pnlBelow.TabIndex = 2;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackgroundImage = global::Fireon.Properties.Resources.btnSearch;
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(492, 0);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(124, 30);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pnlSeparator2
-            // 
-            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator2.Location = new System.Drawing.Point(616, 0);
-            this.pnlSeparator2.Name = "pnlSeparator2";
-            this.pnlSeparator2.Size = new System.Drawing.Size(15, 30);
-            this.pnlSeparator2.TabIndex = 5;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackgroundImage = global::Fireon.Properties.Resources.btnCancel;
-            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(631, 0);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(124, 30);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.TabStop = false;
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // pnlSeparator1
-            // 
-            this.pnlSeparator1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator1.Location = new System.Drawing.Point(755, 0);
-            this.pnlSeparator1.Name = "pnlSeparator1";
-            this.pnlSeparator1.Size = new System.Drawing.Size(15, 30);
-            this.pnlSeparator1.TabIndex = 3;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(770, 0);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(124, 30);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pnlEmployee
             // 
             this.pnlEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEmployee.Location = new System.Drawing.Point(3, 88);
             this.pnlEmployee.Name = "pnlEmployee";
-            this.pnlEmployee.Size = new System.Drawing.Size(894, 315);
+            this.pnlEmployee.Size = new System.Drawing.Size(894, 333);
             this.pnlEmployee.TabIndex = 1;
+            // 
+            // flpBelow
+            // 
+            this.flpBelow.Controls.Add(this.btnAdd);
+            this.flpBelow.Controls.Add(this.btnCancel);
+            this.flpBelow.Controls.Add(this.btnSearch);
+            this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpBelow.Location = new System.Drawing.Point(3, 427);
+            this.flpBelow.Name = "flpBelow";
+            this.flpBelow.Size = new System.Drawing.Size(894, 32);
+            this.flpBelow.TabIndex = 2;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Location = new System.Drawing.Point(755, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(136, 30);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackgroundImage = global::Fireon.Properties.Resources.btnCancel;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(625, 3);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(124, 29);
+            this.btnCancel.TabIndex = 2;
+            this.btnCancel.TabStop = false;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackgroundImage = global::Fireon.Properties.Resources.btnSearch;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Location = new System.Drawing.Point(495, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(124, 30);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // ucEmployee
             // 
@@ -277,7 +255,7 @@
             this.pnlFilters.ResumeLayout(false);
             this.pnlFilters.PerformLayout();
             this.tblpEmployee.ResumeLayout(false);
-            this.pnlBelow.ResumeLayout(false);
+            this.flpBelow.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,12 +272,10 @@
         private System.Windows.Forms.Panel pnlFilters;
         private System.Windows.Forms.TableLayoutPanel tblpEmployee;
         private System.Windows.Forms.Panel pnlEmployee;
-        private System.Windows.Forms.Panel pnlBelow;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Panel pnlSeparator1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Panel pnlSeparator2;
         public System.Windows.Forms.TextBox txtbxSearch;
+        private System.Windows.Forms.FlowLayoutPanel flpBelow;
     }
 }
