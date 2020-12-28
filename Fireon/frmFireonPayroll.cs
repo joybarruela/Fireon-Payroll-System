@@ -123,17 +123,13 @@ namespace Fireon
         {
             displayUserControl("Allowance");
         }
-        private void btnAll_Click(object sender, EventArgs e)
-        {
-            //displayUserControl("All");
-        }
         private void btnPrint_Click(object sender, EventArgs e)
         {
             displayUserControl("Print");
         }
         private void btnSinglePosting_Click(object sender, EventArgs e)
         {
-            //displayUserControl("Single Posting");
+            displayUserControl("Single Posting");
         }
         private void btnSettings_Click(object sender, EventArgs e)
         {
@@ -302,20 +298,6 @@ namespace Fireon
                     }
                     else { break; };
 
-                //case "All":
-                //    if (this.Text != "Fireon Payroll System | All")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_all.BackgroundImage = Properties.Resources.btn_all_active; // SET BUTTON ACTIVE
-                //        ucAll ucAll = new ucAll(); // CREATES A NEW UserControl
-                //        ucAll.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucAll.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | All";
-                //        break;
-                //    }
-                //    else { break; };
-
                 case "Print":
                     if (this.Text != "Fireon Payroll System | Print")
                     {
@@ -325,19 +307,14 @@ namespace Fireon
                     }
                     else { break; };
 
-                //case "Single Posting":
-                //    if (this.Text != "Fireon Payroll System | Single Posting")
-                //    {
-                //        pnl_selected.Controls.Clear(); // CLEARS ALL CHILDREN OF pnl_selected
-                //        setActive(); // RESETS ALL BUTTON TO EMPTY STATE
-                //        btn_single_posting.BackgroundImage = Properties.Resources.btn_single_active; // SET BUTTON ACTIVE
-                //        ucSinglePosting ucSinglePosting = new ucSinglePosting(); // CREATES A NEW UserControl
-                //        ucSinglePosting.Parent = pnl_selected; // SET PARENT OF NEW DASHBOARD
-                //        ucSinglePosting.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
-                //        this.Text = "Fireon Payroll System | Single Posting";
-                //        break;
-                //    }
-                //    else { break; };
+                case "Single Posting":
+                    if (this.Text != "Fireon Payroll System | Single Posting")
+                    {
+                        ff.displayUserControl(pnlSelected, new ucSinglePosting());
+                        setActive("Fireon Payroll System | Single Posting");
+                        break;
+                    }
+                    else { break; };
 
                 case "Settings":
                     if (this.Text != "Fireon Payroll System | Settings")

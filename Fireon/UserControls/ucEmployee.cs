@@ -191,7 +191,7 @@ namespace Fireon
                         DateTime.Today
                         );
                     db.dbInsertEmployeeDetails();
-                    fo.createEmployeeDirectory(fileListLocations); // CREATE THE EMPLOYEE DIRECTORY FOR THAT
+                    fo.createEmployeeDirectory(fileListLocations, ucNewEmployee.picbDP.ImageLocation); // CREATE THE EMPLOYEE DIRECTORY FOR THAT
                     displayUserControl("New Employee"); // BACK TO NEW EMPLOYEE
                 }
                 else

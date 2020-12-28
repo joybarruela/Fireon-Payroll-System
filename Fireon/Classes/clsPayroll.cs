@@ -41,6 +41,7 @@ namespace Fireon.Classes
         clsDatabaseFunctions db = new clsDatabaseFunctions();
         clsDatabaseQueries dq = new clsDatabaseQueries();
 
+        #region COMPUTATIONS
         public void computeTotalWorkingHours(int employeeID)
         {
             // EXAMPLE GOAL
@@ -158,7 +159,8 @@ namespace Fireon.Classes
             dbCmd.Parameters.AddWithValue("@employeeID", employeeID); // ADDS THE employeeID FROM THE PASSED VALUE
             dbCmd.ExecuteNonQuery(); // EXECUTE
             db.dbClose(); // CLOSE THE CONNECTION
-        }
+        } 
+        #endregion
         #region DEDUCTIONS
         public int getViolation(int employeeID)
         {
@@ -316,11 +318,6 @@ namespace Fireon.Classes
             return allowanceAmount;
         } 
         #endregion
-
-
-
-
-
         public void computePayroll()
         {
             /* ALGORITHM

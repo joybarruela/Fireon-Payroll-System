@@ -118,6 +118,7 @@
     <Compile Include="Classes\clsFileOperations.cs" />
     <Compile Include="Classes\clsFireonFunctions.cs" />
     <Compile Include="Classes\clsPayroll.cs" />
+    <Compile Include="Classes\clsSinglePosting.cs" />
     <Compile Include="Classes\clsStringFunctions.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -210,6 +211,12 @@
     <Compile Include="UserControls\ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucSinglePosting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSinglePosting.Designer.cs">
+      <DependentUpon>ucSinglePosting.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucViolation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -263,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSinglePosting.resx">
+      <DependentUpon>ucSinglePosting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucViolation.resx">
       <DependentUpon>ucViolation.cs</DependentUpon>
@@ -318,6 +328,7 @@
     <Content Include="Resources\cute-button-icons\btnIconNotificationHover.png" />
     <Content Include="Resources\cute-button-icons\btnIconUpdate.png" />
     <Content Include="Resources\cute-button-icons\btnIconUpdateHover.png" />
+    <None Include="Resources\miscellaneous\fireonSeal.jpg" />
     <Content Include="Resources\miscellaneous\miscBarChart.png" />
     <Content Include="Resources\miscellaneous\miscEmployeeDP.png" />
     <Content Include="Resources\miscellaneous\miscFireonIcon.ico" />
@@ -326,6 +337,9 @@
     <None Include="Resources\other-buttons\btnOthersLogin.png" />
     <None Include="Resources\other-buttons\btnAdd.png" />
     <None Include="Resources\miscellaneous\miscIconUploadImage.png" />
+    <None Include="Resources\miscellaneous\signature1.jpg" />
+    <None Include="Resources\miscellaneous\signature2.png" />
+    <None Include="Resources\miscellaneous\signature3.png" />
     <Content Include="Resources\other-buttons\btnCancel.png" />
     <None Include="Resources\other-buttons\btnDelete.png" />
     <None Include="Resources\other-buttons\btnDefaultFileLocation.png" />

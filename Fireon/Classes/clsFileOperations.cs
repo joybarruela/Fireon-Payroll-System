@@ -41,7 +41,7 @@ namespace Fireon.Classes
         /// CREATES AN EMPLOYEE FOLDER DIRECTORY AND TRIES TO COPY INPUTTED FILE LOCATIONS ON THE LISTBOX
         /// </summary>
         /// <param name="fileListLocations"></param>
-        public void createEmployeeDirectory(ListBox.ObjectCollection fileListLocations)
+        public void createEmployeeDirectory(ListBox.ObjectCollection fileListLocations, String imageLocation)
         {
             try
             {
@@ -72,6 +72,8 @@ namespace Fireon.Classes
                     // #8
                     Console.WriteLine(item);
                 }
+
+                copyFile(imageLocation, imageLocation, employeeFolder); // ALSO COPY THE USER PROFILE PICTURE THERE
 
                 /* ALGO
                  * 1. CREATE DIRECTORY FOR STORAGE OF FOLDERS, REFER FROM THE RESOURCES

@@ -740,6 +740,16 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fireonSeal {
+            get {
+                object obj = ResourceManager.GetObject("fireonSeal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
         public static string ghost_text_search {
@@ -1228,6 +1238,36 @@ namespace Fireon.Properties {
         public static string msg_welcome_message {
             get {
                 return ResourceManager.GetString("msg_welcome_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap signature1 {
+            get {
+                object obj = ResourceManager.GetObject("signature1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap signature2 {
+            get {
+                object obj = ResourceManager.GetObject("signature2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap signature3 {
+            get {
+                object obj = ResourceManager.GetObject("signature3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

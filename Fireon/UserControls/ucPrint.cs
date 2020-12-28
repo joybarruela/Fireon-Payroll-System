@@ -20,6 +20,7 @@ namespace Fireon.UserControls
         clsStringFunctions sf = new clsStringFunctions();
         clsDatabaseQueries dq = new clsDatabaseQueries();
         clsPayroll pr = new clsPayroll();
+
         public ucPrint()
         {
             InitializeComponent();
