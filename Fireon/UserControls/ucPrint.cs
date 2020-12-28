@@ -31,6 +31,7 @@ namespace Fireon.UserControls
         }
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            pr.computePayroll(); // COMPUTES THE PAYROLL HERE
             db.dbSearch(pnlPrint, ff.employeeDetailsSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
         }
         private void txtbxSearch_Enter(object sender, EventArgs e)
@@ -72,6 +73,7 @@ namespace Fireon.UserControls
                     ff.prepComboBoxesEmployee(this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear);
                     ff.resetFilterComboBoxes(this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear);
                     ff.ghostText("Search", this.txtbxSearch, true);
+                    pr.computePayroll(); // COMPUTES THE PAYROLL HERE
                     db.dbSearch(pnlPrint, ff.employeeDetailsSearch(txtbxSearch, this.cmbxEmployeeStatus, this.cmbxDepartment, this.cmbxPosition, this.cmbxMonth, this.cmbxYear));
                     break;
                 default:

@@ -18,7 +18,6 @@ namespace Fireon
     {
         clsDepartmentAndPositions dp = new clsDepartmentAndPositions();
         clsDatabaseQueries dq = new clsDatabaseQueries();
-        clsPayroll pr = new clsPayroll();
 
         static string dbConnectionString = Properties.Resources.db_connection_string; // THE CONNECTION STRING. REFER TO THE PROPERTIES TO SEE THE CONNECTION STRING. FOR FORMALITY, AS MUCH AS POSSIBLE, WE SHOULD PUT ALL DEFAULT STRINGS ON THE RESOURCES PANEL
         static MySqlConnection dbCon = new MySqlConnection(dbConnectionString); // dbCon WILL BE YOUR MYSQL CONNECTION INSTANCE. WE WILL PUT NEW MySqlConnection TO OUR dbCon OBJECT. STATIC BECAUSE THIS IS THE ONLY INSTANCE
@@ -133,7 +132,6 @@ namespace Fireon
             ucDataGridView.Parent = pnl; // SET PARENT OF NEW DASHBOARD
             ucDataGridView.Dock = DockStyle.Fill; // SET THE DOCKSTYLE
             dbRead(query, ucDataGridView.dgvTheDataGridView); // theDataGridView IS A STATIC MEMBER OF THE ucDataGridView CLASS
-            pr.computePayroll(); // COMPUTES THE PAYROLL HERE
         }
         /// <summary>
         /// INSERTS EMPLOYEE DATA INTO THE DATABASE

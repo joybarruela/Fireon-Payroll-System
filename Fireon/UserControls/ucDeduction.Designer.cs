@@ -85,11 +85,11 @@
             // 
             this.lbldeductionPercentage.AutoSize = true;
             this.lbldeductionPercentage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldeductionPercentage.Location = new System.Drawing.Point(71, 34);
+            this.lbldeductionPercentage.Location = new System.Drawing.Point(39, 34);
             this.lbldeductionPercentage.Name = "lbldeductionPercentage";
-            this.lbldeductionPercentage.Size = new System.Drawing.Size(66, 20);
+            this.lbldeductionPercentage.Size = new System.Drawing.Size(97, 20);
             this.lbldeductionPercentage.TabIndex = 163;
-            this.lbldeductionPercentage.Text = "Amount";
+            this.lbldeductionPercentage.Text = "Percentage";
             // 
             // txtbxDeductionName
             // 
