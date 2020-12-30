@@ -72,8 +72,14 @@ namespace Fireon.Classes
                     // #8
                     Console.WriteLine(item);
                 }
-
-                copyFile(imageLocation, imageLocation, employeeFolder); // ALSO COPY THE USER PROFILE PICTURE THERE
+                if (String.IsNullOrEmpty(imageLocation) == true)
+                {
+                    // DON'T COPY
+                }
+                else
+                {
+                    copyFile(String.Empty, imageLocation, employeeFolder); // ALSO COPY THE USER PROFILE PICTURE THERE
+                }
 
                 /* ALGO
                  * 1. CREATE DIRECTORY FOR STORAGE OF FOLDERS, REFER FROM THE RESOURCES
@@ -93,6 +99,7 @@ namespace Fireon.Classes
             {
                 MessageBox.Show(Properties.Resources.msg_exception + e.Message, Properties.Resources.str_program_title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
         /// <summary>
         /// GETS THE FOLDER DIRECTORY LOCATION AND SAVES IT IN THE Settings.settings FOR PERSISTENCE
