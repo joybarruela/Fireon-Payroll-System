@@ -97,12 +97,12 @@
             this.lblGreeting.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblGreeting.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGreeting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lblGreeting.Location = new System.Drawing.Point(645, 10);
+            this.lblGreeting.Location = new System.Drawing.Point(749, 10);
             this.lblGreeting.Name = "lblGreeting";
             this.lblGreeting.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
-            this.lblGreeting.Size = new System.Drawing.Size(248, 26);
+            this.lblGreeting.Size = new System.Drawing.Size(144, 26);
             this.lblGreeting.TabIndex = 5;
-            this.lblGreeting.Text = "Sup bro! good morning, John Dope.";
+            this.lblGreeting.Text = "Welcome message.";
             this.lblGreeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlSeparator13
@@ -225,7 +225,7 @@
             this.lblDateToday.Name = "lblDateToday";
             this.lblDateToday.Size = new System.Drawing.Size(176, 20);
             this.lblDateToday.TabIndex = 27;
-            this.lblDateToday.Text = "Today is November 20, 2020";
+            this.lblDateToday.Text = "DATE TODAY";
             this.lblDateToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblVersion
@@ -238,7 +238,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(176, 27);
             this.lblVersion.TabIndex = 28;
-            this.lblVersion.Text = "Version 1.0";
+            this.lblVersion.Text = "VERSION";
             this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSettings

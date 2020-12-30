@@ -32,6 +32,7 @@ namespace Fireon
         /// </summary>
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            this.Text = "Fireon Payroll System | Login";
             this.Shown += new System.EventHandler(this.frmLogin_Shown);
         }
         void frmLogin_Shown(object sender, EventArgs e)

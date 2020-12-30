@@ -32,7 +32,6 @@
             this.pnlSinglePosting = new System.Windows.Forms.Panel();
             this.picbFireonLogo = new System.Windows.Forms.PictureBox();
             this.picbSealGraphic = new System.Windows.Forms.PictureBox();
-            this.picbEmployeePicture = new System.Windows.Forms.PictureBox();
             this.lblAccountUsername = new System.Windows.Forms.Label();
             this.lblProcessedBy = new System.Windows.Forms.Label();
             this.lblDateProcessed = new System.Windows.Forms.Label();
@@ -58,7 +57,6 @@
             this.pnlSinglePosting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbFireonLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbSealGraphic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbEmployeePicture)).BeginInit();
             this.tblpSinglePosting.SuspendLayout();
             this.pnlFilters.SuspendLayout();
             this.pnlBelow.SuspendLayout();
@@ -71,7 +69,6 @@
             this.pnlSinglePosting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlSinglePosting.Controls.Add(this.picbFireonLogo);
             this.pnlSinglePosting.Controls.Add(this.picbSealGraphic);
-            this.pnlSinglePosting.Controls.Add(this.picbEmployeePicture);
             this.pnlSinglePosting.Controls.Add(this.lblAccountUsername);
             this.pnlSinglePosting.Controls.Add(this.lblProcessedBy);
             this.pnlSinglePosting.Controls.Add(this.lblDateProcessed);
@@ -110,17 +107,6 @@
             this.picbSealGraphic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbSealGraphic.TabIndex = 154;
             this.picbSealGraphic.TabStop = false;
-            // 
-            // picbEmployeePicture
-            // 
-            this.picbEmployeePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picbEmployeePicture.Image = global::Fireon.Properties.Resources.miscIconUploadImage;
-            this.picbEmployeePicture.Location = new System.Drawing.Point(13, 81);
-            this.picbEmployeePicture.Name = "picbEmployeePicture";
-            this.picbEmployeePicture.Size = new System.Drawing.Size(129, 125);
-            this.picbEmployeePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picbEmployeePicture.TabIndex = 154;
-            this.picbEmployeePicture.TabStop = false;
             // 
             // lblAccountUsername
             // 
@@ -182,7 +168,7 @@
             this.lblEmployeeHomeAddress.AutoSize = true;
             this.lblEmployeeHomeAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeHomeAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmployeeHomeAddress.Location = new System.Drawing.Point(151, 186);
+            this.lblEmployeeHomeAddress.Location = new System.Drawing.Point(10, 187);
             this.lblEmployeeHomeAddress.Name = "lblEmployeeHomeAddress";
             this.lblEmployeeHomeAddress.Size = new System.Drawing.Size(107, 18);
             this.lblEmployeeHomeAddress.TabIndex = 145;
@@ -193,7 +179,7 @@
             this.lblEmployeeEmailAddress.AutoSize = true;
             this.lblEmployeeEmailAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeEmailAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmployeeEmailAddress.Location = new System.Drawing.Point(151, 170);
+            this.lblEmployeeEmailAddress.Location = new System.Drawing.Point(10, 171);
             this.lblEmployeeEmailAddress.Name = "lblEmployeeEmailAddress";
             this.lblEmployeeEmailAddress.Size = new System.Drawing.Size(103, 18);
             this.lblEmployeeEmailAddress.TabIndex = 145;
@@ -204,7 +190,7 @@
             this.lblEmployeeContactNumber.AutoSize = true;
             this.lblEmployeeContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeContactNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmployeeContactNumber.Location = new System.Drawing.Point(151, 150);
+            this.lblEmployeeContactNumber.Location = new System.Drawing.Point(10, 151);
             this.lblEmployeeContactNumber.Name = "lblEmployeeContactNumber";
             this.lblEmployeeContactNumber.Size = new System.Drawing.Size(117, 18);
             this.lblEmployeeContactNumber.TabIndex = 145;
@@ -215,7 +201,7 @@
             this.lblEmployeeDepartment.AutoSize = true;
             this.lblEmployeeDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmployeeDepartment.Location = new System.Drawing.Point(150, 111);
+            this.lblEmployeeDepartment.Location = new System.Drawing.Point(9, 112);
             this.lblEmployeeDepartment.Name = "lblEmployeeDepartment";
             this.lblEmployeeDepartment.Size = new System.Drawing.Size(187, 20);
             this.lblEmployeeDepartment.TabIndex = 145;
@@ -226,7 +212,7 @@
             this.lblEmployeeFirstName.AutoSize = true;
             this.lblEmployeeFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmployeeFirstName.Location = new System.Drawing.Point(148, 80);
+            this.lblEmployeeFirstName.Location = new System.Drawing.Point(7, 81);
             this.lblEmployeeFirstName.Name = "lblEmployeeFirstName";
             this.lblEmployeeFirstName.Size = new System.Drawing.Size(282, 31);
             this.lblEmployeeFirstName.TabIndex = 145;
@@ -385,7 +371,6 @@
             this.pnlSinglePosting.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbFireonLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbSealGraphic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbEmployeePicture)).EndInit();
             this.tblpSinglePosting.ResumeLayout(false);
             this.pnlFilters.ResumeLayout(false);
             this.pnlFilters.PerformLayout();
@@ -399,7 +384,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlSinglePosting;
-        private System.Windows.Forms.PictureBox picbEmployeePicture;
         private System.Windows.Forms.Label lblEmployeeHomeAddress;
         private System.Windows.Forms.Label lblEmployeeEmailAddress;
         private System.Windows.Forms.Label lblEmployeeContactNumber;

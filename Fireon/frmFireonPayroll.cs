@@ -29,6 +29,8 @@ namespace Fireon
         {
             lblGreeting.Text = Properties.Resources.str_dashboard_greetings;
             lblGreeting.Text = String.Concat(Properties.Resources.str_dashboard_greetings, Properties.Settings.Default.lastLoggedInUsername);
+            lblDateToday.Text = DateTime.Today.ToLongDateString();
+            lblVersion.Text = "Version: " + Properties.Resources.str_version.ToString();
         }
         /// <summary>
         /// WHEN THIS FORM IS CLOSED, EXECUTE THE ENTIRE PROGRAM, BY THAT I MEAN KILL THE LOGIN PROCESS AND END ALL.

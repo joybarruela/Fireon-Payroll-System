@@ -1315,5 +1315,14 @@ namespace Fireon.Properties {
                 return ResourceManager.GetString("str_program_title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alpha.
+        /// </summary>
+        public static string str_version {
+            get {
+                return ResourceManager.GetString("str_version", resourceCulture);
+            }
+        }
     }
 }

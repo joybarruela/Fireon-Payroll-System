@@ -112,6 +112,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\clsDashboard.cs" />
     <Compile Include="Classes\clsDatabaseFunctions.cs" />
     <Compile Include="Classes\clsDatabaseQueries.cs" />
     <Compile Include="Classes\clsDepartmentAndPositions.cs" />
