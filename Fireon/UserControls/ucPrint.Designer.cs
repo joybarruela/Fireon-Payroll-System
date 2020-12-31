@@ -40,8 +40,6 @@
             this.tblpPrint = new System.Windows.Forms.TableLayoutPanel();
             this.pnlBelow = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.pnlSeparator1 = new System.Windows.Forms.Panel();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.pnlFilters.SuspendLayout();
             this.tblpPrint.SuspendLayout();
             this.pnlBelow.SuspendLayout();
@@ -186,8 +184,6 @@
             // pnlBelow
             // 
             this.pnlBelow.Controls.Add(this.btnSearch);
-            this.pnlBelow.Controls.Add(this.pnlSeparator1);
-            this.pnlBelow.Controls.Add(this.btnPrint);
             this.pnlBelow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBelow.Location = new System.Drawing.Point(3, 409);
             this.pnlBelow.Name = "pnlBelow";
@@ -202,36 +198,13 @@
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(631, 0);
+            this.btnSearch.Location = new System.Drawing.Point(770, 0);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(124, 30);
             this.btnSearch.TabIndex = 6;
             this.btnSearch.TabStop = false;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pnlSeparator1
-            // 
-            this.pnlSeparator1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator1.Location = new System.Drawing.Point(755, 0);
-            this.pnlSeparator1.Name = "pnlSeparator1";
-            this.pnlSeparator1.Size = new System.Drawing.Size(15, 30);
-            this.pnlSeparator1.TabIndex = 3;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackgroundImage = global::Fireon.Properties.Resources.btnPrintStuff;
-            this.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPrint.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnPrint.FlatAppearance.BorderSize = 0;
-            this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrint.Location = new System.Drawing.Point(770, 0);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(124, 30);
-            this.btnPrint.TabIndex = 4;
-            this.btnPrint.TabStop = false;
-            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // ucPrint
             // 
@@ -265,8 +238,6 @@
         private System.Windows.Forms.TableLayoutPanel tblpPrint;
         private System.Windows.Forms.Panel pnlBelow;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Panel pnlSeparator1;
-        private System.Windows.Forms.Button btnPrint;
 
     }
 }
