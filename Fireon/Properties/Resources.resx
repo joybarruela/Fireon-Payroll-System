@@ -168,17 +168,11 @@
   <data name="btnAllActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnallactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnAllHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnAllowance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnallowance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnAllowanceActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnallowanceactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnAllowanceHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnallowancehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnCashAdvance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btncashadvance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -186,17 +180,11 @@
   <data name="btnCashAdvanceActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btncashadvanceactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnCashAdvanceHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btncashadvancehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnDashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btndashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnDashboardActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btndashboardactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnDashboardHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndashboardhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnDeduction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btndeduction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,17 +192,11 @@
   <data name="btnDeductionActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btndeductionactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnDeductionHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btndeductionhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnprint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnPrintActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnprintactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPrintHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnprinthover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnEmployee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnemployee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -222,17 +204,11 @@
   <data name="btnEmployeeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnemployeeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnEmployeeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnemployeehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnHoliday" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnholiday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnHolidayActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnholidayactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnHolidayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnholidayhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnLeave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnleave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -240,17 +216,11 @@
   <data name="btnLeaveActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnleaveactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnLeaveHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnleavehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnOvertime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnovertime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnOvertimeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnovertimeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnOvertimeHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnovertimehover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnsettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -258,26 +228,17 @@
   <data name="btnSettingsActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnsettingsactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnSettingsHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsettingshover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnSinglePosting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnsingleposting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnSinglePostingActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnsinglepostingactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnSinglePostingHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnsinglepostinghover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnViolation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnviolation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnViolationActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\sidebar-buttons\btnviolationactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnViolationHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\sidebar-buttons\btnviolationhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="miscBarChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\miscellaneous\miscbarchart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
