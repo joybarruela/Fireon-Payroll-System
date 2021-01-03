@@ -80,7 +80,6 @@ namespace Fireon.UserControls
                 default:
                     pnlFilters.Show();
                     btnSearch.Show();
-                    pnlSeparator1.Show();
                     break;
             }
         }

@@ -50,7 +50,7 @@
             this.pnlPrint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrint.Location = new System.Drawing.Point(3, 88);
             this.pnlPrint.Name = "pnlPrint";
-            this.pnlPrint.Size = new System.Drawing.Size(894, 315);
+            this.pnlPrint.Size = new System.Drawing.Size(894, 335);
             this.pnlPrint.TabIndex = 1;
             // 
             // cmbxYear
@@ -173,7 +173,7 @@
             this.tblpPrint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpPrint.Location = new System.Drawing.Point(0, 38);
             this.tblpPrint.Name = "tblpPrint";
-            this.tblpPrint.RowCount = 4;
+            this.tblpPrint.RowCount = 3;
             this.tblpPrint.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblpPrint.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblpPrint.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -185,31 +185,33 @@
             // 
             this.pnlBelow.Controls.Add(this.btnSearch);
             this.pnlBelow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBelow.Location = new System.Drawing.Point(3, 409);
+            this.pnlBelow.Location = new System.Drawing.Point(3, 429);
             this.pnlBelow.Name = "pnlBelow";
             this.pnlBelow.Size = new System.Drawing.Size(894, 30);
             this.pnlBelow.TabIndex = 2;
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.BackgroundImage = global::Fireon.Properties.Resources.btnSearch;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(770, 0);
+            this.btnSearch.Location = new System.Drawing.Point(767, 0);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(124, 30);
+            this.btnSearch.Size = new System.Drawing.Size(127, 30);
             this.btnSearch.TabIndex = 6;
             this.btnSearch.TabStop = false;
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // ucPrint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tblpPrint);
             this.Controls.Add(this.lblPrint);
             this.Name = "ucPrint";

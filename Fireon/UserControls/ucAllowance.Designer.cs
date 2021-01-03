@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddAllowance = new System.Windows.Forms.Button();
             this.lblAllowanceName = new System.Windows.Forms.Label();
             this.lblAllowanceAmount = new System.Windows.Forms.Label();
@@ -107,18 +110,42 @@
             this.dtgvAllowance.AllowUserToResizeRows = false;
             this.dtgvAllowance.BackgroundColor = System.Drawing.Color.White;
             this.dtgvAllowance.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvAllowance.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvAllowance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvAllowance.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvAllowance.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvAllowance.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dtgvAllowance.Location = new System.Drawing.Point(3, 77);
+            this.dtgvAllowance.Location = new System.Drawing.Point(3, 80);
             this.dtgvAllowance.MultiSelect = false;
             this.dtgvAllowance.Name = "dtgvAllowance";
             this.dtgvAllowance.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvAllowance.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvAllowance.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvAllowance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvAllowance.ShowEditingIcon = false;
-            this.dtgvAllowance.Size = new System.Drawing.Size(894, 293);
+            this.dtgvAllowance.Size = new System.Drawing.Size(894, 325);
             this.dtgvAllowance.TabIndex = 147;
             // 
             // lblAllowance
@@ -160,10 +187,10 @@
             this.tblpAllowance.Name = "tblpAllowance";
             this.tblpAllowance.RowCount = 4;
             this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.886792F));
-            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.18357F));
-            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.22222F));
+            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.26549F));
+            this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.23009F));
             this.tblpAllowance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.456264F));
-            this.tblpAllowance.Size = new System.Drawing.Size(900, 414);
+            this.tblpAllowance.Size = new System.Drawing.Size(900, 452);
             this.tblpAllowance.TabIndex = 285;
             // 
             // flpBelow
@@ -172,9 +199,9 @@
             this.flpBelow.Controls.Add(this.btnDeleteAllowance);
             this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpBelow.Location = new System.Drawing.Point(3, 376);
+            this.flpBelow.Location = new System.Drawing.Point(3, 411);
             this.flpBelow.Name = "flpBelow";
-            this.flpBelow.Size = new System.Drawing.Size(894, 35);
+            this.flpBelow.Size = new System.Drawing.Size(894, 38);
             this.flpBelow.TabIndex = 282;
             // 
             // pnlAllowance
@@ -184,9 +211,9 @@
             this.pnlAllowance.Controls.Add(this.lblAllowanceAmount);
             this.pnlAllowance.Controls.Add(this.lblAllowanceName);
             this.pnlAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAllowance.Location = new System.Drawing.Point(3, 10);
+            this.pnlAllowance.Location = new System.Drawing.Point(3, 11);
             this.pnlAllowance.Name = "pnlAllowance";
-            this.pnlAllowance.Size = new System.Drawing.Size(894, 61);
+            this.pnlAllowance.Size = new System.Drawing.Size(894, 63);
             this.pnlAllowance.TabIndex = 281;
             // 
             // ucAllowance
@@ -197,7 +224,7 @@
             this.Controls.Add(this.tblpAllowance);
             this.Controls.Add(this.lblAllowance);
             this.Name = "ucAllowance";
-            this.Size = new System.Drawing.Size(900, 462);
+            this.Size = new System.Drawing.Size(900, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAllowance)).EndInit();
             this.tblpAllowance.ResumeLayout(false);
             this.flpBelow.ResumeLayout(false);

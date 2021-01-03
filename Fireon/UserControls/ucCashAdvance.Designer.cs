@@ -39,9 +39,11 @@
             this.btnCashAdvance = new System.Windows.Forms.Button();
             this.tblpCashAdvance = new System.Windows.Forms.TableLayoutPanel();
             this.pnlAmountOfCash = new System.Windows.Forms.Panel();
+            this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCashAdvance)).BeginInit();
             this.tblpCashAdvance.SuspendLayout();
             this.pnlAmountOfCash.SuspendLayout();
+            this.flpBelow.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgvCashAdvance
@@ -54,7 +56,7 @@
             this.dtgvCashAdvance.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -63,7 +65,7 @@
             this.dtgvCashAdvance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -78,7 +80,7 @@
             this.dtgvCashAdvance.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -87,7 +89,7 @@
             this.dtgvCashAdvance.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvCashAdvance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvCashAdvance.ShowEditingIcon = false;
-            this.dtgvCashAdvance.Size = new System.Drawing.Size(894, 380);
+            this.dtgvCashAdvance.Size = new System.Drawing.Size(894, 376);
             this.dtgvCashAdvance.TabIndex = 279;
             // 
             // lblCashAdvance
@@ -127,13 +129,12 @@
             // 
             this.btnCashAdvance.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCashAdvance.BackgroundImage")));
             this.btnCashAdvance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCashAdvance.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnCashAdvance.FlatAppearance.BorderSize = 0;
             this.btnCashAdvance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnCashAdvance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCashAdvance.Location = new System.Drawing.Point(761, 430);
+            this.btnCashAdvance.Location = new System.Drawing.Point(764, 3);
             this.btnCashAdvance.Name = "btnCashAdvance";
-            this.btnCashAdvance.Size = new System.Drawing.Size(136, 29);
+            this.btnCashAdvance.Size = new System.Drawing.Size(127, 30);
             this.btnCashAdvance.TabIndex = 280;
             this.btnCashAdvance.TabStop = false;
             this.btnCashAdvance.UseVisualStyleBackColor = true;
@@ -143,17 +144,17 @@
             // 
             this.tblpCashAdvance.ColumnCount = 1;
             this.tblpCashAdvance.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblpCashAdvance.Controls.Add(this.flpBelow, 0, 3);
             this.tblpCashAdvance.Controls.Add(this.pnlAmountOfCash, 0, 1);
-            this.tblpCashAdvance.Controls.Add(this.btnCashAdvance, 0, 3);
             this.tblpCashAdvance.Controls.Add(this.dtgvCashAdvance, 0, 2);
             this.tblpCashAdvance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpCashAdvance.Location = new System.Drawing.Point(0, 38);
             this.tblpCashAdvance.Name = "tblpCashAdvance";
             this.tblpCashAdvance.RowCount = 4;
-            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.918024F));
-            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.54978F));
-            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.208286F));
+            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.932726F));
+            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.197609F));
+            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.7315F));
+            this.tblpCashAdvance.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.138166F));
             this.tblpCashAdvance.Size = new System.Drawing.Size(900, 462);
             this.tblpCashAdvance.TabIndex = 283;
             // 
@@ -166,6 +167,17 @@
             this.pnlAmountOfCash.Name = "pnlAmountOfCash";
             this.pnlAmountOfCash.Size = new System.Drawing.Size(894, 27);
             this.pnlAmountOfCash.TabIndex = 281;
+            // 
+            // flpBelow
+            // 
+            this.flpBelow.Controls.Add(this.btnCashAdvance);
+            this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpBelow.Location = new System.Drawing.Point(3, 426);
+            this.flpBelow.Name = "flpBelow";
+            this.flpBelow.Size = new System.Drawing.Size(894, 33);
+            this.flpBelow.TabIndex = 283;
+            this.flpBelow.Paint += new System.Windows.Forms.PaintEventHandler(this.flpBelow_Paint);
             // 
             // ucCashAdvance
             // 
@@ -180,6 +192,7 @@
             this.tblpCashAdvance.ResumeLayout(false);
             this.pnlAmountOfCash.ResumeLayout(false);
             this.pnlAmountOfCash.PerformLayout();
+            this.flpBelow.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +207,6 @@
         private System.Windows.Forms.Button btnCashAdvance;
         private System.Windows.Forms.TableLayoutPanel tblpCashAdvance;
         private System.Windows.Forms.Panel pnlAmountOfCash;
+        private System.Windows.Forms.FlowLayoutPanel flpBelow;
     }
 }

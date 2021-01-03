@@ -65,5 +65,10 @@ namespace Fireon.UserControls
                 MessageBox.Show(null, Properties.Resources.msg_overtime_added, Properties.Resources.str_program_title, MessageBoxButtons.OK);
             }
         }
+
+        private void tblpOvertime_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

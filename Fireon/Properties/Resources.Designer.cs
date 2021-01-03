@@ -740,16 +740,6 @@ namespace Fireon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap fireonSeal {
-            get {
-                object obj = ResourceManager.GetObject("fireonSeal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
         public static string ghost_text_search {
@@ -843,6 +833,26 @@ namespace Fireon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap miscBgEmployeeInformation {
+            get {
+                object obj = ResourceManager.GetObject("miscBgEmployeeInformation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap miscBgSinglePosting {
+            get {
+                object obj = ResourceManager.GetObject("miscBgSinglePosting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap miscEmployeeDP {
             get {
                 object obj = ResourceManager.GetObject("miscEmployeeDP", resourceCulture);
@@ -876,6 +886,16 @@ namespace Fireon.Properties {
         public static System.Drawing.Bitmap miscFireonLogo {
             get {
                 object obj = ResourceManager.GetObject("miscFireonLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap miscFireonSeal {
+            get {
+                object obj = ResourceManager.GetObject("miscFireonSeal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

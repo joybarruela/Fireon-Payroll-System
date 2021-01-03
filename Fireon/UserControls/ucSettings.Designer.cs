@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblSettings = new System.Windows.Forms.Label();
             this.fbdDefaultFileLocation = new System.Windows.Forms.FolderBrowserDialog();
-            this.lblDefaultFileLocation = new System.Windows.Forms.Label();
             this.pnlUserInformation = new System.Windows.Forms.Panel();
             this.txtbxPassword = new System.Windows.Forms.TextBox();
             this.txtbxYourPassword = new System.Windows.Forms.TextBox();
@@ -50,11 +52,14 @@
             this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlSeparator2 = new System.Windows.Forms.Panel();
             this.tblpSettings = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblDefaultFileLocation = new System.Windows.Forms.Label();
             this.pnlUserInformation.SuspendLayout();
             this.flpDtgv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).BeginInit();
             this.flpBelow.SuspendLayout();
             this.tblpSettings.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSettings
@@ -75,21 +80,6 @@
             // 
             this.fbdDefaultFileLocation.Description = "Choose Default File Directory.";
             // 
-            // lblDefaultFileLocation
-            // 
-            this.lblDefaultFileLocation.AutoSize = true;
-            this.lblDefaultFileLocation.BackColor = System.Drawing.Color.Transparent;
-            this.lblDefaultFileLocation.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblDefaultFileLocation.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDefaultFileLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            this.lblDefaultFileLocation.Location = new System.Drawing.Point(0, 392);
-            this.lblDefaultFileLocation.Margin = new System.Windows.Forms.Padding(0);
-            this.lblDefaultFileLocation.Name = "lblDefaultFileLocation";
-            this.lblDefaultFileLocation.Size = new System.Drawing.Size(105, 24);
-            this.lblDefaultFileLocation.TabIndex = 220;
-            this.lblDefaultFileLocation.Text = "File Location:";
-            this.lblDefaultFileLocation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pnlUserInformation
             // 
             this.pnlUserInformation.Controls.Add(this.txtbxPassword);
@@ -102,7 +92,7 @@
             this.pnlUserInformation.Controls.Add(this.lblPassword);
             this.pnlUserInformation.Controls.Add(this.lblUsername);
             this.pnlUserInformation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlUserInformation.Location = new System.Drawing.Point(3, 3);
+            this.pnlUserInformation.Location = new System.Drawing.Point(3, 205);
             this.pnlUserInformation.Name = "pnlUserInformation";
             this.pnlUserInformation.Size = new System.Drawing.Size(894, 181);
             this.pnlUserInformation.TabIndex = 221;
@@ -204,12 +194,13 @@
             // 
             this.btnDefaultFileLocation.BackgroundImage = global::Fireon.Properties.Resources.btnDefaultFileLocation;
             this.btnDefaultFileLocation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDefaultFileLocation.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnDefaultFileLocation.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDefaultFileLocation.FlatAppearance.BorderSize = 0;
             this.btnDefaultFileLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDefaultFileLocation.Location = new System.Drawing.Point(6, 3);
+            this.btnDefaultFileLocation.Location = new System.Drawing.Point(0, 0);
+            this.btnDefaultFileLocation.Margin = new System.Windows.Forms.Padding(0);
             this.btnDefaultFileLocation.Name = "btnDefaultFileLocation";
-            this.btnDefaultFileLocation.Size = new System.Drawing.Size(221, 30);
+            this.btnDefaultFileLocation.Size = new System.Drawing.Size(208, 36);
             this.btnDefaultFileLocation.TabIndex = 221;
             this.btnDefaultFileLocation.UseVisualStyleBackColor = true;
             this.btnDefaultFileLocation.Click += new System.EventHandler(this.btnDefaultFileLocation_Click);
@@ -220,9 +211,9 @@
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(756, 3);
+            this.btnAdd.Location = new System.Drawing.Point(768, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(135, 30);
+            this.btnAdd.Size = new System.Drawing.Size(127, 30);
             this.btnAdd.TabIndex = 144;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -233,9 +224,9 @@
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(618, 3);
+            this.btnDelete.Location = new System.Drawing.Point(635, 3);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(132, 30);
+            this.btnDelete.Size = new System.Drawing.Size(127, 30);
             this.btnDelete.TabIndex = 144;
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -245,18 +236,17 @@
             this.flpDtgv.Controls.Add(this.pnlSeparator1);
             this.flpDtgv.Controls.Add(this.dtgvAccounts);
             this.flpDtgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpDtgv.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpDtgv.Location = new System.Drawing.Point(3, 190);
+            this.flpDtgv.Location = new System.Drawing.Point(3, 3);
             this.flpDtgv.Name = "flpDtgv";
-            this.flpDtgv.Size = new System.Drawing.Size(894, 199);
+            this.flpDtgv.Size = new System.Drawing.Size(894, 196);
             this.flpDtgv.TabIndex = 317;
             // 
             // pnlSeparator1
             // 
-            this.pnlSeparator1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator1.Location = new System.Drawing.Point(636, 3);
+            this.pnlSeparator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlSeparator1.Location = new System.Drawing.Point(3, 3);
             this.pnlSeparator1.Name = "pnlSeparator1";
-            this.pnlSeparator1.Size = new System.Drawing.Size(255, 219);
+            this.pnlSeparator1.Size = new System.Drawing.Size(250, 194);
             this.pnlSeparator1.TabIndex = 146;
             // 
             // dtgvAccounts
@@ -266,38 +256,62 @@
             this.dtgvAccounts.AllowUserToResizeColumns = false;
             this.dtgvAccounts.AllowUserToResizeRows = false;
             this.dtgvAccounts.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvAccounts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvAccounts.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvAccounts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvAccounts.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dtgvAccounts.Location = new System.Drawing.Point(233, 3);
+            this.dtgvAccounts.Location = new System.Drawing.Point(259, 3);
             this.dtgvAccounts.MultiSelect = false;
             this.dtgvAccounts.Name = "dtgvAccounts";
             this.dtgvAccounts.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvAccounts.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvAccounts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvAccounts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvAccounts.ShowEditingIcon = false;
-            this.dtgvAccounts.Size = new System.Drawing.Size(397, 219);
+            this.dtgvAccounts.Size = new System.Drawing.Size(397, 194);
             this.dtgvAccounts.TabIndex = 141;
             // 
             // flpBelow
             // 
-            this.flpBelow.Controls.Add(this.btnAdd);
-            this.flpBelow.Controls.Add(this.btnDelete);
-            this.flpBelow.Controls.Add(this.pnlSeparator2);
             this.flpBelow.Controls.Add(this.btnDefaultFileLocation);
+            this.flpBelow.Controls.Add(this.pnlSeparator2);
+            this.flpBelow.Controls.Add(this.btnDelete);
+            this.flpBelow.Controls.Add(this.btnAdd);
             this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpBelow.Location = new System.Drawing.Point(3, 419);
+            this.flpBelow.Location = new System.Drawing.Point(0, 417);
+            this.flpBelow.Margin = new System.Windows.Forms.Padding(0);
             this.flpBelow.Name = "flpBelow";
-            this.flpBelow.Size = new System.Drawing.Size(894, 30);
+            this.flpBelow.Size = new System.Drawing.Size(900, 35);
             this.flpBelow.TabIndex = 318;
             // 
             // pnlSeparator2
             // 
-            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSeparator2.Location = new System.Drawing.Point(233, 3);
+            this.pnlSeparator2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSeparator2.Location = new System.Drawing.Point(211, 3);
             this.pnlSeparator2.Name = "pnlSeparator2";
-            this.pnlSeparator2.Size = new System.Drawing.Size(379, 30);
+            this.pnlSeparator2.Size = new System.Drawing.Size(418, 30);
             this.pnlSeparator2.TabIndex = 145;
             // 
             // tblpSettings
@@ -305,19 +319,43 @@
             this.tblpSettings.ColumnCount = 1;
             this.tblpSettings.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblpSettings.Controls.Add(this.flpBelow, 0, 3);
-            this.tblpSettings.Controls.Add(this.flpDtgv, 0, 1);
-            this.tblpSettings.Controls.Add(this.pnlUserInformation, 0, 0);
-            this.tblpSettings.Controls.Add(this.lblDefaultFileLocation, 0, 2);
+            this.tblpSettings.Controls.Add(this.flpDtgv, 0, 0);
+            this.tblpSettings.Controls.Add(this.pnlUserInformation, 0, 1);
+            this.tblpSettings.Controls.Add(this.flowLayoutPanel1, 0, 2);
             this.tblpSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpSettings.Location = new System.Drawing.Point(0, 48);
             this.tblpSettings.Name = "tblpSettings";
             this.tblpSettings.RowCount = 4;
-            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.63362F));
-            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.66047F));
-            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.530973F));
-            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.743363F));
+            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.9115F));
+            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.59292F));
+            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.415929F));
+            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.522124F));
+            this.tblpSettings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblpSettings.Size = new System.Drawing.Size(900, 452);
             this.tblpSettings.TabIndex = 220;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.lblDefaultFileLocation);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 392);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(894, 22);
+            this.flowLayoutPanel1.TabIndex = 319;
+            // 
+            // lblDefaultFileLocation
+            // 
+            this.lblDefaultFileLocation.AutoSize = true;
+            this.lblDefaultFileLocation.BackColor = System.Drawing.Color.Transparent;
+            this.lblDefaultFileLocation.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDefaultFileLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
+            this.lblDefaultFileLocation.Location = new System.Drawing.Point(0, 0);
+            this.lblDefaultFileLocation.Margin = new System.Windows.Forms.Padding(0);
+            this.lblDefaultFileLocation.Name = "lblDefaultFileLocation";
+            this.lblDefaultFileLocation.Size = new System.Drawing.Size(105, 18);
+            this.lblDefaultFileLocation.TabIndex = 220;
+            this.lblDefaultFileLocation.Text = "File Location:";
+            this.lblDefaultFileLocation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ucSettings
             // 
@@ -334,7 +372,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccounts)).EndInit();
             this.flpBelow.ResumeLayout(false);
             this.tblpSettings.ResumeLayout(false);
-            this.tblpSettings.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,7 +383,6 @@
 
         private System.Windows.Forms.Label lblSettings;
         private System.Windows.Forms.FolderBrowserDialog fbdDefaultFileLocation;
-        private System.Windows.Forms.Label lblDefaultFileLocation;
         private System.Windows.Forms.Panel pnlUserInformation;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtbxPassword;
@@ -359,11 +397,13 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.FlowLayoutPanel flpDtgv;
-        private System.Windows.Forms.Panel pnlSeparator1;
         private System.Windows.Forms.DataGridView dtgvAccounts;
         private System.Windows.Forms.FlowLayoutPanel flpBelow;
         private System.Windows.Forms.TableLayoutPanel tblpSettings;
         private System.Windows.Forms.Panel pnlSeparator2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label lblDefaultFileLocation;
+        private System.Windows.Forms.Panel pnlSeparator1;
 
 
     }

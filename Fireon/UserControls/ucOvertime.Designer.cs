@@ -32,17 +32,32 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucOvertime));
-            this.dtgvOvertime = new System.Windows.Forms.DataGridView();
-            this.lblAddWorkingHours = new System.Windows.Forms.Label();
             this.lblOvertime = new System.Windows.Forms.Label();
+            this.dtgvOvertime = new System.Windows.Forms.DataGridView();
+            this.pnlWorkingHours = new System.Windows.Forms.Panel();
+            this.lblAddWorkingHours = new System.Windows.Forms.Label();
             this.txtbxAddWorkingHours = new System.Windows.Forms.TextBox();
             this.btnAddOvertime = new System.Windows.Forms.Button();
             this.tblpOvertime = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlWorkingHours = new System.Windows.Forms.Panel();
+            this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvOvertime)).BeginInit();
-            this.tblpOvertime.SuspendLayout();
             this.pnlWorkingHours.SuspendLayout();
+            this.tblpOvertime.SuspendLayout();
+            this.flpBelow.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // lblOvertime
+            // 
+            this.lblOvertime.AutoSize = true;
+            this.lblOvertime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblOvertime.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOvertime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblOvertime.Location = new System.Drawing.Point(0, 0);
+            this.lblOvertime.Margin = new System.Windows.Forms.Padding(0);
+            this.lblOvertime.Name = "lblOvertime";
+            this.lblOvertime.Size = new System.Drawing.Size(160, 38);
+            this.lblOvertime.TabIndex = 278;
+            this.lblOvertime.Text = "Overtime";
             // 
             // dtgvOvertime
             // 
@@ -54,7 +69,7 @@
             this.dtgvOvertime.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -63,7 +78,7 @@
             this.dtgvOvertime.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -78,7 +93,7 @@
             this.dtgvOvertime.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -87,8 +102,18 @@
             this.dtgvOvertime.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvOvertime.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvOvertime.ShowEditingIcon = false;
-            this.dtgvOvertime.Size = new System.Drawing.Size(894, 337);
+            this.dtgvOvertime.Size = new System.Drawing.Size(894, 333);
             this.dtgvOvertime.TabIndex = 276;
+            // 
+            // pnlWorkingHours
+            // 
+            this.pnlWorkingHours.Controls.Add(this.lblAddWorkingHours);
+            this.pnlWorkingHours.Controls.Add(this.txtbxAddWorkingHours);
+            this.pnlWorkingHours.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlWorkingHours.Location = new System.Drawing.Point(3, 11);
+            this.pnlWorkingHours.Name = "pnlWorkingHours";
+            this.pnlWorkingHours.Size = new System.Drawing.Size(894, 31);
+            this.pnlWorkingHours.TabIndex = 281;
             // 
             // lblAddWorkingHours
             // 
@@ -99,19 +124,6 @@
             this.lblAddWorkingHours.Size = new System.Drawing.Size(148, 20);
             this.lblAddWorkingHours.TabIndex = 277;
             this.lblAddWorkingHours.Text = "Add Working Hours";
-            // 
-            // lblOvertime
-            // 
-            this.lblOvertime.AutoSize = true;
-            this.lblOvertime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblOvertime.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOvertime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblOvertime.Location = new System.Drawing.Point(0, 0);
-            this.lblOvertime.Margin = new System.Windows.Forms.Padding(0);
-            this.lblOvertime.Name = "lblOvertime";
-            this.lblOvertime.Size = new System.Drawing.Size(160, 38);
-            this.lblOvertime.TabIndex = 278;
-            this.lblOvertime.Text = "Overtime";
             // 
             // txtbxAddWorkingHours
             // 
@@ -127,13 +139,12 @@
             // 
             this.btnAddOvertime.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddOvertime.BackgroundImage")));
             this.btnAddOvertime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddOvertime.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddOvertime.FlatAppearance.BorderSize = 0;
             this.btnAddOvertime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnAddOvertime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddOvertime.Location = new System.Drawing.Point(761, 391);
+            this.btnAddOvertime.Location = new System.Drawing.Point(764, 3);
             this.btnAddOvertime.Name = "btnAddOvertime";
-            this.btnAddOvertime.Size = new System.Drawing.Size(136, 30);
+            this.btnAddOvertime.Size = new System.Drawing.Size(127, 30);
             this.btnAddOvertime.TabIndex = 280;
             this.btnAddOvertime.TabStop = false;
             this.btnAddOvertime.UseVisualStyleBackColor = true;
@@ -143,29 +154,31 @@
             // 
             this.tblpOvertime.ColumnCount = 1;
             this.tblpOvertime.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblpOvertime.Controls.Add(this.btnAddOvertime, 0, 2);
+            this.tblpOvertime.Controls.Add(this.flpBelow, 0, 3);
             this.tblpOvertime.Controls.Add(this.pnlWorkingHours, 0, 1);
             this.tblpOvertime.Controls.Add(this.dtgvOvertime, 0, 2);
             this.tblpOvertime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpOvertime.Location = new System.Drawing.Point(0, 38);
             this.tblpOvertime.Name = "tblpOvertime";
             this.tblpOvertime.RowCount = 4;
-            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.886792F));
-            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.726415F));
-            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.89622F));
-            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.254717F));
+            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.896813F));
+            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.772761F));
+            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.18868F));
+            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.198113F));
+            this.tblpOvertime.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblpOvertime.Size = new System.Drawing.Size(900, 424);
             this.tblpOvertime.TabIndex = 282;
+            this.tblpOvertime.Paint += new System.Windows.Forms.PaintEventHandler(this.tblpOvertime_Paint);
             // 
-            // pnlWorkingHours
+            // flpBelow
             // 
-            this.pnlWorkingHours.Controls.Add(this.lblAddWorkingHours);
-            this.pnlWorkingHours.Controls.Add(this.txtbxAddWorkingHours);
-            this.pnlWorkingHours.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlWorkingHours.Location = new System.Drawing.Point(3, 11);
-            this.pnlWorkingHours.Name = "pnlWorkingHours";
-            this.pnlWorkingHours.Size = new System.Drawing.Size(894, 31);
-            this.pnlWorkingHours.TabIndex = 281;
+            this.flpBelow.Controls.Add(this.btnAddOvertime);
+            this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpBelow.Location = new System.Drawing.Point(3, 387);
+            this.flpBelow.Name = "flpBelow";
+            this.flpBelow.Size = new System.Drawing.Size(894, 34);
+            this.flpBelow.TabIndex = 284;
             // 
             // ucOvertime
             // 
@@ -177,9 +190,10 @@
             this.Name = "ucOvertime";
             this.Size = new System.Drawing.Size(900, 462);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvOvertime)).EndInit();
-            this.tblpOvertime.ResumeLayout(false);
             this.pnlWorkingHours.ResumeLayout(false);
             this.pnlWorkingHours.PerformLayout();
+            this.tblpOvertime.ResumeLayout(false);
+            this.flpBelow.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,12 +201,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgvOvertime;
-        private System.Windows.Forms.Label lblAddWorkingHours;
         private System.Windows.Forms.Label lblOvertime;
+        private System.Windows.Forms.DataGridView dtgvOvertime;
+        private System.Windows.Forms.Panel pnlWorkingHours;
+        private System.Windows.Forms.Label lblAddWorkingHours;
         private System.Windows.Forms.TextBox txtbxAddWorkingHours;
         private System.Windows.Forms.Button btnAddOvertime;
         private System.Windows.Forms.TableLayoutPanel tblpOvertime;
-        private System.Windows.Forms.Panel pnlWorkingHours;
+        private System.Windows.Forms.FlowLayoutPanel flpBelow;
     }
 }

@@ -36,21 +36,22 @@
             this.lblHoliday = new System.Windows.Forms.Label();
             this.dtgvHoliday = new System.Windows.Forms.DataGridView();
             this.tblpHoliday = new System.Windows.Forms.TableLayoutPanel();
+            this.flpBelow = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHoliday)).BeginInit();
             this.tblpHoliday.SuspendLayout();
+            this.flpBelow.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddHoliday
             // 
             this.btnAddHoliday.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddHoliday.BackgroundImage")));
             this.btnAddHoliday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddHoliday.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddHoliday.FlatAppearance.BorderSize = 0;
             this.btnAddHoliday.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnAddHoliday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddHoliday.Location = new System.Drawing.Point(761, 391);
+            this.btnAddHoliday.Location = new System.Drawing.Point(764, 3);
             this.btnAddHoliday.Name = "btnAddHoliday";
-            this.btnAddHoliday.Size = new System.Drawing.Size(136, 30);
+            this.btnAddHoliday.Size = new System.Drawing.Size(127, 30);
             this.btnAddHoliday.TabIndex = 283;
             this.btnAddHoliday.TabStop = false;
             this.btnAddHoliday.UseVisualStyleBackColor = true;
@@ -79,7 +80,7 @@
             this.dtgvHoliday.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -88,7 +89,7 @@
             this.dtgvHoliday.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -103,7 +104,7 @@
             this.dtgvHoliday.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(5)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -112,24 +113,34 @@
             this.dtgvHoliday.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtgvHoliday.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvHoliday.ShowEditingIcon = false;
-            this.dtgvHoliday.Size = new System.Drawing.Size(894, 382);
+            this.dtgvHoliday.Size = new System.Drawing.Size(894, 378);
             this.dtgvHoliday.TabIndex = 281;
             // 
             // tblpHoliday
             // 
             this.tblpHoliday.ColumnCount = 1;
             this.tblpHoliday.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblpHoliday.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblpHoliday.Controls.Add(this.flpBelow, 0, 1);
             this.tblpHoliday.Controls.Add(this.dtgvHoliday, 0, 0);
-            this.tblpHoliday.Controls.Add(this.btnAddHoliday, 0, 1);
             this.tblpHoliday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpHoliday.Location = new System.Drawing.Point(0, 38);
             this.tblpHoliday.Name = "tblpHoliday";
             this.tblpHoliday.RowCount = 2;
-            this.tblpHoliday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.50944F));
-            this.tblpHoliday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.490566F));
+            this.tblpHoliday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.56604F));
+            this.tblpHoliday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.433962F));
+            this.tblpHoliday.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblpHoliday.Size = new System.Drawing.Size(900, 424);
             this.tblpHoliday.TabIndex = 284;
+            // 
+            // flpBelow
+            // 
+            this.flpBelow.Controls.Add(this.btnAddHoliday);
+            this.flpBelow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBelow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpBelow.Location = new System.Drawing.Point(3, 387);
+            this.flpBelow.Name = "flpBelow";
+            this.flpBelow.Size = new System.Drawing.Size(894, 34);
+            this.flpBelow.TabIndex = 284;
             // 
             // ucHoliday
             // 
@@ -142,6 +153,7 @@
             this.Size = new System.Drawing.Size(900, 462);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHoliday)).EndInit();
             this.tblpHoliday.ResumeLayout(false);
+            this.flpBelow.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,5 +165,6 @@
         private System.Windows.Forms.Label lblHoliday;
         private System.Windows.Forms.DataGridView dtgvHoliday;
         private System.Windows.Forms.TableLayoutPanel tblpHoliday;
+        private System.Windows.Forms.FlowLayoutPanel flpBelow;
     }
 }

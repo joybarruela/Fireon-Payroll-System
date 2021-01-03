@@ -39,5 +39,10 @@ namespace Fireon
                 this.lblResearchAndDevelopmentCount,
                 this.lblSalesCount);
         }
+
+        private void lblTotalContractual_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

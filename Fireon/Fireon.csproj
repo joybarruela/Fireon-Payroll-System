@@ -330,7 +330,13 @@
     <Content Include="Resources\cute-button-icons\btnIconUpdate.png" />
     <Content Include="Resources\cute-button-icons\btnIconUpdateHover.png" />
     <None Include="Resources\miscellaneous\fireonSeal.jpg" />
+    <None Include="Resources\miscellaneous\fireonSeal.png" />
+    <None Include="Resources\miscellaneous\bgSinglePosting.png" />
+    <None Include="Resources\miscellaneous\bgEmployeeInformation.png" />
     <Content Include="Resources\miscellaneous\miscBarChart.png" />
+    <None Include="Resources\miscellaneous\miscBgEmployeeInformation.png" />
+    <None Include="Resources\miscellaneous\miscBgSinglePosting.png" />
+    <None Include="Resources\miscellaneous\miscBgSingle-Posting.png" />
     <Content Include="Resources\miscellaneous\miscEmployeeDP.png" />
     <Content Include="Resources\miscellaneous\miscFireonIcon.ico" />
     <Content Include="Resources\miscellaneous\miscFireonLogin.png" />
@@ -341,6 +347,7 @@
     <None Include="Resources\miscellaneous\signature1.jpg" />
     <None Include="Resources\miscellaneous\signature2.png" />
     <None Include="Resources\miscellaneous\signature3.png" />
+    <None Include="Resources\miscellaneous\miscFireonSeal.png" />
     <Content Include="Resources\other-buttons\btnCancel.png" />
     <None Include="Resources\other-buttons\btnDelete.png" />
     <None Include="Resources\other-buttons\btnDefaultFileLocation.png" />

@@ -42,6 +42,7 @@
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnSettings = new System.Windows.Forms.Button();
             this.pnlSeparator12 = new System.Windows.Forms.Panel();
+            this.lblBlocker = new System.Windows.Forms.Label();
             this.btnSinglePosting = new System.Windows.Forms.Button();
             this.pnlSeparator11 = new System.Windows.Forms.Panel();
             this.btnPrint = new System.Windows.Forms.Button();
@@ -183,6 +184,7 @@
             this.pnlSidebar.Controls.Add(this.lblVersion);
             this.pnlSidebar.Controls.Add(this.btnSettings);
             this.pnlSidebar.Controls.Add(this.pnlSeparator12);
+            this.pnlSidebar.Controls.Add(this.lblBlocker);
             this.pnlSidebar.Controls.Add(this.btnSinglePosting);
             this.pnlSidebar.Controls.Add(this.pnlSeparator11);
             this.pnlSidebar.Controls.Add(this.btnPrint);
@@ -219,27 +221,28 @@
             // 
             this.lblDateToday.BackColor = System.Drawing.Color.Transparent;
             this.lblDateToday.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblDateToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateToday.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateToday.ForeColor = System.Drawing.Color.Black;
-            this.lblDateToday.Location = new System.Drawing.Point(25, 594);
+            this.lblDateToday.Location = new System.Drawing.Point(25, 567);
             this.lblDateToday.Name = "lblDateToday";
             this.lblDateToday.Size = new System.Drawing.Size(176, 20);
             this.lblDateToday.TabIndex = 27;
             this.lblDateToday.Text = "DATE TODAY";
-            this.lblDateToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDateToday.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblVersion
             // 
             this.lblVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblVersion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.Black;
-            this.lblVersion.Location = new System.Drawing.Point(25, 614);
+            this.lblVersion.Location = new System.Drawing.Point(25, 587);
+            this.lblVersion.Margin = new System.Windows.Forms.Padding(0);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(176, 27);
             this.lblVersion.TabIndex = 28;
             this.lblVersion.Text = "VERSION";
-            this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSettings
             // 
@@ -267,6 +270,18 @@
             this.pnlSeparator12.Name = "pnlSeparator12";
             this.pnlSeparator12.Size = new System.Drawing.Size(176, 10);
             this.pnlSeparator12.TabIndex = 25;
+            // 
+            // lblBlocker
+            // 
+            this.lblBlocker.BackColor = System.Drawing.Color.Transparent;
+            this.lblBlocker.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblBlocker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlocker.ForeColor = System.Drawing.Color.Black;
+            this.lblBlocker.Location = new System.Drawing.Point(25, 614);
+            this.lblBlocker.Name = "lblBlocker";
+            this.lblBlocker.Size = new System.Drawing.Size(176, 27);
+            this.lblBlocker.TabIndex = 103;
+            this.lblBlocker.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSinglePosting
             // 
@@ -717,5 +732,6 @@
         private System.Windows.Forms.Panel pnlSelected;
         private System.Windows.Forms.Panel pnlBlockersRightMain;
         private System.Windows.Forms.Panel pnlBlockersBottomMain;
+        private System.Windows.Forms.Label lblBlocker;
     }
 }
