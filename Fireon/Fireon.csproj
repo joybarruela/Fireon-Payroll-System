@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>C:\Users\51\Desktop\</PublishUrl>
+    <PublishUrl>D:\Fireon-Payroll-System\INSTALLER\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -373,9 +373,6 @@
     <Content Include="Resources\sidebar-buttons\btnDeduction.png" />
     <Content Include="Resources\sidebar-buttons\btnDeductionActive.png" />
     <Content Include="Resources\sidebar-buttons\btnDeductionHover.png" />
-    <Content Include="Resources\sidebar-buttons\btnDepartment.png" />
-    <Content Include="Resources\sidebar-buttons\btnDepartmentActive.png" />
-    <Content Include="Resources\sidebar-buttons\btnDepartmentHover.png" />
     <Content Include="Resources\sidebar-buttons\btnEmployee.png" />
     <Content Include="Resources\sidebar-buttons\btnEmployeeActive.png" />
     <Content Include="Resources\sidebar-buttons\btnEmployeeHover.png" />
